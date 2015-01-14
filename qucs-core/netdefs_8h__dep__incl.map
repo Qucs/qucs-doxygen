@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$acsolver_8cpp.html" title="acsolver.cpp" alt="" coords="281,83,377,112"/>
+<area shape="rect" id="node5" href="$check__netlist_8cpp.html" title="check_netlist.cpp" alt="" coords="5,160,128,189"/>
+<area shape="rect" id="node7" href="$check__netlist_8h.html" title="check_netlist.h" alt="" coords="452,83,561,112"/>
+<area shape="rect" id="node20" href="$component_8h.html" title="component.h" alt="" coords="2033,83,2129,112"/>
+<area shape="rect" id="node81" href="$device_8cpp.html" title="device.cpp" alt="" coords="2153,83,2239,112"/>
+<area shape="rect" id="node83" href="$check__spice_8h.html" title="check_spice.h" alt="" coords="2313,83,2420,112"/>
+<area shape="rect" id="node85" href="$qucs__producer_8cpp.html" title="qucs_producer.cpp" alt="" coords="3795,160,3925,189"/>
+<area shape="rect" id="node88" href="$dcsolver_8cpp.html" title="dcsolver.cpp" alt="" coords="2444,83,2540,112"/>
+<area shape="rect" id="node90" href="$equation_8cpp.html" title="equation.cpp" alt="" coords="2564,83,2660,112"/>
+<area shape="rect" id="node92" href="$hbsolver_8cpp.html" title="hbsolver.cpp" alt="" coords="2684,83,2780,112"/>
+<area shape="rect" id="node94" href="$e__trsolver_8cpp.html" title="e_trsolver.cpp" alt="" coords="2804,83,2908,112"/>
+<area shape="rect" id="node96" href="$module_8cpp.html" title="module.cpp" alt="" coords="2932,83,3020,112"/>
+<area shape="rect" id="node98" href="$nodeset_8cpp.html" title="nodeset.cpp" alt="" coords="3044,83,3137,112"/>
+<area shape="rect" id="node100" href="$parasweep_8cpp.html" title="parasweep.cpp" alt="" coords="3161,83,3271,112"/>
+<area shape="rect" id="node102" href="$spsolver_8cpp.html" title="spsolver.cpp" alt="" coords="3295,83,3391,112"/>
+<area shape="rect" id="node104" href="$trsolver_8cpp.html" title="trsolver.cpp" alt="" coords="3415,83,3505,112"/>
+<area shape="rect" id="node10" href="$input_8cpp.html" title="input.cpp" alt="" coords="405,160,480,189"/>
+<area shape="rect" id="node12" href="$qucs__interface_8cpp.html" title="qucs_interface.cpp" alt="" coords="504,160,635,189"/>
+<area shape="rect" id="node14" href="$parse__netlist_8y.html" title="parse_netlist.y" alt="" coords="275,160,381,189"/>
+<area shape="rect" id="node16" href="$scan__netlist_8l.html" title="scan_netlist.l" alt="" coords="152,160,251,189"/>
+<area shape="rect" id="node18" href="$ucs_8cpp.html" title="ucs.cpp" alt="" coords="659,160,725,189"/>
+<area shape="rect" id="node22" href="$amplifier_8cpp.html" title="amplifier class implementation" alt="" coords="1512,160,1608,189"/>
+<area shape="rect" id="node24" href="$attenuator_8cpp.html" title="attenuator.cpp" alt="" coords="1632,160,1736,189"/>
+<area shape="rect" id="node26" href="$biastee_8cpp.html" title="biastee.cpp" alt="" coords="1760,160,1848,189"/>
+<area shape="rect" id="node28" href="$capacitor_8cpp.html" title="capacitor class implementation" alt="" coords="1872,160,1971,189"/>
+<area shape="rect" id="node30" href="$cccs_8cpp.html" title="cccs.cpp" alt="" coords="1995,160,2069,189"/>
+<area shape="rect" id="node32" href="$ccvs_8cpp.html" title="ccvs.cpp" alt="" coords="2093,160,2168,189"/>
+<area shape="rect" id="node34" href="$circulator_8cpp.html" title="circulator.cpp" alt="" coords="2192,160,2291,189"/>
+<area shape="rect" id="node36" href="$coaxline_8cpp.html" title="coaxline.cpp" alt="" coords="2315,160,2408,189"/>
+<area shape="rect" id="node38" href="$coupler_8cpp.html" title="coupler.cpp" alt="" coords="2432,160,2520,189"/>
+<area shape="rect" id="node40" href="$cross_8cpp.html" title="cross.cpp" alt="" coords="2544,160,2621,189"/>
+<area shape="rect" id="node42" href="$ctline_8cpp.html" title="ctline.cpp" alt="" coords="2645,160,2723,189"/>
+<area shape="rect" id="node44" href="$dcblock_8cpp.html" title="dcblock.cpp" alt="" coords="2747,160,2837,189"/>
+<area shape="rect" id="node46" href="$dcfeed_8cpp.html" title="dcfeed.cpp" alt="" coords="2861,160,2947,189"/>
+<area shape="rect" id="node48" href="$bjt_8cpp.html" title="bjt.cpp" alt="" coords="2971,160,3032,189"/>
+<area shape="rect" id="node50" href="$diac_8cpp.html" title="diac.cpp" alt="" coords="3056,160,3125,189"/>
+<area shape="rect" id="node52" href="$diode_8cpp.html" title="diode.cpp" alt="" coords="3149,160,3227,189"/>
+<area shape="rect" id="node54" href="$eqndefined_8cpp.html" title="eqndefined.cpp" alt="" coords="3251,160,3360,189"/>
+<area shape="rect" id="node56" href="$jfet_8cpp.html" title="jfet.cpp" alt="" coords="3384,160,3448,189"/>
+<area shape="rect" id="node58" href="$mosfet_8cpp.html" title="mosfet.cpp" alt="" coords="3472,160,3557,189"/>
+<area shape="rect" id="node60" href="$thyristor_8cpp.html" title="thyristor.cpp" alt="" coords="3581,160,3675,189"/>
+<area shape="rect" id="node62" href="$triac_8cpp.html" title="triac.cpp" alt="" coords="3699,160,3771,189"/>
+<area shape="rect" id="node64" href="$tunneldiode_8cpp.html" title="tunneldiode.cpp" alt="" coords="749,160,861,189"/>
+<area shape="rect" id="node66" href="$and_8cpp.html" title="and.cpp" alt="" coords="885,160,952,189"/>
+<area shape="rect" id="node68" href="$buffer_8cpp.html" title="buffer.cpp" alt="" coords="976,160,1056,189"/>
+<area shape="rect" id="node70" href="$digisource_8cpp.html" title="digisource.cpp" alt="" coords="1080,160,1187,189"/>
+<area shape="rect" id="node72" href="$inverter_8cpp.html" title="inverter.cpp" alt="" coords="1211,160,1301,189"/>
+<area shape="rect" id="node74" href="$nand_8cpp.html" title="nand.cpp" alt="" coords="1325,160,1400,189"/>
+<area shape="rect" id="node76" href="$nor_8cpp.html" title="nor.cpp" alt="" coords="1424,160,1488,189"/>
+</map>

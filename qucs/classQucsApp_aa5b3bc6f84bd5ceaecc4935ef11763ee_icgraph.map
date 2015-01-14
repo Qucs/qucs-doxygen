@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="273,5,420,35"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="264,59,429,88"/>
+<area shape="rect" id="node12" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="261,112,432,141"/>
+<area shape="rect" id="node15" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="261,165,432,195"/>
+<area shape="rect" id="node18" href="$classQucsApp.html#a08b28b7fc1751abac6805c1b67762c4a" title="QucsApp::slotEditActivate" alt="" coords="259,219,435,248"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="264,272,429,301"/>
+<area shape="rect" id="node24" href="$classQucsApp.html#a09803e5e24c55cc7b88461bb1dc2d53e" title="QucsApp::slotSetWire" alt="" coords="271,325,423,355"/>
+<area shape="rect" id="node27" href="$classQucsApp.html#a52fe571991b5aa6261d91cda862b2bb3" title="QucsApp::slotInsertLabel" alt="" coords="263,379,431,408"/>
+<area shape="rect" id="node30" href="$classQucsApp.html#a529243fd463c5fd0f3906e92848f0070" title="QucsApp::slotSetMarker" alt="" coords="264,432,429,461"/>
+<area shape="rect" id="node33" href="$classQucsApp.html#af74dd575ce6eec8cae8f9faace9a3200" title="QucsApp::slotMoveText" alt="" coords="265,485,428,515"/>
+<area shape="rect" id="node36" href="$classQucsApp.html#aa70dcbffa55b187a98435f035a673436" title="QucsApp::slotZoomIn" alt="" coords="272,539,421,568"/>
+<area shape="rect" id="node39" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="276,592,417,621"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="484,299,628,328"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="677,299,816,328"/>
+</map>

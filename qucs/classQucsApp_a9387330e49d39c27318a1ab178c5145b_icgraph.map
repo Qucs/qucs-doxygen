@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="1309,198,1440,228"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a0df73710610da708b5149234e9b82e95" title="QucsApp::readProjectFiles" alt="" coords="259,358,437,388"/>
+<area shape="rect" id="node56" href="$classQucsApp.html#a17e94f1c2027b60df354cd483f6e1e38" title="QucsApp::slotMenuProjClose" alt="" coords="251,512,445,541"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1509,198,1648,228"/>
+<area shape="rect" id="node9" href="$classQucsSettingsDialog.html#aeab42774b798e5c45389d6737cd36b3f" title="QucsSettingsDialog::slotApply" alt="" coords="493,149,693,178"/>
+<area shape="rect" id="node16" href="$classQucsApp.html#ab4ff814a316476d6b53e741c5ccb8768" title="QucsApp::slotCMenuCopy" alt="" coords="745,44,924,73"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#a1029e5d96d9c8b59b3e8efff987c276c" title="QucsApp::openProject" alt="" coords="517,277,669,306"/>
+<area shape="rect" id="node38" href="$classQucsApp.html#a5b0458655f1d8ec9a87b63aef560f187" title="QucsApp::slotFileSave" alt="" coords="516,358,671,388"/>
+<area shape="rect" id="node47" href="$classQucsApp.html#a8a79e16c44618c159ae1e5276d3f746e" title="QucsApp::slotFileSaveAs" alt="" coords="749,460,920,489"/>
+<area shape="rect" id="node50" href="$classQucsApp.html#a65db0fcf205c13e042fc20b217e9436c" title="QucsApp::slotAddToProject" alt="" coords="501,557,685,586"/>
+<area shape="rect" id="node53" href="$classQucsApp.html#ab17a9c10f3450ff609d7b5372c29ab2f" title="QucsApp::slotImportData" alt="" coords="508,480,679,509"/>
+<area shape="rect" id="node11" href="$classQucsSettingsDialog.html#a5b522a81131dc438e2d7c13689620410" title="QucsSettingsDialog::QucsSettingsDialog" alt="" coords="977,94,1239,124"/>
+<area shape="rect" id="node13" href="$classQucsSettingsDialog.html#a4f09a405e083087e49438fc8bd52c132" title="QucsSettingsDialog::slotOK" alt="" coords="741,97,928,126"/>
+<area shape="rect" id="node18" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="1289,94,1460,124"/>
+<area shape="rect" id="node23" href="$classQucsApp.html#a24f658f740d8eb179e0a68e4055aeeb4" title="QucsApp::slotButtonProjNew" alt="" coords="1012,252,1204,281"/>
+<area shape="rect" id="node29" href="$classQucsApp.html#a12cc9d5b52cbaccbe9c77faefc8f59ea" title="QucsApp::slotMenuProjOpen" alt="" coords="1013,305,1203,334"/>
+<area shape="rect" id="node32" href="$classQucsApp.html#a1ad75ae02b66f2195be0f7dd34158096" title="QucsApp::slotListProjOpen" alt="" coords="745,201,924,230"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1303,410,1447,440"/>
+<area shape="rect" id="node35" href="$classQucsApp.html#aa4495d06c23658bc3389aa4affb9a29e" title="QucsApp::slotButtonProjOpen" alt="" coords="1009,198,1207,228"/>
+<area shape="rect" id="node40" href="$classQucsApp.html#ab27cc385c98599110890cf1a302c583f" title="QucsApp::closeFile" alt="" coords="767,356,903,385"/>
+<area shape="rect" id="node42" href="$classQucsApp.html#aacfb383853027265ecccf4bedb863ddb" title="QucsApp::slotFileClose" alt="" coords="1028,358,1188,388"/>
+</map>

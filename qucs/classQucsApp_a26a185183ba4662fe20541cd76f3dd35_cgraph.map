@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd" title="QucsApp::slotShowWarnings" alt="" coords="259,5,451,35"/>
+<area shape="rect" id="node5" href="$classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae" title="Close and delete simulation dialog." alt="" coords="275,59,435,88"/>
+<area shape="rect" id="node7" href="$classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07" title="OctaveWindow::startOctave" alt="" coords="261,165,448,195"/>
+<area shape="rect" id="node19" href="$classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb" title="OctaveWindow::runOctaveScript" alt="" coords="248,112,461,141"/>
+<area shape="rect" id="node22" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="265,405,444,435"/>
+<area shape="rect" id="node28" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1036,591,1215,620"/>
+<area shape="rect" id="node9" href="$classOctaveWindow.html#ad7b2fcd2b553afee52d026b12c8c7ff2" title="OctaveWindow::slotDisplayErr" alt="" coords="519,59,719,88"/>
+<area shape="rect" id="node11" href="$classOctaveWindow.html#a0813c5c0702e72b1850a2e452140aebc" title="OctaveWindow::slotDisplayMsg" alt="" coords="515,112,723,141"/>
+<area shape="rect" id="node13" href="$classOctaveWindow.html#a124bba60516efba575705db3e7616471" title="OctaveWindow::slotOctaveEnded" alt="" coords="509,165,728,195"/>
+<area shape="rect" id="node15" href="$classOctaveWindow.html#a2696584a025ce5e71f32e88006d9da1f" title="OctaveWindow::adjustDirectory" alt="" coords="516,219,721,248"/>
+<area shape="rect" id="node17" href="$classOctaveWindow.html#a07709f3f94100f11625d52580b64c8c5" title="OctaveWindow::sendCommand" alt="" coords="777,113,983,143"/>
+<area shape="rect" id="node24" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="555,539,683,568"/>
+<area shape="rect" id="node30" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="551,325,687,355"/>
+<area shape="rect" id="node32" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="564,379,673,408"/>
+<area shape="rect" id="node34" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="532,432,705,461"/>
+<area shape="rect" id="node37" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="537,485,700,515"/>
+<area shape="rect" id="node39" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="524,272,713,301"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="817,539,943,568"/>
+<area shape="rect" id="node41" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="805,299,955,328"/>
+<area shape="rect" id="node43" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="816,245,944,275"/>
+<area shape="rect" id="node45" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1512,299,1579,328"/>
+<area shape="rect" id="node47" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1508,192,1583,221"/>
+<area shape="rect" id="node49" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="1032,245,1219,275"/>
+<area shape="rect" id="node53" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="1268,245,1455,275"/>
+<area shape="rect" id="node57" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1505,245,1585,275"/>
+</map>

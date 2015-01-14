@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="1264,250,1389,280"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1515,198,1693,228"/>
+<area shape="rect" id="node8" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="993,302,1121,332"/>
+<area shape="rect" id="node11" href="$classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe" title="QucsDoc::setName" alt="" coords="221,614,360,644"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71" title="QucsApp::updateRecentFilesList" alt="" coords="705,485,919,514"/>
+<area shape="rect" id="node15" href="$classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e" title="QucsApp::slotUpdateRecentFiles" alt="" coords="183,460,399,489"/>
+<area shape="rect" id="node127" href="$classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509" title="QucsDoc::save" alt="" coords="235,668,347,697"/>
+<area shape="rect" id="node129" href="$classQucsApp.html#a8d660a5a6479c2683e03282a23a42c65" title="QucsApp::updatePortNumber" alt="" coords="1231,1242,1423,1272"/>
+<area shape="rect" id="node17" href="$classQucsApp.html#ad56a3fb251d50bb97d73fe3e6f176777" title="QucsApp::slotOpenRecent" alt="" coords="463,406,641,436"/>
+<area shape="rect" id="node124" href="$classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1" title="QucsApp::slotClearRecentFiles" alt="" coords="449,460,655,489"/>
+<area shape="rect" id="node19" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="743,406,881,436"/>
+<area shape="rect" id="node22" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="1240,461,1413,490"/>
+<area shape="rect" id="node24" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="1003,510,1112,540"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="968,406,1147,436"/>
+<area shape="rect" id="node29" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1223,354,1431,384"/>
+<area shape="rect" id="node112" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="1195,408,1459,437"/>
+<area shape="rect" id="node31" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1507,614,1701,644"/>
+<area shape="rect" id="node46" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="2063,457,2271,486"/>
+<area shape="rect" id="node53" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="2320,328,2552,357"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="1795,97,1968,126"/>
+<area shape="rect" id="node43" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1752,302,2011,332"/>
+<area shape="rect" id="node48" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="2339,405,2533,434"/>
+<area shape="rect" id="node57" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="2859,716,3021,745"/>
+<area shape="rect" id="node60" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="2333,614,2539,644"/>
+<area shape="rect" id="node64" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="1760,870,2003,900"/>
+<area shape="rect" id="node66" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="2092,924,2241,953"/>
+<area shape="rect" id="node69" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1751,508,2012,537"/>
+<area shape="rect" id="node75" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="1785,561,1977,590"/>
+<area shape="rect" id="node78" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="2601,716,2809,745"/>
+<area shape="rect" id="node81" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="1783,1084,1980,1113"/>
+<area shape="rect" id="node92" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="1787,924,1976,953"/>
+<area shape="rect" id="node95" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="1785,1030,1977,1060"/>
+<area shape="rect" id="node99" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1773,614,1989,644"/>
+<area shape="rect" id="node107" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1783,977,1980,1006"/>
+<area shape="rect" id="node35" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="2871,72,3009,101"/>
+<area shape="rect" id="node37" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="2088,97,2245,126"/>
+<area shape="rect" id="node39" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="2097,150,2236,180"/>
+<area shape="rect" id="node41" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="2100,44,2233,73"/>
+<area shape="rect" id="node50" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="2347,458,2525,488"/>
+<area shape="rect" id="node55" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="2615,150,2796,180"/>
+<area shape="rect" id="node84" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="2064,1109,2269,1138"/>
+<area shape="rect" id="node86" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="2364,1154,2508,1184"/>
+<area shape="rect" id="node88" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="2344,1101,2528,1130"/>
+<area shape="rect" id="node90" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="2621,1101,2789,1130"/>
+<area shape="rect" id="node114" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="1516,1137,1692,1166"/>
+<area shape="rect" id="node116" href="$classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347" title="QucsApp::fillComboBox" alt="" coords="1800,1137,1963,1166"/>
+<area shape="rect" id="node118" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="1787,1190,1976,1220"/>
+<area shape="rect" id="node131" href="$simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1563,1294,1645,1324"/>
+<area shape="rect" id="node133" href="$classQucsDoc.html#ac835da875203c51c60e6fd6a3a885b08" title="QucsDoc::fileSuffix" alt="" coords="1536,1348,1672,1377"/>
+</map>

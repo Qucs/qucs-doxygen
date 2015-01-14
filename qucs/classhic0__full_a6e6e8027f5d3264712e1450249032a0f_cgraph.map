@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classhic0__full.html#abe9645dce9e664f666cc8673bbb2483a" title="hic0_full::hic0_full" alt="" coords="220,57,345,87"/>
+<area shape="rect" id="node7" href="$classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911" title="MultiViewComponent::recreate" alt="" coords="183,163,383,192"/>
+<area shape="rect" id="node5" href="$classhic0__full.html#a0f10524f64384f5b1a86510ea06d9d17" title="hic0_full::createSymbol" alt="" coords="471,5,628,35"/>
+<area shape="rect" id="node9" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="748,64,911,93"/>
+<area shape="rect" id="node15" href="$classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26" title="MultiViewComponent::createSymbol" alt="" coords="432,109,667,139"/>
+<area shape="rect" id="node17" href="$classComponent.html#a5582128782a575a1ded9ac158e4688da" title="Component::mirrorY" alt="" coords="480,163,619,192"/>
+<area shape="rect" id="node19" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="480,216,619,245"/>
+<area shape="rect" id="node21" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="484,269,615,299"/>
+<area shape="rect" id="node23" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="440,323,659,352"/>
+<area shape="rect" id="node11" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1196,124,1367,153"/>
+<area shape="rect" id="node13" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1417,124,1543,153"/>
+<area shape="rect" id="node25" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="715,216,944,245"/>
+<area shape="rect" id="node34" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="745,323,913,352"/>
+<area shape="rect" id="node27" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="992,216,1147,245"/>
+<area shape="rect" id="node31" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="992,156,1147,185"/>
+<area shape="rect" id="node29" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1211,216,1352,245"/>
+</map>

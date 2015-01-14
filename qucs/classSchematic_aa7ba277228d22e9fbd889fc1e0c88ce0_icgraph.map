@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="244,5,423,35"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a546595fa07625b986b652a93b4079baf" title="Schematic::copyComps2WiresPaints" alt="" coords="213,59,453,88"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="760,5,925,35"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="977,59,1121,88"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1171,59,1309,88"/>
+<area shape="rect" id="node13" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="501,59,709,88"/>
+<area shape="rect" id="node18" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="501,112,709,141"/>
+<area shape="rect" id="node15" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="757,59,928,88"/>
+<area shape="rect" id="node20" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="757,112,928,141"/>
+</map>

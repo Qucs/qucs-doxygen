@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="244,389,425,418"/>
+<area shape="rect" id="node142" href="$classQucsApp.html#a52fe571991b5aa6261d91cda862b2bb3" title="QucsApp::slotInsertLabel" alt="" coords="776,926,944,955"/>
+<area shape="rect" id="node5" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="475,389,707,418"/>
+<area shape="rect" id="node140" href="$classQucsApp.html#a94fe23ddbca75bca76314088951d8b96" title="QucsApp::slotEditElement" alt="" coords="503,335,679,365"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="756,287,964,317"/>
+<area shape="rect" id="node9" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1013,185,1229,214"/>
+<area shape="rect" id="node15" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1545,55,1759,85"/>
+<area shape="rect" id="node20" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1521,133,1783,162"/>
+<area shape="rect" id="node23" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1523,287,1781,317"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#a4f53f2154de0a0a3a6f5c801a73727ce" title="QucsApp::slotOpenContent" alt="" coords="2800,287,2981,317"/>
+<area shape="rect" id="node37" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1548,341,1756,370"/>
+<area shape="rect" id="node124" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1581,566,1723,595"/>
+<area shape="rect" id="node11" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1277,210,1472,239"/>
+<area shape="rect" id="node17" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1833,69,2031,98"/>
+<area shape="rect" id="node28" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="4109,234,4240,263"/>
+<area shape="rect" id="node32" href="$classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="3352,287,3531,317"/>
+<area shape="rect" id="node30" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="4309,314,4448,343"/>
+<area shape="rect" id="node34" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="4089,287,4260,317"/>
+<area shape="rect" id="node40" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1843,341,2021,370"/>
+<area shape="rect" id="node43" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="2080,749,2219,778"/>
+<area shape="rect" id="node46" href="$classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2812,954,2969,983"/>
+<area shape="rect" id="node51" href="$classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2539,721,2720,750"/>
+<area shape="rect" id="node54" href="$classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2277,954,2461,983"/>
+<area shape="rect" id="node58" href="$classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2567,799,2692,829"/>
+<area shape="rect" id="node78" href="$classQucsApp.html#ad56a3fb251d50bb97d73fe3e6f176777" title="QucsApp::slotOpenRecent" alt="" coords="2280,697,2459,726"/>
+<area shape="rect" id="node122" href="$classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="2268,643,2471,673"/>
+<area shape="rect" id="node48" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="4103,750,4247,779"/>
+<area shape="rect" id="node60" href="$classComponentDialog.html#ad45267411ae461bd9e059f4edd068364" title="ComponentDialog::slotEditFile" alt="" coords="2792,695,2989,725"/>
+<area shape="rect" id="node64" href="$classSpiceDialog.html#afc5113dc7aa5186887685e9cff481a2c" title="SpiceDialog::slotButtEdit" alt="" coords="2807,749,2975,778"/>
+<area shape="rect" id="node69" href="$classQucsApp.html#ac01ff5035573df0642b65586160e7357" title="QucsApp::slotShowLastMsg" alt="" coords="3601,853,3788,882"/>
+<area shape="rect" id="node72" href="$classQucsApp.html#a453c38796009855ef13e924815bbba9f" title="QucsApp::slotShowLastNetlist" alt="" coords="3839,903,4039,933"/>
+<area shape="rect" id="node75" href="$classQucsApp.html#adc77a99975814294719a9128b48361d6" title="QucsApp::slotCallEditor" alt="" coords="3081,802,3244,831"/>
+<area shape="rect" id="node62" href="$classComponentDialog.html#abbdd96cf933884ab290f90e99503db08" title="ComponentDialog::ComponentDialog" alt="" coords="3044,695,3281,725"/>
+<area shape="rect" id="node66" href="$classSpiceDialog.html#a61278c198764d1d906ba5824da1492d7" title="SpiceDialog::SpiceDialog" alt="" coords="3077,749,3248,778"/>
+<area shape="rect" id="node80" href="$classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e" title="QucsApp::slotUpdateRecentFiles" alt="" coords="2521,643,2737,673"/>
+<area shape="rect" id="node83" href="$classQucsApp.html#aceaecb4d84e675e470037afd19135d32" title="QucsApp::saveAs" alt="" coords="2827,591,2955,621"/>
+<area shape="rect" id="node116" href="$classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1" title="QucsApp::slotClearRecentFiles" alt="" coords="2788,538,2993,567"/>
+<area shape="rect" id="node119" href="$classQucsApp.html#a8031a76274a75eb2428fdba555032fde" title="QucsApp::initMenuBar" alt="" coords="4099,341,4251,370"/>
+<area shape="rect" id="node85" href="$classQucsApp.html#a8215365755360cc362fbf812dc4965ec" title="QucsApp::saveFile" alt="" coords="3096,591,3229,621"/>
+<area shape="rect" id="node105" href="$classQucsApp.html#a8a79e16c44618c159ae1e5276d3f746e" title="QucsApp::slotFileSaveAs" alt="" coords="3356,439,3527,469"/>
+<area shape="rect" id="node108" href="$classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="3617,539,3772,569"/>
+<area shape="rect" id="node87" href="$classSaveDialog.html#a89ef19bbcfb1970b3626f0d89cc28cf5" title="SaveDialog::saveSelectedClicked" alt="" coords="3332,645,3551,674"/>
+<area shape="rect" id="node93" href="$classQucsApp.html#a5b0458655f1d8ec9a87b63aef560f187" title="QucsApp::slotFileSave" alt="" coords="3364,591,3519,621"/>
+<area shape="rect" id="node102" href="$classQucsApp.html#a2f0374da49b42c68f208cbc17e3d4bab" title="QucsApp::slotFileSaveAll" alt="" coords="3356,698,3527,727"/>
+<area shape="rect" id="node89" href="$classSaveDialog.html#a254faad4f3d9344fee26983e3063c80a" title="SaveDialog::initDialog" alt="" coords="3620,647,3769,677"/>
+<area shape="rect" id="node91" href="$classSaveDialog.html#ad5869214774fcf04324b22a61242eda8" title="SaveDialog::SaveDialog" alt="" coords="3857,647,4020,677"/>
+<area shape="rect" id="node95" href="$classQucsApp.html#ab27cc385c98599110890cf1a302c583f" title="QucsApp::closeFile" alt="" coords="3627,462,3763,491"/>
+<area shape="rect" id="node97" href="$classQucsApp.html#aacfb383853027265ecccf4bedb863ddb" title="QucsApp::slotFileClose" alt="" coords="3859,439,4019,469"/>
+<area shape="rect" id="node110" href="$classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="3864,493,4013,522"/>
+</map>

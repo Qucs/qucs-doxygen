@@ -1,0 +1,21 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$main_8cpp.html#a25c37e2c42aad411a1c62e60d34df68e" title="saveApplSettings" alt="" coords="227,57,349,87"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#ad879e6b32e2ea281a177c409a8c01b5a" title="QucsApp::closeAllFiles" alt="" coords="209,111,367,140"/>
+<area shape="rect" id="node44" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="203,164,373,193"/>
+<area shape="rect" id="node7" href="$classSaveDialog.html#a9049dd04627aa4aa6fe5030a809f22e8" title="SaveDialog::setApp" alt="" coords="449,5,588,35"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="456,59,581,88"/>
+<area shape="rect" id="node13" href="$classSaveDialog.html#a399af520b0491a7322292ab331405f38" title="SaveDialog::addUnsavedDoc" alt="" coords="421,163,616,192"/>
+<area shape="rect" id="node15" href="$classSaveDialog.html#a9dc946e03175251661053dfb68172035" title="SaveDialog::isEmpty" alt="" coords="687,124,831,153"/>
+<area shape="rect" id="node18" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="431,216,607,245"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="669,59,848,88"/>
+<area shape="rect" id="node20" href="$classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347" title="QucsApp::fillComboBox" alt="" coords="677,203,840,232"/>
+<area shape="rect" id="node24" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="664,256,853,285"/>
+<area shape="rect" id="node22" href="$classCategory.html#a960a0e59d07a74118852ba06a63b7806" title="Category::getCategories" alt="" coords="903,203,1065,232"/>
+<area shape="rect" id="node26" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="909,256,1059,285"/>
+<area shape="rect" id="node28" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="920,309,1048,339"/>
+<area shape="rect" id="node30" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1595,256,1661,285"/>
+<area shape="rect" id="node32" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1591,363,1665,392"/>
+<area shape="rect" id="node34" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="1115,309,1301,339"/>
+<area shape="rect" id="node38" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="1351,309,1537,339"/>
+<area shape="rect" id="node42" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1588,309,1668,339"/>
+</map>

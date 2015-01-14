@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="332,5,476,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="301,59,507,88"/>
+<area shape="rect" id="node13" href="$classComponentDialog.html#ac42ec294e5b01f63b1cc76ba7bb8436e" title="ComponentDialog::updateCompPropsList" alt="" coords="273,112,535,141"/>
+<area shape="rect" id="node7" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="633,5,777,35"/>
+<area shape="rect" id="node9" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="613,59,797,88"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="875,59,1043,88"/>
+<area shape="rect" id="node15" href="$classComponentDialog.html#a1f494817f769449da0f592fc41abb4be" title="ComponentDialog::slotSelectProperty" alt="" coords="585,112,825,141"/>
+</map>

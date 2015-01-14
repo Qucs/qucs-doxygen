@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="745,219,871,248"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae" title="QucsApp::slotViewOctaveDock" alt="" coords="207,113,412,143"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="220,348,399,377"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="980,245,1159,275"/>
+<area shape="rect" id="node9" href="$classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07" title="OctaveWindow::startOctave" alt="" coords="463,112,649,141"/>
+<area shape="rect" id="node11" href="$classOctaveWindow.html#ad7b2fcd2b553afee52d026b12c8c7ff2" title="OctaveWindow::slotDisplayErr" alt="" coords="708,5,908,35"/>
+<area shape="rect" id="node13" href="$classOctaveWindow.html#a0813c5c0702e72b1850a2e452140aebc" title="OctaveWindow::slotDisplayMsg" alt="" coords="704,59,912,88"/>
+<area shape="rect" id="node15" href="$classOctaveWindow.html#a124bba60516efba575705db3e7616471" title="OctaveWindow::slotOctaveEnded" alt="" coords="699,112,917,141"/>
+<area shape="rect" id="node17" href="$classOctaveWindow.html#a2696584a025ce5e71f32e88006d9da1f" title="OctaveWindow::adjustDirectory" alt="" coords="705,165,911,195"/>
+<area shape="rect" id="node19" href="$classOctaveWindow.html#a07709f3f94100f11625d52580b64c8c5" title="OctaveWindow::sendCommand" alt="" coords="967,165,1172,195"/>
+<area shape="rect" id="node23" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="492,217,620,247"/>
+<area shape="rect" id="node26" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="488,428,624,457"/>
+<area shape="rect" id="node28" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="501,481,611,511"/>
+<area shape="rect" id="node30" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="469,535,643,564"/>
+<area shape="rect" id="node33" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="475,271,637,300"/>
+<area shape="rect" id="node35" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="461,375,651,404"/>
+<area shape="rect" id="node37" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="733,375,883,404"/>
+<area shape="rect" id="node39" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="744,428,872,457"/>
+<area shape="rect" id="node41" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1467,481,1533,511"/>
+<area shape="rect" id="node43" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1463,375,1537,404"/>
+<area shape="rect" id="node45" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="976,428,1163,457"/>
+<area shape="rect" id="node49" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="1223,428,1409,457"/>
+<area shape="rect" id="node53" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1460,428,1540,457"/>
+</map>

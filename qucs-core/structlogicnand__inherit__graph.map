@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classdigital.html" title="{digital\n|# g\l# Vout\l# Veq\l# Tdelay\l# i\l# delay\l|+ digital()\l+ ~digital()\l+ initSP()\l+ calcSP()\l+ initDC()\l+ calcDC()\l+ initAC()\l+ calcAC()\l+ initTR()\l+ calcTR()\l+ calcOperatingPoints()\l# calcOutput()\l# calcDerivatives()\l# getVin()\l# calcTransfer()\l# calcTransferX()\l# calcDerivative()\l# calcDerivativeX()\l&#45; initDigital()\l&#45; freeDigital()\l}" alt="" coords="84,1344,241,1845"/>
+<area shape="rect" id="node4" href="$classqucs_1_1circuit.html" title="base class for qucs circuit elements." alt="" coords="57,811,268,1295"/>
+<area shape="rect" id="node6" href="$classqucs_1_1object.html" title="generic object class." alt="" coords="5,443,155,719"/>
+<area shape="rect" id="node8" href="$classqucs_1_1integrator.html" title="{qucs::integrator\n|&#45; order\l&#45; state\l&#45; coefficients\l&#45; integrate_func\l&#45; conductor_func\l|+ integrator()\l+ integrator()\l+ ~integrator()\l+ setIntegration()\l+ setConductance()\l+ integrate()\l+ conductor()\l+ setOrder()\l+ getOrder()\l+ setMode()\l+ getMode()\l+ setCoefficients()\l+ getCoefficients()\l}" alt="" coords="179,400,315,763"/>
+<area shape="rect" id="node10" href="$classqucs_1_1states.html" title="template class for storing state variables." alt="" coords="155,6,339,351"/>
+</map>

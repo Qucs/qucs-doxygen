@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classMarker.html" title="The Marker class implements the marker object used for all the diagram." alt="" coords="272,1141,397,1573"/>
+<area shape="rect" id="node4" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="276,5,393,299"/>
+<area shape="rect" id="node6" href="$classDiagram.html" title="The Diagram class is a superclass for diagrams." alt="" coords="5,400,248,1075"/>
+<area shape="rect" id="node11" href="$classGraph.html" title="{Graph\n|+ lastLoaded\l+ yAxisNo\l+ cPointsX\l+ cPointsY\l+ ScrPoints\l+ countY\l+ Var\l+ Color\l+ Thick\l+ Style\l+ Markers\l+ Precision\l+ numMode\l|+ Graph()\l+ ~Graph()\l+ paint()\l+ paintLines()\l+ save()\l+ load()\l+ getSelected()\l+ sameNewOne()\l}" alt="" coords="272,530,397,945"/>
+<area shape="rect" id="node9" href="$structAxis.html" title="{Axis\n|+ min\l+ max\l+ low\l+ up\l+ log\l+ Label\l+ numGraphs\l+ GridOn\l+ autoScale\l+ limit_min\l+ limit_max\l+ step\l|}" alt="" coords="76,14,177,290"/>
+</map>

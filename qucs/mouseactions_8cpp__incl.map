@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$qucs_8h.html" title="qucs.h" alt="" coords="139,83,201,112"/>
+<area shape="rect" id="node13" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="510,83,571,112"/>
+<area shape="rect" id="node29" href="$component_8h.html" title="components/component.h" alt="" coords="1863,237,2034,267"/>
+<area shape="rect" id="node34" href="$node_8h.html" title="node.h" alt="" coords="1719,160,1781,189"/>
+<area shape="rect" id="node47" href="$schematic_8h.html" title="schematic.h" alt="" coords="1043,83,1137,112"/>
+<area shape="rect" id="node69" href="$mouseactions_8h.html" title="mouseactions.h" alt="" coords="2058,237,2173,267"/>
+<area shape="rect" id="node73" href="$module_8h.html" title="module.h" alt="" coords="2333,83,2407,112"/>
+<area shape="rect" id="node80" href="$spicedialog_8h.html" title="components/spicedialog.h" alt="" coords="2482,83,2655,112"/>
+<area shape="rect" id="node82" href="$spicefile_8h.html" title="components/spicefile.h" alt="" coords="2117,160,2271,189"/>
+<area shape="rect" id="node85" href="$optimizedialog_8h.html" title="components/optimizedialog.h" alt="" coords="2679,83,2869,112"/>
+<area shape="rect" id="node87" href="$componentdialog_8h.html" title="components/componentdialog.h" alt="" coords="2295,160,2501,189"/>
+<area shape="rect" id="node90" href="$vacomponent_8h.html" title="Definition of the vacomponent class." alt="" coords="1855,160,2042,189"/>
+<area shape="rect" id="node93" href="$diagramdialog_8h.html" title="diagrams/diagramdialog.h" alt="" coords="1797,83,1967,112"/>
+<area shape="rect" id="node98" href="$markerdialog_8h.html" title="diagrams/markerdialog.h" alt="" coords="2893,83,3055,112"/>
+<area shape="rect" id="node100" href="$tabdiagram_8h.html" title="diagrams/tabdiagram.h" alt="" coords="1490,160,1645,189"/>
+<area shape="rect" id="node103" href="$timingdiagram_8h.html" title="diagrams/timingdiagram.h" alt="" coords="1482,83,1653,112"/>
+<area shape="rect" id="node106" href="$labeldialog_8h.html" title="dialogs/labeldialog.h" alt="" coords="3079,83,3218,112"/>
+<area shape="rect" id="node23" href="$wire_8h.html" title="wire.h" alt="" coords="805,160,861,189"/>
+<area shape="rect" id="node38" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1230,237,1366,267"/>
+<area shape="rect" id="node25" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="975,315,1074,344"/>
+<area shape="rect" id="node27" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="1567,315,1645,344"/>
+<area shape="rect" id="node51" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="647,160,730,189"/>
+<area shape="rect" id="node56" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="1022,237,1155,267"/>
+</map>

@@ -1,0 +1,34 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="268,370,431,400"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="275,554,424,584"/>
+<area shape="rect" id="node11" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="240,424,459,453"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="799,320,953,349"/>
+<area shape="rect" id="node24" href="$classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc" title="Schematic::insertNodeLabel" alt="" coords="256,501,443,530"/>
+<area shape="rect" id="node38" href="$classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69" title="Schematic::insertWire" alt="" coords="801,217,951,246"/>
+<area shape="rect" id="node63" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="268,685,431,714"/>
+<area shape="rect" id="node5" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1017,452,1188,481"/>
+<area shape="rect" id="node7" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1255,294,1380,324"/>
+<area shape="rect" id="node13" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="511,320,740,349"/>
+<area shape="rect" id="node22" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="792,473,960,502"/>
+<area shape="rect" id="node15" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="799,70,953,100"/>
+<area shape="rect" id="node17" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1247,28,1388,57"/>
+<area shape="rect" id="node26" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="533,525,717,554"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a7a006e2ddfb12a4eff8e54c10acdda19" title="Schematic::selectedWire" alt="" coords="541,632,709,661"/>
+<area shape="rect" id="node32" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="571,578,680,608"/>
+<area shape="rect" id="node35" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="805,578,947,608"/>
+<area shape="rect" id="node40" href="$classSchematic.html#a8f5c4764dbb9f7928cb0eb9846b14fc0" title="Schematic::insertWireNode1" alt="" coords="1008,28,1197,57"/>
+<area shape="rect" id="node45" href="$classSchematic.html#aa5f7416b85289244d7145ae2b5fd7d5b" title="Schematic::connectHWires1" alt="" coords="1008,188,1197,217"/>
+<area shape="rect" id="node48" href="$classSchematic.html#a2cd63b87ec94658c613d40f865f1a674" title="Schematic::connectVWires1" alt="" coords="1009,241,1196,270"/>
+<area shape="rect" id="node51" href="$classSchematic.html#ad6b1cfa660d9307869980f2c337c2aec" title="Schematic::insertWireNode2" alt="" coords="1008,81,1197,110"/>
+<area shape="rect" id="node55" href="$classSchematic.html#a7aff95835d56030e8c972898bd8ca6c1" title="Schematic::connectHWires2" alt="" coords="1008,294,1197,324"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a230c5d36b53026e427fdd24ab283f886" title="Schematic::connectVWires2" alt="" coords="1009,348,1196,377"/>
+<area shape="rect" id="node61" href="$classSchematic.html#a7d6f050afa6188d83b9023693f6828c6" title="Schematic::oneLabel" alt="" coords="1031,134,1175,164"/>
+<area shape="rect" id="node65" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="507,765,744,794"/>
+<area shape="rect" id="node69" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="529,685,721,714"/>
+<area shape="rect" id="node67" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="824,792,928,821"/>
+<area shape="rect" id="node71" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="813,738,939,768"/>
+<area shape="rect" id="node73" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="833,632,919,661"/>
+<area shape="rect" id="node75" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="823,685,929,714"/>
+<area shape="rect" id="node77" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1056,685,1149,714"/>
+<area shape="rect" id="node79" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1268,685,1367,714"/>
+</map>
