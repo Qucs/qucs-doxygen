@@ -9,14 +9,14 @@ The documentation is automatically generated form the `master` branch.
 See: https://github.com/Qucs/qucs
 
 
-Qucs-GUI documetation
+Documentation for Qucs-GUI
 ---------------------
 
 - http://qucs.github.io/qucs-doxygen/qucs/index.html
 
 
-Qucs-core documentation
------------------------
+Documentation for Qucs-Core
+---------------------------
 
 - http://qucs.github.io/qucs-doxygen/qucs-core/index.html
 
