@@ -1,0 +1,44 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="101,83,219,112"/>
+<area shape="rect" id="node7" href="$real_8h.html" title="real.h" alt="" coords="2547,237,2600,267"/>
+<area shape="rect" id="node11" href="$complex_8h.html" title="complex.h" alt="" coords="2811,160,2893,189"/>
+<area shape="rect" id="node16" href="$matrix_8h.html" title="Dense matrix class header file." alt="" coords="3209,83,3279,112"/>
+<area shape="rect" id="node18" href="$object_8h.html" title="object.h" alt="" coords="2917,160,2984,189"/>
+<area shape="rect" id="node25" href="$vector_8h.html" title="vector.h" alt="" coords="2975,83,3044,112"/>
+<area shape="rect" id="node36" href="$fourier_8h.html" title="fourier.h" alt="" coords="3303,83,3372,112"/>
+<area shape="rect" id="node38" href="$module_8h.html" title="module.h" alt="" coords="3396,83,3471,112"/>
+<area shape="rect" id="node44" href="$components_8h.html" title="components.h" alt="" coords="1681,83,1785,112"/>
+<area shape="rect" id="node105" href="$tridiag_8h.html" title="tridiag.h" alt="" coords="3068,83,3135,112"/>
+<area shape="rect" id="node107" href="$tvector_8h.html" title="tvector.h" alt="" coords="3160,160,3232,189"/>
+<area shape="rect" id="node22" href="$property_8h.html" title="property.h" alt="" coords="2808,237,2888,267"/>
+<area shape="rect" id="node29" href="$consts_8h.html" title="Global math constants header file." alt="" coords="2912,237,2984,267"/>
+<area shape="rect" id="node32" href="$precision_8h.html" title="precision.h" alt="" coords="3109,237,3195,267"/>
+<area shape="rect" id="node42" href="$hash_8h.html" title="hash.h" alt="" coords="3440,160,3501,189"/>
+<area shape="rect" id="node48" href="$node_8h.html" title="node.h" alt="" coords="699,160,760,189"/>
+<area shape="rect" id="node50" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="2624,237,2691,267"/>
+<area shape="rect" id="node53" href="$component__id_8h.html" title="component_id.h" alt="" coords="784,160,899,189"/>
+<area shape="rect" id="node55" href="$ground_8h.html" title="ground.h" alt="" coords="923,160,995,189"/>
+<area shape="rect" id="node57" href="$open_8h.html" title="open.h" alt="" coords="1019,160,1080,189"/>
+<area shape="rect" id="node59" href="$short_8h.html" title="short.h" alt="" coords="1104,160,1165,189"/>
+<area shape="rect" id="node61" href="$tee_8h.html" title="tee.h" alt="" coords="1189,160,1240,189"/>
+<area shape="rect" id="node63" href="$cross_8h.html" title="cross.h" alt="" coords="1264,160,1328,189"/>
+<area shape="rect" id="node65" href="$itrafo_8h.html" title="itrafo.h" alt="" coords="1352,160,1413,189"/>
+<area shape="rect" id="node67" href="$resistor_8h.html" title="resistor.h" alt="" coords="1437,160,1512,189"/>
+<area shape="rect" id="node69" href="$capacitor_8h.html" title="capacitor.h" alt="" coords="1536,160,1621,189"/>
+<area shape="rect" id="node71" href="$inductor_8h.html" title="inductor.h" alt="" coords="1645,160,1723,189"/>
+<area shape="rect" id="node73" href="$mutual_8h.html" title="mutual.h" alt="" coords="1747,160,1819,189"/>
+<area shape="rect" id="node75" href="$mutual2_8h.html" title="mutual2.h" alt="" coords="1843,160,1920,189"/>
+<area shape="rect" id="node77" href="$mutualx_8h.html" title="mutualx.h" alt="" coords="1944,160,2021,189"/>
+<area shape="rect" id="node79" href="$vccs_8h.html" title="vccs.h" alt="" coords="2045,160,2107,189"/>
+<area shape="rect" id="node81" href="$cccs_8h.html" title="cccs.h" alt="" coords="2131,160,2192,189"/>
+<area shape="rect" id="node83" href="$ccvs_8h.html" title="ccvs.h" alt="" coords="2216,160,2277,189"/>
+<area shape="rect" id="node85" href="$vcvs_8h.html" title="vcvs.h" alt="" coords="2301,160,2363,189"/>
+<area shape="rect" id="node87" href="$dcblock_8h.html" title="dcblock.h" alt="" coords="2387,160,2464,189"/>
+<area shape="rect" id="node89" href="$dcfeed_8h.html" title="dcfeed.h" alt="" coords="2488,160,2560,189"/>
+<area shape="rect" id="node91" href="$biastee_8h.html" title="biastee.h" alt="" coords="2584,160,2659,189"/>
+<area shape="rect" id="node93" href="$pac_8h.html" title="pac.h" alt="" coords="2683,160,2736,189"/>
+<area shape="rect" id="node95" href="$attenuator_8h.html" title="attenuator.h" alt="" coords="293,160,384,189"/>
+<area shape="rect" id="node97" href="$circulator_8h.html" title="circulator.h" alt="" coords="408,160,493,189"/>
+<area shape="rect" id="node99" href="$isolator_8h.html" title="isolator.h" alt="" coords="517,160,592,189"/>
+<area shape="rect" id="node101" href="$trafo_8h.html" title="trafo.h" alt="" coords="616,160,675,189"/>
+</map>

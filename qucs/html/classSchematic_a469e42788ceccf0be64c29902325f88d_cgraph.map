@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#ac8d34bec8334aa2e1f2d75a955559042" title="Schematic::adjustPortNumbers" alt="" coords="184,192,387,221"/>
+<area shape="rect" id="node27" href="$classSchematic.html#ab3e68c1c5a09ab9880574f141b15e629" title="Schematic::saveDocument" alt="" coords="196,432,375,461"/>
+<area shape="rect" id="node51" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="204,589,367,619"/>
+<area shape="rect" id="node69" href="$classQucsApp.html#ae223813596b54c221cd292adb3b81c0f" title="QucsApp::updateSchNameHash" alt="" coords="180,696,391,725"/>
+<area shape="rect" id="node73" href="$classQucsApp.html#ad5e4abc792d281a23c167bedbca47a0f" title="QucsApp::updateSpiceNameHash" alt="" coords="175,643,396,672"/>
+<area shape="rect" id="node5" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="492,112,636,141"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="489,165,639,195"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="500,219,628,248"/>
+<area shape="rect" id="node7" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="748,112,887,141"/>
+<area shape="rect" id="node9" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="731,165,904,195"/>
+<area shape="rect" id="node13" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="751,5,884,35"/>
+<area shape="rect" id="node15" href="$classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="756,59,879,88"/>
+<area shape="rect" id="node17" href="$classPainting.html#ae250152f541f087fbe2f12aa4e17f424" title="Painting::Bounding" alt="" coords="752,272,883,301"/>
+<area shape="rect" id="node11" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="971,165,1115,195"/>
+<area shape="rect" id="node23" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="755,219,880,248"/>
+<area shape="rect" id="node25" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="953,219,1132,248"/>
+<area shape="rect" id="node29" href="$misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f" title="convert2ASCII" alt="" coords="511,272,617,301"/>
+<area shape="rect" id="node31" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="765,564,869,593"/>
+<area shape="rect" id="node33" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="496,379,632,408"/>
+<area shape="rect" id="node35" href="$classSchematic.html#a6c9218e79b816c77becf6c6d6a381105" title="Schematic::saveSymbolCpp" alt="" coords="471,325,657,355"/>
+<area shape="rect" id="node42" href="$classSchematic.html#a8603353c813f36569123b41cb361ed5d" title="Schematic::saveSymbolJSON" alt="" coords="464,432,664,461"/>
+<area shape="rect" id="node49" href="$classQucsDoc.html#af21d2601d30cbc54ddddf3224768a777" title="QucsDoc::fileBase" alt="" coords="499,536,629,565"/>
+<area shape="rect" id="node38" href="$classPainting.html#a3f382c12f282641131cb14905e37de72" title="Painting::saveCpp" alt="" coords="753,325,881,355"/>
+<area shape="rect" id="node40" href="$classPortSymbol.html#a40c51fbd768339b0c88d293478e9ccb4" title="PortSymbol::saveCpp" alt="" coords="743,379,892,408"/>
+<area shape="rect" id="node45" href="$classPainting.html#a5640b211da55745bf59ae9efef7851f1" title="Painting::saveJSON" alt="" coords="747,432,888,461"/>
+<area shape="rect" id="node47" href="$classPortSymbol.html#a8906f04999d8da72d87332b5c1865111" title="PortSymbol::saveJSON" alt="" coords="736,485,899,515"/>
+<area shape="rect" id="node53" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="445,589,683,619"/>
+<area shape="rect" id="node56" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="468,643,660,672"/>
+<area shape="rect" id="node58" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="755,617,880,647"/>
+<area shape="rect" id="node60" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="775,671,860,700"/>
+<area shape="rect" id="node62" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="764,724,871,753"/>
+<area shape="rect" id="node64" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="996,724,1089,753"/>
+<area shape="rect" id="node66" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1181,724,1280,753"/>
+<area shape="rect" id="node71" href="$classQucsApp.html#a55673f055494a3a780b94bc77810eeb7" title="QucsApp::updatePathList" alt="" coords="479,696,649,725"/>
+</map>

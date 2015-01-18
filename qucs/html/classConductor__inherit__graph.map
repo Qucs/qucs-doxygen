@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classNode.html" title="{Node\n|+ Connections\l+ Name\l+ DType\l+ State\l|+ Node()\l+ ~Node()\l+ paint()\l+ getSelected()\l+ setName()\l}" alt="" coords="5,523,115,730"/>
+<area shape="rect" id="node7" href="$classWire.html" title="{Wire\n|+ Port1\l+ Port2\l|+ Wire()\l+ ~Wire()\l+ paint()\l+ paintScheme()\l+ setCenter()\l+ getCenter()\l+ getSelected()\l+ setName()\l+ rotate()\l+ save()\l+ load()\l+ isHorizontal()\l}" alt="" coords="139,480,256,773"/>
+<area shape="rect" id="node2" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="69,5,187,299"/>
+</map>

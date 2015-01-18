@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="268,5,460,35"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#a953986ba4405405601994749f62f91ad" title="MouseActions::MReleaseZoomIn" alt="" coords="256,59,472,88"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="769,59,951,88"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a5a9bd92ab00320afbc1dd63cea4d1d87" title="Schematic::zoom" alt="" coords="559,57,681,87"/>
+<area shape="rect" id="node11" href="$classMouseActions.html#aa28dbd177f40faa748c8ba037d4a6903" title="MouseActions::MMoveZoomIn Paints symbol beside the mouse to show the &quot;Zoom in&quot; modus." alt="" coords="520,111,720,140"/>
+</map>

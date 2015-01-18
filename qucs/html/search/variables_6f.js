@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['octave',['octave',['../classQucsApp.html#a2442034cd3aa8a3fef9f1abf70633a0b',1,'QucsApp']]],
+  ['octavebindir',['OctaveBinDir',['../structtQucsSettings.html#a53381ff1fe648b672777625915301b8c',1,'tQucsSettings']]],
+  ['octavedir',['OctaveDir',['../structtQucsSettings.html#a964d86732b9b8676a47e275fbd61bead',1,'tQucsSettings']]],
+  ['octaveedit',['octaveEdit',['../classQucsSettingsDialog.html#a756b5c701f7fb636ac27c353e6dbca47',1,'QucsSettingsDialog']]],
+  ['octdock',['octDock',['../classQucsApp.html#aa6937af70df595645d0c726e74153d9e',1,'QucsApp']]],
+  ['octprocess',['octProcess',['../classOctaveWindow.html#aa01e0ceec42056489442073e5840ba2f',1,'OctaveWindow']]],
+  ['ohm1label',['Ohm1Label',['../classMatchDialog.html#a2a5a7d81fa7e4d9e5968ba14b8be8f1c',1,'MatchDialog']]],
+  ['ohm2label',['Ohm2Label',['../classMatchDialog.html#ad09e6d3f841cb4422aacc63f558fd43a',1,'MatchDialog']]],
+  ['ongrid',['onGrid',['../classQucsApp.html#aed590d4d70925a7a2dec3f8b22a0ca75',1,'QucsApp']]],
+  ['openproj',['OpenProj',['../classNewProjDialog.html#a8097afdbcded6d76b5f097464edfaf8e',1,'NewProjDialog']]],
+  ['output',['output',['../classOctaveWindow.html#aab052288334badb13eb0cafbace2d573',1,'OctaveWindow']]],
+  ['outputdata',['OutputData',['../classImportDialog.html#ae2a54c9d79b9f3375e8fc0a127f7f4e8',1,'ImportDialog']]],
+  ['outputedit',['OutputEdit',['../classImportDialog.html#a8554bb437b90dc4e571d935b26739a62',1,'ImportDialog::OutputEdit()'],['../classVASettingsDialog.html#a206adb95433225d670184490884d5fc0',1,'VASettingsDialog::OutputEdit()']]],
+  ['outputlabel',['OutputLabel',['../classImportDialog.html#a1ab29495c0f20861c47389841e8c8e12',1,'ImportDialog']]],
+  ['outstream',['outstream',['../classSpiceFile.html#aac0599b5a3bea6c83577ec4c59460cda',1,'SpiceFile']]],
+  ['outtype',['OutType',['../classImportDialog.html#a50b75de73998bb1a845d2eec3529ef90',1,'ImportDialog']]],
+  ['over',['over',['../structText.html#aa64c28870d166b2348326a9c5d2a5db5',1,'Text']]]
+];

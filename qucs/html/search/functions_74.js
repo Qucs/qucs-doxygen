@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['tabdiagram',['TabDiagram',['../classTabDiagram.html#a60e9309369262e7a1da93fdff519756a',1,'TabDiagram']]],
+  ['testfile',['testFile',['../classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6',1,'Schematic']]],
+  ['text',['Text',['../structText.html#a35d00cb96d2cbc9ca373c31f32e7da4d',1,'Text']]],
+  ['textcorr',['textCorr',['../classSchematic.html#afe0a0635c73654e10c52c87786db89fe',1,'Schematic']]],
+  ['textdoc',['TextDoc',['../classTextDoc.html#ab5f105436b7e8e58f34d5c4dc960395d',1,'TextDoc']]],
+  ['textfromvalue',['textFromValue',['../classmySpinBox.html#ada8b5c2d2ae7af482547e843f88eba43',1,'mySpinBox']]],
+  ['textsize',['textSize',['../classComponent.html#a439c7a506532e1005a785d33916510c0',1,'Component']]],
+  ['tff_5fsr',['tff_SR',['../classtff__SR.html#a7e04884012590b3dbb35938aa58911d0',1,'tff_SR']]],
+  ['throughallcomps',['throughAllComps',['../classSchematic.html#a7953e0fa01e98342403b18f3f6452803',1,'Schematic']]],
+  ['throughallnodes',['throughAllNodes',['../classSchematic.html#a9bb6b1205048af692676100e2752e0ba',1,'Schematic']]],
+  ['thyristor',['Thyristor',['../classThyristor.html#a92c490baba278477b5428869aac2462d',1,'Thyristor']]],
+  ['timingdiagram',['TimingDiagram',['../classTimingDiagram.html#aa240a4b0f66dcbdc0c02f834ce74ae4c',1,'TimingDiagram']]],
+  ['tline',['TLine',['../classTLine.html#a3847661a3edfc05bbcb3e2ef04569fac',1,'TLine']]],
+  ['tline_5f4port',['TLine_4Port',['../classTLine__4Port.html#a860efb65f982b3657b89448c9aba0b9a',1,'TLine_4Port']]],
+  ['tobrushstring',['toBrushString',['../classPainting.html#aad9dd5688550b6febc6f3cedcef87d33',1,'Painting']]],
+  ['topenstring',['toPenString',['../classPainting.html#aa4f5310d972940be312ecbc9cff1c9c2',1,'Painting']]],
+  ['tr_5fsim',['TR_Sim',['../classTR__Sim.html#a192d098404a2ab07df63f4b4232b9a54',1,'TR_Sim']]],
+  ['transformer',['Transformer',['../classTransformer.html#a7d56456dadf3aa0bc60f59e7e7eda7a2',1,'Transformer']]],
+  ['triac',['Triac',['../classTriac.html#ac49a5db48f9d9228bf7dcb5f0774317c',1,'Triac']]],
+  ['truthdiagram',['TruthDiagram',['../classTruthDiagram.html#a179d28721f7a0b686516ff1075938d9e',1,'TruthDiagram']]],
+  ['tunneldiode',['TunnelDiode',['../classTunnelDiode.html#a07fec1591aebd244f1cf4b2f63098790',1,'TunnelDiode']]],
+  ['twistedpair',['TwistedPair',['../classTwistedPair.html#a980766c97a9011825d2550767c8ddb3d',1,'TwistedPair']]]
+];

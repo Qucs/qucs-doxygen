@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classDiagram.html#aaa41e14e247b7403a3e40d287e6b6bba" title="Calculations for logarithmical Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="852,23,1033,53"/>
+<area shape="rect" id="node5" href="$classDiagram.html#a662e2496d527f79b9f29e19c58a783f3" title="Calculations for Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="861,130,1024,159"/>
+<area shape="rect" id="node7" href="$classRect3DDiagram.html#aaed5eab0dc83ed606000c3ba7f7f0185" title="Rect3DDiagram::calcCoefficients" alt="" coords="263,182,481,211"/>
+<area shape="rect" id="node9" href="$classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="565,183,747,213"/>
+<area shape="rect" id="node17" href="$classRect3DDiagram.html#a8d2b1114e4758944dd3f36b2d9f868e4" title="Rect3DDiagram::createAxis" alt="" coords="279,78,465,107"/>
+<area shape="rect" id="node25" href="$classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="253,290,491,319"/>
+<area shape="rect" id="node42" href="$classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156" title="Rect3DDiagram::removeHiddenCross" alt="" coords="251,370,493,399"/>
+<area shape="rect" id="node11" href="$classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="852,183,1033,213"/>
+<area shape="rect" id="node13" href="$classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="852,237,1033,266"/>
+<area shape="rect" id="node15" href="$classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081" title="Rect3DDiagram::calcZ_2D" alt="" coords="853,290,1032,319"/>
+<area shape="rect" id="node19" href="$classRect3DDiagram.html#aae2cbb34de2aa99e5440bcb85b1f12d0" title="Rect3DDiagram::calcAxis" alt="" coords="569,78,743,107"/>
+<area shape="rect" id="node22" href="$misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3" title="StringNiceNum" alt="" coords="888,77,997,106"/>
+<area shape="rect" id="node27" href="$classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="543,237,769,266"/>
+<area shape="rect" id="node32" href="$classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7" title="Rect3DDiagram::comparePointZ" alt="" coords="551,290,761,319"/>
+<area shape="rect" id="node34" href="$classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf" title="Rect3DDiagram::calcLine" alt="" coords="571,397,741,426"/>
+<area shape="rect" id="node40" href="$classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f" title="Rect3DDiagram::comparePoint3D" alt="" coords="545,343,767,373"/>
+<area shape="rect" id="node36" href="$classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a" title="Rect3DDiagram::isHidden" alt="" coords="856,370,1029,399"/>
+<area shape="rect" id="node38" href="$classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526" title="Rect3DDiagram::enlargeMemoryBlock" alt="" coords="820,423,1065,453"/>
+</map>

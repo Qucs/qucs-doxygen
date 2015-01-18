@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSpiceFile.html#ad97ed53982f088887195c1791766d373" title="SpiceFile::SpiceFile" alt="" coords="192,91,331,120"/>
+<area shape="rect" id="node5" href="$classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911" title="MultiViewComponent::recreate" alt="" coords="161,144,361,173"/>
+<area shape="rect" id="node7" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="727,19,889,48"/>
+<area shape="rect" id="node13" href="$classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26" title="MultiViewComponent::createSymbol" alt="" coords="411,64,645,93"/>
+<area shape="rect" id="node15" href="$classComponent.html#a5582128782a575a1ded9ac158e4688da" title="Component::mirrorY" alt="" coords="459,117,597,147"/>
+<area shape="rect" id="node17" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="459,171,597,200"/>
+<area shape="rect" id="node19" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="463,224,593,253"/>
+<area shape="rect" id="node21" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="419,277,637,307"/>
+<area shape="rect" id="node9" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1175,79,1345,108"/>
+<area shape="rect" id="node11" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1396,79,1521,108"/>
+<area shape="rect" id="node23" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="693,171,923,200"/>
+<area shape="rect" id="node32" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="724,277,892,307"/>
+<area shape="rect" id="node25" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="971,171,1125,200"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="971,111,1125,140"/>
+<area shape="rect" id="node27" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1189,171,1331,200"/>
+</map>

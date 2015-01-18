@@ -1,0 +1,123 @@
+\form#0:\[ S=\begin{pmatrix} \dfrac{Z_1-Z_0}{Z_1+Z_0} & 0 \\ \dfrac{4\cdot Z_0\cdot\sqrt{Z_1\cdot Z_2}\cdot G}{(Z_1+Z_0)\cdot(Z_2+Z_0)} & \dfrac{Z_2-Z_0}{Z_2+Z_0} \end{pmatrix} \]
+\form#1:$Z_1$
+\form#2:$Z_2$
+\form#3:$G$
+\form#4:\[ \begin{pmatrix} \dfrac{1}{Z_1} & 0 \\ \dfrac{-2}{\sqrt{Z_1\cdot Z_2}} & \dfrac{1}{Z_2} \end{pmatrix} \]
+\form#5:$S$
+\form#6:$C$
+\form#7:\[ S=\begin{pmatrix} \frac{1}{1+4j\pi fCZ_0} & \frac{4j\pi fCZ_0}{1+4j\pi fCZ_0} \\ \frac{4j\pi fCZ_0}{1+4j\pi fCZ_0} & \frac{1}{1+4j\pi fCZ_0} \end{pmatrix} \]
+\form#8:$Y$
+\form#9:\[ Y=\begin{pmatrix} 2j\pi f C & -2j\pi f C \\ -2j\pi f C & 2j\pi f C \end{pmatrix} \]
+\form#10:\[ C = 0.25 \tanh \frac{4\delta}{d} \]
+\form#11:$\delta$
+\form#12:$\mu_r=1$
+\form#13:\[ C = \frac{\mu_r}{4} \tanh \frac{4\delta}{d} \]
+\form#14:$l$
+\form#15:\[ L = 2\times10^{-4} l \left[ \ln\left\{ \frac{2l}{d} + \sqrt{1 + \left(\frac{2l}{d}\right)^2} \right\} + \frac{d}{2l} - \sqrt{1+\left(\frac{d}{2l}\right)^2} + C \right] \]
+\form#16:\[ L = \frac{\mu_0}{2\pi} l\left[ \ln\left\{ \frac{2l}{d} + \sqrt{1 + \left(\frac{2l}{d}\right)^2} \right\} + \frac{d}{2l} - \sqrt{1+\left(\frac{d}{2l}\right)^2} + \frac{\mu_r}{4} \right] \]
+\form#17:\[ L = \frac{\mu_0}{2\pi} l\left[ \ln\left\{ \frac{2l}{d} + \sqrt{1 + \left(\frac{2l}{d}\right)^2} \right\} + \frac{d}{2l} - \sqrt{1+\left(\frac{d}{2l}\right)^2} + C \right] \]
+\form#18:\[ L = 2\times10^{-4} l \left[ \ln \frac{4h}{d} + \ln \frac{l+\sqrt{l^2+d^2/4}}{l+\sqrt{l^2+4h^2}} + \sqrt{1+\frac{4h^2}{l^2}} - \sqrt{1+\frac{d^2}{4l^2}} - 2 \frac{h}{l} + \frac{d}{2l} \right] \]
+\form#19:\[ L = \frac{\mu_0}{2\pi} l \left[ \ln \frac{4h}{d} + \ln \frac{l+\sqrt{l^2+d^2/4}}{l+\sqrt{l^2+4h^2}} + \sqrt{1+\frac{4h^2}{l^2}} - \sqrt{1+\frac{d^2}{4l^2}} - 2 \frac{h}{l} + \frac{d}{2l} \right] \]
+\form#20:\[ k=\omega\sqrt{\mu\varepsilon}=\omega\sqrt{\mu_r \varepsilon_r \mu_0 \varepsilon_0} \]
+\form#21:$\omega=2\pi f$
+\form#22:$f$
+\form#23:$\varepsilon_r$
+\form#24:$c^2\mu_0\varepsilon_0=1$
+\form#25:\[ k=\frac{\omega}{c} std::sqrt{\mu_r \varepsilon_r} \]
+\form#26:$k_c$
+\form#27:\[ k_c = \sqrt{\left(\frac{m\pi}{a}\right)^2+\left(\frac{n\pi}{b}\right)^2} \]
+\form#28:$a$
+\form#29:$b$
+\form#30:$(n,m)\in\mathbb{N}^2$
+\form#31:\[ k_c = \sqrt{\left(\frac{\pi}{a}\right)^2} = \frac{\pi}{a} \]
+\form#32:\[ \beta = \sqrt{k^2 - k_c^2} \]
+\form#33:\[ \alpha_d = \frac{k^2 \tan \delta}{2\beta} \]
+\form#34:\[ \alpha_c=\frac{R_s}{a^3 b \beta k Z_0} \left( 2 b \pi^2 + a^3 k^2 \right) \]
+\form#35:\[ Z = \frac{k Z_0}{\beta} \]
+\form#36:$c_0$
+\form#37:$\mu_0=4\pi\times10^{-7}$
+\form#38:$\varepsilon_0$
+\form#39:$Z_0=\sqrt{\frac{\mu_0}{\varepsilon_0}}$
+\form#40:$h$
+\form#41:$h/(2\pi)$
+\form#42:$k_B$
+\form#43:$q_e$
+\form#44:$k_B/q_e$
+\form#45:$q_e/k_B$
+\form#46:$\pi/2$
+\form#47:$\pi/4$
+\form#48:$1/\pi$
+\form#49:$\sqrt{\pi}$
+\form#50:$e=\sum_{n=0}^\infty \frac{1}{n!}$
+\form#51:$\log_{10} (e)$
+\form#52:$\log_{2} (e)$
+\form#53:$\ln 2$
+\form#54:$\ln 10$
+\form#55:$\sqrt{2}$
+\form#56:$1/\sqrt{2}$
+\form#57:$z^d$
+\form#58:$d^z$
+\form#59:$z_1^{z_2}$
+\form#60:$(\Re\mathrm{e}\;z )^2+ (\Im\mathrm{m}\;z)^2=|z|^2$
+\form#61:$(-\pi;\pi]$
+\form#62:\[ \mathrm{signum}\;z= \mathrm{signum} (re^{i\theta}) = \begin{cases} 0 & \text{if } z=0 \\ e^{i\theta} & \text{else} \end{cases} \]
+\form#63:\[ \mathrm{sign}\;z= \mathrm{sign} (re^{i\theta}) = \begin{cases} 1 & \text{if } z=0 \\ e^{i\theta} & \text{else} \end{cases} \]
+\form#64:$\mathrm{sinc}\;z=\frac{\sin z}{z}$
+\form#65:$\sqrt{a^2+b^2}$
+\form#66:$10\log_{10} |z|^2=20\log_{10} |z|$
+\form#67:$x - n * y$
+\form#68:$x / y$
+\form#69:$(-1)^(u+v)$
+\form#70:$S'$
+\form#71:\[ S'=A^{-1}(S-\Gamma^+)(I-\Gamma S)^{-1}A^+ \]
+\form#72:$A$
+\form#73:$ \Gamma_i= r_i $
+\form#74:\[ A_i = \frac{(1-r_i^*)\sqrt{|1-r_ir_i^*|}}{|1-r_i|} \]
+\form#75:$x*$
+\form#76:$x$
+\form#77:$r_i$
+\form#78:$Z_i'$
+\form#79:$Z_i^*$
+\form#80:$Z_i$
+\form#81:\[ r_i = \frac{Z_i'-Z_i}{Z_i'-Z_i^*} \]
+\form#82:\[ Z=F^{-1} (I- S)^{-1} (SG + G^+) F \]
+\form#83:$x^+$
+\form#84:\begin{align*} F_i&=\frac{1}{2\sqrt{\Re\text{e}\; Z_i}} \\ G_i&=Z_i \end{align*}
+\form#85:$1/2$
+\form#86:$F$
+\form#87:$FXF^{-1}$
+\form#88:\[ S=F(Z-G^+)(Z+G)^{-1} F^{-1} \]
+\form#89:$Z$
+\form#90:$Y=Z^{-1}$
+\form#91:$(AB)^{-1}=B^{1}A^{1}$
+\form#92:\[ Y=F^{-1} (SG+G^+)^{-1} (I-S) F \]
+\form#93:$i=Yv$
+\form#94:\[ S=F(I-G^+Y)(I-GY)^{-1}F^{-1} \]
+\form#95:\begin{align*} A&=\frac{(Z_{01}^*+S_{11}Z_{01})(1-S_{22}) +S_{12}S_{21}Z_{01}}{\Delta} \\ B&=\frac{(Z_{01}^*+S_{11}Z_{01})(Z_{02}^*+S_{22}Z_{02}) -S_{12}S_{21}Z_{01}Z_{02}}{\Delta} \\ C&=\frac{(1-S_{11})(1-S_{22}) -S_{12}S_{21}}{\Delta} \\ D&=\frac{(1-S_{11})(Z_{02}^*+S_{22}Z_{02}) +S_{12}S_{21}Z_{02}}{\Delta} \end{align*}
+\form#96:\[ \Delta = 2 S_{21}\sqrt{\Re\text{e}\;Z_{01}\Re\text{e}\;Z_{02}} \]
+\form#97:\begin{align*} S_{11}&=\frac{AZ_{02}+B-CZ_{01}^*Z_{02}-DZ_{01}^*}{\Delta} \\ S_{12}&=\frac{2(AD-BC) (\Re\text{e}\;Z_{01}\Re\text{e}\;Z_{02})^{1/2}} {\Delta}\\ S_{21}&=\frac{2(\Re\text{e}\;Z_{01}\Re\text{e}\;Z_{02})^{1/2}}{\Delta}\\ S_{22}&=\frac{-AZ_{02}^*+B-CZ_{01}^*Z_{02}+DZ_{01}}{\Delta} \end{align*}
+\form#98:\[ \Delta =AZ_{02}+B+CZ_{01}Z_{02}-DZ_{01} \]
+\form#99:\begin{align*} h_{11}&=\frac{(Z_{01}^*+S_{11}Z_{01}) (Z_{02}^*+S_{22}Z_{02}) -S_{12}S_{21}Z_{01}Z_{02}}{\Delta}\\ h_{12}&=\frac{2S_{12} (\Re\text{e}\;Z_{01} \Re\text{e}\;Z_{02})^\frac{1}{2}} {\Delta} \\ h_{21}&=\frac{-2S_{21} (\Re\text{e}\;Z_{01} \Re\text{e}\;Z_{02})^\frac{1}{2}} {\Delta} \\ h_{22}&=\frac{(1-S_{11})(1-S_{22})-S_{12}S_{21}}{\Delta} \end{align*}
+\form#100:$\Delta$
+\form#101:\[ \Delta=(1-S_{11})(Z_{02}^*+S_{22}Z_{02})+S_{12}S_{21}Z_{02} \]
+\form#102:\begin{align*} S_{11}&=\frac{(h_{11}-Z_{01}^*)(1+h_{22}Z_{02})-h_{12}h_{21}Z_{02}} {\Delta}\\ S_{12}&=\frac{-2h_{12}(\Re\text{e}\;Z_{01}\Re\text{e}\;Z_{02})^\frac{1}{2}} {\Delta}\\ S_{21}&=\frac{-2h_{21}(\Re\text{e}\;Z_{01}\Re\text{e}\;Z_{02})^\frac{1}{2}} {\Delta}\\ S_{22}&=\frac{(h_{11}+Z_{01})(1-h_{22}Z_{02}^*)-h_{12}h_{21}Z_{02}^*} {\Delta} \end{align*}
+\form#103:\[ \Delta=(Z_{01}+h_{11})(1+h_{22}Z_{02})-h_{12}h_{21}Z_{02} \]
+\form#104:$Z=Y^{-1}$
+\form#105:\[ C_s=\frac{1}{4}(I+S)C_y(I+S)^+ \]
+\form#106:$C_s$
+\form#107:$C_y$
+\form#108:$I$
+\form#109:\[ C_y=(I+Y)C_s(I+Y)^+ \]
+\form#110:\[ C_s=\frac{1}{4}(I-S)C_z(I-S) \]
+\form#111:$C_z$
+\form#112:\[ C_z=(I+Z)C_s(I+Z)^+ \]
+\form#113:\[ C_y=YC_zY^+ \]
+\form#114:\[ C_z=ZC_yZ^+ \]
+\form#115:$x^2$
+\form#116:$x^4$
+\form#117:\[ \begin{cases} \exp r & \text{if } r < \text{M\_LIMEXP} \\ \exp (\text{M\_LIMEXP})\left[1.0 + (r - \text{M\_LIMEXP})\right] & \text{else} \end{cases} \]
+\form#118:\[ \mathrm{signum}\;d= = \begin{cases} O & \text{if } d=0 \\ 1 & \text{if } d>0 \\ -1 & \text{if } d<0 \end{cases} \]
+\form#119:\[ \mathrm{sign}\;d= = \begin{cases} 1 & \text{if } d\ge 0 \\ -1 & \text{if } d<0 \end{cases} \]
+\form#120:$\mathrm{sinc}\;d=\frac{\sin d}{d}$
+\form#121:\[ \operatorname{fix} d=\begin{cases} \operatorname{floor} d & \text{if } d > 0 \\ \operatorname{ceil} d & \text{else} \end{cases} \]
+\form#122:$r^2$

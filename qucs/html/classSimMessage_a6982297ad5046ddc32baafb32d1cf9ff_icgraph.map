@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="983,32,1161,61"/>
+<area shape="rect" id="node14" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="243,33,429,63"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1212,32,1367,61"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1416,5,1565,35"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1615,32,1759,61"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1808,32,1947,61"/>
+<area shape="rect" id="node16" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="479,33,649,63"/>
+<area shape="rect" id="node19" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="700,84,932,113"/>
+</map>

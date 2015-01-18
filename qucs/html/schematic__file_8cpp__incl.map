@@ -1,0 +1,35 @@
+<map id="G" name="G">
+<area shape="rect" id="node23" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="1091,83,1152,112"/>
+<area shape="rect" id="node41" href="$node_8h.html" title="node.h" alt="" coords="841,160,903,189"/>
+<area shape="rect" id="node52" href="$schematic_8h.html" title="schematic.h" alt="" coords="1364,83,1457,112"/>
+<area shape="rect" id="node73" href="$diagrams_8h.html" title="diagrams/diagrams.h" alt="" coords="2955,83,3096,112"/>
+<area shape="rect" id="node103" href="$paintings_8h.html" title="paintings/paintings.h" alt="" coords="2188,83,2329,112"/>
+<area shape="rect" id="node126" href="$spicefile_8h.html" title="components/spicefile.h" alt="" coords="760,83,915,112"/>
+<area shape="rect" id="node129" href="$vhdlfile_8h.html" title="components/vhdlfile.h" alt="" coords="224,83,373,112"/>
+<area shape="rect" id="node132" href="$verilogfile_8h.html" title="components/verilogfile.h" alt="" coords="397,83,560,112"/>
+<area shape="rect" id="node135" href="$libcomp_8h.html" title="components/libcomp.h" alt="" coords="584,83,736,112"/>
+<area shape="rect" id="node138" href="$module_8h.html" title="module.h" alt="" coords="3457,315,3532,344"/>
+<area shape="rect" id="node141" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="3809,83,3871,112"/>
+<area shape="rect" id="node31" href="$wire_8h.html" title="wire.h" alt="" coords="927,160,983,189"/>
+<area shape="rect" id="node45" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="2703,315,2839,344"/>
+<area shape="rect" id="node33" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1691,392,1789,421"/>
+<area shape="rect" id="node35" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="916,392,993,421"/>
+<area shape="rect" id="node37" href="$component_8h.html" title="components/component.h" alt="" coords="545,237,716,267"/>
+<area shape="rect" id="node56" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="1369,160,1452,189"/>
+<area shape="rect" id="node60" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="2081,237,2215,267"/>
+<area shape="rect" id="node76" href="$rectdiagram_8h.html" title="rectdiagram.h" alt="" coords="3100,237,3201,267"/>
+<area shape="rect" id="node79" href="$polardiagram_8h.html" title="polardiagram.h" alt="" coords="3225,237,3332,267"/>
+<area shape="rect" id="node82" href="$smithdiagram_8h.html" title="smithdiagram.h" alt="" coords="2407,237,2516,267"/>
+<area shape="rect" id="node85" href="$tabdiagram_8h.html" title="tabdiagram.h" alt="" coords="2540,237,2636,267"/>
+<area shape="rect" id="node88" href="$psdiagram_8h.html" title="psdiagram.h" alt="" coords="2660,237,2753,267"/>
+<area shape="rect" id="node91" href="$rect3ddiagram_8h.html" title="rect3ddiagram.h" alt="" coords="2777,237,2892,267"/>
+<area shape="rect" id="node94" href="$curvediagram_8h.html" title="curvediagram.h" alt="" coords="2916,237,3025,267"/>
+<area shape="rect" id="node97" href="$timingdiagram_8h.html" title="timingdiagram.h" alt="" coords="2695,160,2809,189"/>
+<area shape="rect" id="node100" href="$truthdiagram_8h.html" title="truthdiagram.h" alt="" coords="2833,160,2937,189"/>
+<area shape="rect" id="node106" href="$rectangle_8h.html" title="rectangle.h" alt="" coords="2441,160,2527,189"/>
+<area shape="rect" id="node109" href="$ellipse_8h.html" title="ellipse.h" alt="" coords="2551,160,2620,189"/>
+<area shape="rect" id="node112" href="$arrow_8h.html" title="arrow.h" alt="" coords="2065,160,2129,189"/>
+<area shape="rect" id="node115" href="$graphicline_8h.html" title="graphicline.h" alt="" coords="2153,160,2247,189"/>
+<area shape="rect" id="node118" href="$graphictext_8h.html" title="graphictext.h" alt="" coords="1895,160,1991,189"/>
+<area shape="rect" id="node123" href="$portsymbol_8h.html" title="portsymbol.h" alt="" coords="2271,160,2367,189"/>
+</map>

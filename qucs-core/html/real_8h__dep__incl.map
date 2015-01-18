@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$complex_8h.html" title="complex.h" alt="" coords="2309,83,2391,112"/>
+<area shape="rect" id="node81" href="$vector_8cpp.html" title="vector.cpp" alt="" coords="3659,237,3742,267"/>
+<area shape="rect" id="node83" href="$test__libqucs_8cpp.html" title="test_libqucs.cpp" alt="" coords="4227,237,4345,267"/>
+<area shape="rect" id="node136" href="$real_8cpp.html" title="real.cpp" alt="" coords="4458,83,4525,112"/>
+<area shape="rect" id="node5" href="$acsolver_8cpp.html" title="acsolver.cpp" alt="" coords="3677,160,3773,189"/>
+<area shape="rect" id="node7" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="3797,160,3882,189"/>
+<area shape="rect" id="node9" href="$tmatrix_8cpp.html" title="tmatrix.cpp" alt="" coords="3957,160,4042,189"/>
+<area shape="rect" id="node11" href="$eqnsys_8cpp.html" title="eqnsys.cpp" alt="" coords="4066,160,4154,189"/>
+<area shape="rect" id="node13" href="$nasolver_8cpp.html" title="nasolver.cpp" alt="" coords="54,237,150,267"/>
+<area shape="rect" id="node15" href="$vector_8h.html" title="vector.h" alt="" coords="2015,160,2085,189"/>
+<area shape="rect" id="node18" href="$analysis_8cpp.html" title="Implementation of the analysis class." alt="" coords="174,237,267,267"/>
+<area shape="rect" id="node20" href="$check__citi_8cpp.html" title="check_citi.cpp" alt="" coords="291,237,398,267"/>
+<area shape="rect" id="node22" href="$check__csv_8cpp.html" title="check_csv.cpp" alt="" coords="422,237,531,267"/>
+<area shape="rect" id="node24" href="$check__dataset_8cpp.html" title="check_dataset.cpp" alt="" coords="555,237,686,267"/>
+<area shape="rect" id="node26" href="$check__mdl_8cpp.html" title="check_mdl.cpp" alt="" coords="710,237,819,267"/>
+<area shape="rect" id="node28" href="$equation_8h.html" title="equation.h" alt="" coords="2003,237,2086,267"/>
+<area shape="rect" id="node30" href="$differentiate_8cpp.html" title="differentiate.cpp" alt="" coords="323,315,438,344"/>
+<area shape="rect" id="node32" href="$environment_8cpp.html" title="environment.cpp" alt="" coords="1391,315,1509,344"/>
+<area shape="rect" id="node34" href="$equation_8cpp.html" title="equation.cpp" alt="" coords="1997,315,2093,344"/>
+<area shape="rect" id="node36" href="$evaluate_8cpp.html" title="evaluate.cpp" alt="" coords="2121,315,2217,344"/>
+<area shape="rect" id="node38" href="$net_8cpp.html" title="net.cpp" alt="" coords="2241,315,2305,344"/>
+<area shape="rect" id="node40" href="$check__touchstone_8cpp.html" title="check_touchstone.cpp" alt="" coords="843,237,995,267"/>
+<area shape="rect" id="node42" href="$check__zvr_8cpp.html" title="check_zvr.cpp" alt="" coords="1019,237,1126,267"/>
+<area shape="rect" id="node44" href="$component_8h.html" title="component.h" alt="" coords="1150,237,1246,267"/>
+<area shape="rect" id="node46" href="$csv__producer_8h.html" title="csv_producer.h" alt="" coords="1270,237,1379,267"/>
+<area shape="rect" id="node48" href="$matlab__producer_8h.html" title="matlab_producer.h" alt="" coords="1403,237,1531,267"/>
+<area shape="rect" id="node50" href="$qucs__producer_8cpp.html" title="qucs_producer.cpp" alt="" coords="1555,237,1686,267"/>
+<area shape="rect" id="node52" href="$touchstone__producer_8h.html" title="touchstone_producer.h" alt="" coords="1710,237,1865,267"/>
+<area shape="rect" id="node54" href="$dataset_8cpp.html" title="dataset.cpp" alt="" coords="1889,237,1979,267"/>
+<area shape="rect" id="node58" href="$fourier_8cpp.html" title="fourier.cpp" alt="" coords="2262,237,2345,267"/>
+<area shape="rect" id="node60" href="$hbsolver_8cpp.html" title="hbsolver.cpp" alt="" coords="2369,237,2465,267"/>
+<area shape="rect" id="node62" href="$libqucsator_8h.html" title="libqucsator.h" alt="" coords="2489,237,2585,267"/>
+<area shape="rect" id="node64" href="$matrix_8cpp.html" title="Dense matrix class implementation." alt="" coords="2609,237,2691,267"/>
+<area shape="rect" id="node66" href="$matvec_8cpp.html" title="matvec.cpp" alt="" coords="2715,237,2806,267"/>
+<area shape="rect" id="node69" href="$parasweep_8cpp.html" title="parasweep.cpp" alt="" coords="2830,237,2939,267"/>
+<area shape="rect" id="node71" href="$parse__citi_8y.html" title="parse_citi.y" alt="" coords="2963,237,3051,267"/>
+<area shape="rect" id="node73" href="$parse__csv_8y.html" title="parse_csv.y" alt="" coords="3075,237,3169,267"/>
+<area shape="rect" id="node75" href="$parse__dataset_8y.html" title="parse_dataset.y" alt="" coords="3193,237,3307,267"/>
+<area shape="rect" id="node77" href="$parse__mdl_8y.html" title="parse_mdl.y" alt="" coords="3331,237,3425,267"/>
+<area shape="rect" id="node79" href="$parse__touchstone_8y.html" title="parse_touchstone.y" alt="" coords="3449,237,3585,267"/>
+<area shape="rect" id="node93" href="$circuit_8cpp.html" title="circuit.cpp" alt="" coords="2767,160,2850,189"/>
+<area shape="rect" id="node96" href="$components_8h.html" title="components.h" alt="" coords="4279,160,4383,189"/>
+<area shape="rect" id="node99" href="$device_8cpp.html" title="device.cpp" alt="" coords="2874,160,2959,189"/>
+<area shape="rect" id="node101" href="$digital_8cpp.html" title="digital.cpp" alt="" coords="2983,160,3063,189"/>
+<area shape="rect" id="node108" href="$dcsolver_8cpp.html" title="dcsolver.cpp" alt="" coords="3087,160,3183,189"/>
+<area shape="rect" id="node116" href="$e__trsolver_8cpp.html" title="e_trsolver.cpp" alt="" coords="3207,160,3311,189"/>
+<area shape="rect" id="node119" href="$complex_8cpp.html" title="complex.cpp" alt="" coords="3335,160,3431,189"/>
+<area shape="rect" id="node124" href="$nodelist_8cpp.html" title="nodelist.cpp" alt="" coords="3455,160,3546,189"/>
+<area shape="rect" id="node126" href="$object_8cpp.html" title="object.cpp" alt="" coords="3570,160,3653,189"/>
+</map>

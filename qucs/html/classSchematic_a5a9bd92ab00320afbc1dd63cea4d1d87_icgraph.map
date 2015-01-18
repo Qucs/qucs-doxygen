@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMouseActions.html#a953986ba4405405601994749f62f91ad" title="MouseActions::MReleaseZoomIn" alt="" coords="179,5,395,35"/>
+<area shape="rect" id="node13" href="$classSchematic.html#af371f76bda8f3c0341359f1d9ed36830" title="Schematic::zoomBy" alt="" coords="217,59,356,88"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a68fa80515c2bfef74935805db4414bc3" title="Schematic::showAll" alt="" coords="217,112,356,141"/>
+<area shape="rect" id="node17" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="229,165,344,195"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a4f25738c02a4817ca6789efe7cac7ab9" title="Schematic::contentsWheelEvent" alt="" coords="180,219,393,248"/>
+<area shape="rect" id="node5" href="$classMouseActions.html#a607a114fe557d710564a39deb99b2cd4" title="MouseActions::MPressZoomIn" alt="" coords="443,5,645,35"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#aa70dcbffa55b187a98435f035a673436" title="QucsApp::slotZoomIn" alt="" coords="693,5,843,35"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="892,5,1036,35"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1085,5,1224,35"/>
+</map>

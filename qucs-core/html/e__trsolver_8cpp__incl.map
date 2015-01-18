@@ -1,0 +1,38 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$compat_8h.html" title="compat.h" alt="" coords="1839,83,1913,112"/>
+<area shape="rect" id="node13" href="$object_8h.html" title="object.h" alt="" coords="536,469,603,499"/>
+<area shape="rect" id="node24" href="$logging_8h.html" title="logging.h" alt="" coords="1580,392,1655,421"/>
+<area shape="rect" id="node26" href="$complex_8h.html" title="complex.h" alt="" coords="151,392,233,421"/>
+<area shape="rect" id="node33" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="812,392,879,421"/>
+<area shape="rect" id="node55" href="$sweep_8h.html" title="sweep.h" alt="" coords="1937,83,2007,112"/>
+<area shape="rect" id="node57" href="$net_8h.html" title="net.h" alt="" coords="308,392,359,421"/>
+<area shape="rect" id="node64" href="$netdefs_8h.html" title="netdefs.h" alt="" coords="2031,83,2105,112"/>
+<area shape="rect" id="node66" href="$analysis_8h.html" title="The analysis class header file." alt="" coords="708,392,788,421"/>
+<area shape="rect" id="node70" href="$nasolver_8h.html" title="nasolver.h" alt="" coords="1203,237,1285,267"/>
+<area shape="rect" id="node108" href="$exception_8h.html" title="exception.h" alt="" coords="1729,392,1817,421"/>
+<area shape="rect" id="node110" href="$exceptionstack_8h.html" title="exceptionstack.h" alt="" coords="1892,392,2012,421"/>
+<area shape="rect" id="node113" href="$history_8h.html" title="history.h" alt="" coords="1500,83,1572,112"/>
+<area shape="rect" id="node120" href="$transient_8h.html" title="transient.h" alt="" coords="2129,83,2212,112"/>
+<area shape="rect" id="node124" href="$environment_8h.html" title="The environment class definition." alt="" coords="171,237,275,267"/>
+<area shape="rect" id="node132" href="$e__trsolver_8h.html" title="The externally controlled trsolver external class header file." alt="" coords="1195,83,1285,112"/>
+<area shape="rect" id="node141" href="$component__id_8h.html" title="component_id.h" alt="" coords="2236,83,2351,112"/>
+<area shape="rect" id="node143" href="$ecvs_8h.html" title="The externally controlled voltage source component implementation file." alt="" coords="2375,83,2436,112"/>
+<area shape="rect" id="node17" href="$property_8h.html" title="property.h" alt="" coords="728,547,808,576"/>
+<area shape="rect" id="node30" href="$real_8h.html" title="real.h" alt="" coords="187,469,240,499"/>
+<area shape="rect" id="node35" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="1008,469,1117,499"/>
+<area shape="rect" id="node41" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="1141,469,1256,499"/>
+<area shape="rect" id="node47" href="$integrator_8h.html" title="integrator.h" alt="" coords="797,469,883,499"/>
+<area shape="rect" id="node51" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="928,547,1008,576"/>
+<area shape="rect" id="node37" href="$pair_8h.html" title="pair.h" alt="" coords="1035,547,1088,576"/>
+<area shape="rect" id="node49" href="$states_8h.html" title="states.h" alt="" coords="832,547,901,576"/>
+<area shape="rect" id="node60" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="427,469,491,499"/>
+<area shape="rect" id="node72" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="903,392,1020,421"/>
+<area shape="rect" id="node74" href="$tvector_8h.html" title="tvector.h" alt="" coords="1427,469,1499,499"/>
+<area shape="rect" id="node78" href="$tmatrix_8h.html" title="tmatrix.h" alt="" coords="1331,469,1403,499"/>
+<area shape="rect" id="node81" href="$eqnsys_8h.html" title="eqnsys.h" alt="" coords="1399,392,1473,421"/>
+<area shape="rect" id="node85" href="$nasolution_8h.html" title="nasolution.h" alt="" coords="1388,547,1479,576"/>
+<area shape="rect" id="node90" href="$nasolver_8cpp.html" title="nasolver.cpp" alt="" coords="1136,315,1232,344"/>
+<area shape="rect" id="node128" href="$equation_8h.html" title="equation.h" alt="" coords="151,315,233,344"/>
+<area shape="rect" id="node134" href="$qucs__interface_8h.html" title="The generic external interface class header file." alt="" coords="1175,160,1292,189"/>
+<area shape="rect" id="node136" href="$trsolver_8h.html" title="trsolver.h" alt="" coords="1076,160,1151,189"/>
+</map>

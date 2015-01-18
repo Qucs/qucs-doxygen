@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="237,5,408,35"/>
+<area shape="rect" id="node7" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="245,59,400,88"/>
+<area shape="rect" id="node11" href="$classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc" title="Schematic::insertNodeLabel" alt="" coords="229,164,416,193"/>
+<area shape="rect" id="node5" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="720,59,845,88"/>
+<area shape="rect" id="node9" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="487,57,628,87"/>
+<area shape="rect" id="node13" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="465,217,649,247"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="699,243,867,272"/>
+<area shape="rect" id="node17" href="$classSchematic.html#a7a006e2ddfb12a4eff8e54c10acdda19" title="Schematic::selectedWire" alt="" coords="473,111,641,140"/>
+<area shape="rect" id="node20" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="503,164,612,193"/>
+<area shape="rect" id="node23" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="712,164,853,193"/>
+</map>
