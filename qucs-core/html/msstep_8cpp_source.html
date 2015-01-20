@@ -131,21 +131,21 @@
 <a name="l00071"></a>00071   <a class="code" href="structmsline.html#a326de62f326658d6b134c16f4e3dc500">msline::analyseQuasiStatic</a> (W1, h, t, er, SModel, ZlEff, ErEff, WEff);
 <a name="l00072"></a>00072   <a class="code" href="structmsline.html#ac528ae6c20d2973d53ae5e33d9e619cd">msline::analyseDispersion</a>  (W1, h, er, ZlEff, ErEff, frequency, DModel,
 <a name="l00073"></a>00073                               ZlEffFreq, ErEffFreq);
-<a name="l00074"></a>00074   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> L1 = ZlEffFreq * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (ErEffFreq) / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a>;
+<a name="l00074"></a>00074   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> L1 = ZlEffFreq * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (ErEffFreq) / C0;
 <a name="l00075"></a>00075 
 <a name="l00076"></a>00076   <a class="code" href="structmsline.html#a326de62f326658d6b134c16f4e3dc500">msline::analyseQuasiStatic</a> (W2, h, t, er, SModel, ZlEff, ErEff, WEff);
 <a name="l00077"></a>00077   <a class="code" href="structmsline.html#ac528ae6c20d2973d53ae5e33d9e619cd">msline::analyseDispersion</a>  (W2, h, er, ZlEff, ErEff, frequency, DModel,
 <a name="l00078"></a>00078                               ZlEffFreq, ErEffFreq);
-<a name="l00079"></a>00079   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> L2 = ZlEffFreq * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (ErEffFreq) / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a>;
+<a name="l00079"></a>00079   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> L2 = ZlEffFreq * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (ErEffFreq) / C0;
 <a name="l00080"></a>00080 
 <a name="l00081"></a>00081   Ls /= (L1 + L2);
 <a name="l00082"></a>00082   L1 *= Ls;
 <a name="l00083"></a>00083   L2 *= Ls;
 <a name="l00084"></a>00084 
 <a name="l00085"></a>00085   <span class="comment">// build Z-parameter matrix</span>
-<a name="l00086"></a>00086   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (M_PI * frequency * Cs));
-<a name="l00087"></a>00087   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * M_PI * frequency * L1) + z21;
-<a name="l00088"></a>00088   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z22 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * M_PI * frequency * L2) + z21;
+<a name="l00086"></a>00086   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (pi * frequency * Cs));
+<a name="l00087"></a>00087   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * pi * frequency * L1) + z21;
+<a name="l00088"></a>00088   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z22 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * pi * frequency * L2) + z21;
 <a name="l00089"></a>00089   matrix z (2);
 <a name="l00090"></a>00090   z.set (0, 0, z11);
 <a name="l00091"></a>00091   z.set (0, 1, z21);
@@ -192,7 +192,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

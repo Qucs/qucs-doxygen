@@ -129,7 +129,7 @@
 <a name="l00069"></a>00069   <a class="code" href="classqucs_1_1circuit.html#ad4cf00556c3e9d82ed06e355148d19ba">vsources</a> = 0;
 <a name="l00070"></a>00070   <a class="code" href="classqucs_1_1circuit.html#a4d2538b0dbce2ede2e17911a62a19663">nsources</a> = 0;
 <a name="l00071"></a>00071   <a class="code" href="classqucs_1_1circuit.html#a50a3c21ff607930886f6c24a1bc86920">inserted</a> = -1;
-<a name="l00072"></a>00072   <a class="code" href="classqucs_1_1circuit.html#afb69b6978b23a1ab7eb23ee12aecc37a">subcircuit</a> = std::string();
+<a name="l00072"></a>00072   <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a> = std::string();
 <a name="l00073"></a>00073   <a class="code" href="classqucs_1_1circuit.html#abe5cc8248acdea4d85685502c58b618c">subnet</a> = NULL;
 <a name="l00074"></a>00074   <a class="code" href="classqucs_1_1circuit.html#ae4aa52da18c53e1c85d11ce69e618bed">deltas</a> = NULL;
 <a name="l00075"></a>00075   <a class="code" href="classqucs_1_1circuit.html#a38288d1f7eb3f5f6710b46335307e45c">histories</a> = NULL;
@@ -157,7 +157,7 @@
 <a name="l00097"></a>00097   <a class="code" href="classqucs_1_1circuit.html#ad4cf00556c3e9d82ed06e355148d19ba">vsources</a> = 0;
 <a name="l00098"></a>00098   <a class="code" href="classqucs_1_1circuit.html#a4d2538b0dbce2ede2e17911a62a19663">nsources</a> = 0;
 <a name="l00099"></a>00099   <a class="code" href="classqucs_1_1circuit.html#a50a3c21ff607930886f6c24a1bc86920">inserted</a> = -1;
-<a name="l00100"></a>00100   <a class="code" href="classqucs_1_1circuit.html#afb69b6978b23a1ab7eb23ee12aecc37a">subcircuit</a> = std::string();
+<a name="l00100"></a>00100   <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a> = std::string();
 <a name="l00101"></a>00101   <a class="code" href="classqucs_1_1circuit.html#abe5cc8248acdea4d85685502c58b618c">subnet</a> = NULL;
 <a name="l00102"></a>00102   <a class="code" href="classqucs_1_1circuit.html#ae4aa52da18c53e1c85d11ce69e618bed">deltas</a> = NULL;
 <a name="l00103"></a>00103   <a class="code" href="classqucs_1_1circuit.html#a38288d1f7eb3f5f6710b46335307e45c">histories</a> = NULL;
@@ -184,7 +184,7 @@
 <a name="l00124"></a>00124   <a class="code" href="classqucs_1_1circuit.html#ae4aa52da18c53e1c85d11ce69e618bed">deltas</a> = c.<a class="code" href="classqucs_1_1circuit.html#ae4aa52da18c53e1c85d11ce69e618bed">deltas</a>;
 <a name="l00125"></a>00125   <a class="code" href="classqucs_1_1circuit.html#a727505b1db4dcbe79f8d032cf88c481c">nHistories</a> = c.<a class="code" href="classqucs_1_1circuit.html#a727505b1db4dcbe79f8d032cf88c481c">nHistories</a>;
 <a name="l00126"></a>00126   <a class="code" href="classqucs_1_1circuit.html#a38288d1f7eb3f5f6710b46335307e45c">histories</a> = NULL;
-<a name="l00127"></a>00127   <a class="code" href="classqucs_1_1circuit.html#afb69b6978b23a1ab7eb23ee12aecc37a">subcircuit</a> = c.<a class="code" href="classqucs_1_1circuit.html#afb69b6978b23a1ab7eb23ee12aecc37a">subcircuit</a>;
+<a name="l00127"></a>00127   <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a> = c.<a class="code" href="classqucs_1_1circuit.html#afb69b6978b23a1ab7eb23ee12aecc37a">subcircuit</a>;
 <a name="l00128"></a>00128 
 <a name="l00129"></a>00129   <span class="keywordflow">if</span> (<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> &gt; 0) {
 <a name="l00130"></a>00130     <span class="comment">// copy each node and set its circuit to the current circuit object</span>
@@ -373,7 +373,7 @@
 <a name="l00313"></a>00313 
 <a name="l00314"></a>00314 <span class="comment">// Sets the subcircuit reference for the circuit object.</span>
 <a name="l00315"></a><a class="code" href="classqucs_1_1circuit.html#a873a6397aa980159f10e8bde5ccf608e">00315</a> <span class="keywordtype">void</span> circuit::setSubcircuit (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l00316"></a>00316   subcircuit = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l00316"></a>00316   <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a> = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
 <a name="l00317"></a>00317 }
 <a name="l00318"></a>00318 
 <a name="l00319"></a>00319 <span class="preprocessor">#if DEBUG</span>
@@ -687,7 +687,7 @@
 <a name="l00627"></a>00627 <span class="comment">/* The function returns an internal node or circuit name with the</span>
 <a name="l00628"></a>00628 <span class="comment">   given prefix and based on the given circuits name.  The caller is</span>
 <a name="l00629"></a>00629 <span class="comment">   responsible to free() the returned string. */</span>
-<a name="l00630"></a><a class="code" href="classqucs_1_1circuit.html#a0de8e231a5e3efef1f4f4caa2548e922">00630</a> std::string circuit::createInternal (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>, <span class="keyword">const</span> std::string &amp;obj) {
+<a name="l00630"></a><a class="code" href="classqucs_1_1circuit.html#a0de8e231a5e3efef1f4f4caa2548e922">00630</a> std::string circuit::createInternal (<span class="keyword">const</span> std::string &amp;prefix, <span class="keyword">const</span> std::string &amp;obj) {
 <a name="l00631"></a>00631   <span class="keywordflow">return</span> <span class="stringliteral">&quot;_&quot;</span>+prefix+<span class="stringliteral">&quot;#&quot;</span>+obj;
 <a name="l00632"></a>00632 }
 <a name="l00633"></a>00633 
@@ -806,7 +806,7 @@
 <a name="l00746"></a>00746 <span class="comment">   the n-th voltage source between node &#39;pos&#39; and node &#39;neg&#39; with the</span>
 <a name="l00747"></a>00747 <span class="comment">   given value.  Remember to indicate this voltage source using the</span>
 <a name="l00748"></a>00748 <span class="comment">   function setVoltageSources(). */</span>
-<a name="l00749"></a><a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">00749</a> <span class="keywordtype">void</span> circuit::voltageSource (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> neg, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00749"></a><a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">00749</a> <span class="keywordtype">void</span> circuit::voltageSource (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> pos, <span class="keywordtype">int</span> neg, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00750"></a>00750   setC (n, pos, +1.0); setC (n, neg, -1.0);
 <a name="l00751"></a>00751   setB (pos, n, +1.0); setB (neg, n, -1.0);
 <a name="l00752"></a>00752   setD (n, n, 0.0);
@@ -1015,7 +1015,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

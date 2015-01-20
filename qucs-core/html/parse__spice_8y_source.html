@@ -105,11 +105,11 @@
 <a name="l00045"></a>00045 <span class="preprocessor">#include &quot;<a class="code" href="check__spice_8h.html">check_spice.h</a>&quot;</span>
 <a name="l00046"></a><a class="code" href="check__spice_8h.html#af9f2457a510affce0dcc0a47f2115251">00046</a> 
 <a name="l00047"></a><a class="code" href="check__spice_8h.html#addbcd690308f068765e50869c8030acc">00047</a> <span class="comment">// Converts the given string into upper case.</span>
-<a name="l00048"></a><a class="code" href="parse__spice_8y.html#a71057d53e293890dfecc515568a7b06d">00048</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a71057d53e293890dfecc515568a7b06d">spice_toupper</a> (<span class="keywordtype">char</span> * str) {
+<a name="l00048"></a><a class="code" href="parse__spice_8y.html#a71057d53e293890dfecc515568a7b06d">00048</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a71057d53e293890dfecc515568a7b06d">spice_toupper</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>) {
 <a name="l00049"></a><a class="code" href="check__spice_8h.html#a90254c87d1066d777983ae613014204a">00049</a>   <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; strlen (str); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
 <a name="l00050"></a><a class="code" href="check__spice_8h.html#ab8c67a7b56f9069445a5d40f5e8b07da">00050</a>     <span class="keywordflow">if</span> (str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &lt;= <span class="charliteral">&#39;z&#39;</span>) str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = toupper (str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]);
 <a name="l00051"></a>00051   }
-<a name="l00052"></a>00052   <span class="keywordflow">return</span> str;
+<a name="l00052"></a>00052   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00053"></a>00053 }
 <a name="l00054"></a>00054 
 <a name="l00055"></a>00055 <span class="comment">// Creates a device instance.</span>
@@ -135,7 +135,7 @@
 <a name="l00075"></a>00075 }
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077 <span class="comment">// Create a string value.</span>
-<a name="l00078"></a><a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">00078</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">spice_create_str_value</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00078"></a><a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">00078</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">spice_create_str_value</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00079"></a>00079   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="netdefs_8h.html#a3b634bc32489c83e168d2f2aaac065be">create_value</a> ();
 <a name="l00080"></a>00080   val-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = <a class="code" href="parse__spice_8y.html#a71057d53e293890dfecc515568a7b06d">spice_toupper</a> (value);
 <a name="l00081"></a>00081   val-&gt;<a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a> |= <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>;
@@ -143,52 +143,52 @@
 <a name="l00083"></a>00083 }
 <a name="l00084"></a>00084 
 <a name="l00085"></a>00085 <span class="comment">// Create a real value.</span>
-<a name="l00086"></a><a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">00086</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">spice_create_val_value</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00086"></a><a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">00086</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">spice_create_val_value</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00087"></a>00087   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="netdefs_8h.html#a3b634bc32489c83e168d2f2aaac065be">create_value</a> ();
-<a name="l00088"></a>00088   val-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00088"></a>00088   val-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00089"></a>00089   val-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = strtod (value, NULL);
 <a name="l00090"></a>00090   val-&gt;<a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a> |= <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>;
 <a name="l00091"></a>00091   <span class="keywordflow">return</span> val;
 <a name="l00092"></a>00092 }
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094 <span class="comment">// Create a key/value pair.</span>
-<a name="l00095"></a><a class="code" href="parse__spice_8y.html#a06a6eed2cb1125c3435015dd57396716">00095</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a06a6eed2cb1125c3435015dd57396716">spice_create_par_value</a> (<span class="keywordtype">char</span> * key, <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00095"></a><a class="code" href="parse__spice_8y.html#a06a6eed2cb1125c3435015dd57396716">00095</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a06a6eed2cb1125c3435015dd57396716">spice_create_par_value</a> (<span class="keywordtype">char</span> * key, <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00096"></a>00096   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">spice_create_str_value</a> (key, <a class="code" href="check__spice_8h.html#a408c9b187e83a0af9d06b2bec862e1ec">HINT_PAIR</a>);
-<a name="l00097"></a>00097   val-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a> = <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00097"></a>00097   val-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a> = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00098"></a>00098   <span class="keywordflow">return</span> val;
 <a name="l00099"></a>00099 }
 <a name="l00100"></a>00100 
 <a name="l00101"></a>00101 <span class="comment">// Append a string value to the definition.</span>
 <a name="l00102"></a><a class="code" href="parse__spice_8y.html#ac9a151166d792787ccb8b55bb2880a8f">00102</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="parse__spice_8y.html#ac9a151166d792787ccb8b55bb2880a8f">spice_append_str_value</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def,
-<a name="l00103"></a>00103                                     <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00103"></a>00103                                     <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00104"></a>00104   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">spice_create_str_value</a> (value, hint);
 <a name="l00105"></a>00105   def-&gt;<a class="code" href="structdefinition__t.html#a5c9c84c3b0e95cbce8dc1ca966dbdbd9">values</a> = <a class="code" href="check__spice_8cpp.html#ab2cf8ca049790bbb1009e0488ac05605">netlist_append_values</a> (def-&gt;<a class="code" href="structdefinition__t.html#a5c9c84c3b0e95cbce8dc1ca966dbdbd9">values</a>, val);
 <a name="l00106"></a>00106 }
 <a name="l00107"></a>00107 
 <a name="l00108"></a>00108 <span class="comment">// Append a string value to the given values.</span>
 <a name="l00109"></a><a class="code" href="parse__spice_8y.html#ad5a71bf90da69512cbfbc7778a411960">00109</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#ad5a71bf90da69512cbfbc7778a411960">spice_append_str_values</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>,
-<a name="l00110"></a>00110                                                  <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00110"></a>00110                                                  <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00111"></a>00111   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="parse__spice_8y.html#a1be13bb6c05cf6facc563b41e2f2947a">spice_create_str_value</a> (value, hint);
 <a name="l00112"></a>00112   <span class="keywordflow">return</span> <a class="code" href="check__spice_8cpp.html#ab2cf8ca049790bbb1009e0488ac05605">netlist_append_values</a> (values, val);
 <a name="l00113"></a>00113 }
 <a name="l00114"></a>00114 
 <a name="l00115"></a>00115 <span class="comment">// Append a real value to the definition.</span>
 <a name="l00116"></a><a class="code" href="parse__spice_8y.html#ae2fb901c4a3636f29056aa7989f396f0">00116</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="parse__spice_8y.html#ae2fb901c4a3636f29056aa7989f396f0">spice_append_val_value</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def,
-<a name="l00117"></a>00117                                     <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00117"></a>00117                                     <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00118"></a>00118   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">spice_create_val_value</a> (value, hint);
 <a name="l00119"></a>00119   def-&gt;<a class="code" href="structdefinition__t.html#a5c9c84c3b0e95cbce8dc1ca966dbdbd9">values</a> = <a class="code" href="check__spice_8cpp.html#ab2cf8ca049790bbb1009e0488ac05605">netlist_append_values</a> (def-&gt;<a class="code" href="structdefinition__t.html#a5c9c84c3b0e95cbce8dc1ca966dbdbd9">values</a>, val);
 <a name="l00120"></a>00120 }
 <a name="l00121"></a>00121 
 <a name="l00122"></a>00122 <span class="comment">// Append a real value to the given values.</span>
 <a name="l00123"></a><a class="code" href="parse__spice_8y.html#a72ecde4aa07ff6e13447c7101bc20f0a">00123</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a72ecde4aa07ff6e13447c7101bc20f0a">spice_append_val_values</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>,
-<a name="l00124"></a>00124                                                  <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
+<a name="l00124"></a>00124                                                  <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> <a class="code" href="structvalue__t.html#ae7a22c10f0ac1a2214b530952618777e">hint</a>) {
 <a name="l00125"></a>00125   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val = <a class="code" href="parse__spice_8y.html#a009c4a4e468e15758bb4d7e3dd563b72">spice_create_val_value</a> (value, hint);
 <a name="l00126"></a>00126   <span class="keywordflow">return</span> <a class="code" href="check__spice_8cpp.html#ab2cf8ca049790bbb1009e0488ac05605">netlist_append_values</a> (values, val);
 <a name="l00127"></a>00127 }
 <a name="l00128"></a>00128 
 <a name="l00129"></a>00129 %}
 <a name="l00130"></a>00130 
-<a name="l00131"></a><a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">00131</a> %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-<a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>=<span class="stringliteral">&quot;spice_&quot;</span>
+<a name="l00131"></a>00131 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-prefix <span class="stringliteral">&quot;spice_&quot;</span>
 <a name="l00132"></a>00132 
 <a name="l00133"></a>00133 %token TitleLine InvalidCharacter End Eol
 <a name="l00134"></a>00134 %token <a class="code" href="parse__zvr_8y.html#a6069b10a731f48cd1067ba5ef2adcd44">Identifier</a> Digits Floats Nodes Options Function
@@ -204,12 +204,12 @@
 <a name="l00144"></a>00144 %token OpFunc Behave TC_Special TEMP_Action
 <a name="l00145"></a>00145 
 <a name="l00146"></a>00146 %<span class="keyword">union </span>{
-<a name="l00147"></a>00147   <span class="keywordtype">char</span> * <a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>;
-<a name="l00148"></a>00148   <span class="keywordtype">char</span> * str;
-<a name="l00149"></a>00149   <span class="keywordtype">double</span> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
-<a name="l00150"></a>00150   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * definition;
-<a name="l00151"></a>00151   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>;
-<a name="l00152"></a>00152   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a>;
+<a name="l00147"></a><a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">00147</a>   <span class="keywordtype">char</span> * <a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>;
+<a name="l00148"></a><a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">00148</a>   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
+<a name="l00149"></a><a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">00149</a>   <span class="keywordtype">double</span> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
+<a name="l00150"></a><a class="code" href="parse__spice_8y.html#a55970f4fe6911e272dc63eb95fdd2ff1">00150</a>   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="parse__spice_8y.html#a55970f4fe6911e272dc63eb95fdd2ff1">definition</a>;
+<a name="l00151"></a><a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">00151</a>   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a>;
+<a name="l00152"></a><a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">00152</a>   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a>;
 <a name="l00153"></a>00153 }
 <a name="l00154"></a>00154 
 <a name="l00155"></a>00155 %type &lt;str&gt; TitleLine
@@ -251,11 +251,11 @@
 <a name="l00191"></a>00191     <a class="code" href="check__spice_8cpp.html#a9c7f54083834708c615650b57c9b7bb2">spice_title</a> = $1;
 <a name="l00192"></a>00192     fprintf (stderr, <span class="stringliteral">&quot;spice notice, no .END directive found, continuing\n&quot;</span>);
 <a name="l00193"></a>00193   }
-<a name="l00194"></a>00194 ;
+<a name="l00194"></a><a class="code" href="parse__spice_8y.html#a54b6badbfae94be8e035305b7925075d">00194</a> ;
 <a name="l00195"></a>00195 
 <a name="l00196"></a>00196 InputList: <span class="comment">/* nothing */</span>
 <a name="l00197"></a>00197   | InputLine InputList
-<a name="l00198"></a><a class="code" href="parse__spice_8y.html#a54b6badbfae94be8e035305b7925075d">00198</a> ;
+<a name="l00198"></a>00198 ;
 <a name="l00199"></a>00199 
 <a name="l00200"></a>00200 InputLine:
 <a name="l00201"></a>00201   Subcircuit {
@@ -1023,7 +1023,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

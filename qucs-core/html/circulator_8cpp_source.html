@@ -103,7 +103,7 @@
 <a name="l00043"></a>00043   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r1 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z1) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z1);
 <a name="l00044"></a>00044   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r2 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z2) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z2);
 <a name="l00045"></a>00045   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r3 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z3) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z3);
-<a name="l00046"></a>00046   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>  = 1 - r1 * r2 * r3;
+<a name="l00046"></a>00046   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>  = 1 - r1 * r2 * r3;
 <a name="l00047"></a>00047   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, (r2 * r3 - r1) / d);
 <a name="l00048"></a>00048   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, (r1 * r3 - r2) / d);
 <a name="l00049"></a>00049   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, <a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, (r1 * r2 - r3) / d);
@@ -128,7 +128,7 @@
 <a name="l00068"></a>00068   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r1 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z1) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z1);
 <a name="l00069"></a>00069   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r2 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z2) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z2);
 <a name="l00070"></a>00070   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> r3 = (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> - z3) / (<a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + z3);
-<a name="l00071"></a>00071   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>  = 1 - r1 * r2 * r3;
+<a name="l00071"></a>00071   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>  = 1 - r1 * r2 * r3;
 <a name="l00072"></a>00072 
 <a name="l00073"></a>00073   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s11 = (r2 * r3 - r1) / d;
 <a name="l00074"></a>00074   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s22 = (r1 * r3 - r2) / d;
@@ -189,7 +189,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

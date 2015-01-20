@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$main_8cpp.html#a25c37e2c42aad411a1c62e60d34df68e" title="saveApplSettings" alt="" coords="304,5,427,35"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ac098ff9b0c6f802244401565ee6894e8" title="saveApplSettings" alt="" coords="304,5,427,35"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2" title="QucsApp::readProjects" alt="" coords="287,59,444,88"/>
 <area shape="rect" id="node7" href="$classQucsApp.html#a0df73710610da708b5149234e9b82e95" title="QucsApp::readProjectFiles" alt="" coords="276,112,455,141"/>
 <area shape="rect" id="node17" href="$classQucsApp.html#a55673f055494a3a780b94bc77810eeb7" title="QucsApp::updatePathList" alt="" coords="539,217,709,247"/>
@@ -8,5 +8,5 @@
 <area shape="rect" id="node9" href="$classQucsApp.html#a9387330e49d39c27318a1ab178c5145b" title="QucsApp::initContentListView" alt="" coords="525,57,723,87"/>
 <area shape="rect" id="node11" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="556,111,692,140"/>
 <area shape="rect" id="node13" href="$classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6" title="Schematic::testFile" alt="" coords="557,164,691,193"/>
-<area shape="rect" id="node15" href="$misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5" title="checkVersion" alt="" coords="771,164,872,193"/>
+<area shape="rect" id="node15" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="772,164,908,193"/>
 </map>

@@ -96,7 +96,7 @@ detail::nodevector::reference&#160;</td><td class="memItemRight" valign="bottom"
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 detail::nodevector::const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a523890194860b2eebe544040162c93d4">const_reference</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="config_8h.html#aacaea010132f63e1899b04ad10e05275">autoconfigured_erase_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a></td></tr>
+detail::nodevector::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a97e034f834d897834a23f2e3e9c46814">nodelist_t</a> (const std::string &amp;<a class="el" href="parse__netlist_8y.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>=&quot;&quot;, bool intern=false)</td></tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abd09d41073aaea2653363e667996e521">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a25f328ae0e29dd6501f7b73d4ed1611b">begin</a> () const noexcept</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a3fe684d02f394c3ec12f60eec22cb772">end</a> () noexcept</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abd09d41073aaea2653363e667996e521">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a710b5c964a8e528941da3dc1c9d09074">end</a> () const noexcept</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a0d784cedeb1fb3ef38a8ff6e3ec7ea3f">erase</a> (<a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a> position)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#aef73531a4b9388a5aee7905ba23fbeaa">erase</a> (<a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a> first, <a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a> last)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a0d784cedeb1fb3ef38a8ff6e3ec7ea3f">erase</a> (<a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a> position)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#aef73531a4b9388a5aee7905ba23fbeaa">erase</a> (<a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a> first, <a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a> last)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqucs_1_1nodelist__t.html#a53e24b5d276e60178770a1118ca97790">empty</a> () const noexcept</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -155,18 +155,18 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2593fb20a053cdd48dec3dfc6c7d6601"></a><!-- doxytag: member="qucs::nodelist_t::erase_iterator" ref="a2593fb20a053cdd48dec3dfc6c7d6601" args="" -->
+<a class="anchor" id="a817623351d103b5e5524f8ced8a319cc"></a><!-- doxytag: member="qucs::nodelist_t::erase_iterator" ref="a817623351d103b5e5524f8ced8a319cc" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="config_8h.html#aacaea010132f63e1899b04ad10e05275">autoconfigured_erase_iterator</a> qucs::nodelist_t::erase_iterator</td>
+          <td class="memname">typedef detail::nodevector::iterator qucs::nodelist_t::erase_iterator</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00055">55</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00058">58</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00078">78</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00082">82</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00081">81</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00085">85</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00095">95</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00099">99</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00084">84</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00088">88</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00087">87</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00091">91</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a> qucs::nodelist_t::erase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a>&#160;</td>
           <td class="paramname"><em>position</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -383,7 +383,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00090">90</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00094">94</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -394,13 +394,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structqucs_1_1nodelist__t.html#abe7e80ce451a665da5f1ffceb28ee32a">iterator</a> qucs::nodelist_t::erase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a>&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a2593fb20a053cdd48dec3dfc6c7d6601">erase_iterator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structqucs_1_1nodelist__t.html#a817623351d103b5e5524f8ced8a319cc">erase_iterator</a>&#160;</td>
           <td class="paramname"><em>last</em>&#160;</td>
         </tr>
         <tr>
@@ -412,7 +412,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00092">92</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00096">96</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +431,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00063">63</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00067">67</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00066">66</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00070">70</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00074">74</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00078">78</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +487,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00070">70</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00074">74</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00061">61</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00065">65</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Private Attributes</h2></td></tr>
 <div class="memdoc">
 <p>alias node number </p>
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00058">58</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00062">62</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ Private Attributes</h2></td></tr>
 <div class="memdoc">
 <p>name of node </p>
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00060">60</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00064">64</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +550,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00099">99</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
+<p>Definition at line <a class="el" href="nodelist_8h_source.html#l00103">103</a> of file <a class="el" href="nodelist_8h_source.html">nodelist.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:39 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:15 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

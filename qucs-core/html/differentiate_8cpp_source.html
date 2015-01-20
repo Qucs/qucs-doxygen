@@ -113,7 +113,7 @@
 <a name="l00053"></a><a class="code" href="differentiate_8cpp.html#add916e73cb5ac0ed6cf8fb2cf08d2ddb">00053</a> <span class="preprocessor"></span><span class="preprocessor">#define isZero(n)  (isConst(n) &amp;&amp; D(n) == 0.0)</span>
 <a name="l00054"></a><a class="code" href="differentiate_8cpp.html#aaf4fd7e46bc741f6e5b3d4a2a2bfc93f">00054</a> <span class="preprocessor"></span><span class="preprocessor">#define isOne(n)   (isConst(n) &amp;&amp; D(n) == 1.0)</span>
 <a name="l00055"></a><a class="code" href="differentiate_8cpp.html#ac50d3d59686dc5d2ece0377b69e9431a">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define isNeg(n)   (isConst(n) &amp;&amp; D(n) == -1.0)</span>
-<a name="l00056"></a><a class="code" href="differentiate_8cpp.html#a2140ab0320e8391d6e30c744f8e06201">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define isEuler(n) ((isConst(n) &amp;&amp; D(n) == M_E) || isRef(n,&quot;e&quot;))</span>
+<a name="l00056"></a><a class="code" href="differentiate_8cpp.html#a2140ab0320e8391d6e30c744f8e06201">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define isEuler(n) ((isConst(n) &amp;&amp; D(n) == e) || isRef(n,&quot;e&quot;))</span>
 <a name="l00057"></a><a class="code" href="differentiate_8cpp.html#a864752cb0083875664592ef3e7af796f">00057</a> <span class="preprocessor"></span><span class="preprocessor">#define isval(n,v) (isConst(n) &amp;&amp; D(n) == v)</span>
 <a name="l00058"></a>00058 <span class="preprocessor"></span>
 <a name="l00059"></a><a class="code" href="differentiate_8cpp.html#aada42f5691f0d06014c12fe0da0b2baa">00059</a> <span class="preprocessor">#define isVar(v)   ((v)-&gt;getTag()==REFERENCE)</span>
@@ -468,8 +468,8 @@
 <a name="l00408"></a><a class="code" href="classqucs_1_1eqn_1_1differentiate.html#ad0b764be9e868a21fb489241c8bd2eb9">00408</a> <a class="code" href="classqucs_1_1eqn_1_1node.html">node</a> * <a class="code" href="namespacequcs.html#ab34b406008970c5c05ad97956e4647aa" title="Compute limited complex exponential.">differentiate::limexp</a> (<a class="code" href="classqucs_1_1eqn_1_1application.html">application</a> * app, <span class="keywordtype">char</span> * derivative) {
 <a name="l00409"></a>00409   <a class="code" href="differentiate_8cpp.html#aafb01e8f9084b2303f31ca5d684aa8af">_AF0</a> (f0);
 <a name="l00410"></a>00410   <a class="code" href="differentiate_8cpp.html#a9f982e13d9a721e0ad3d7a4756b2b09f">_AD0</a> (d0);
-<a name="l00411"></a>00411   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (lexp, ::<a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (M_LIMEXP));
-<a name="l00412"></a>00412   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (lcon, M_LIMEXP);
+<a name="l00411"></a>00411   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (lexp, ::<a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (<a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a>));
+<a name="l00412"></a>00412   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (lcon, <a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a>);
 <a name="l00413"></a>00413   <a class="code" href="differentiate_8cpp.html#a8e86d71b26b473052b5e02cca67bb44c">defApp2</a> (ask, <span class="stringliteral">&quot;&lt;&quot;</span>, f0-&gt;recreate(), lcon);
 <a name="l00414"></a>00414   <a class="code" href="differentiate_8cpp.html#adbbe81bf5da6d19de21fdfee5ef003db">defApp1</a> (<a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a>, <span class="stringliteral">&quot;exp&quot;</span>, f0-&gt;recreate());
 <a name="l00415"></a>00415   <a class="code" href="differentiate_8cpp.html#a94210e21cae391a341f37f6193bd48a2">defApp3</a> (ite, <span class="stringliteral">&quot;?:&quot;</span>, ask, <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a>, lexp);
@@ -793,7 +793,7 @@
 <a name="l00733"></a>00733 
 <a name="l00734"></a><a class="code" href="classqucs_1_1eqn_1_1differentiate.html#ae2632b11f7f63b8d9b7e9148f243a185">00734</a> <a class="code" href="classqucs_1_1eqn_1_1node.html">node</a> * <a class="code" href="classqucs_1_1eqn_1_1differentiate.html#ae2632b11f7f63b8d9b7e9148f243a185">differentiate::vt</a> (<a class="code" href="classqucs_1_1eqn_1_1application.html">application</a> * app, <span class="keywordtype">char</span> * derivative) {
 <a name="l00735"></a>00735   <a class="code" href="differentiate_8cpp.html#a9f982e13d9a721e0ad3d7a4756b2b09f">_AD0</a> (d0);
-<a name="l00736"></a>00736   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (con, <a class="code" href="group__qucsPhysConstants.html#ga2d912348ee3b5229437513009d95a427" title="Boltzmann constant over Elementary charge ( )">kBoverQ</a>);
+<a name="l00736"></a>00736   <a class="code" href="differentiate_8cpp.html#aca4f3fb32fd7e67c0016fc96cdecd315">defCon</a> (con, <a class="code" href="group__qucsPhysConstants.html#ga900600ece6f54b309a2c252bf9008344" title="Boltzmann constant over Elementary charge ( )">kBoverQ</a>);
 <a name="l00737"></a>00737   <span class="keywordflow">return</span> times_reduce (d0, con);
 <a name="l00738"></a>00738 }
 <a name="l00739"></a>00739 
@@ -852,7 +852,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -10,7 +10,7 @@ var searchData=
   ['recalcratio',['recalcRatio',['../classExportDialog.html#a81d79f083730f75e882cdc8d692ca3d9',1,'ExportDialog']]],
   ['recalcscale',['recalcScale',['../classExportDialog.html#a2cf640c15653a1e818e2fa604088ad29',1,'ExportDialog']]],
   ['recentdocs',['RecentDocs',['../structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c',1,'tQucsSettings']]],
-  ['recentfilesmenu',['recentfilesMenu',['../classQucsApp.html#af79e5cf8eb690ab210d188575d0fcc33',1,'QucsApp']]],
+  ['recentfilesmenu',['recentFilesMenu',['../classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370',1,'QucsApp']]],
   ['recreate',['recreate',['../classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7',1,'TextDoc::recreate()'],['../classAC__Sim.html#a0b04e6eff523822469657b81bb537fee',1,'AC_Sim::recreate()'],['../classComponent.html#a922de1326d4214d885f5dc05287a75a0',1,'Component::recreate()'],['../classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911',1,'MultiViewComponent::recreate()'],['../classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c',1,'Param_Sweep::recreate()'],['../classSP__Sim.html#ad146d544e78aef02f00757419d7e05ba',1,'SP_Sim::recreate()'],['../classTR__Sim.html#ab83e8b2edcddd840a1ae929bacb056ba',1,'TR_Sim::recreate()']]],
   ['recreatecheck',['RecreateCheck',['../classVASettingsDialog.html#adba5685822c95d7b4718835a1f6038f4',1,'VASettingsDialog']]],
   ['recreatecomponent',['recreateComponent',['../classSchematic.html#a377a769183e90c6b813cfe2d27921a48',1,'Schematic']]],

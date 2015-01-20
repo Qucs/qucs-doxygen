@@ -334,7 +334,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00251"></a>00251       <span class="keywordflow">if</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> &lt; 0) { cx += <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>;  <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> *= -1; }
 <a name="l00252"></a>00252       <span class="keywordflow">if</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> &lt; 0) { cy += <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>;  <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> *= -1; }
 <a name="l00253"></a>00253 
-<a name="l00254"></a>00254       <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> = int(16.0*180.0/M_PI
+<a name="l00254"></a>00254       <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>
 <a name="l00255"></a>00255     * atan2(<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>*(cy+(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>&gt;&gt;1) - fy)),
 <a name="l00256"></a>00256       <span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>*(fx - cx-(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>&gt;&gt;1)))));
 <a name="l00257"></a>00257       <span class="keywordflow">if</span>(<a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> &lt; 0) <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> += 16*360;
@@ -342,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00259"></a>00259       <span class="keywordflow">break</span>;
 <a name="l00260"></a>00260     <span class="keywordflow">case</span> 4 :
 <a name="l00261"></a>00261       paintScale-&gt;<a class="code" href="classSchematic.html#a2be09396e97936a98c8d349cfe30deb0">PostPaintEvent</a>(<a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a52b3c0d99f6ab77fddd161758d39a228">_Arc</a>, cx, cy, <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>, <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>, <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>, 16*180);<span class="comment">// erase old painting</span>
-<a name="l00262"></a>00262       <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> = int(16.0*180.0/M_PI
+<a name="l00262"></a>00262       <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>
 <a name="l00263"></a>00263     * atan2(<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>*(cy+(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>&gt;&gt;1) - fy)),
 <a name="l00264"></a>00264       <span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>*(fx - cx-(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>&gt;&gt;1)))));
 <a name="l00265"></a>00265       <span class="keywordflow">if</span>(<a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> &lt; 0) <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a> += 16*360;
@@ -351,7 +351,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00268"></a>00268     <span class="keywordflow">case</span> 5 :
 <a name="l00269"></a>00269       <a class="code" href="classPainting.html#a521b580a45bb38c3eb8b3c6d81390282">State</a>++;
 <a name="l00270"></a>00270       paintScale-&gt;<a class="code" href="classSchematic.html#a2be09396e97936a98c8d349cfe30deb0">PostPaintEvent</a>(<a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a52b3c0d99f6ab77fddd161758d39a228">_Arc</a>, cx, cy, <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>, <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>, <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>, 16*180);<span class="comment">// erase old painting</span>
-<a name="l00271"></a>00271       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> = int(16.0*180.0/M_PI
+<a name="l00271"></a>00271       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>
 <a name="l00272"></a>00272     * atan2(<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>*(cy+(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>&gt;&gt;1) - fy)),
 <a name="l00273"></a>00273       <span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>*(fx - cx-(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>&gt;&gt;1)))));
 <a name="l00274"></a>00274       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> -= <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>;
@@ -360,7 +360,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00277"></a>00277       <span class="keywordflow">break</span>;
 <a name="l00278"></a>00278     <span class="keywordflow">case</span> 6 :
 <a name="l00279"></a>00279       paintScale-&gt;<a class="code" href="classSchematic.html#a2be09396e97936a98c8d349cfe30deb0">PostPaintEvent</a>(<a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a52b3c0d99f6ab77fddd161758d39a228">_Arc</a>, cx, cy, <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>, <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>, <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>, <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a>);<span class="comment">// erase old painting</span>
-<a name="l00280"></a>00280       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> = int(16.0*180.0/M_PI
+<a name="l00280"></a>00280       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>
 <a name="l00281"></a>00281     * atan2(<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>*(cy+(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>&gt;&gt;1) - fy)),
 <a name="l00282"></a>00282       <span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>*(fx - cx-(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>&gt;&gt;1)))));
 <a name="l00283"></a>00283       <a class="code" href="classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51">ArcLen</a> -= <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>;
@@ -406,7 +406,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00323"></a>00323   fY -= float(<a class="code" href="classElement.html#a93ec33eb177df951fb2de53402a5645c">cy</a>) + fY2;
 <a name="l00324"></a>00324 
 <a name="l00325"></a>00325   <span class="keywordtype">int</span> Phase =
-<a name="l00326"></a>00326       int(16.0*180.0/M_PI *
+<a name="l00326"></a>00326       int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a> *
 <a name="l00327"></a>00327           atan2(-<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>)*<span class="keywordtype">double</span>(fY), <span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>)*<span class="keywordtype">double</span>(fX)));
 <a name="l00328"></a>00328   Phase -= <a class="code" href="classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf">Angle</a>;
 <a name="l00329"></a>00329   <span class="keywordflow">while</span>(Phase &lt; 0) Phase += 16*360;
@@ -511,7 +511,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

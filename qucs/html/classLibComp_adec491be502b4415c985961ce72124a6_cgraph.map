@@ -4,7 +4,7 @@
 <area shape="rect" id="node9" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="427,139,597,168"/>
 <area shape="rect" id="node23" href="$classComponent.html#a6be39b767c8cf5c0477f8edfc5c99e27" title="Component::copyComponent" alt="" coords="416,192,608,221"/>
 <area shape="rect" id="node25" href="$classComponent.html#abab565a9bb19bb4a0909761be8ff7636" title="Component::analyseLine" alt="" coords="429,325,595,355"/>
-<area shape="rect" id="node7" href="$misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5" title="checkVersion" alt="" coords="695,5,796,35"/>
+<area shape="rect" id="node7" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="677,5,813,35"/>
 <area shape="rect" id="node11" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="667,59,824,88"/>
 <area shape="rect" id="node13" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="685,112,805,141"/>
 <area shape="rect" id="node19" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="657,165,833,195"/>
@@ -14,5 +14,5 @@
 <area shape="rect" id="node27" href="$classComponent.html#a53665f0f2ff5aeb70454dde3e60af458" title="Component::getIntegers" alt="" coords="664,272,827,301"/>
 <area shape="rect" id="node29" href="$classComponent.html#ad566497fe43ddfc1ce8d171af56d3e09" title="Component::getPen" alt="" coords="676,325,815,355"/>
 <area shape="rect" id="node31" href="$classComponent.html#a57ba9d4bd50f1a87a3469b8a83397a4b" title="Component::getBrush" alt="" coords="671,379,820,408"/>
-<area shape="rect" id="node33" href="$misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d" title="convert2Unicode" alt="" coords="685,432,805,461"/>
+<area shape="rect" id="node33" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="668,432,823,461"/>
 </map>

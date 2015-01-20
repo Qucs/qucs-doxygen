@@ -106,7 +106,7 @@
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047 <span class="comment">/* This copy constructor creates a instance of the exception stack</span>
 <a name="l00048"></a>00048 <span class="comment">   class based on the given exception stack. */</span>
-<a name="l00049"></a>00049 exceptionstack::exceptionstack (<span class="keyword">const</span> <a class="code" href="classqucs_1_1exceptionstack.html">exceptionstack</a> &amp; e) {
+<a name="l00049"></a>00049 exceptionstack::exceptionstack (<span class="keyword">const</span> <a class="code" href="classqucs_1_1exceptionstack.html">exceptionstack</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
 <a name="l00050"></a>00050   <a class="code" href="classqucs_1_1exception.html">exception</a> * last, * prev = NULL;
 <a name="l00051"></a>00051   <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1exception.html">exception</a> * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a> = e.root; <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a> != NULL; <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a> = <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>-&gt;getNext ()) {
 <a name="l00052"></a>00052     last = <span class="keyword">new</span> <a class="code" href="classqucs_1_1exception.html">exception</a> (*<a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>);
@@ -131,7 +131,7 @@
 <a name="l00071"></a>00071 <span class="comment">// The function pushes a new exception onto the exception stack.</span>
 <a name="l00072"></a><a class="code" href="classqucs_1_1exceptionstack.html#a10ab68f868228b4e7de2052eb9abc6f0">00072</a> <span class="keywordtype">void</span> exceptionstack::push (<a class="code" href="classqucs_1_1exception.html">exception</a> * e) {
 <a name="l00073"></a>00073   e-&gt;<a class="code" href="classqucs_1_1exception.html#af08faf08246093188272aaa142bc8faf">setNext</a> (root);
-<a name="l00074"></a>00074   root = e;
+<a name="l00074"></a>00074   root = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00075"></a>00075 }
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077 <span class="comment">/* This function removes the top exception from the exception stack</span>
@@ -152,7 +152,7 @@
 <a name="l00092"></a>00092 
 <a name="l00093"></a>00093 <span class="comment">/* This function prints the complete exception stack and removes each</span>
 <a name="l00094"></a>00094 <span class="comment">   exception from the stack. */</span>
-<a name="l00095"></a><a class="code" href="classqucs_1_1exceptionstack.html#a486af86b492f662998c8d7ced9ecd64f">00095</a> <span class="keywordtype">void</span> exceptionstack::print (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>) {
+<a name="l00095"></a><a class="code" href="classqucs_1_1exceptionstack.html#a486af86b492f662998c8d7ced9ecd64f">00095</a> <span class="keywordtype">void</span> exceptionstack::print (<span class="keyword">const</span> <span class="keywordtype">char</span> * prefix) {
 <a name="l00096"></a>00096   <a class="code" href="classqucs_1_1exception.html">exception</a> * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00097"></a>00097   <span class="keywordflow">if</span> (root)
 <a name="l00098"></a>00098     <a class="code" href="logging_8c.html#abe06a8732a47a291606edcfac5e5146e">logprint</a> (<a class="code" href="logging_8h.html#aced66975c154ea0e2a8ec3bc818b4e08">LOG_ERROR</a>, <span class="stringliteral">&quot;%s%sexception stack\n&quot;</span>,
@@ -166,7 +166,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

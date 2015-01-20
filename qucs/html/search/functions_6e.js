@@ -11,5 +11,5 @@ var searchData=
   ['noise_5fii',['Noise_ii',['../classNoise__ii.html#a095d95354c4cf99b3e781587d9dd99da',1,'Noise_ii']]],
   ['noise_5fiv',['Noise_iv',['../classNoise__iv.html#a2661391f369e8452fae403cb49050aec',1,'Noise_iv']]],
   ['noise_5fvv',['Noise_vv',['../classNoise__vv.html#a7a1ca88a0169fe5edb2815c3b2ef6364',1,'Noise_vv']]],
-  ['num2str',['num2str',['../misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f',1,'num2str(double Num):&#160;misc.cpp'],['../misc_8h.html#a5cd3f4dd3c3808f5b13ae8cfa6f7656b',1,'num2str(double):&#160;misc.cpp']]]
+  ['num2str',['num2str',['../namespacemisc.html#af7e46432adfd60ad9f875172e5c95393',1,'misc']]]
 ];

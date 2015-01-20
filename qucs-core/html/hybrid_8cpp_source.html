@@ -101,9 +101,9 @@
 <a name="l00041"></a>00041 
 <a name="l00042"></a><a class="code" href="structhybrid.html#a5a38e4b517e57ce5f6d213fd45a57e59">00042</a> <span class="keywordtype">void</span> <a class="code" href="structhybrid.html#a5a38e4b517e57ce5f6d213fd45a57e59" title="placehoder for S-Parameter initialisation function">hybrid::initSP</a> (<span class="keywordtype">void</span>) {
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> p = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (1.0, <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>)));
-<a name="l00045"></a>00045   <span class="comment">//nr_double_t  k = std::sqrt(1-pow((1/M_SQRT2),2));</span>
-<a name="l00046"></a>00046   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  k = (1/M_SQRT2); <span class="comment">//last line reduces to this for 1/std::sqrt(2)</span>
+<a name="l00044"></a>00044   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> p = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (1.0, <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>)));
+<a name="l00045"></a>00045   <span class="comment">//nr_double_t  k = std::sqrt(1-pow((1/sqrt2),2));</span>
+<a name="l00046"></a>00046   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  k = (1/<a class="code" href="group__qucsMathConstants.html#ga39c42b1128496cd82d085e594755a57c" title="Square root of 2 ( )">sqrt2</a>); <span class="comment">//last line reduces to this for 1/std::sqrt(2)</span>
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048   allocMatrixS ();
 <a name="l00049"></a>00049 <span class="comment">//S11 = S22 = S33 = S44 = 0</span>
@@ -130,11 +130,11 @@
 <a name="l00070"></a>00070 
 <a name="l00071"></a><a class="code" href="structhybrid.html#a8d192ccb36bb02c6f973ed4d21e1d838">00071</a> <span class="keywordtype">void</span> <a class="code" href="structhybrid.html#a8d192ccb36bb02c6f973ed4d21e1d838">hybrid::initAC</a> (<span class="keywordtype">void</span>) {
 <a name="l00072"></a>00072 
-<a name="l00073"></a>00073     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  k = 1 / M_SQRT2;
+<a name="l00073"></a>00073     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  k = 1 / <a class="code" href="group__qucsMathConstants.html#ga39c42b1128496cd82d085e594755a57c" title="Square root of 2 ( )">sqrt2</a>;
 <a name="l00074"></a>00074     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
-<a name="l00075"></a>00075     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a> = k*k*(<a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>(1,0)+<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a>(1.0, 2.0*<a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>))));
+<a name="l00075"></a>00075     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a> = k*k*(<a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>(1,0)+<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a>(1.0, 2.0*<a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>))));
 <a name="l00076"></a>00076     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="evaluate_8cpp.html#a586b556c3589d3178067932ce7380de6">B</a>  = 2 * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a>(1-(k*k));
-<a name="l00077"></a>00077     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="eqndefined_8cpp.html#ad1368c2a0fa68385ecdd9f1016563c08">C</a> = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2*k, <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>)));
+<a name="l00077"></a>00077     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="eqndefined_8cpp.html#ad1368c2a0fa68385ecdd9f1016563c08">C</a> = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2*k, <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (getPropertyDouble (<span class="stringliteral">&quot;phi&quot;</span>)));
 <a name="l00078"></a>00078     <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="differentiate_8cpp.html#a855c89a2038738d883b45a258d5e4b0a">D</a> = getPropertyDouble (<span class="stringliteral">&quot;Zref&quot;</span>) * ((A*<a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a>)-(C*C));
 <a name="l00079"></a>00079 
 <a name="l00080"></a>00080     setVoltageSources (0);
@@ -179,7 +179,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

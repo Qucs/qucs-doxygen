@@ -103,7 +103,7 @@
 <a name="l00043"></a>00043 
 <a name="l00044"></a>00044 %}
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-<a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>=<span class="stringliteral">&quot;vcd_&quot;</span>
+<a name="l00046"></a>00046 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-prefix <span class="stringliteral">&quot;vcd_&quot;</span>
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048 %token t_END
 <a name="l00049"></a>00049 %token t_COMMENT
@@ -137,8 +137,8 @@
 <a name="l00077"></a>00077 %token InvalidCharacter
 <a name="l00078"></a>00078 
 <a name="l00079"></a>00079 %<span class="keyword">union </span>{
-<a name="l00080"></a>00080   <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>;
-<a name="l00081"></a>00081   <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00080"></a>00080   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>;
+<a name="l00081"></a>00081   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00082"></a>00082   <span class="keywordtype">int</span> integer;
 <a name="l00083"></a>00083   <span class="keywordtype">double</span> <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a>;
 <a name="l00084"></a>00084   <span class="keyword">enum</span> <a class="code" href="check__vcd_8h.html#aab7453d9e18c90d2b7bbf2beb685d9fc">vcd_vartypes</a> vtype;
@@ -356,7 +356,7 @@
 <a name="l00296"></a>00296     HASHMARK PositiveHugeInteger {
 <a name="l00297"></a>00297       $$ = $2;
 <a name="l00298"></a>00298     }
-<a name="l00299"></a><a class="code" href="parse__vcd_8y.html#aff992e6d8fbb889d64ff761a0324b6fe">00299</a> ;
+<a name="l00299"></a><a class="code" href="parse__vcd_8y.html#a21a66c8de733e8867510e526d79e1d70">00299</a> ;
 <a name="l00300"></a>00300 
 <a name="l00301"></a>00301 ValueChangeList: <span class="comment">/* nothing */</span> { $$ = NULL; }
 <a name="l00302"></a>00302     | ValueChange ValueChangeList {
@@ -370,7 +370,7 @@
 <a name="l00310"></a>00310 ;
 <a name="l00311"></a>00311 
 <a name="l00312"></a>00312 ScalarValueChange:
-<a name="l00313"></a><a class="code" href="parse__vcd_8y.html#a90f6a72a991c32301e307327a76a1f23">00313</a>     Value IdentifierCode {
+<a name="l00313"></a><a class="code" href="parse__vcd_8y.html#a8d8325c44c60ed30e35bbb58cd688f6d">00313</a>     Value IdentifierCode {
 <a name="l00314"></a><a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">00314</a>       $$ = (<span class="keyword">struct </span><a class="code" href="structvcd__change.html">vcd_change</a> *) calloc (1, <span class="keyword">sizeof</span> (<span class="keyword">struct</span> <a class="code" href="structvcd__change.html">vcd_change</a>));
 <a name="l00315"></a><a class="code" href="parse__vcd_8y.html#ae01443d849d69dbdb3f08e69e895bc90">00315</a>       $$-&gt;value = $1;
 <a name="l00316"></a><a class="code" href="parse__vcd_8y.html#a457d913bff1ebc8671c1eca1c9d5fc03">00316</a>       $$-&gt;code = $2;
@@ -380,7 +380,7 @@
 <a name="l00320"></a>00320 Value:
 <a name="l00321"></a>00321     ZERO  <span class="comment">/* low level       */</span>
 <a name="l00322"></a>00322   | ONE   <span class="comment">/* high level      */</span>
-<a name="l00323"></a><a class="code" href="parse__vcd_8y.html#a8f4ba198b682da21180feada35e73b91">00323</a>   | X     <span class="comment">/* undefined/error */</span>
+<a name="l00323"></a><a class="code" href="parse__vcd_8y.html#ae3d0ff4bb5bfe146c4a9d681e420d7d9">00323</a>   | X     <span class="comment">/* undefined/error */</span>
 <a name="l00324"></a>00324   | Z     <span class="comment">/* high impedance  */</span>
 <a name="l00325"></a>00325 ;
 <a name="l00326"></a>00326 
@@ -409,7 +409,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

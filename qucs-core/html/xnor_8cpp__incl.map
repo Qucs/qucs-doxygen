@@ -1,29 +1,29 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$component_8h.html" title="component.h" alt="" coords="665,83,761,112"/>
-<area shape="rect" id="node97" href="$digital_8h.html" title="digital.h" alt="" coords="785,83,852,112"/>
-<area shape="rect" id="node99" href="$xnor_8h.html" title="xnor.h" alt="" coords="876,83,935,112"/>
-<area shape="rect" id="node17" href="$compat_8h.html" title="compat.h" alt="" coords="477,160,552,189"/>
-<area shape="rect" id="node19" href="$logging_8h.html" title="logging.h" alt="" coords="576,160,651,189"/>
-<area shape="rect" id="node21" href="$complex_8h.html" title="complex.h" alt="" coords="359,237,441,267"/>
-<area shape="rect" id="node28" href="$object_8h.html" title="object.h" alt="" coords="1068,237,1135,267"/>
-<area shape="rect" id="node39" href="$vector_8h.html" title="vector.h" alt="" coords="301,160,371,189"/>
-<area shape="rect" id="node50" href="$matrix_8h.html" title="Dense matrix class header file." alt="" coords="867,160,936,189"/>
-<area shape="rect" id="node52" href="$node_8h.html" title="node.h" alt="" coords="960,160,1021,189"/>
-<area shape="rect" id="node54" href="$net_8h.html" title="net.h" alt="" coords="1096,160,1147,189"/>
-<area shape="rect" id="node61" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="776,160,843,189"/>
-<area shape="rect" id="node89" href="$component__id_8h.html" title="component_id.h" alt="" coords="1171,160,1285,189"/>
-<area shape="rect" id="node91" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="93,160,184,189"/>
-<area shape="rect" id="node95" href="$netdefs_8h.html" title="netdefs.h" alt="" coords="1360,160,1435,189"/>
-<area shape="rect" id="node25" href="$real_8h.html" title="real.h" alt="" coords="387,315,440,344"/>
-<area shape="rect" id="node32" href="$property_8h.html" title="property.h" alt="" coords="809,315,889,344"/>
-<area shape="rect" id="node43" href="$consts_8h.html" title="Global math constants header file." alt="" coords="103,237,175,267"/>
-<area shape="rect" id="node46" href="$precision_8h.html" title="precision.h" alt="" coords="199,237,284,267"/>
-<area shape="rect" id="node57" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="1209,237,1273,267"/>
-<area shape="rect" id="node63" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="625,237,735,267"/>
-<area shape="rect" id="node69" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="759,237,873,267"/>
-<area shape="rect" id="node75" href="$integrator_8h.html" title="integrator.h" alt="" coords="516,237,601,267"/>
-<area shape="rect" id="node85" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="913,315,993,344"/>
-<area shape="rect" id="node65" href="$pair_8h.html" title="pair.h" alt="" coords="732,315,785,344"/>
-<area shape="rect" id="node77" href="$states_8h.html" title="states.h" alt="" coords="520,315,589,344"/>
-<area shape="rect" id="node79" href="$states_8cpp.html" title="states.cpp" alt="" coords="513,392,596,421"/>
+<area shape="rect" id="node3" href="$component_8h.html" title="component.h" alt="" coords="1007,83,1103,112"/>
+<area shape="rect" id="node98" href="$digital_8h.html" title="digital.h" alt="" coords="1127,83,1193,112"/>
+<area shape="rect" id="node100" href="$xnor_8h.html" title="xnor.h" alt="" coords="1217,83,1276,112"/>
+<area shape="rect" id="node17" href="$compat_8h.html" title="compat.h" alt="" coords="1293,160,1368,189"/>
+<area shape="rect" id="node19" href="$logging_8h.html" title="logging.h" alt="" coords="1392,160,1467,189"/>
+<area shape="rect" id="node21" href="$complex_8h.html" title="complex.h" alt="" coords="1016,237,1099,267"/>
+<area shape="rect" id="node28" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="1081,392,1172,421"/>
+<area shape="rect" id="node37" href="$object_8h.html" title="object.h" alt="" coords="721,237,788,267"/>
+<area shape="rect" id="node48" href="$vector_8h.html" title="vector.h" alt="" coords="1117,160,1187,189"/>
+<area shape="rect" id="node54" href="$matrix_8h.html" title="Dense matrix class header file." alt="" coords="1491,160,1560,189"/>
+<area shape="rect" id="node56" href="$node_8h.html" title="node.h" alt="" coords="1584,160,1645,189"/>
+<area shape="rect" id="node58" href="$net_8h.html" title="net.h" alt="" coords="797,160,848,189"/>
+<area shape="rect" id="node65" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="505,160,572,189"/>
+<area shape="rect" id="node93" href="$component__id_8h.html" title="component_id.h" alt="" coords="1669,160,1784,189"/>
+<area shape="rect" id="node96" href="$netdefs_8h.html" title="netdefs.h" alt="" coords="1808,160,1883,189"/>
+<area shape="rect" id="node25" href="$real_8h.html" title="real.h" alt="" coords="1068,315,1121,344"/>
+<area shape="rect" id="node30" href="$consts_8h.html" title="Global math constants header file." alt="" coords="1091,469,1163,499"/>
+<area shape="rect" id="node33" href="$precision_8h.html" title="precision.h" alt="" coords="1188,469,1273,499"/>
+<area shape="rect" id="node41" href="$property_8h.html" title="property.h" alt="" coords="468,315,548,344"/>
+<area shape="rect" id="node61" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="863,237,927,267"/>
+<area shape="rect" id="node67" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="348,237,457,267"/>
+<area shape="rect" id="node73" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="481,237,596,267"/>
+<area shape="rect" id="node79" href="$integrator_8h.html" title="integrator.h" alt="" coords="119,237,204,267"/>
+<area shape="rect" id="node89" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="572,315,652,344"/>
+<area shape="rect" id="node69" href="$pair_8h.html" title="pair.h" alt="" coords="391,315,444,344"/>
+<area shape="rect" id="node81" href="$states_8h.html" title="states.h" alt="" coords="125,315,195,344"/>
+<area shape="rect" id="node83" href="$states_8cpp.html" title="states.cpp" alt="" coords="119,392,201,421"/>
 </map>

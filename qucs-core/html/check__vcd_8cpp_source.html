@@ -271,7 +271,7 @@
 <a name="l00211"></a>00211 
 <a name="l00212"></a>00212 <span class="comment">/* Predends the scope identifiers in front of a variable identfier. */</span>
 <a name="l00213"></a>00213 <span class="keyword">static</span> <span class="keywordtype">char</span> *
-<a name="l00214"></a><a class="code" href="check__vcd_8cpp.html#add467e7493b237edd174562bd08e6bfc">00214</a> <a class="code" href="check__vcd_8cpp.html#add467e7493b237edd174562bd08e6bfc">vcd_prepend_scopes</a> (<span class="keyword">struct</span> <a class="code" href="structvcd__vardef.html">vcd_vardef</a> * var, <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>) {
+<a name="l00214"></a><a class="code" href="check__vcd_8cpp.html#add467e7493b237edd174562bd08e6bfc">00214</a> <a class="code" href="check__vcd_8cpp.html#add467e7493b237edd174562bd08e6bfc">vcd_prepend_scopes</a> (<span class="keyword">struct</span> <a class="code" href="structvcd__vardef.html">vcd_vardef</a> * var, <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>) {
 <a name="l00215"></a>00215   <span class="keyword">struct </span><a class="code" href="structvcd__scope.html">vcd_scope</a> * scope = var-&gt;<a class="code" href="structvcd__vardef.html#a88f268b7a57c48d072fec2104f87ca28">scope</a>;
 <a name="l00216"></a>00216   <span class="keywordflow">while</span> (scope &amp;&amp; scope != vcd-&gt;<a class="code" href="structvcd__file.html#a3d9804093e68e4319e30ac92a10c8d00">scopes</a>) {
 <a name="l00217"></a>00217     <span class="keywordflow">if</span> (vcd-&gt;<a class="code" href="structvcd__file.html#a3d9804093e68e4319e30ac92a10c8d00">scopes</a>) {
@@ -287,7 +287,7 @@
 <a name="l00227"></a>00227     ident = txt;
 <a name="l00228"></a>00228     scope = scope-&gt;<a class="code" href="structvcd__scope.html#a55584134de12b0ff4473fdbc869edb2d">parent</a>;
 <a name="l00229"></a>00229   }
-<a name="l00230"></a>00230   <span class="keywordflow">return</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>;
+<a name="l00230"></a>00230   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>;
 <a name="l00231"></a>00231 }
 <a name="l00232"></a>00232 
 <a name="l00233"></a>00233 <span class="comment">/* This function initially creates a dataset variable based on the</span>
@@ -367,7 +367,7 @@
 <a name="l00307"></a>00307 <span class="comment">   the function returns a nicely formatted value for the dataset. */</span>
 <a name="l00308"></a><a class="code" href="check__vcd_8cpp.html#a21c80b01892ceeacdf857f6b1b1421ae">00308</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="check__vcd_8cpp.html#a21c80b01892ceeacdf857f6b1b1421ae">vcd_create_value</a> (<span class="keyword">struct</span> <a class="code" href="structvcd__variable.html">vcd_variable</a> * vv, <span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>) {
 <a name="l00309"></a>00309   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, len = strlen (vv-&gt;<a class="code" href="structvcd__variable.html#a7fb416a5d7c5fa1cc55792637deb2a39">value</a>);
-<a name="l00310"></a>00310   <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00310"></a>00310   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00311"></a>00311 
 <a name="l00312"></a>00312   <span class="keywordflow">if</span> (vv-&gt;<a class="code" href="structvcd__variable.html#ab4edc55f8ac91f4931ff813c2585acb6">type</a> == <a class="code" href="check__vcd_8h.html#aab7453d9e18c90d2b7bbf2beb685d9fca175c390e4349e695b7ebcf77fb9860ce">VAR_REAL</a>) {
 <a name="l00313"></a>00313     <span class="comment">// a real</span>
@@ -399,7 +399,7 @@
 <a name="l00339"></a>00339     for (i = 0; i &lt; size - len; i++) value[i] = fill;
 <a name="l00340"></a>00340     strcpy (&amp;value[i], vv-&gt;<a class="code" href="structvcd__variable.html#a7fb416a5d7c5fa1cc55792637deb2a39">value</a>);
 <a name="l00341"></a>00341   }
-<a name="l00342"></a>00342   <span class="keywordflow">return</span> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00342"></a>00342   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00343"></a>00343 }
 <a name="l00344"></a>00344 
 <a name="l00345"></a>00345 <span class="comment">/* The function creates a full dataset variable for the given VCD</span>
@@ -669,7 +669,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

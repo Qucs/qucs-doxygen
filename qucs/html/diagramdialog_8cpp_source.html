@@ -1434,42 +1434,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01397"></a><a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b">01397</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotX</a>(<span class="keywordtype">int</span> Value)
 <a name="l01398"></a>01398 {
 <a name="l01399"></a>01399   <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;setText(QString::number(Value));
-<a name="l01400"></a>01400   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = float(Value) * M_PI/180.0;
+<a name="l01400"></a>01400   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01401"></a>01401   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01402"></a>01402 }
 <a name="l01403"></a>01403 
 <a name="l01407"></a><a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0">01407</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotY</a>(<span class="keywordtype">int</span> Value)
 <a name="l01408"></a>01408 {
 <a name="l01409"></a>01409   <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;setText(QString::number(Value));
-<a name="l01410"></a>01410   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = float(Value) * M_PI/180.0;
+<a name="l01410"></a>01410   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01411"></a>01411   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01412"></a>01412 }
 <a name="l01413"></a>01413 
 <a name="l01417"></a><a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4">01417</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotZ</a>(<span class="keywordtype">int</span> Value)
 <a name="l01418"></a>01418 {
 <a name="l01419"></a>01419   <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;setText(QString::number(Value));
-<a name="l01420"></a>01420   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = float(Value) * M_PI/180.0;
+<a name="l01420"></a>01420   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01421"></a>01421   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01422"></a>01422 }
 <a name="l01423"></a>01423 
 <a name="l01427"></a><a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50">01427</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotX</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
 <a name="l01428"></a>01428 {
 <a name="l01429"></a>01429   <a class="code" href="classDiagramDialog.html#a486293259bf9c41859f48f7f8d4fd138">SliderRotX</a>-&gt;setValue(Text.toInt());
-<a name="l01430"></a>01430   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = Text.toFloat() * M_PI/180.0;
+<a name="l01430"></a>01430   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01431"></a>01431   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01432"></a>01432 }
 <a name="l01433"></a>01433 
 <a name="l01437"></a><a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445">01437</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotY</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
 <a name="l01438"></a>01438 {
 <a name="l01439"></a>01439   <a class="code" href="classDiagramDialog.html#a846437469dc961c15a0d526dcf34382c">SliderRotY</a>-&gt;setValue(Text.toInt());
-<a name="l01440"></a>01440   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = Text.toFloat() * M_PI/180.0;
+<a name="l01440"></a>01440   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01441"></a>01441   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01442"></a>01442 }
 <a name="l01443"></a>01443 
 <a name="l01447"></a><a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518">01447</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotZ</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
 <a name="l01448"></a>01448 {
 <a name="l01449"></a>01449   <a class="code" href="classDiagramDialog.html#a281689e1cf5662c633d5f6a01f044c19">SliderRotZ</a>-&gt;setValue(Text.toInt());
-<a name="l01450"></a>01450   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = Text.toFloat() * M_PI/180.0;
+<a name="l01450"></a>01450   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
 <a name="l01451"></a>01451   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
 <a name="l01452"></a>01452 }
 </pre></div></div><!-- contents -->
@@ -1490,7 +1490,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

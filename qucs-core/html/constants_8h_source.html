@@ -62,111 +62,71 @@
 <a name="l00002"></a>00002 <span class="comment"> * constants.h - global natural constant header file</span>
 <a name="l00003"></a>00003 <span class="comment"> *</span>
 <a name="l00004"></a>00004 <span class="comment"> * Copyright (C) 2004, 2005 Stefan Jahn &lt;stefan@lkcc.org&gt;</span>
-<a name="l00005"></a>00005 <span class="comment"> *</span>
-<a name="l00006"></a>00006 <span class="comment"> * This is free software; you can redistribute it and/or modify</span>
-<a name="l00007"></a>00007 <span class="comment"> * it under the terms of the GNU General Public License as published by</span>
-<a name="l00008"></a>00008 <span class="comment"> * the Free Software Foundation; either version 2, or (at your option)</span>
-<a name="l00009"></a>00009 <span class="comment"> * any later version.</span>
-<a name="l00010"></a>00010 <span class="comment"> *</span>
-<a name="l00011"></a>00011 <span class="comment"> * This software is distributed in the hope that it will be useful,</span>
-<a name="l00012"></a>00012 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
-<a name="l00013"></a>00013 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
-<a name="l00014"></a>00014 <span class="comment"> * GNU General Public License for more details.</span>
-<a name="l00015"></a>00015 <span class="comment"> *</span>
-<a name="l00016"></a>00016 <span class="comment"> * You should have received a copy of the GNU General Public License</span>
-<a name="l00017"></a>00017 <span class="comment"> * along with this package; see the file COPYING.  If not, write to</span>
-<a name="l00018"></a>00018 <span class="comment"> * the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,</span>
-<a name="l00019"></a>00019 <span class="comment"> * Boston, MA 02110-1301, USA.</span>
-<a name="l00020"></a>00020 <span class="comment"> *</span>
-<a name="l00021"></a>00021 <span class="comment"> * $Id$</span>
-<a name="l00022"></a>00022 <span class="comment"> *</span>
-<a name="l00023"></a>00023 <span class="comment"> */</span>
-<a name="l00024"></a>00024 
-<a name="l00032"></a>00032 <span class="preprocessor">#ifndef __CONSTANTS_H__</span>
-<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define __CONSTANTS_H__</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a>00035 <span class="preprocessor">#include &quot;<a class="code" href="consts_8h.html" title="Global math constants header file.">consts.h</a>&quot;</span>
-<a name="l00036"></a>00036 <span class="preprocessor">#include &quot;<a class="code" href="precision_8h.html">precision.h</a>&quot;</span>
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
-<a name="l00039"></a>00039 
-<a name="l00047"></a><a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602">00047</a> <span class="preprocessor">#define C0   299792458.0</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>
-<a name="l00049"></a><a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4">00049</a> <span class="preprocessor">#define MU0  12.566370614e-7</span>
-<a name="l00050"></a>00050 <span class="preprocessor"></span>
-<a name="l00051"></a><a class="code" href="group__qucsPhysConstants.html#ga73f0647950b85591fbe61fff44d45c2e">00051</a> <span class="preprocessor">#define E0   8.854187817e-12</span>
-<a name="l00052"></a>00052 <span class="preprocessor"></span>
-<a name="l00053"></a><a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094">00053</a> <span class="preprocessor">#define Z0   376.73031346958504364963</span>
-<a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00057"></a><a class="code" href="group__qucsPhysConstants.html#ga66805b718d4b850756e52c885c69d089">00057</a> <span class="preprocessor">#define Hp    6.626069311e-34</span>
-<a name="l00058"></a>00058 <span class="preprocessor"></span>
-<a name="l00059"></a><a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254">00059</a> <span class="preprocessor">#define K    -273.15</span>
-<a name="l00060"></a>00060 <span class="preprocessor"></span>
-<a name="l00061"></a><a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326">00061</a> <span class="preprocessor">#define T0   290</span>
-<a name="l00062"></a>00062 <span class="preprocessor"></span>
-<a name="l00064"></a><a class="code" href="group__qucsPhysConstants.html#ga8d945950272f02a151793d09aea05627">00064</a> <span class="preprocessor">#define kB   1.380650524e-23</span>
-<a name="l00065"></a>00065 <span class="preprocessor"></span>
-<a name="l00066"></a><a class="code" href="group__qucsPhysConstants.html#gaf12f846bdd545b6e958c8f9d6438132e">00066</a> <span class="preprocessor">#define Q_e    1.6021765314e-19</span>
-<a name="l00067"></a>00067 <span class="preprocessor"></span>
-<a name="l00068"></a><a class="code" href="group__qucsPhysConstants.html#ga2d912348ee3b5229437513009d95a427">00068</a> <span class="preprocessor">#define kBoverQ    0.86173433260414314916e-4</span>
-<a name="l00069"></a>00069 <span class="preprocessor"></span>
-<a name="l00070"></a><a class="code" href="group__qucsPhysConstants.html#gabfd2226384a821dc36dc5e5e190fffad">00070</a> <span class="preprocessor">#define QoverkB    1.16045045690360379713e+4</span>
-<a name="l00071"></a>00071 <span class="preprocessor"></span>
-<a name="l00073"></a><a class="code" href="group__qucsPhysConstants.html#gae19e65e295d277d002c5b71e51a2dbd9">00073</a> <span class="preprocessor">#define ESiO2      3.9</span>
-<a name="l00074"></a>00074 <span class="preprocessor"></span>
-<a name="l00075"></a><a class="code" href="group__qucsPhysConstants.html#ga1e0368accf130f32ea54c2ae32c3180f">00075</a> <span class="preprocessor">#define ESi        11.7</span>
-<a name="l00076"></a>00076 <span class="preprocessor"></span>
-<a name="l00077"></a><a class="code" href="group__qucsPhysConstants.html#ga365afbde2590dce6e30ba119300f7ed7">00077</a> <span class="preprocessor">#define EGe        15.8</span>
-<a name="l00078"></a>00078 <span class="preprocessor"></span>
-<a name="l00079"></a><a class="code" href="group__qucsPhysConstants.html#gac305562d46e46472cfe1974613786992">00079</a> <span class="preprocessor">#define EGaAs      13.1</span>
-<a name="l00080"></a>00080 <span class="preprocessor"></span>
-<a name="l00081"></a><a class="code" href="group__qucsPhysConstants.html#ga5905fd2ec03f0aed4bdb418e70326b58">00081</a> <span class="preprocessor">#define NiSi       1.45e16</span>
-<a name="l00082"></a>00082 <span class="preprocessor"></span>
-<a name="l00083"></a><a class="code" href="group__qucsPhysConstants.html#ga76e39112a2ce77f70d3adf06fa2bee0a">00083</a> <span class="preprocessor">#define NiGe       2.40e19</span>
-<a name="l00084"></a>00084 <span class="preprocessor"></span>
-<a name="l00085"></a><a class="code" href="group__qucsPhysConstants.html#ga25db9775d8513c229dd041ea1aca37b1">00085</a> <span class="preprocessor">#define NiGaAs     9.00e12</span>
-<a name="l00086"></a>00086 <span class="preprocessor"></span>
-<a name="l00087"></a><a class="code" href="group__qucsPhysConstants.html#ga0d97d25b2751c2cc881d83735910727e">00087</a> <span class="preprocessor">#define EgSi       1.11</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span>
-<a name="l00091"></a><a class="code" href="group__qucsPhysConstants.html#ga9b3d47e812862b4f467d9867b66edc65">00091</a> <span class="preprocessor">#define EgSchottky 0.69</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span>
-<a name="l00093"></a><a class="code" href="group__qucsPhysConstants.html#ga3616e55b99a44acdfed4910dced835a5">00093</a> <span class="preprocessor">#define EgGe       0.67</span>
-<a name="l00094"></a>00094 <span class="preprocessor"></span>
-<a name="l00095"></a><a class="code" href="group__qucsPhysConstants.html#ga16a73a3354998fd41a8fa9e13fe896ad">00095</a> <span class="preprocessor">#define EgGaAs     1.43</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span>
-<a name="l00097"></a><a class="code" href="group__qucsPhysConstants.html#ga3919bc16af4f38da1b9e2545159ff4ea">00097</a> <span class="preprocessor">#define Eg0Si      1.16</span>
-<a name="l00098"></a>00098 <span class="preprocessor"></span>
-<a name="l00100"></a>00100 
-<a name="l00104"></a><a class="code" href="group__qucsPhysConstants.html#gabbfa61e673afeaadb4fca422bc646520">00104</a> <span class="preprocessor">#define GMin       NR_TINY</span>
-<a name="l00105"></a>00105 <span class="preprocessor"></span>
-<a name="l00106"></a><a class="code" href="group__qucsPhysConstants.html#ga9fb1a6714f57b44dcb211f9aa3394246">00106</a> <span class="preprocessor">#define cubic(x)  ((x) * (x) * (x))</span>
-<a name="l00107"></a>00107 <span class="preprocessor"></span>
-<a name="l00108"></a><a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">00108</a> <span class="preprocessor">#define kelvin(x) ((x) - K)</span>
-<a name="l00109"></a>00109 <span class="preprocessor"></span>
-<a name="l00113"></a><a class="code" href="group__qucsPhysConstants.html#ga121cee81afe7d8a5c9eb2ffcc75c5d0d">00113</a> <span class="preprocessor">#define degree(x) (K + (x))</span>
-<a name="l00114"></a>00114 <span class="preprocessor"></span>
-<a name="l00118"></a><a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14">00118</a> <span class="preprocessor">#define rad(x)    (M_PI * (x) / 180.0)</span>
-<a name="l00119"></a>00119 <span class="preprocessor"></span>
-<a name="l00123"></a><a class="code" href="group__qucsPhysConstants.html#gac4b2d0390812db69420100fbb4a5f2ab">00123</a> <span class="preprocessor">#define deg(x)    (180.0 * (x) / M_PI)</span>
-<a name="l00124"></a>00124 <span class="preprocessor"></span>
-<a name="l00125"></a>00125 <span class="preprocessor">#ifndef MAX</span>
-<a name="l00126"></a>00126 <span class="preprocessor"></span>
-<a name="l00127"></a><a class="code" href="group__qucsPhysConstants.html#gaacc3ee1a7f283f8ef65cea31f4436a95">00127</a> <span class="preprocessor"># define MAX(x,y) (((x) &gt; (y)) ? (x) : (y))</span>
-<a name="l00128"></a>00128 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00129"></a>00129 <span class="preprocessor"></span>
-<a name="l00130"></a>00130 <span class="preprocessor">#ifndef MIN</span>
-<a name="l00131"></a>00131 <span class="preprocessor"></span>
-<a name="l00132"></a>00132 <span class="preprocessor"># define MIN(x,y) (((x) &lt; (y)) ? (x) : (y))</span>
-<a name="l00133"></a>00133 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00134"></a>00134 <span class="preprocessor"></span>
-<a name="l00139"></a>00139 } <span class="comment">// namespace qucs</span>
-<a name="l00140"></a>00140 
-<a name="l00141"></a>00141 <span class="preprocessor">#endif </span><span class="comment">/* __CONSTANTS_H__ */</span>
+<a name="l00005"></a>00005 <span class="comment"> * Copyright (C) 2015 Guilherme Brondani Torri &lt;guitorri@gmail.com&gt;</span>
+<a name="l00006"></a>00006 <span class="comment"> *</span>
+<a name="l00007"></a>00007 <span class="comment"> * This is free software; you can redistribute it and/or modify</span>
+<a name="l00008"></a>00008 <span class="comment"> * it under the terms of the GNU General Public License as published by</span>
+<a name="l00009"></a>00009 <span class="comment"> * the Free Software Foundation; either version 2, or (at your option)</span>
+<a name="l00010"></a>00010 <span class="comment"> * any later version.</span>
+<a name="l00011"></a>00011 <span class="comment"> *</span>
+<a name="l00012"></a>00012 <span class="comment"> * This software is distributed in the hope that it will be useful,</span>
+<a name="l00013"></a>00013 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<a name="l00014"></a>00014 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<a name="l00015"></a>00015 <span class="comment"> * GNU General Public License for more details.</span>
+<a name="l00016"></a>00016 <span class="comment"> *</span>
+<a name="l00017"></a>00017 <span class="comment"> * You should have received a copy of the GNU General Public License</span>
+<a name="l00018"></a>00018 <span class="comment"> * along with this package; see the file COPYING.  If not, write to</span>
+<a name="l00019"></a>00019 <span class="comment"> * the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,</span>
+<a name="l00020"></a>00020 <span class="comment"> * Boston, MA 02110-1301, USA.</span>
+<a name="l00021"></a>00021 <span class="comment"> *</span>
+<a name="l00022"></a>00022 <span class="comment"> * $Id$</span>
+<a name="l00023"></a>00023 <span class="comment"> *</span>
+<a name="l00024"></a>00024 <span class="comment"> */</span>
+<a name="l00025"></a>00025 
+<a name="l00033"></a>00033 <span class="preprocessor">#ifndef __CONSTANTS_H__</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span><span class="preprocessor">#define __CONSTANTS_H__</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 <span class="preprocessor">#include &quot;<a class="code" href="consts_8h.html" title="Global math constants header file.">consts.h</a>&quot;</span>
+<a name="l00037"></a>00037 <span class="preprocessor">#include &quot;<a class="code" href="precision_8h.html">precision.h</a>&quot;</span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
+<a name="l00040"></a>00040 
+<a name="l00048"></a><a class="code" href="group__qucsPhysConstants.html#ga4342574f8def0a70dc042e1869f92710">00048</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga4342574f8def0a70dc042e1869f92710" title="speed of light in vacuum ( )">C0</a>   = 299792458.0;
+<a name="l00050"></a><a class="code" href="group__qucsPhysConstants.html#gabc68959608698228e97dbb5a30a816e8">00050</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span>  <a class="code" href="group__qucsPhysConstants.html#gabc68959608698228e97dbb5a30a816e8" title="magnetic constant of vacuum ( )">MU0</a> = 12.566370614e-7;
+<a name="l00052"></a><a class="code" href="group__qucsPhysConstants.html#ga2a555060c28b5f7a5fd1e635ad8a3050">00052</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga2a555060c28b5f7a5fd1e635ad8a3050" title="Electric constant of vacuum .">E0</a>   = 8.854187817e-12;
+<a name="l00054"></a><a class="code" href="group__qucsPhysConstants.html#ga2fc648b73c3e2d73b68c528caf78abc0">00054</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga2fc648b73c3e2d73b68c528caf78abc0" title="Wave impedance in vacuum ( )">Z0</a>   = 376.73031346958504364963;
+<a name="l00058"></a><a class="code" href="group__qucsPhysConstants.html#ga5f53eb8148849294588be00ba2ed14cb">00058</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga5f53eb8148849294588be00ba2ed14cb" title="Planck constant ( )">Hp</a>   = 6.626069311e-34;
+<a name="l00060"></a><a class="code" href="group__qucsPhysConstants.html#ga61e4d22eb77fc2ac9b4b80a4d8a235a1">00060</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga61e4d22eb77fc2ac9b4b80a4d8a235a1" title="Absolute 0 in centigrade.">K</a>    = -273.15;
+<a name="l00062"></a><a class="code" href="group__qucsPhysConstants.html#ga9a5dcfcfc8f0501b467537138ec1661a">00062</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga9a5dcfcfc8f0501b467537138ec1661a" title="standard temperature">T0</a>   = 290;
+<a name="l00063"></a>00063 
+<a name="l00065"></a><a class="code" href="group__qucsPhysConstants.html#ga0d8f03a5334f35172c7702f6db2f87bd">00065</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga0d8f03a5334f35172c7702f6db2f87bd" title="Boltzmann constant ( )">kB</a>      = 1.380650524e-23;
+<a name="l00067"></a><a class="code" href="group__qucsPhysConstants.html#ga2749c261a4b1bd6f0022b61e6f177500">00067</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga2749c261a4b1bd6f0022b61e6f177500" title="Elementary charge ( )">Q_e</a>     = 1.6021765314e-19;
+<a name="l00069"></a><a class="code" href="group__qucsPhysConstants.html#ga900600ece6f54b309a2c252bf9008344">00069</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga900600ece6f54b309a2c252bf9008344" title="Boltzmann constant over Elementary charge ( )">kBoverQ</a> = 0.86173433260414314916e-4;
+<a name="l00071"></a><a class="code" href="group__qucsPhysConstants.html#ga498ff06979ed9e495ad2ce40a556749f">00071</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga498ff06979ed9e495ad2ce40a556749f" title="Elementary charge over Boltzmann constant ( )">QoverkB</a> = 1.16045045690360379713e+4;
+<a name="l00072"></a>00072 
+<a name="l00074"></a><a class="code" href="group__qucsPhysConstants.html#ga200641f1e8c0b0cc0a776d132bf704bf">00074</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga200641f1e8c0b0cc0a776d132bf704bf" title="Relative permittivity of Silicon dioxide (Silica)">ESiO2</a>     = 3.9;
+<a name="l00076"></a><a class="code" href="group__qucsPhysConstants.html#gaa47a75e612102aebc282117d3336b568">00076</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#gaa47a75e612102aebc282117d3336b568" title="Relative permittivity of Silicon.">ESi</a>       = 11.7;
+<a name="l00078"></a><a class="code" href="group__qucsPhysConstants.html#gaed7f0c81f44cca75c8dcd0c2a7024176">00078</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#gaed7f0c81f44cca75c8dcd0c2a7024176" title="relative permittivity of Germanium">EGe</a>       = 15.8;
+<a name="l00080"></a><a class="code" href="group__qucsPhysConstants.html#ga2e0c6de6c81bc0f7579c9bcf569220c3">00080</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga2e0c6de6c81bc0f7579c9bcf569220c3" title="Relative permittivity of Gallium(III) arsenide.">EGaAs</a>     = 13.1;
+<a name="l00082"></a><a class="code" href="group__qucsPhysConstants.html#gad854cd1ac16f212b094a24d03ecce83c">00082</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#gad854cd1ac16f212b094a24d03ecce83c" title="Intrinsic carrier concentration in 1/m^3 of Silicon.">NiSi</a>      = 1.45e16;
+<a name="l00084"></a><a class="code" href="group__qucsPhysConstants.html#ga23d5554fcd62fe14f9c04f51499e2ded">00084</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga23d5554fcd62fe14f9c04f51499e2ded" title="Intrinsic carrier concentration in 1/m^3 of Germanium.">NiGe</a>      = 2.40e19;
+<a name="l00086"></a><a class="code" href="group__qucsPhysConstants.html#ga920a8c0cb525529cccaf64749f27aaf3">00086</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga920a8c0cb525529cccaf64749f27aaf3" title="Intrinsic carrier concentration in 1/m^3 of Gallium(III) arsenide.">NiGaAs</a>    = 9.00e12;
+<a name="l00088"></a><a class="code" href="group__qucsPhysConstants.html#ga8977e480cdc75a5bc137bd396badb3e5">00088</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga8977e480cdc75a5bc137bd396badb3e5" title="Energy gap at 300K in eV of Silicon.">EgSi</a>      = 1.11;
+<a name="l00092"></a><a class="code" href="group__qucsPhysConstants.html#ga361ea387029ced6a7f45452d42c7c8c2">00092</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga361ea387029ced6a7f45452d42c7c8c2" title="Energy gap at 300K in eV of Schottky.">EgSchottky</a> = 0.69;
+<a name="l00094"></a><a class="code" href="group__qucsPhysConstants.html#ga7fef7b7de72470670b9e54fe42a6b00c">00094</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga7fef7b7de72470670b9e54fe42a6b00c" title="Energy gap at 300K in eV of Germanium.">EgGe</a>       = 0.67;
+<a name="l00096"></a><a class="code" href="group__qucsPhysConstants.html#gae6698a2c59e221fe7e82e1d22ac3431c">00096</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#gae6698a2c59e221fe7e82e1d22ac3431c" title="Energy gap at 300K in eV of Gallium(III) arsenide.">EgGaAs</a>     = 1.43;
+<a name="l00098"></a><a class="code" href="group__qucsPhysConstants.html#ga9d13c6f154854034676e4ca8a1c14527">00098</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga9d13c6f154854034676e4ca8a1c14527" title="Energy gap at 0K in eV of Silicon.">Eg0Si</a>      = 1.16;
+<a name="l00099"></a>00099 
+<a name="l00103"></a><a class="code" href="group__qucsPhysConstants.html#ga5b2089b6966d782c6fa31989a61bb3d0">00103</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsPhysConstants.html#ga5b2089b6966d782c6fa31989a61bb3d0" title="Gmin.">GMin</a> = NR_TINY;
+<a name="l00104"></a>00104 
+<a name="l00109"></a>00109 } <span class="comment">// namespace qucs</span>
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="preprocessor">#endif </span><span class="comment">/* __CONSTANTS_H__ */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

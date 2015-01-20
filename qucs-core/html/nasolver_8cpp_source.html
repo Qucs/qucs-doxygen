@@ -196,8 +196,8 @@
 <a name="l00136"></a>00136 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00137"></a><a class="code" href="classqucs_1_1nasolver.html#ab2d2856208954e2619e2a417775b3372">00137</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::solve_once</a> (<span class="keywordtype">void</span>)
 <a name="l00138"></a>00138 {
-<a name="l00139"></a>00139     qucs::exception * e;
-<a name="l00140"></a>00140     <span class="keywordtype">int</span> error = 0, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00139"></a>00139     qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
+<a name="l00140"></a>00140     <span class="keywordtype">int</span> error = 0, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00141"></a>00141 
 <a name="l00142"></a>00142     <span class="comment">// run the calculation function for each circuit</span>
 <a name="l00143"></a>00143     calculate ();
@@ -216,19 +216,19 @@
 <a name="l00156"></a>00156     <span class="keywordflow">case</span> <a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a732ab89ae14ddf9050b060b500c84177">EXCEPTION_PIVOT</a>:
 <a name="l00157"></a>00157     <span class="keywordflow">case</span> <a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5ad18fc025c516befe5ad71d8c37b2e2f3">EXCEPTION_WRONG_VOLTAGE</a>:
 <a name="l00158"></a>00158         e = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a3c1af9a96319e176a41f5ceec5e529e4">EXCEPTION_NA_FAILED</a>);
-<a name="l00159"></a>00159         <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="exceptionstack_8h.html#af6a3e10f858ba64bd0aee79b0bc2ca6c">top_exception</a>()-&gt;getData ();
+<a name="l00159"></a>00159         <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="exceptionstack_8h.html#af6a3e10f858ba64bd0aee79b0bc2ca6c">top_exception</a>()-&gt;getData ();
 <a name="l00160"></a>00160         <a class="code" href="exceptionstack_8h.html#aa539da6ed9b41bb5d7db0218eaceeab3">pop_exception</a> ();
-<a name="l00161"></a>00161         <span class="keywordflow">if</span> (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> &gt;= countNodes ())
+<a name="l00161"></a>00161         <span class="keywordflow">if</span> (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> &gt;= countNodes ())
 <a name="l00162"></a>00162         {
-<a name="l00163"></a>00163             <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> -= countNodes ();
+<a name="l00163"></a>00163             <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> -= countNodes ();
 <a name="l00164"></a>00164             e-&gt;setText (<span class="stringliteral">&quot;voltage source `%s&#39; conflicts with some other voltage &quot;</span>
-<a name="l00165"></a>00165                         <span class="stringliteral">&quot;source&quot;</span>, findVoltageSource(<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>)-&gt;getName ());
+<a name="l00165"></a>00165                         <span class="stringliteral">&quot;source&quot;</span>, findVoltageSource(<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>)-&gt;getName ());
 <a name="l00166"></a>00166         }
 <a name="l00167"></a>00167         <span class="keywordflow">else</span>
 <a name="l00168"></a>00168         {
 <a name="l00169"></a>00169             e-&gt;setText (<span class="stringliteral">&quot;circuit admittance matrix in %s solver is singular at &quot;</span>
-<a name="l00170"></a>00170                         <span class="stringliteral">&quot;node `%s&#39; connected to [%s]&quot;</span>, desc.c_str(), nlist-&gt;get (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>).c_str(),
-<a name="l00171"></a>00171                         nlist-&gt;getNodeString (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>).c_str());
+<a name="l00170"></a>00170                         <span class="stringliteral">&quot;node `%s&#39; connected to [%s]&quot;</span>, desc.c_str(), nlist-&gt;get (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>).c_str(),
+<a name="l00171"></a>00171                         nlist-&gt;getNodeString (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>).c_str());
 <a name="l00172"></a>00172         }
 <a name="l00173"></a>00173         <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
 <a name="l00174"></a>00174         error++;
@@ -236,13 +236,13 @@
 <a name="l00176"></a>00176     <span class="keywordflow">case</span> <a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a84bd3ce68c950cf68d46959251897139">EXCEPTION_SINGULAR</a>:
 <a name="l00177"></a>00177         <span class="keywordflow">do</span>
 <a name="l00178"></a>00178         {
-<a name="l00179"></a>00179             <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="exceptionstack_8h.html#af6a3e10f858ba64bd0aee79b0bc2ca6c">top_exception</a>()-&gt;getData ();
+<a name="l00179"></a>00179             <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="exceptionstack_8h.html#af6a3e10f858ba64bd0aee79b0bc2ca6c">top_exception</a>()-&gt;getData ();
 <a name="l00180"></a>00180             <a class="code" href="exceptionstack_8h.html#aa539da6ed9b41bb5d7db0218eaceeab3">pop_exception</a> ();
-<a name="l00181"></a>00181             <span class="keywordflow">if</span> (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> &lt; countNodes ())
+<a name="l00181"></a>00181             <span class="keywordflow">if</span> (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> &lt; countNodes ())
 <a name="l00182"></a>00182             {
 <a name="l00183"></a>00183                 <a class="code" href="logging_8c.html#abe06a8732a47a291606edcfac5e5146e">logprint</a> (<a class="code" href="logging_8h.html#aced66975c154ea0e2a8ec3bc818b4e08">LOG_ERROR</a>, <span class="stringliteral">&quot;WARNING: %s: inserted virtual resistance at &quot;</span>
-<a name="l00184"></a>00184                           <span class="stringliteral">&quot;node `%s&#39; connected to [%s]\n&quot;</span>, getName (), nlist-&gt;get (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>).c_str(),
-<a name="l00185"></a>00185                           nlist-&gt;getNodeString (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>).c_str());
+<a name="l00184"></a>00184                           <span class="stringliteral">&quot;node `%s&#39; connected to [%s]\n&quot;</span>, getName (), nlist-&gt;get (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>).c_str(),
+<a name="l00185"></a>00185                           nlist-&gt;getNodeString (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>).c_str());
 <a name="l00186"></a>00186             }
 <a name="l00187"></a>00187         }
 <a name="l00188"></a>00188         <span class="keywordflow">while</span> (<a class="code" href="exceptionstack_8h.html#af6a3e10f858ba64bd0aee79b0bc2ca6c">top_exception</a>() != NULL &amp;&amp;
@@ -333,7 +333,7 @@
 <a name="l00273"></a>00273 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00274"></a><a class="code" href="classqucs_1_1nasolver.html#acf78f1cb2223972b54d05ea3b5def254">00274</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::solve_nonlinear_continuation_gMin</a> (<span class="keywordtype">void</span>)
 <a name="l00275"></a>00275 {
-<a name="l00276"></a>00276     qucs::exception * e;
+<a name="l00276"></a>00276     qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00277"></a>00277     <span class="keywordtype">int</span> convergence, run = 0, MaxIterations, error = 0;
 <a name="l00278"></a>00278     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> gStep, gPrev;
 <a name="l00279"></a>00279 
@@ -380,13 +380,13 @@
 <a name="l00320"></a>00320                 <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
 <a name="l00321"></a>00321                 <span class="keywordflow">break</span>;
 <a name="l00322"></a>00322             }
-<a name="l00323"></a>00323             gMin = <a class="code" href="group__qucsPhysConstants.html#gaacc3ee1a7f283f8ef65cea31f4436a95" title="Maximum of x and y.">MAX</a> (gPrev - gStep, 0);
+<a name="l00323"></a>00323             gMin = MAX (gPrev - gStep, 0);
 <a name="l00324"></a>00324         }
 <a name="l00325"></a>00325         <span class="comment">// converged, increased the gMin-step</span>
 <a name="l00326"></a>00326         <span class="keywordflow">else</span>
 <a name="l00327"></a>00327         {
 <a name="l00328"></a>00328             gPrev = gMin;
-<a name="l00329"></a>00329             gMin = <a class="code" href="group__qucsPhysConstants.html#gaacc3ee1a7f283f8ef65cea31f4436a95" title="Maximum of x and y.">MAX</a> (gMin - gStep, 0);
+<a name="l00329"></a>00329             gMin = MAX (gMin - gStep, 0);
 <a name="l00330"></a>00330             gStep *= 2;
 <a name="l00331"></a>00331         }
 <a name="l00332"></a>00332     }
@@ -401,7 +401,7 @@
 <a name="l00341"></a>00341 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00342"></a><a class="code" href="classqucs_1_1nasolver.html#a0bb03de4435581df8fbb8623be73e763">00342</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::solve_nonlinear_continuation_Source</a> (<span class="keywordtype">void</span>)
 <a name="l00343"></a>00343 {
-<a name="l00344"></a>00344     qucs::exception * e;
+<a name="l00344"></a>00344     qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00345"></a>00345     <span class="keywordtype">int</span> convergence, run = 0, MaxIterations, error = 0;
 <a name="l00346"></a>00346     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> sStep, sPrev;
 <a name="l00347"></a>00347 
@@ -454,18 +454,18 @@
 <a name="l00394"></a>00394                 <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
 <a name="l00395"></a>00395                 <span class="keywordflow">break</span>;
 <a name="l00396"></a>00396             }
-<a name="l00397"></a>00397             srcFactor = MIN (sPrev + sStep, 1);
+<a name="l00397"></a>00397             srcFactor = std::min (sPrev + sStep, 1.0);
 <a name="l00398"></a>00398         }
 <a name="l00399"></a>00399         <span class="comment">// converged, increased the source-step</span>
 <a name="l00400"></a>00400         <span class="keywordflow">else</span> <span class="keywordflow">if</span> (run &lt; MaxIterations / 4)
 <a name="l00401"></a>00401         {
 <a name="l00402"></a>00402             sPrev = srcFactor;
-<a name="l00403"></a>00403             srcFactor = MIN (srcFactor + sStep, 1);
+<a name="l00403"></a>00403             srcFactor = std::min (srcFactor + sStep, 1.0);
 <a name="l00404"></a>00404             sStep *= 1.5;
 <a name="l00405"></a>00405         }
 <a name="l00406"></a>00406         <span class="keywordflow">else</span>
 <a name="l00407"></a>00407         {
-<a name="l00408"></a>00408             srcFactor = MIN (srcFactor + sStep, 1);
+<a name="l00408"></a>00408             srcFactor = std::min (srcFactor + sStep, 1.0);
 <a name="l00409"></a>00409         }
 <a name="l00410"></a>00410     }
 <a name="l00411"></a>00411     <span class="comment">// continue until no source factor is necessary</span>
@@ -507,7 +507,7 @@
 <a name="l00447"></a>00447 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00448"></a><a class="code" href="classqucs_1_1nasolver.html#af282a569d681620b47202bb514a465cb">00448</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::solve_nonlinear</a> (<span class="keywordtype">void</span>)
 <a name="l00449"></a>00449 {
-<a name="l00450"></a>00450     qucs::exception * e;
+<a name="l00450"></a>00450     qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00451"></a>00451     <span class="keywordtype">int</span> convergence, run = 0, MaxIterations, error = 0;
 <a name="l00452"></a>00452 
 <a name="l00453"></a>00453     <span class="comment">// fetch simulation properties</span>
@@ -803,7 +803,7 @@
 <a name="l00743"></a>00743     <span class="keywordtype">int</span> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a> = countVoltageSources ();
 <a name="l00744"></a>00744     <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
 <a name="l00745"></a>00745     nr_type_t val;
-<a name="l00746"></a>00746     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, a, b, ri, ci, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
+<a name="l00746"></a>00746     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, ri, ci;
 <a name="l00747"></a>00747     <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * nr, * nc;
 <a name="l00748"></a>00748     <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * ct;
 <a name="l00749"></a>00749 
@@ -978,7 +978,7 @@
 <a name="l00918"></a>00918 
 <a name="l00919"></a>00919 <span class="comment">// Returns the node number of the give node name.</span>
 <a name="l00920"></a>00920 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00921"></a><a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">00921</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::getNodeNr</a> (<span class="keyword">const</span> std::string &amp;str)
+<a name="l00921"></a><a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">00921</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::getNodeNr</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)
 <a name="l00922"></a>00922 {
 <a name="l00923"></a>00923     <span class="keywordflow">return</span> nlist-&gt;<a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">getNodeNr</a> (str);
 <a name="l00924"></a>00924 }
@@ -1088,7 +1088,7 @@
 <a name="l01028"></a>01028     <span class="keywordflow">if</span> (nMax &gt; 0.0)
 <a name="l01029"></a>01029     {
 <a name="l01030"></a>01030         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> g = 1.0;
-<a name="l01031"></a>01031         alpha = MIN (0.9, g / nMax);
+<a name="l01031"></a>01031         alpha = std::min (0.9, g / nMax);
 <a name="l01032"></a>01032         <span class="keywordflow">if</span> (alpha &lt; 0.1) alpha = 0.1;
 <a name="l01033"></a>01033     }
 <a name="l01034"></a>01034 
@@ -1349,169 +1349,168 @@
 <a name="l01289"></a>01289     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l01290"></a>01290     <span class="keywordtype">int</span> <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = countNodes ();
 <a name="l01291"></a>01291     <span class="keywordtype">int</span> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a> = countVoltageSources ();
-<a name="l01292"></a>01292     <a class="code" href="classqucs_1_1naentry.html">naentry&lt;nr_type_t&gt;</a> * na;
-<a name="l01293"></a>01293     <span class="comment">// store all nodes except reference node</span>
-<a name="l01294"></a>01294     <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++)
-<a name="l01295"></a>01295     {
-<a name="l01296"></a>01296         <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = nlist-&gt;getNode (r);
-<a name="l01297"></a>01297         <span class="keyword">auto</span> na = solution.find(n-&gt;<a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">name</a>);
-<a name="l01298"></a>01298         <span class="keywordflow">if</span> (na != solution.end())
-<a name="l01299"></a>01299           <span class="keywordflow">if</span> ((*na).second.current == 0)
-<a name="l01300"></a>01300             <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (r, (*na).second.value);
-<a name="l01301"></a>01301     }
-<a name="l01302"></a>01302     <span class="comment">// store all branch currents of voltage sources</span>
-<a name="l01303"></a>01303     <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>; r++)
-<a name="l01304"></a>01304     {
-<a name="l01305"></a>01305         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * vs = findVoltageSource (r);
-<a name="l01306"></a>01306         <span class="keywordtype">int</span> vn = r - vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a393ca06fd0735f88c9cd98e82a67a074">getVoltageSource</a> () + 1;
-<a name="l01307"></a>01307         <span class="keyword">auto</span> na = solution.find(vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ());
-<a name="l01308"></a>01308         <span class="keywordflow">if</span> (na != solution.end())
-<a name="l01309"></a>01309           <span class="keywordflow">if</span> ((*na).second.current == vn)
-<a name="l01310"></a>01310             <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (r + N, (*na).second.value);
-<a name="l01311"></a>01311     }
-<a name="l01312"></a>01312 }
-<a name="l01313"></a>01313 
-<a name="l01314"></a>01314 <span class="comment">/* This function saves the results of a single solve() functionality</span>
-<a name="l01315"></a>01315 <span class="comment">   into the output dataset. */</span>
-<a name="l01316"></a>01316 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01317"></a><a class="code" href="classqucs_1_1nasolver.html#a45e8941aa74dec4799210aa4072d31cc">01317</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::saveResults</a> (<span class="keyword">const</span> std::string &amp;volts, <span class="keyword">const</span> std::string &amp;amps,
-<a name="l01318"></a>01318                                        <span class="keywordtype">int</span> saveOPs, qucs::vector * f)
-<a name="l01319"></a>01319 {
-<a name="l01320"></a>01320     <span class="keywordtype">int</span> <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = countNodes ();
-<a name="l01321"></a>01321     <span class="keywordtype">int</span> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a> = countVoltageSources ();
-<a name="l01322"></a>01322 
-<a name="l01323"></a>01323     <span class="comment">// add node voltage variables</span>
-<a name="l01324"></a>01324     <span class="keywordflow">if</span> (!volts.empty())
-<a name="l01325"></a>01325     {
-<a name="l01326"></a>01326         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
-<a name="l01327"></a>01327         {
-<a name="l01328"></a>01328           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createV (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, volts, saveOPs);
-<a name="l01329"></a>01329           <span class="keywordflow">if</span>(!n.empty())
-<a name="l01330"></a>01330             {
-<a name="l01331"></a>01331                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>), f);
-<a name="l01332"></a>01332             }
-<a name="l01333"></a>01333         }
-<a name="l01334"></a>01334     }
-<a name="l01335"></a>01335 
-<a name="l01336"></a>01336     <span class="comment">// add branch current variables</span>
-<a name="l01337"></a>01337     <span class="keywordflow">if</span> (!amps.empty())
-<a name="l01338"></a>01338     {
-<a name="l01339"></a>01339         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
-<a name="l01340"></a>01340         {
-<a name="l01341"></a>01341           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createI (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, amps, saveOPs);
-<a name="l01342"></a>01342           <span class="keywordflow">if</span> (!n.empty())
-<a name="l01343"></a>01343             {
-<a name="l01344"></a>01344                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> + N), f);
-<a name="l01345"></a>01345             }
-<a name="l01346"></a>01346         }
-<a name="l01347"></a>01347     }
-<a name="l01348"></a>01348 
-<a name="l01349"></a>01349     <span class="comment">// add voltage probe data</span>
-<a name="l01350"></a>01350     <span class="keywordflow">if</span> (!volts.empty())
-<a name="l01351"></a>01351     {
-<a name="l01352"></a>01352         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * root = subnet-&gt;getRoot ();
-<a name="l01353"></a>01353         <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = root; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> != NULL; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *) <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;<a class="code" href="classqucs_1_1eqn_1_1node.html#ad2f8b4edb365f182a9c9eed4af7491fc">getNext</a> ())
-<a name="l01354"></a>01354         {
-<a name="l01355"></a>01355             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;isProbe ()) <span class="keywordflow">continue</span>;
-<a name="l01356"></a>01356             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getSubcircuit().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>)) <span class="keywordflow">continue</span>;
-<a name="l01357"></a>01357             <span class="keywordflow">if</span> (volts != <span class="stringliteral">&quot;vn&quot;</span>)
-<a name="l01358"></a>01358                 <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;saveOperatingPoints ();          
-<a name="l01359"></a>01359             std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), volts);
-<a name="l01360"></a>01360             saveVariable (n, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vr&quot;</span>),
-<a name="l01361"></a>01361                                    <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vi&quot;</span>)), f);
-<a name="l01362"></a>01362         }
-<a name="l01363"></a>01363     }
-<a name="l01364"></a>01364 
-<a name="l01365"></a>01365     <span class="comment">// save operating points of non-linear circuits if requested</span>
-<a name="l01366"></a>01366     <span class="keywordflow">if</span> (saveOPs &amp; <a class="code" href="analysis_8h.html#a136808d349e47fd30a0eb5e2984adeee">SAVE_OPS</a>)
-<a name="l01367"></a>01367     {
-<a name="l01368"></a>01368         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * root = subnet-&gt;getRoot ();
-<a name="l01369"></a>01369         <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = root; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> != NULL; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *) <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;<a class="code" href="classqucs_1_1eqn_1_1node.html#ad2f8b4edb365f182a9c9eed4af7491fc">getNext</a> ())
-<a name="l01370"></a>01370         {
-<a name="l01371"></a>01371             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;isNonLinear ()) <span class="keywordflow">continue</span>;
-<a name="l01372"></a>01372             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getSubcircuit ().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>)) <span class="keywordflow">continue</span>;
-<a name="l01373"></a>01373             <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;calcOperatingPoints ();
-<a name="l01374"></a>01374             <span class="keywordflow">for</span> (<span class="keyword">auto</span> ops: <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoints ())
-<a name="l01375"></a>01375             {
-<a name="l01376"></a>01376                 <a class="code" href="structqucs.html#a5cf184620dc537d2fa681cd8ef499c27">operatingpoint</a> &amp;p = ops.second;
-<a name="l01377"></a>01377                 std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), p.getName ());
-<a name="l01378"></a>01378                 saveVariable (n, p.getValue (), f);
-<a name="l01379"></a>01379             }
-<a name="l01380"></a>01380         }
-<a name="l01381"></a>01381     }
-<a name="l01382"></a>01382 }
-<a name="l01383"></a>01383 
-<a name="l01384"></a>01384 <span class="comment">/* Create an appropriate variable name for operating points.  The</span>
-<a name="l01385"></a>01385 <span class="comment">   caller is responsible to free() the returned string. */</span>
-<a name="l01386"></a>01386 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01387"></a><a class="code" href="classqucs_1_1nasolver.html#af04d0a96ec03713b976aacac341360a7">01387</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createOP</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
-<a name="l01388"></a>01388 {
-<a name="l01389"></a>01389     <span class="keywordflow">return</span> c+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
-<a name="l01390"></a>01390 }
-<a name="l01391"></a>01391 
-<a name="l01392"></a>01392 <span class="comment">/* Creates an appropriate variable name for voltages.  The caller is</span>
-<a name="l01393"></a>01393 <span class="comment">   responsible to free() the returned string. */</span>
-<a name="l01394"></a>01394 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01395"></a><a class="code" href="classqucs_1_1nasolver.html#a782d40d12f44ad9b66889f1659ee6bfe">01395</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createV</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;volts, <span class="keywordtype">int</span> saveOPs)
-<a name="l01396"></a>01396 {
-<a name="l01397"></a>01397     <span class="keywordflow">if</span> (nlist-&gt;isInternal (n))
-<a name="l01398"></a>01398       <span class="keywordflow">return</span> std::string();
-<a name="l01399"></a>01399     std::string <a class="code" href="classqucs_1_1node.html">node</a> = nlist-&gt;get (n);
-<a name="l01400"></a>01400     <span class="keywordflow">if</span>(node.find(<span class="charliteral">&#39;.&#39;</span>)!=std::string::npos &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
-<a name="l01401"></a>01401       <span class="keywordflow">return</span> std::string();
-<a name="l01402"></a>01402     std::string ret = node+<span class="stringliteral">&quot;.&quot;</span>+volts;
-<a name="l01403"></a>01403     <span class="keywordflow">return</span> ret;
-<a name="l01404"></a>01404 }
-<a name="l01405"></a>01405 
-<a name="l01406"></a>01406 <span class="comment">/* Create an appropriate variable name for currents.  The caller is</span>
-<a name="l01407"></a>01407 <span class="comment">   responsible to free() the returned string. */</span>
-<a name="l01408"></a>01408 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01409"></a><a class="code" href="classqucs_1_1nasolver.html#a958a9fb65bb154b7e6f2881f3aefa22d">01409</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createI</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;amps, <span class="keywordtype">int</span> saveOPs)
-<a name="l01410"></a>01410 {
-<a name="l01411"></a>01411     <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * vs = findVoltageSource (n);
-<a name="l01412"></a>01412 
-<a name="l01413"></a>01413     <span class="comment">// don&#39;t output internal (helper) voltage sources</span>
-<a name="l01414"></a>01414     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a47571bb02f1a91f15d2f5113dc218394">isInternalVoltageSource</a> ())
-<a name="l01415"></a>01415       <span class="keywordflow">return</span> std::string();
-<a name="l01416"></a>01416 
-<a name="l01417"></a>01417     <span class="comment">/* save only current through real voltage sources and explicit</span>
-<a name="l01418"></a>01418 <span class="comment">       current probes */</span>
-<a name="l01419"></a>01419     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#afeaa2dee98525fc02dd5969ec28cdb46">isVSource</a> () &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#a136808d349e47fd30a0eb5e2984adeee">SAVE_OPS</a>))
-<a name="l01420"></a>01420       <span class="keywordflow">return</span> std::string();
-<a name="l01421"></a>01421 
-<a name="l01422"></a>01422     <span class="comment">// don&#39;t output subcircuit components if not requested</span>
-<a name="l01423"></a>01423     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#ab6465479d9cff61bcfe7869b678790b7">getSubcircuit</a> ().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
-<a name="l01424"></a>01424       <span class="keywordflow">return</span> std::string();
-<a name="l01425"></a>01425 
-<a name="l01426"></a>01426     <span class="comment">// create appropriate current name for single/multiple voltage sources</span>
-<a name="l01427"></a>01427     std::string <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ();
-<a name="l01428"></a>01428     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a4665cb89cb115ad292275212a9e47144">getVoltageSources</a> () &gt; 1)
-<a name="l01429"></a>01429       <span class="keywordflow">return</span> name+<span class="stringliteral">&quot;.&quot;</span>+amps+std::to_string(n - vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a393ca06fd0735f88c9cd98e82a67a074">getVoltageSource</a> () + 1);
-<a name="l01430"></a>01430     <span class="keywordflow">else</span>
-<a name="l01431"></a>01431       <span class="keywordflow">return</span> name+<span class="stringliteral">&quot;.&quot;</span>+amps;
-<a name="l01432"></a>01432 }
+<a name="l01292"></a>01292     <span class="comment">// store all nodes except reference node</span>
+<a name="l01293"></a>01293     <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++)
+<a name="l01294"></a>01294     {
+<a name="l01295"></a>01295         <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = nlist-&gt;getNode (r);
+<a name="l01296"></a>01296         <span class="keyword">auto</span> na = solution.find(n-&gt;<a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">name</a>);
+<a name="l01297"></a>01297         <span class="keywordflow">if</span> (na != solution.end())
+<a name="l01298"></a>01298           <span class="keywordflow">if</span> ((*na).second.current == 0)
+<a name="l01299"></a>01299             <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (r, (*na).second.value);
+<a name="l01300"></a>01300     }
+<a name="l01301"></a>01301     <span class="comment">// store all branch currents of voltage sources</span>
+<a name="l01302"></a>01302     <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>; r++)
+<a name="l01303"></a>01303     {
+<a name="l01304"></a>01304         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * vs = findVoltageSource (r);
+<a name="l01305"></a>01305         <span class="keywordtype">int</span> vn = r - vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a393ca06fd0735f88c9cd98e82a67a074">getVoltageSource</a> () + 1;
+<a name="l01306"></a>01306         <span class="keyword">auto</span> na = solution.find(vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ());
+<a name="l01307"></a>01307         <span class="keywordflow">if</span> (na != solution.end())
+<a name="l01308"></a>01308           <span class="keywordflow">if</span> ((*na).second.current == vn)
+<a name="l01309"></a>01309             <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (r + N, (*na).second.value);
+<a name="l01310"></a>01310     }
+<a name="l01311"></a>01311 }
+<a name="l01312"></a>01312 
+<a name="l01313"></a>01313 <span class="comment">/* This function saves the results of a single solve() functionality</span>
+<a name="l01314"></a>01314 <span class="comment">   into the output dataset. */</span>
+<a name="l01315"></a>01315 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01316"></a><a class="code" href="classqucs_1_1nasolver.html#a45e8941aa74dec4799210aa4072d31cc">01316</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::saveResults</a> (<span class="keyword">const</span> std::string &amp;volts, <span class="keyword">const</span> std::string &amp;amps,
+<a name="l01317"></a>01317                                        <span class="keywordtype">int</span> saveOPs, qucs::vector * f)
+<a name="l01318"></a>01318 {
+<a name="l01319"></a>01319     <span class="keywordtype">int</span> <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = countNodes ();
+<a name="l01320"></a>01320     <span class="keywordtype">int</span> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a> = countVoltageSources ();
+<a name="l01321"></a>01321 
+<a name="l01322"></a>01322     <span class="comment">// add node voltage variables</span>
+<a name="l01323"></a>01323     <span class="keywordflow">if</span> (!volts.empty())
+<a name="l01324"></a>01324     {
+<a name="l01325"></a>01325         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
+<a name="l01326"></a>01326         {
+<a name="l01327"></a>01327           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createV (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, volts, saveOPs);
+<a name="l01328"></a>01328           <span class="keywordflow">if</span>(!n.empty())
+<a name="l01329"></a>01329             {
+<a name="l01330"></a>01330                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>), f);
+<a name="l01331"></a>01331             }
+<a name="l01332"></a>01332         }
+<a name="l01333"></a>01333     }
+<a name="l01334"></a>01334 
+<a name="l01335"></a>01335     <span class="comment">// add branch current variables</span>
+<a name="l01336"></a>01336     <span class="keywordflow">if</span> (!amps.empty())
+<a name="l01337"></a>01337     {
+<a name="l01338"></a>01338         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
+<a name="l01339"></a>01339         {
+<a name="l01340"></a>01340           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createI (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, amps, saveOPs);
+<a name="l01341"></a>01341           <span class="keywordflow">if</span> (!n.empty())
+<a name="l01342"></a>01342             {
+<a name="l01343"></a>01343                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> + N), f);
+<a name="l01344"></a>01344             }
+<a name="l01345"></a>01345         }
+<a name="l01346"></a>01346     }
+<a name="l01347"></a>01347 
+<a name="l01348"></a>01348     <span class="comment">// add voltage probe data</span>
+<a name="l01349"></a>01349     <span class="keywordflow">if</span> (!volts.empty())
+<a name="l01350"></a>01350     {
+<a name="l01351"></a>01351         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * root = subnet-&gt;getRoot ();
+<a name="l01352"></a>01352         <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = root; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> != NULL; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *) <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;<a class="code" href="classqucs_1_1eqn_1_1node.html#ad2f8b4edb365f182a9c9eed4af7491fc">getNext</a> ())
+<a name="l01353"></a>01353         {
+<a name="l01354"></a>01354             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;isProbe ()) <span class="keywordflow">continue</span>;
+<a name="l01355"></a>01355             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getSubcircuit().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>)) <span class="keywordflow">continue</span>;
+<a name="l01356"></a>01356             <span class="keywordflow">if</span> (volts != <span class="stringliteral">&quot;vn&quot;</span>)
+<a name="l01357"></a>01357                 <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;saveOperatingPoints ();          
+<a name="l01358"></a>01358             std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), volts);
+<a name="l01359"></a>01359             saveVariable (n, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vr&quot;</span>),
+<a name="l01360"></a>01360                                    <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vi&quot;</span>)), f);
+<a name="l01361"></a>01361         }
+<a name="l01362"></a>01362     }
+<a name="l01363"></a>01363 
+<a name="l01364"></a>01364     <span class="comment">// save operating points of non-linear circuits if requested</span>
+<a name="l01365"></a>01365     <span class="keywordflow">if</span> (saveOPs &amp; <a class="code" href="analysis_8h.html#a136808d349e47fd30a0eb5e2984adeee">SAVE_OPS</a>)
+<a name="l01366"></a>01366     {
+<a name="l01367"></a>01367         <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * root = subnet-&gt;getRoot ();
+<a name="l01368"></a>01368         <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = root; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> != NULL; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *) <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;<a class="code" href="classqucs_1_1eqn_1_1node.html#ad2f8b4edb365f182a9c9eed4af7491fc">getNext</a> ())
+<a name="l01369"></a>01369         {
+<a name="l01370"></a>01370             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;isNonLinear ()) <span class="keywordflow">continue</span>;
+<a name="l01371"></a>01371             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getSubcircuit ().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>)) <span class="keywordflow">continue</span>;
+<a name="l01372"></a>01372             <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;calcOperatingPoints ();
+<a name="l01373"></a>01373             <span class="keywordflow">for</span> (<span class="keyword">auto</span> ops: <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoints ())
+<a name="l01374"></a>01374             {
+<a name="l01375"></a>01375                 <a class="code" href="structqucs.html#a5cf184620dc537d2fa681cd8ef499c27">operatingpoint</a> &amp;p = ops.second;
+<a name="l01376"></a>01376                 std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), p.getName ());
+<a name="l01377"></a>01377                 saveVariable (n, p.getValue (), f);
+<a name="l01378"></a>01378             }
+<a name="l01379"></a>01379         }
+<a name="l01380"></a>01380     }
+<a name="l01381"></a>01381 }
+<a name="l01382"></a>01382 
+<a name="l01383"></a>01383 <span class="comment">/* Create an appropriate variable name for operating points.  The</span>
+<a name="l01384"></a>01384 <span class="comment">   caller is responsible to free() the returned string. */</span>
+<a name="l01385"></a>01385 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01386"></a><a class="code" href="classqucs_1_1nasolver.html#af04d0a96ec03713b976aacac341360a7">01386</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createOP</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
+<a name="l01387"></a>01387 {
+<a name="l01388"></a>01388     <span class="keywordflow">return</span> c+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l01389"></a>01389 }
+<a name="l01390"></a>01390 
+<a name="l01391"></a>01391 <span class="comment">/* Creates an appropriate variable name for voltages.  The caller is</span>
+<a name="l01392"></a>01392 <span class="comment">   responsible to free() the returned string. */</span>
+<a name="l01393"></a>01393 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01394"></a><a class="code" href="classqucs_1_1nasolver.html#a782d40d12f44ad9b66889f1659ee6bfe">01394</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createV</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;volts, <span class="keywordtype">int</span> saveOPs)
+<a name="l01395"></a>01395 {
+<a name="l01396"></a>01396     <span class="keywordflow">if</span> (nlist-&gt;isInternal (n))
+<a name="l01397"></a>01397       <span class="keywordflow">return</span> std::string();
+<a name="l01398"></a>01398     std::string <a class="code" href="classqucs_1_1node.html">node</a> = nlist-&gt;get (n);
+<a name="l01399"></a>01399     <span class="keywordflow">if</span>(node.find(<span class="charliteral">&#39;.&#39;</span>)!=std::string::npos &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
+<a name="l01400"></a>01400       <span class="keywordflow">return</span> std::string();
+<a name="l01401"></a>01401     std::string ret = node+<span class="stringliteral">&quot;.&quot;</span>+volts;
+<a name="l01402"></a>01402     <span class="keywordflow">return</span> ret;
+<a name="l01403"></a>01403 }
+<a name="l01404"></a>01404 
+<a name="l01405"></a>01405 <span class="comment">/* Create an appropriate variable name for currents.  The caller is</span>
+<a name="l01406"></a>01406 <span class="comment">   responsible to free() the returned string. */</span>
+<a name="l01407"></a>01407 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01408"></a><a class="code" href="classqucs_1_1nasolver.html#a958a9fb65bb154b7e6f2881f3aefa22d">01408</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createI</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;amps, <span class="keywordtype">int</span> saveOPs)
+<a name="l01409"></a>01409 {
+<a name="l01410"></a>01410     <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * vs = findVoltageSource (n);
+<a name="l01411"></a>01411 
+<a name="l01412"></a>01412     <span class="comment">// don&#39;t output internal (helper) voltage sources</span>
+<a name="l01413"></a>01413     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a47571bb02f1a91f15d2f5113dc218394">isInternalVoltageSource</a> ())
+<a name="l01414"></a>01414       <span class="keywordflow">return</span> std::string();
+<a name="l01415"></a>01415 
+<a name="l01416"></a>01416     <span class="comment">/* save only current through real voltage sources and explicit</span>
+<a name="l01417"></a>01417 <span class="comment">       current probes */</span>
+<a name="l01418"></a>01418     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#afeaa2dee98525fc02dd5969ec28cdb46">isVSource</a> () &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#a136808d349e47fd30a0eb5e2984adeee">SAVE_OPS</a>))
+<a name="l01419"></a>01419       <span class="keywordflow">return</span> std::string();
+<a name="l01420"></a>01420 
+<a name="l01421"></a>01421     <span class="comment">// don&#39;t output subcircuit components if not requested</span>
+<a name="l01422"></a>01422     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#ab6465479d9cff61bcfe7869b678790b7">getSubcircuit</a> ().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
+<a name="l01423"></a>01423       <span class="keywordflow">return</span> std::string();
+<a name="l01424"></a>01424 
+<a name="l01425"></a>01425     <span class="comment">// create appropriate current name for single/multiple voltage sources</span>
+<a name="l01426"></a>01426     std::string <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ();
+<a name="l01427"></a>01427     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a4665cb89cb115ad292275212a9e47144">getVoltageSources</a> () &gt; 1)
+<a name="l01428"></a>01428       <span class="keywordflow">return</span> name+<span class="stringliteral">&quot;.&quot;</span>+amps+std::to_string(n - vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a393ca06fd0735f88c9cd98e82a67a074">getVoltageSource</a> () + 1);
+<a name="l01429"></a>01429     <span class="keywordflow">else</span>
+<a name="l01430"></a>01430       <span class="keywordflow">return</span> name+<span class="stringliteral">&quot;.&quot;</span>+amps;
+<a name="l01431"></a>01431 }
+<a name="l01432"></a>01432 
 <a name="l01433"></a>01433 
-<a name="l01434"></a>01434 
-<a name="l01435"></a>01435 <span class="comment">/* Alternaive to countNodes () */</span>
-<a name="l01436"></a>01436 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01437"></a><a class="code" href="classqucs_1_1nasolver.html#a8c01253819b5eaf3b3ff58706658dfc5">01437</a> <span class="keywordtype">int</span> <a class="code" href="m__trsolver__interface__mex_8cpp.html#a40e919cf3a5c6bee776701ccfd36738fa74a8b90e50759dee5ac4b4543f4d992c">nasolver&lt;nr_type_t&gt;::getN</a>()
-<a name="l01438"></a>01438 {
-<a name="l01439"></a>01439     <span class="keywordflow">return</span> countNodes ();
-<a name="l01440"></a>01440 }
-<a name="l01441"></a>01441 
-<a name="l01442"></a>01442 <span class="comment">/* Alternative to countVoltageSources () */</span>
-<a name="l01443"></a>01443 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01444"></a><a class="code" href="classqucs_1_1nasolver.html#a4bb228e8f23760447e52534bace637b9">01444</a> <span class="keywordtype">int</span> <a class="code" href="m__trsolver__interface__mex_8cpp.html#a40e919cf3a5c6bee776701ccfd36738fa720ed9916253f9c4a4580f2fe81ce2d1">nasolver&lt;nr_type_t&gt;::getM</a>()
-<a name="l01445"></a>01445 {
-<a name="l01446"></a>01446     <span class="keywordflow">return</span> countVoltageSources ();
-<a name="l01447"></a>01447 }
-<a name="l01448"></a>01448 
-<a name="l01449"></a>01449 } <span class="comment">// namespace qucs</span>
+<a name="l01434"></a>01434 <span class="comment">/* Alternaive to countNodes () */</span>
+<a name="l01435"></a>01435 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01436"></a><a class="code" href="classqucs_1_1nasolver.html#a8c01253819b5eaf3b3ff58706658dfc5">01436</a> <span class="keywordtype">int</span> <a class="code" href="m__trsolver__interface__mex_8cpp.html#a40e919cf3a5c6bee776701ccfd36738fa74a8b90e50759dee5ac4b4543f4d992c">nasolver&lt;nr_type_t&gt;::getN</a>()
+<a name="l01437"></a>01437 {
+<a name="l01438"></a>01438     <span class="keywordflow">return</span> countNodes ();
+<a name="l01439"></a>01439 }
+<a name="l01440"></a>01440 
+<a name="l01441"></a>01441 <span class="comment">/* Alternative to countVoltageSources () */</span>
+<a name="l01442"></a>01442 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l01443"></a><a class="code" href="classqucs_1_1nasolver.html#a4bb228e8f23760447e52534bace637b9">01443</a> <span class="keywordtype">int</span> <a class="code" href="m__trsolver__interface__mex_8cpp.html#a40e919cf3a5c6bee776701ccfd36738fa720ed9916253f9c4a4580f2fe81ce2d1">nasolver&lt;nr_type_t&gt;::getM</a>()
+<a name="l01444"></a>01444 {
+<a name="l01445"></a>01445     <span class="keywordflow">return</span> countVoltageSources ();
+<a name="l01446"></a>01446 }
+<a name="l01447"></a>01447 
+<a name="l01448"></a>01448 } <span class="comment">// namespace qucs</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

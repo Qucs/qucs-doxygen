@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node13" href="$logging_8h.html" title="logging.h" alt="" coords="405,83,480,112"/>
-<area shape="rect" id="node15" href="$object_8h.html" title="object.h" alt="" coords="504,83,571,112"/>
-<area shape="rect" id="node26" href="$complex_8h.html" title="complex.h" alt="" coords="677,160,760,189"/>
-<area shape="rect" id="node33" href="$vector_8h.html" title="vector.h" alt="" coords="760,83,829,112"/>
-<area shape="rect" id="node44" href="$matrix_8h.html" title="Dense matrix class header file." alt="" coords="853,83,923,112"/>
-<area shape="rect" id="node19" href="$property_8h.html" title="property.h" alt="" coords="497,160,577,189"/>
-<area shape="rect" id="node30" href="$real_8h.html" title="real.h" alt="" coords="787,237,840,267"/>
-<area shape="rect" id="node37" href="$consts_8h.html" title="Global math constants header file." alt="" coords="944,160,1016,189"/>
-<area shape="rect" id="node40" href="$precision_8h.html" title="precision.h" alt="" coords="835,160,920,189"/>
+<area shape="rect" id="node13" href="$logging_8h.html" title="logging.h" alt="" coords="552,83,627,112"/>
+<area shape="rect" id="node15" href="$object_8h.html" title="object.h" alt="" coords="679,83,745,112"/>
+<area shape="rect" id="node26" href="$complex_8h.html" title="complex.h" alt="" coords="377,160,460,189"/>
+<area shape="rect" id="node42" href="$vector_8h.html" title="vector.h" alt="" coords="459,83,528,112"/>
+<area shape="rect" id="node48" href="$matrix_8h.html" title="Dense matrix class header file." alt="" coords="769,83,839,112"/>
+<area shape="rect" id="node19" href="$property_8h.html" title="property.h" alt="" coords="685,160,765,189"/>
+<area shape="rect" id="node30" href="$real_8h.html" title="real.h" alt="" coords="407,237,460,267"/>
+<area shape="rect" id="node33" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="369,315,460,344"/>
+<area shape="rect" id="node35" href="$consts_8h.html" title="Global math constants header file." alt="" coords="379,392,451,421"/>
+<area shape="rect" id="node38" href="$precision_8h.html" title="precision.h" alt="" coords="476,392,561,421"/>
 </map>

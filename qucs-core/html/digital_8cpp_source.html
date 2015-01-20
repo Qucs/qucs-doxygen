@@ -148,7 +148,7 @@
 <a name="l00088"></a>00088 
 <a name="l00089"></a>00089 <span class="comment">// Computes a slightly modified transfer function.</span>
 <a name="l00090"></a><a class="code" href="classdigital.html#a551db2eba0ecd6b6dac9e0f58c537dcc">00090</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="classdigital.html#a551db2eba0ecd6b6dac9e0f58c537dcc">digital::calcTransfer</a> (<span class="keywordtype">int</span> input) {
-<a name="l00091"></a>00091   <span class="keywordflow">return</span> (1 - <a class="code" href="group__qucsPhysConstants.html#gabbfa61e673afeaadb4fca422bc646520" title="Gmin.">GMin</a>) * <a class="code" href="classdigital.html#a2f6f3a7e986b127692fc34c47f42d71a">calcTransferX</a> (input);
+<a name="l00091"></a>00091   <span class="keywordflow">return</span> (1 - GMin) * <a class="code" href="classdigital.html#a2f6f3a7e986b127692fc34c47f42d71a">calcTransferX</a> (input);
 <a name="l00092"></a>00092 }
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094 <span class="comment">// Computes the transfer functions derivative for the given input node.</span>
@@ -161,7 +161,7 @@
 <a name="l00101"></a>00101 
 <a name="l00102"></a>00102 <span class="comment">// Computes  a slightly modified transfer functions derivative.</span>
 <a name="l00103"></a><a class="code" href="classdigital.html#a22dd03109d26bd0071d6779af0624583">00103</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="classdigital.html#a22dd03109d26bd0071d6779af0624583">digital::calcDerivative</a> (<span class="keywordtype">int</span> input) {
-<a name="l00104"></a>00104   <span class="keywordflow">return</span> (1 - <a class="code" href="group__qucsPhysConstants.html#gabbfa61e673afeaadb4fca422bc646520" title="Gmin.">GMin</a>) * <a class="code" href="classdigital.html#a13b3adb285ae9982a5fbcadc88f790ae">calcDerivativeX</a> (input);
+<a name="l00104"></a>00104   <span class="keywordflow">return</span> (1 - GMin) * <a class="code" href="classdigital.html#a13b3adb285ae9982a5fbcadc88f790ae">calcDerivativeX</a> (input);
 <a name="l00105"></a>00105 }
 <a name="l00106"></a>00106 
 <a name="l00107"></a>00107 <span class="comment">// Setup constant S-parameter entries.</span>
@@ -178,7 +178,7 @@
 <a name="l00118"></a>00118   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;t&quot;</span>);
 <a name="l00119"></a>00119   <span class="keywordflow">for</span> (<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a> = 0; <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a> &lt; <a class="code" href="classqucs_1_1circuit.html#aed2de3b676324a1c1ded4e0f3c6025a4" title="Get the number of ports the circuit element has.">getSize</a> () - 1; <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>++) {
 <a name="l00120"></a>00120     <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="digital_8cpp.html#a4be43521cee2f6959678445c2bac033a">NODE_OUT</a>, <a class="code" href="digital_8cpp.html#a2a28c40ad3459400354f3c3ab05fce9a">NODE_IN1</a> + <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>,
-<a name="l00121"></a>00121           4.0 * <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="classdigital.html#a94f620d793c4bcece0e5126789fa0732">g</a>[<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>], - 2.0 * M_PI * frequency * t));
+<a name="l00121"></a>00121           4.0 * <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="classdigital.html#a94f620d793c4bcece0e5126789fa0732">g</a>[<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>], - 2.0 * pi * frequency * t));
 <a name="l00122"></a>00122   }
 <a name="l00123"></a>00123 }
 <a name="l00124"></a>00124 
@@ -216,7 +216,7 @@
 <a name="l00156"></a><a class="code" href="classdigital.html#a7c32f15f78c18e5af5e51aa2fbb05aaa">00156</a> <span class="keywordtype">void</span> <a class="code" href="classdigital.html#a7c32f15f78c18e5af5e51aa2fbb05aaa">digital::calcAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
 <a name="l00157"></a>00157   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;t&quot;</span>);
 <a name="l00158"></a>00158   <span class="keywordflow">for</span> (<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a> = 0; <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a> &lt; <a class="code" href="classqucs_1_1circuit.html#aed2de3b676324a1c1ded4e0f3c6025a4" title="Get the number of ports the circuit element has.">getSize</a> () - 1; <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>++) {
-<a name="l00159"></a>00159     <a class="code" href="classqucs_1_1circuit.html#ae0975307c2b02102e33d1c15a31597ec">setC</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="digital_8cpp.html#a2a28c40ad3459400354f3c3ab05fce9a">NODE_IN1</a> + <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>, <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="classdigital.html#a94f620d793c4bcece0e5126789fa0732">g</a>[<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>], - 2.0 * M_PI * frequency * t));
+<a name="l00159"></a>00159     <a class="code" href="classqucs_1_1circuit.html#ae0975307c2b02102e33d1c15a31597ec">setC</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="digital_8cpp.html#a2a28c40ad3459400354f3c3ab05fce9a">NODE_IN1</a> + <a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>, <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="classdigital.html#a94f620d793c4bcece0e5126789fa0732">g</a>[<a class="code" href="classdigital.html#afcbc0b8a5629fc149c5f3ada250399c3">i</a>], - 2.0 * pi * frequency * t));
 <a name="l00160"></a>00160   }
 <a name="l00161"></a>00161 }
 <a name="l00162"></a>00162 
@@ -248,7 +248,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

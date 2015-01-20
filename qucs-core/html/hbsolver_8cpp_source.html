@@ -324,7 +324,7 @@
 <a name="l00264"></a>00264     <span class="keywordflow">while</span> (!done &amp;&amp; iterations &lt; MaxIterations);
 <a name="l00265"></a>00265 
 <a name="l00266"></a>00266     <span class="keywordflow">if</span> (iterations &gt;= MaxIterations) {
-<a name="l00267"></a>00267       qucs::exception * e = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a28c96ff10d13b86706a9375af2dd7fe0">EXCEPTION_NO_CONVERGENCE</a>);
+<a name="l00267"></a>00267       qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a28c96ff10d13b86706a9375af2dd7fe0">EXCEPTION_NO_CONVERGENCE</a>);
 <a name="l00268"></a>00268       e-&gt;setText (<span class="stringliteral">&quot;no convergence in %s analysis after %d iterations&quot;</span>,
 <a name="l00269"></a>00269                   getName (), iterations);
 <a name="l00270"></a>00270       <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
@@ -489,7 +489,7 @@
 <a name="l00429"></a>00429   <span class="comment">// pre-calculate the j[O] vector</span>
 <a name="l00430"></a>00430   OM = <span class="keyword">new</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_complex_t&gt;</a> (nlfreqs);
 <a name="l00431"></a>00431   <span class="keywordflow">for</span> (n = i = 0; n &lt; nlfreqs; n++, i++)
-<a name="l00432"></a>00432     <a class="code" href="hbsolver_8cpp.html#aae67df46a02b4df8bf6f0222eef8e58a">OM_</a>(n) = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0, 2 * M_PI * negfreqs (i));
+<a name="l00432"></a>00432     <a class="code" href="hbsolver_8cpp.html#aae67df46a02b4df8bf6f0222eef8e58a">OM_</a>(n) = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0, 2 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> * negfreqs (i));
 <a name="l00433"></a>00433 }
 <a name="l00434"></a>00434 
 <a name="l00435"></a>00435 <span class="comment">// Split netlist into excitation, linear and non-linear part.</span>
@@ -839,10 +839,10 @@
 <a name="l00779"></a>00779     <span class="comment">// ---+---</span>
 <a name="l00780"></a>00780     <span class="comment">// ZV | ..</span>
 <a name="l00781"></a>00781     r = 0;
-<a name="l00782"></a>00782     <span class="keywordflow">for</span> (<span class="keyword">auto</span> *e : excitations) {
+<a name="l00782"></a>00782     <span class="keywordflow">for</span> (<span class="keyword">auto</span> *<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> : excitations) {
 <a name="l00783"></a>00783       <span class="comment">// lower part entries</span>
 <a name="l00784"></a>00784       <span class="keywordflow">for</span> (f = 0; f &lt; lnfreqs; f++) {
-<a name="l00785"></a>00785         <a class="code" href="hbsolver_8cpp.html#a3c4daf2be1a136dd1297039a88912827">ZVL_</a>(r, c) = excitationZ (V, e, f);
+<a name="l00785"></a>00785         <a class="code" href="hbsolver_8cpp.html#a3c4daf2be1a136dd1297039a88912827">ZVL_</a>(r, c) = excitationZ (V, <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>, f);
 <a name="l00786"></a>00786       }
 <a name="l00787"></a>00787     }
 <a name="l00788"></a>00788   }
@@ -1147,7 +1147,7 @@
 <a name="l01087"></a>01087   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = nlfreqs;
 <a name="l01088"></a>01088   <span class="keywordtype">int</span> nd = dfreqs.getSize ();
 <a name="l01089"></a>01089   <span class="keywordtype">int</span> <a class="code" href="parse__netlist_8y.html#a6da5270e48c8b5c2f0dbaa008af4df76">nodes</a> = V-&gt;<a class="code" href="classqucs_1_1tvector.html#afee07fa6cfbde917796746067198eaba">getSize</a> () / <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
-<a name="l01090"></a>01090   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *) V-&gt;<a class="code" href="classqucs_1_1tvector.html#aaa2c0afc40b8279080b5822f5df0bcb6">getData</a> ();
+<a name="l01090"></a>01090   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *) V-&gt;<a class="code" href="classqucs_1_1tvector.html#aaa2c0afc40b8279080b5822f5df0bcb6">getData</a> ();
 <a name="l01091"></a>01091 
 <a name="l01092"></a>01092   <span class="keywordflow">if</span> (nd == 1) {
 <a name="l01093"></a>01093     <span class="comment">// for each node a single 1d-FFT</span>
@@ -1470,9 +1470,9 @@
 <a name="l01410"></a>01410   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l01411"></a>01411 <a class="code" href="structqucs.html#a23d1ecdd5939cc3ab98c05aed05eb1be">PROP_OPT</a> [] = {
 <a name="l01412"></a>01412   { <span class="stringliteral">&quot;f&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e9, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4129c2429762ec32998c31828cb36a57">PROP_POS_RANGEX</a> },
-<a name="l01413"></a>01413   { <span class="stringliteral">&quot;iabstol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-12, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
-<a name="l01414"></a>01414   { <span class="stringliteral">&quot;vabstol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-6, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
-<a name="l01415"></a>01415   { <span class="stringliteral">&quot;reltol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
+<a name="l01413"></a>01413   { <span class="stringliteral">&quot;iabstol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-12, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
+<a name="l01414"></a>01414   { <span class="stringliteral">&quot;vabstol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-6, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
+<a name="l01415"></a>01415   { <span class="stringliteral">&quot;reltol&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a7e9ba27c049eba55e49f20f4fc4c2f03">PROP_RNG_X01I</a> },
 <a name="l01416"></a>01416   { <span class="stringliteral">&quot;MaxIter&quot;</span>, <a class="code" href="netdefs_8h.html#a1a52c37e7df2d230169832d17a1c0c5c">PROP_INT</a>, { 150, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#aa6ae43a3d5db7a8e127e51641f27de7c">PROP_RNGII</a> (2, 10000) },
 <a name="l01417"></a>01417   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l01418"></a><a class="code" href="structqucs_1_1hbsolver.html">01418</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structqucs_1_1hbsolver.html">hbsolver</a>::anadef =
@@ -1495,7 +1495,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

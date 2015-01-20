@@ -110,11 +110,11 @@
 <a name="l00050"></a>00050   <span class="comment">// calculate series capacitance</span>
 <a name="l00051"></a>00051   er = (er + 1) / 2;
 <a name="l00052"></a>00052   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = g / 4 / W;
-<a name="l00053"></a>00053   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="eqndefined_8cpp.html#ad1368c2a0fa68385ecdd9f1016563c08">C</a> = 2 * <a class="code" href="group__qucsPhysConstants.html#ga73f0647950b85591fbe61fff44d45c2e" title="Electric constant of vacuum .">E0</a> * er * W / M_PI *
+<a name="l00053"></a>00053   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="eqndefined_8cpp.html#ad1368c2a0fa68385ecdd9f1016563c08">C</a> = 2 * E0 * er * W / pi *
 <a name="l00054"></a>00054     (p - <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (1 + p * p) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">std::log</a> ((1 + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (1 + p * p)) / p));
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056   <span class="comment">// build Y-parameter matrix</span>
-<a name="l00057"></a>00057   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2.0 * M_PI * frequency * C);
+<a name="l00057"></a>00057   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2.0 * pi * frequency * C);
 <a name="l00058"></a>00058   matrix <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (2);
 <a name="l00059"></a>00059   y.set (0, 0, +y11);
 <a name="l00060"></a>00060   y.set (0, 1, -y11);
@@ -147,7 +147,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -246,7 +246,7 @@
 <a name="l00186"></a>00186       <span class="keywordflow">for</span> (n = 0; n &lt; var-&gt;getSize (); n++) {
 <a name="l00187"></a>00187         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (var-&gt;get (n));
 <a name="l00188"></a>00188         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = <a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (var-&gt;get (n));
-<a name="l00189"></a>00189         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, r / 20.0), <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (i)), n);
+<a name="l00189"></a>00189         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, r / 20.0), <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (i)), n);
 <a name="l00190"></a>00190       }
 <a name="l00191"></a>00191     }
 <a name="l00192"></a>00192     <span class="comment">// magnitude in [dB]</span>
@@ -261,7 +261,7 @@
 <a name="l00201"></a>00201       <span class="keywordflow">for</span> (n = 0; n &lt; var-&gt;getSize (); n++) {
 <a name="l00202"></a>00202         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (var-&gt;get (n));
 <a name="l00203"></a>00203         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = <a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (var-&gt;get (n));
-<a name="l00204"></a>00204         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (r, <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (i)), n);
+<a name="l00204"></a>00204         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (r, <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (i)), n);
 <a name="l00205"></a>00205       }
 <a name="l00206"></a>00206     }
 <a name="l00207"></a>00207     <span class="comment">// magnitude in [dB] and angle in [degree]</span>
@@ -269,7 +269,7 @@
 <a name="l00209"></a>00209       <span class="keywordflow">for</span> (n = 0; n &lt; var-&gt;getSize (); n++) {
 <a name="l00210"></a>00210         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (var-&gt;get (n));
 <a name="l00211"></a>00211         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = <a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (var-&gt;get (n));
-<a name="l00212"></a>00212         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, r / 20.0), <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (i)), n);
+<a name="l00212"></a>00212         var-&gt;set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">std::polar</a> (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, r / 20.0), <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (i)), n);
 <a name="l00213"></a>00213       }
 <a name="l00214"></a>00214     }
 <a name="l00215"></a>00215   }
@@ -333,7 +333,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -106,7 +106,7 @@
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047 %}
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-<a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>=<span class="stringliteral">&quot;netlist_&quot;</span>
+<a name="l00049"></a>00049 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-prefix <span class="stringliteral">&quot;netlist_&quot;</span>
 <a name="l00050"></a>00050 
 <a name="l00051"></a>00051 %token InvalidCharacter
 <a name="l00052"></a>00052 %token <a class="code" href="parse__zvr_8y.html#a6069b10a731f48cd1067ba5ef2adcd44">Identifier</a>
@@ -136,15 +136,15 @@
 <a name="l00076"></a>00076 %right <span class="charliteral">&#39;^&#39;</span>
 <a name="l00077"></a>00077 
 <a name="l00078"></a>00078 %<span class="keyword">union </span>{
-<a name="l00079"></a>00079   <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>;
-<a name="l00080"></a>00080   <span class="keywordtype">char</span> * str;
-<a name="l00081"></a>00081   <span class="keywordtype">double</span> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00079"></a>00079   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>;
+<a name="l00080"></a>00080   <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
+<a name="l00081"></a>00081   <span class="keywordtype">double</span> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00082"></a>00082   <span class="keywordtype">char</span> <a class="code" href="parse__netlist_8y.html#a4583fee4d5649f8fdcd95ceea1a613e0">chr</a>;
-<a name="l00083"></a>00083   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * definition;
-<a name="l00084"></a>00084   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>;
+<a name="l00083"></a>00083   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="parse__spice_8y.html#a55970f4fe6911e272dc63eb95fdd2ff1">definition</a>;
+<a name="l00084"></a>00084   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * <a class="code" href="parse__spice_8y.html#a45ee49fa2d304bc6f28db27f19792bd3">subcircuit</a>;
 <a name="l00085"></a>00085   <span class="keyword">struct </span><a class="code" href="structnode__t.html">node_t</a> * <a class="code" href="structnode__t.html#aebaf9d60a7b2db52c00204c89a20e94d">node</a>;
 <a name="l00086"></a>00086   <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * pair;
-<a name="l00087"></a>00087   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00087"></a>00087   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00088"></a>00088   <span class="keyword">struct </span>{
 <a name="l00089"></a>00089     <span class="keywordtype">double</span> <a class="code" href="structmdl__point__t.html#aa40346a03b5933b2902cfd65fc424169">r</a>;
 <a name="l00090"></a>00090     <span class="keywordtype">double</span> <a class="code" href="structmdl__point__t.html#a671ae84022f53c0ca2949e32fdff99e8">i</a>;
@@ -729,7 +729,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

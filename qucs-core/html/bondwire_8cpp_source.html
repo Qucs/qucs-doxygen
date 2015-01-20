@@ -163,7 +163,7 @@
 <a name="l00135"></a>00135 
 <a name="l00143"></a><a class="code" href="bondwire_8cpp.html#a50464862dc8658b86d109d5f24874a7d">00143</a> <span class="keyword">static</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="bondwire_8cpp.html#a50464862dc8658b86d109d5f24874a7d">skindepth</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f,
 <a name="l00144"></a>00144                               <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> rho, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> mur) {
-<a name="l00145"></a>00145   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (rho / (M_PI * f * <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * mur));
+<a name="l00145"></a>00145   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (rho / (pi * f * MU0 * mur));
 <a name="l00146"></a>00146 }
 <a name="l00147"></a>00147 
 <a name="l00159"></a><a class="code" href="structbondwire.html#a0f0e82e3dae1904d6377c0c0cacc9c48">00159</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="structbondwire.html#a0f0e82e3dae1904d6377c0c0cacc9c48">bondwire::resistance</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f)<span class="keyword"> const </span>{
@@ -178,12 +178,12 @@
 <a name="l00168"></a>00168   <span class="keywordflow">else</span>
 <a name="l00169"></a>00169     rin = 0.0;
 <a name="l00170"></a>00170 
-<a name="l00171"></a>00171   <span class="keywordflow">return</span> (<a class="code" href="structbondwire.html#abf205a6a416e86f22a14dfd534037802">rho</a> * M_1_PI * <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a>) / (rout * rout - rin * rin);
+<a name="l00171"></a>00171   <span class="keywordflow">return</span> (<a class="code" href="structbondwire.html#abf205a6a416e86f22a14dfd534037802">rho</a> * one_over_pi * <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a>) / (rout * rout - rin * rin);
 <a name="l00172"></a>00172 }
 <a name="l00173"></a>00173 
 <a name="l00174"></a>00174 
 <a name="l00198"></a><a class="code" href="bondwire_8cpp.html#a0fb05a0dfd2b3485b810d4f13add39f0">00198</a> <span class="keyword">static</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="bondwire_8cpp.html#a0fb05a0dfd2b3485b810d4f13add39f0">correctionfactor</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f,
-<a name="l00199"></a>00199                                      <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>,
+<a name="l00199"></a>00199                                      <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>,
 <a name="l00200"></a>00200                                      <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> rho,
 <a name="l00201"></a>00201                                      <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> mur) {
 <a name="l00202"></a>00202   <span class="comment">/* skin depth */</span>
@@ -192,7 +192,7 @@
 <a name="l00205"></a>00205   <span class="keywordflow">if</span> (f &gt; 0.0 &amp;&amp; rho &gt; 0.0) {
 <a name="l00206"></a>00206     delta = <a class="code" href="bondwire_8cpp.html#a50464862dc8658b86d109d5f24874a7d">skindepth</a> (f, rho, mur);
 <a name="l00207"></a>00207     <span class="keywordflow">if</span> (delta / d &lt; 1e-2)
-<a name="l00208"></a>00208       <span class="keywordflow">return</span> delta / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00208"></a>00208       <span class="keywordflow">return</span> delta / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00209"></a>00209     <span class="keywordflow">else</span>
 <a name="l00210"></a>00210       <span class="keywordflow">return</span> (mur / 4) * <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">std::tanh</a> ((4 * delta) / d);
 <a name="l00211"></a>00211   }
@@ -208,7 +208,7 @@
 <a name="l00260"></a>00260   tmp += d2l - <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (1 + d2l * d2l);
 <a name="l00261"></a>00261   tmp += <a class="code" href="bondwire_8cpp.html#a0fb05a0dfd2b3485b810d4f13add39f0">correctionfactor</a> (f, <a class="code" href="structbondwire.html#ac42fa0a73256cfafad6e8d95d369cfc2">d</a>, <a class="code" href="structbondwire.html#abf205a6a416e86f22a14dfd534037802">rho</a>, <a class="code" href="structbondwire.html#a9f68d4fb9ed93da0ce57f584e88d9961">mur</a>);
 <a name="l00262"></a>00262 
-<a name="l00263"></a>00263   <span class="keywordflow">return</span> <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * (M_1_PI / 2) * <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a> * tmp;
+<a name="l00263"></a>00263   <span class="keywordflow">return</span> MU0 * (one_over_pi / 2) * <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a> * tmp;
 <a name="l00264"></a>00264 }
 <a name="l00265"></a>00265 
 <a name="l00266"></a>00266 
@@ -223,7 +223,7 @@
 <a name="l00305"></a>00305   tmp -= 2 * h / <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a>;
 <a name="l00306"></a>00306   tmp += <a class="code" href="structbondwire.html#ac42fa0a73256cfafad6e8d95d369cfc2">d</a> / (2 * <a class="code" href="structbondwire.html#affe52c0d4ec3ce3d0ee4216c70d11a1e">l</a>);
 <a name="l00307"></a>00307 
-<a name="l00308"></a>00308   <span class="keywordflow">return</span>  <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * (M_1_PI / 2) * l * tmp;
+<a name="l00308"></a>00308   <span class="keywordflow">return</span>  MU0 * (one_over_pi / 2) * l * tmp;
 <a name="l00309"></a>00309 }
 <a name="l00310"></a>00310 
 <a name="l00311"></a>00311 
@@ -244,7 +244,7 @@
 <a name="l00328"></a>00328     <span class="keywordflow">break</span>;
 <a name="l00329"></a>00329   }
 <a name="l00330"></a>00330 
-<a name="l00331"></a>00331   Lw = <a class="code" href="structbondwire.html#a1c905e31b199be732720613f35658899">L</a> * 2 * M_PI * f;
+<a name="l00331"></a>00331   Lw = <a class="code" href="structbondwire.html#a1c905e31b199be732720613f35658899">L</a> * 2 * pi * f;
 <a name="l00332"></a>00332 
 <a name="l00333"></a>00333   <span class="comment">/* build Y-parameter matrix */</span>
 <a name="l00334"></a>00334   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> yL = 1.0 / <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (<a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a>, Lw);
@@ -307,7 +307,7 @@
 <a name="l00403"></a><a class="code" href="structbondwire.html#a917b8cced206a742a79823fa392be345">00403</a> <span class="keywordtype">void</span> <a class="code" href="structbondwire.html#a917b8cced206a742a79823fa392be345">bondwire::calcNoiseSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
 <a name="l00404"></a>00404   <span class="comment">// calculate noise correlation matrix</span>
 <a name="l00405"></a>00405   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
-<a name="l00406"></a>00406   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) * 4.0 * <a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a> * <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> / <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (4.0 * <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + <a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a>) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a>;
+<a name="l00406"></a>00406   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) * 4.0 * <a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a> * <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> / <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (4.0 * <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a> + <a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a>) / T0;
 <a name="l00407"></a>00407   <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, +f); <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, +f);
 <a name="l00408"></a>00408   <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, -f); <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, -f);
 <a name="l00409"></a>00409 }
@@ -316,7 +316,7 @@
 <a name="l00412"></a>00412   <span class="comment">// calculate noise current correlation matrix</span>
 <a name="l00413"></a>00413   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> = 1 / <a class="code" href="structbondwire.html#a155f559e2052dda7759d4493a2f50c4e">R</a>;
 <a name="l00414"></a>00414   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
-<a name="l00415"></a>00415   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a> * 4.0 * <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
+<a name="l00415"></a>00415   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * 4.0 * <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
 <a name="l00416"></a>00416   <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, +f); <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, +f);
 <a name="l00417"></a>00417   <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, -f); <a class="code" href="classqucs_1_1circuit.html#aa6b07a2926cc3d731856d528e03da3d4">setN</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, -f);
 <a name="l00418"></a>00418 }
@@ -333,7 +333,7 @@
 <a name="l00429"></a>00429   { <span class="stringliteral">&quot;Subst&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Subst1&quot;</span> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
 <a name="l00430"></a>00430   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00431"></a><a class="code" href="bondwire_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00431</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
-<a name="l00432"></a>00432   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+<a name="l00432"></a>00432   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
 <a name="l00433"></a>00433   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00434"></a><a class="code" href="structbondwire.html">00434</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structbondwire.html">bondwire</a>::cirdef =
 <a name="l00435"></a><a class="code" href="structbondwire.html#adbbf076d7a359b74cd547e6f400ef2f1">00435</a>   { <span class="stringliteral">&quot;BOND&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="structbondwire.html#adbbf076d7a359b74cd547e6f400ef2f1">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
@@ -341,7 +341,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:35 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:11 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -104,7 +104,7 @@
 <a name="l00044"></a>00044   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
 <a name="l00045"></a>00045   matrix s = <a class="code" href="classqucs_1_1circuit.html#a50cb15c93f5b15047f4e54f56cf9af89">getMatrixS</a> ();
 <a name="l00046"></a>00046   matrix e = <a class="code" href="namespacequcs.html#a1e1bd76ee9f68d155193fef7755c848c" title="Create identity matrix with specified number of rows and columns.">eye</a> (<a class="code" href="classqucs_1_1circuit.html#aed2de3b676324a1c1ded4e0f3c6025a4" title="Get the number of ports the circuit element has.">getSize</a> ());
-<a name="l00047"></a>00047   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (<a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a> * (e - s * <a class="code" href="namespacequcs.html#aa2406fc8e3e9146337c35da97caafb06" title="Matrix transposition.">transpose</a> (<a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (s))));
+<a name="l00047"></a>00047   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (<a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * (e - s * <a class="code" href="namespacequcs.html#aa2406fc8e3e9146337c35da97caafb06" title="Matrix transposition.">transpose</a> (<a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (s))));
 <a name="l00048"></a>00048 }
 <a name="l00049"></a>00049 
 <a name="l00050"></a><a class="code" href="structmsline.html#ab43bb02852172bcbd0a5bdba5ad01961">00050</a> <span class="keywordtype">void</span> <a class="code" href="structmsline.html#ab43bb02852172bcbd0a5bdba5ad01961">msline::calcPropagation</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
@@ -143,7 +143,7 @@
 <a name="l00083"></a>00083   <a class="code" href="structmsline.html#ad0c4b6ca6ceba3f6abec6aa48e532d3b">zl</a>    = ZlEffFreq;
 <a name="l00084"></a>00084   <a class="code" href="structmsline.html#ab182ea07ff827e4ecd28e8141358a862">ereff</a> = ErEffFreq;
 <a name="l00085"></a>00085   <a class="code" href="structmsline.html#a078111d8da51a4c6e2b6b65cd4e90ffa">alpha</a> = ac + ad;
-<a name="l00086"></a>00086   <a class="code" href="structmsline.html#a5efc3af7f00358ce762df9635e2128ac">beta</a>  = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEffFreq) * 2 * M_PI * frequency / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a>;
+<a name="l00086"></a>00086   <a class="code" href="structmsline.html#a5efc3af7f00358ce762df9635e2128ac">beta</a>  = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEffFreq) * 2 * pi * frequency / C0;
 <a name="l00087"></a>00087 }
 <a name="l00088"></a>00088 
 <a name="l00089"></a><a class="code" href="structmsline.html#a6655b23ec87724fdc7b635c6435a4910">00089</a> <span class="keywordtype">void</span> <a class="code" href="structmsline.html#a6655b23ec87724fdc7b635c6435a4910">msline::calcSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
@@ -186,12 +186,12 @@
 <a name="l00126"></a>00126 
 <a name="l00127"></a>00127   <span class="comment">// WHEELER</span>
 <a name="l00128"></a>00128   <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Wheeler&quot;</span>)) {
-<a name="l00129"></a>00129     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a, b, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, dW1, dWr, Wr;
+<a name="l00129"></a>00129     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a, b, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, dW1, dWr, Wr;
 <a name="l00130"></a>00130 
 <a name="l00131"></a>00131     <span class="comment">// compute strip thickness effect</span>
 <a name="l00132"></a>00132     <span class="keywordflow">if</span> (t != 0) {
-<a name="l00133"></a>00133       dW1 = t / M_PI * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * M_E / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (t / h) +
-<a name="l00134"></a>00134                                             <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (M_1_PI / (W / t + 1.10))));
+<a name="l00133"></a>00133       dW1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * e / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (t / h) +
+<a name="l00134"></a>00134                                             <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (one_over_pi / (W / t + 1.10))));
 <a name="l00135"></a>00135     }
 <a name="l00136"></a>00136     <span class="keywordflow">else</span> dW1 = 0;
 <a name="l00137"></a>00137     dWr = (1 + 1 / er) / 2 * dW1;
@@ -200,26 +200,26 @@
 <a name="l00140"></a>00140     <span class="comment">// compute characteristic impedance</span>
 <a name="l00141"></a>00141     <span class="keywordflow">if</span> (W / h &lt; 3.3) {
 <a name="l00142"></a>00142       c = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * h / Wr + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (4 * h / Wr) + 2));
-<a name="l00143"></a>00143       b = (er - 1) / (er + 1) / 2 * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (M_PI_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * M_2_PI) / er);
-<a name="l00144"></a>00144       z = (c - b) * <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> / M_PI / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (2 * (er + 1));
+<a name="l00143"></a>00143       b = (er - 1) / (er + 1) / 2 * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (pi_over_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * two_over_pi) / er);
+<a name="l00144"></a>00144       z = (c - b) * Z0 / pi / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (2 * (er + 1));
 <a name="l00145"></a>00145     }
 <a name="l00146"></a>00146     <span class="keywordflow">else</span> {
-<a name="l00147"></a>00147       c = 1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (M_PI_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (Wr / h / 2 + 0.94);
-<a name="l00148"></a>00148       d = M_1_PI / 2 * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (M_PI) / 16)) * (er - 1) / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (er);
-<a name="l00149"></a>00149       x = 2 * M_LN2 / M_PI + Wr / h / 2 + (er + 1) / 2 / M_PI / er * c + d;
-<a name="l00150"></a>00150       z = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> / 2 / x / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er);
+<a name="l00147"></a>00147       c = 1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (pi_over_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (Wr / h / 2 + 0.94);
+<a name="l00148"></a>00148       d = one_over_pi / 2 * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (pi) / 16)) * (er - 1) / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (er);
+<a name="l00149"></a>00149       x = 2 * ln2 / pi + Wr / h / 2 + (er + 1) / 2 / pi / er * c + d;
+<a name="l00150"></a>00150       z = Z0 / 2 / x / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er);
 <a name="l00151"></a>00151     }
 <a name="l00152"></a>00152 
 <a name="l00153"></a>00153     <span class="comment">// compute effective dielectric constant</span>
 <a name="l00154"></a>00154     <span class="keywordflow">if</span> (W / h &lt; 1.3) {
 <a name="l00155"></a>00155       a = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (8 * h / Wr) + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (Wr / h) / 32;
-<a name="l00156"></a>00156       b = (er - 1) / (er + 1) / 2 * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (M_PI_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * M_2_PI) / er);
+<a name="l00156"></a>00156       b = (er - 1) / (er + 1) / 2 * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (pi_over_2) + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * two_over_pi) / er);
 <a name="l00157"></a>00157       e = (er + 1) / 2 * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (a / (a - b));
 <a name="l00158"></a>00158     }
 <a name="l00159"></a>00159     <span class="keywordflow">else</span> {
-<a name="l00160"></a>00160       a = (er - 1) / 2 / M_PI / er * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2.1349 * Wr / h + 4.0137) -
+<a name="l00160"></a>00160       a = (er - 1) / 2 / pi / er * (<a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2.1349 * Wr / h + 4.0137) -
 <a name="l00161"></a>00161                                       0.5169 / er);
-<a name="l00162"></a>00162       b = Wr / h / 2 + M_1_PI * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (8.5397 * Wr / h + 16.0547);
+<a name="l00162"></a>00162       b = Wr / h / 2 + one_over_pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (8.5397 * Wr / h + 16.0547);
 <a name="l00163"></a>00163       e = er * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> ((b - a) / b);
 <a name="l00164"></a>00164     }
 <a name="l00165"></a>00165   }
@@ -230,8 +230,8 @@
 <a name="l00170"></a>00170 
 <a name="l00171"></a>00171     <span class="comment">// consider strip thickness equations</span>
 <a name="l00172"></a>00172     <span class="keywordflow">if</span> (t != 0 &amp;&amp; t &lt; W / 2) {
-<a name="l00173"></a>00173       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> = (u &lt; M_1_PI / 2) ? 2 * M_PI * W / t : h / t;
-<a name="l00174"></a>00174       dW = t / M_PI * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * arg));
+<a name="l00173"></a>00173       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> = (u &lt; one_over_pi / 2) ? 2 * pi * W / t : h / t;
+<a name="l00174"></a>00174       dW = t / pi * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (2 * arg));
 <a name="l00175"></a>00175       <span class="keywordflow">if</span> (t / dW &gt;= 0.75) dW = 0;
 <a name="l00176"></a>00176     }
 <a name="l00177"></a>00177     WEff = W + dW; u = WEff / <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>;
@@ -241,12 +241,12 @@
 <a name="l00181"></a>00181 
 <a name="l00182"></a>00182     <span class="comment">// characteristic impedance</span>
 <a name="l00183"></a>00183     <span class="keywordflow">if</span> (u &lt; 1.0) {
-<a name="l00184"></a>00184       z = M_1_PI / 2 * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (8 / u + u / 4);
+<a name="l00184"></a>00184       z = one_over_pi / 2 * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (8 / u + u / 4);
 <a name="l00185"></a>00185     }
 <a name="l00186"></a>00186     <span class="keywordflow">else</span> {
 <a name="l00187"></a>00187       z = 1 / (u + 2.42 - 0.44 / u + <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> ((1. - 1. / u), 6.));
 <a name="l00188"></a>00188     }
-<a name="l00189"></a>00189     z = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> * z / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e);
+<a name="l00189"></a>00189     z = Z0 * z / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e);
 <a name="l00190"></a>00190   }
 <a name="l00191"></a>00191   <span class="comment">// HAMMERSTAD and JENSEN</span>
 <a name="l00192"></a>00192   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Hammerstad&quot;</span>)) {
@@ -257,7 +257,7 @@
 <a name="l00197"></a>00197 
 <a name="l00198"></a>00198     <span class="comment">// compute strip thickness effect</span>
 <a name="l00199"></a>00199     <span class="keywordflow">if</span> (t != 0) {
-<a name="l00200"></a>00200       du1 = t / M_PI * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + 4 * M_E / t / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (<a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (6.517 * u))));
+<a name="l00200"></a>00200       du1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + 4 * e / t / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (<a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (6.517 * u))));
 <a name="l00201"></a>00201     }
 <a name="l00202"></a>00202     <span class="keywordflow">else</span> du1 = 0;
 <a name="l00203"></a>00203     du = du1 * (1 + <a class="code" href="namespacequcs.html#af7caa1c66cbd98f51b50645f951a3398" title="Compute complex hyperbolic secant.">sech</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1))) / 2;
@@ -306,7 +306,7 @@
 <a name="l00246"></a>00246   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Schneider&quot;</span>)) {
 <a name="l00247"></a>00247     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k, f;
 <a name="l00248"></a>00248     k = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff / er);
-<a name="l00249"></a>00249     f = 4 * h * frequency / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1);
+<a name="l00249"></a>00249     f = 4 * h * frequency / C0 * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1);
 <a name="l00250"></a>00250     f = <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (f);
 <a name="l00251"></a>00251     e = ErEff * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> ((1 + f) / (1 + k * f));
 <a name="l00252"></a>00252     z = ZlEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff / e);
@@ -315,17 +315,17 @@
 <a name="l00255"></a>00255   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Yamashita&quot;</span>)) {
 <a name="l00256"></a>00256     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k, f;
 <a name="l00257"></a>00257     k = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er / ErEff);
-<a name="l00258"></a>00258     f = 4 * h * frequency / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1) *
+<a name="l00258"></a>00258     f = 4 * h * frequency / C0 * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1) *
 <a name="l00259"></a>00259       (0.5 + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (1 + 2 * <a class="code" href="namespacequcs.html#a57711ea8077dd2281084e772e4166abb" title="Compute principal value of decimal logarithm of z.">qucs::log10</a> (1 + W / h)));
 <a name="l00260"></a>00260     e = ErEff * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> ((1 + k * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (f, 1.5) / 4) / (1 + <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (f, 1.5) / 4));
 <a name="l00261"></a>00261   }
 <a name="l00262"></a>00262   <span class="comment">// KOBAYASHI</span>
 <a name="l00263"></a>00263   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Kobayashi&quot;</span>)) {
 <a name="l00264"></a>00264     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, no, nc, fh, fk;
-<a name="l00265"></a>00265     fk = <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> * <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (er * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> ((ErEff - 1) / (er - ErEff))) /
-<a name="l00266"></a>00266       (2 * M_PI * h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - ErEff));
+<a name="l00265"></a>00265     fk = C0 * <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (er * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> ((ErEff - 1) / (er - ErEff))) /
+<a name="l00266"></a>00266       (2 * pi * h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - ErEff));
 <a name="l00267"></a>00267     fh = fk / (0.75 + (0.75 - 0.332 / <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (er, 1.73)) * W / h);
-<a name="l00268"></a>00268     no = 1 + 1 / (1 + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (W / h)) + 0.32 * <a class="code" href="group__qucsPhysConstants.html#ga9fb1a6714f57b44dcb211f9aa3394246">cubic</a> (1 / (1 + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (W / h)));
+<a name="l00268"></a>00268     no = 1 + 1 / (1 + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (W / h)) + 0.32 * <a class="code" href="namespacequcs.html#ac9d2d6081f9378e7504c0b009cb92ad4" title="Compute the third power of input.">cubic</a> (1 / (1 + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (W / h)));
 <a name="l00269"></a>00269     <span class="keywordflow">if</span> (W / h &lt; 0.7) {
 <a name="l00270"></a>00270       nc = 1 + 1.4 / (1 + W / <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) * (0.15 - 0.235 *
 <a name="l00271"></a>00271                                     <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (-0.45 * frequency / fh));
@@ -337,17 +337,17 @@
 <a name="l00277"></a>00277   <span class="comment">// PRAMANICK and BHARTIA</span>
 <a name="l00278"></a>00278   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Pramanick&quot;</span>)) {
 <a name="l00279"></a>00279     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Weff, We, f;
-<a name="l00280"></a>00280     f = 2 * <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * h * frequency * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff / er) / ZlEff;
+<a name="l00280"></a>00280     f = 2 * MU0 * h * frequency * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff / er) / ZlEff;
 <a name="l00281"></a>00281     e = er - (er - ErEff) / (1 + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (f));
-<a name="l00282"></a>00282     Weff = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> * h / ZlEff / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff);
+<a name="l00282"></a>00282     Weff = Z0 * h / ZlEff / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff);
 <a name="l00283"></a>00283     We = W + (Weff - W) / (1 + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (f));
-<a name="l00284"></a>00284     z = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> * h / We / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e);
+<a name="l00284"></a>00284     z = Z0 * h / We / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e);
 <a name="l00285"></a>00285   }
 <a name="l00286"></a>00286   <span class="comment">// HAMMERSTAD and JENSEN</span>
 <a name="l00287"></a>00287   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Hammerstad&quot;</span>)) {
 <a name="l00288"></a>00288     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f, g;
-<a name="l00289"></a>00289     g = <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (M_PI) / 12 * (er - 1) / ErEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (2 * M_PI * ZlEff / <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a>);
-<a name="l00290"></a>00290     f = 2 * <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * h * frequency / ZlEff;
+<a name="l00289"></a>00289     g = <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (pi) / 12 * (er - 1) / ErEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (2 * pi * ZlEff / Z0);
+<a name="l00290"></a>00290     f = 2 * MU0 * h * frequency / ZlEff;
 <a name="l00291"></a>00291     e = er - (er - ErEff) / (1 + g * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (f));
 <a name="l00292"></a>00292     z = ZlEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff / e) * (e - 1) / (ErEff - 1);
 <a name="l00293"></a>00293   }
@@ -372,7 +372,7 @@
 <a name="l00312"></a><a class="code" href="structmsline.html#a13ed2b0dffbf4b3684b5cde8016835d8">00312</a> <span class="keywordtype">void</span> <a class="code" href="structmsline.html#a13ed2b0dffbf4b3684b5cde8016835d8">msline::Hammerstad_ab</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; a,
 <a name="l00313"></a>00313                             <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; b) {
 <a name="l00314"></a>00314   a = 1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> ((<a class="code" href="namespacequcs.html#a5c6aaf16e34f7d2ffcb904836fe6a36d" title="Quartic function.">quadr</a> (u) + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (u / 52)) / (<a class="code" href="namespacequcs.html#a5c6aaf16e34f7d2ffcb904836fe6a36d" title="Quartic function.">quadr</a> (u) + 0.432)) / 49 +
-<a name="l00315"></a>00315     <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + <a class="code" href="group__qucsPhysConstants.html#ga9fb1a6714f57b44dcb211f9aa3394246">cubic</a> (u / 18.1)) / 18.7;
+<a name="l00315"></a>00315     <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + <a class="code" href="namespacequcs.html#ac9d2d6081f9378e7504c0b009cb92ad4" title="Compute the third power of input.">cubic</a> (u / 18.1)) / 18.7;
 <a name="l00316"></a>00316   b = 0.564 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> ((er - 0.9) / (er + 3), 0.053);
 <a name="l00317"></a>00317 }
 <a name="l00318"></a>00318 
@@ -389,8 +389,8 @@
 <a name="l00329"></a>00329 <span class="comment">   equation is used in single and coupled microstrip calculations as</span>
 <a name="l00330"></a>00330 <span class="comment">   well. */</span>
 <a name="l00331"></a><a class="code" href="structmsline.html#a292d1d4a8121a33ad40b19d571e834ed">00331</a> <span class="keywordtype">void</span> <a class="code" href="structmsline.html#a292d1d4a8121a33ad40b19d571e834ed">msline::Hammerstad_zl</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; zl) {
-<a name="l00332"></a>00332   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> fu = 6 + (2 * M_PI - 6) * <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (- <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (30.666 / u, 0.7528));
-<a name="l00333"></a>00333   zl = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> / 2 / M_PI * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (fu / u + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (2 / u)));
+<a name="l00332"></a>00332   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> fu = 6 + (2 * pi - 6) * <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (- <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (30.666 / u, 0.7528));
+<a name="l00333"></a>00333   zl = Z0 / 2 / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (fu / u + <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (2 / u)));
 <a name="l00334"></a>00334 }
 <a name="l00335"></a>00335 
 <a name="l00336"></a>00336 <span class="comment">/* Calculates dispersion effects for effective dielectric constant and</span>
@@ -399,12 +399,12 @@
 <a name="l00339"></a><a class="code" href="structmsline.html#a80f8d671699502490a4c2953ed88fc54">00339</a> <span class="keywordtype">void</span> <a class="code" href="structmsline.html#a80f8d671699502490a4c2953ed88fc54">msline::Getsinger_disp</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ErEff,
 <a name="l00340"></a>00340                              <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ZlEff, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency,
 <a name="l00341"></a>00341                              <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; e, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; z) {
-<a name="l00342"></a>00342   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> g, f, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00342"></a>00342   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> g, f, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00343"></a>00343   g = 0.6 + 0.009 * ZlEff;
-<a name="l00344"></a>00344   f = frequency * 2 * <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * h / ZlEff;
+<a name="l00344"></a>00344   f = frequency * 2 * MU0 * h / ZlEff;
 <a name="l00345"></a>00345   e = er - (er - ErEff) / (1 + g * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (f));
 <a name="l00346"></a>00346   d = (er - e) * (e - ErEff) / e / (er - ErEff);
-<a name="l00347"></a>00347   z = ZlEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e / ErEff) / (1 + <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>);  <span class="comment">// group delay model</span>
+<a name="l00347"></a>00347   z = ZlEff * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (e / ErEff) / (1 + <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>);  <span class="comment">// group delay model</span>
 <a name="l00348"></a>00348 }
 <a name="l00349"></a>00349 
 <a name="l00350"></a>00350 <span class="comment">/* This function computes the dispersion of the effective dielectric</span>
@@ -472,7 +472,7 @@
 <a name="l00412"></a>00412 
 <a name="l00413"></a>00413     <span class="comment">// conductor losses</span>
 <a name="l00414"></a>00414     <span class="keywordflow">if</span> (t != 0.0) {
-<a name="l00415"></a>00415       Rs = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (M_PI * frequency * <a class="code" href="group__qucsPhysConstants.html#ga0fa11f33bdb89b468b60f19395381cc4" title="magnetic constant of vacuum ( )">MU0</a> * rho); <span class="comment">// skin resistance</span>
+<a name="l00415"></a>00415       Rs = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (pi * frequency * MU0 * rho); <span class="comment">// skin resistance</span>
 <a name="l00416"></a>00416       ds = rho / Rs;                            <span class="comment">// skin depth</span>
 <a name="l00417"></a>00417       <span class="comment">// valid for t &gt; 3 * ds</span>
 <a name="l00418"></a>00418       <span class="keywordflow">if</span> (t &lt; 3 * ds) {
@@ -481,15 +481,15 @@
 <a name="l00421"></a>00421                   <span class="stringliteral">&quot;height t (%g) &lt; 3 * skin depth (%g)\n&quot;</span>, t, 3 * ds);
 <a name="l00422"></a>00422       }
 <a name="l00423"></a>00423       <span class="comment">// current distribution factor</span>
-<a name="l00424"></a>00424       Ki = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (-1.2 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> ((ZlEff1 + ZlEff2) / 2 / <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a>, 0.7));
+<a name="l00424"></a>00424       Ki = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (-1.2 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> ((ZlEff1 + ZlEff2) / 2 / Z0, 0.7));
 <a name="l00425"></a>00425       <span class="comment">// D is RMS surface roughness</span>
-<a name="l00426"></a>00426       Kr = 1 + M_2_PI * <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (1.4 * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (D / ds));
+<a name="l00426"></a>00426       Kr = 1 + two_over_pi * <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (1.4 * <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (D / ds));
 <a name="l00427"></a>00427       ac = Rs / (ZlEff1 * W) * Ki * Kr;
 <a name="l00428"></a>00428     }
 <a name="l00429"></a>00429 
 <a name="l00430"></a>00430     <span class="comment">// dielectric losses</span>
-<a name="l00431"></a>00431     l0 = <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> / frequency;
-<a name="l00432"></a>00432     ad = M_PI * er / (er - 1) * (ErEff - 1) / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff) * tand / l0;
+<a name="l00431"></a>00431     l0 = C0 / frequency;
+<a name="l00432"></a>00432     ad = pi * er / (er - 1) * (ErEff - 1) / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff) * tand / l0;
 <a name="l00433"></a>00433   }
 <a name="l00434"></a>00434 }
 <a name="l00435"></a>00435 
@@ -542,7 +542,7 @@
 <a name="l00482"></a>00482   <span class="keywordflow">if</span> (l &lt; 0) <span class="keywordflow">return</span>;
 <a name="l00483"></a>00483   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
 <a name="l00484"></a>00484   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
-<a name="l00485"></a>00485   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (4 * <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a> * <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="classqucs_1_1circuit.html#a70436ed40bfc9774662a2350c2fc5250">getMatrixY</a> ()));
+<a name="l00485"></a>00485   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (4 * <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="classqucs_1_1circuit.html#a70436ed40bfc9774662a2350c2fc5250">getMatrixY</a> ()));
 <a name="l00486"></a>00486 }
 <a name="l00487"></a>00487 
 <a name="l00488"></a>00488 <span class="comment">// properties</span>
@@ -554,7 +554,7 @@
 <a name="l00494"></a>00494   { <span class="stringliteral">&quot;Model&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Hammerstad&quot;</span> }, <a class="code" href="netdefs_8h.html#a5f38603183ce2c45326759baecd96ddc">PROP_RNG_MOD</a> },
 <a name="l00495"></a>00495   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00496"></a><a class="code" href="msline_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00496</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
-<a name="l00497"></a>00497   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+<a name="l00497"></a>00497   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
 <a name="l00498"></a>00498   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00499"></a><a class="code" href="structmsline.html">00499</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structmsline.html">msline</a>::cirdef =
 <a name="l00500"></a><a class="code" href="structmsline.html#a818d12f86b4676b6ffef54e1aa0f6b11">00500</a>   { <span class="stringliteral">&quot;MLIN&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="structmsline.html#a818d12f86b4676b6ffef54e1aa0f6b11">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
@@ -562,7 +562,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

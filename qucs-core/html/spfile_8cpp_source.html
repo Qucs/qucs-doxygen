@@ -303,13 +303,13 @@
 <a name="l00243"></a>00243     k.set (ports - 1, c, g * s.get (ports - 1, ports - 1) - 1.0);
 <a name="l00244"></a>00244 
 <a name="l00245"></a>00245   <span class="comment">// create D vector</span>
-<a name="l00246"></a>00246   matrix <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> (ports, 1);
+<a name="l00246"></a>00246   matrix <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> (ports, 1);
 <a name="l00247"></a>00247   <span class="keywordflow">for</span> (r = 0; r &lt; ports - 1; r++) d.set (r, 0, s.get (r, ports - 1));
 <a name="l00248"></a>00248   d.set (ports - 1, 0, s.get (ports - 1, ports - 1) - 1.0);
 <a name="l00249"></a>00249 
 <a name="l00250"></a>00250   <span class="comment">// expand noise correlation matrix</span>
 <a name="l00251"></a>00251   matrix res (ports);
-<a name="l00252"></a>00252   res = (k * n * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (k) - <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a> * fabs (1 - <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (g)) *
+<a name="l00252"></a>00252   res = (k * n * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (k) - <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * fabs (1 - <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (g)) *
 <a name="l00253"></a>00253          d * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (d)) * <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (1 / (1 - g));
 <a name="l00254"></a>00254   <span class="keywordflow">return</span> res;
 <a name="l00255"></a>00255 }
@@ -334,12 +334,12 @@
 <a name="l00274"></a>00274            (1.0 - g * s.get (ports - 1, ports - 1)));
 <a name="l00275"></a>00275 
 <a name="l00276"></a>00276   <span class="comment">// create D&#39; vector</span>
-<a name="l00277"></a>00277   matrix <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> (ports - 1, 1);
+<a name="l00277"></a>00277   matrix <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> (ports - 1, 1);
 <a name="l00278"></a>00278   <span class="keywordflow">for</span> (r = 0; r &lt; ports - 1; r++) d.set (r, 0, s.get (r, ports - 1));
 <a name="l00279"></a>00279 
 <a name="l00280"></a>00280   <span class="comment">// shrink noise correlation matrix</span>
 <a name="l00281"></a>00281   matrix res (ports - 1);
-<a name="l00282"></a>00282   res = k * n * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (k) + <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#gad41b89d4eb6d63a0def5e5fd2a5ab326" title="standard temperature">T0</a> * fabs (1.0 - <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (g)) /
+<a name="l00282"></a>00282   res = k * n * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (k) + <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * fabs (1.0 - <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (g)) /
 <a name="l00283"></a>00283     <a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (1.0 - g * s.get (ports - 1, ports - 1)) * d * <a class="code" href="namespacequcs.html#a1739249597320aa5ebcef8ad13273ef1" title="adjoint matrix">adjoint</a> (d);
 <a name="l00284"></a>00284   <span class="keywordflow">return</span> res;
 <a name="l00285"></a>00285 }
@@ -585,7 +585,7 @@
 <a name="l00525"></a>00525     <a class="code" href="netdefs_8h.html#ade558e1667df91aa0e9ecf79987ff6a8">PROP_RNG_STR2</a> (<span class="stringliteral">&quot;rectangular&quot;</span>, <span class="stringliteral">&quot;polar&quot;</span>) },
 <a name="l00526"></a>00526   { <span class="stringliteral">&quot;Interpolator&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;linear&quot;</span> },
 <a name="l00527"></a>00527     <a class="code" href="netdefs_8h.html#ade558e1667df91aa0e9ecf79987ff6a8">PROP_RNG_STR2</a> (<span class="stringliteral">&quot;linear&quot;</span>, <span class="stringliteral">&quot;cubic&quot;</span>) },
-<a name="l00528"></a>00528   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+<a name="l00528"></a>00528   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
 <a name="l00529"></a>00529   { <span class="stringliteral">&quot;duringDC&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;open&quot;</span> },
 <a name="l00530"></a>00530     <a class="code" href="netdefs_8h.html#afbf1a9baf37a6c5fc4c90b8cfb7579a6">PROP_RNG_STR4</a> (<span class="stringliteral">&quot;open&quot;</span>, <span class="stringliteral">&quot;short&quot;</span>, <span class="stringliteral">&quot;shortall&quot;</span>, <span class="stringliteral">&quot;unspecified&quot;</span>) },
 <a name="l00531"></a>00531   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
@@ -596,7 +596,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

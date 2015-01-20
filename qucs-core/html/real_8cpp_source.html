@@ -202,7 +202,7 @@
 <a name="l00195"></a>00195   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (a,b);
 <a name="l00196"></a>00196 }
 <a name="l00197"></a>00197 
-<a name="l00198"></a><a class="code" href="namespacequcs.html#aa0e1d690e118fed216646a7f85f81819">00198</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">sqrt</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00198"></a><a class="code" href="namespacequcs.html#aa0e1d690e118fed216646a7f85f81819">00198</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">sqrt</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00199"></a>00199   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">std::sqrt</a> (d);
 <a name="l00200"></a>00200 }
 <a name="l00201"></a>00201 
@@ -211,15 +211,15 @@
 <a name="l00215"></a>00215 <span class="preprocessor"></span>  <span class="keywordflow">return</span> std::hypot(a,b) <span class="comment">// c++11</span>
 <a name="l00216"></a>00216 <span class="preprocessor">#else</span>
 <a name="l00217"></a>00217 <span class="preprocessor"></span>  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = fabs (a);
-<a name="l00218"></a>00218   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = fabs (b);
+<a name="l00218"></a>00218   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = fabs (b);
 <a name="l00219"></a>00219   <span class="keywordflow">if</span> (c &gt; d) {
-<a name="l00220"></a>00220     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> e = d / <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
+<a name="l00220"></a>00220     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = d / <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
 <a name="l00221"></a>00221     <span class="keywordflow">return</span> c * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">sqrt</a> (1 + e * e);
 <a name="l00222"></a>00222   }
 <a name="l00223"></a>00223   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (d == 0)
 <a name="l00224"></a>00224     <span class="keywordflow">return</span> 0;
 <a name="l00225"></a>00225   <span class="keywordflow">else</span> {
-<a name="l00226"></a>00226     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> e = c / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00226"></a>00226     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = c / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00227"></a>00227     <span class="keywordflow">return</span> d * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">sqrt</a> (1 + e * e);
 <a name="l00228"></a>00228   }
 <a name="l00229"></a>00229 <span class="preprocessor">#endif</span>
@@ -280,15 +280,15 @@
 <a name="l00284"></a>00284 <span class="comment">//</span>
 <a name="l00285"></a>00285 <span class="comment">// Qucs extra trigonometric helper</span>
 <a name="l00286"></a>00286 <span class="comment">//</span>
-<a name="l00287"></a><a class="code" href="namespacequcs.html#aa0ac1963a1ed31a2480d71e5ecd8eb4f">00287</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00287"></a><a class="code" href="namespacequcs.html#aa0ac1963a1ed31a2480d71e5ecd8eb4f">00287</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00288"></a>00288   <span class="keywordflow">return</span> 1.0 / <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">std::tanh</a> (d);
 <a name="l00289"></a>00289 }
 <a name="l00290"></a>00290 
-<a name="l00291"></a><a class="code" href="namespacequcs.html#af3f5f7dddfd384a6571950a416fc2271">00291</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#af7caa1c66cbd98f51b50645f951a3398" title="Compute complex hyperbolic secant.">sech</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00291"></a><a class="code" href="namespacequcs.html#af3f5f7dddfd384a6571950a416fc2271">00291</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#af7caa1c66cbd98f51b50645f951a3398" title="Compute complex hyperbolic secant.">sech</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00292"></a>00292   <span class="keywordflow">return</span>  (1.0 / <a class="code" href="namespacequcs.html#a7cdec7dcec9ebdb191277caab517cdb9" title="Compute complex hyperbolic cosine.">std::cosh</a> (d));
 <a name="l00293"></a>00293 }
 <a name="l00294"></a>00294 
-<a name="l00295"></a><a class="code" href="namespacequcs.html#ad15b7f3726a65a0983287649db1d4a22">00295</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a0bf0b4a23fb09b66a0b871e22f7be52e" title="Compute complex argument hyperbolic cosec.">cosech</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00295"></a><a class="code" href="namespacequcs.html#ad15b7f3726a65a0983287649db1d4a22">00295</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a0bf0b4a23fb09b66a0b871e22f7be52e" title="Compute complex argument hyperbolic cosec.">cosech</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00296"></a>00296   <span class="keywordflow">return</span>  (1.0 / <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">std::sinh</a> (d));
 <a name="l00297"></a>00297 }
 <a name="l00298"></a>00298 
@@ -317,29 +317,29 @@
 <a name="l00331"></a>00331 <span class="comment">//</span>
 <a name="l00332"></a>00332 
 <a name="l00350"></a><a class="code" href="namespacequcs.html#a685d85e7c0b0f5cae88325686ce441b8">00350</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#ab34b406008970c5c05ad97956e4647aa" title="Compute limited complex exponential.">limexp</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>) {
-<a name="l00351"></a>00351   <span class="keywordflow">return</span> r &lt; M_LIMEXP ? <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (r) : <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (M_LIMEXP) * (1.0 + (r - M_LIMEXP));
+<a name="l00351"></a>00351   <span class="keywordflow">return</span> r &lt; <a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a> ? <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (r) : <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (<a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a>) * (1.0 + (r - <a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a>));
 <a name="l00352"></a>00352 }
 <a name="l00353"></a>00353 
-<a name="l00368"></a><a class="code" href="namespacequcs.html#a79e837e6acc911e8815c562282fb73e8">00368</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#aced50712dc94c59b4401fd0cfe98bd2a" title="complex signum function">signum</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00368"></a><a class="code" href="namespacequcs.html#a79e837e6acc911e8815c562282fb73e8">00368</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#aced50712dc94c59b4401fd0cfe98bd2a" title="complex signum function">signum</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00369"></a>00369   <span class="keywordflow">if</span> (d == 0) <span class="keywordflow">return</span> 0;
 <a name="l00370"></a>00370   <span class="keywordflow">return</span> d &lt; 0 ? -1 : 1;
 <a name="l00371"></a>00371 }
 <a name="l00372"></a>00372 
-<a name="l00386"></a><a class="code" href="namespacequcs.html#a0e3ea406fee3426679bfef20bcb0ff8b">00386</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00386"></a><a class="code" href="namespacequcs.html#a0e3ea406fee3426679bfef20bcb0ff8b">00386</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00387"></a>00387   <span class="keywordflow">return</span> d &lt; 0 ? -1 : 1;
 <a name="l00388"></a>00388 }
 <a name="l00389"></a>00389 
-<a name="l00397"></a><a class="code" href="namespacequcs.html#a43a9152d956d3d24f172cc749ce7c312">00397</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#ac2d213a801e9476de8bf27bf35ce1834" title="Cardinal sine.">sinc</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00397"></a><a class="code" href="namespacequcs.html#a43a9152d956d3d24f172cc749ce7c312">00397</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#ac2d213a801e9476de8bf27bf35ce1834" title="Cardinal sine.">sinc</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00398"></a>00398   <span class="keywordflow">if</span> (d == 0) <span class="keywordflow">return</span> 1;
-<a name="l00399"></a>00399   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#a17a5ac6a13d0e5d9c1180f3fc8b1a243" title="Compute complex sine.">sin</a> (d) / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00399"></a>00399   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#a17a5ac6a13d0e5d9c1180f3fc8b1a243" title="Compute complex sine.">sin</a> (d) / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00400"></a>00400 }
 <a name="l00401"></a>00401 
-<a name="l00416"></a><a class="code" href="namespacequcs.html#a39a403df97bce7c3f1666929259015f8">00416</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#abe434ab3cbd8bc5b924d2d5ebf92082a" title="Complex fix.">fix</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00416"></a><a class="code" href="namespacequcs.html#a39a403df97bce7c3f1666929259015f8">00416</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#abe434ab3cbd8bc5b924d2d5ebf92082a" title="Complex fix.">fix</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00417"></a>00417   <span class="keywordflow">return</span> (d &gt; 0) ? <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">floor</a> (d) : <a class="code" href="namespacequcs.html#acf734344d0c30acd8affa8bb9742edf7" title="Complex ceil Ceil is the smallest integral value not less than argument Apply ceil to real and imagin...">ceil</a> (d);
 <a name="l00418"></a>00418 }
 <a name="l00419"></a>00419 
-<a name="l00429"></a><a class="code" href="namespacequcs.html#a46de01ad8bfbd7a9effbbf70d3bbdc70">00429</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
-<a name="l00430"></a>00430   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00429"></a><a class="code" href="namespacequcs.html#a46de01ad8bfbd7a9effbbf70d3bbdc70">00429</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
+<a name="l00430"></a>00430   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00431"></a>00431   <span class="keywordflow">if</span> (x &lt; 0.0)
 <a name="l00432"></a>00432     x = 0.0;
 <a name="l00433"></a>00433   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &gt; 0.0)
@@ -391,12 +391,22 @@
 <a name="l00508"></a>00508   <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l00509"></a>00509 }
 <a name="l00510"></a>00510 
-<a name="l00511"></a>00511 } <span class="comment">// namespace qucs</span>
+<a name="l00516"></a><a class="code" href="namespacequcs.html#aea434b97b3604812e900a35f062ef21a">00516</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#ab7f3543c886838b0fc2a3b43eaad66de" title="rad2deg Convert radian to degree">rad2deg</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
+<a name="l00517"></a>00517   <span class="keywordflow">return</span> (180.0 * (x) / <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a>); 
+<a name="l00518"></a>00518 }
+<a name="l00519"></a>00519 
+<a name="l00525"></a><a class="code" href="namespacequcs.html#a71ccb564e47a1715b3fa202e4fd1d129">00525</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
+<a name="l00526"></a>00526   <span class="keywordflow">return</span> (<a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> * (x) / 180.0); 
+<a name="l00527"></a>00527 }
+<a name="l00528"></a>00528 
+<a name="l00529"></a>00529 
+<a name="l00530"></a>00530 
+<a name="l00531"></a>00531 } <span class="comment">// namespace qucs</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

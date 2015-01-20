@@ -219,7 +219,7 @@
 <a name="l00159"></a><a class="code" href="check__touchstone_8cpp.html#a04185b31981dbe9ac40e8642cc3df413">00159</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__touchstone_8cpp.html#a04185b31981dbe9ac40e8642cc3df413">touchstone_options_eval</a> (<span class="keywordtype">void</span>) {
 <a name="l00160"></a>00160   <span class="comment">/* go through all identifiers */</span>
 <a name="l00161"></a>00161   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;length (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
-<a name="l00162"></a>00162     <span class="keywordtype">char</span> * str = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00162"></a>00162     <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00163"></a>00163     <span class="comment">/* frequency unit */</span>
 <a name="l00164"></a>00164     <span class="keywordflow">if</span> (!strcmp (str, <span class="stringliteral">&quot;hz&quot;</span>)) {
 <a name="l00165"></a>00165       <a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a8a5354a8c21b1d6b70ccd288bcc8946a">factor</a> = 1.0;
@@ -341,11 +341,11 @@
 <a name="l00281"></a>00281           }
 <a name="l00282"></a>00282           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a416b5fc550f321d2c939aec2eb60be33">format</a>, <span class="stringliteral">&quot;MA&quot;</span>)) {
 <a name="l00283"></a>00283             val = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 0)),
-<a name="l00284"></a>00284                          <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 1))));
+<a name="l00284"></a>00284                          <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 1))));
 <a name="l00285"></a>00285           }
 <a name="l00286"></a>00286           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a416b5fc550f321d2c939aec2eb60be33">format</a>, <span class="stringliteral">&quot;dB&quot;</span>)) {
 <a name="l00287"></a>00287             val = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 0)) / 20.0),
-<a name="l00288"></a>00288                          <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 1))));
+<a name="l00288"></a>00288                          <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (pos + 1))));
 <a name="l00289"></a>00289           }
 <a name="l00290"></a>00290           v-&gt;add (val);
 <a name="l00291"></a>00291           v = (qucs::vector *) v-&gt;getNext ();
@@ -362,7 +362,7 @@
 <a name="l00302"></a>00302       v-&gt;add (val);
 <a name="l00303"></a>00303       <span class="comment">/* fill optimal noise reflexion coefficient vector */</span>
 <a name="l00304"></a>00304       v = <a class="code" href="check__touchstone_8cpp.html#a9447986b554680cd24c917e2d31699b4">touchstone_result</a>-&gt;findVariable (<span class="stringliteral">&quot;Sopt&quot;</span>);
-<a name="l00305"></a>00305       val = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (2)), <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (3))));
+<a name="l00305"></a>00305       val = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (2)), <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (<a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (root-&gt;get (3))));
 <a name="l00306"></a>00306       <span class="keywordflow">if</span> (<a class="code" href="check__touchstone_8cpp.html#a84edf2ba3270d6dc58464687a4d69c66">ZREF</a> != <a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a885a8b9771b5c4a7ba3d13a57466bff9">resistance</a>) {
 <a name="l00307"></a>00307         <span class="comment">// re-normalize reflexion coefficient if necessary</span>
 <a name="l00308"></a>00308         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = (<a class="code" href="check__touchstone_8cpp.html#a84edf2ba3270d6dc58464687a4d69c66">ZREF</a> - <a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a885a8b9771b5c4a7ba3d13a57466bff9">resistance</a>) /
@@ -494,7 +494,7 @@
 <a name="l00434"></a>00434   }
 <a name="l00435"></a>00435   <span class="comment">/* check duplicate options */</span>
 <a name="l00436"></a>00436   <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;length (); i++) {
-<a name="l00437"></a>00437     <span class="keywordtype">char</span> * str = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (i);
+<a name="l00437"></a>00437     <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (i);
 <a name="l00438"></a>00438     <span class="keywordflow">if</span> ((n = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;contains (str)) != 1) {
 <a name="l00439"></a>00439       <a class="code" href="logging_8c.html#abe06a8732a47a291606edcfac5e5146e">logprint</a> (<a class="code" href="logging_8h.html#aced66975c154ea0e2a8ec3bc818b4e08">LOG_ERROR</a>, <span class="stringliteral">&quot;checker error, option `%s&#39; occurred %dx\n&quot;</span>,
 <a name="l00440"></a>00440                 str, n);
@@ -503,7 +503,7 @@
 <a name="l00443"></a>00443   }
 <a name="l00444"></a>00444   <span class="comment">/* check valid options */</span>
 <a name="l00445"></a>00445   <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;length (); i++) {
-<a name="l00446"></a>00446     <span class="keywordtype">char</span> * str = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (i);
+<a name="l00446"></a>00446     <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = <a class="code" href="check__touchstone_8cpp.html#a19754eb86a703ef429b020dddd91c948">touchstone_idents</a>-&gt;get (i);
 <a name="l00447"></a>00447     <span class="keywordtype">int</span> valid = 0;
 <a name="l00448"></a>00448     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = 0; <a class="code" href="check__touchstone_8cpp.html#a7703b3bff27f5b2f34c44b2f4a023cea">touchstone_valid_options</a>[<a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>] != NULL; <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>++) {
 <a name="l00449"></a>00449       <span class="keywordflow">if</span> (!strcmp (<a class="code" href="check__touchstone_8cpp.html#a7703b3bff27f5b2f34c44b2f4a023cea">touchstone_valid_options</a>[<a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>], str))
@@ -592,7 +592,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -13,7 +13,7 @@
 <area shape="rect" id="node29" href="$structpair__t.html" title="{pair_t\n|+ key\l+ value\l+ next\l|}" alt="" coords="528,1080,592,1200"/>
 <area shape="rect" id="node33" href="$structdefine__t.html" title="{define_t\n|+ type\l+ nodes\l+ action\l+ substrate\l+ nonlinear\l+ required\l+ optional\l|}" alt="" coords="267,1045,355,1235"/>
 <area shape="rect" id="node35" href="$structproperty__t.html" title="{property_t\n|+ key\l+ type\l+ d\l+ s\l+ defaultval\l+ il\l+ l\l+ h\l+ ih\l+ str\l+ range\l|}" alt="" coords="265,581,356,840"/>
-<area shape="rect" id="node41" href="$classqucs_1_1eqn_1_1constant.html" title="{qucs::eqn::constant\n|+ dataref\l+ type\l+ d\l+ c\l+ v\l+ m\l+ mv\l+ chr\l+ s\l+ r\l+ b\l+ @5\l|+ constant()\l+ constant()\l+ constant()\l+ ~constant()\l+ print()\l+ evalType()\l+ toString()\l+ evaluate()\l+ differentiate()\l+ recreate()\l}" alt="" coords="5,2000,141,2432"/>
+<area shape="rect" id="node41" href="$classqucs_1_1eqn_1_1constant.html" title="{qucs::eqn::constant\n|+ dataref\l+ type\l+ d\l+ c\l+ v\l+ m\l+ mv\l+ chr\l+ s\l+ r\l+ b\l+ @6\l|+ constant()\l+ constant()\l+ constant()\l+ ~constant()\l+ print()\l+ evalType()\l+ toString()\l+ evaluate()\l+ differentiate()\l+ recreate()\l}" alt="" coords="5,2000,141,2432"/>
 <area shape="rect" id="node47" href="$classqucs_1_1strlist.html" title="{qucs::strlist\n|&#45; root\l&#45; txt\l|+ strlist()\l+ strlist()\l+ ~strlist()\l+ add()\l+ add()\l+ append()\l+ append()\l+ length()\l+ contains()\l+ get()\land 4 more...+ join()\l}" alt="" coords="12,177,151,453"/>
 <area shape="rect" id="node49" href="$structqucs_1_1strlist__t.html" title="{qucs::strlist_t\n|+ str\l+ next\l|}" alt="" coords="31,6,132,109"/>
 </map>

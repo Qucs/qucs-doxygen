@@ -242,10 +242,10 @@
 <a name="l00182"></a>00182 
 <a name="l00183"></a>00183 <span class="comment">// Applies external data vector to the vector.</span>
 <a name="l00184"></a>00184 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00185"></a><a class="code" href="classqucs_1_1tvector.html#a16de0821e02e9567a2c90fde12ad20af">00185</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;::setData</a> (nr_type_t * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <span class="keywordtype">int</span> len) {
+<a name="l00185"></a><a class="code" href="classqucs_1_1tvector.html#a16de0821e02e9567a2c90fde12ad20af">00185</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;::setData</a> (nr_type_t * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <span class="keywordtype">int</span> len) {
 <a name="l00186"></a>00186   <span class="keywordflow">if</span> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> &amp;&amp; !external) <span class="keyword">delete</span>[] <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>;
 <a name="l00187"></a>00187   external = 1;
-<a name="l00188"></a>00188   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00188"></a>00188   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00189"></a>00189   capacity = <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> = len;
 <a name="l00190"></a>00190 }
 <a name="l00191"></a>00191 
@@ -493,7 +493,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

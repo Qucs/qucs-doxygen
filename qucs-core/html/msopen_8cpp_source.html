@@ -130,7 +130,7 @@
 <a name="l00070"></a>00070     dl = 0.102 * (W + 0.106) / (W + 0.264) *
 <a name="l00071"></a>00071       (1.166 + (er + 1) / er * (0.9 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W + 2.475)));
 <a name="l00072"></a>00072   }
-<a name="l00073"></a>00073   <span class="keywordflow">return</span> dl * h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEffFreq) / <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> / ZlEffFreq;
+<a name="l00073"></a>00073   <span class="keywordflow">return</span> dl * h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEffFreq) / C0 / ZlEffFreq;
 <a name="l00074"></a>00074 }
 <a name="l00075"></a>00075 
 <a name="l00076"></a><a class="code" href="structmsopen.html#acac7f5fecfb72f681afcc30c412999dc">00076</a> <span class="keywordtype">void</span> <a class="code" href="structmsopen.html#acac7f5fecfb72f681afcc30c412999dc">msopen::calcSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
@@ -153,7 +153,7 @@
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094   <span class="comment">/* local variables */</span>
 <a name="l00095"></a>00095   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
-<a name="l00096"></a>00096   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> o = 2 * M_PI * frequency;
+<a name="l00096"></a>00096   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> o = 2 * pi * frequency;
 <a name="l00097"></a>00097 
 <a name="l00098"></a>00098   <span class="comment">/* Alexopoulos and Wu */</span>
 <a name="l00099"></a>00099   <span class="keywordflow">if</span> (!strcmp (Model, <span class="stringliteral">&quot;Alexopoulos&quot;</span>)) {
@@ -210,7 +210,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

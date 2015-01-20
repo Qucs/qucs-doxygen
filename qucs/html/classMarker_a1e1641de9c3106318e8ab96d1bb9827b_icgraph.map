@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="427,341,536,371"/>
-<area shape="rect" id="node19" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="205,341,317,371"/>
-<area shape="rect" id="node22" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="196,487,327,516"/>
-<area shape="rect" id="node5" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="691,132,843,161"/>
-<area shape="rect" id="node7" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="971,132,1117,161"/>
-<area shape="rect" id="node9" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1189,67,1424,96"/>
-<area shape="rect" id="node11" href="$classDiagramDialog.html#a7e5c2fd49c83d46e16f1f6169577b4ba" title="DiagramDialog::DiagramDialog" alt="" coords="2029,5,2232,35"/>
-<area shape="rect" id="node13" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1517,67,1688,96"/>
-<area shape="rect" id="node16" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1804,67,1959,96"/>
-<area shape="rect" id="node24" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="391,487,572,516"/>
-<area shape="rect" id="node108" href="$classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="404,801,559,831"/>
-<area shape="rect" id="node118" href="$classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="405,609,557,639"/>
-<area shape="rect" id="node128" href="$classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="377,408,585,437"/>
-<area shape="rect" id="node26" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="961,333,1127,363"/>
-<area shape="rect" id="node29" href="$classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="679,603,855,632"/>
-<area shape="rect" id="node44" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="636,487,897,516"/>
-<area shape="rect" id="node31" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="953,717,1135,747"/>
-<area shape="rect" id="node33" href="$classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="1209,744,1404,773"/>
-<area shape="rect" id="node35" href="$classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1520,744,1685,773"/>
-<area shape="rect" id="node42" href="$classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1252,691,1361,720"/>
-<area shape="rect" id="node37" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2553,707,2697,736"/>
-<area shape="rect" id="node39" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="3213,265,3352,295"/>
-<area shape="rect" id="node46" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="947,460,1141,489"/>
-<area shape="rect" id="node48" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1203,512,1411,541"/>
-<area shape="rect" id="node50" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1495,347,1711,376"/>
-<area shape="rect" id="node53" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1496,284,1709,313"/>
-<area shape="rect" id="node59" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1473,576,1732,605"/>
-<area shape="rect" id="node62" href="$classQucsApp.html#a4f53f2154de0a0a3a6f5c801a73727ce" title="QucsApp::slotOpenContent" alt="" coords="2535,361,2716,391"/>
-<area shape="rect" id="node72" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1499,404,1707,433"/>
-<area shape="rect" id="node98" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1532,639,1673,668"/>
-<area shape="rect" id="node55" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1783,120,1980,149"/>
-<area shape="rect" id="node64" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2789,213,2920,243"/>
-<area shape="rect" id="node67" href="$classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2765,355,2944,384"/>
-<area shape="rect" id="node69" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="2993,343,3164,372"/>
-<area shape="rect" id="node75" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1792,343,1971,372"/>
-<area shape="rect" id="node78" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="2061,343,2200,372"/>
-<area shape="rect" id="node81" href="$classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2304,629,2461,659"/>
-<area shape="rect" id="node84" href="$classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2292,421,2473,451"/>
-<area shape="rect" id="node87" href="$classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2291,576,2475,605"/>
-<area shape="rect" id="node91" href="$classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2320,368,2445,397"/>
-<area shape="rect" id="node94" href="$classQucsApp.html#ad56a3fb251d50bb97d73fe3e6f176777" title="QucsApp::slotOpenRecent" alt="" coords="2293,160,2472,189"/>
-<area shape="rect" id="node96" href="$classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="2281,213,2484,243"/>
-<area shape="rect" id="node110" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="2039,897,2223,927"/>
-<area shape="rect" id="node112" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="2300,891,2465,920"/>
-<area shape="rect" id="node115" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="2296,944,2469,973"/>
-<area shape="rect" id="node120" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="2040,837,2221,867"/>
-<area shape="rect" id="node122" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="2303,784,2463,813"/>
-<area shape="rect" id="node125" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="2293,837,2472,867"/>
-<area shape="rect" id="node130" href="$classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="675,383,859,412"/>
+<area shape="rect" id="node3" href="$classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="427,251,536,281"/>
+<area shape="rect" id="node19" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="205,303,317,333"/>
+<area shape="rect" id="node22" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="196,395,327,425"/>
+<area shape="rect" id="node5" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="691,95,843,125"/>
+<area shape="rect" id="node7" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="971,95,1117,125"/>
+<area shape="rect" id="node9" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1189,74,1424,103"/>
+<area shape="rect" id="node11" href="$classDiagramDialog.html#a7e5c2fd49c83d46e16f1f6169577b4ba" title="DiagramDialog::DiagramDialog" alt="" coords="2029,22,2232,51"/>
+<area shape="rect" id="node13" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1517,74,1688,103"/>
+<area shape="rect" id="node16" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1804,22,1959,51"/>
+<area shape="rect" id="node24" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="391,395,572,425"/>
+<area shape="rect" id="node109" href="$classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="404,562,559,591"/>
+<area shape="rect" id="node119" href="$classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="405,843,557,873"/>
+<area shape="rect" id="node129" href="$classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="377,317,585,346"/>
+<area shape="rect" id="node26" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="961,230,1127,259"/>
+<area shape="rect" id="node29" href="$classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="679,541,855,570"/>
+<area shape="rect" id="node44" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="636,395,897,425"/>
+<area shape="rect" id="node31" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="953,717,1135,746"/>
+<area shape="rect" id="node33" href="$classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="1209,743,1404,773"/>
+<area shape="rect" id="node35" href="$classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1520,743,1685,773"/>
+<area shape="rect" id="node42" href="$classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1252,797,1361,826"/>
+<area shape="rect" id="node37" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2553,805,2697,834"/>
+<area shape="rect" id="node39" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="3213,357,3352,386"/>
+<area shape="rect" id="node46" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="947,395,1141,425"/>
+<area shape="rect" id="node48" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1203,281,1411,310"/>
+<area shape="rect" id="node50" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1495,395,1711,425"/>
+<area shape="rect" id="node53" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1496,230,1709,259"/>
+<area shape="rect" id="node59" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1473,470,1732,499"/>
+<area shape="rect" id="node62" href="$classQucsApp.html#a4f53f2154de0a0a3a6f5c801a73727ce" title="QucsApp::slotOpenContent" alt="" coords="2535,409,2716,438"/>
+<area shape="rect" id="node72" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1499,177,1707,206"/>
+<area shape="rect" id="node99" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1532,583,1673,613"/>
+<area shape="rect" id="node55" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1783,230,1980,259"/>
+<area shape="rect" id="node64" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2789,357,2920,386"/>
+<area shape="rect" id="node67" href="$classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2765,410,2944,439"/>
+<area shape="rect" id="node69" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="2993,409,3164,438"/>
+<area shape="rect" id="node75" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1792,177,1971,206"/>
+<area shape="rect" id="node78" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="2061,539,2200,569"/>
+<area shape="rect" id="node81" href="$classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2304,699,2461,729"/>
+<area shape="rect" id="node84" href="$classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2292,593,2473,622"/>
+<area shape="rect" id="node87" href="$classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2291,753,2475,782"/>
+<area shape="rect" id="node91" href="$classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2320,486,2445,515"/>
+<area shape="rect" id="node94" href="$classQucsApp.html#abb7bac193222f4b6273bd822376e95da" title="QucsApp::slotOpenRecent" alt="" coords="2293,539,2472,569"/>
+<area shape="rect" id="node97" href="$classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="2281,646,2484,675"/>
+<area shape="rect" id="node111" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="2039,907,2223,937"/>
+<area shape="rect" id="node113" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="2300,907,2465,937"/>
+<area shape="rect" id="node116" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="2296,961,2469,990"/>
+<area shape="rect" id="node121" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="2040,1014,2221,1043"/>
+<area shape="rect" id="node123" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="2303,1067,2463,1097"/>
+<area shape="rect" id="node126" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="2293,1014,2472,1043"/>
+<area shape="rect" id="node131" href="$classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="675,291,859,321"/>
 </map>

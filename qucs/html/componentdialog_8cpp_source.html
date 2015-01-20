@@ -1033,7 +1033,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00968"></a>00968        <span class="keywordflow">else</span> {
 <a name="l00969"></a>00969           <span class="comment">// if properties where added in the dialog</span>
 <a name="l00970"></a>00970           <span class="comment">// -&gt; create new on the Comp</span>
-<a name="l00971"></a>00971          <span class="keywordflow">if</span> (<a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.count() &lt; <a class="code" href="classComponentDialog.html#a942af216d355c6b247d95e160ff328c1">prop</a>-&gt;rowCount() +1) {
+<a name="l00971"></a>00971          <span class="keywordflow">if</span> ( (<span class="keywordtype">int</span>) <a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.count() &lt; <a class="code" href="classComponentDialog.html#a942af216d355c6b247d95e160ff328c1">prop</a>-&gt;rowCount() +1) {
 <a name="l00972"></a>00972              qDebug() &lt;&lt; <span class="stringliteral">&quot;adding to Comp &quot;</span>;
 <a name="l00973"></a>00973              <a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(name, value, display, desc));
 <a name="l00974"></a>00974              <a class="code" href="classComponentDialog.html#a6c828d5e84d8e3bcd3cfe42827af290c">changed</a> = <span class="keyword">true</span>;
@@ -1068,7 +1068,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01003"></a>01003 
 <a name="l01004"></a>01004     <a class="code" href="classComponentDialog.html#a129f1a386c5d90cacc2a4d79006c3cef">Doc</a>-&gt;<a class="code" href="classSchematic.html#a377a769183e90c6b813cfe2d27921a48">recreateComponent</a>(<a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>);
 <a name="l01005"></a>01005     <a class="code" href="classComponentDialog.html#a129f1a386c5d90cacc2a4d79006c3cef">Doc</a>-&gt;viewport()-&gt;repaint();
-<a name="l01006"></a>01006     <span class="keywordflow">if</span> (<a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.count() != <a class="code" href="classComponentDialog.html#a942af216d355c6b247d95e160ff328c1">prop</a>-&gt;rowCount()) { <span class="comment">// If props count was changed after recreation</span>
+<a name="l01006"></a>01006     <span class="keywordflow">if</span> ( (<span class="keywordtype">int</span>) <a class="code" href="classComponentDialog.html#a60577d491bf020cd76297e84013205de">Comp</a>-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.count() != <a class="code" href="classComponentDialog.html#a942af216d355c6b247d95e160ff328c1">prop</a>-&gt;rowCount()) { <span class="comment">// If props count was changed after recreation</span>
 <a name="l01007"></a>01007         <a class="code" href="classComponentDialog.html#ac42ec294e5b01f63b1cc76ba7bb8436e">updateCompPropsList</a>(); <span class="comment">// of component we need to update properties</span>
 <a name="l01008"></a>01008     }
 <a name="l01009"></a>01009   }
@@ -1253,9 +1253,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01214"></a>01214   QString Unit, tmp;
 <a name="l01215"></a>01215   <span class="keywordtype">double</span> x, y, Factor;
 <a name="l01216"></a>01216   <span class="keywordflow">if</span>(<a class="code" href="classComponentDialog.html#a7ad8c39288412b6076c64077b098aa43">comboType</a>-&gt;currentIndex() == 1) {   <span class="comment">// logarithmic ?</span>
-<a name="l01217"></a>01217     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
+<a name="l01217"></a>01217     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
 <a name="l01218"></a>01218     x *= Factor;
-<a name="l01219"></a>01219     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
+<a name="l01219"></a>01219     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
 <a name="l01220"></a>01220     y *= Factor;
 <a name="l01221"></a>01221     <span class="keywordflow">if</span>(y == 0.0)  y = x / 10.0;
 <a name="l01222"></a>01222     <span class="keywordflow">if</span>(x == 0.0)  x = y * 10.0;
@@ -1264,15 +1264,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01225"></a>01225     Unit = QString::number(x);
 <a name="l01226"></a>01226   }
 <a name="l01227"></a>01227   <span class="keywordflow">else</span> {
-<a name="l01228"></a>01228     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
+<a name="l01228"></a>01228     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
 <a name="l01229"></a>01229     x *= Factor;
-<a name="l01230"></a>01230     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
+<a name="l01230"></a>01230     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
 <a name="l01231"></a>01231     y *= Factor;
 <a name="l01232"></a>01232     x = (x - y) / (<a class="code" href="classComponentDialog.html#a888bb83ed34441d485bb5b2002461a4d">editNumber</a>-&gt;text().toDouble() - 1.0);
 <a name="l01233"></a>01233 
-<a name="l01234"></a>01234     QString step = <a class="code" href="misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f">num2str</a>(x);
+<a name="l01234"></a>01234     QString step = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(x);
 <a name="l01235"></a>01235 
-<a name="l01236"></a>01236     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(step, x, Unit, Factor);
+<a name="l01236"></a>01236     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(step, x, Unit, Factor);
 <a name="l01237"></a>01237     <span class="keywordflow">if</span>(Factor == 1.0)
 <a name="l01238"></a>01238         Unit = <span class="stringliteral">&quot;&quot;</span>;
 <a name="l01239"></a>01239 
@@ -1290,25 +1290,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01251"></a>01251   QString Unit;
 <a name="l01252"></a>01252   <span class="keywordtype">double</span> x, y, Factor;
 <a name="l01253"></a>01253   <span class="keywordflow">if</span>(<a class="code" href="classComponentDialog.html#a7ad8c39288412b6076c64077b098aa43">comboType</a>-&gt;currentIndex() == 1) {   <span class="comment">// logarithmic ?</span>
-<a name="l01254"></a>01254     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
+<a name="l01254"></a>01254     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
 <a name="l01255"></a>01255     x *= Factor;
-<a name="l01256"></a>01256     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
+<a name="l01256"></a>01256     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
 <a name="l01257"></a>01257     y *= Factor;
 <a name="l01258"></a>01258 
 <a name="l01259"></a>01259     x /= y;
-<a name="l01260"></a>01260     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(Step, y, Unit, Factor);
+<a name="l01260"></a>01260     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(Step, y, Unit, Factor);
 <a name="l01261"></a>01261     y *= Factor;
 <a name="l01262"></a>01262 
 <a name="l01263"></a>01263     x = log10(fabs(x)) * y;
 <a name="l01264"></a>01264   }
 <a name="l01265"></a>01265   <span class="keywordflow">else</span> {
-<a name="l01266"></a>01266     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
+<a name="l01266"></a>01266     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#a3eb3e787a1f937f89038c613d0a86f37">editStop</a>-&gt;text(), x, Unit, Factor);
 <a name="l01267"></a>01267     x *= Factor;
-<a name="l01268"></a>01268     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
+<a name="l01268"></a>01268     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponentDialog.html#ae40e213d9fc661ba788e36a4e9f028cb">editStart</a>-&gt;text(), y, Unit, Factor);
 <a name="l01269"></a>01269     y *= Factor;
 <a name="l01270"></a>01270 
 <a name="l01271"></a>01271     x -= y;
-<a name="l01272"></a>01272     <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(Step, y, Unit, Factor);
+<a name="l01272"></a>01272     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(Step, y, Unit, Factor);
 <a name="l01273"></a>01273     y *= Factor;
 <a name="l01274"></a>01274 
 <a name="l01275"></a>01275     x /= y;
@@ -1389,7 +1389,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:53 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:22 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -240,8 +240,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00157"></a>00157   <span class="keywordflow">foreach</span>(<a class="code" href="structPort.html">Port</a> *pp, <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>)
 <a name="l00158"></a>00158     s += <span class="stringliteral">&quot; &quot;</span>+pp-&gt;<a class="code" href="structPort.html#ac7c48693de90c130eec700729e2496a1">Connection</a>-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>;   <span class="comment">// output all node names</span>
 <a name="l00159"></a>00159 
-<a name="l00160"></a>00160   QString f = <a class="code" href="misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf">properFileName</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.first()-&gt;Value);
-<a name="l00161"></a>00161   s += <span class="stringliteral">&quot; Type=\&quot;&quot;</span>+<a class="code" href="misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc">properName</a>(f)+<span class="stringliteral">&quot;\&quot;\n&quot;</span>;
+<a name="l00160"></a>00160   QString f = <a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">misc::properFileName</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.first()-&gt;Value);
+<a name="l00161"></a>00161   s += <span class="stringliteral">&quot; Type=\&quot;&quot;</span>+<a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">misc::properName</a>(f)+<span class="stringliteral">&quot;\&quot;\n&quot;</span>;
 <a name="l00162"></a>00162   <span class="keywordflow">return</span> s;
 <a name="l00163"></a>00163 }
 <a name="l00164"></a>00164 
@@ -253,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00170"></a>00170 
 <a name="l00171"></a>00171   <span class="keywordflow">if</span> (FileName.isEmpty())
 <a name="l00172"></a>00172   {
-<a name="l00173"></a>00173       <span class="keywordflow">return</span> <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(FileName);
+<a name="l00173"></a>00173       <span class="keywordflow">return</span> <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(FileName);
 <a name="l00174"></a>00174   }
 <a name="l00175"></a>00175 
 <a name="l00176"></a>00176   QFileInfo FileInfo(FileName);
@@ -307,7 +307,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00224"></a>00224     {
 <a name="l00225"></a>00225         <span class="comment">// the schematic was not found in the hash table, return</span>
 <a name="l00226"></a>00226         <span class="comment">// what would always have been returned in this case</span>
-<a name="l00227"></a>00227         <span class="keywordflow">return</span> <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(FileName);
+<a name="l00227"></a>00227         <span class="keywordflow">return</span> <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(FileName);
 <a name="l00228"></a>00228     }
 <a name="l00229"></a>00229     <span class="keywordflow">else</span>
 <a name="l00230"></a>00230     {
@@ -323,7 +323,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00240"></a>00240         {
 <a name="l00241"></a>00241             <span class="comment">// the schematic file does not actually exist, return</span>
 <a name="l00242"></a>00242             <span class="comment">// what would always have been returned in this case</span>
-<a name="l00243"></a>00243             <span class="keywordflow">return</span> <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(FileName);
+<a name="l00243"></a>00243             <span class="keywordflow">return</span> <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(FileName);
 <a name="l00244"></a>00244         }
 <a name="l00245"></a>00245     }
 <a name="l00246"></a>00246 
@@ -502,8 +502,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00419"></a>00419 
 <a name="l00420"></a>00420   <span class="comment">// begin netlist text creation</span>
 <a name="l00421"></a>00421   <span class="keywordflow">if</span>(<a class="code" href="classSpiceFile.html#a58332c8cb6eb0679b11b63789e80ab66">makeSubcircuit</a>) {
-<a name="l00422"></a>00422     QString f = <a class="code" href="misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf">properFileName</a>(*FileName);
-<a name="l00423"></a>00423     <a class="code" href="classSpiceFile.html#a4989e67975cafe3cf09cbf46c490fc68">NetText</a> += <span class="stringliteral">&quot;\n.Def:&quot;</span> + <a class="code" href="misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc">properName</a>(f) + <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00422"></a>00422     QString f = <a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">misc::properFileName</a>(*FileName);
+<a name="l00423"></a>00423     <a class="code" href="classSpiceFile.html#a4989e67975cafe3cf09cbf46c490fc68">NetText</a> += <span class="stringliteral">&quot;\n.Def:&quot;</span> + <a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">misc::properName</a>(f) + <span class="stringliteral">&quot; &quot;</span>;
 <a name="l00424"></a>00424     QString PortNames = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value;
 <a name="l00425"></a>00425     PortNames.replace(<span class="charliteral">&#39;,&#39;</span>, <span class="charliteral">&#39; &#39;</span>);
 <a name="l00426"></a>00426     <a class="code" href="classSpiceFile.html#a4989e67975cafe3cf09cbf46c490fc68">NetText</a> += PortNames;
@@ -644,7 +644,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

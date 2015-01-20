@@ -97,7 +97,7 @@
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038 <span class="comment">/* Calculate the hash code for a given string. This is the standard</span>
 <a name="l00039"></a>00039 <span class="comment">   callback for any newly created hash table.  */</span>
-<a name="l00040"></a><a class="code" href="hash_8cpp.html#abd15242e734d8562b2ca976e1729c495">00040</a> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="hash_8cpp.html#abd15242e734d8562b2ca976e1729c495">hash_code</a> (<span class="keywordtype">char</span> * key) {
+<a name="l00040"></a><a class="code" href="hash_8cpp.html#abd15242e734d8562b2ca976e1729c495">00040</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="hash_8cpp.html#abd15242e734d8562b2ca976e1729c495">hash_code</a> (<span class="keywordtype">char</span> * key) {
 <a name="l00041"></a>00041   <span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = 0;
 <a name="l00042"></a>00042   <span class="keywordtype">char</span> * p = key;
 <a name="l00043"></a>00043   <span class="keywordflow">while</span> (*p) { code = (code &lt;&lt; 1) ^ *p; p++; }
@@ -107,7 +107,7 @@
 <a name="l00047"></a>00047 <span class="comment">/* This is the default callback for any newly created hash for</span>
 <a name="l00048"></a>00048 <span class="comment">   determining two keys being equal.  Return zero if both strings are</span>
 <a name="l00049"></a>00049 <span class="comment">   equal, otherwise non-zero.  */</span>
-<a name="l00050"></a><a class="code" href="hash_8cpp.html#a0b3721d5d6d3cbc6416eb339e3af8f7d">00050</a> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="hash_8cpp.html#a0b3721d5d6d3cbc6416eb339e3af8f7d">hash_key_equals</a> (<span class="keywordtype">char</span> * key1, <span class="keywordtype">char</span> * key2) {
+<a name="l00050"></a><a class="code" href="hash_8cpp.html#a0b3721d5d6d3cbc6416eb339e3af8f7d">00050</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="hash_8cpp.html#a0b3721d5d6d3cbc6416eb339e3af8f7d">hash_key_equals</a> (<span class="keywordtype">char</span> * key1, <span class="keywordtype">char</span> * key2) {
 <a name="l00051"></a>00051   <span class="keywordtype">char</span> * p1, * p2;
 <a name="l00052"></a>00052   <span class="keywordflow">if</span> (key1 == key2) <span class="keywordflow">return</span> 0;
 <a name="l00053"></a>00053   p1 = key1;
@@ -122,7 +122,7 @@
 <a name="l00062"></a>00062 
 <a name="l00063"></a>00063 <span class="comment">/* This is the default routine for determining the actual hash table</span>
 <a name="l00064"></a>00064 <span class="comment">   key length of the given key.  */</span>
-<a name="l00065"></a><a class="code" href="hash_8cpp.html#adc09b9e8c53dd714758febb5b34b09c9">00065</a> <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="hash_8cpp.html#adc09b9e8c53dd714758febb5b34b09c9">hash_key_length</a> (<span class="keywordtype">char</span> * key) {
+<a name="l00065"></a><a class="code" href="hash_8cpp.html#adc09b9e8c53dd714758febb5b34b09c9">00065</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="hash_8cpp.html#adc09b9e8c53dd714758febb5b34b09c9">hash_key_length</a> (<span class="keywordtype">char</span> * key) {
 <a name="l00066"></a>00066   <span class="keywordtype">unsigned</span> len = 0;
 <a name="l00067"></a>00067   <span class="keywordflow">while</span> (*key++) len++;
 <a name="l00068"></a>00068   len++;
@@ -188,7 +188,7 @@
 <a name="l00128"></a>00128 <span class="comment">   shrink the hash codes if these would be placed somewhere else.  */</span>
 <a name="l00129"></a>00129 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
 <a name="l00130"></a><a class="code" href="classqucs_1_1hash.html#ab10741bfe9bf6be7b56b634b8f79115a">00130</a> <span class="keywordtype">void</span> qucs::hash&lt;type_t&gt;::rehash (<span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a>) {
-<a name="l00131"></a>00131   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, e;
+<a name="l00131"></a>00131   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00132"></a>00132   <a class="code" href="classqucs_1_1hashbucket.html">hashbucket&lt;type_t&gt;</a> * bucket, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00133"></a>00133 
 <a name="l00134"></a>00134   <span class="comment">// Expand!</span>
@@ -249,17 +249,17 @@
 <a name="l00189"></a>00189 <span class="comment">   will be doubled).  When the key already exists then the value just</span>
 <a name="l00190"></a>00190 <span class="comment">   gets replaced dropping and returning the old value.  */</span>
 <a name="l00191"></a>00191 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
-<a name="l00192"></a><a class="code" href="classqucs_1_1hash.html#a1752fa0fc080673a5ca59945c4d40017">00192</a> type_t * qucs::hash&lt;type_t&gt;::put (<span class="keywordtype">char</span> * key, type_t * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00192"></a><a class="code" href="classqucs_1_1hash.html#a1752fa0fc080673a5ca59945c4d40017">00192</a> type_t * qucs::hash&lt;type_t&gt;::put (<span class="keywordtype">char</span> * key, type_t * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00193"></a>00193   <span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = this-&gt;<a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> (key);
 <a name="l00194"></a>00194   <a class="code" href="classqucs_1_1hashbucket.html">hashbucket&lt;type_t&gt;</a> * bucket = table[<a class="code" href="hash_8h.html#a333df5e57da1adc1d2677aeaca04c333">HASH_LOCATION</a> (code)];
 <a name="l00195"></a>00195 
 <a name="l00196"></a>00196   <span class="comment">/* Check if the key is already stored. If so replace the value. */</span>
 <a name="l00197"></a>00197   <span class="keywordflow">if</span> (bucket) {
-<a name="l00198"></a>00198     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> e = 0; e &lt; bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#a4ede83c0a5bdbb57956d8df11fd77026">size</a>; e++) {
-<a name="l00199"></a>00199       <span class="keywordflow">if</span> (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;code == code) {
-<a name="l00200"></a>00200         <span class="keywordflow">if</span> (equals (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;key, key) == 0) {
-<a name="l00201"></a>00201           type_t * old = bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;value;
-<a name="l00202"></a>00202           bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;value = <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00198"></a>00198     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = 0; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> &lt; bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#a4ede83c0a5bdbb57956d8df11fd77026">size</a>; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>++) {
+<a name="l00199"></a>00199       <span class="keywordflow">if</span> (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;code == code) {
+<a name="l00200"></a>00200         <span class="keywordflow">if</span> (equals (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;key, key) == 0) {
+<a name="l00201"></a>00201           type_t * old = bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;value;
+<a name="l00202"></a>00202           bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;value = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00203"></a>00203           <span class="keywordflow">return</span> old;
 <a name="l00204"></a>00204         }
 <a name="l00205"></a>00205       }
@@ -274,7 +274,7 @@
 <a name="l00214"></a>00214   <a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> * entry = <span class="keyword">new</span> <a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> ();
 <a name="l00215"></a>00215   entry-&gt;<a class="code" href="classqucs_1_1hashentry.html#a06949725eea9a201fd86e52e25c77313">key</a> = (<span class="keywordtype">char</span> *) malloc (keylen (key));
 <a name="l00216"></a>00216   memcpy (entry-&gt;<a class="code" href="classqucs_1_1hashentry.html#a06949725eea9a201fd86e52e25c77313">key</a>, key, keylen (key));
-<a name="l00217"></a>00217   entry-&gt;<a class="code" href="classqucs_1_1hashentry.html#a4095b60a52cd2c29b37e13a5e54b1418">value</a> = <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00217"></a>00217   entry-&gt;<a class="code" href="classqucs_1_1hashentry.html#a4095b60a52cd2c29b37e13a5e54b1418">value</a> = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00218"></a>00218   entry-&gt;<a class="code" href="classqucs_1_1hashentry.html#a7e380ed0b80ce2c3ed0d154e1e753ba7">code</a> = <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a>;
 <a name="l00219"></a>00219 
 <a name="l00220"></a>00220   bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#a6823837963949f6fd643c887d4e45b0f">add</a> (entry);
@@ -295,7 +295,7 @@
 <a name="l00235"></a>00235 <span class="comment">   hash, otherwise the previous value.  */</span>
 <a name="l00236"></a>00236 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
 <a name="l00237"></a><a class="code" href="classqucs_1_1hash.html#a623efaa3a1dceecfc63ee02ece10471f">00237</a> type_t * qucs::hash&lt;type_t&gt;::del (<span class="keywordtype">char</span> * key) {
-<a name="l00238"></a>00238   type_t * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00238"></a>00238   type_t * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00239"></a>00239   <span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = this-&gt;<a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> (key);
 <a name="l00240"></a>00240   <a class="code" href="classqucs_1_1hashbucket.html">hashbucket&lt;type_t&gt;</a> * bucket = table[<a class="code" href="hash_8h.html#a333df5e57da1adc1d2677aeaca04c333">HASH_LOCATION</a> (code)];
 <a name="l00241"></a>00241   <span class="keywordflow">if</span> (bucket) {
@@ -311,7 +311,7 @@
 <a name="l00251"></a>00251             }
 <a name="l00252"></a>00252           }
 <a name="l00253"></a>00253           keys--;
-<a name="l00254"></a>00254           <span class="keywordflow">return</span> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00254"></a>00254           <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00255"></a>00255         }
 <a name="l00256"></a>00256       }
 <a name="l00257"></a>00257     }
@@ -474,7 +474,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

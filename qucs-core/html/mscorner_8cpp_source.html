@@ -142,8 +142,8 @@
 <a name="l00082"></a>00082 
 <a name="l00083"></a>00083   <span class="comment">// create Z-parameter matrix</span>
 <a name="l00084"></a>00084   matrix z (2);
-<a name="l00085"></a>00085   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (M_PI * frequency * <a class="code" href="structmscorner.html#a789f75925014c1020a62964a03a56d0b">C</a>));
-<a name="l00086"></a>00086   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * M_PI * frequency * <a class="code" href="structmscorner.html#ab1bcea021f6804354f8c5cdcd9d704b2">L</a>) + z21;
+<a name="l00085"></a>00085   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (pi * frequency * <a class="code" href="structmscorner.html#a789f75925014c1020a62964a03a56d0b">C</a>));
+<a name="l00086"></a>00086   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * pi * frequency * <a class="code" href="structmscorner.html#ab1bcea021f6804354f8c5cdcd9d704b2">L</a>) + z21;
 <a name="l00087"></a>00087   z.set (0, 0, z11);
 <a name="l00088"></a>00088   z.set (0, 1, z21);
 <a name="l00089"></a>00089   z.set (1, 0, z21);
@@ -182,7 +182,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

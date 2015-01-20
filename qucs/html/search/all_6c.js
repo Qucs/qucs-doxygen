@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../classLoadDialog.html#ab9fddb594b53919d7ea362f086036bb9',1,'LoadDialog::label()'],['../classSaveDialog.html#a2936adb123cc8183b3aae4f93cc47421',1,'SaveDialog::label()'],['../structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab',1,'Axis::Label()'],['../classConductor.html#ab4a26a4b903537282a91567740414fdd',1,'Conductor::Label()']]],
+  ['label',['Label',['../structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab',1,'Axis::Label()'],['../classConductor.html#ab4a26a4b903537282a91567740414fdd',1,'Conductor::Label()'],['../classLoadDialog.html#ab9fddb594b53919d7ea362f086036bb9',1,'LoadDialog::label()'],['../classSaveDialog.html#a2936adb123cc8183b3aae4f93cc47421',1,'SaveDialog::label()']]],
   ['label1',['Label1',['../classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10',1,'DiagramDialog']]],
   ['label2',['Label2',['../classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a',1,'DiagramDialog::Label2()'],['../classLabelDialog.html#a17666709c68d5b7fc9f55cba0f7a2e84',1,'LabelDialog::Label2()']]],
   ['label3',['Label3',['../classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91',1,'DiagramDialog']]],

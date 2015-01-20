@@ -127,7 +127,7 @@
 <a name="l00067"></a>00067 <span class="preprocessor"></span>
 <a name="l00068"></a>00068 <span class="comment">// Constructor creates an instance of the module class.</span>
 <a name="l00069"></a><a class="code" href="classqucs_1_1module.html#a0e8f54416bf20e2c0c123a9477297f6b">00069</a> module::module () {
-<a name="l00070"></a>00070   definition = NULL;
+<a name="l00070"></a>00070   <a class="code" href="parse__spice_8y.html#a55970f4fe6911e272dc63eb95fdd2ff1">definition</a> = NULL;
 <a name="l00071"></a>00071   circreate = NULL;
 <a name="l00072"></a>00072   anacreate = NULL;
 <a name="l00073"></a>00073 }
@@ -422,7 +422,7 @@
 <a name="l00362"></a>00362 <span class="stringliteral">&quot;  ((char *) 0), -1, 1, 0, 0, req_Def, opt_Def };\n&quot;</span>;
 <a name="l00363"></a>00363 
 <a name="l00364"></a>00364 <span class="comment">// Returns a compilable C-code string made from the given string.</span>
-<a name="l00365"></a>00365 <span class="keyword">static</span> <span class="keywordtype">char</span> * printstr (<span class="keyword">const</span> <span class="keywordtype">char</span> * str) {
+<a name="l00365"></a>00365 <span class="keyword">static</span> <span class="keywordtype">char</span> * printstr (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>) {
 <a name="l00366"></a>00366   <span class="keyword">static</span> <span class="keywordtype">char</span> txt[256];
 <a name="l00367"></a>00367   <span class="keywordtype">int</span> nostr = (str == <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a>);
 <a name="l00368"></a>00368   sprintf (txt, <span class="stringliteral">&quot;%s%s%s&quot;</span>,
@@ -433,23 +433,23 @@
 <a name="l00373"></a>00373 }
 <a name="l00374"></a>00374 
 <a name="l00375"></a>00375 <span class="comment">// Prints a property list as compilable C-code.</span>
-<a name="l00376"></a>00376 <span class="keyword">static</span> <span class="keywordtype">void</span> printprop (<span class="keyword">const</span> <span class="keywordtype">char</span> * type, <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>,
+<a name="l00376"></a>00376 <span class="keyword">static</span> <span class="keywordtype">void</span> printprop (<span class="keyword">const</span> <span class="keywordtype">char</span> * type, <span class="keyword">const</span> <span class="keywordtype">char</span> * prefix,
 <a name="l00377"></a>00377                        <span class="keyword">struct</span> <a class="code" href="structproperty__t.html">property_t</a> * prop) {
 <a name="l00378"></a>00378   <span class="keyword">const</span> <span class="keywordtype">char</span> * key;
-<a name="l00379"></a>00379   <span class="keyword">const</span> <span class="keywordtype">char</span> ** str;
+<a name="l00379"></a>00379   <span class="keyword">const</span> <span class="keywordtype">char</span> ** <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00380"></a>00380   <span class="keyword">const</span> <span class="keywordtype">char</span> * txt;
 <a name="l00381"></a>00381   fprintf (stdout, <span class="stringliteral">&quot;static struct property_t %s_%s[] = {\n&quot;</span>, prefix, type);
 <a name="l00382"></a>00382   <span class="keywordflow">do</span> {
 <a name="l00383"></a>00383     key = prop-&gt;<a class="code" href="structproperty__t.html#ae0177f56720b1a0e3f212878887faa94">key</a>;
 <a name="l00384"></a>00384     fprintf (stdout, <span class="stringliteral">&quot;  { %s, %d, &quot;</span>, printstr (key), prop-&gt;<a class="code" href="structproperty__t.html#afe85c2a743a4136c5dd454d06676c9d7">type</a>);
-<a name="l00385"></a>00385     fprintf (stdout, <span class="stringliteral">&quot;{ %g, %s }, &quot;</span>, prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>,
-<a name="l00386"></a>00386              printstr (prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>));
+<a name="l00385"></a>00385     fprintf (stdout, <span class="stringliteral">&quot;{ %g, %s }, &quot;</span>, prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>,
+<a name="l00386"></a>00386              printstr (prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>));
 <a name="l00387"></a>00387     fprintf (stdout, <span class="stringliteral">&quot;{ &#39;%c&#39;, %g, %g, &#39;%c&#39;,\n&quot;</span>,
-<a name="l00388"></a>00388              prop-&gt;<a class="code" href="structproperty__t.html#a67c335775eb1a3f592fc98bdb0dddd1d">range</a>.<a class="code" href="structproperty__t.html#a22d6417d8ee5b9a026dde817108cfb52">il</a>, prop-&gt;<a class="code" href="structproperty__t.html#a67c335775eb1a3f592fc98bdb0dddd1d">range</a>.<a class="code" href="structproperty__t.html#a1c580e017f0d37edf28802105c81789a">l</a>, prop-&gt;<a class="code" href="structproperty__t.html#a67c335775eb1a3f592fc98bdb0dddd1d">range</a>.<a class="code" href="structproperty__t.html#a44805795790f692948ba7c4d9902cd35">h</a>, prop-&gt;<a class="code" href="structproperty__t.html#a67c335775eb1a3f592fc98bdb0dddd1d">range</a>.<a class="code" href="structproperty__t.html#ae8f4babff6f6ec9901e5c16846e41ed1">ih</a>);
+<a name="l00388"></a>00388              prop-&gt;<a class="code" href="structproperty__t.html#abe8c9e81a5036137fb9860f3bd6ef96e">range</a>.<a class="code" href="structproperty__t.html#a22d6417d8ee5b9a026dde817108cfb52">il</a>, prop-&gt;<a class="code" href="structproperty__t.html#abe8c9e81a5036137fb9860f3bd6ef96e">range</a>.<a class="code" href="structproperty__t.html#a1c580e017f0d37edf28802105c81789a">l</a>, prop-&gt;<a class="code" href="structproperty__t.html#abe8c9e81a5036137fb9860f3bd6ef96e">range</a>.<a class="code" href="structproperty__t.html#a44805795790f692948ba7c4d9902cd35">h</a>, prop-&gt;<a class="code" href="structproperty__t.html#abe8c9e81a5036137fb9860f3bd6ef96e">range</a>.<a class="code" href="structproperty__t.html#ae8f4babff6f6ec9901e5c16846e41ed1">ih</a>);
 <a name="l00389"></a>00389     fprintf (stdout, <span class="stringliteral">&quot;    {&quot;</span>);
-<a name="l00390"></a>00390     str = prop-&gt;<a class="code" href="structproperty__t.html#a67c335775eb1a3f592fc98bdb0dddd1d">range</a>.<a class="code" href="structproperty__t.html#a44e33446081f319d32c0c79c823feeea">str</a>;
+<a name="l00390"></a>00390     str = prop-&gt;<a class="code" href="structproperty__t.html#abe8c9e81a5036137fb9860f3bd6ef96e">range</a>.<a class="code" href="structproperty__t.html#a44e33446081f319d32c0c79c823feeea">str</a>;
 <a name="l00391"></a>00391     <span class="keywordflow">do</span> {
-<a name="l00392"></a>00392       txt = *str;
+<a name="l00392"></a>00392       txt = *<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00393"></a>00393       fprintf (stdout, <span class="stringliteral">&quot; %s&quot;</span>, printstr (txt));
 <a name="l00394"></a>00394       <span class="keywordflow">if</span> (txt) fprintf (stdout, <span class="stringliteral">&quot;,&quot;</span>);
 <a name="l00395"></a>00395       str++;
@@ -624,7 +624,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

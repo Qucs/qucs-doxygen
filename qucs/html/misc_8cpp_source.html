@@ -113,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00035"></a>00035 <span class="preprocessor">#include &lt;QDir&gt;</span>
 <a name="l00036"></a>00036 
 <a name="l00037"></a>00037 <span class="comment">// #########################################################################</span>
-<a name="l00038"></a><a class="code" href="misc_8h.html#ade74beedca1cc5e6730450914d6d6db2">00038</a> QString <a class="code" href="misc_8cpp.html#aaddc592d5dfcc5123c960f5fd6bcfd37">complexRect</a>(<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
+<a name="l00038"></a><a class="code" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57">00038</a> QString <a class="code" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57">misc::complexRect</a>(<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
 <a name="l00039"></a>00039 {
 <a name="l00040"></a>00040   QString <a class="code" href="structText.html">Text</a>;
 <a name="l00041"></a>00041   <span class="keywordflow">if</span>(fabs(imag) &lt; 1e-250) Text = QString::number(real,<span class="charliteral">&#39;g&#39;</span>,Precision);
@@ -129,18 +129,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00051"></a>00051   <span class="keywordflow">return</span> Text;
 <a name="l00052"></a>00052 }
 <a name="l00053"></a>00053 
-<a name="l00054"></a><a class="code" href="misc_8h.html#a7d785e01829b150bbd67a822da4ebd3c">00054</a> QString <a class="code" href="misc_8cpp.html#a8c01d2bcd3fadc8747860193f6504ef8">complexDeg</a>(<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
+<a name="l00054"></a><a class="code" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78">00054</a> QString <a class="code" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78">misc::complexDeg</a>(<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
 <a name="l00055"></a>00055 {
 <a name="l00056"></a>00056   QString <a class="code" href="structText.html">Text</a>;
 <a name="l00057"></a>00057   <span class="keywordflow">if</span>(fabs(imag) &lt; 1e-250) Text = QString::number(real,<span class="charliteral">&#39;g&#39;</span>,Precision);
 <a name="l00058"></a>00058   <span class="keywordflow">else</span> {
 <a name="l00059"></a>00059     Text  = QString::number(sqrt(real*real+imag*imag),<span class="charliteral">&#39;g&#39;</span>,Precision) + <span class="stringliteral">&quot; / &quot;</span>;
-<a name="l00060"></a>00060     Text += QString::number(180.0/M_PI*atan2(imag,real),<span class="charliteral">&#39;g&#39;</span>,Precision) + QString::fromUtf8(<span class="stringliteral">&quot;°&quot;</span>);
+<a name="l00060"></a>00060     Text += QString::number(180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>*atan2(imag,real),<span class="charliteral">&#39;g&#39;</span>,Precision) + QString::fromUtf8(<span class="stringliteral">&quot;°&quot;</span>);
 <a name="l00061"></a>00061   }
 <a name="l00062"></a>00062   <span class="keywordflow">return</span> Text;
 <a name="l00063"></a>00063 }
 <a name="l00064"></a>00064 
-<a name="l00065"></a><a class="code" href="misc_8h.html#aff473cb2dfe06aa06a8142a24279b2f2">00065</a> QString <a class="code" href="misc_8cpp.html#a68f1c383d1d493cd0068fbb5e68e7a55">complexRad</a> (<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
+<a name="l00065"></a><a class="code" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828">00065</a> QString <a class="code" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828">misc::complexRad</a> (<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag, <span class="keywordtype">int</span> Precision)
 <a name="l00066"></a>00066 {
 <a name="l00067"></a>00067   QString <a class="code" href="structText.html">Text</a>;
 <a name="l00068"></a>00068   <span class="keywordflow">if</span>(fabs(imag) &lt; 1e-250) Text = QString::number(real,<span class="charliteral">&#39;g&#39;</span>,Precision);
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00074"></a>00074 }
 <a name="l00075"></a>00075 
 <a name="l00076"></a>00076 <span class="comment">// #########################################################################</span>
-<a name="l00077"></a><a class="code" href="misc_8h.html#a6e901ceaff47ebed35c9b891e35abb89">00077</a> QString <a class="code" href="misc_8cpp.html#a9a6a9ccafe894554d51b843565fc4da8">StringNum</a>(<span class="keywordtype">double</span> num, <span class="keywordtype">char</span> form, <span class="keywordtype">int</span> Precision)
+<a name="l00077"></a><a class="code" href="namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e">00077</a> QString <a class="code" href="namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e">misc::StringNum</a>(<span class="keywordtype">double</span> num, <span class="keywordtype">char</span> form, <span class="keywordtype">int</span> Precision)
 <a name="l00078"></a>00078 {
 <a name="l00079"></a>00079   <span class="keywordtype">int</span> a = 0;
 <a name="l00080"></a>00080   <span class="keywordtype">char</span> *p, Buffer[512], Format[6] = <span class="stringliteral">&quot;%.00g&quot;</span>;
@@ -182,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00104"></a>00104 }
 <a name="l00105"></a>00105 
 <a name="l00106"></a>00106 <span class="comment">// #########################################################################</span>
-<a name="l00107"></a><a class="code" href="misc_8h.html#a651d04b77279fd04f2d5880163dfcca0">00107</a> QString <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(<span class="keywordtype">double</span> num)
+<a name="l00107"></a><a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">00107</a> QString <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">misc::StringNiceNum</a>(<span class="keywordtype">double</span> num)
 <a name="l00108"></a>00108 {
 <a name="l00109"></a>00109   <span class="keywordtype">char</span> Format[6] = <span class="stringliteral">&quot;%.8e&quot;</span>;
 <a name="l00110"></a>00110   <span class="keywordflow">if</span>(fabs(num) &lt; 1e-250)  <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;0&quot;</span>);  <span class="comment">// avoid many problems</span>
@@ -217,7 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00139"></a>00139 }
 <a name="l00140"></a>00140 
 <a name="l00141"></a>00141 <span class="comment">// #########################################################################</span>
-<a name="l00142"></a><a class="code" href="misc_8h.html#aa67f2dff11bea5ab255b776549833d31">00142</a> <span class="keywordtype">void</span> <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>(<span class="keyword">const</span> QString&amp; s_, <span class="keywordtype">double</span>&amp; Number, QString&amp; Unit, <span class="keywordtype">double</span>&amp; Factor)
+<a name="l00142"></a><a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">00142</a> <span class="keywordtype">void</span> <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<span class="keyword">const</span> QString&amp; s_, <span class="keywordtype">double</span>&amp; Number, QString&amp; Unit, <span class="keywordtype">double</span>&amp; Factor)
 <a name="l00143"></a>00143 {
 <a name="l00144"></a>00144   QString str = s_.stripWhiteSpace();
 <a name="l00145"></a>00145 
@@ -273,7 +273,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00195"></a>00195 }
 <a name="l00196"></a>00196 
 <a name="l00197"></a>00197 <span class="comment">// #########################################################################</span>
-<a name="l00198"></a><a class="code" href="misc_8h.html#a5cd3f4dd3c3808f5b13ae8cfa6f7656b">00198</a> QString <a class="code" href="misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f">num2str</a>(<span class="keywordtype">double</span> Num)
+<a name="l00198"></a><a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">00198</a> QString <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(<span class="keywordtype">double</span> Num)
 <a name="l00199"></a>00199 {
 <a name="l00200"></a>00200   <span class="keywordtype">char</span> c = 0;
 <a name="l00201"></a>00201   <span class="keywordtype">double</span> cal = fabs(Num);
@@ -305,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00227"></a>00227 }
 <a name="l00228"></a>00228 
 <a name="l00229"></a>00229 <span class="comment">// #########################################################################</span>
-<a name="l00230"></a><a class="code" href="misc_8h.html#aa659935872845031c08b767aa5794ef7">00230</a> <span class="keywordtype">void</span> <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(QString&amp; <a class="code" href="structText.html">Text</a>)
+<a name="l00230"></a><a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">00230</a> <span class="keywordtype">void</span> <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(QString&amp; <a class="code" href="structText.html">Text</a>)
 <a name="l00231"></a>00231 {
 <a name="l00232"></a>00232   <span class="keywordtype">bool</span> ok;
 <a name="l00233"></a>00233   <span class="keywordtype">int</span> i = 0;
@@ -322,7 +322,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00244"></a>00244 }
 <a name="l00245"></a>00245 
 <a name="l00246"></a>00246 <span class="comment">// #########################################################################</span>
-<a name="l00247"></a><a class="code" href="misc_8h.html#abf796943f51f12048ee040d65f4d89f5">00247</a> <span class="keywordtype">void</span> <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(QString&amp; <a class="code" href="structText.html">Text</a>)
+<a name="l00247"></a><a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">00247</a> <span class="keywordtype">void</span> <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">misc::convert2ASCII</a>(QString&amp; <a class="code" href="structText.html">Text</a>)
 <a name="l00248"></a>00248 {
 <a name="l00249"></a>00249   Text.replace(<span class="charliteral">&#39;\\&#39;</span>, <span class="stringliteral">&quot;\\\\&quot;</span>);
 <a name="l00250"></a>00250   Text.replace(<span class="charliteral">&#39;\n&#39;</span>, <span class="stringliteral">&quot;\\n&quot;</span>);
@@ -341,7 +341,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00263"></a>00263 <span class="comment">// #########################################################################</span>
 <a name="l00264"></a>00264 <span class="comment">// Converts a path to an absolute path and resolves paths relative to the</span>
 <a name="l00265"></a>00265 <span class="comment">// Qucs home directory</span>
-<a name="l00266"></a><a class="code" href="misc_8h.html#a110911472237ca6a9cdd902f01b48eef">00266</a> QString <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(<span class="keyword">const</span> QString&amp; Name)
+<a name="l00266"></a><a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">00266</a> QString <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(<span class="keyword">const</span> QString&amp; Name)
 <a name="l00267"></a>00267 {
 <a name="l00268"></a>00268   QString s = Name;
 <a name="l00269"></a>00269   QFileInfo Info(s);
@@ -357,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00279"></a>00279 }
 <a name="l00280"></a>00280 
 <a name="l00281"></a>00281 <span class="comment">// #########################################################################</span>
-<a name="l00282"></a><a class="code" href="misc_8h.html#af65ae3a143b0b51ded987297c14799b1">00282</a> QString <a class="code" href="misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf">properFileName</a>(<span class="keyword">const</span> QString&amp; Name)
+<a name="l00282"></a><a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">00282</a> QString <a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">misc::properFileName</a>(<span class="keyword">const</span> QString&amp; Name)
 <a name="l00283"></a>00283 {
 <a name="l00284"></a>00284   QFileInfo Info(Name);
 <a name="l00285"></a>00285   <span class="keywordflow">return</span> Info.fileName();
@@ -365,7 +365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00287"></a>00287 
 <a name="l00288"></a>00288 <span class="comment">// #########################################################################</span>
 <a name="l00289"></a>00289 <span class="comment">// Takes a file name (with path) and replaces all special characters.</span>
-<a name="l00290"></a><a class="code" href="misc_8h.html#a5fc41c762ddc584e7476ffe53af67c8e">00290</a> QString <a class="code" href="misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc">properName</a>(<span class="keyword">const</span> QString&amp; Name)
+<a name="l00290"></a><a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">00290</a> QString <a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">misc::properName</a>(<span class="keyword">const</span> QString&amp; Name)
 <a name="l00291"></a>00291 {
 <a name="l00292"></a>00292   QString s = Name;
 <a name="l00293"></a>00293   QFileInfo Info(s);
@@ -382,10 +382,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00304"></a>00304 
 <a name="l00305"></a>00305 <span class="comment">// #########################################################################</span>
 <a name="l00306"></a>00306 <span class="comment">// Creates and returns delay time for VHDL entities.</span>
-<a name="l00307"></a><a class="code" href="misc_8h.html#a152f07634fd481cb680ed77573c8f65e">00307</a> <span class="keywordtype">bool</span> <a class="code" href="misc_8cpp.html#a00c7621b752cf00f429c32d5ac361dc1">VHDL_Delay</a>(QString&amp; td, <span class="keyword">const</span> QString&amp; Name)
+<a name="l00307"></a><a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">00307</a> <span class="keywordtype">bool</span> <a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">misc::VHDL_Delay</a>(QString&amp; td, <span class="keyword">const</span> QString&amp; Name)
 <a name="l00308"></a>00308 {
 <a name="l00309"></a>00309   <span class="keywordflow">if</span>(strtod(td.latin1(), 0) != 0.0) {  <span class="comment">// delay time property</span>
-<a name="l00310"></a>00310     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#ace8b5218b245e24fd9d8665ef45d6db9">VHDL_Time</a>(td, Name))
+<a name="l00310"></a>00310     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">misc::VHDL_Time</a>(td, Name))
 <a name="l00311"></a>00311       <span class="keywordflow">return</span> <span class="keyword">false</span>;    <span class="comment">// time has not VHDL format</span>
 <a name="l00312"></a>00312     td = <span class="stringliteral">&quot; after &quot;</span> + td;
 <a name="l00313"></a>00313     <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -402,7 +402,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00324"></a>00324 
 <a name="l00325"></a>00325 <span class="comment">// #########################################################################</span>
 <a name="l00326"></a>00326 <span class="comment">// Checks and corrects a time (number &amp; unit) according VHDL standard.</span>
-<a name="l00327"></a><a class="code" href="misc_8h.html#a6d55baa975e5c867475e9531c6cd3c82">00327</a> <span class="keywordtype">bool</span> <a class="code" href="misc_8cpp.html#ace8b5218b245e24fd9d8665ef45d6db9">VHDL_Time</a>(QString&amp; t, <span class="keyword">const</span> QString&amp; Name)
+<a name="l00327"></a><a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">00327</a> <span class="keywordtype">bool</span> <a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">misc::VHDL_Time</a>(QString&amp; t, <span class="keyword">const</span> QString&amp; Name)
 <a name="l00328"></a>00328 {
 <a name="l00329"></a>00329   <span class="keywordtype">char</span> *p;
 <a name="l00330"></a>00330   <span class="keywordtype">double</span> Time = strtod(t.latin1(), &amp;p);
@@ -429,11 +429,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00351"></a>00351 
 <a name="l00352"></a>00352 <span class="comment">// #########################################################################</span>
 <a name="l00353"></a>00353 <span class="comment">// Returns parameters for Verilog modules.</span>
-<a name="l00354"></a><a class="code" href="misc_8h.html#aead78ac5064314c5e098538c6283fad5">00354</a> QString <a class="code" href="misc_8cpp.html#a009a864394a594fe6f935b0d07cb6290">Verilog_Param</a>(<span class="keyword">const</span> QString Value)
+<a name="l00354"></a><a class="code" href="namespacemisc.html#aed5619612e57189460795e5e6e834d41">00354</a> QString <a class="code" href="namespacemisc.html#aed5619612e57189460795e5e6e834d41">misc::Verilog_Param</a>(<span class="keyword">const</span> QString Value)
 <a name="l00355"></a>00355 {
 <a name="l00356"></a>00356   <span class="keywordflow">if</span>(strtod(Value.latin1(), 0) != 0.0) {
 <a name="l00357"></a>00357     QString td = Value;
-<a name="l00358"></a>00358     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce">Verilog_Time</a>(td, <span class="stringliteral">&quot;parameter&quot;</span>))
+<a name="l00358"></a>00358     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(td, <span class="stringliteral">&quot;parameter&quot;</span>))
 <a name="l00359"></a>00359       <span class="keywordflow">return</span> Value;
 <a name="l00360"></a>00360     <span class="keywordflow">else</span>
 <a name="l00361"></a>00361       <span class="keywordflow">return</span> td;
@@ -444,10 +444,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00366"></a>00366 
 <a name="l00367"></a>00367 <span class="comment">// #########################################################################</span>
 <a name="l00368"></a>00368 <span class="comment">// Creates and returns delay time for Verilog modules.</span>
-<a name="l00369"></a><a class="code" href="misc_8h.html#a10e6f937d63f1a74be85d1ade208a1f2">00369</a> <span class="keywordtype">bool</span> <a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(QString&amp; td, <span class="keyword">const</span> QString&amp; Name)
+<a name="l00369"></a><a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">00369</a> <span class="keywordtype">bool</span> <a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">misc::Verilog_Delay</a>(QString&amp; td, <span class="keyword">const</span> QString&amp; Name)
 <a name="l00370"></a>00370 {
 <a name="l00371"></a>00371   <span class="keywordflow">if</span>(strtod(td.latin1(), 0) != 0.0) {  <span class="comment">// delay time property</span>
-<a name="l00372"></a>00372     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce">Verilog_Time</a>(td, Name))
+<a name="l00372"></a>00372     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(td, Name))
 <a name="l00373"></a>00373       <span class="keywordflow">return</span> <span class="keyword">false</span>;    <span class="comment">// time has not Verilog format</span>
 <a name="l00374"></a>00374     td = <span class="stringliteral">&quot; #&quot;</span> + td;
 <a name="l00375"></a>00375     <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -464,7 +464,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00386"></a>00386 
 <a name="l00387"></a>00387 <span class="comment">// #########################################################################</span>
 <a name="l00388"></a>00388 <span class="comment">// Checks and corrects a time (number &amp; unit) according Verilog standard.</span>
-<a name="l00389"></a><a class="code" href="misc_8h.html#a9d0f8543121b5c2a46edcfd0ad166112">00389</a> <span class="keywordtype">bool</span> <a class="code" href="misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce">Verilog_Time</a>(QString&amp; t, <span class="keyword">const</span> QString&amp; Name)
+<a name="l00389"></a><a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">00389</a> <span class="keywordtype">bool</span> <a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(QString&amp; t, <span class="keyword">const</span> QString&amp; Name)
 <a name="l00390"></a>00390 {
 <a name="l00391"></a>00391   <span class="keywordtype">char</span> *p;
 <a name="l00392"></a>00392   <span class="keywordtype">double</span> Time = strtod(t.latin1(), &amp;p);
@@ -491,7 +491,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00413"></a>00413 }
 <a name="l00414"></a>00414 
 <a name="l00415"></a>00415 <span class="comment">// #########################################################################</span>
-<a name="l00416"></a><a class="code" href="misc_8h.html#ae97c2afbf5df4e339e6c8443ec38ebf9">00416</a> <span class="keywordtype">bool</span> <a class="code" href="misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5">checkVersion</a>(QString&amp; <a class="code" href="structLine.html">Line</a>)
+<a name="l00416"></a><a class="code" href="namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d">00416</a> <span class="keywordtype">bool</span> <a class="code" href="namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d">misc::checkVersion</a>(QString&amp; <a class="code" href="structLine.html">Line</a>)
 <a name="l00417"></a>00417 {
 <a name="l00418"></a>00418   QStringList sl = QStringList::split(<span class="charliteral">&#39;.&#39;</span>,PACKAGE_VERSION);
 <a name="l00419"></a>00419   QStringList ll = QStringList::split(<span class="charliteral">&#39;.&#39;</span>,Line);
@@ -521,7 +521,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

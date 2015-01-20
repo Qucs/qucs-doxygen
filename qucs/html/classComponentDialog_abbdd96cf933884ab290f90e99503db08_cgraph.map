@@ -22,8 +22,8 @@
 <area shape="rect" id="node110" href="$classComponentDialog.html#a88e80a5b08c74357b8435752342a2f93" title="ComponentDialog::slotApplyState" alt="" coords="311,1152,529,1181"/>
 <area shape="rect" id="node112" href="$classComponentDialog.html#a95a6b79cc88f1d67d54a8fcdf609fa11" title="Add description if missing." alt="" coords="620,783,823,812"/>
 <area shape="rect" id="node115" href="$classComponentDialog.html#a1870a788984c5187a451b90f3f43a557" title="Is called if the remove button is pressed." alt="" coords="619,405,824,435"/>
-<area shape="rect" id="node11" href="$misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560" title="str2num" alt="" coords="972,213,1041,243"/>
-<area shape="rect" id="node13" href="$misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f" title="num2str" alt="" coords="972,160,1041,189"/>
+<area shape="rect" id="node11" href="$namespacemisc.html#a97e56bf4173a32864170888a32880dee" title="misc::str2num" alt="" coords="955,213,1059,243"/>
+<area shape="rect" id="node13" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="955,160,1059,189"/>
 <area shape="rect" id="node23" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1195,335,1400,364"/>
 <area shape="rect" id="node31" href="$classComponentDialog.html#ac42ec294e5b01f63b1cc76ba7bb8436e" title="ComponentDialog::updateCompPropsList" alt="" coords="1167,412,1428,441"/>
 <area shape="rect" id="node25" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1537,308,1681,337"/>

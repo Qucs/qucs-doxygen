@@ -68,6 +68,7 @@
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;cmath&gt;</code><br/>
 <code>#include &lt;float.h&gt;</code><br/>
+<code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &quot;<a class="el" href="compat_8h_source.html">compat.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="constants_8h_source.html">constants.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="fspecial_8h_source.html">fspecial.h</a>&quot;</code><br/>
@@ -77,7 +78,7 @@ Include dependency graph for fspecial.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="fspecial_8cpp__incl.png" border="0" usemap="#fspecial_8cpp" alt=""/></div>
 <map name="fspecial_8cpp" id="fspecial_8cpp">
-<area shape="rect" id="node13" href="compat_8h.html" title="compat.h" alt="" coords="400,83,475,112"/><area shape="rect" id="node15" href="constants_8h.html" title="Global physical constants header file." alt="" coords="499,83,589,112"/><area shape="rect" id="node24" href="fspecial_8h.html" title="fspecial.h" alt="" coords="664,83,741,112"/><area shape="rect" id="node17" href="consts_8h.html" title="Global math constants header file." alt="" coords="363,160,435,189"/><area shape="rect" id="node20" href="precision_8h.html" title="precision.h" alt="" coords="503,160,588,189"/></map>
+<area shape="rect" id="node15" href="compat_8h.html" title="compat.h" alt="" coords="499,83,573,112"/><area shape="rect" id="node17" href="constants_8h.html" title="Global physical constants header file." alt="" coords="597,83,688,112"/><area shape="rect" id="node26" href="fspecial_8h.html" title="fspecial.h" alt="" coords="763,83,840,112"/><area shape="rect" id="node19" href="consts_8h.html" title="Global math constants header file." alt="" coords="412,160,484,189"/><area shape="rect" id="node22" href="precision_8h.html" title="precision.h" alt="" coords="601,160,687,189"/></map>
 </div>
 </div>
 <p><a href="fspecial_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -122,7 +123,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00193">193</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00198">198</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -152,7 +153,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00195">195</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00200">200</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +172,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00300">300</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00305">305</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +191,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00364">364</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00369">369</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +210,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#ab6c8c567ee14140d75c55e9014a6314a">ai02_data</a>, 21, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00498">498</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00503">503</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -248,7 +249,7 @@ Variables</h2></td></tr>
    .00000000000000003
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00474">474</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00479">479</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +267,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#a4cdb881032880ff70fede0fe3e5daf40">ai0_data</a>, 20, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00470">470</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00475">475</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +305,7 @@ Variables</h2></td></tr>
    .00000000000000007
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00447">447</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00452">452</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +323,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#a55c7500bee7e01b6e0aae86477b170cc">bi0_data</a>, 11, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00443">443</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00448">448</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -351,7 +352,7 @@ Variables</h2></td></tr>
    .00000000000000000245
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00429">429</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00434">434</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +370,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#a50231ff0cec7d37972e8b096da74438b">erfc_x15_data</a>, 24, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00266">266</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00271">271</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +412,7 @@ Variables</h2></td></tr>
   3.50826648032737849245113757340e-16
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00239">239</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00244">244</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +430,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#acd94093cb32290eb8949bd2368c0b011">erfc_x510_data</a>, 19, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00294">294</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00299">299</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +467,7 @@ Variables</h2></td></tr>
   9.12600607264794717315507477670e-17
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00272">272</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00277">277</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -484,7 +485,7 @@ Variables</h2></td></tr>
   <a class="code" href="fspecial_8cpp.html#af3f58c35b65aabca15a6fbd0e7a8a66d">erfc_xlt1_data</a>, 19, -1, 1
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00234">234</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00239">239</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +522,7 @@ Variables</h2></td></tr>
  -9.29599561220523396007359328540e-19
 }
 </pre></div>
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00212">212</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00217">217</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +537,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00091">91</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00096">96</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +552,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00090">90</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
+<p>Definition at line <a class="el" href="fspecial_8cpp_source.html#l00095">95</a> of file <a class="el" href="fspecial_8cpp_source.html">fspecial.cpp</a>.</p>
 
 </div>
 </div>
@@ -559,7 +560,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

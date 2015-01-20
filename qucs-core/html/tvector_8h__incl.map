@@ -1,7 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node7" href="$precision_8h.html" title="precision.h" alt="" coords="29,160,115,189"/>
-<area shape="rect" id="node10" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="245,83,331,112"/>
-<area shape="rect" id="node21" href="$compat_8h.html" title="compat.h" alt="" coords="389,160,464,189"/>
-<area shape="rect" id="node23" href="$complex_8h.html" title="complex.h" alt="" coords="283,160,365,189"/>
-<area shape="rect" id="node27" href="$real_8h.html" title="real.h" alt="" coords="283,237,336,267"/>
+<area shape="rect" id="node7" href="$precision_8h.html" title="precision.h" alt="" coords="100,392,185,421"/>
+<area shape="rect" id="node10" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="273,83,359,112"/>
+<area shape="rect" id="node21" href="$compat_8h.html" title="compat.h" alt="" coords="325,160,400,189"/>
+<area shape="rect" id="node23" href="$complex_8h.html" title="complex.h" alt="" coords="424,160,507,189"/>
+<area shape="rect" id="node27" href="$real_8h.html" title="real.h" alt="" coords="356,237,409,267"/>
+<area shape="rect" id="node30" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="296,315,387,344"/>
+<area shape="rect" id="node32" href="$consts_8h.html" title="Global math constants header file." alt="" coords="312,392,384,421"/>
 </map>

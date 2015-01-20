@@ -97,10 +97,10 @@
 <a name="l00037"></a>00037 
 <a name="l00038"></a><a class="code" href="structtrafo.html#a24b6ffc65682b99d28aedb063b21311d">00038</a> <span class="keywordtype">void</span> <a class="code" href="structtrafo.html#a24b6ffc65682b99d28aedb063b21311d" title="placehoder for S-Parameter initialisation function">trafo::initSP</a> (<span class="keywordtype">void</span>) {
 <a name="l00039"></a>00039   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;T&quot;</span>);
-<a name="l00040"></a>00040   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = t * t + 1.0;
-<a name="l00041"></a>00041   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z1 = t * t / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
-<a name="l00042"></a>00042   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z2 = t / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
-<a name="l00043"></a>00043   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z3 = 1 / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00040"></a>00040   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>  <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = t * t + 1.0;
+<a name="l00041"></a>00041   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z1 = t * t / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
+<a name="l00042"></a>00042   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z2 = t / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
+<a name="l00043"></a>00043   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z3 = 1 / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00044"></a>00044   <a class="code" href="classqucs_1_1circuit.html#aab7b63f2afb2711ea06dc914b95b0f6a">allocMatrixS</a> ();
 <a name="l00045"></a>00045   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>,  z1); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>,  z2);
 <a name="l00046"></a>00046   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, -z2); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4ea077d8aa0fc95077647593b5e208e4">NODE_4</a>,  z3);
@@ -146,7 +146,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

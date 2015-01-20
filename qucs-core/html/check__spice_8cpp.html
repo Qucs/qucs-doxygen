@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#a8c10eb43d5536363fcae938d570e7d00">spice_adjust_properties</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *def)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#ac84008f663abc7bf5f5fc14cc96d2d21">spice_append_pair</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *def, const char *prop, const char *<a class="el" href="parse__netlist_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <a class="el" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a> replace)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#ad364bfaf8403ac6ea8afa1aee0210e4c">spice_append_node</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *def, char *<a class="el" href="classqucs_1_1eqn_1_1node.html">node</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">spice_toupper</a> (char *str)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">spice_toupper</a> (char *<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#adb9886cc025255325f4d542ea2553d0f">spice_adjust_instance</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *def)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#a17ef4eeec18c7955701fda06deb4b9d3">spice_fixup_definition</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *def)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structdefinition__t.html">definition_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__spice_8cpp.html#a771731146c33036a611c34d6adc17942">spice_add_definition</a> (struct <a class="el" href="structdefinition__t.html">definition_t</a> *root, struct <a class="el" href="structdefinition__t.html">definition_t</a> *def)</td></tr>
@@ -2863,7 +2863,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Initial value:</b><div class="fragment"><pre class="fragment"> {
-  { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+  { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> }
 </pre></div>
 <p>Definition at line <a class="el" href="check__spice_8cpp_source.html#l00058">58</a> of file <a class="el" href="check__spice_8cpp_source.html">check_spice.cpp</a>.</p>
@@ -3181,7 +3181,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char * <a class="el" href="check__spice_8h.html#acbf7e969419637a92ef39484bae3ae0b">spice_title</a> = NULL</td>
+          <td class="memname">char * <a class="el" href="parse__spice_8y.html#ab1d33c7379e6e9291fc3257e22c6ecb5">spice_title</a> = NULL</td>
         </tr>
       </table>
 </div>
@@ -3224,7 +3224,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

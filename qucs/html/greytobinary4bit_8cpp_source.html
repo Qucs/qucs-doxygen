@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00104"></a>00104   QString s=<span class="stringliteral">&quot;&quot;</span>;
 <a name="l00105"></a>00105 
 <a name="l00106"></a>00106   QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value;     <span class="comment">// delay time</span>
-<a name="l00107"></a>00107   <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a00c7621b752cf00f429c32d5ac361dc1">VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
+<a name="l00107"></a>00107   <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">misc::VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
 <a name="l00108"></a>00108   td += <span class="stringliteral">&quot;;\n&quot;</span>;
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110   QString G0 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name;
@@ -212,7 +212,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00129"></a><a class="code" href="classgreytobinary4bit.html#ad4e25fd91ee624561185fd17092bbb6b">00129</a> QString <a class="code" href="classgreytobinary4bit.html#ad4e25fd91ee624561185fd17092bbb6b">greytobinary4bit::verilogCode</a>( <span class="keywordtype">int</span> )
 <a name="l00130"></a>00130 {
 <a name="l00131"></a>00131   QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value;        <span class="comment">// delay time</span>
-<a name="l00132"></a>00132   <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time does not have VHDL format</span>
+<a name="l00132"></a>00132   <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">misc::Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time does not have VHDL format</span>
 <a name="l00133"></a>00133 
 <a name="l00134"></a>00134   QString G0 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name;
 <a name="l00135"></a>00135   QString G1 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name;
@@ -267,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:22 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

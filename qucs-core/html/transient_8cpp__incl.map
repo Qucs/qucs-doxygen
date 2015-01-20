@@ -1,29 +1,31 @@
 <map id="G" name="G">
-<area shape="rect" id="node9" href="$object_8h.html" title="object.h" alt="" coords="696,160,763,189"/>
-<area shape="rect" id="node20" href="$complex_8h.html" title="complex.h" alt="" coords="852,392,935,421"/>
-<area shape="rect" id="node28" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="505,83,572,112"/>
-<area shape="rect" id="node56" href="$net_8h.html" title="net.h" alt="" coords="809,83,860,112"/>
-<area shape="rect" id="node63" href="$tvector_8h.html" title="tvector.h" alt="" coords="1096,237,1168,267"/>
-<area shape="rect" id="node84" href="$tmatrix_8h.html" title="tmatrix.h" alt="" coords="949,237,1021,267"/>
-<area shape="rect" id="node101" href="$eqnsys_8h.html" title="eqnsys.h" alt="" coords="1128,83,1203,112"/>
-<area shape="rect" id="node126" href="$transient_8h.html" title="transient.h" alt="" coords="1227,83,1309,112"/>
-<area shape="rect" id="node13" href="$property_8h.html" title="property.h" alt="" coords="437,237,517,267"/>
-<area shape="rect" id="node24" href="$real_8h.html" title="real.h" alt="" coords="965,469,1019,499"/>
-<area shape="rect" id="node30" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="392,160,501,189"/>
-<area shape="rect" id="node36" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="253,160,368,189"/>
-<area shape="rect" id="node42" href="$integrator_8h.html" title="integrator.h" alt="" coords="93,160,179,189"/>
-<area shape="rect" id="node52" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="541,237,621,267"/>
-<area shape="rect" id="node32" href="$pair_8h.html" title="pair.h" alt="" coords="360,237,413,267"/>
-<area shape="rect" id="node44" href="$states_8h.html" title="states.h" alt="" coords="103,237,172,267"/>
-<area shape="rect" id="node46" href="$states_8cpp.html" title="states.cpp" alt="" coords="96,315,179,344"/>
-<area shape="rect" id="node59" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="837,160,901,189"/>
-<area shape="rect" id="node69" href="$precision_8h.html" title="precision.h" alt="" coords="1492,392,1577,421"/>
-<area shape="rect" id="node72" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="1007,315,1092,344"/>
-<area shape="rect" id="node79" href="$compat_8h.html" title="compat.h" alt="" coords="959,392,1033,421"/>
-<area shape="rect" id="node87" href="$tmatrix_8cpp.html" title="tmatrix.cpp" alt="" coords="847,315,932,344"/>
-<area shape="rect" id="node89" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="1201,392,1319,421"/>
-<area shape="rect" id="node97" href="$logging_8h.html" title="logging.h" alt="" coords="1393,392,1468,421"/>
-<area shape="rect" id="node106" href="$eqnsys_8cpp.html" title="eqnsys.cpp" alt="" coords="1389,160,1477,189"/>
-<area shape="rect" id="node122" href="$exception_8h.html" title="exception.h" alt="" coords="1737,237,1825,267"/>
-<area shape="rect" id="node124" href="$exceptionstack_8h.html" title="exceptionstack.h" alt="" coords="1849,237,1969,267"/>
+<area shape="rect" id="node9" href="$object_8h.html" title="object.h" alt="" coords="536,160,603,189"/>
+<area shape="rect" id="node20" href="$complex_8h.html" title="complex.h" alt="" coords="948,392,1031,421"/>
+<area shape="rect" id="node37" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="415,83,481,112"/>
+<area shape="rect" id="node65" href="$net_8h.html" title="net.h" alt="" coords="793,83,844,112"/>
+<area shape="rect" id="node72" href="$tvector_8h.html" title="tvector.h" alt="" coords="1201,237,1273,267"/>
+<area shape="rect" id="node90" href="$tmatrix_8h.html" title="tmatrix.h" alt="" coords="1297,237,1369,267"/>
+<area shape="rect" id="node107" href="$eqnsys_8h.html" title="eqnsys.h" alt="" coords="1296,83,1371,112"/>
+<area shape="rect" id="node132" href="$transient_8h.html" title="transient.h" alt="" coords="1395,83,1477,112"/>
+<area shape="rect" id="node13" href="$property_8h.html" title="property.h" alt="" coords="283,237,363,267"/>
+<area shape="rect" id="node24" href="$real_8h.html" title="real.h" alt="" coords="948,469,1001,499"/>
+<area shape="rect" id="node28" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="1004,547,1095,576"/>
+<area shape="rect" id="node30" href="$consts_8h.html" title="Global math constants header file." alt="" coords="1013,624,1085,653"/>
+<area shape="rect" id="node33" href="$precision_8h.html" title="precision.h" alt="" coords="1255,624,1340,653"/>
+<area shape="rect" id="node39" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="301,160,411,189"/>
+<area shape="rect" id="node45" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="93,160,208,189"/>
+<area shape="rect" id="node51" href="$integrator_8h.html" title="integrator.h" alt="" coords="677,160,763,189"/>
+<area shape="rect" id="node61" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="387,237,467,267"/>
+<area shape="rect" id="node41" href="$pair_8h.html" title="pair.h" alt="" coords="205,237,259,267"/>
+<area shape="rect" id="node53" href="$states_8h.html" title="states.h" alt="" coords="696,237,765,267"/>
+<area shape="rect" id="node55" href="$states_8cpp.html" title="states.cpp" alt="" coords="689,315,772,344"/>
+<area shape="rect" id="node68" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="787,160,851,189"/>
+<area shape="rect" id="node78" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="1027,315,1112,344"/>
+<area shape="rect" id="node85" href="$compat_8h.html" title="compat.h" alt="" coords="1105,392,1180,421"/>
+<area shape="rect" id="node93" href="$tmatrix_8cpp.html" title="tmatrix.cpp" alt="" coords="1136,315,1221,344"/>
+<area shape="rect" id="node95" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="1497,392,1615,421"/>
+<area shape="rect" id="node103" href="$logging_8h.html" title="logging.h" alt="" coords="1399,392,1473,421"/>
+<area shape="rect" id="node112" href="$eqnsys_8cpp.html" title="eqnsys.cpp" alt="" coords="1569,160,1657,189"/>
+<area shape="rect" id="node128" href="$exception_8h.html" title="exception.h" alt="" coords="1867,237,1955,267"/>
+<area shape="rect" id="node130" href="$exceptionstack_8h.html" title="exceptionstack.h" alt="" coords="1979,237,2099,267"/>
 </map>

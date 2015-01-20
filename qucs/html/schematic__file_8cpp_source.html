@@ -454,13 +454,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00371"></a>00371   stream &lt;&lt; <span class="stringliteral">&quot;  &lt;showFrame=&quot;</span> &lt;&lt; <a class="code" href="classSchematic.html#a8ac7fc26e807ae34c16a558feee062ef">showFrame</a> &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;
 <a name="l00372"></a>00372 
 <a name="l00373"></a>00373   QString t;
-<a name="l00374"></a>00374   <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(t = <a class="code" href="classSchematic.html#af741482b2b8c699cd9b12dcfaa7d45b0">Frame_Text0</a>);
+<a name="l00374"></a>00374   <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">misc::convert2ASCII</a>(t = <a class="code" href="classSchematic.html#af741482b2b8c699cd9b12dcfaa7d45b0">Frame_Text0</a>);
 <a name="l00375"></a>00375   stream &lt;&lt; <span class="stringliteral">&quot;  &lt;FrameText0=&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;
-<a name="l00376"></a>00376   <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(t = <a class="code" href="classSchematic.html#ae470a666ae88a5fd1a16b5274bd09324">Frame_Text1</a>);
+<a name="l00376"></a>00376   <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">misc::convert2ASCII</a>(t = <a class="code" href="classSchematic.html#ae470a666ae88a5fd1a16b5274bd09324">Frame_Text1</a>);
 <a name="l00377"></a>00377   stream &lt;&lt; <span class="stringliteral">&quot;  &lt;FrameText1=&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;
-<a name="l00378"></a>00378   <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(t = <a class="code" href="classSchematic.html#a6909b71d3e8f337cf5e1eeef92602c18">Frame_Text2</a>);
+<a name="l00378"></a>00378   <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">misc::convert2ASCII</a>(t = <a class="code" href="classSchematic.html#a6909b71d3e8f337cf5e1eeef92602c18">Frame_Text2</a>);
 <a name="l00379"></a>00379   stream &lt;&lt; <span class="stringliteral">&quot;  &lt;FrameText2=&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;
-<a name="l00380"></a>00380   <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(t = <a class="code" href="classSchematic.html#ad1547e6e5621e35e193ddb92116681d2">Frame_Text3</a>);
+<a name="l00380"></a>00380   <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">misc::convert2ASCII</a>(t = <a class="code" href="classSchematic.html#ad1547e6e5621e35e193ddb92116681d2">Frame_Text3</a>);
 <a name="l00381"></a>00381   stream &lt;&lt; <span class="stringliteral">&quot;  &lt;FrameText3=&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;
 <a name="l00382"></a>00382   stream &lt;&lt; <span class="stringliteral">&quot;&lt;/Properties&gt;\n&quot;</span>;
 <a name="l00383"></a>00383 
@@ -650,10 +650,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00567"></a>00567     <span class="keywordflow">else</span> <a class="code" href="classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346">SimRunScript</a> = <span class="keyword">true</span>;
 <a name="l00568"></a>00568     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;showFrame&quot;</span>)
 <a name="l00569"></a>00569     <a class="code" href="classSchematic.html#a8ac7fc26e807ae34c16a558feee062ef">showFrame</a> = nstr.at(0).toLatin1() - <span class="charliteral">&#39;0&#39;</span>;
-<a name="l00570"></a>00570     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText0&quot;</span>) <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(<a class="code" href="classSchematic.html#af741482b2b8c699cd9b12dcfaa7d45b0">Frame_Text0</a> = nstr);
-<a name="l00571"></a>00571     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText1&quot;</span>) <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(<a class="code" href="classSchematic.html#ae470a666ae88a5fd1a16b5274bd09324">Frame_Text1</a> = nstr);
-<a name="l00572"></a>00572     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText2&quot;</span>) <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(<a class="code" href="classSchematic.html#a6909b71d3e8f337cf5e1eeef92602c18">Frame_Text2</a> = nstr);
-<a name="l00573"></a>00573     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText3&quot;</span>) <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(<a class="code" href="classSchematic.html#ad1547e6e5621e35e193ddb92116681d2">Frame_Text3</a> = nstr);
+<a name="l00570"></a>00570     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText0&quot;</span>) <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(<a class="code" href="classSchematic.html#af741482b2b8c699cd9b12dcfaa7d45b0">Frame_Text0</a> = nstr);
+<a name="l00571"></a>00571     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText1&quot;</span>) <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(<a class="code" href="classSchematic.html#ae470a666ae88a5fd1a16b5274bd09324">Frame_Text1</a> = nstr);
+<a name="l00572"></a>00572     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText2&quot;</span>) <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(<a class="code" href="classSchematic.html#a6909b71d3e8f337cf5e1eeef92602c18">Frame_Text2</a> = nstr);
+<a name="l00573"></a>00573     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cstr == <span class="stringliteral">&quot;FrameText3&quot;</span>) <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(<a class="code" href="classSchematic.html#ad1547e6e5621e35e193ddb92116681d2">Frame_Text3</a> = nstr);
 <a name="l00574"></a>00574     <span class="keywordflow">else</span> {
 <a name="l00575"></a>00575       QMessageBox::critical(0, QObject::tr(<span class="stringliteral">&quot;Error&quot;</span>),
 <a name="l00576"></a>00576      QObject::tr(<span class="stringliteral">&quot;Format Error:\nUnknown property: &quot;</span>)+cstr);
@@ -936,7 +936,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00854"></a>00854   }
 <a name="l00855"></a>00855 
 <a name="l00856"></a>00856   Line = Line.mid(16, Line.length()-17);
-<a name="l00857"></a>00857   <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5">checkVersion</a>(Line)) { <span class="comment">// wrong version number ?</span>
+<a name="l00857"></a>00857   <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d">misc::checkVersion</a>(Line)) { <span class="comment">// wrong version number ?</span>
 <a name="l00858"></a>00858 
 <a name="l00859"></a>00859     QMessageBox::StandardButton result;
 <a name="l00860"></a>00860     result = QMessageBox::warning(0,
@@ -1174,7 +1174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01092"></a>01092   }
 <a name="l01093"></a>01093 
 <a name="l01094"></a>01094   Line = Line.mid(16, Line.length()-17);
-<a name="l01095"></a>01095   <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5">checkVersion</a>(Line)) { <span class="comment">// wrong version number ?</span>
+<a name="l01095"></a>01095   <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d">misc::checkVersion</a>(Line)) { <span class="comment">// wrong version number ?</span>
 <a name="l01096"></a>01096       <span class="keywordflow">if</span> (!<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a9b97a7ec519f7ea7f84995b2a3e1ce96">IgnoreFutureVersion</a>) {
 <a name="l01097"></a>01097           file.close();
 <a name="l01098"></a>01098           <span class="keywordflow">return</span> -4;
@@ -1557,7 +1557,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01475"></a>01475   QTextStream * tstream = stream;
 <a name="l01476"></a>01476   QFile ofile;
 <a name="l01477"></a>01477   <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a>) {
-<a name="l01478"></a>01478     QString f = <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>) + <span class="stringliteral">&quot;.lst&quot;</span>;
+<a name="l01478"></a>01478     QString f = <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>) + <span class="stringliteral">&quot;.lst&quot;</span>;
 <a name="l01479"></a>01479     ofile.setFileName(f);
 <a name="l01480"></a>01480     <span class="keywordflow">if</span>(!ofile.open(IO_WriteOnly)) {
 <a name="l01481"></a>01481       ErrText-&gt;insert(tr(<span class="stringliteral">&quot;ERROR: Cannot create library file \&quot;%s\&quot;.&quot;</span>).arg(f));
@@ -1644,10 +1644,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01562"></a>01562     }
 <a name="l01563"></a>01563   }
 <a name="l01564"></a>01564 
-<a name="l01565"></a>01565   QString f = <a class="code" href="misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf">properFileName</a>(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
-<a name="l01566"></a>01566   QString Type = <a class="code" href="misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc">properName</a>(f);
+<a name="l01565"></a>01565   QString f = <a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">misc::properFileName</a>(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
+<a name="l01566"></a>01566   QString Type = <a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">misc::properName</a>(f);
 <a name="l01567"></a>01567 
-<a name="l01568"></a>01568   <a class="code" href="classPainting.html">Painting</a> *pi;
+<a name="l01568"></a>01568   <a class="code" href="classPainting.html">Painting</a> *<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>;
 <a name="l01569"></a>01569   <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
 <a name="l01570"></a>01570     <span class="comment">// ..... analog subcircuit ...................................</span>
 <a name="l01571"></a>01571     (*tstream) &lt;&lt; <span class="stringliteral">&quot;\n.Def:&quot;</span> &lt;&lt; Type &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; SubcircuitPortNames.join(<span class="stringliteral">&quot; &quot;</span>);
@@ -1701,7 +1701,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01619"></a>01619           <a class="code" href="classID__Text.html">ID_Text</a> *pid = (<a class="code" href="classID__Text.html">ID_Text</a>*)pi;
 <a name="l01620"></a>01620           <span class="keywordflow">for</span>(it = pid-&gt;<a class="code" href="classID__Text.html#af2d55f77aab9bac64d87d68fd98e548d">Parameter</a>.constBegin(); it != pid-&gt;<a class="code" href="classID__Text.html#af2d55f77aab9bac64d87d68fd98e548d">Parameter</a>.constEnd(); it++) {
 <a name="l01621"></a>01621             s = (*it)-&gt;<a class="code" href="classPainting.html#a7444b8a2a64eb2776dc0c8d4d6cdd792">Name</a>.section(<span class="charliteral">&#39;=&#39;</span>, 0,0);
-<a name="l01622"></a>01622             QString v = <a class="code" href="misc_8cpp.html#a009a864394a594fe6f935b0d07cb6290">Verilog_Param</a>((*it)-&gt;Name.section(<span class="charliteral">&#39;=&#39;</span>, 1,1));
+<a name="l01622"></a>01622             QString v = <a class="code" href="namespacemisc.html#aed5619612e57189460795e5e6e834d41">misc::Verilog_Param</a>((*it)-&gt;Name.section(<span class="charliteral">&#39;=&#39;</span>, 1,1));
 <a name="l01623"></a>01623             (*tstream) &lt;&lt; <span class="stringliteral">&quot; parameter &quot;</span> &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span>;
 <a name="l01624"></a>01624           }
 <a name="l01625"></a>01625           (*tstream) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
@@ -1992,9 +1992,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01910"></a>01910         } <span class="keywordflow">else</span> {
 <a name="l01911"></a>01911           Time = pc-&gt;Props.at(1)-&gt;Value;
 <a name="l01912"></a>01912     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01913"></a>01913       <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce">Verilog_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;
+<a name="l01913"></a>01913       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;
 <a name="l01914"></a>01914     } <span class="keywordflow">else</span> {
-<a name="l01915"></a>01915       <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#ace8b5218b245e24fd9d8665ef45d6db9">VHDL_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;  <span class="comment">// wrong time format</span>
+<a name="l01915"></a>01915       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">misc::VHDL_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;  <span class="comment">// wrong time format</span>
 <a name="l01916"></a>01916     }
 <a name="l01917"></a>01917         }
 <a name="l01918"></a>01918       }
@@ -2034,7 +2034,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:24 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

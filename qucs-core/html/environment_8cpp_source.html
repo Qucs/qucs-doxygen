@@ -129,7 +129,7 @@
 <a name="l00069"></a>00069 
 <a name="l00070"></a>00070 <span class="comment">/* The copy constructor creates a new instance of the environment</span>
 <a name="l00071"></a>00071 <span class="comment">   class based on the given environment object. */</span>
-<a name="l00072"></a><a class="code" href="classqucs_1_1environment.html#ad8c99bbbacd53615cab51eb6e7fce6fb">00072</a> environment::environment (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; e)  {
+<a name="l00072"></a><a class="code" href="classqucs_1_1environment.html#ad8c99bbbacd53615cab51eb6e7fce6fb">00072</a> environment::environment (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>)  {
 <a name="l00073"></a>00073   this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = e.<a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
 <a name="l00074"></a>00074   copyVariables (e.<a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">root</a>);
 <a name="l00075"></a>00075   solvee = e.<a class="code" href="classqucs_1_1environment.html#a7074076365eb5d3c469b21e4b73eb1d1">solvee</a>;
@@ -141,7 +141,7 @@
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082 <span class="comment">/* Very alike the copy constructor the function copies the content of</span>
 <a name="l00083"></a>00083 <span class="comment">   the given environment into the calling environment. */</span>
-<a name="l00084"></a><a class="code" href="classqucs_1_1environment.html#a54789f3d29ed725ab1cc0c7a85a2c4b1">00084</a> <span class="keywordtype">void</span> environment::copy (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; e) {
+<a name="l00084"></a><a class="code" href="classqucs_1_1environment.html#a54789f3d29ed725ab1cc0c7a85a2c4b1">00084</a> <span class="keywordtype">void</span> environment::copy (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
 <a name="l00085"></a>00085   this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = e.<a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
 <a name="l00086"></a>00086   deleteVariables ();
 <a name="l00087"></a>00087   copyVariables (e.<a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">root</a>);
@@ -338,7 +338,7 @@
 <a name="l00278"></a>00278 
 <a name="l00279"></a>00279 <span class="comment">/* Puts the given variable name and its computed result into the list</span>
 <a name="l00280"></a>00280 <span class="comment">   of environment variables. */</span>
-<a name="l00281"></a><a class="code" href="classqucs_1_1environment.html#a7f7805f4bb4b8975f22d1f12372473dd">00281</a> <span class="keywordtype">void</span> environment::setValue (<span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="classqucs_1_1eqn_1_1constant.html">constant</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00281"></a><a class="code" href="classqucs_1_1environment.html#a7f7805f4bb4b8975f22d1f12372473dd">00281</a> <span class="keywordtype">void</span> environment::setValue (<span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="classqucs_1_1eqn_1_1constant.html">constant</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00282"></a>00282   <a class="code" href="classqucs_1_1variable.html">variable</a> * var = findValue (n);
 <a name="l00283"></a>00283   <span class="keywordflow">if</span> (var != NULL) {
 <a name="l00284"></a>00284     <span class="comment">// replace variable</span>
@@ -386,31 +386,31 @@
 <a name="l00326"></a>00326     <span class="keywordflow">if</span> (var-&gt;getType () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3a95af9ee92e28dd8f566d40ebec1b1217">VAR_REFERENCE</a>) {
 <a name="l00327"></a>00327       <a class="code" href="classqucs_1_1eqn_1_1reference.html">reference</a> * <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = var-&gt;getReference ();
 <a name="l00328"></a>00328       <span class="comment">// possible because no self-referring subcircuit types possible</span>
-<a name="l00329"></a>00329       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = up-&gt;<a class="code" href="classqucs_1_1environment.html#a7619de9c25d3610d90f92e7c300c4139">getDouble</a> (r-&gt;<a class="code" href="classqucs_1_1eqn_1_1reference.html#a7dce6845d7f874cb208a205c05926cc3">n</a>);
+<a name="l00329"></a>00329       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = up-&gt;<a class="code" href="classqucs_1_1environment.html#a7619de9c25d3610d90f92e7c300c4139">getDouble</a> (r-&gt;<a class="code" href="classqucs_1_1eqn_1_1reference.html#a7dce6845d7f874cb208a205c05926cc3">n</a>);
 <a name="l00330"></a>00330       <a class="code" href="classqucs_1_1eqn_1_1constant.html">constant</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = r-&gt;<a class="code" href="classqucs_1_1eqn_1_1node.html#a4e991250a45026a95ad018440e63b30b">getResult</a> ();
-<a name="l00331"></a>00331       c-&gt;<a class="code" href="classqucs_1_1eqn_1_1constant.html#a0a8d3b37f56ccf4e262b7d669e35aee5">d</a> = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
-<a name="l00332"></a>00332       setDouble (var-&gt;getName (), <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>);
+<a name="l00331"></a>00331       c-&gt;<a class="code" href="classqucs_1_1eqn_1_1constant.html#a0a8d3b37f56ccf4e262b7d669e35aee5">d</a> = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
+<a name="l00332"></a>00332       setDouble (var-&gt;getName (), <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>);
 <a name="l00333"></a>00333     }
 <a name="l00334"></a>00334   }
 <a name="l00335"></a>00335 }
 <a name="l00336"></a>00336 
 <a name="l00337"></a>00337 <span class="comment">// Returns vector of an assignment in the equation checker.</span>
-<a name="l00338"></a><a class="code" href="classqucs_1_1environment.html#a3cbe9768965bc01f91f4e816f14b76c8">00338</a> qucs::vector environment::getVector (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>)<span class="keyword"> const </span>{
+<a name="l00338"></a><a class="code" href="classqucs_1_1environment.html#a3cbe9768965bc01f91f4e816f14b76c8">00338</a> qucs::vector environment::getVector (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>)<span class="keyword"> const </span>{
 <a name="l00339"></a>00339   <span class="keywordflow">return</span> checkee-&gt;getVector (ident);
 <a name="l00340"></a>00340 }
 <a name="l00341"></a>00341 
 <a name="l00342"></a>00342 <span class="comment">// Returns double value of an assignment in the equation checker.</span>
-<a name="l00343"></a><a class="code" href="classqucs_1_1environment.html#a7619de9c25d3610d90f92e7c300c4139">00343</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> environment::getDouble (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>)<span class="keyword"> const </span>{
+<a name="l00343"></a><a class="code" href="classqucs_1_1environment.html#a7619de9c25d3610d90f92e7c300c4139">00343</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> environment::getDouble (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>)<span class="keyword"> const </span>{
 <a name="l00344"></a>00344   <span class="keywordflow">return</span> checkee-&gt;getDouble (ident);
 <a name="l00345"></a>00345 }
 <a name="l00346"></a>00346 
 <a name="l00347"></a>00347 <span class="comment">// Sets the double value of an assignment in the equation checker.</span>
-<a name="l00348"></a><a class="code" href="classqucs_1_1environment.html#a920a4f94388eef18adc7d3904d0922ae">00348</a> <span class="keywordtype">void</span> environment::setDouble (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
+<a name="l00348"></a><a class="code" href="classqucs_1_1environment.html#a920a4f94388eef18adc7d3904d0922ae">00348</a> <span class="keywordtype">void</span> environment::setDouble (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
 <a name="l00349"></a>00349   checkee-&gt;setDouble (ident, val);
 <a name="l00350"></a>00350 }
 <a name="l00351"></a>00351 
 <a name="l00352"></a>00352 <span class="comment">// Return double value of a variable in the environment.</span>
-<a name="l00353"></a><a class="code" href="classqucs_1_1environment.html#afcfc52e410e2f850ce3258131a57ffe3">00353</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> environment::getDoubleConstant (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>)<span class="keyword"> const </span>{
+<a name="l00353"></a><a class="code" href="classqucs_1_1environment.html#afcfc52e410e2f850ce3258131a57ffe3">00353</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> environment::getDoubleConstant (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>)<span class="keyword"> const </span>{
 <a name="l00354"></a>00354   <a class="code" href="classqucs_1_1variable.html">variable</a> * var = getVariable (ident);
 <a name="l00355"></a>00355   <span class="keywordflow">if</span> (var != NULL &amp;&amp; var-&gt;<a class="code" href="classqucs_1_1variable.html#a0a1b824cf89b81b99e78b4984cd6d90f">getType</a> () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3ad0870e1746c3db803845652ff721b40b">VAR_CONSTANT</a>) {
 <a name="l00356"></a>00356     <a class="code" href="classqucs_1_1eqn_1_1constant.html">constant</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = var-&gt;<a class="code" href="classqucs_1_1variable.html#a59ee8a97a1238e33e3b59b873eeab8e5">getConstant</a> ();
@@ -420,7 +420,7 @@
 <a name="l00360"></a>00360 }
 <a name="l00361"></a>00361 
 <a name="l00362"></a>00362 <span class="comment">// Sets the double value of a variable in the environment.</span>
-<a name="l00363"></a><a class="code" href="classqucs_1_1environment.html#ad8218905e7c7f506255dcfefea6fd14c">00363</a> <span class="keywordtype">void</span> environment::setDoubleConstant (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
+<a name="l00363"></a><a class="code" href="classqucs_1_1environment.html#ad8218905e7c7f506255dcfefea6fd14c">00363</a> <span class="keywordtype">void</span> environment::setDoubleConstant (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
 <a name="l00364"></a>00364   <a class="code" href="classqucs_1_1variable.html">variable</a> * var = getVariable (ident);
 <a name="l00365"></a>00365   <span class="keywordflow">if</span> (var != NULL &amp;&amp; var-&gt;<a class="code" href="classqucs_1_1variable.html#a0a1b824cf89b81b99e78b4984cd6d90f">getType</a> () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3ad0870e1746c3db803845652ff721b40b">VAR_CONSTANT</a>) {
 <a name="l00366"></a>00366     <a class="code" href="classqucs_1_1eqn_1_1constant.html">constant</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = var-&gt;<a class="code" href="classqucs_1_1variable.html#a59ee8a97a1238e33e3b59b873eeab8e5">getConstant</a> ();
@@ -429,7 +429,7 @@
 <a name="l00369"></a>00369 }
 <a name="l00370"></a>00370 
 <a name="l00371"></a>00371 <span class="comment">// Returns the referenced value of a variable in the environment.</span>
-<a name="l00372"></a><a class="code" href="classqucs_1_1environment.html#a0876c2f53b5543d3d84b05757191a1ea">00372</a> <span class="keywordtype">char</span> * environment::getDoubleReference (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>)<span class="keyword"> const </span>{
+<a name="l00372"></a><a class="code" href="classqucs_1_1environment.html#a0876c2f53b5543d3d84b05757191a1ea">00372</a> <span class="keywordtype">char</span> * environment::getDoubleReference (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>)<span class="keyword"> const </span>{
 <a name="l00373"></a>00373   <a class="code" href="classqucs_1_1variable.html">variable</a> * var = getVariable (ident);
 <a name="l00374"></a>00374   <span class="keywordflow">if</span> (var != NULL &amp;&amp;  var-&gt;<a class="code" href="classqucs_1_1variable.html#a0a1b824cf89b81b99e78b4984cd6d90f">getType</a> () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3a95af9ee92e28dd8f566d40ebec1b1217">VAR_REFERENCE</a>) {
 <a name="l00375"></a>00375     <a class="code" href="classqucs_1_1eqn_1_1reference.html">reference</a> * <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = var-&gt;<a class="code" href="classqucs_1_1variable.html#ae927974b84291471731014398b3b5967">getReference</a> ();
@@ -439,7 +439,7 @@
 <a name="l00379"></a>00379 }
 <a name="l00380"></a>00380 
 <a name="l00381"></a>00381 <span class="comment">// Sets the referenced value of a variable in the environment.</span>
-<a name="l00382"></a><a class="code" href="classqucs_1_1environment.html#a56ac1ae5c5b6cd4d5552e18792d294b0">00382</a> <span class="keywordtype">void</span> environment::setDoubleReference (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>, <span class="keywordtype">char</span> * val) {
+<a name="l00382"></a><a class="code" href="classqucs_1_1environment.html#a56ac1ae5c5b6cd4d5552e18792d294b0">00382</a> <span class="keywordtype">void</span> environment::setDoubleReference (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>, <span class="keywordtype">char</span> * val) {
 <a name="l00383"></a>00383   <a class="code" href="classqucs_1_1variable.html">variable</a> * var = getVariable (ident);
 <a name="l00384"></a>00384   <span class="keywordflow">if</span> (var != NULL) {
 <a name="l00385"></a>00385     <span class="keywordflow">if</span> (var-&gt;<a class="code" href="classqucs_1_1variable.html#a0a1b824cf89b81b99e78b4984cd6d90f">getType</a> () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3ad0870e1746c3db803845652ff721b40b">VAR_CONSTANT</a>) {
@@ -479,7 +479,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

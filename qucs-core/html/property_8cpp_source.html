@@ -103,10 +103,10 @@
 <a name="l00043"></a>00043 
 <a name="l00044"></a>00044 <span class="comment">// Constructor creates an unnamed instance of the property class.</span>
 <a name="l00045"></a><a class="code" href="classqucs_1_1property.html#ae0fc881a26bb44b7a6f7ad0eb315998b">00045</a> property::property () :
-<a name="l00046"></a>00046   str()
+<a name="l00046"></a>00046   <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>()
 <a name="l00047"></a>00047 {
 <a name="l00048"></a>00048   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa48828319e1b340b52d82877b6d9ee08c">PROPERTY_UNKNOWN</a>;
-<a name="l00049"></a>00049   <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = 0.0;
+<a name="l00049"></a>00049   <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = 0.0;
 <a name="l00050"></a>00050   <a class="code" href="classqucs_1_1property.html#a48d4ce51264ec11749e13ffa8f0b44c5">var</a> = NULL;
 <a name="l00051"></a>00051   <a class="code" href="classqucs_1_1property.html#a6251181417a778a73bddf56278edc56b">def</a> = <span class="keyword">false</span>;
 <a name="l00052"></a>00052 }
@@ -146,14 +146,14 @@
 <a name="l00086"></a><a class="code" href="classqucs_1_1property.html#ac914f658980c2bfc425f7d2861fd5f68">00086</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * property::getString (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
 <a name="l00087"></a>00087   <span class="keywordflow">if</span> (var != NULL)
 <a name="l00088"></a>00088     <span class="keywordflow">return</span> <a class="code" href="property_8cpp.html#ab14b3c1e9fec18e9a3000b0b1a80ac77">S</a> (var-&gt;getConstant ());
-<a name="l00089"></a>00089   <span class="keywordflow">return</span> str.c_str();
+<a name="l00089"></a>00089   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>.c_str();
 <a name="l00090"></a>00090 }
 <a name="l00091"></a>00091 
 <a name="l00092"></a>00092 <span class="comment">// Returns the property&#39;s reference if it is a variable.</span>
 <a name="l00093"></a><a class="code" href="classqucs_1_1property.html#a158f7fae9743748d7c277e2b0f8bf2e4">00093</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * property::getReference (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
 <a name="l00094"></a>00094   <span class="keywordflow">if</span> (var != NULL)
 <a name="l00095"></a>00095     <span class="keywordflow">return</span> var-&gt;getName ();
-<a name="l00096"></a>00096   <span class="keywordflow">return</span> str.c_str();
+<a name="l00096"></a>00096   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>.c_str();
 <a name="l00097"></a>00097 }
 <a name="l00098"></a>00098 
 <a name="l00099"></a>00099 <span class="comment">// Returns the property&#39;s value as double.</span>
@@ -164,25 +164,25 @@
 <a name="l00104"></a>00104     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (var-&gt;getType () == <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3a95af9ee92e28dd8f566d40ebec1b1217">VAR_REFERENCE</a>)
 <a name="l00105"></a>00105       <span class="keywordflow">return</span> <a class="code" href="property_8cpp.html#a855c89a2038738d883b45a258d5e4b0a">D</a> (var-&gt;getReference()-&gt;getResult ());
 <a name="l00106"></a>00106   }
-<a name="l00107"></a>00107   <span class="keywordflow">return</span> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00107"></a>00107   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00108"></a>00108 }
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110 <span class="comment">// Returns the property&#39;s value as integer.</span>
 <a name="l00111"></a><a class="code" href="classqucs_1_1property.html#a8ed43e83318f11627f9b691c25f8f2d7">00111</a> <span class="keywordtype">int</span> property::getInteger (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
 <a name="l00112"></a>00112   <span class="keywordflow">if</span> (var != NULL) <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">std::floor</a> (<a class="code" href="property_8cpp.html#a855c89a2038738d883b45a258d5e4b0a">D</a> (var-&gt;getConstant ()));
-<a name="l00113"></a>00113   <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">std::floor</a> (<a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>);
+<a name="l00113"></a>00113   <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">std::floor</a> (<a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>);
 <a name="l00114"></a>00114 }
 <a name="l00115"></a>00115 
 <a name="l00116"></a>00116 <span class="comment">// Sets the property&#39;s value being a double.</span>
 <a name="l00117"></a><a class="code" href="classqucs_1_1property.html#a0afe6395bb14034ca4ae1a7d7b4632e0">00117</a> <span class="keywordtype">void</span> property::set (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
 <a name="l00118"></a>00118   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fadcb2e48bcfc687323b6568b21a33e103">PROPERTY_DOUBLE</a>;
-<a name="l00119"></a>00119   <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = val;
+<a name="l00119"></a>00119   <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = val;
 <a name="l00120"></a>00120 }
 <a name="l00121"></a>00121 
 <a name="l00122"></a>00122 <span class="comment">// Sets the property&#39;s value being an integer.</span>
 <a name="l00123"></a><a class="code" href="classqucs_1_1property.html#a986e7a4047c8af3c942b3a344e12a34e">00123</a> <span class="keywordtype">void</span> property::set (<span class="keyword">const</span> <span class="keywordtype">int</span> val) {
 <a name="l00124"></a>00124   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa540278338bff9dcde5070485ddcd7765">PROPERTY_INT</a>;
-<a name="l00125"></a>00125   <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = val;
+<a name="l00125"></a>00125   <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = val;
 <a name="l00126"></a>00126 }
 <a name="l00127"></a>00127 
 <a name="l00128"></a>00128 <span class="comment">// Sets the property&#39;s value being a variable.</span>
@@ -194,7 +194,7 @@
 <a name="l00134"></a>00134 <span class="comment">// Sets the property&#39;s value being a string.</span>
 <a name="l00135"></a><a class="code" href="classqucs_1_1property.html#a0817412d79db5b6079084d56fe740ee3">00135</a> <span class="keywordtype">void</span> property::set (<span class="keyword">const</span> std::string &amp;val) {
 <a name="l00136"></a>00136   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa0ddb5bb41e3d8f88564d6e14cd57348b">PROPERTY_STR</a>;
-<a name="l00137"></a>00137   this-&gt;str = val;
+<a name="l00137"></a>00137   this-&gt;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = val;
 <a name="l00138"></a>00138 }
 <a name="l00139"></a>00139 
 <a name="l00140"></a>00140 <span class="comment">// This function returns a text representation of the property object.</span>
@@ -204,13 +204,13 @@
 <a name="l00144"></a>00144     <span class="keywordflow">return</span> <span class="stringliteral">&quot;(no such type)&quot;</span>;
 <a name="l00145"></a>00145     <span class="keywordflow">break</span>;
 <a name="l00146"></a>00146   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa540278338bff9dcde5070485ddcd7765">PROPERTY_INT</a>:
-<a name="l00147"></a>00147     <span class="keywordflow">return</span> std::to_string(<a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">std::floor</a>(<a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>));
+<a name="l00147"></a>00147     <span class="keywordflow">return</span> std::to_string(<a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">std::floor</a>(<a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>));
 <a name="l00148"></a>00148     <span class="keywordflow">break</span>;
 <a name="l00149"></a>00149   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa0ddb5bb41e3d8f88564d6e14cd57348b">PROPERTY_STR</a>:
-<a name="l00150"></a>00150     <span class="keywordflow">return</span> std::string(this-&gt;str);
+<a name="l00150"></a>00150     <span class="keywordflow">return</span> std::string(this-&gt;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>);
 <a name="l00151"></a>00151     <span class="keywordflow">break</span>;
 <a name="l00152"></a>00152   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fadcb2e48bcfc687323b6568b21a33e103">PROPERTY_DOUBLE</a>:
-<a name="l00153"></a>00153     <span class="keywordflow">return</span> std::to_string(<a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>);
+<a name="l00153"></a>00153     <span class="keywordflow">return</span> std::to_string(<a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>);
 <a name="l00154"></a>00154     <span class="keywordflow">break</span>;
 <a name="l00155"></a>00155   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#aa201f34ba2d93803d5983b8ca041ef2fa6a1810f754d5e8514d9b5022c42d3784">PROPERTY_VAR</a>:
 <a name="l00156"></a>00156     <span class="keywordflow">return</span> var-&gt;getName();
@@ -224,7 +224,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

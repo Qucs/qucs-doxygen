@@ -186,18 +186,18 @@
 <a name="l00126"></a>00126 <span class="comment">/* This function returns a static text representation with the</span>
 <a name="l00127"></a>00127 <span class="comment">   &#39;n[r,c]&#39; scheme indicating a matrix (vector) entry. */</span>
 <a name="l00128"></a><a class="code" href="classqucs_1_1matvec.html#a47c849c18394e60532c3797b76e91a10">00128</a> <span class="keywordtype">char</span> * matvec::createMatrixString (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <span class="keywordtype">int</span> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>) {
-<a name="l00129"></a>00129   <span class="keyword">static</span> <span class="keywordtype">char</span> str[256]; <span class="comment">// hopefully enough</span>
+<a name="l00129"></a>00129   <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>[256]; <span class="comment">// hopefully enough</span>
 <a name="l00130"></a>00130   sprintf (str, <span class="stringliteral">&quot;%s[%d,%d]&quot;</span>, n, r + 1, c + 1);
-<a name="l00131"></a>00131   <span class="keywordflow">return</span> str;
+<a name="l00131"></a>00131   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00132"></a>00132 }
 <a name="l00133"></a>00133 
 <a name="l00134"></a>00134 <span class="comment">/* This function also returns a static text representation with the</span>
 <a name="l00135"></a>00135 <span class="comment">   &#39;n[r,c]&#39; scheme indicating a matrix (vector) entry but with</span>
 <a name="l00136"></a>00136 <span class="comment">   different arguments. */</span>
 <a name="l00137"></a><a class="code" href="classqucs_1_1matvec.html#a62b95221d5365036b92ad9ad1ec81697">00137</a> <span class="keywordtype">char</span> * matvec::createMatrixString (<span class="keywordtype">char</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <span class="keywordtype">int</span> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>) {
-<a name="l00138"></a>00138   <span class="keyword">static</span> <span class="keywordtype">char</span> str[256]; <span class="comment">// hopefully enough</span>
+<a name="l00138"></a>00138   <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>[256]; <span class="comment">// hopefully enough</span>
 <a name="l00139"></a>00139   sprintf (str, <span class="stringliteral">&quot;%c[%d,%d]&quot;</span>, n, r + 1, c + 1);
-<a name="l00140"></a>00140   <span class="keywordflow">return</span> str;
+<a name="l00140"></a>00140   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00141"></a>00141 }
 <a name="l00142"></a>00142 
 <a name="l00143"></a>00143 <span class="comment">/* The function investigates the given vectors name.  If this name</span>
@@ -355,14 +355,14 @@
 <a name="l00295"></a>00295 }
 <a name="l00296"></a>00296 
 <a name="l00297"></a>00297 <span class="comment">// Matrix vector scalar addition.</span>
-<a name="l00298"></a><a class="code" href="namespacequcs.html#a690ce697ef6ba7b04bed7da16f4e85ec">00298</a> matvec <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator + </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00298"></a><a class="code" href="namespacequcs.html#a690ce697ef6ba7b04bed7da16f4e85ec">00298</a> matvec <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator + </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00299"></a>00299   matvec res (a.getSize (), a.getRows (), a.getCols ());
-<a name="l00300"></a>00300   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) + <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00300"></a>00300   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) + <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00301"></a>00301   <span class="keywordflow">return</span> res;
 <a name="l00302"></a>00302 }
 <a name="l00303"></a>00303 
 <a name="l00304"></a>00304 <span class="comment">// Matrix vector scalar addition in different order.</span>
-<a name="l00305"></a><a class="code" href="namespacequcs.html#aad47e069141abeef36e0a3d12c666510">00305</a> matvec <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator + </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, matvec a) {
+<a name="l00305"></a><a class="code" href="namespacequcs.html#aad47e069141abeef36e0a3d12c666510">00305</a> matvec <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator + </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, matvec a) {
 <a name="l00306"></a>00306   matvec res (a.getSize (), a.getRows (), a.getCols ());
 <a name="l00307"></a>00307   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (d + a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00308"></a>00308   <span class="keywordflow">return</span> res;
@@ -383,14 +383,14 @@
 <a name="l00323"></a>00323 }
 <a name="l00324"></a>00324 
 <a name="l00325"></a>00325 <span class="comment">// Matrix vector scalar subtraction.</span>
-<a name="l00326"></a><a class="code" href="namespacequcs.html#ab2b7a38bb9f06c888fdb6216addcd76b">00326</a> matvec <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator - </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00326"></a><a class="code" href="namespacequcs.html#ab2b7a38bb9f06c888fdb6216addcd76b">00326</a> matvec <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator - </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00327"></a>00327   matvec res (a.getSize (), a.getRows (), a.getCols ());
-<a name="l00328"></a>00328   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) - <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00328"></a>00328   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00329"></a>00329   <span class="keywordflow">return</span> res;
 <a name="l00330"></a>00330 }
 <a name="l00331"></a>00331 
 <a name="l00332"></a>00332 <span class="comment">// Matrix vector scalar subtraction in different order.</span>
-<a name="l00333"></a><a class="code" href="namespacequcs.html#ac5e3078be28ae39a97ce4a61f40a07dc">00333</a> matvec <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator - </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, matvec a) {
+<a name="l00333"></a><a class="code" href="namespacequcs.html#ac5e3078be28ae39a97ce4a61f40a07dc">00333</a> matvec <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator - </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, matvec a) {
 <a name="l00334"></a>00334   matvec res (a.getSize (), a.getRows (), a.getCols ());
 <a name="l00335"></a>00335   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (d - a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00336"></a>00336   <span class="keywordflow">return</span> res;
@@ -464,15 +464,15 @@
 <a name="l00404"></a>00404 }
 <a name="l00405"></a>00405 
 <a name="l00406"></a>00406 <span class="comment">// Scalar matrix vector scaling.</span>
-<a name="l00407"></a><a class="code" href="namespacequcs.html#aa6f798b54f4bbb2b39608bc10ce41ceb">00407</a> matvec <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator * </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00407"></a><a class="code" href="namespacequcs.html#aa6f798b54f4bbb2b39608bc10ce41ceb">00407</a> matvec <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator * </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00408"></a>00408   matvec res (a.getSize (), a.getRows (), a.getCols ());
-<a name="l00409"></a>00409   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00409"></a>00409   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00410"></a>00410   <span class="keywordflow">return</span> res;
 <a name="l00411"></a>00411 }
 <a name="l00412"></a>00412 
 <a name="l00413"></a>00413 <span class="comment">// Scalar matrix vector scaling in different order.</span>
-<a name="l00414"></a><a class="code" href="namespacequcs.html#a2aee9e74b975f57bd2a6b5c52ecef59f">00414</a> matvec <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator * </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, matvec a) {
-<a name="l00415"></a>00415   <span class="keywordflow">return</span> a * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00414"></a><a class="code" href="namespacequcs.html#a2aee9e74b975f57bd2a6b5c52ecef59f">00414</a> matvec <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator * </a>(<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, matvec a) {
+<a name="l00415"></a>00415   <span class="keywordflow">return</span> a * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00416"></a>00416 }
 <a name="l00417"></a>00417 
 <a name="l00418"></a>00418 <span class="comment">// Matrix vector scaling by a second vector.</span>
@@ -496,9 +496,9 @@
 <a name="l00436"></a>00436 }
 <a name="l00437"></a>00437 
 <a name="l00438"></a>00438 <span class="comment">// Scalar matrix vector scaling.</span>
-<a name="l00439"></a><a class="code" href="namespacequcs.html#ad481bfbdfb1872b86cc211720dab2b6a">00439</a> matvec <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator / </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00439"></a><a class="code" href="namespacequcs.html#ad481bfbdfb1872b86cc211720dab2b6a">00439</a> matvec <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator / </a>(matvec a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00440"></a>00440   matvec res (a.getSize (), a.getRows (), a.getCols ());
-<a name="l00441"></a>00441   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00441"></a>00441   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00442"></a>00442   <span class="keywordflow">return</span> res;
 <a name="l00443"></a>00443 }
 <a name="l00444"></a>00444 
@@ -635,7 +635,7 @@
 <a name="l00575"></a>00575 }
 <a name="l00576"></a>00576 
 <a name="l00577"></a><a class="code" href="namespacequcs.html#a55d99f30c2141f7a68ef8cbe1db7e92c">00577</a> matvec <a class="code" href="namespacequcs.html#a398c66cb517cc637f7df2bd9085dda93" title="S params to S params.">stos</a> (matvec s, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> zref, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z0) {
-<a name="l00578"></a>00578   <span class="keywordtype">int</span> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = s.getRows ();
+<a name="l00578"></a>00578   <span class="keywordtype">int</span> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = s.getRows ();
 <a name="l00579"></a>00579   <span class="keywordflow">return</span> <a class="code" href="namespacequcs.html#a398c66cb517cc637f7df2bd9085dda93" title="S params to S params.">stos</a> (s, qucs::vector (d, zref), qucs::vector (d, z0));
 <a name="l00580"></a>00580 }
 <a name="l00581"></a>00581 
@@ -744,12 +744,24 @@
 <a name="l00684"></a>00684   <span class="keywordflow">return</span> res;
 <a name="l00685"></a>00685 }
 <a name="l00686"></a>00686 
-<a name="l00687"></a>00687 } <span class="comment">// namespace qucs</span>
+<a name="l00687"></a><a class="code" href="namespacequcs.html#a29d9b9b72d6f1b553dec525eb42920ff">00687</a> matvec <a class="code" href="namespacequcs.html#ab7f3543c886838b0fc2a3b43eaad66de" title="rad2deg Convert radian to degree">rad2deg</a> (matvec a) {
+<a name="l00688"></a>00688   matvec res (a.getSize (), a.getRows (), a.getCols ());
+<a name="l00689"></a>00689   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (<a class="code" href="namespacequcs.html#ab7f3543c886838b0fc2a3b43eaad66de" title="rad2deg Convert radian to degree">rad2deg</a> (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00690"></a>00690   <span class="keywordflow">return</span> res;
+<a name="l00691"></a>00691 }
+<a name="l00692"></a>00692 
+<a name="l00693"></a><a class="code" href="namespacequcs.html#ab0e1208d711dae4b372be1d29f9539f8">00693</a> matvec <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (matvec a) {
+<a name="l00694"></a>00694   matvec res (a.getSize (), a.getRows (), a.getCols ());
+<a name="l00695"></a>00695   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; a.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) res.set (<a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (a.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00696"></a>00696   <span class="keywordflow">return</span> res;
+<a name="l00697"></a>00697 }
+<a name="l00698"></a>00698 
+<a name="l00699"></a>00699 } <span class="comment">// namespace qucs</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -135,8 +135,8 @@
 <a name="l00075"></a>00075   L = 440.0 * h * (1.0 - 1.062 * <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (-0.177 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (Wh, 0.947)));
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077   <span class="comment">// calculate Z-parameters</span>
-<a name="l00078"></a>00078   z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (M_PI * frequency * C));
-<a name="l00079"></a>00079   z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * M_PI * frequency * L) + z21;
+<a name="l00078"></a>00078   z21 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, -0.5e12 / (pi * frequency * C));
+<a name="l00079"></a>00079   z11 = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (0.0, 2e-9 * pi * frequency * L) + z21;
 <a name="l00080"></a>00080   matrix z (2);
 <a name="l00081"></a>00081   z.set (0, 0, z11);
 <a name="l00082"></a>00082   z.set (0, 1, z21);
@@ -176,7 +176,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

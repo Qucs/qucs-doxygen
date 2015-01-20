@@ -99,24 +99,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00022"></a>00022 <span class="keyword">class </span>QString;
 <a name="l00023"></a>00023 
-<a name="l00024"></a>00024 QString <a class="code" href="misc_8cpp.html#aaddc592d5dfcc5123c960f5fd6bcfd37">complexRect</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
-<a name="l00025"></a>00025 QString <a class="code" href="misc_8cpp.html#a8c01d2bcd3fadc8747860193f6504ef8">complexDeg</a> (<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
-<a name="l00026"></a>00026 QString <a class="code" href="misc_8cpp.html#a68f1c383d1d493cd0068fbb5e68e7a55">complexRad</a> (<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
-<a name="l00027"></a>00027 QString <a class="code" href="misc_8cpp.html#a9a6a9ccafe894554d51b843565fc4da8">StringNum</a>  (<span class="keywordtype">double</span>, <span class="keywordtype">char</span> form=<span class="charliteral">&#39;g&#39;</span>, <span class="keywordtype">int</span> Precision=3);
-<a name="l00028"></a>00028 <span class="keywordtype">void</span>    <a class="code" href="misc_8cpp.html#a1de0232c061a6175aabed4c9894bd560">str2num</a>    (<span class="keyword">const</span> QString&amp;, <span class="keywordtype">double</span>&amp;, QString&amp;, <span class="keywordtype">double</span>&amp;);
-<a name="l00029"></a>00029 QString <a class="code" href="misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f">num2str</a>    (<span class="keywordtype">double</span>);
-<a name="l00030"></a>00030 QString <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(<span class="keywordtype">double</span>);
-<a name="l00031"></a>00031 <span class="keywordtype">void</span>    <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(QString&amp;);
-<a name="l00032"></a>00032 <span class="keywordtype">void</span>    <a class="code" href="misc_8cpp.html#aac7c3d2461923c839b5b8a9966fa2f0f">convert2ASCII</a>(QString&amp;);
-<a name="l00033"></a>00033 QString <a class="code" href="misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc">properName</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00034"></a>00034 QString <a class="code" href="misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691">properAbsFileName</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00035"></a>00035 QString <a class="code" href="misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf">properFileName</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00036"></a>00036 <span class="keywordtype">bool</span>    <a class="code" href="misc_8cpp.html#ace8b5218b245e24fd9d8665ef45d6db9">VHDL_Time</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
-<a name="l00037"></a>00037 <span class="keywordtype">bool</span>    <a class="code" href="misc_8cpp.html#a00c7621b752cf00f429c32d5ac361dc1">VHDL_Delay</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
-<a name="l00038"></a>00038 <span class="keywordtype">bool</span>    <a class="code" href="misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce">Verilog_Time</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
-<a name="l00039"></a>00039 <span class="keywordtype">bool</span>    <a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
-<a name="l00040"></a>00040 QString <a class="code" href="misc_8cpp.html#a009a864394a594fe6f935b0d07cb6290">Verilog_Param</a>(<span class="keyword">const</span> QString);
-<a name="l00041"></a>00041 <span class="keywordtype">bool</span>    <a class="code" href="misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5">checkVersion</a>(QString&amp;);
+<a name="l00024"></a><a class="code" href="namespacemisc.html">00024</a> <span class="keyword">namespace </span>misc {
+<a name="l00025"></a>00025   QString <a class="code" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57">complexRect</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
+<a name="l00026"></a>00026   QString <a class="code" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78">complexDeg</a> (<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
+<a name="l00027"></a>00027   QString <a class="code" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828">complexRad</a> (<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span> Precision=3);
+<a name="l00028"></a>00028   QString <a class="code" href="namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e">StringNum</a>  (<span class="keywordtype">double</span>, <span class="keywordtype">char</span> form=<span class="charliteral">&#39;g&#39;</span>, <span class="keywordtype">int</span> Precision=3);
+<a name="l00029"></a>00029   <span class="keywordtype">void</span>    <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">str2num</a>    (<span class="keyword">const</span> QString&amp;, <span class="keywordtype">double</span>&amp;, QString&amp;, <span class="keywordtype">double</span>&amp;);
+<a name="l00030"></a>00030   QString <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">num2str</a>    (<span class="keywordtype">double</span>);
+<a name="l00031"></a>00031   QString <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">StringNiceNum</a>(<span class="keywordtype">double</span>);
+<a name="l00032"></a>00032   <span class="keywordtype">void</span>    <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">convert2Unicode</a>(QString&amp;);
+<a name="l00033"></a>00033   <span class="keywordtype">void</span>    <a class="code" href="namespacemisc.html#a66bb5f145c5c665239d9973ecc5872d9">convert2ASCII</a>(QString&amp;);
+<a name="l00034"></a>00034   QString <a class="code" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1">properName</a>(<span class="keyword">const</span> QString&amp;);
+<a name="l00035"></a>00035   QString <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">properAbsFileName</a>(<span class="keyword">const</span> QString&amp;);
+<a name="l00036"></a>00036   QString <a class="code" href="namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43">properFileName</a>(<span class="keyword">const</span> QString&amp;);
+<a name="l00037"></a>00037   <span class="keywordtype">bool</span>    <a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">VHDL_Time</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
+<a name="l00038"></a>00038   <span class="keywordtype">bool</span>    <a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">VHDL_Delay</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
+<a name="l00039"></a>00039   <span class="keywordtype">bool</span>    <a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">Verilog_Time</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
+<a name="l00040"></a>00040   <span class="keywordtype">bool</span>    <a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">Verilog_Delay</a>(QString&amp;, <span class="keyword">const</span> QString&amp;);
+<a name="l00041"></a>00041   QString <a class="code" href="namespacemisc.html#aed5619612e57189460795e5e6e834d41">Verilog_Param</a>(<span class="keyword">const</span> QString);
+<a name="l00042"></a>00042   <span class="keywordtype">bool</span>    <a class="code" href="namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d">checkVersion</a>(QString&amp;);
+<a name="l00043"></a>00043 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -135,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

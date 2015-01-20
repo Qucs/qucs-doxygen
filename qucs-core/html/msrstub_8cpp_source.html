@@ -101,21 +101,21 @@
 <a name="l00041"></a>00041                                     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> alpha, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er,
 <a name="l00042"></a>00042                                     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l0 = <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> / frequency;
-<a name="l00045"></a>00045   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W = (r1 + (r2 - r1) / 2) * <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (alpha);
+<a name="l00044"></a>00044   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l0 = C0 / frequency;
+<a name="l00045"></a>00045   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W = (r1 + (r2 - r1) / 2) * <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (alpha);
 <a name="l00046"></a>00046   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ereff = (er + 1.0) / 2 + (er - 1.0) /
 <a name="l00047"></a>00047     (2.0 * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 + 10.0 * h / W));
-<a name="l00048"></a>00048   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k = 2.0 * M_PI * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ereff) / l0;
+<a name="l00048"></a>00048   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k = 2.0 * pi * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ereff) / l0;
 <a name="l00049"></a>00049   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = k * r1;
 <a name="l00050"></a>00050   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> b = k * r2;
-<a name="l00051"></a>00051   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Z_0 = <a class="code" href="group__qucsPhysConstants.html#ga49a0a00a612635d79a06bbe9fc15c094" title="Wave impedance in vacuum ( )">Z0</a> / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ereff) * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (j0 (a)) + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (y0 (a))) /
+<a name="l00051"></a>00051   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Z_0 = Z0 / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ereff) * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (j0 (a)) + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (y0 (a))) /
 <a name="l00052"></a>00052     <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (j1 (a)) + <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (y1 (a)));
 <a name="l00053"></a>00053   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> theta_1 = <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (y0 (a) / j0 (a));
 <a name="l00054"></a>00054   <span class="comment">//  nr_double_t theta_2 = atan (y0 (b) / j0 (b));</span>
 <a name="l00055"></a>00055   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> phi_1 = <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (-j1 (a) / y1 (a));
 <a name="l00056"></a>00056   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> phi_2 = <a class="code" href="namespacequcs.html#a9a4d13fb38edb7f4da116f69e3ce3a2a" title="Compute complex arc tangent.">qucs::atan</a> (-j1 (b) / y1 (b));
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> X1 = h * Z_0 / (2.0 * M_PI * r1) * 360.0 / alpha *
+<a name="l00058"></a>00058   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> X1 = h * Z_0 / (2.0 * pi * r1) * 360.0 / alpha *
 <a name="l00059"></a>00059     <a class="code" href="namespacequcs.html#a0c5661ff24d7ae8b7c8038c919dc2b92" title="Compute complex cosine.">qucs::cos</a> (theta_1 - phi_2) / <a class="code" href="namespacequcs.html#a17a5ac6a13d0e5d9c1180f3fc8b1a243" title="Compute complex sine.">qucs::sin</a> (phi_1 - phi_2);
 <a name="l00060"></a>00060 
 <a name="l00061"></a>00061   <span class="keywordflow">return</span> X1;
@@ -164,7 +164,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

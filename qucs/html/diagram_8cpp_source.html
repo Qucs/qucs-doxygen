@@ -1493,14 +1493,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01444"></a>01444   <span class="comment">// ....................................................</span>
 <a name="l01445"></a>01445   <span class="comment">// draw arcs with im(z)=const</span>
 <a name="l01446"></a>01446   <span class="keywordflow">for</span>(m=1; m&lt;GridY; m++) {
-<a name="l01447"></a>01447     n_sin = M_PI*double(m)/double(GridY);
+<a name="l01447"></a>01447     n_sin = <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>*double(m)/double(GridY);
 <a name="l01448"></a>01448     n_cos = cos(n_sin);
 <a name="l01449"></a>01449     n_sin = sin(n_sin);
 <a name="l01450"></a>01450     im = (1.0-n_cos)/n_sin * pow(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>,0.7); <span class="comment">// up^0.7 is beauty correction</span>
 <a name="l01451"></a>01451     y  = int(im/Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>*<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> + 0.5);  <span class="comment">// diameter</span>
 <a name="l01452"></a>01452 
 <a name="l01453"></a>01453     <span class="keywordflow">if</span>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a> &lt;= 1.0) {       <span class="comment">// Smith chart with |r|=1</span>
-<a name="l01454"></a>01454       beta  = int(16.0*180.0*atan2(n_sin-im,n_cos-1.0)/M_PI - 0.5);
+<a name="l01454"></a>01454       beta  = int(16.0*180.0*atan2(n_sin-im,n_cos-1.0)/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a> - 0.5);
 <a name="l01455"></a>01455       <span class="keywordflow">if</span>(beta&lt;0) beta += 16*360;
 <a name="l01456"></a>01456       theta = 16*270-beta;
 <a name="l01457"></a>01457     }
@@ -1520,13 +1520,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01471"></a>01471   root  = (real1+1.0)*(real1+1.0) + im*im;
 <a name="l01472"></a>01472   n_cos = (real1*real1 + im*im - 1.0) / root;
 <a name="l01473"></a>01473   n_sin = 2.0*im / root;
-<a name="l01474"></a>01474   beta  = int(16.0*180.0*atan2(n_sin-1.0/im,n_cos-1.0)/M_PI);
+<a name="l01474"></a>01474   beta  = int(16.0*180.0*atan2(n_sin-1.0/im,n_cos-1.0)/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>);
 <a name="l01475"></a>01475   <span class="keywordflow">if</span>(beta&lt;0) beta += 16*360;
 <a name="l01476"></a>01476 
 <a name="l01477"></a>01477   root  = (real2+1.0)*(real2+1.0) + im*im;
 <a name="l01478"></a>01478   n_cos = (real2*real2 + im*im - 1.0) / root;
 <a name="l01479"></a>01479   n_sin = 2.0*im / root;
-<a name="l01480"></a>01480   theta  = int(16.0*180.0*atan2(n_sin-1/im,n_cos-1)/M_PI);
+<a name="l01480"></a>01480   theta  = int(16.0*180.0*atan2(n_sin-1/im,n_cos-1)/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>);
 <a name="l01481"></a>01481   <span class="keywordflow">if</span>(theta&lt;0) theta += 16*360;
 <a name="l01482"></a>01482   theta = theta - beta;   <span class="comment">// arc length</span>
 <a name="l01483"></a>01483   <span class="keywordflow">if</span>(theta &lt; 0) theta = 16*360+theta;
@@ -1573,7 +1573,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01524"></a>01524       <span class="keywordflow">if</span>(im &gt;= 1.0)
 <a name="l01525"></a>01525         <a class="code" href="classDiagram.html#a8c8e3eb0db9ccdb4d5c68d80af374c41">Arcs</a>.append(<span class="keyword">new</span> <span class="keyword">struct</span> <a class="code" href="structArc.html">Arc</a>(x, (<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>+y)&gt;&gt;1, y, y, beta, theta, <a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>));
 <a name="l01526"></a>01526       <span class="keywordflow">else</span> {
-<a name="l01527"></a>01527         phi = int(16.0*180.0/M_PI*acos(im));
+<a name="l01527"></a>01527         phi = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>*acos(im));
 <a name="l01528"></a>01528         len = 16*180-phi;
 <a name="l01529"></a>01529         <span class="keywordflow">if</span>(Above &amp;&amp; Below)  len += len;
 <a name="l01530"></a>01530         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(Below)  phi = 16*180;
@@ -1600,7 +1600,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01551"></a>01551 
 <a name="l01552"></a>01552     <span class="keywordflow">if</span>(Below)  y = 4;
 <a name="l01553"></a>01553     <span class="keywordflow">else</span>  y = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>-4-<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db">font</a>.pointSize();
-<a name="l01554"></a>01554     <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, y, <a class="code" href="misc_8cpp.html#a9a6a9ccafe894554d51b843565fc4da8">StringNum</a>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>)));
+<a name="l01554"></a>01554     <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, y, <a class="code" href="namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e">misc::StringNum</a>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>)));
 <a name="l01555"></a>01555   }
 <a name="l01556"></a>01556 
 <a name="l01557"></a>01557 }
@@ -1681,9 +1681,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01632"></a>01632     <span class="keywordflow">for</span>(i=<span class="keywordtype">int</span>(numGrids); i&gt;1; i--) {    <span class="comment">// create all grid circles</span>
 <a name="l01633"></a>01633       z = int(zD);
 <a name="l01634"></a>01634       GridNum += GridStep;
-<a name="l01635"></a>01635       <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(((<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>+z)&gt;&gt;1)-10, tPos, <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(GridNum)));
+<a name="l01635"></a>01635       <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(((<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>+z)&gt;&gt;1)-10, tPos, <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">misc::StringNiceNum</a>(GridNum)));
 <a name="l01636"></a>01636 
-<a name="l01637"></a>01637       phi = int(16.0*180.0/M_PI*atan(<span class="keywordtype">double</span>(2*tHeight)/zD));
+<a name="l01637"></a>01637       phi = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>*atan(<span class="keywordtype">double</span>(2*tHeight)/zD));
 <a name="l01638"></a>01638       <span class="keywordflow">if</span>(!Below)  tmp = beta + phi;
 <a name="l01639"></a>01639       <span class="keywordflow">else</span>  tmp = beta;
 <a name="l01640"></a>01640       <a class="code" href="classDiagram.html#a8c8e3eb0db9ccdb4d5c68d80af374c41">Arcs</a>.append(<span class="keyword">new</span> <span class="keyword">struct</span> <a class="code" href="structArc.html">Arc</a>((<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>-z)&gt;&gt;1, (<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+z)&gt;&gt;1, z, z, tmp, len-phi,
@@ -1698,8 +1698,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01649"></a>01649   }
 <a name="l01650"></a>01650 
 <a name="l01651"></a>01651   <span class="comment">// create outer circle</span>
-<a name="l01652"></a>01652   <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>-8, tPos, <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>)));
-<a name="l01653"></a>01653   phi = int(16.0*180.0/M_PI*atan(<span class="keywordtype">double</span>(2*tHeight)/<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>)));
+<a name="l01652"></a>01652   <a class="code" href="classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>-8, tPos, <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">misc::StringNiceNum</a>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>)));
+<a name="l01653"></a>01653   phi = int(16.0*180.0/<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>*atan(<span class="keywordtype">double</span>(2*tHeight)/<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>)));
 <a name="l01654"></a>01654   <span class="keywordflow">if</span>(!Below)  tmp = phi;
 <a name="l01655"></a>01655   <span class="keywordflow">else</span>  tmp = 0;
 <a name="l01656"></a>01656   <a class="code" href="classDiagram.html#a8c8e3eb0db9ccdb4d5c68d80af374c41">Arcs</a>.append(<span class="keyword">new</span> <span class="keyword">struct</span> <a class="code" href="structArc.html">Arc</a>(0, <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>, <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>, <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>, tmp, 16*360-phi, QPen(Qt::black,0)));
@@ -1934,7 +1934,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01911"></a>01911       <a class="code" href="classDiagram.html#a55dcd63c4c07afe09efbea5ef852c74a">Lines</a>.prepend(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(0, z, <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>, z, <a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>));  <span class="comment">// y grid</span>
 <a name="l01912"></a>01912 
 <a name="l01913"></a>01913     <span class="keywordflow">if</span>((zD &lt; 1.5*zDstep) || (z == 0)) {
-<a name="l01914"></a>01914       tmp = <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(zD);
+<a name="l01914"></a>01914       tmp = <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">misc::StringNiceNum</a>(zD);
 <a name="l01915"></a>01915       <span class="keywordflow">if</span>(Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a> &lt; 0.0)  tmp = <span class="charliteral">&#39;-&#39;</span>+tmp;
 <a name="l01916"></a>01916 
 <a name="l01917"></a>01917       w = metrics.width(tmp);  <span class="comment">// width of text</span>
@@ -1969,7 +1969,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01946"></a>01946   z = int(zD);   <span class="comment">//  &quot;int(...)&quot; implies &quot;floor(...)&quot;</span>
 <a name="l01947"></a>01947   <span class="keywordflow">while</span>((z &lt;= <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>) &amp;&amp; (z &gt;= 0)) {  <span class="comment">// create all grid lines</span>
 <a name="l01948"></a>01948     <span class="keywordflow">if</span>(fabs(GridNum) &lt; 0.01*pow(10.0, Expo)) GridNum = 0.0;<span class="comment">// make 0 really 0</span>
-<a name="l01949"></a>01949     tmp = <a class="code" href="misc_8cpp.html#abdad4e43b8a48194dd47ed50c7f5fbc3">StringNiceNum</a>(GridNum);
+<a name="l01949"></a>01949     tmp = <a class="code" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca">misc::StringNiceNum</a>(GridNum);
 <a name="l01950"></a>01950 
 <a name="l01951"></a>01951     w = metrics.width(tmp);  <span class="comment">// width of text</span>
 <a name="l01952"></a>01952     <span class="keywordflow">if</span>(maxWidth &lt; w) maxWidth = w;
@@ -2008,7 +2008,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

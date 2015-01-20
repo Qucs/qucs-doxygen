@@ -1152,11 +1152,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01079"></a>01079     s = Row.mid(Row.indexOf(<span class="charliteral">&#39;&quot;&#39;</span>)+1);    <span class="comment">// Text (can contain &quot; !!!)</span>
 <a name="l01080"></a>01080     s = s.left(s.length()-1);
 <a name="l01081"></a>01081     <span class="keywordflow">if</span>(s.isEmpty()) <span class="keywordflow">return</span> -1;
-<a name="l01082"></a>01082     <a class="code" href="misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d">convert2Unicode</a>(s);
+<a name="l01082"></a>01082     <a class="code" href="namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d">misc::convert2Unicode</a>(s);
 <a name="l01083"></a>01083 
 <a name="l01084"></a>01084     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(i1, i2, s, Color, <span class="keywordtype">float</span>(i3),
-<a name="l01085"></a>01085                           <span class="keywordtype">float</span>(cos(<span class="keywordtype">float</span>(i4)*M_PI/180.0)),
-<a name="l01086"></a>01086                           <span class="keywordtype">float</span>(sin(<span class="keywordtype">float</span>(i4)*M_PI/180.0))));
+<a name="l01085"></a>01085                           <span class="keywordtype">float</span>(cos(<span class="keywordtype">float</span>(i4)*<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0)),
+<a name="l01086"></a>01086                           <span class="keywordtype">float</span>(sin(<span class="keywordtype">float</span>(i4)*<a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0))));
 <a name="l01087"></a>01087 
 <a name="l01088"></a>01088     QFont Font(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db">font</a>);
 <a name="l01089"></a>01089     Font.setPointSizeF(<span class="keywordtype">float</span>(i3));
@@ -1441,7 +1441,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01368"></a>01368 
 <a name="l01369"></a>01369   <span class="keywordflow">if</span>(NumPorts &lt;= 0) { <span class="comment">// no truth table simulation ?</span>
 <a name="l01370"></a>01370     QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(2)-&gt;Value;        <span class="comment">// delay time</span>
-<a name="l01371"></a>01371     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a00c7621b752cf00f429c32d5ac361dc1">VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
+<a name="l01371"></a>01371     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">misc::VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
 <a name="l01372"></a>01372     s += td;
 <a name="l01373"></a>01373   }
 <a name="l01374"></a>01374 
@@ -1472,7 +1472,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01399"></a>01399 
 <a name="l01400"></a>01400     <span class="keywordflow">if</span>(NumPorts &lt;= 0) { <span class="comment">// no truth table simulation ?</span>
 <a name="l01401"></a>01401       QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(2)-&gt;Value;        <span class="comment">// delay time</span>
-<a name="l01402"></a>01402       <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
+<a name="l01402"></a>01402       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">misc::Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
 <a name="l01403"></a>01403       s += td;
 <a name="l01404"></a>01404     }
 <a name="l01405"></a>01405     s += <span class="stringliteral">&quot; &quot;</span> + pp-&gt;<a class="code" href="structPort.html#ac7c48693de90c130eec700729e2496a1">Connection</a>-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> + <span class="stringliteral">&quot; = &quot;</span>;  <span class="comment">// output port</span>
@@ -1495,7 +1495,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01422"></a>01422 
 <a name="l01423"></a>01423     <span class="keywordflow">if</span>(NumPorts &lt;= 0) { <span class="comment">// no truth table simulation ?</span>
 <a name="l01424"></a>01424       QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(2)-&gt;Value;        <span class="comment">// delay time</span>
-<a name="l01425"></a>01425       <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
+<a name="l01425"></a>01425       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">misc::Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td;
 <a name="l01426"></a>01426       s += td;
 <a name="l01427"></a>01427     }
 <a name="l01428"></a>01428     s += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + <span class="stringliteral">&quot; (&quot;</span> + pp-&gt;<a class="code" href="structPort.html#ac7c48693de90c130eec700729e2496a1">Connection</a>-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>;  <span class="comment">// output port</span>
@@ -1675,7 +1675,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:53 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:22 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

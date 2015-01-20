@@ -112,7 +112,7 @@
 <a name="l00052"></a>00052 
 <a name="l00053"></a>00053  <span class="keyword">public</span>:
 <a name="l00054"></a><a class="code" href="classqucs_1_1hashentry.html#a4b441f03c32c3528b823437731e7f304">00054</a>   <a class="code" href="classqucs_1_1hashentry.html#a4b441f03c32c3528b823437731e7f304">hashentry</a> () {  <span class="comment">// Constructor.</span>
-<a name="l00055"></a>00055     <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = 0; key = NULL; <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = NULL;
+<a name="l00055"></a>00055     <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = 0; key = NULL; <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = NULL;
 <a name="l00056"></a>00056   }
 <a name="l00057"></a><a class="code" href="classqucs_1_1hashentry.html#a739207d4f57483343772357c55ba2ee7">00057</a>   <a class="code" href="classqucs_1_1hashentry.html#a739207d4f57483343772357c55ba2ee7">~hashentry</a> () { <span class="comment">// Destructor.</span>
 <a name="l00058"></a>00058     <span class="keywordflow">if</span> (key) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (key);
@@ -146,7 +146,7 @@
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087  <span class="keyword">public</span>:
 <a name="l00088"></a>00088   <span class="comment">// Adds an entry to the bucket.</span>
-<a name="l00089"></a><a class="code" href="classqucs_1_1hashbucket.html#a6823837963949f6fd643c887d4e45b0f">00089</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1hashbucket.html#a6823837963949f6fd643c887d4e45b0f">add</a> (<a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> * e) {
+<a name="l00089"></a><a class="code" href="classqucs_1_1hashbucket.html#a6823837963949f6fd643c887d4e45b0f">00089</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1hashbucket.html#a6823837963949f6fd643c887d4e45b0f">add</a> (<a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
 <a name="l00090"></a>00090     <span class="keywordflow">if</span> (capacity == 0) {
 <a name="l00091"></a>00091       capacity = <a class="code" href="hash_8h.html#a6d63c4b50dea31e6433941608e16793e">HASH_MIN_SIZE</a>;
 <a name="l00092"></a>00092       entry = (<a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> **)
@@ -157,7 +157,7 @@
 <a name="l00097"></a>00097       entry = (<a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> **)
 <a name="l00098"></a>00098         realloc (entry, <span class="keyword">sizeof</span> (<a class="code" href="classqucs_1_1hashentry.html">hashentry&lt;type_t&gt;</a> *) * capacity);
 <a name="l00099"></a>00099     }
-<a name="l00100"></a>00100     entry[<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>++] = e;
+<a name="l00100"></a>00100     entry[<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>++] = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
 <a name="l00101"></a>00101   }
 <a name="l00102"></a>00102   <span class="comment">// Removes an entry from the bucket.</span>
 <a name="l00103"></a><a class="code" href="classqucs_1_1hashbucket.html#a0b5fc1df9abd559126292f0740c86054">00103</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1hashbucket.html#a0b5fc1df9abd559126292f0740c86054">del</a> (<span class="keywordtype">int</span> idx) {
@@ -238,7 +238,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

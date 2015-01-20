@@ -152,7 +152,7 @@
 <a name="l00092"></a>00092 }
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094 <span class="comment">/* Prints value representation. */</span>
-<a name="l00095"></a><a class="code" href="qucs__producer_8cpp.html#aa7c1ccfa2d441c06f347ef1bc9242527">00095</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#aa7c1ccfa2d441c06f347ef1bc9242527">netlist_list_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00095"></a><a class="code" href="qucs__producer_8cpp.html#aa7c1ccfa2d441c06f347ef1bc9242527">00095</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#aa7c1ccfa2d441c06f347ef1bc9242527">netlist_list_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00096"></a>00096   <span class="keywordflow">if</span> (value == NULL)
 <a name="l00097"></a>00097     fprintf (<a class="code" href="qucs__producer_8cpp.html#a323a7b194003088d3e3d4ec8edbca4bd">qucs_out</a>, <span class="stringliteral">&quot;[]&quot;</span>);
 <a name="l00098"></a>00098   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>)
@@ -180,7 +180,7 @@
 <a name="l00120"></a>00120 }
 <a name="l00121"></a>00121 
 <a name="l00122"></a>00122 <span class="comment">/* Prints a single definition on a single line. */</span>
-<a name="l00123"></a><a class="code" href="qucs__producer_8cpp.html#ae672ea7cdb713e4128efef542eb915d8">00123</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#ae672ea7cdb713e4128efef542eb915d8">netlist_list_def</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def, <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>) {
+<a name="l00123"></a><a class="code" href="qucs__producer_8cpp.html#ae672ea7cdb713e4128efef542eb915d8">00123</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#ae672ea7cdb713e4128efef542eb915d8">netlist_list_def</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def, <span class="keyword">const</span> <span class="keywordtype">char</span> * prefix) {
 <a name="l00124"></a>00124   <span class="keyword">struct </span><a class="code" href="structnode__t.html">node_t</a> * <a class="code" href="structnode__t.html#aebaf9d60a7b2db52c00204c89a20e94d">node</a>;
 <a name="l00125"></a>00125   <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * pair;
 <a name="l00126"></a>00126   <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#a21de30d2de21345df94b44c63f1d5ffd">define</a> == NULL) {
@@ -206,7 +206,7 @@
 <a name="l00146"></a>00146 }
 <a name="l00147"></a>00147 
 <a name="l00148"></a>00148 <span class="comment">/* Prints definition list representation. */</span>
-<a name="l00149"></a><a class="code" href="qucs__producer_8cpp.html#ac605d223565c8dd3a7e84214ae19cf7e">00149</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#ac605d223565c8dd3a7e84214ae19cf7e">netlist_lister</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * root, <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a725776de6a67ba2dc26208e6c760271e">prefix</a>) {
+<a name="l00149"></a><a class="code" href="qucs__producer_8cpp.html#ac605d223565c8dd3a7e84214ae19cf7e">00149</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="qucs__producer_8cpp.html#ac605d223565c8dd3a7e84214ae19cf7e">netlist_lister</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * root, <span class="keyword">const</span> <span class="keywordtype">char</span> * prefix) {
 <a name="l00150"></a>00150   <span class="keyword">struct </span><a class="code" href="structdefinition__t.html">definition_t</a> * def;
 <a name="l00151"></a>00151   <span class="keywordflow">for</span> (def = root; def != NULL; def = def-&gt;<a class="code" href="structdefinition__t.html#ac6f2d42a0105ff6e699938fcd36bd12b">next</a>) {
 <a name="l00152"></a>00152     <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#adbac069b30fc5f0544f09e77e56fa26c">sub</a> != NULL) {
@@ -617,7 +617,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

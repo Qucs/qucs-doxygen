@@ -62,98 +62,71 @@
 <a name="l00002"></a>00002 <span class="comment"> * consts.h - global math constant header file</span>
 <a name="l00003"></a>00003 <span class="comment"> *</span>
 <a name="l00004"></a>00004 <span class="comment"> * Copyright (C) 2004, 2005, 2007 Stefan Jahn &lt;stefan@lkcc.org&gt;</span>
-<a name="l00005"></a>00005 <span class="comment"> *</span>
-<a name="l00006"></a>00006 <span class="comment"> * This is free software; you can redistribute it and/or modify</span>
-<a name="l00007"></a>00007 <span class="comment"> * it under the terms of the GNU General Public License as published by</span>
-<a name="l00008"></a>00008 <span class="comment"> * the Free Software Foundation; either version 2, or (at your option)</span>
-<a name="l00009"></a>00009 <span class="comment"> * any later version.</span>
-<a name="l00010"></a>00010 <span class="comment"> *</span>
-<a name="l00011"></a>00011 <span class="comment"> * This software is distributed in the hope that it will be useful,</span>
-<a name="l00012"></a>00012 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
-<a name="l00013"></a>00013 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
-<a name="l00014"></a>00014 <span class="comment"> * GNU General Public License for more details.</span>
-<a name="l00015"></a>00015 <span class="comment"> *</span>
-<a name="l00016"></a>00016 <span class="comment"> * You should have received a copy of the GNU General Public License</span>
-<a name="l00017"></a>00017 <span class="comment"> * along with this package; see the file COPYING.  If not, write to</span>
-<a name="l00018"></a>00018 <span class="comment"> * the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,</span>
-<a name="l00019"></a>00019 <span class="comment"> * Boston, MA 02110-1301, USA.</span>
-<a name="l00020"></a>00020 <span class="comment"> *</span>
-<a name="l00021"></a>00021 <span class="comment"> * $Id$</span>
-<a name="l00022"></a>00022 <span class="comment"> *</span>
-<a name="l00023"></a>00023 <span class="comment"> */</span>
-<a name="l00024"></a>00024 
-<a name="l00032"></a>00032 <span class="preprocessor">#ifndef __CONSTS_H__</span>
-<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define __CONSTS_H__</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a>00035 <span class="preprocessor">#include &lt;cmath&gt;</span>
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
-<a name="l00038"></a>00038 
-<a name="l00045"></a>00045 <span class="preprocessor">#ifndef M_PI</span>
-<a name="l00046"></a>00046 <span class="preprocessor"></span>
-<a name="l00047"></a>00047 <span class="preprocessor">#define M_PI      3.1415926535897932384626433832795029</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00049"></a>00049 <span class="preprocessor"></span>
-<a name="l00050"></a>00050 <span class="preprocessor">#ifndef M_PI_2</span>
-<a name="l00051"></a>00051 <span class="preprocessor"></span><span class="preprocessor">#define M_PI_2    1.5707963267948966192313216916397514</span>
-<a name="l00052"></a>00052 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00053"></a>00053 <span class="preprocessor"></span>
-<a name="l00054"></a>00054 <span class="preprocessor">#ifndef M_PI_4</span>
-<a name="l00055"></a>00055 <span class="preprocessor"></span><span class="preprocessor">#define M_PI_4    0.7853981633974483096156608458198757</span>
-<a name="l00056"></a>00056 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00057"></a>00057 <span class="preprocessor"></span>
-<a name="l00058"></a>00058 <span class="preprocessor">#ifndef M_1_PI</span>
-<a name="l00059"></a>00059 <span class="preprocessor"></span><span class="preprocessor">#define M_1_PI    0.3183098861837906715377675267450287</span>
-<a name="l00060"></a>00060 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00061"></a>00061 <span class="preprocessor"></span><span class="comment">/*\brief Twice the inverse of Archimedes&#39; constant (\f$2/\pi\f$) */</span>
-<a name="l00062"></a>00062 <span class="preprocessor">#ifndef M_2_PI</span>
-<a name="l00063"></a>00063 <span class="preprocessor"></span><span class="preprocessor">#define M_2_PI    0.6366197723675813430755350534900574</span>
-<a name="l00064"></a>00064 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00065"></a>00065 <span class="preprocessor"></span>
-<a name="l00066"></a>00066 <span class="preprocessor">#ifndef M_SQRTPI</span>
-<a name="l00067"></a>00067 <span class="preprocessor"></span><span class="preprocessor">#define M_SQRTPI  1.77245385090551602729816748334</span>
-<a name="l00068"></a>00068 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00069"></a>00069 <span class="preprocessor"></span>
-<a name="l00070"></a>00070 <span class="preprocessor">#ifndef M_E</span>
-<a name="l00071"></a>00071 <span class="preprocessor"></span><span class="preprocessor">#define M_E       2.7182818284590452353602874713526625</span>
-<a name="l00072"></a>00072 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00073"></a>00073 <span class="preprocessor"></span>
-<a name="l00074"></a>00074 <span class="preprocessor">#ifndef M_LOG10E</span>
-<a name="l00075"></a>00075 <span class="preprocessor"></span><span class="preprocessor">#define M_LOG10E  0.4342944819032518276511289189166051</span>
-<a name="l00076"></a>00076 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00077"></a>00077 <span class="preprocessor"></span>
-<a name="l00078"></a>00078 <span class="preprocessor">#ifndef M_LOG2E</span>
-<a name="l00079"></a>00079 <span class="preprocessor"></span><span class="preprocessor">#define M_LOG2E   1.4426950408889634073599246810018922</span>
-<a name="l00080"></a>00080 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00081"></a>00081 <span class="preprocessor"></span>
-<a name="l00082"></a>00082 <span class="preprocessor">#ifndef M_LN2</span>
-<a name="l00083"></a>00083 <span class="preprocessor"></span><span class="preprocessor">#define M_LN2     0.6931471805599453094172321214581766</span>
-<a name="l00084"></a>00084 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00085"></a>00085 <span class="preprocessor"></span>
-<a name="l00086"></a>00086 <span class="preprocessor">#ifndef M_LN10</span>
-<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">#define M_LN10    2.3025850929940456840179914546843642</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span>
-<a name="l00090"></a>00090 <span class="preprocessor">#ifndef M_SQRT2</span>
-<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#define M_SQRT2   1.4142135623730950488016887242096981</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00093"></a>00093 <span class="preprocessor"></span>
-<a name="l00094"></a>00094 <span class="preprocessor">#ifndef M_SQRT1_2</span>
-<a name="l00095"></a>00095 <span class="preprocessor"></span><span class="preprocessor">#define M_SQRT1_2 0.7071067811865475244008443621048490</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span>
-<a name="l00100"></a>00100 <span class="preprocessor">#ifndef M_LIMEXP</span>
-<a name="l00101"></a>00101 <span class="preprocessor"></span><span class="preprocessor">#define M_LIMEXP  80.0</span>
-<a name="l00102"></a>00102 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00103"></a>00103 <span class="preprocessor"></span>
-<a name="l00108"></a>00108 } <span class="comment">// namespace qucs</span>
-<a name="l00109"></a>00109 
-<a name="l00110"></a>00110 <span class="preprocessor">#endif </span><span class="comment">/* __CONSTS_H__ */</span>
+<a name="l00005"></a>00005 <span class="comment"> * Copyright (C) 2015 Guilherme Brondani Torri &lt;guitorri@gmail.com&gt;</span>
+<a name="l00006"></a>00006 <span class="comment"> *</span>
+<a name="l00007"></a>00007 <span class="comment"> * This is free software; you can redistribute it and/or modify</span>
+<a name="l00008"></a>00008 <span class="comment"> * it under the terms of the GNU General Public License as published by</span>
+<a name="l00009"></a>00009 <span class="comment"> * the Free Software Foundation; either version 2, or (at your option)</span>
+<a name="l00010"></a>00010 <span class="comment"> * any later version.</span>
+<a name="l00011"></a>00011 <span class="comment"> *</span>
+<a name="l00012"></a>00012 <span class="comment"> * This software is distributed in the hope that it will be useful,</span>
+<a name="l00013"></a>00013 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<a name="l00014"></a>00014 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<a name="l00015"></a>00015 <span class="comment"> * GNU General Public License for more details.</span>
+<a name="l00016"></a>00016 <span class="comment"> *</span>
+<a name="l00017"></a>00017 <span class="comment"> * You should have received a copy of the GNU General Public License</span>
+<a name="l00018"></a>00018 <span class="comment"> * along with this package; see the file COPYING.  If not, write to</span>
+<a name="l00019"></a>00019 <span class="comment"> * the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,</span>
+<a name="l00020"></a>00020 <span class="comment"> * Boston, MA 02110-1301, USA.</span>
+<a name="l00021"></a>00021 <span class="comment"> *</span>
+<a name="l00022"></a>00022 <span class="comment"> * $Id$</span>
+<a name="l00023"></a>00023 <span class="comment"> *</span>
+<a name="l00024"></a>00024 <span class="comment"> */</span>
+<a name="l00025"></a>00025 
+<a name="l00033"></a>00033 <span class="preprocessor">#ifndef __CONSTS_H__</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span><span class="preprocessor">#define __CONSTS_H__</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 <span class="preprocessor">#include &lt;cmath&gt;</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
+<a name="l00039"></a>00039 
+<a name="l00047"></a><a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0">00047</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> = 3.1415926535897932384626433832795029;
+<a name="l00048"></a>00048 
+<a name="l00050"></a><a class="code" href="group__qucsMathConstants.html#ga29e118dafd5114f0058119074753be3b">00050</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga29e118dafd5114f0058119074753be3b" title="Half of Archimedes&#39; constant ( )">pi_over_2</a> = 1.5707963267948966192313216916397514;
+<a name="l00051"></a>00051 
+<a name="l00053"></a><a class="code" href="group__qucsMathConstants.html#ga5f1b331c9e3aabd30e95e28aa5f9eebc">00053</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga5f1b331c9e3aabd30e95e28aa5f9eebc" title="A quarter of Archimedes&#39; constant ( )">pi_over_4</a> = 0.7853981633974483096156608458198757;
+<a name="l00054"></a>00054 
+<a name="l00056"></a><a class="code" href="group__qucsMathConstants.html#ga44fb23602986730a4f19201e2d4d3afc">00056</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga44fb23602986730a4f19201e2d4d3afc" title="Inverse of Archimedes&#39; constant ( )">one_over_pi</a> = 0.3183098861837906715377675267450287;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="comment">/*\brief Twice the inverse of Archimedes&#39; constant (\f$2/\pi\f$) */</span>
+<a name="l00059"></a><a class="code" href="group__qucsMathConstants.html#ga561c1cba8944671b2ac09db42dfca1f3">00059</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga561c1cba8944671b2ac09db42dfca1f3">two_over_pi</a> = 0.6366197723675813430755350534900574;
+<a name="l00060"></a>00060 
+<a name="l00062"></a><a class="code" href="group__qucsMathConstants.html#ga90878e40225ee63fb729cd9fa190074a">00062</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga90878e40225ee63fb729cd9fa190074a" title="Square root of Archimedes&#39; constant ( )">sqrt_pi</a> = 1.77245385090551602729816748334;
+<a name="l00063"></a>00063 
+<a name="l00065"></a><a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8">00065</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = 2.7182818284590452353602874713526625;
+<a name="l00066"></a>00066 
+<a name="l00068"></a><a class="code" href="group__qucsMathConstants.html#ga92652101c375174696447d82579265ca">00068</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga92652101c375174696447d82579265ca" title="Decimal logartihm of Euler&#39;s constant ( )">log10e</a> = 0.4342944819032518276511289189166051;
+<a name="l00069"></a>00069 
+<a name="l00071"></a><a class="code" href="group__qucsMathConstants.html#ga52111dd6ee2df2ce21adf95ae980ec45">00071</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga52111dd6ee2df2ce21adf95ae980ec45" title="Binary logartihm of Euler&#39;s constant ( )">log2e</a> = 1.4426950408889634073599246810018922;
+<a name="l00072"></a>00072 
+<a name="l00074"></a><a class="code" href="group__qucsMathConstants.html#ga1a597bfa86ed6d78623ddb7f030567b4">00074</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga1a597bfa86ed6d78623ddb7f030567b4" title="Natural logarithm of 2 ( )">ln2</a> = 0.6931471805599453094172321214581766;
+<a name="l00075"></a>00075 
+<a name="l00077"></a><a class="code" href="group__qucsMathConstants.html#ga5d8cfd67594902302c8533c3cd801491">00077</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga5d8cfd67594902302c8533c3cd801491" title="Natural logarithm of 10 ( )">ln10</a> = 2.3025850929940456840179914546843642;
+<a name="l00078"></a>00078 
+<a name="l00080"></a><a class="code" href="group__qucsMathConstants.html#ga39c42b1128496cd82d085e594755a57c">00080</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga39c42b1128496cd82d085e594755a57c" title="Square root of 2 ( )">sqrt2</a> = 1.4142135623730950488016887242096981;
+<a name="l00081"></a>00081 
+<a name="l00083"></a><a class="code" href="group__qucsMathConstants.html#ga57cab8fcbbc7f35a7c33d727a90cc65a">00083</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#ga57cab8fcbbc7f35a7c33d727a90cc65a" title="Inverse of Square root of 2 ( )">sqrt1_2</a> = 0.7071067811865475244008443621048490;
+<a name="l00084"></a>00084 
+<a name="l00086"></a><a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23">00086</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a> = 80.0;
+<a name="l00087"></a>00087 
+<a name="l00092"></a>00092 } <span class="comment">// namespace qucs</span>
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="preprocessor">#endif </span><span class="comment">/* __CONSTS_H__ */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

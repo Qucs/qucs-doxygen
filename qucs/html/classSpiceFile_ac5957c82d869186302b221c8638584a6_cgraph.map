@@ -2,13 +2,13 @@
 <area shape="rect" id="node3" href="$classSpiceFile.html#ad97ed53982f088887195c1791766d373" title="SpiceFile::SpiceFile" alt="" coords="493,112,632,141"/>
 <area shape="rect" id="node5" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="240,59,421,88"/>
 <area shape="rect" id="node11" href="$classSpiceFile.html#a11272d700d7e466c7af9e41e47c435ba" title="SpiceFile::recreateSubNetlist" alt="" coords="235,299,427,328"/>
-<area shape="rect" id="node7" href="$misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691" title="properAbsFileName" alt="" coords="495,5,631,35"/>
+<area shape="rect" id="node7" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="476,5,649,35"/>
 <area shape="rect" id="node9" href="$classSchematic.html#aed58e5dacd756fceffb39c7581dcf3ff" title="Schematic::getFileInfo" alt="" coords="487,59,639,88"/>
 <area shape="rect" id="node14" href="$classSpiceFile.html#a5645a7188b3ef3fddfbb0c2e76303807" title="SpiceFile::slotSkipOut" alt="" coords="487,325,639,355"/>
 <area shape="rect" id="node16" href="$classSpiceFile.html#ace70f796925610d4115b072b2184bd0f" title="SpiceFile::slotGetPrepErr" alt="" coords="477,379,648,408"/>
 <area shape="rect" id="node18" href="$classSpiceFile.html#a1af225c7a82642cfa518859846052f01" title="SpiceFile::slotGetPrepOut" alt="" coords="476,432,649,461"/>
-<area shape="rect" id="node20" href="$misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf" title="properFileName" alt="" coords="505,485,620,515"/>
-<area shape="rect" id="node22" href="$misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc" title="properName" alt="" coords="516,539,609,568"/>
+<area shape="rect" id="node20" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="488,485,637,515"/>
+<area shape="rect" id="node22" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="499,539,627,568"/>
 <area shape="rect" id="node24" href="$classSpiceFile.html#af267763126afc6819a9a6904e4b3fe25" title="SpiceFile::slotGetNetlist" alt="" coords="481,165,644,195"/>
 <area shape="rect" id="node26" href="$classSpiceFile.html#a7e69d97e4b6327c74912592c25fce675" title="SpiceFile::slotGetError" alt="" coords="485,219,640,248"/>
 <area shape="rect" id="node28" href="$classSpiceFile.html#af729280032212f1669954f277ba3da77" title="SpiceFile::slotExited" alt="" coords="492,272,633,301"/>

@@ -138,7 +138,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#a28037af5ad4c91d5c6427913b9e12592">PROP_IS_STR</a>(prop)&#160;&#160;&#160;(!<a class="el" href="scan__netlist_8l.html#aa0789bbfc8218667db962b8c0ec9bb3d">PROP_IS_VAL</a> (prop))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#afd72541dd4708ac6a7167004b9c157dd">PROP_IS_LST</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__netlist_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> == <a class="el" href="scan__netlist_8l.html#aa98b1758ffaa509c0d79a7cbc3b3c61a">PROP_LIST</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#ac079291acbeeede2834f67ecb61d27a4">PROP_HAS_RANGE</a>(prop)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).range.str[0] != NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> required</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> optional</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a>&#160;&#160;&#160;required, optional</td></tr>
@@ -199,7 +199,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#a28037af5ad4c91d5c6427913b9e12592">PROP_IS_STR</a>(prop)&#160;&#160;&#160;(!<a class="el" href="scan__netlist_8l.html#aa0789bbfc8218667db962b8c0ec9bb3d">PROP_IS_VAL</a> (prop))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#afd72541dd4708ac6a7167004b9c157dd">PROP_IS_LST</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__netlist_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> == <a class="el" href="scan__netlist_8l.html#aa98b1758ffaa509c0d79a7cbc3b3c61a">PROP_LIST</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#ac079291acbeeede2834f67ecb61d27a4">PROP_HAS_RANGE</a>(prop)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).range.str[0] != NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> required</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> optional</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__netlist_8y.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a>&#160;&#160;&#160;required, optional</td></tr>
@@ -260,7 +260,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#a28037af5ad4c91d5c6427913b9e12592">PROP_IS_STR</a>(prop)&#160;&#160;&#160;(!<a class="el" href="scan__netlist_8l.html#aa0789bbfc8218667db962b8c0ec9bb3d">PROP_IS_VAL</a> (prop))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#afd72541dd4708ac6a7167004b9c157dd">PROP_IS_LST</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__netlist_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> == <a class="el" href="scan__netlist_8l.html#aa98b1758ffaa509c0d79a7cbc3b3c61a">PROP_LIST</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#ac079291acbeeede2834f67ecb61d27a4">PROP_HAS_RANGE</a>(prop)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).range.str[0] != NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#acc9a6cc01bf26c6b317be7ec113586ef">PROP_HAS_STR</a>(prop)&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> required</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a>&#160;&#160;&#160;static struct <a class="el" href="structproperty__t.html">property_t</a> optional</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scan__netlist_8l.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a>&#160;&#160;&#160;required, optional</td></tr>
@@ -702,7 +702,7 @@ Defines</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">prop</td><td>)</td>
-          <td>&#160;&#160;&#160;((prop).range.str[0] != NULL)</td>
+          <td>&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td>
         </tr>
       </table>
 </div>
@@ -719,7 +719,7 @@ Defines</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">prop</td><td>)</td>
-          <td>&#160;&#160;&#160;((prop).range.str[0] != NULL)</td>
+          <td>&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td>
         </tr>
       </table>
 </div>
@@ -738,7 +738,7 @@ Defines</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">prop</td><td>)</td>
-          <td>&#160;&#160;&#160;((prop).range.str[0] != NULL)</td>
+          <td>&#160;&#160;&#160;((prop).<a class="el" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">range.str</a>[0] != NULL)</td>
         </tr>
       </table>
 </div>
@@ -3669,7 +3669,7 @@ Defines</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

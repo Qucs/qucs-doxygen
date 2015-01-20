@@ -249,7 +249,7 @@
 <a name="l00189"></a>00189   <span class="keywordflow">return</span> <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
 <a name="l00190"></a>00190 }
 <a name="l00191"></a>00191 
-<a name="l00192"></a><a class="code" href="classqucs_1_1vector.html#ae7d58e642d003de5c20e98f01ab47db4">00192</a> <span class="keywordtype">void</span> vector::set (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) {
+<a name="l00192"></a><a class="code" href="classqucs_1_1vector.html#ae7d58e642d003de5c20e98f01ab47db4">00192</a> <span class="keywordtype">void</span> vector::set (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) {
 <a name="l00193"></a>00193   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (d);
 <a name="l00194"></a>00194 }
 <a name="l00195"></a>00195 
@@ -276,11 +276,11 @@
 <a name="l00216"></a>00216 <span class="comment">// complex numbers in the 2. and 3. quadrant are counted as &quot;-abs(c)&quot;.</span>
 <a name="l00217"></a><a class="code" href="classqucs_1_1vector.html#a4f7f19bd4d9abf6314d904b491b812ad">00217</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> vector::maximum (<span class="keywordtype">void</span>) {
 <a name="l00218"></a>00218   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
-<a name="l00219"></a>00219   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, max_D = -std::numeric_limits&lt;nr_double_t&gt;::max();
+<a name="l00219"></a>00219   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, max_D = -std::numeric_limits&lt;nr_double_t&gt;::max();
 <a name="l00220"></a>00220   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
 <a name="l00221"></a>00221     c = <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
-<a name="l00222"></a>00222     d = fabs (<a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> (c)) &lt; M_PI_2 ? <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c) : -<a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c);
-<a name="l00223"></a>00223     <span class="keywordflow">if</span> (d &gt; max_D) max_D = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00222"></a>00222     d = fabs (<a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> (c)) &lt; <a class="code" href="group__qucsMathConstants.html#ga29e118dafd5114f0058119074753be3b" title="Half of Archimedes&#39; constant ( )">pi_over_2</a> ? <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c) : -<a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c);
+<a name="l00223"></a>00223     <span class="keywordflow">if</span> (d &gt; max_D) max_D = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00224"></a>00224   }
 <a name="l00225"></a>00225   <span class="keywordflow">return</span> max_D;
 <a name="l00226"></a>00226 }
@@ -290,11 +290,11 @@
 <a name="l00230"></a>00230 <span class="comment">// complex numbers in the 2. and 3. quadrant are counted as &quot;-abs(c)&quot;.</span>
 <a name="l00231"></a><a class="code" href="classqucs_1_1vector.html#ac60784ce08a7550323b024aed91eb79e">00231</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> vector::minimum (<span class="keywordtype">void</span>) {
 <a name="l00232"></a>00232   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
-<a name="l00233"></a>00233   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, min_D = +std::numeric_limits&lt;nr_double_t&gt;::max();
+<a name="l00233"></a>00233   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, min_D = +std::numeric_limits&lt;nr_double_t&gt;::max();
 <a name="l00234"></a>00234   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
 <a name="l00235"></a>00235     c = <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
-<a name="l00236"></a>00236     d = fabs (<a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> (c)) &lt; M_PI_2 ? <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c) : -<a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c);
-<a name="l00237"></a>00237     <span class="keywordflow">if</span> (d &lt; min_D) min_D = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00236"></a>00236     d = fabs (<a class="code" href="namespacequcs.html#a354b365797a7cbe61d1a86d44f17ac89" title="Computes the argument of each matrix element.">arg</a> (c)) &lt; <a class="code" href="group__qucsMathConstants.html#ga29e118dafd5114f0058119074753be3b" title="Half of Archimedes&#39; constant ( )">pi_over_2</a> ? <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c) : -<a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (c);
+<a name="l00237"></a>00237     <span class="keywordflow">if</span> (d &lt; min_D) min_D = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00238"></a>00238   }
 <a name="l00239"></a>00239   <span class="keywordflow">return</span> min_D;
 <a name="l00240"></a>00240 }
@@ -353,9 +353,9 @@
 <a name="l00293"></a>00293   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00294"></a>00294 }
 <a name="l00295"></a>00295 
-<a name="l00296"></a><a class="code" href="namespacequcs.html#a2f7c37f5c0809c8d63bdf451f389dac1">00296</a> vector <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00296"></a><a class="code" href="namespacequcs.html#a2f7c37f5c0809c8d63bdf451f389dac1">00296</a> vector <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00297"></a>00297   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00298"></a>00298   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (v.get(<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00298"></a>00298   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (v.get(<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00299"></a>00299   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00300"></a>00300 }
 <a name="l00301"></a>00301 
@@ -365,7 +365,7 @@
 <a name="l00305"></a>00305   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00306"></a>00306 }
 <a name="l00307"></a>00307 
-<a name="l00308"></a><a class="code" href="namespacequcs.html#a61e9a07db5a14ef7b3b27f4d5aebe75d">00308</a> vector <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00308"></a><a class="code" href="namespacequcs.html#a61e9a07db5a14ef7b3b27f4d5aebe75d">00308</a> vector <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l00309"></a>00309   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
 <a name="l00310"></a>00310   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (d, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00311"></a>00311   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
@@ -479,9 +479,9 @@
 <a name="l00419"></a>00419   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00420"></a>00420 }
 <a name="l00421"></a>00421 
-<a name="l00422"></a><a class="code" href="namespacequcs.html#a7d1767e4c7bdf0aa06a7df081dda91bf">00422</a> vector <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00422"></a><a class="code" href="namespacequcs.html#a7d1767e4c7bdf0aa06a7df081dda91bf">00422</a> vector <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00423"></a>00423   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00424"></a>00424   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (v.get(<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l00424"></a>00424   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (v.get(<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00425"></a>00425   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00426"></a>00426 }
 <a name="l00427"></a>00427 
@@ -491,7 +491,7 @@
 <a name="l00431"></a>00431   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00432"></a>00432 }
 <a name="l00433"></a>00433 
-<a name="l00434"></a><a class="code" href="namespacequcs.html#ad93b60303df90114645ad96c335ee7ca">00434</a> vector <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00434"></a><a class="code" href="namespacequcs.html#ad93b60303df90114645ad96c335ee7ca">00434</a> vector <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l00435"></a>00435   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
 <a name="l00436"></a>00436   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (d, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l00437"></a>00437   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
@@ -700,7 +700,7 @@
 <a name="l00640"></a>00640   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00641"></a>00641 }
 <a name="l00642"></a>00642 
-<a name="l00643"></a><a class="code" href="classqucs_1_1vector.html#a37fd7d17e756cc630c46a5371e4f77d6">00643</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00643"></a><a class="code" href="classqucs_1_1vector.html#a37fd7d17e756cc630c46a5371e4f77d6">00643</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00644"></a>00644   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = d;
 <a name="l00645"></a>00645   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00646"></a>00646 }
@@ -717,7 +717,7 @@
 <a name="l00657"></a>00657   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00658"></a>00658 }
 <a name="l00659"></a>00659 
-<a name="l00660"></a><a class="code" href="classqucs_1_1vector.html#aba01412eb943ae93b34b98af61e3c8f1">00660</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator+=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00660"></a><a class="code" href="classqucs_1_1vector.html#aba01412eb943ae93b34b98af61e3c8f1">00660</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator+=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00661"></a>00661   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] += d;
 <a name="l00662"></a>00662   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00663"></a>00663 }
@@ -745,14 +745,14 @@
 <a name="l00685"></a>00685   <span class="keywordflow">return</span> v + <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
 <a name="l00686"></a>00686 }
 <a name="l00687"></a>00687 
-<a name="l00688"></a><a class="code" href="namespacequcs.html#adb715f3618c6f092f47d7b1f9c6c332f">00688</a> vector <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator+</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00688"></a><a class="code" href="namespacequcs.html#adb715f3618c6f092f47d7b1f9c6c332f">00688</a> vector <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator+</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00689"></a>00689   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00690"></a>00690   result += <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00690"></a>00690   result += <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00691"></a>00691   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00692"></a>00692 }
 <a name="l00693"></a>00693 
-<a name="l00694"></a><a class="code" href="namespacequcs.html#a306d0902be22e9234aa8a87aadf624cd">00694</a> vector <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator+</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l00695"></a>00695   <span class="keywordflow">return</span> v + <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00694"></a><a class="code" href="namespacequcs.html#a306d0902be22e9234aa8a87aadf624cd">00694</a> vector <a class="code" href="namespacequcs.html#ac89db2ea27a47ba726a9e0e2b30ffd1b" title="Matrix addition.">operator+</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00695"></a>00695   <span class="keywordflow">return</span> v + <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00696"></a>00696 }
 <a name="l00697"></a>00697 
 <a name="l00698"></a><a class="code" href="classqucs_1_1vector.html#a8788c09a4323571a66ec97a34fb0ebdc">00698</a> <a class="code" href="classqucs_1_1vector.html">vector</a> <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">vector::operator-</a>() {
@@ -773,7 +773,7 @@
 <a name="l00713"></a>00713   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00714"></a>00714 }
 <a name="l00715"></a>00715 
-<a name="l00716"></a><a class="code" href="classqucs_1_1vector.html#a109f2feb3fde0e506e05b73661ad4f35">00716</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator-=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00716"></a><a class="code" href="classqucs_1_1vector.html#a109f2feb3fde0e506e05b73661ad4f35">00716</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator-=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00717"></a>00717   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] -= d;
 <a name="l00718"></a>00718   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00719"></a>00719 }
@@ -797,9 +797,9 @@
 <a name="l00737"></a>00737   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00738"></a>00738 }
 <a name="l00739"></a>00739 
-<a name="l00740"></a><a class="code" href="namespacequcs.html#a2d197d441301ee5716b5744b3e8559bf">00740</a> vector <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator-</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00740"></a><a class="code" href="namespacequcs.html#a2d197d441301ee5716b5744b3e8559bf">00740</a> vector <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator-</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00741"></a>00741   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00742"></a>00742   result -= <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00742"></a>00742   result -= <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00743"></a>00743   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00744"></a>00744 }
 <a name="l00745"></a>00745 
@@ -809,9 +809,9 @@
 <a name="l00749"></a>00749   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00750"></a>00750 }
 <a name="l00751"></a>00751 
-<a name="l00752"></a><a class="code" href="namespacequcs.html#a6b653c906e2caad7a5b639db77161eed">00752</a> vector <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator-</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00752"></a><a class="code" href="namespacequcs.html#a6b653c906e2caad7a5b639db77161eed">00752</a> vector <a class="code" href="namespacequcs.html#a51d687e2b1321f55d1541e3eeb62af50" title="Matrix subtraction.">operator-</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l00753"></a>00753   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (-v);
-<a name="l00754"></a>00754   result += <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00754"></a>00754   result += <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00755"></a>00755   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00756"></a>00756 }
 <a name="l00757"></a>00757 
@@ -827,7 +827,7 @@
 <a name="l00767"></a>00767   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00768"></a>00768 }
 <a name="l00769"></a>00769 
-<a name="l00770"></a><a class="code" href="classqucs_1_1vector.html#a761b18363c44a9614d46d7d65f16569c">00770</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator*=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00770"></a><a class="code" href="classqucs_1_1vector.html#a761b18363c44a9614d46d7d65f16569c">00770</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator*=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00771"></a>00771   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] *= d;
 <a name="l00772"></a>00772   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00773"></a>00773 }
@@ -851,9 +851,9 @@
 <a name="l00791"></a>00791   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00792"></a>00792 }
 <a name="l00793"></a>00793 
-<a name="l00794"></a><a class="code" href="namespacequcs.html#ade3ea15cd54c20fa318686044cb56234">00794</a> vector <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator*</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00794"></a><a class="code" href="namespacequcs.html#ade3ea15cd54c20fa318686044cb56234">00794</a> vector <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator*</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00795"></a>00795   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00796"></a>00796   result *= <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00796"></a>00796   result *= <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00797"></a>00797   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00798"></a>00798 }
 <a name="l00799"></a>00799 
@@ -861,8 +861,8 @@
 <a name="l00801"></a>00801   <span class="keywordflow">return</span> v * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>;
 <a name="l00802"></a>00802 }
 <a name="l00803"></a>00803 
-<a name="l00804"></a><a class="code" href="namespacequcs.html#a6c76505de542ea484704acbdba15eddd">00804</a> vector <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator*</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l00805"></a>00805   <span class="keywordflow">return</span> v * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00804"></a><a class="code" href="namespacequcs.html#a6c76505de542ea484704acbdba15eddd">00804</a> vector <a class="code" href="namespacequcs.html#acf7bbe9c6be5b4b1bc5afd374f3421a5" title="Matrix scaling complex version.">operator*</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00805"></a>00805   <span class="keywordflow">return</span> v * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00806"></a>00806 }
 <a name="l00807"></a>00807 
 <a name="l00808"></a><a class="code" href="classqucs_1_1vector.html#a0ad856cda7b56b64cd9406d6166b09b1">00808</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator/=(<a class="code" href="classqucs_1_1vector.html">vector</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
@@ -877,7 +877,7 @@
 <a name="l00817"></a>00817   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00818"></a>00818 }
 <a name="l00819"></a>00819 
-<a name="l00820"></a><a class="code" href="classqucs_1_1vector.html#aad19ac4522ebc69b317620b31d05ed5e">00820</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator/=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00820"></a><a class="code" href="classqucs_1_1vector.html#aad19ac4522ebc69b317620b31d05ed5e">00820</a> <a class="code" href="classqucs_1_1vector.html">vector</a> vector::operator/=(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00821"></a>00821   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] /= d;
 <a name="l00822"></a>00822   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
 <a name="l00823"></a>00823 }
@@ -903,9 +903,9 @@
 <a name="l00843"></a>00843   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00844"></a>00844 }
 <a name="l00845"></a>00845 
-<a name="l00846"></a><a class="code" href="namespacequcs.html#aedaa209c8a678f198243d553824b44e1">00846</a> vector <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator/</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00846"></a><a class="code" href="namespacequcs.html#aedaa209c8a678f198243d553824b44e1">00846</a> vector <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator/</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00847"></a>00847   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00848"></a>00848   result /= <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00848"></a>00848   result /= <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00849"></a>00849   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00850"></a>00850 }
 <a name="l00851"></a>00851 
@@ -916,9 +916,9 @@
 <a name="l00856"></a>00856   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00857"></a>00857 }
 <a name="l00858"></a>00858 
-<a name="l00859"></a><a class="code" href="namespacequcs.html#a744348e0e8545ab9c323fabb477c28bd">00859</a> vector <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator/</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00859"></a><a class="code" href="namespacequcs.html#a744348e0e8545ab9c323fabb477c28bd">00859</a> vector <a class="code" href="namespacequcs.html#a82ab25fbe81a657630c9c5084fd0e5e2" title="Matrix scaling division by complex version.">operator/</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l00860"></a>00860   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l00861"></a>00861   result  = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00861"></a>00861   result  = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00862"></a>00862   result /= <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>;
 <a name="l00863"></a>00863   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00864"></a>00864 }
@@ -930,10 +930,10 @@
 <a name="l00870"></a>00870   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00871"></a>00871 }
 <a name="l00872"></a>00872 
-<a name="l00873"></a><a class="code" href="namespacequcs.html#a14049ef2d1e8f34d026d8d835f8de160">00873</a> vector <a class="code" href="namespacequcs.html#a90f572492316b9440ef75a62dedeacad" title="Modulo.">operator%</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) {
+<a name="l00873"></a><a class="code" href="namespacequcs.html#a14049ef2d1e8f34d026d8d835f8de160">00873</a> vector <a class="code" href="namespacequcs.html#a90f572492316b9440ef75a62dedeacad" title="Modulo.">operator%</a>(vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
 <a name="l00874"></a>00874   <span class="keywordtype">int</span> len = v.getSize ();
 <a name="l00875"></a>00875   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (len);
-<a name="l00876"></a>00876   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; len; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) = <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) % <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00876"></a>00876   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; len; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) = <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) % <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00877"></a>00877   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00878"></a>00878 }
 <a name="l00879"></a>00879 
@@ -944,7 +944,7 @@
 <a name="l00884"></a>00884   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l00885"></a>00885 }
 <a name="l00886"></a>00886 
-<a name="l00887"></a><a class="code" href="namespacequcs.html#a510d2cf05260f54f2c1fd0b13f477bf2">00887</a> vector <a class="code" href="namespacequcs.html#a90f572492316b9440ef75a62dedeacad" title="Modulo.">operator%</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l00887"></a><a class="code" href="namespacequcs.html#a510d2cf05260f54f2c1fd0b13f477bf2">00887</a> vector <a class="code" href="namespacequcs.html#a90f572492316b9440ef75a62dedeacad" title="Modulo.">operator%</a>(<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l00888"></a>00888   <span class="keywordtype">int</span> len = v.getSize ();
 <a name="l00889"></a>00889   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (len);
 <a name="l00890"></a>00890   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; len; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) = d % <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
@@ -1034,7 +1034,7 @@
 <a name="l00974"></a><a class="code" href="namespacequcs.html#a564b08c867465a46a93a3699798e5cf6">00974</a> vector <a class="code" href="namespacequcs.html#a564b08c867465a46a93a3699798e5cf6">logspace</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> start, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> stop, <span class="keywordtype">int</span> points) {
 <a name="l00975"></a>00975   assert (start * stop &gt; 0);
 <a name="l00976"></a>00976   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (points);
-<a name="l00977"></a>00977   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a>, first, last, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00977"></a>00977   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a>, first, last, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00978"></a>00978 
 <a name="l00979"></a>00979   <span class="comment">// ensure the last value being larger than the first</span>
 <a name="l00980"></a>00980   <span class="keywordflow">if</span> (fabs (start) &gt; fabs (stop)) {
@@ -1174,156 +1174,168 @@
 <a name="l01114"></a>01114   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01115"></a>01115 }
 <a name="l01116"></a>01116 
-<a name="l01117"></a><a class="code" href="namespacequcs.html#a4ce0b71955bf67dc66df6d4cb65542ee">01117</a> vector <a class="code" href="namespacequcs.html#a9b66a643584d4ed6accfdc930a126a9d" title="Modified Bessel function of first kind.">i0</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01117"></a><a class="code" href="namespacequcs.html#abb933393aefa61f1f276328db5fefd0b">01117</a> vector <a class="code" href="namespacequcs.html#ab7f3543c886838b0fc2a3b43eaad66de" title="rad2deg Convert radian to degree">rad2deg</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l01118"></a>01118   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01119"></a>01119   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a9b66a643584d4ed6accfdc930a126a9d" title="Modified Bessel function of first kind.">i0</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01119"></a>01119   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#ab7f3543c886838b0fc2a3b43eaad66de" title="rad2deg Convert radian to degree">rad2deg</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l01120"></a>01120   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01121"></a>01121 }
 <a name="l01122"></a>01122 
-<a name="l01123"></a><a class="code" href="namespacequcs.html#a29c2f3c3b1df8c87ed966ee94ed72a42">01123</a> vector <a class="code" href="namespacequcs.html#af18dd559f35d5c96ba5583fd03af2c41" title="Bessel function of first kind.">jn</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01123"></a><a class="code" href="namespacequcs.html#a535ff1eb75a20a41117cc42a78061f5c">01123</a> vector <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l01124"></a>01124   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01125"></a>01125   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#af18dd559f35d5c96ba5583fd03af2c41" title="Bessel function of first kind.">jn</a> (n, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01125"></a>01125   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l01126"></a>01126   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01127"></a>01127 }
 <a name="l01128"></a>01128 
-<a name="l01129"></a><a class="code" href="namespacequcs.html#a592f6024c152167308f1c8bfda3286a7">01129</a> vector <a class="code" href="namespacequcs.html#a40503d77131d0100dafa0bc221bb71e5" title="Bessel function of second kind.">yn</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01129"></a><a class="code" href="namespacequcs.html#a4ce0b71955bf67dc66df6d4cb65542ee">01129</a> vector <a class="code" href="namespacequcs.html#a9b66a643584d4ed6accfdc930a126a9d" title="Modified Bessel function of first kind.">i0</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l01130"></a>01130   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01131"></a>01131   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a40503d77131d0100dafa0bc221bb71e5" title="Bessel function of second kind.">yn</a> (n, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01131"></a>01131   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a9b66a643584d4ed6accfdc930a126a9d" title="Modified Bessel function of first kind.">i0</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l01132"></a>01132   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01133"></a>01133 }
 <a name="l01134"></a>01134 
-<a name="l01135"></a><a class="code" href="namespacequcs.html#a2b853f01a52e373ec75b25fa70e66afd">01135</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (<span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> a, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01135"></a><a class="code" href="namespacequcs.html#a29c2f3c3b1df8c87ed966ee94ed72a42">01135</a> vector <a class="code" href="namespacequcs.html#af18dd559f35d5c96ba5583fd03af2c41" title="Bessel function of first kind.">jn</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l01136"></a>01136   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01137"></a>01137   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01137"></a>01137   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#af18dd559f35d5c96ba5583fd03af2c41" title="Bessel function of first kind.">jn</a> (n, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l01138"></a>01138   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01139"></a>01139 }
 <a name="l01140"></a>01140 
-<a name="l01141"></a><a class="code" href="namespacequcs.html#ae9eb71ef3ee81466f492cbc383a7d033">01141</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> p) {
+<a name="l01141"></a><a class="code" href="namespacequcs.html#a592f6024c152167308f1c8bfda3286a7">01141</a> vector <a class="code" href="namespacequcs.html#a40503d77131d0100dafa0bc221bb71e5" title="Bessel function of second kind.">yn</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
 <a name="l01142"></a>01142   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01143"></a>01143   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), p), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01143"></a>01143   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a40503d77131d0100dafa0bc221bb71e5" title="Bessel function of second kind.">yn</a> (n, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
 <a name="l01144"></a>01144   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
 <a name="l01145"></a>01145 }
 <a name="l01146"></a>01146 
-<a name="l01147"></a><a class="code" href="namespacequcs.html#a31fcdcb8fa3e0fac1a25efde28c1835b">01147</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (vector a, vector p) {
-<a name="l01148"></a>01148   <span class="keywordtype">int</span> j, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, len, len1 = a.getSize (), len2 = p.getSize ();
-<a name="l01149"></a>01149   <span class="keywordflow">if</span> (len1 &gt;= len2) {
-<a name="l01150"></a>01150     assert (len1 % len2 == 0);
-<a name="l01151"></a>01151     len = len1;
-<a name="l01152"></a>01152   } <span class="keywordflow">else</span> {
-<a name="l01153"></a>01153     assert (len2 % len1 == 0);
-<a name="l01154"></a>01154     len = len2;
-<a name="l01155"></a>01155   }
-<a name="l01156"></a>01156   vector res (len);
-<a name="l01157"></a>01157   <span class="keywordflow">for</span> (j = i = n = 0; n &lt; len; n++) {
-<a name="l01158"></a>01158     res (n) = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a (i), p (j));
-<a name="l01159"></a>01159     <span class="keywordflow">if</span> (++i &gt;= len1) i = 0;  <span class="keywordflow">if</span> (++j &gt;= len2) j = 0;
-<a name="l01160"></a>01160   }
-<a name="l01161"></a>01161   <span class="keywordflow">return</span> res;
-<a name="l01162"></a>01162 }
-<a name="l01163"></a>01163 
-<a name="l01164"></a><a class="code" href="namespacequcs.html#a21dac891d3cab69dae6879bc18c37edb">01164</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l01165"></a>01165   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01166"></a>01166   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01167"></a>01167     result.set (<a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (y, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01168"></a>01168   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01169"></a>01169 }
-<a name="l01170"></a>01170 
-<a name="l01171"></a><a class="code" href="namespacequcs.html#af9672a43f353fb555896798138a6998d">01171</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
-<a name="l01172"></a>01172   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01173"></a>01173   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01174"></a>01174     result.set (<a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) , <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01175"></a>01175   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01176"></a>01176 }
-<a name="l01177"></a>01177 
-<a name="l01178"></a><a class="code" href="namespacequcs.html#ab92d734173d7530ec8f0e36d48ea4c54">01178</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (vector <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, vector <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
-<a name="l01179"></a>01179   <span class="keywordtype">int</span> j, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, len, len1 = y.getSize (), len2 = x.getSize ();
-<a name="l01180"></a>01180   <span class="keywordflow">if</span> (len1 &gt;= len2) {
-<a name="l01181"></a>01181     assert (len1 % len2 == 0);
-<a name="l01182"></a>01182     len = len1;
-<a name="l01183"></a>01183   } <span class="keywordflow">else</span> {
-<a name="l01184"></a>01184     assert (len2 % len1 == 0);
-<a name="l01185"></a>01185     len = len2;
-<a name="l01186"></a>01186   }
-<a name="l01187"></a>01187   vector res (len);
-<a name="l01188"></a>01188   <span class="keywordflow">for</span> (j = i = n = 0; n &lt; len; n++) {
-<a name="l01189"></a>01189     res (n) = <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (y (i), x (j));
-<a name="l01190"></a>01190     <span class="keywordflow">if</span> (++i &gt;= len1) i = 0; <span class="keywordflow">if</span> (++j &gt;= len2) j = 0;
-<a name="l01191"></a>01191   }
-<a name="l01192"></a>01192   <span class="keywordflow">return</span> res;
-<a name="l01193"></a>01193 }
-<a name="l01194"></a>01194 
-<a name="l01195"></a><a class="code" href="namespacequcs.html#a9a1f6349d5e07340cc02e6edeccad40b">01195</a> vector <a class="code" href="namespacequcs.html#a9a1f6349d5e07340cc02e6edeccad40b">w2dbm</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l01196"></a>01196   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01197"></a>01197   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01198"></a>01198     result.set (10.0 * <a class="code" href="namespacequcs.html#a57711ea8077dd2281084e772e4166abb" title="Compute principal value of decimal logarithm of z.">log10</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / 0.001), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01199"></a>01199   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01200"></a>01200 }
-<a name="l01201"></a>01201 
-<a name="l01202"></a><a class="code" href="namespacequcs.html#a1be20813bce23b675f12adf41491e5ea">01202</a> vector <a class="code" href="namespacequcs.html#a1be20813bce23b675f12adf41491e5ea">dbm2w</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l01203"></a>01203   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01204"></a>01204   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01205"></a>01205     result.set (0.001 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (10.0 , v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / 10.0), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01206"></a>01206   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01207"></a>01207 }
-<a name="l01208"></a>01208 
-<a name="l01209"></a><a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">01209</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">integrate</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) {
-<a name="l01210"></a>01210   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (0) ) / 2;
-<a name="l01211"></a>01211   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize () - 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01212"></a>01212     s += <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>));
-<a name="l01213"></a>01213   <span class="keywordflow">return</span> (s + <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (v.getSize () - 1) ) / 2) * h;
-<a name="l01214"></a>01214 }
-<a name="l01215"></a>01215 
-<a name="l01216"></a><a class="code" href="namespacequcs.html#a21f7205c59229283ae3a510f54e34cc2">01216</a> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">integrate</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) {
-<a name="l01217"></a>01217   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s;
-<a name="l01218"></a>01218   s = v.get (0) / 2.0;
-<a name="l01219"></a>01219   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize () - 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01220"></a>01220     s += v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01221"></a>01221   <span class="keywordflow">return</span> (s + v.get (v.getSize () - 1) / 2.0) * <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>;
-<a name="l01222"></a>01222 }
-<a name="l01223"></a>01223 
-<a name="l01224"></a><a class="code" href="namespacequcs.html#ad8248ea2802b9a04bcb5deb31fcab02b">01224</a> vector <a class="code" href="namespacequcs.html#ad8248ea2802b9a04bcb5deb31fcab02b">dbm</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z) {
-<a name="l01225"></a>01225   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
-<a name="l01226"></a>01226   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
-<a name="l01227"></a>01227     result.set (10.0 * <a class="code" href="namespacequcs.html#a57711ea8077dd2281084e772e4166abb" title="Compute principal value of decimal logarithm of z.">log10</a> (<a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)) / <a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (z) / 0.001), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01228"></a>01228   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01229"></a>01229 }
-<a name="l01230"></a>01230 
-<a name="l01231"></a><a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">01231</a> vector <a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">runavg</a> (<span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l01232"></a>01232   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (n);
-<a name="l01233"></a>01233   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (x, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
-<a name="l01234"></a>01234   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01235"></a>01235 }
-<a name="l01236"></a>01236 
-<a name="l01237"></a><a class="code" href="namespacequcs.html#a551955c404a4479173e06c551ccb473e">01237</a> vector <a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">runavg</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l01238"></a>01238   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s (0.0), <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
-<a name="l01239"></a>01239   <span class="keywordtype">int</span> len = v.getSize () - n + 1, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
-<a name="l01240"></a>01240   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (len);
-<a name="l01241"></a>01241   <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; i++) s += v.get (i);
-<a name="l01242"></a>01242   y = s / (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) n; <span class="comment">// first running average value</span>
-<a name="l01243"></a>01243   result.set (y, 0);
-<a name="l01244"></a>01244   <span class="keywordflow">for</span> (i = 0; i &lt; len - 1; i++) {
-<a name="l01245"></a>01245     y += (v.get (i + n) - v.get (i)) / (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
-<a name="l01246"></a>01246     result.set (y, i + 1);
-<a name="l01247"></a>01247   }
-<a name="l01248"></a>01248   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
-<a name="l01249"></a>01249 }
-<a name="l01250"></a>01250 
-<a name="l01251"></a>01251 <span class="preprocessor">#ifdef DEBUG</span>
-<a name="l01252"></a>01252 <span class="preprocessor"></span><span class="comment">// Debug function: Prints the vector object.</span>
-<a name="l01253"></a>01253 <span class="keywordtype">void</span> vector::print (<span class="keywordtype">void</span>) {
-<a name="l01254"></a>01254   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++) {
-<a name="l01255"></a>01255     fprintf (stderr, <span class="stringliteral">&quot;%+.2e%+.2ei\n&quot;</span>, (<span class="keywordtype">double</span>) <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<span class="keyword">get</span> (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>)),
-<a name="l01256"></a>01256              (<span class="keywordtype">double</span>) <a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (<span class="keyword">get</span> (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>)));
-<a name="l01257"></a>01257   }
-<a name="l01258"></a>01258 }
-<a name="l01259"></a>01259 <span class="preprocessor">#endif </span><span class="comment">/* DEBUG */</span>
-<a name="l01260"></a>01260 
-<a name="l01261"></a>01261 } <span class="comment">// namespace qucs</span>
+<a name="l01147"></a><a class="code" href="namespacequcs.html#a2b853f01a52e373ec75b25fa70e66afd">01147</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (<span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> a, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01148"></a>01148   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01149"></a>01149   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01150"></a>01150   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01151"></a>01151 }
+<a name="l01152"></a>01152 
+<a name="l01153"></a><a class="code" href="namespacequcs.html#ae9eb71ef3ee81466f492cbc383a7d033">01153</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> p) {
+<a name="l01154"></a>01154   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01155"></a>01155   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (<a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), p), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01156"></a>01156   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01157"></a>01157 }
+<a name="l01158"></a>01158 
+<a name="l01159"></a><a class="code" href="namespacequcs.html#a31fcdcb8fa3e0fac1a25efde28c1835b">01159</a> vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a> (vector a, vector p) {
+<a name="l01160"></a>01160   <span class="keywordtype">int</span> j, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, len, len1 = a.getSize (), len2 = p.getSize ();
+<a name="l01161"></a>01161   <span class="keywordflow">if</span> (len1 &gt;= len2) {
+<a name="l01162"></a>01162     assert (len1 % len2 == 0);
+<a name="l01163"></a>01163     len = len1;
+<a name="l01164"></a>01164   } <span class="keywordflow">else</span> {
+<a name="l01165"></a>01165     assert (len2 % len1 == 0);
+<a name="l01166"></a>01166     len = len2;
+<a name="l01167"></a>01167   }
+<a name="l01168"></a>01168   vector res (len);
+<a name="l01169"></a>01169   <span class="keywordflow">for</span> (j = i = n = 0; n &lt; len; n++) {
+<a name="l01170"></a>01170     res (n) = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a (i), p (j));
+<a name="l01171"></a>01171     <span class="keywordflow">if</span> (++i &gt;= len1) i = 0;  <span class="keywordflow">if</span> (++j &gt;= len2) j = 0;
+<a name="l01172"></a>01172   }
+<a name="l01173"></a>01173   <span class="keywordflow">return</span> res;
+<a name="l01174"></a>01174 }
+<a name="l01175"></a>01175 
+<a name="l01176"></a><a class="code" href="namespacequcs.html#a21dac891d3cab69dae6879bc18c37edb">01176</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01177"></a>01177   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01178"></a>01178   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01179"></a>01179     result.set (<a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (y, v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01180"></a>01180   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01181"></a>01181 }
+<a name="l01182"></a>01182 
+<a name="l01183"></a><a class="code" href="namespacequcs.html#af9672a43f353fb555896798138a6998d">01183</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
+<a name="l01184"></a>01184   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01185"></a>01185   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01186"></a>01186     result.set (<a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>), <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) , <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01187"></a>01187   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01188"></a>01188 }
+<a name="l01189"></a>01189 
+<a name="l01190"></a><a class="code" href="namespacequcs.html#ab92d734173d7530ec8f0e36d48ea4c54">01190</a> vector <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (vector <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, vector <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) {
+<a name="l01191"></a>01191   <span class="keywordtype">int</span> j, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, len, len1 = y.getSize (), len2 = x.getSize ();
+<a name="l01192"></a>01192   <span class="keywordflow">if</span> (len1 &gt;= len2) {
+<a name="l01193"></a>01193     assert (len1 % len2 == 0);
+<a name="l01194"></a>01194     len = len1;
+<a name="l01195"></a>01195   } <span class="keywordflow">else</span> {
+<a name="l01196"></a>01196     assert (len2 % len1 == 0);
+<a name="l01197"></a>01197     len = len2;
+<a name="l01198"></a>01198   }
+<a name="l01199"></a>01199   vector res (len);
+<a name="l01200"></a>01200   <span class="keywordflow">for</span> (j = i = n = 0; n &lt; len; n++) {
+<a name="l01201"></a>01201     res (n) = <a class="code" href="namespacequcs.html#aecc4f3f6d19cb12b48f33a87f2fb6aaa" title="Compute complex arc tangent fortran like function.">atan2</a> (y (i), x (j));
+<a name="l01202"></a>01202     <span class="keywordflow">if</span> (++i &gt;= len1) i = 0; <span class="keywordflow">if</span> (++j &gt;= len2) j = 0;
+<a name="l01203"></a>01203   }
+<a name="l01204"></a>01204   <span class="keywordflow">return</span> res;
+<a name="l01205"></a>01205 }
+<a name="l01206"></a>01206 
+<a name="l01207"></a><a class="code" href="namespacequcs.html#a9a1f6349d5e07340cc02e6edeccad40b">01207</a> vector <a class="code" href="namespacequcs.html#a9a1f6349d5e07340cc02e6edeccad40b">w2dbm</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01208"></a>01208   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01209"></a>01209   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01210"></a>01210     result.set (10.0 * <a class="code" href="namespacequcs.html#a57711ea8077dd2281084e772e4166abb" title="Compute principal value of decimal logarithm of z.">log10</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / 0.001), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01211"></a>01211   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01212"></a>01212 }
+<a name="l01213"></a>01213 
+<a name="l01214"></a><a class="code" href="namespacequcs.html#a1be20813bce23b675f12adf41491e5ea">01214</a> vector <a class="code" href="namespacequcs.html#a1be20813bce23b675f12adf41491e5ea">dbm2w</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
+<a name="l01215"></a>01215   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01216"></a>01216   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01217"></a>01217     result.set (0.001 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">pow</a> (10.0 , v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) / 10.0), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01218"></a>01218   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01219"></a>01219 }
+<a name="l01220"></a>01220 
+<a name="l01221"></a><a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">01221</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">integrate</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) {
+<a name="l01222"></a>01222   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (0) ) / 2;
+<a name="l01223"></a>01223   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize () - 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01224"></a>01224     s += <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>));
+<a name="l01225"></a>01225   <span class="keywordflow">return</span> (s + <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (v.get (v.getSize () - 1) ) / 2) * h;
+<a name="l01226"></a>01226 }
+<a name="l01227"></a>01227 
+<a name="l01228"></a><a class="code" href="namespacequcs.html#a21f7205c59229283ae3a510f54e34cc2">01228</a> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="namespacequcs.html#a4a07d0bee06fe04ab29d13519c73b44e">integrate</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) {
+<a name="l01229"></a>01229   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s;
+<a name="l01230"></a>01230   s = v.get (0) / 2.0;
+<a name="l01231"></a>01231   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize () - 1; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01232"></a>01232     s += v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01233"></a>01233   <span class="keywordflow">return</span> (s + v.get (v.getSize () - 1) / 2.0) * <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>;
+<a name="l01234"></a>01234 }
+<a name="l01235"></a>01235 
+<a name="l01236"></a><a class="code" href="namespacequcs.html#ad8248ea2802b9a04bcb5deb31fcab02b">01236</a> vector <a class="code" href="namespacequcs.html#ad8248ea2802b9a04bcb5deb31fcab02b">dbm</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z) {
+<a name="l01237"></a>01237   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v);
+<a name="l01238"></a>01238   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; v.getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
+<a name="l01239"></a>01239     result.set (10.0 * <a class="code" href="namespacequcs.html#a57711ea8077dd2281084e772e4166abb" title="Compute principal value of decimal logarithm of z.">log10</a> (<a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (v.get (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)) / <a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (z) / 0.001), <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01240"></a>01240   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01241"></a>01241 }
+<a name="l01242"></a>01242 
+<a name="l01243"></a><a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">01243</a> vector <a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">runavg</a> (<span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
+<a name="l01244"></a>01244   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (n);
+<a name="l01245"></a>01245   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) result.set (x, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>);
+<a name="l01246"></a>01246   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01247"></a>01247 }
+<a name="l01248"></a>01248 
+<a name="l01249"></a><a class="code" href="namespacequcs.html#a551955c404a4479173e06c551ccb473e">01249</a> vector <a class="code" href="namespacequcs.html#a7bc52e9d8347354f19577ce55547689a">runavg</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
+<a name="l01250"></a>01250   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s (0.0), <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;
+<a name="l01251"></a>01251   <span class="keywordtype">int</span> len = v.getSize () - n + 1, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
+<a name="l01252"></a>01252   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (len);
+<a name="l01253"></a>01253   <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; i++) s += v.get (i);
+<a name="l01254"></a>01254   y = s / (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) n; <span class="comment">// first running average value</span>
+<a name="l01255"></a>01255   result.set (y, 0);
+<a name="l01256"></a>01256   <span class="keywordflow">for</span> (i = 0; i &lt; len - 1; i++) {
+<a name="l01257"></a>01257     y += (v.get (i + n) - v.get (i)) / (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l01258"></a>01258     result.set (y, i + 1);
+<a name="l01259"></a>01259   }
+<a name="l01260"></a>01260   <span class="keywordflow">return</span> <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a>;
+<a name="l01261"></a>01261 }
+<a name="l01262"></a>01262 
+<a name="l01263"></a>01263 <span class="preprocessor">#ifdef DEBUG</span>
+<a name="l01264"></a>01264 <span class="preprocessor"></span><span class="comment">// Debug function: Prints the vector object.</span>
+<a name="l01265"></a>01265 <span class="keywordtype">void</span> vector::print (<span class="keywordtype">void</span>) {
+<a name="l01266"></a>01266   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++) {
+<a name="l01267"></a>01267     fprintf (stderr, <span class="stringliteral">&quot;%+.2e%+.2ei\n&quot;</span>, (<span class="keywordtype">double</span>) <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<span class="keyword">get</span> (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>)),
+<a name="l01268"></a>01268              (<span class="keywordtype">double</span>) <a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (<span class="keyword">get</span> (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>)));
+<a name="l01269"></a>01269   }
+<a name="l01270"></a>01270 }
+<a name="l01271"></a>01271 <span class="preprocessor">#endif </span><span class="comment">/* DEBUG */</span>
+<a name="l01272"></a>01272 
+<a name="l01273"></a>01273 } <span class="comment">// namespace qucs</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -3,14 +3,14 @@
 <area shape="rect" id="node53" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="177,432,340,461"/>
 <area shape="rect" id="node72" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="187,539,331,568"/>
 <area shape="rect" id="node86" href="$classSchematic.html#a5a9bd92ab00320afbc1dd63cea4d1d87" title="Schematic::zoom" alt="" coords="197,592,320,621"/>
-<area shape="rect" id="node5" href="$misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5" title="checkVersion" alt="" coords="463,5,564,35"/>
+<area shape="rect" id="node5" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="445,5,581,35"/>
 <area shape="rect" id="node7" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="428,59,599,88"/>
 <area shape="rect" id="node11" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="427,112,600,141"/>
 <area shape="rect" id="node15" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="419,165,608,195"/>
 <area shape="rect" id="node33" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="439,219,588,248"/>
 <area shape="rect" id="node45" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="428,299,599,328"/>
 <area shape="rect" id="node9" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="745,5,847,35"/>
-<area shape="rect" id="node13" href="$misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d" title="convert2Unicode" alt="" coords="736,59,856,88"/>
+<area shape="rect" id="node13" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="719,59,873,88"/>
 <area shape="rect" id="node17" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="711,112,881,141"/>
 <area shape="rect" id="node31" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="681,165,911,195"/>
 <area shape="rect" id="node19" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="971,5,1128,35"/>

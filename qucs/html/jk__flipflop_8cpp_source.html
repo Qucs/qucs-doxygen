@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00072"></a>00072   QString s = <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00073"></a>00073   <span class="keywordflow">if</span>(NumPorts &lt;= 0) { <span class="comment">// no truth table simulation ?</span>
 <a name="l00074"></a>00074     QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value;     <span class="comment">// delay time</span>
-<a name="l00075"></a>00075     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a00c7621b752cf00f429c32d5ac361dc1">VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
+<a name="l00075"></a>00075     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#abd72f0a87802c6ee9d74aa0359e32981">misc::VHDL_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
 <a name="l00076"></a>00076     s += td;
 <a name="l00077"></a>00077   }
 <a name="l00078"></a>00078   s += <span class="stringliteral">&quot;;\n&quot;</span>;
@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00104"></a>00104   QString t = <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00105"></a>00105   <span class="keywordflow">if</span>(NumPorts &lt;= 0) { <span class="comment">// no truth table simulation ?</span>
 <a name="l00106"></a>00106     QString td = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value;        <span class="comment">// delay time</span>
-<a name="l00107"></a>00107     <span class="keywordflow">if</span>(!<a class="code" href="misc_8cpp.html#a68ed4681564a9666462126e3e553b7d5">Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
+<a name="l00107"></a>00107     <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7">misc::Verilog_Delay</a>(td, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>)) <span class="keywordflow">return</span> td; <span class="comment">// time has not VHDL format</span>
 <a name="l00108"></a>00108     <span class="keywordflow">if</span>(!td.isEmpty()) t = <span class="stringliteral">&quot;   &quot;</span> + td + <span class="stringliteral">&quot;;\n&quot;</span>;
 <a name="l00109"></a>00109   }
 <a name="l00110"></a>00110 
@@ -249,7 +249,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:22 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

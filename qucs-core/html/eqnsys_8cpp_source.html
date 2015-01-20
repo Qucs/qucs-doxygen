@@ -134,7 +134,7 @@
 <a name="l00077"></a>00077 }
 <a name="l00078"></a>00078 
 <a name="l00081"></a>00081 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00082"></a><a class="code" href="classqucs_1_1eqnsys.html#a7912a188391430150877cb1527a06bf1">00082</a> <a class="code" href="classqucs_1_1eqnsys.html">eqnsys&lt;nr_type_t&gt;::eqnsys</a> (<a class="code" href="classqucs_1_1eqnsys.html">eqnsys</a> &amp; e) {
+<a name="l00082"></a><a class="code" href="classqucs_1_1eqnsys.html#a7912a188391430150877cb1527a06bf1">00082</a> <a class="code" href="classqucs_1_1eqnsys.html">eqnsys&lt;nr_type_t&gt;::eqnsys</a> (<a class="code" href="classqucs_1_1eqnsys.html">eqnsys</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
 <a name="l00083"></a>00083   <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a> = e.<a class="code" href="classqucs_1_1eqnsys.html#a602a7c23b080f7feb3c5ac565f9ef091">A</a>;
 <a name="l00084"></a>00084   <a class="code" href="evaluate_8cpp.html#a1bba8cd8d1268d1be05f381ef916bae0">V</a> = NULL;
 <a name="l00085"></a>00085   <a class="code" href="property_8cpp.html#ab14b3c1e9fec18e9a3000b0b1a80ac77">S</a> = <a class="code" href="parasweep_8cpp.html#ad4a59e7a61d0c087d292babc18fefeae">E</a> = NULL;
@@ -350,7 +350,7 @@
 <a name="l00315"></a>00315 
 <a name="l00320"></a>00320 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00321"></a><a class="code" href="classqucs_1_1eqnsys.html#a884acc31e818269740d4263f4500cb73">00321</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1eqnsys.html">eqnsys&lt;nr_type_t&gt;::factorize_lu_crout</a> (<span class="keywordtype">void</span>) {
-<a name="l00322"></a>00322   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, MaxPivot;
+<a name="l00322"></a>00322   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, MaxPivot;
 <a name="l00323"></a>00323   nr_type_t f;
 <a name="l00324"></a>00324   <span class="keywordtype">int</span> k, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, pivot;
 <a name="l00325"></a>00325 
@@ -358,7 +358,7 @@
 <a name="l00327"></a>00327   <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++) {
 <a name="l00328"></a>00328     <span class="keywordflow">for</span> (MaxPivot = 0, c = 0; c &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; c++)
 <a name="l00329"></a>00329       <span class="keywordflow">if</span> ((d = <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a71700f5633db3f99b43c798b09c60bd2">A_</a>(r, c))) &gt; MaxPivot)
-<a name="l00330"></a>00330         MaxPivot = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00330"></a>00330         MaxPivot = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00331"></a>00331     <span class="keywordflow">if</span> (MaxPivot &lt;= 0) MaxPivot = NR_TINY;
 <a name="l00332"></a>00332     nPvt[<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>] = 1 / MaxPivot;
 <a name="l00333"></a>00333     rMap[<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>] = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
@@ -379,7 +379,7 @@
 <a name="l00348"></a>00348       <a class="code" href="eqnsys_8cpp.html#a71700f5633db3f99b43c798b09c60bd2">A_</a>(r, c) = f;
 <a name="l00349"></a>00349       <span class="comment">// larger pivot ?</span>
 <a name="l00350"></a>00350       <span class="keywordflow">if</span> ((d = nPvt[r] * <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (f)) &gt; MaxPivot) {
-<a name="l00351"></a>00351         MaxPivot = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00351"></a>00351         MaxPivot = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00352"></a>00352         pivot = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l00353"></a>00353       }
 <a name="l00354"></a>00354     }
@@ -387,7 +387,7 @@
 <a name="l00356"></a>00356     <span class="comment">// check pivot element and throw appropriate exception</span>
 <a name="l00357"></a>00357     <span class="keywordflow">if</span> (MaxPivot &lt;= 0) {
 <a name="l00358"></a>00358 <span class="preprocessor">#if LU_FAILURE</span>
-<a name="l00359"></a>00359 <span class="preprocessor"></span>      qucs::exception * e = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a732ab89ae14ddf9050b060b500c84177">EXCEPTION_PIVOT</a>);
+<a name="l00359"></a>00359 <span class="preprocessor"></span>      qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a732ab89ae14ddf9050b060b500c84177">EXCEPTION_PIVOT</a>);
 <a name="l00360"></a>00360       e-&gt;setText (<span class="stringliteral">&quot;no pivot != 0 found during Crout LU decomposition&quot;</span>);
 <a name="l00361"></a>00361       e-&gt;setData (c);
 <a name="l00362"></a>00362       <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
@@ -412,7 +412,7 @@
 <a name="l00381"></a>00381 
 <a name="l00386"></a>00386 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
 <a name="l00387"></a><a class="code" href="classqucs_1_1eqnsys.html#a42c54f44ebb6326d29942c585828457d">00387</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1eqnsys.html">eqnsys&lt;nr_type_t&gt;::factorize_lu_doolittle</a> (<span class="keywordtype">void</span>) {
-<a name="l00388"></a>00388   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, MaxPivot;
+<a name="l00388"></a>00388   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, MaxPivot;
 <a name="l00389"></a>00389   nr_type_t f;
 <a name="l00390"></a>00390   <span class="keywordtype">int</span> k, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, pivot;
 <a name="l00391"></a>00391 
@@ -420,7 +420,7 @@
 <a name="l00393"></a>00393   <span class="keywordflow">for</span> (r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++) {
 <a name="l00394"></a>00394     <span class="keywordflow">for</span> (MaxPivot = 0, c = 0; c &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; c++)
 <a name="l00395"></a>00395       <span class="keywordflow">if</span> ((d = <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a71700f5633db3f99b43c798b09c60bd2">A_</a>(r, c))) &gt; MaxPivot)
-<a name="l00396"></a>00396         MaxPivot = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00396"></a>00396         MaxPivot = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00397"></a>00397     <span class="keywordflow">if</span> (MaxPivot &lt;= 0) MaxPivot = NR_TINY;
 <a name="l00398"></a>00398     nPvt[<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>] = 1 / MaxPivot;
 <a name="l00399"></a>00399     rMap[<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>] = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
@@ -441,7 +441,7 @@
 <a name="l00414"></a>00414       <a class="code" href="eqnsys_8cpp.html#a71700f5633db3f99b43c798b09c60bd2">A_</a>(r, c) = f;
 <a name="l00415"></a>00415       <span class="comment">// larger pivot ?</span>
 <a name="l00416"></a>00416       <span class="keywordflow">if</span> ((d = nPvt[r] * <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (f)) &gt; MaxPivot) {
-<a name="l00417"></a>00417         MaxPivot = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00417"></a>00417         MaxPivot = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00418"></a>00418         pivot = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l00419"></a>00419       }
 <a name="l00420"></a>00420     }
@@ -449,7 +449,7 @@
 <a name="l00422"></a>00422     <span class="comment">// check pivot element and throw appropriate exception</span>
 <a name="l00423"></a>00423     <span class="keywordflow">if</span> (MaxPivot &lt;= 0) {
 <a name="l00424"></a>00424 <span class="preprocessor">#if LU_FAILURE</span>
-<a name="l00425"></a>00425 <span class="preprocessor"></span>      qucs::exception * e = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a732ab89ae14ddf9050b060b500c84177">EXCEPTION_PIVOT</a>);
+<a name="l00425"></a>00425 <span class="preprocessor"></span>      qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a732ab89ae14ddf9050b060b500c84177">EXCEPTION_PIVOT</a>);
 <a name="l00426"></a>00426       e-&gt;setText (<span class="stringliteral">&quot;no pivot != 0 found during Doolittle LU decomposition&quot;</span>);
 <a name="l00427"></a>00427       e-&gt;setData (c);
 <a name="l00428"></a>00428       <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
@@ -525,7 +525,7 @@
 <a name="l00512"></a>00512   nr_type_t f;
 <a name="l00513"></a>00513   <span class="keywordtype">int</span> error, conv, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l00514"></a>00514   <span class="keywordtype">int</span> MaxIter = <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; <span class="comment">// -&gt; less than N^3 operations</span>
-<a name="l00515"></a>00515   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> reltol = 1e-4;
+<a name="l00515"></a>00515   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> reltol = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-4;
 <a name="l00516"></a>00516   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> abstol = NR_TINY;
 <a name="l00517"></a>00517   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>, crit;
 <a name="l00518"></a>00518 
@@ -610,9 +610,9 @@
 <a name="l00601"></a>00601   nr_type_t f;
 <a name="l00602"></a>00602   <span class="keywordtype">int</span> error, conv, <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
 <a name="l00603"></a>00603   <span class="keywordtype">int</span> MaxIter = <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; <span class="comment">// -&gt; less than N^3 operations</span>
-<a name="l00604"></a>00604   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> reltol = 1e-4;
+<a name="l00604"></a>00604   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> reltol = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-4;
 <a name="l00605"></a>00605   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> abstol = NR_TINY;
-<a name="l00606"></a>00606   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>, crit, l = 1, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, s;
+<a name="l00606"></a>00606   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>, crit, l = 1, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, s;
 <a name="l00607"></a>00607 
 <a name="l00608"></a>00608   <span class="comment">// ensure that all diagonal values are non-zero</span>
 <a name="l00609"></a>00609   ensure_diagonal ();
@@ -653,18 +653,18 @@
 <a name="l00644"></a>00644       <a class="code" href="eqnsys_8cpp.html#a7ee28c6cb90082f39d9c7279f39040f8">X_</a>(r) = (1 - l) * Xprev-&gt;<a class="code" href="classqucs_1_1tvector.html#af20ce43427a811ccfd2e8b5e3b2378ba">get</a> (r) + l * (<a class="code" href="eqnsys_8cpp.html#a97097eeee58a37a9710a05f559d84a6b">B_</a>(r) - f);
 <a name="l00645"></a>00645     }
 <a name="l00646"></a>00646     <span class="comment">// check for convergence</span>
-<a name="l00647"></a>00647     <span class="keywordflow">for</span> (s = 0, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = 0, conv = 1, r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++) {
+<a name="l00647"></a>00647     <span class="keywordflow">for</span> (s = 0, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = 0, conv = 1, r = 0; r &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; r++) {
 <a name="l00648"></a>00648       diff = <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a7ee28c6cb90082f39d9c7279f39040f8">X_</a>(r) - Xprev-&gt;<a class="code" href="classqucs_1_1tvector.html#af20ce43427a811ccfd2e8b5e3b2378ba">get</a> (r));
 <a name="l00649"></a>00649       <span class="keywordflow">if</span> (diff &gt;= abstol + reltol * <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a7ee28c6cb90082f39d9c7279f39040f8">X_</a>(r))) {
 <a name="l00650"></a>00650         conv = 0;
 <a name="l00651"></a>00651         <span class="keywordflow">break</span>;
 <a name="l00652"></a>00652       }
-<a name="l00653"></a>00653       <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> += <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>; s += <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a7ee28c6cb90082f39d9c7279f39040f8">X_</a>(r));
+<a name="l00653"></a>00653       <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> += <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>; s += <a class="code" href="namespacequcs.html#ae19977dcd124dcf020fd21b46cf92e2f" title="Computes magnitude of each matrix element.">abs</a> (<a class="code" href="eqnsys_8cpp.html#a7ee28c6cb90082f39d9c7279f39040f8">X_</a>(r));
 <a name="l00654"></a>00654       <span class="keywordflow">if</span> (!std::isfinite (diff)) { error++; <span class="keywordflow">break</span>; }
 <a name="l00655"></a>00655     }
 <a name="l00656"></a>00656     <span class="keywordflow">if</span> (!error) {
 <a name="l00657"></a>00657       <span class="comment">// adjust relaxation based on average errors</span>
-<a name="l00658"></a>00658       <span class="keywordflow">if</span> ((s == 0 &amp;&amp; <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> == 0) || <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> &gt;= abstol * N + reltol * s) {
+<a name="l00658"></a>00658       <span class="keywordflow">if</span> ((s == 0 &amp;&amp; <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> == 0) || <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> &gt;= abstol * N + reltol * s) {
 <a name="l00659"></a>00659         <span class="comment">// values &lt;= 1 -&gt; non-convergence to convergence</span>
 <a name="l00660"></a>00660         <span class="keywordflow">if</span> (l &gt;= 0.6) l -= 0.1;
 <a name="l00661"></a>00661         <span class="keywordflow">if</span> (l &gt;= 1.0) l = 1.0;
@@ -810,7 +810,7 @@
 <a name="l00825"></a>00825   substitute_qr_householder_ls ();
 <a name="l00826"></a>00826 }
 <a name="l00827"></a>00827 
-<a name="l00829"></a>00829 <span class="keyword">static</span> <span class="keywordtype">void</span>
+<a name="l00829"></a>00829 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span>
 <a name="l00830"></a><a class="code" href="namespacequcs.html#a4efe1808d735794b875fe13447636029">00830</a> <a class="code" href="namespacequcs.html#a4efe1808d735794b875fe13447636029">euclidian_update</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; <a class="code" href="parse__vcd_8y.html#a6422a1819e071183f11d44c7e4df4e59">scale</a>) {
 <a name="l00831"></a>00831   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, ax;
 <a name="l00832"></a>00832   <span class="keywordflow">if</span> ((x = a) != 0) {
@@ -1258,7 +1258,7 @@
 <a name="l01334"></a>01334 <span class="preprocessor"></span><span class="preprocessor"># define MAX(x,y) (((x) &gt; (y)) ? (x) : (y))</span>
 <a name="l01335"></a>01335 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
 <a name="l01336"></a>01336 <span class="preprocessor"></span>
-<a name="l01338"></a>01338 <span class="keyword">static</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>
+<a name="l01338"></a>01338 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>
 <a name="l01339"></a><a class="code" href="namespacequcs.html#af13ef032b65d08f2c9390b645ee0af33">01339</a> <a class="code" href="namespacequcs.html#af13ef032b65d08f2c9390b645ee0af33" title="Helper function computes Givens rotation.">givens</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> b, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; s) {
 <a name="l01340"></a>01340   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z = <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (a, b);
 <a name="l01341"></a>01341   c = a / z;
@@ -1292,11 +1292,11 @@
 <a name="l01374"></a><a class="code" href="classqucs_1_1eqnsys.html#ac529a9fd0ddbec9ccc78bb2a260553b9">01374</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1eqnsys.html">eqnsys&lt;nr_type_t&gt;::diagonalize_svd</a> (<span class="keywordtype">void</span>) {
 <a name="l01375"></a>01375   <span class="keywordtype">bool</span> split;
 <a name="l01376"></a>01376   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, l, j, its, k, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, MaxIters = 30;
-<a name="l01377"></a>01377   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> an, f, g, <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, s, b, a;
+<a name="l01377"></a>01377   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> an, f, g, <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, s, b, a;
 <a name="l01378"></a>01378 
 <a name="l01379"></a>01379   <span class="comment">// find largest bidiagonal value</span>
 <a name="l01380"></a>01380   <span class="keywordflow">for</span> (an = 0, i = 0; i &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; i++)
-<a name="l01381"></a>01381     an = <a class="code" href="group__qucsPhysConstants.html#gaacc3ee1a7f283f8ef65cea31f4436a95" title="Maximum of x and y.">MAX</a> (an, fabs (<a class="code" href="eqnsys_8cpp.html#a558aab9fc481983ed0da1d9ac846f6f5">S_</a>(i)) + fabs (<a class="code" href="eqnsys_8cpp.html#a80ef7c0a31f0dd1900c1d9b0bd3b96cc">E_</a>(i)));
+<a name="l01381"></a>01381     an = MAX (an, fabs (<a class="code" href="eqnsys_8cpp.html#a558aab9fc481983ed0da1d9ac846f6f5">S_</a>(i)) + fabs (<a class="code" href="eqnsys_8cpp.html#a80ef7c0a31f0dd1900c1d9b0bd3b96cc">E_</a>(i)));
 <a name="l01382"></a>01382 
 <a name="l01383"></a>01383   <span class="comment">// diagonalize the bidiagonal matrix (stored as super-diagonal</span>
 <a name="l01384"></a>01384   <span class="comment">// vector E and diagonal vector S)</span>
@@ -1335,7 +1335,7 @@
 <a name="l01417"></a>01417       <span class="keywordflow">if</span> (l == k) {
 <a name="l01418"></a>01418         <span class="comment">// singular value is made non-negative</span>
 <a name="l01419"></a>01419         <span class="keywordflow">if</span> (d &lt; 0.0) {
-<a name="l01420"></a>01420           <a class="code" href="eqnsys_8cpp.html#a558aab9fc481983ed0da1d9ac846f6f5">S_</a>(k) = -<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l01420"></a>01420           <a class="code" href="eqnsys_8cpp.html#a558aab9fc481983ed0da1d9ac846f6f5">S_</a>(k) = -<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l01421"></a>01421           <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; j++) <a class="code" href="eqnsys_8cpp.html#a8d8a7d11fdaf1a1d0d5579b0708ab2c4">V_</a>(k, j) = -<a class="code" href="eqnsys_8cpp.html#a8d8a7d11fdaf1a1d0d5579b0708ab2c4">V_</a>(k, j);
 <a name="l01422"></a>01422         }
 <a name="l01423"></a>01423         <span class="keywordflow">break</span>;
@@ -1354,10 +1354,10 @@
 <a name="l01436"></a>01436 
 <a name="l01437"></a>01437       <span class="comment">// compute QR shift value (as close as possible to the largest</span>
 <a name="l01438"></a>01438       <span class="comment">// eigenvalue of the 2-by-2 minor matrix)</span>
-<a name="l01439"></a>01439       f  = (b - <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) * (b + d) + (g - <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) * (g + h);
+<a name="l01439"></a>01439       f  = (b - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) * (b + d) + (g - <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) * (g + h);
 <a name="l01440"></a>01440       f /= 2.0 * h * b;
 <a name="l01441"></a>01441       f += <a class="code" href="eqnsys_8cpp.html#a645b29918545469d6e80697a54d512ad">sign_</a>(f) * <a class="code" href="namespacequcs.html#aee12aee1338f671aa52723e7ae6480ba" title="Euclidean distance function for complex argument.">xhypot</a> (f, 1.0);
-<a name="l01442"></a>01442       f  = ((a - <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>) * (a + d) + h * (b / f - <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>)) / a;
+<a name="l01442"></a>01442       f  = ((a - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) * (a + d) + h * (b / f - <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>)) / a;
 <a name="l01443"></a>01443       <span class="comment">// f =&gt; (B_{ll}^2 - u) / B_{ll}</span>
 <a name="l01444"></a>01444       <span class="comment">// u =&gt; eigenvalue of T = B&#39; * B nearer T_{22} (Wilkinson shift)</span>
 <a name="l01445"></a>01445 
@@ -1386,10 +1386,10 @@
 <a name="l01468"></a>01468         <span class="comment">// rotation can be arbitrary if d = 0</span>
 <a name="l01469"></a>01469         <span class="keywordflow">if</span> (d != 0.0) {
 <a name="l01470"></a>01470           <span class="comment">// d =&gt; non-zero result on diagonal</span>
-<a name="l01471"></a>01471           d = 1.0 / <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l01471"></a>01471           d = 1.0 / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l01472"></a>01472           <span class="comment">// rotation coefficients to annihilate the lower non-zero</span>
-<a name="l01473"></a>01473           c = f * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
-<a name="l01474"></a>01474           s = h * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l01473"></a>01473           c = f * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
+<a name="l01474"></a>01474           s = h * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l01475"></a>01475         }
 <a name="l01476"></a>01476         f = c * g + s * b;
 <a name="l01477"></a>01477         a = c * b - s * g;
@@ -1415,7 +1415,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

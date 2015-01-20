@@ -37,9 +37,9 @@ var searchData=
   ['printcurrentdocument',['printCurrentDocument',['../classQucsApp.html#a760ead47ff72ea5d9389411ba3392443',1,'QucsApp']]],
   ['printcursorposition',['printCursorPosition',['../classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75',1,'QucsApp']]],
   ['propagatenode',['propagateNode',['../classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04',1,'Schematic']]],
-  ['properabsfilename',['properAbsFileName',['../misc_8cpp.html#aecb614fc9ba86cf495496f2e8a0d5691',1,'properAbsFileName(const QString &amp;Name):&#160;misc.cpp'],['../misc_8h.html#a110911472237ca6a9cdd902f01b48eef',1,'properAbsFileName(const QString &amp;):&#160;misc.cpp']]],
-  ['properfilename',['properFileName',['../misc_8cpp.html#ad48e8691c7c3940bef8f4fa3d5c268cf',1,'properFileName(const QString &amp;Name):&#160;misc.cpp'],['../misc_8h.html#af65ae3a143b0b51ded987297c14799b1',1,'properFileName(const QString &amp;):&#160;misc.cpp']]],
-  ['propername',['properName',['../misc_8cpp.html#a0c88a6955a3f7e900610d715b52237fc',1,'properName(const QString &amp;Name):&#160;misc.cpp'],['../misc_8h.html#a5fc41c762ddc584e7476ffe53af67c8e',1,'properName(const QString &amp;):&#160;misc.cpp']]],
+  ['properabsfilename',['properAbsFileName',['../namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d',1,'misc']]],
+  ['properfilename',['properFileName',['../namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43',1,'misc']]],
+  ['propername',['properName',['../namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1',1,'misc']]],
   ['property',['Property',['../structProperty.html#a7dbc1efebfad688d7c314d4bd61069c3',1,'Property']]],
   ['psdiagram',['PSDiagram',['../classPSDiagram.html#a52d2b4c692fa5465e3a2ef1c067dba92',1,'PSDiagram']]]
 ];

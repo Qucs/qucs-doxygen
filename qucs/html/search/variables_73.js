@@ -89,7 +89,7 @@ var searchData=
   ['stopz',['stopZ',['../classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238',1,'DiagramDialog']]],
   ['stream',['Stream',['../classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a',1,'SimMessage']]],
   ['string',['String',['../structtQucsSettings.html#a20531cdb4e61c16a2ef6eb60e9673f2c',1,'tQucsSettings']]],
-  ['style',['Style',['../classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4',1,'Graph::Style()'],['../classArrow.html#adb99361ef1e6bd1ea4e60bac6102090e',1,'Arrow::Style()'],['../structLine.html#a2145e442e559b7732b1be8c944f60354',1,'Line::style()'],['../structArc.html#a88d5957b4959d66b9548c0bfcd72fb77',1,'Arc::style()']]],
+  ['style',['style',['../structLine.html#a2145e442e559b7732b1be8c944f60354',1,'Line::style()'],['../structArc.html#a88d5957b4959d66b9548c0bfcd72fb77',1,'Arc::style()'],['../classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4',1,'Graph::Style()'],['../classArrow.html#adb99361ef1e6bd1ea4e60bac6102090e',1,'Arrow::Style()']]],
   ['stylebox',['StyleBox',['../classArrowDialog.html#a9ba8826c326112bc26d4e63a5bd0f47b',1,'ArrowDialog::StyleBox()'],['../classFillDialog.html#a32b132b08aeb432346207bed6f9273cf',1,'FillDialog::StyleBox()']]],
   ['subval',['SubVal',['../classID__Dialog.html#a691e4ecda2c1042bcb492e6d1831c357',1,'ID_Dialog']]],
   ['svg',['svg',['../classExportDialog.html#a91944e19507e609120e9f897c680f9ac',1,'ExportDialog']]],

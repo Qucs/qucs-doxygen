@@ -131,7 +131,7 @@
 <a name="l00071"></a>00071 
 <a name="l00072"></a>00072   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Ut, Ud_bo, Ieq, Vd;
 <a name="l00073"></a>00073 
-<a name="l00074"></a>00074   Ut = N * <a class="code" href="group__qucsPhysConstants.html#ga41ba91c2e131e438473a48d37512e7ad">kelvin</a> (T) * <a class="code" href="group__qucsPhysConstants.html#ga2d912348ee3b5229437513009d95a427" title="Boltzmann constant over Elementary charge ( )">kBoverQ</a>;
+<a name="l00074"></a>00074   Ut = N * <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) * kBoverQ;
 <a name="l00075"></a>00075   Ud_bo = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">std::log</a> (Ibo / Is + 1.0);
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077   Vd = <a class="code" href="structtriac.html#a0b5c6ab3d72d507e6fad69ee3c55029b">Ud</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="classqucs_1_1circuit.html#abc775b0f5cf152a578b71f8b1564b7aa">getV</a> (<a class="code" href="triac_8cpp.html#a81b4535e0ae62c459503dc8b2193241a">NODE_IN</a>) - <a class="code" href="classqucs_1_1circuit.html#abc775b0f5cf152a578b71f8b1564b7aa">getV</a> (<a class="code" href="triac_8cpp.html#ac02c387bf6e19f36ce40e68227015850">NODE_A2</a>));
@@ -227,7 +227,7 @@
 <a name="l00167"></a>00167   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="structtriac.html#a98dbea330a6ab1e814f5a7b3e910cf44">gi</a> = <a class="code" href="classqucs_1_1circuit.html#a68aebd7c218ed485e809537f191399e1">getOperatingPoint</a> (<span class="stringliteral">&quot;gi&quot;</span>);
 <a name="l00168"></a>00168   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> gg = 1.0 / <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Rg&quot;</span>);
 <a name="l00169"></a>00169   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Ci = <a class="code" href="classqucs_1_1circuit.html#a68aebd7c218ed485e809537f191399e1">getOperatingPoint</a> (<span class="stringliteral">&quot;Ci&quot;</span>);
-<a name="l00170"></a>00170   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> yi = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (gi, Ci * 2.0 * M_PI * frequency);
+<a name="l00170"></a>00170   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> yi = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (gi, Ci * 2.0 * pi * frequency);
 <a name="l00171"></a>00171   matrix <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (4);
 <a name="l00172"></a>00172   y.set (<a class="code" href="triac_8cpp.html#ac02c387bf6e19f36ce40e68227015850">NODE_A2</a>, <a class="code" href="triac_8cpp.html#ac02c387bf6e19f36ce40e68227015850">NODE_A2</a>, +gd);
 <a name="l00173"></a>00173   y.set (<a class="code" href="triac_8cpp.html#a81b4535e0ae62c459503dc8b2193241a">NODE_IN</a>, <a class="code" href="triac_8cpp.html#a81b4535e0ae62c459503dc8b2193241a">NODE_IN</a>, +gd +yi +gg);
@@ -289,7 +289,7 @@
 <a name="l00229"></a>00229   { <span class="stringliteral">&quot;N&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 2.0, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#aa6ae43a3d5db7a8e127e51641f27de7c">PROP_RNGII</a> (0.1, 100) },
 <a name="l00230"></a>00230   { <span class="stringliteral">&quot;Ri&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 10.0, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4129c2429762ec32998c31828cb36a57">PROP_POS_RANGEX</a> },
 <a name="l00231"></a>00231   { <span class="stringliteral">&quot;Rg&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 5.0, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4129c2429762ec32998c31828cb36a57">PROP_POS_RANGEX</a> },
-<a name="l00232"></a>00232   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+<a name="l00232"></a>00232   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
 <a name="l00233"></a>00233   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00234"></a><a class="code" href="structtriac.html">00234</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structtriac.html">triac</a>::cirdef =
 <a name="l00235"></a><a class="code" href="structtriac.html#afa652afd69e56923e2791cdebe4099b8">00235</a>   { <span class="stringliteral">&quot;Triac&quot;</span>, 3, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="netdefs_8h.html#a1bccc85ea1eada75219823bb543d134f">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#aa56774e203361c1f29dfc55bf46677e3">PROP_NONLINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
@@ -297,7 +297,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:37 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

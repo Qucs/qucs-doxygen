@@ -99,8 +99,8 @@
 <a name="l00039"></a>00039   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> g = getPropertyDouble (<span class="stringliteral">&quot;G&quot;</span>) * z0;
 <a name="l00040"></a>00040   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = getPropertyDouble (<span class="stringliteral">&quot;T&quot;</span>);
 <a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z1 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2.0 * g, M_PI - 2.0 * M_PI * frequency * t);
-<a name="l00043"></a>00043   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z2 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2.0 * g, - 2.0 * M_PI * frequency * t);
+<a name="l00042"></a>00042   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z1 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2.0 * g, <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> - 2.0 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> * frequency * t);
+<a name="l00043"></a>00043   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z2 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (2.0 * g, - 2.0 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> * frequency * t);
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045   setS (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, 1.0); setS (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, 0.0);
 <a name="l00046"></a>00046   setS (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, 0.0); setS (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4ea077d8aa0fc95077647593b5e208e4">NODE_4</a>, 0.0);
@@ -127,7 +127,7 @@
 <a name="l00067"></a><a class="code" href="structvccs.html#a0e11e6650f58777dd5a30b442bb74014">00067</a> <span class="keywordtype">void</span> <a class="code" href="structvccs.html#a0e11e6650f58777dd5a30b442bb74014">vccs::calcAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
 <a name="l00068"></a>00068   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = getPropertyDouble (<span class="stringliteral">&quot;T&quot;</span>);
 <a name="l00069"></a>00069   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (getPropertyDouble (<span class="stringliteral">&quot;G&quot;</span>),
-<a name="l00070"></a>00070                           - 2.0 * M_PI * frequency * t);
+<a name="l00070"></a>00070                           - 2.0 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> * frequency * t);
 <a name="l00071"></a>00071   setY (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, +g); setY (<a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, <a class="code" href="circuit_8h.html#a4ea077d8aa0fc95077647593b5e208e4">NODE_4</a>, +g);
 <a name="l00072"></a>00072   setY (<a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, -g); setY (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4ea077d8aa0fc95077647593b5e208e4">NODE_4</a>, -g);
 <a name="l00073"></a>00073 }
@@ -166,7 +166,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

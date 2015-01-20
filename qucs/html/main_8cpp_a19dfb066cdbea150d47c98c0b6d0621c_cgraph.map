@@ -4,14 +4,14 @@
 <area shape="rect" id="node96" href="$classSchematic.html#ae749825626bec0fb944e27411a7fb583" title="Schematic::createNetlist" alt="" coords="132,523,297,552"/>
 <area shape="rect" id="node5" href="$classModule.html#a1fe30a0d93ffea2c424b9037f0123ddf" title="Module::registerModules" alt="" coords="368,205,531,235"/>
 <area shape="rect" id="node7" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="865,231,1041,260"/>
-<area shape="rect" id="node9" href="$misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5" title="checkVersion" alt="" coords="1157,165,1259,195"/>
+<area shape="rect" id="node9" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="1140,165,1276,195"/>
 <area shape="rect" id="node11" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="1123,219,1293,248"/>
 <area shape="rect" id="node15" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="1121,272,1295,301"/>
 <area shape="rect" id="node19" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="1113,325,1303,355"/>
 <area shape="rect" id="node33" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="1133,59,1283,88"/>
 <area shape="rect" id="node41" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="1123,112,1293,141"/>
 <area shape="rect" id="node13" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="1431,219,1532,248"/>
-<area shape="rect" id="node17" href="$misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d" title="convert2Unicode" alt="" coords="1421,272,1541,301"/>
+<area shape="rect" id="node17" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="1404,272,1559,301"/>
 <area shape="rect" id="node21" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="1396,404,1567,433"/>
 <area shape="rect" id="node31" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="1367,325,1596,355"/>
 <area shape="rect" id="node23" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="1656,457,1813,487"/>
@@ -45,7 +45,7 @@
 <area shape="rect" id="node89" href="$classSchematic.html#a114ed12b567c86c854bb4a3976bd7a44" title="Schematic::createNodeSet" alt="" coords="1119,865,1297,895"/>
 <area shape="rect" id="node91" href="$classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04" title="Schematic::propagateNode" alt="" coords="864,891,1043,920"/>
 <area shape="rect" id="node98" href="$classSchematic.html#a78cbb7cbfec9141455286609f4ba2831" title="Schematic::beginNetlistDigital" alt="" coords="351,576,548,605"/>
-<area shape="rect" id="node100" href="$misc_8cpp.html#a5534ee57710fce4177dcb14004ae40ce" title="Verilog_Time" alt="" coords="400,629,499,659"/>
-<area shape="rect" id="node102" href="$misc_8cpp.html#ace8b5218b245e24fd9d8665ef45d6db9" title="VHDL_Time" alt="" coords="403,469,496,499"/>
+<area shape="rect" id="node100" href="$namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8" title="misc::Verilog_Time" alt="" coords="383,629,516,659"/>
+<area shape="rect" id="node102" href="$namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134" title="misc::VHDL_Time" alt="" coords="384,469,515,499"/>
 <area shape="rect" id="node104" href="$classSchematic.html#af893d90555f7295e7bf11acf9fa13f73" title="Schematic::endNetlistDigital" alt="" coords="356,523,543,552"/>
 </map>

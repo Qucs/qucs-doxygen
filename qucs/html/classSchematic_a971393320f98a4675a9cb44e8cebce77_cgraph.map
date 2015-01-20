@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$misc_8cpp.html#a416aa9ae4483e958edaa44f34ace62a5" title="checkVersion" alt="" coords="275,5,376,35"/>
+<area shape="rect" id="node3" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="257,5,393,35"/>
 <area shape="rect" id="node5" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="240,59,411,88"/>
 <area shape="rect" id="node9" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="239,112,412,141"/>
 <area shape="rect" id="node13" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="231,165,420,195"/>
 <area shape="rect" id="node31" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="251,245,400,275"/>
 <area shape="rect" id="node43" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="240,325,411,355"/>
 <area shape="rect" id="node7" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="535,32,636,61"/>
-<area shape="rect" id="node11" href="$misc_8cpp.html#a7a831aa77e424925d2e87e0a40676f2d" title="convert2Unicode" alt="" coords="525,85,645,115"/>
+<area shape="rect" id="node11" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="508,85,663,115"/>
 <area shape="rect" id="node15" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="500,139,671,168"/>
 <area shape="rect" id="node29" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="471,192,700,221"/>
 <area shape="rect" id="node17" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="760,32,917,61"/>

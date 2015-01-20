@@ -2,7 +2,7 @@ var searchData=
 [
   ['real',['Real',['../structtQucsSettings.html#afcf029075ec5f86c465b85321246ed4d',1,'tQucsSettings']]],
   ['recentdocs',['RecentDocs',['../structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c',1,'tQucsSettings']]],
-  ['recentfilesmenu',['recentfilesMenu',['../classQucsApp.html#af79e5cf8eb690ab210d188575d0fcc33',1,'QucsApp']]],
+  ['recentfilesmenu',['recentFilesMenu',['../classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370',1,'QucsApp']]],
   ['recreate',['recreate',['../classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7',1,'TextDoc']]],
   ['recreatecheck',['RecreateCheck',['../classVASettingsDialog.html#adba5685822c95d7b4718835a1f6038f4',1,'VASettingsDialog']]],
   ['rects',['Rects',['../classComponent.html#a3e45c8d69f34d8dac9eaeb0aeec65c58',1,'Component']]],

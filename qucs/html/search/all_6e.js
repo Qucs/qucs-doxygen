@@ -41,7 +41,7 @@ var searchData=
   ['noise_5fvv_2ecpp',['noise_vv.cpp',['../noise__vv_8cpp.html',1,'']]],
   ['noise_5fvv_2eh',['noise_vv.h',['../noise__vv_8h.html',1,'']]],
   ['noselected',['noselected',['../classExportDialog.html#ad01e2e39964f05490b6c76c13b4a40b8',1,'ExportDialog']]],
-  ['num2str',['num2str',['../misc_8cpp.html#a2ce443fe047ad8e258da41d4f8713a2f',1,'num2str(double Num):&#160;misc.cpp'],['../misc_8h.html#a5cd3f4dd3c3808f5b13ae8cfa6f7656b',1,'num2str(double):&#160;misc.cpp']]],
+  ['num2str',['num2str',['../namespacemisc.html#af7e46432adfd60ad9f875172e5c95393',1,'misc']]],
   ['numberbox',['NumberBox',['../classMarkerDialog.html#a68e1266eb2ddd8f8acad27c77498a531',1,'MarkerDialog']]],
   ['numberstr',['numberStr',['../classPortSymbol.html#ad4fe8fce26f0aee2475d69ac62208ae1',1,'PortSymbol']]],
   ['numdefaultcolors',['NumDefaultColors',['../diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb',1,'diagramdialog.cpp']]],

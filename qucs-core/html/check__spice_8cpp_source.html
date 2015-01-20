@@ -116,7 +116,7 @@
 <a name="l00056"></a><a class="code" href="check__spice_8cpp.html#af38945cca61c09171afd1c1b6054390e">00056</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structproperty__t.html">property_t</a> <a class="code" href="check__spice_8cpp.html#af38945cca61c09171afd1c1b6054390e">req_spice_R</a>[] = {
 <a name="l00057"></a>00057   { <span class="stringliteral">&quot;R&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 50, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> }, <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00058"></a><a class="code" href="check__spice_8cpp.html#a76ab6dc0c9d85085cda2808207f38108">00058</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structproperty__t.html">property_t</a> <a class="code" href="check__spice_8cpp.html#a76ab6dc0c9d85085cda2808207f38108">opt_spice_R</a>[] = {
-<a name="l00059"></a>00059   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (<a class="code" href="group__qucsPhysConstants.html#ga97d832ae23af4f215e801e37e4f94254" title="Absolute 0 in centigrade.">K</a>) },
+<a name="l00059"></a>00059   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
 <a name="l00060"></a>00060   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00061"></a>00061 
 <a name="l00062"></a><a class="code" href="check__spice_8cpp.html#ab93943e87539d1051d51b3373ab034cf">00062</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structproperty__t.html">property_t</a> <a class="code" href="check__spice_8cpp.html#ab93943e87539d1051d51b3373ab034cf">req_spice_L</a>[] = {
@@ -381,7 +381,7 @@
 <a name="l00321"></a>00321 <span class="comment">   The given endptr is set to the character after the last valid scale</span>
 <a name="l00322"></a>00322 <span class="comment">   character. */</span>
 <a name="l00323"></a>00323 <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *
-<a name="l00324"></a><a class="code" href="check__spice_8cpp.html#a50259fc22b1d9ffe3849f4ab20168d31">00324</a> <a class="code" href="check__spice_8cpp.html#a50259fc22b1d9ffe3849f4ab20168d31">spice_evaluate_scale</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">char</span> ** endptr, <span class="keywordtype">double</span> * factor) {
+<a name="l00324"></a><a class="code" href="check__spice_8cpp.html#a50259fc22b1d9ffe3849f4ab20168d31">00324</a> <a class="code" href="check__spice_8cpp.html#a50259fc22b1d9ffe3849f4ab20168d31">spice_evaluate_scale</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">char</span> ** endptr, <span class="keywordtype">double</span> * factor) {
 <a name="l00325"></a>00325   <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#a6422a1819e071183f11d44c7e4df4e59">scale</a> = NULL;
 <a name="l00326"></a>00326   *factor = 1.0;
 <a name="l00327"></a>00327   <span class="keywordflow">switch</span> (*value) {
@@ -411,22 +411,22 @@
 <a name="l00351"></a>00351   <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>: <span class="keywordflow">case</span> <span class="charliteral">&#39;F&#39;</span>:
 <a name="l00352"></a>00352     value++; scale = <span class="stringliteral">&quot;f&quot;</span>; <span class="keywordflow">break</span>;
 <a name="l00353"></a>00353   }
-<a name="l00354"></a>00354   *endptr = <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00354"></a>00354   *endptr = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00355"></a>00355   <span class="keywordflow">return</span> <a class="code" href="parse__vcd_8y.html#a6422a1819e071183f11d44c7e4df4e59">scale</a>;
 <a name="l00356"></a>00356 }
 <a name="l00357"></a>00357 
 <a name="l00358"></a>00358 <span class="comment">/* This little function takes the given string value, converts it into</span>
 <a name="l00359"></a>00359 <span class="comment">   an appropriate real value and save optional scale and unit. */</span>
-<a name="l00360"></a><a class="code" href="check__spice_8cpp.html#a5d1b9015f9f86a045b2488a6691209c1">00360</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="check__spice_8cpp.html#a5d1b9015f9f86a045b2488a6691209c1">spice_create_value</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#a2fe57e2d3d2cba9a3aeba2f629eaa78b">ident</a>) {
+<a name="l00360"></a><a class="code" href="check__spice_8cpp.html#a5d1b9015f9f86a045b2488a6691209c1">00360</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="check__spice_8cpp.html#a5d1b9015f9f86a045b2488a6691209c1">spice_create_value</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a25164f805d9af841d8063fe86f5e1da4">ident</a>) {
 <a name="l00361"></a>00361   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val;
 <a name="l00362"></a>00362   <span class="keywordtype">char</span> * end;
-<a name="l00363"></a>00363   <span class="keyword">const</span> <span class="keywordtype">char</span>  * str;
-<a name="l00364"></a>00364   <span class="keywordtype">double</span> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = 1.0;
+<a name="l00363"></a>00363   <span class="keyword">const</span> <span class="keywordtype">char</span>  * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
+<a name="l00364"></a>00364   <span class="keywordtype">double</span> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = 1.0;
 <a name="l00365"></a>00365   val = <a class="code" href="netdefs_8h.html#a3b634bc32489c83e168d2f2aaac065be">create_value</a> ();
 <a name="l00366"></a>00366   val-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = strtod (ident, &amp;end);
 <a name="l00367"></a>00367   <span class="keywordflow">if</span> (*end) {
 <a name="l00368"></a>00368     str = <a class="code" href="check__spice_8cpp.html#a50259fc22b1d9ffe3849f4ab20168d31">spice_evaluate_scale</a> (end, &amp;end, &amp;value);
-<a name="l00369"></a>00369     val-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> *= <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>;
+<a name="l00369"></a>00369     val-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> *= <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00370"></a>00370     val-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a> = str ? strdup (str) : NULL;
 <a name="l00371"></a>00371     <span class="keywordflow">if</span> (*end) val-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a> = strdup (end);
 <a name="l00372"></a>00372   }
@@ -614,7 +614,7 @@
 <a name="l00554"></a>00554 
 <a name="l00555"></a>00555 <span class="comment">/* This function evaluates the already translated value (translated</span>
 <a name="l00556"></a>00556 <span class="comment">   scale value) and returns the actual value leaving it untouched. */</span>
-<a name="l00557"></a><a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">00557</a> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00557"></a><a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">00557</a> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00558"></a>00558   <span class="keywordtype">double</span> val = value-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a>, factor = 1.0;
 <a name="l00559"></a>00559   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a> != NULL) {
 <a name="l00560"></a>00560     <span class="keywordflow">switch</span> (*(value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>)) {
@@ -633,7 +633,7 @@
 <a name="l00573"></a>00573 }
 <a name="l00574"></a>00574 
 <a name="l00575"></a>00575 <span class="comment">/* The following function free()&#39;s the given value. */</span>
-<a name="l00576"></a><a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">00576</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">netlist_free_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00576"></a><a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">00576</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">netlist_free_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00577"></a>00577   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
 <a name="l00578"></a>00578   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>)  <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>);
 <a name="l00579"></a>00579   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>);
@@ -641,7 +641,7 @@
 <a name="l00581"></a>00581 }
 <a name="l00582"></a>00582 
 <a name="l00583"></a>00583 <span class="comment">/* Deletes the given value list. */</span>
-<a name="l00584"></a><a class="code" href="check__spice_8cpp.html#a0ff368d4dd6d78acf5b823567b37ae95">00584</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#a0ff368d4dd6d78acf5b823567b37ae95">netlist_free_values</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l00584"></a><a class="code" href="check__spice_8cpp.html#a0ff368d4dd6d78acf5b823567b37ae95">00584</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#a0ff368d4dd6d78acf5b823567b37ae95">netlist_free_values</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l00585"></a>00585   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00586"></a>00586   <span class="keywordflow">for</span> (; value != NULL; value = <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>) {
 <a name="l00587"></a>00587     next = value-&gt;<a class="code" href="structvalue__t.html#a51b2a2d3d5919849306c784f6271492c">next</a>;
@@ -1012,7 +1012,7 @@
 <a name="l00952"></a>00952 <span class="comment">   translates these patterns into valid Qucs units. */</span>
 <a name="l00953"></a><a class="code" href="check__spice_8cpp.html#ad91c17a084a30d6bb767b2215947b275">00953</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#ad91c17a084a30d6bb767b2215947b275">spice_translate_units</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def) {
 <a name="l00954"></a>00954   <span class="keywordflow">for</span> (<span class="keyword">struct</span> <a class="code" href="structpair__t.html">pair_t</a> * pair = def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>; pair != NULL; pair = pair-&gt;<a class="code" href="structpair__t.html#a77bd04da2c79936e50deb20d72070384">next</a>) {
-<a name="l00955"></a>00955     <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a> = pair-&gt;value;
+<a name="l00955"></a>00955     <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a> = pair-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a>;
 <a name="l00956"></a>00956     <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>) {
 <a name="l00957"></a>00957       <span class="keyword">struct </span><a class="code" href="structunit__translation__t.html">unit_translation_t</a> * unit;
 <a name="l00958"></a>00958       <span class="keywordtype">int</span> found = 0;
@@ -1046,10 +1046,10 @@
 <a name="l00986"></a>00986       pair-&gt;<a class="code" href="structpair__t.html#a528541470063ea3e6ef340122e6f946a">key</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#ae0177f56720b1a0e3f212878887faa94">key</a>);
 <a name="l00987"></a>00987       pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a> = <a class="code" href="netdefs_8h.html#a3b634bc32489c83e168d2f2aaac065be">create_value</a> ();
 <a name="l00988"></a>00988       <span class="keywordflow">if</span> (<a class="code" href="netdefs_8h.html#aa0789bbfc8218667db962b8c0ec9bb3d">PROP_IS_VAL</a> (*prop)) {
-<a name="l00989"></a>00989         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>;
+<a name="l00989"></a>00989         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>;
 <a name="l00990"></a>00990       }
 <a name="l00991"></a>00991       <span class="keywordflow">else</span> {
-<a name="l00992"></a>00992         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>);
+<a name="l00992"></a>00992         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>);
 <a name="l00993"></a>00993       }
 <a name="l00994"></a>00994       def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a> = <a class="code" href="check__spice_8cpp.html#a69226c6b8479394bbe4b4be3733a383a">netlist_append_pairs</a> (def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>, pair);
 <a name="l00995"></a>00995     }
@@ -1070,10 +1070,10 @@
 <a name="l01010"></a>01010       pair-&gt;<a class="code" href="structpair__t.html#a528541470063ea3e6ef340122e6f946a">key</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#ae0177f56720b1a0e3f212878887faa94">key</a>);
 <a name="l01011"></a>01011       pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a> = <a class="code" href="netdefs_8h.html#a3b634bc32489c83e168d2f2aaac065be">create_value</a> ();
 <a name="l01012"></a>01012       <span class="keywordflow">if</span> (<a class="code" href="netdefs_8h.html#aa0789bbfc8218667db962b8c0ec9bb3d">PROP_IS_VAL</a> (*prop)) {
-<a name="l01013"></a>01013         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>;
+<a name="l01013"></a>01013         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a044f3f51414e2c7ecf38fec2158ceeab">d</a>;
 <a name="l01014"></a>01014       }
 <a name="l01015"></a>01015       <span class="keywordflow">else</span> {
-<a name="l01016"></a>01016         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#ae5dfc63c429f5f330ff7a0534a7a605f">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>);
+<a name="l01016"></a>01016         pair-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = strdup (prop-&gt;<a class="code" href="structproperty__t.html#a10d8cdab6801a947d31c0d65c7c734f2">defaultval</a>.<a class="code" href="structproperty__t.html#a554e4ec1f3f5ff49cf11fda865cb57b8">s</a>);
 <a name="l01017"></a>01017       }
 <a name="l01018"></a>01018       def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a> = <a class="code" href="check__spice_8cpp.html#a69226c6b8479394bbe4b4be3733a383a">netlist_append_pairs</a> (def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>, pair);
 <a name="l01019"></a>01019     }
@@ -1165,7 +1165,7 @@
 <a name="l01105"></a>01105 <span class="comment">   replaced.  If the replace flag is zero and the pair already exists</span>
 <a name="l01106"></a>01106 <span class="comment">   nothing is done here. */</span>
 <a name="l01107"></a><a class="code" href="check__spice_8cpp.html#ac84008f663abc7bf5f5fc14cc96d2d21">01107</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#ac84008f663abc7bf5f5fc14cc96d2d21">spice_append_pair</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def, <span class="keyword">const</span> <span class="keywordtype">char</span> * prop,
-<a name="l01108"></a>01108                                <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>, <span class="keywordtype">int</span> replace) {
+<a name="l01108"></a>01108                                <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>, <span class="keywordtype">int</span> replace) {
 <a name="l01109"></a>01109   <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * p = <a class="code" href="check__spice_8cpp.html#ac9a1f30780cb2ee6fd15d3f002a54ff1">spice_find_property</a> (def, prop);
 <a name="l01110"></a>01110   <span class="keywordflow">if</span> (p != NULL) {
 <a name="l01111"></a>01111     <span class="keywordflow">if</span> (replace) {
@@ -1190,11 +1190,11 @@
 <a name="l01130"></a>01130 }
 <a name="l01131"></a>01131 
 <a name="l01132"></a>01132 <span class="comment">// Converts the given string into upper case.</span>
-<a name="l01133"></a><a class="code" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">01133</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">spice_toupper</a> (<span class="keywordtype">char</span> * str) {
+<a name="l01133"></a><a class="code" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">01133</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="check__spice_8cpp.html#afc9560246bc78250f784114f1eb7864e">spice_toupper</a> (<span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>) {
 <a name="l01134"></a>01134   <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; strlen (str); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
 <a name="l01135"></a>01135     <span class="keywordflow">if</span> (str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &lt;= <span class="charliteral">&#39;z&#39;</span>) str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = toupper (str[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]);
 <a name="l01136"></a>01136   }
-<a name="l01137"></a>01137   <span class="keywordflow">return</span> str;
+<a name="l01137"></a>01137   <span class="keywordflow">return</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l01138"></a>01138 }
 <a name="l01139"></a>01139 
 <a name="l01140"></a>01140 <span class="comment">/* The function adjusts the instance name of the given component</span>
@@ -1404,7 +1404,7 @@
 <a name="l01344"></a>01344 <span class="comment">   as commentary line then. */</span>
 <a name="l01345"></a><a class="code" href="check__spice_8cpp.html#a5aa2775b864137e6bf1287954c2e3b37">01345</a> <span class="keyword">static</span> <span class="keywordtype">char</span> * <a class="code" href="check__spice_8cpp.html#a5aa2775b864137e6bf1287954c2e3b37">spice_untranslated_text</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def) {
 <a name="l01346"></a>01346   <span class="keyword">struct </span><a class="code" href="structvalue__t.html">value_t</a> * val;
-<a name="l01347"></a>01347   <span class="keywordtype">char</span> str[256];
+<a name="l01347"></a>01347   <span class="keywordtype">char</span> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>[256];
 <a name="l01348"></a>01348   sprintf (str, <span class="stringliteral">&quot;%s%s:%s &quot;</span>, def-&gt;<a class="code" href="structdefinition__t.html#a1416fa0ce6546e23f08ec6f578133bdb">action</a> ? <span class="stringliteral">&quot;.&quot;</span> : <span class="stringliteral">&quot;&quot;</span>, def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>, def-&gt;<a class="code" href="structdefinition__t.html#a594dd31d0446b3364e5875eaced950eb">instance</a>);
 <a name="l01349"></a>01349   <span class="keywordtype">char</span> * txt = (<span class="keywordtype">char</span> *) malloc (strlen (str) + 1);
 <a name="l01350"></a>01350   strcpy (txt, str);
@@ -1729,7 +1729,7 @@
 <a name="l01669"></a>01669 <span class="comment">/* The function appends the given key/value pair to the properties of</span>
 <a name="l01670"></a>01670 <span class="comment">   any definition of the given type. */</span>
 <a name="l01671"></a><a class="code" href="check__spice_8cpp.html#ac7d389fc1bc84f51a7ebf4f0f0c764f8">01671</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#ac7d389fc1bc84f51a7ebf4f0f0c764f8">spice_add_property</a> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * root, <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a>,
-<a name="l01672"></a>01672                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * key, <span class="keywordtype">char</span> * <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>) {
+<a name="l01672"></a>01672                                 <span class="keyword">const</span> <span class="keywordtype">char</span> * key, <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
 <a name="l01673"></a>01673   <span class="keywordflow">for</span> (<span class="keyword">struct</span> <a class="code" href="structdefinition__t.html">definition_t</a> * def = root; def != NULL; def = def-&gt;<a class="code" href="structdefinition__t.html#ac6f2d42a0105ff6e699938fcd36bd12b">next</a>) {
 <a name="l01674"></a>01674     <span class="keywordflow">if</span> (!strcmp (def-&gt;type, type))
 <a name="l01675"></a>01675       <a class="code" href="check__spice_8cpp.html#ac84008f663abc7bf5f5fc14cc96d2d21">spice_append_pair</a> (def, key, value, 0);
@@ -2282,7 +2282,7 @@
 <a name="l02222"></a>02222 <span class="comment">   appropriate real value and save optional scale and unit and finally</span>
 <a name="l02223"></a>02223 <span class="comment">   returns the actual value. */</span>
 <a name="l02224"></a><a class="code" href="check__spice_8cpp.html#add4a4512d5c65c2c9271314752e50fbb">02224</a> <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="check__spice_8cpp.html#add4a4512d5c65c2c9271314752e50fbb">spice_get_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * val) {
-<a name="l02225"></a>02225   <span class="keyword">const</span> <span class="keywordtype">char</span> * str;
+<a name="l02225"></a>02225   <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l02226"></a>02226   <span class="keywordtype">char</span> * end;
 <a name="l02227"></a>02227   <span class="keywordtype">double</span> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>;
 <a name="l02228"></a>02228   val-&gt;<a class="code" href="structvalue__t.html#a00344d940adac2e92047e60efde51a36">value</a> = strtod (val-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>, &amp;end);
@@ -2304,7 +2304,7 @@
 <a name="l02244"></a>02244   <span class="comment">// contruct polynomial expression</span>
 <a name="l02245"></a>02245   <span class="keywordtype">int</span> * pn = (<span class="keywordtype">int</span> *) calloc (nd, <span class="keyword">sizeof</span> (<span class="keywordtype">int</span>));
 <a name="l02246"></a>02246   <span class="keyword">static</span> <span class="keywordtype">char</span> expr[1024];
-<a name="l02247"></a>02247   <span class="keywordtype">char</span> <a class="code" href="parse__vcd_8y.html#afcc7a4b78ecd8fa7e713f8cfa0f51017">value</a>[256];
+<a name="l02247"></a>02247   <span class="keywordtype">char</span> <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>[256];
 <a name="l02248"></a>02248   strcpy (expr, <span class="stringliteral">&quot;&quot;</span>);
 <a name="l02249"></a>02249 
 <a name="l02250"></a>02250   <span class="comment">// go through spice values</span>
@@ -2697,7 +2697,7 @@
 <a name="l02637"></a>02637       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="differentiate_8cpp.html#a96a9932d683cea3201ca69af630cc5e4">R</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;RSH&quot;</span>);
 <a name="l02638"></a>02638       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="differentiate_8cpp.html#a855c89a2038738d883b45a258d5e4b0a">D</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;DEFW&quot;</span>);
 <a name="l02639"></a>02639       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;NARROW&quot;</span>);
-<a name="l02640"></a>02640       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = 0, w = 0, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = 0, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0;
+<a name="l02640"></a>02640       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = 0, w = 0, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = 0, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0;
 <a name="l02641"></a>02641       <span class="keywordflow">if</span> (L) {
 <a name="l02642"></a>02642         l = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (L-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02643"></a>02643         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, L);
@@ -2711,15 +2711,15 @@
 <a name="l02651"></a>02651         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, R);
 <a name="l02652"></a>02652       }
 <a name="l02653"></a>02653       <span class="keywordflow">if</span> (D) {
-<a name="l02654"></a>02654         <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (D-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
+<a name="l02654"></a>02654         <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (D-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02655"></a>02655         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, D);
 <a name="l02656"></a>02656       }
 <a name="l02657"></a>02657       <span class="keywordflow">if</span> (N) {
 <a name="l02658"></a>02658         <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (N-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02659"></a>02659         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, N);
 <a name="l02660"></a>02660       }
-<a name="l02661"></a>02661       <span class="keywordflow">if</span> (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> == 0) <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = 1e-6;
-<a name="l02662"></a>02662       <span class="keywordflow">if</span> (w == 0) w = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l02661"></a>02661       <span class="keywordflow">if</span> (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> == 0) <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = 1e-6;
+<a name="l02662"></a>02662       <span class="keywordflow">if</span> (w == 0) w = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l02663"></a>02663       <span class="keywordflow">if</span> (l != 0 &amp;&amp; w != 0 &amp;&amp; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> != 0) {
 <a name="l02664"></a>02664         <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> * (l - <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) / (w - <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>);
 <a name="l02665"></a>02665         <a class="code" href="check__spice_8cpp.html#ae7efb9e5ee5e22b59692fc4c43c85cf8">spice_set_property_value</a> (def, <span class="stringliteral">&quot;R&quot;</span>, <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>);
@@ -2743,7 +2743,7 @@
 <a name="l02683"></a>02683       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="property_8cpp.html#ab14b3c1e9fec18e9a3000b0b1a80ac77">S</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;CJSW&quot;</span>);
 <a name="l02684"></a>02684       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="differentiate_8cpp.html#a855c89a2038738d883b45a258d5e4b0a">D</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;DEFW&quot;</span>);
 <a name="l02685"></a>02685       <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = <a class="code" href="check__spice_8cpp.html#a6168866b54e9984ba52793ecabcf45bc">spice_find_property_nocase</a> (def, <span class="stringliteral">&quot;NARROW&quot;</span>);
-<a name="l02686"></a>02686       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = 0, w = 0, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = 0, <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = 0, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0, s = 0;
+<a name="l02686"></a>02686       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = 0, w = 0, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = 0, <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = 0, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0, s = 0;
 <a name="l02687"></a>02687       <span class="keywordflow">if</span> (L) {
 <a name="l02688"></a>02688         l = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (L-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02689"></a>02689         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, L);
@@ -2761,15 +2761,15 @@
 <a name="l02701"></a>02701         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, S);
 <a name="l02702"></a>02702       }
 <a name="l02703"></a>02703       <span class="keywordflow">if</span> (D) {
-<a name="l02704"></a>02704         <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (D-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
+<a name="l02704"></a>02704         <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (D-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02705"></a>02705         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, D);
 <a name="l02706"></a>02706       }
 <a name="l02707"></a>02707       <span class="keywordflow">if</span> (N) {
 <a name="l02708"></a>02708         <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (N-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02709"></a>02709         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, N);
 <a name="l02710"></a>02710       }
-<a name="l02711"></a>02711       <span class="keywordflow">if</span> (<a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> == 0) <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = 1e-6;
-<a name="l02712"></a>02712       <span class="keywordflow">if</span> (w == 0) w = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l02711"></a>02711       <span class="keywordflow">if</span> (<a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> == 0) <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = 1e-6;
+<a name="l02712"></a>02712       <span class="keywordflow">if</span> (w == 0) w = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l02713"></a>02713       <span class="keywordflow">if</span> (l != 0 &amp;&amp; w != 0 &amp;&amp; <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> != 0) {
 <a name="l02714"></a>02714         <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> * (l - <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) * (w - <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) + 2 * s * (l + w - 2 * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>);
 <a name="l02715"></a>02715         <a class="code" href="check__spice_8cpp.html#ae7efb9e5ee5e22b59692fc4c43c85cf8">spice_set_property_value</a> (def, <span class="stringliteral">&quot;C&quot;</span>, <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>);
@@ -2783,7 +2783,7 @@
 <a name="l02723"></a>02723       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> len = 1e-3;
 <a name="l02724"></a>02724       <span class="keywordflow">if</span> (pt != NULL) {
 <a name="l02725"></a>02725         <span class="comment">// delay given</span>
-<a name="l02726"></a>02726         len = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (pt-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>) * <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a>;
+<a name="l02726"></a>02726         len = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (pt-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>) * C0;
 <a name="l02727"></a>02727         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, pt);
 <a name="l02728"></a>02728         <a class="code" href="check__spice_8cpp.html#ae7efb9e5ee5e22b59692fc4c43c85cf8">spice_set_property_value</a> (def, <span class="stringliteral">&quot;L&quot;</span>, len);
 <a name="l02729"></a>02729       }
@@ -2793,14 +2793,14 @@
 <a name="l02733"></a>02733         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (pl-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02734"></a>02734         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, pf);
 <a name="l02735"></a>02735         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, pl);
-<a name="l02736"></a>02736         len = <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> / f * l;
+<a name="l02736"></a>02736         len = C0 / f * l;
 <a name="l02737"></a>02737         <a class="code" href="check__spice_8cpp.html#ae7efb9e5ee5e22b59692fc4c43c85cf8">spice_set_property_value</a> (def, <span class="stringliteral">&quot;L&quot;</span>, len);
 <a name="l02738"></a>02738       }
 <a name="l02739"></a>02739       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pf != NULL) {
 <a name="l02740"></a>02740         <span class="comment">// only frequency given, default normalized length</span>
 <a name="l02741"></a>02741         <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="check__spice_8cpp.html#aa506e62718b075ea5a9c5cd83c9ef5a6">spice_evaluate_value</a> (pf-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>);
 <a name="l02742"></a>02742         def-&gt;pairs = <a class="code" href="check__spice_8cpp.html#abf99003ef4562d4208a90ab55f008b3f">spice_del_property</a> (def-&gt;pairs, pf);
-<a name="l02743"></a>02743         len = <a class="code" href="group__qucsPhysConstants.html#gac539c7fe47611738d5320760d4453602" title="speed of light in vacuum ( )">C0</a> / f * 0.25;
+<a name="l02743"></a>02743         len = C0 / f * 0.25;
 <a name="l02744"></a>02744         <a class="code" href="check__spice_8cpp.html#ae7efb9e5ee5e22b59692fc4c43c85cf8">spice_set_property_value</a> (def, <span class="stringliteral">&quot;L&quot;</span>, len);
 <a name="l02745"></a>02745       }
 <a name="l02746"></a>02746       <span class="keywordflow">else</span> {
@@ -3137,7 +3137,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

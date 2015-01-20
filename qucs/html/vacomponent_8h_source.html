@@ -111,22 +111,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00033"></a><a class="code" href="classvacomponent.html">00033</a> <span class="keyword">class </span><a class="code" href="classvacomponent.html">vacomponent</a> : <span class="keyword">public</span> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>
 <a name="l00034"></a>00034 {
 <a name="l00035"></a>00035   <span class="keyword">public</span>:
-<a name="l00036"></a>00036     <a class="code" href="classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent">vacomponent</a>(QString filename);
-<a name="l00037"></a><a class="code" href="classvacomponent.html#a546b9e330b7699e62d4ffa18d68a056d">00037</a>     <a class="code" href="classvacomponent.html#a546b9e330b7699e62d4ffa18d68a056d">~vacomponent</a>() { };
-<a name="l00038"></a>00038     <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classComponent.html#acac3c01cafba8659753304a89611560d">newOne</a>(QString filename);
-<a name="l00039"></a>00039     <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects.">info</a>(QString&amp;, QString &amp;,
-<a name="l00040"></a>00040                          <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>, QString filename=<span class="stringliteral">&quot;&quot;</span>);
-<a name="l00041"></a>00041   <span class="keyword">protected</span>:
-<a name="l00042"></a>00042     <span class="keywordtype">void</span> <a class="code" href="classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol.">createSymbol</a>(QString filename);
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044 };
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="comment">//</span>
-<a name="l00047"></a>00047 QString <a class="code" href="vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file">getData</a>(QString filename);
-<a name="l00048"></a>00048 <span class="keywordtype">double</span> <a class="code" href="vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script">getDouble</a>(QScriptValue data, QString prop);
-<a name="l00049"></a>00049 QString <a class="code" href="vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script">getString</a>(QScriptValue data, QString prop);
-<a name="l00050"></a>00050 
-<a name="l00051"></a>00051 <span class="preprocessor">#endif </span><span class="comment">/* vacomponent_H */</span>
+<a name="l00036"></a>00036     <span class="keyword">using</span> <a class="code" href="classComponent.html#acac3c01cafba8659753304a89611560d">Component::newOne</a>;
+<a name="l00037"></a>00037     <a class="code" href="classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent">vacomponent</a>(QString filename);
+<a name="l00038"></a><a class="code" href="classvacomponent.html#a546b9e330b7699e62d4ffa18d68a056d">00038</a>     <a class="code" href="classvacomponent.html#a546b9e330b7699e62d4ffa18d68a056d">~vacomponent</a>() { };
+<a name="l00039"></a>00039     <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classComponent.html#acac3c01cafba8659753304a89611560d">newOne</a>(QString filename);
+<a name="l00040"></a>00040     <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects.">info</a>(QString&amp;, QString &amp;,
+<a name="l00041"></a>00041                          <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>, QString filename=<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00042"></a>00042   <span class="keyword">protected</span>:
+<a name="l00043"></a>00043     <span class="keywordtype">void</span> <a class="code" href="classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol.">createSymbol</a>(QString filename);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="comment">//</span>
+<a name="l00048"></a>00048 QString <a class="code" href="vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file">getData</a>(QString filename);
+<a name="l00049"></a>00049 <span class="keywordtype">double</span> <a class="code" href="vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script">getDouble</a>(QScriptValue data, QString prop);
+<a name="l00050"></a>00050 QString <a class="code" href="vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script">getString</a>(QScriptValue data, QString prop);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="preprocessor">#endif </span><span class="comment">/* vacomponent_H */</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -145,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -113,7 +113,7 @@
 <a name="l00053"></a>00053   <a class="code" href="structvam.html#a56a3c0f62d73703d3551c905b002feb2">initDC</a> ();
 <a name="l00054"></a>00054   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>);
 <a name="l00055"></a>00055   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Phase&quot;</span>);
-<a name="l00056"></a>00056   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a, <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (p)));
+<a name="l00056"></a>00056   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (a, <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (p)));
 <a name="l00057"></a>00057 }
 <a name="l00058"></a>00058 
 <a name="l00059"></a><a class="code" href="structvam.html#a6c7233f7477cc7fc4fbee34a31919123">00059</a> <span class="keywordtype">void</span> <a class="code" href="structvam.html#a6c7233f7477cc7fc4fbee34a31919123">vam::initTR</a> (<span class="keywordtype">void</span>) {
@@ -123,9 +123,9 @@
 <a name="l00063"></a><a class="code" href="structvam.html#a4b7ba4ffd6c9f5171dfe066d5e05d7a3">00063</a> <span class="keywordtype">void</span> <a class="code" href="structvam.html#a4b7ba4ffd6c9f5171dfe066d5e05d7a3">vam::calcTR</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) {
 <a name="l00064"></a>00064   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;f&quot;</span>);
 <a name="l00065"></a>00065   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Phase&quot;</span>);
-<a name="l00066"></a>00066   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;m&quot;</span>);
+<a name="l00066"></a>00066   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;m&quot;</span>);
 <a name="l00067"></a>00067   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>);
-<a name="l00068"></a>00068   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = a * <a class="code" href="namespacequcs.html#a17a5ac6a13d0e5d9c1180f3fc8b1a243" title="Compute complex sine.">std::sin</a> (2 * M_PI * f * t + <a class="code" href="group__qucsPhysConstants.html#gaa322affa45b9a0af7408db0f961d6e14" title="Convert degree to radian.">rad</a> (p));
+<a name="l00068"></a>00068   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = a * <a class="code" href="namespacequcs.html#a17a5ac6a13d0e5d9c1180f3fc8b1a243" title="Compute complex sine.">std::sin</a> (2 * pi * f * t + <a class="code" href="namespacequcs.html#aad60b983c1899f497c1564a1e5d03fd7" title="rad2deg Convert radian to degree">deg2rad</a> (p));
 <a name="l00069"></a>00069   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, u);
 <a name="l00070"></a>00070   <a class="code" href="classqucs_1_1circuit.html#ae0975307c2b02102e33d1c15a31597ec">setC</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, -u * d);
 <a name="l00071"></a>00071 }
@@ -145,7 +145,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:38 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:14 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

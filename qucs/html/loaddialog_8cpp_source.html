@@ -399,23 +399,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00316"></a>00316 
 <a name="l00317"></a><a class="code" href="classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f">00317</a> <span class="keywordtype">bool</span> <a class="code" href="classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f">LoadDialog::eventFilter</a>(QObject *obj, QEvent *event)
 <a name="l00318"></a>00318 {
-<a name="l00319"></a>00319   <span class="keywordflow">if</span> (event-&gt;type() == QEvent::KeyPress) {
-<a name="l00320"></a>00320     QKeyEvent* keyEvent = <span class="keyword">static_cast&lt;</span>QKeyEvent*<span class="keyword">&gt;</span>(event);
-<a name="l00321"></a>00321 <span class="comment">//    qDebug() &lt;&lt; &quot;type&quot; &lt;&lt; keyEvent-&gt;key() &lt;&lt; fileView-&gt;count();</span>
-<a name="l00322"></a>00322     <span class="keywordflow">if</span> (keyEvent-&gt;key() == Qt::Key_Up) {
-<a name="l00323"></a>00323 
-<a name="l00324"></a>00324         <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;setCurrentRow(std::max(0, <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentRow()-1));
-<a name="l00325"></a>00325         this-&gt;<a class="code" href="classLoadDialog.html#a675b0c9b3e74e3bc8dfac0a89a876233">slotSymbolFileClicked</a>(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentItem());
-<a name="l00326"></a>00326         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00327"></a>00327     }
-<a name="l00328"></a>00328     <span class="keywordflow">if</span> (keyEvent-&gt;key() == Qt::Key_Down) {
-<a name="l00329"></a>00329         <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;setCurrentRow(std::min(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;count()-1, <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentRow()+1));
-<a name="l00330"></a>00330         this-&gt;<a class="code" href="classLoadDialog.html#a675b0c9b3e74e3bc8dfac0a89a876233">slotSymbolFileClicked</a>(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentItem());
-<a name="l00331"></a>00331         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00332"></a>00332     }
-<a name="l00333"></a>00333   }
-<a name="l00334"></a>00334   <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00335"></a>00335 }
+<a name="l00319"></a>00319   Q_UNUSED(obj);
+<a name="l00320"></a>00320 
+<a name="l00321"></a>00321   <span class="keywordflow">if</span> (event-&gt;type() == QEvent::KeyPress) {
+<a name="l00322"></a>00322     QKeyEvent* keyEvent = <span class="keyword">static_cast&lt;</span>QKeyEvent*<span class="keyword">&gt;</span>(event);
+<a name="l00323"></a>00323 <span class="comment">//    qDebug() &lt;&lt; &quot;type&quot; &lt;&lt; keyEvent-&gt;key() &lt;&lt; fileView-&gt;count();</span>
+<a name="l00324"></a>00324     <span class="keywordflow">if</span> (keyEvent-&gt;key() == Qt::Key_Up) {
+<a name="l00325"></a>00325 
+<a name="l00326"></a>00326         <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;setCurrentRow(std::max(0, <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentRow()-1));
+<a name="l00327"></a>00327         this-&gt;<a class="code" href="classLoadDialog.html#a675b0c9b3e74e3bc8dfac0a89a876233">slotSymbolFileClicked</a>(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentItem());
+<a name="l00328"></a>00328         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00329"></a>00329     }
+<a name="l00330"></a>00330     <span class="keywordflow">if</span> (keyEvent-&gt;key() == Qt::Key_Down) {
+<a name="l00331"></a>00331         <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;setCurrentRow(std::min(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;count()-1, <a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentRow()+1));
+<a name="l00332"></a>00332         this-&gt;<a class="code" href="classLoadDialog.html#a675b0c9b3e74e3bc8dfac0a89a876233">slotSymbolFileClicked</a>(<a class="code" href="classLoadDialog.html#a5d3b73817c74c2a988a21cba0704c22a">fileView</a>-&gt;currentItem());
+<a name="l00333"></a>00333         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00334"></a>00334     }
+<a name="l00335"></a>00335   }
+<a name="l00336"></a>00336   <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00337"></a>00337 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -434,7 +436,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:56:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:21:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

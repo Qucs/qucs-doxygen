@@ -101,8 +101,8 @@
 <a name="l00041"></a>00041   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> g = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;G&quot;</span>) / <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a>;
 <a name="l00042"></a>00042   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;T&quot;</span>);
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z1 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (g / 2.0, M_PI - 2.0 * M_PI * frequency * t);
-<a name="l00045"></a>00045   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z2 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (g / 2.0, - 2.0 * M_PI * frequency * t);
+<a name="l00044"></a>00044   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z1 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (g / 2.0, pi - 2.0 * pi * frequency * t);
+<a name="l00045"></a>00045   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> z2 = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (g / 2.0, - 2.0 * pi * frequency * t);
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, 0.0); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, 0.0);
 <a name="l00048"></a>00048   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a9d0c801efa1cb08dc6f83f61962edd54">NODE_3</a>, 0.0); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4ea077d8aa0fc95077647593b5e208e4">NODE_4</a>, 1.0);
@@ -138,7 +138,7 @@
 <a name="l00078"></a><a class="code" href="structccvs.html#a9ff0ea050902286d56e2a9dbb008105b">00078</a> <span class="keywordtype">void</span> <a class="code" href="structccvs.html#a9ff0ea050902286d56e2a9dbb008105b">ccvs::calcAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
 <a name="l00079"></a>00079   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;T&quot;</span>);
 <a name="l00080"></a>00080   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">qucs::polar</a> (<a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;G&quot;</span>),
-<a name="l00081"></a>00081                           - 2.0 * M_PI * frequency * t);
+<a name="l00081"></a>00081                           - 2.0 * pi * frequency * t);
 <a name="l00082"></a>00082   <a class="code" href="classqucs_1_1circuit.html#afbfc165cb2bdf8ba70ecff5326b4acd5">setD</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, -g);
 <a name="l00083"></a>00083 }
 <a name="l00084"></a>00084 
@@ -178,7 +178,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:35 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:11 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

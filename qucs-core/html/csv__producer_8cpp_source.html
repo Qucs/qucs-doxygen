@@ -167,9 +167,9 @@
 <a name="l00107"></a>00107 
 <a name="l00108"></a>00108     <span class="keywordtype">int</span> a = v-&gt;getSize ();
 <a name="l00109"></a>00109     <span class="keywordflow">for</span> (i = vectors - 2; i &gt;= 0; i--) {
-<a name="l00110"></a>00110       vector * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = <a class="code" href="csv__producer_8cpp.html#a3f388489468eeb98e3efdab1e5c04dd4">qucs_data</a>-&gt;findDependency (deps-&gt;get (i));
+<a name="l00110"></a>00110       vector * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = <a class="code" href="csv__producer_8cpp.html#a3f388489468eeb98e3efdab1e5c04dd4">qucs_data</a>-&gt;findDependency (deps-&gt;get (i));
 <a name="l00111"></a>00111       data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a70001fe3c20e1dda15d0d54c8aeca40c">type</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="namespacequcs.html#a3c9648b3b0aab7b81797067ff891e7a2">sum</a> (<a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (<a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (*d)))) &gt; 0.0 ? <span class="charliteral">&#39;c&#39;</span> : <span class="charliteral">&#39;r&#39;</span>;
-<a name="l00112"></a>00112       data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a1ec9beeeda06ee23bae72cfaa5da511c">v</a> = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00112"></a>00112       data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a1ec9beeeda06ee23bae72cfaa5da511c">v</a> = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00113"></a>00113       data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#aea4510ead05cb9d97568571733e08842">idx</a> = 0;
 <a name="l00114"></a>00114       a /= d-&gt;getSize ();
 <a name="l00115"></a>00115       data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a335558355afb978054c6fa82aea2abf3">skip</a> = a;
@@ -203,9 +203,9 @@
 <a name="l00143"></a>00143          vars = (vector *) vars-&gt;getNext ()) {
 <a name="l00144"></a>00144       strlist * deps = vars-&gt;getDependencies ();
 <a name="l00145"></a>00145       <span class="keywordflow">if</span> (deps-&gt;contains (v-&gt;getName ())) {
-<a name="l00146"></a>00146         vector * <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a> = vars;
+<a name="l00146"></a>00146         vector * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = vars;
 <a name="l00147"></a>00147         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a70001fe3c20e1dda15d0d54c8aeca40c">type</a> = <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="namespacequcs.html#a3c9648b3b0aab7b81797067ff891e7a2">sum</a> (<a class="code" href="namespacequcs.html#a306364d94afda927aad792e0c1ff4e69" title="Compute euclidian norm of complex number.">norm</a> (<a class="code" href="namespacequcs.html#a16a24319c5ba4be87da57c1d40d6a8a1" title="Imaginary part matrix.">imag</a> (*d)))) &gt; 0.0 ? <span class="charliteral">&#39;c&#39;</span> : <span class="charliteral">&#39;r&#39;</span>;
-<a name="l00148"></a>00148         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a1ec9beeeda06ee23bae72cfaa5da511c">v</a> = <a class="code" href="parse__netlist_8y.html#a1aabac6d068eef6a7bad3fdf50a05cc8">d</a>;
+<a name="l00148"></a>00148         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a1ec9beeeda06ee23bae72cfaa5da511c">v</a> = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
 <a name="l00149"></a>00149         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#aea4510ead05cb9d97568571733e08842">idx</a> = 0;
 <a name="l00150"></a>00150         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#a335558355afb978054c6fa82aea2abf3">skip</a> = 1;
 <a name="l00151"></a>00151         data[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].<a class="code" href="structcsv__data.html#ad0da2c8b051d619a529d47339610fc30">len</a> = d-&gt;getSize ();
@@ -225,7 +225,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 18 2015 16:57:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 20 2015 18:22:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
