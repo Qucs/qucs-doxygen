@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classChangeDialog.html#a5fc2923d536db899bd62ddb612be4b92" title="ChangeDialog::slotButtReplace" alt="" coords="248,59,453,88"/>
-<area shape="rect" id="node5" href="$classChangeDialog.html#a55a094bb688cd709af4a085e035ca5aa" title="ChangeDialog::matches" alt="" coords="524,5,687,35"/>
-<area shape="rect" id="node7" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="533,59,677,88"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="503,112,708,141"/>
-<area shape="rect" id="node11" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="779,85,923,115"/>
-<area shape="rect" id="node13" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="759,139,943,168"/>
-<area shape="rect" id="node15" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="992,139,1160,168"/>
-</map>

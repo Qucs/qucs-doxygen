@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classNode.html" title="{Node\n|+ Connections\l+ Name\l+ DType\l+ State\l|+ Node()\l+ ~Node()\l+ paint()\l+ getSelected()\l+ setName()\l}" alt="" coords="5,562,115,769"/>
-<area shape="rect" id="node4" href="$classConductor.html" title="label for Node and Wire classes" alt="" coords="104,349,187,435"/>
-<area shape="rect" id="node8" href="$classWireLabel.html" title="{WireLabel\n|+ pOwner\l+ Name\l+ initValue\l&#45; isHighlighted\l|+ WireLabel()\l+ ~WireLabel()\l+ paintScheme()\l+ setCenter()\l+ getSelected()\l+ setName()\l+ setHighlighted()\l+ paint()\l+ rotate()\l+ save()\l+ load()\l+ isHorizontal()\l}" alt="" coords="139,501,264,829"/>
-<area shape="rect" id="node6" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="159,5,276,299"/>
-</map>

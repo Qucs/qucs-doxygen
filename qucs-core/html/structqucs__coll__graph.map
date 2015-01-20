@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structqucs_1_1pconstant.html" title="{qucs::pconstant\n|+ ident\l+ value\l|}" alt="" coords="5,49,120,151"/>
-<area shape="rect" id="node4" href="$classqucs_1_1exceptionstack.html" title="{qucs::exceptionstack\n||+ exceptionstack()\l+ exceptionstack()\l+ ~exceptionstack()\l+ push()\l+ pop()\l+ top()\l+ print()\l}" alt="" coords="144,5,291,195"/>
-<area shape="rect" id="node6" href="$structqucs_1_1integration__types__t.html" title="{qucs::integration_types_t\n|+ Method\l+ integratorType\l+ corrErrorConstant\l+ predErrorConstant\l|}" alt="" coords="315,31,483,169"/>
-</map>

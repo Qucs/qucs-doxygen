@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classWireLabel.html" title="{WireLabel\n|+ pOwner\l+ Name\l+ initValue\l&#45; isHighlighted\l|+ WireLabel()\l+ ~WireLabel()\l+ paintScheme()\l+ setCenter()\l+ getSelected()\l+ setName()\l+ setHighlighted()\l+ paint()\l+ rotate()\l+ save()\l+ load()\l+ isHorizontal()\l}" alt="" coords="93,349,219,677"/>
-<area shape="rect" id="node6" href="$classConductor.html" title="label for Node and Wire classes" alt="" coords="163,875,245,960"/>
-<area shape="rect" id="node4" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="177,5,295,299"/>
-</map>

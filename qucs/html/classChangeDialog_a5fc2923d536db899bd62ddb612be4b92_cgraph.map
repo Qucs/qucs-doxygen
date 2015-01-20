@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classChangeDialog.html#a55a094bb688cd709af4a085e035ca5aa" title="ChangeDialog::matches" alt="" coords="281,5,444,35"/>
-<area shape="rect" id="node5" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="291,59,435,88"/>
-<area shape="rect" id="node7" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="260,112,465,141"/>
-<area shape="rect" id="node9" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="536,85,680,115"/>
-<area shape="rect" id="node11" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="516,139,700,168"/>
-<area shape="rect" id="node13" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="749,139,917,168"/>
-</map>

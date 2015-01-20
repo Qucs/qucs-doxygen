@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structvcd__changeset.html" title="{vcd_changeset\n|+ t\l+ changes\l+ next\l|}" alt="" coords="5,672,115,792"/>
-<area shape="rect" id="node4" href="$structvcd__change.html" title="{vcd_change\n|+ value\l+ code\l+ isreal\l+ var\l+ next\l|}" alt="" coords="8,441,99,596"/>
-<area shape="rect" id="node7" href="$structvcd__vardef.html" title="{vcd_vardef\n|+ type\l+ size\l+ code\l+ ident\l+ range\l+ scope\l+ next\l|}" alt="" coords="97,176,183,365"/>
-<area shape="rect" id="node12" href="$structvcd__scope.html" title="{vcd_scope\n|+ type\l+ ident\l+ vardefs\l+ scopes\l+ parent\l+ next\l|}" alt="" coords="176,433,261,605"/>
-<area shape="rect" id="node9" href="$structvcd__range.html" title="{vcd_range\n|+ l\l+ h\l|}" alt="" coords="99,6,181,109"/>
-</map>

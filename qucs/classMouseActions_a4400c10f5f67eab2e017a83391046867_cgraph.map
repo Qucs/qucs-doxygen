@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="273,5,444,35"/>
-<area shape="rect" id="node7" href="$classElement.html#a0125e1298baa1d1b4042561633c93a91" title="Element::paintScheme" alt="" coords="281,59,436,88"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="524,111,673,140"/>
-<area shape="rect" id="node11" href="$classMouseActions.html#a57021c651e2088018f3978724c291ece" title="MouseActions::moveElements" alt="" coords="259,163,459,192"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="508,5,689,35"/>
-<area shape="rect" id="node14" href="$classElement.html#a89220202f70fedb96d17373c42ce8d74" title="Element::setCenter" alt="" coords="532,164,665,193"/>
-</map>

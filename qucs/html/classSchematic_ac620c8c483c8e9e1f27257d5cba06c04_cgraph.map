@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="283,5,437,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="283,59,437,88"/>
-<area shape="rect" id="node5" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="501,5,643,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="487,59,657,88"/>
-<area shape="rect" id="node11" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="708,59,833,88"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="233,32,439,61"/>
-<area shape="rect" id="node5" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="509,5,653,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="489,59,673,88"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="723,59,891,88"/>
-</map>
