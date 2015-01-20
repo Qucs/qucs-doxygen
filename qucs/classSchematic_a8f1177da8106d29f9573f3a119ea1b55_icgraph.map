@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMouseActions.html#a964ac8fd47ffa0885cd512a74eef76e2" title="MouseActions::MPressElement" alt="" coords="503,192,708,221"/>
+<area shape="rect" id="node36" href="$classMouseActions.html#abebfe2ea6931da2987dcac5c3ef7eed0" title="MouseActions::MReleasePaste" alt="" coords="247,33,452,63"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#aba322956eb31e6df60cec5ae4db74d55" title="QucsApp::slotSelectComponent" alt="" coords="779,272,987,301"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#ad70c7b7468f3a704c7ec5ae6b2f90c3c" title="QucsApp::slotSelectSubcircuit" alt="" coords="783,379,983,408"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#ab29e9595faa1449170bdfd5501b7a963" title="QucsApp::slotInsertEquation" alt="" coords="788,112,977,141"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#ae0c7b7957151aa730ff0f8e4fbf24fef" title="QucsApp::slotInsertGround" alt="" coords="793,165,972,195"/>
+<area shape="rect" id="node29" href="$classQucsApp.html#aa69bff1eec9918aaa34983116ce1cec8" title="QucsApp::slotInsertPort" alt="" coords="801,219,964,248"/>
+<area shape="rect" id="node32" href="$classSchematic.html#a9da597014d307f6e1186f116cad30918" title="Schematic::contentsMousePressEvent" alt="" coords="759,59,1007,88"/>
+<area shape="rect" id="node34" href="$classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="781,325,984,355"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="1361,273,1492,303"/>
+<area shape="rect" id="node11" href="$classSchematic.html#ab9a653bcd22ab78f94ab53f72105ffe3" title="Schematic::contentsDragEnterEvent" alt="" coords="1056,221,1291,251"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1563,273,1701,303"/>
+<area shape="rect" id="node16" href="$classQucsApp.html#a519ffc8de04bceef9cc355d456f566fc" title="QucsApp::slotCMenuInsert" alt="" coords="1084,377,1263,407"/>
+<area shape="rect" id="node18" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="1341,352,1512,381"/>
+<area shape="rect" id="node23" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1101,165,1245,195"/>
+<area shape="rect" id="node38" href="$classMouseActions.html#a71851e20a1b1ce643c6bf7bd4fab87be" title="MouseActions::MMovePaste Moves components after paste from clipboard." alt="" coords="511,7,700,36"/>
+<area shape="rect" id="node41" href="$classQucsApp.html#a00d09cbe62124d2bef72e726f3e190da" title="QucsApp::slotEditPaste" alt="" coords="801,5,964,35"/>
+<area shape="rect" id="node43" href="$classMatchDialog.html#a483443856bdfafb9e51e510b2ec82621" title="MatchDialog::slotButtCreate" alt="" coords="1080,5,1267,35"/>
+<area shape="rect" id="node47" href="$classQucsApp.html#adca6dc371ca66a9d633d6ff2f6b42b4b" title="QucsApp::slotSelectLibComponent" alt="" coords="1060,85,1287,115"/>
+<area shape="rect" id="node45" href="$classMatchDialog.html#ab97444ccb8028a6850745a2a6a1865e6" title="MatchDialog::MatchDialog" alt="" coords="1339,5,1515,35"/>
+</map>

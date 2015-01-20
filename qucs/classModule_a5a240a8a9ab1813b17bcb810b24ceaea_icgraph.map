@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classModule.html#a06831e3313a91c99fab4dc021ba9b20e" title="Module::registerModule" alt="" coords="211,5,368,35"/>
+<area shape="rect" id="node5" href="$classModule.html#a2ff04900d56741c359040e033904d484" title="Module::registerComponent" alt="" coords="199,59,380,88"/>
+<area shape="rect" id="node7" href="$classModule.html#aefc4847613f7fc92f45d0dc349c7b889" title="Module::registerDynamicComponents" alt="" coords="169,112,409,141"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a7d14d0aea9ba47d9c22e6d8e222dd94e" title="QucsApp::slotLoadModule launches the dialog to select dynamic modueles." alt="" coords="460,112,633,141"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="684,112,828,141"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="877,112,1016,141"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1227,67,1429,96"/>
+<area shape="rect" id="node7" href="$classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="985,357,1172,387"/>
+<area shape="rect" id="node9" href="$classSimMessage.html#a77fdce549e16372342dcf227a40c0921" title="SimMessage::slotReadSpiceNetlist" alt="" coords="237,408,467,437"/>
+<area shape="rect" id="node11" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="236,303,468,332"/>
+<area shape="rect" id="node13" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="519,251,689,280"/>
+<area shape="rect" id="node5" href="$classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1479,67,1681,96"/>
+<area shape="rect" id="node15" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="741,197,928,227"/>
+<area shape="rect" id="node29" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="771,251,899,280"/>
+<area shape="rect" id="node31" href="$classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="740,304,929,333"/>
+<area shape="rect" id="node17" href="$simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1037,197,1120,227"/>
+<area shape="rect" id="node20" href="$classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="979,251,1179,280"/>
+<area shape="rect" id="node23" href="$classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="981,304,1176,333"/>
+<area shape="rect" id="node25" href="$classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="985,144,1172,173"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="147,112,259,141"/>
+<area shape="rect" id="node57" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="119,165,287,195"/>
+<area shape="rect" id="node5" href="$classModule.html#a1fe30a0d93ffea2c424b9037f0123ddf" title="Module::registerModules" alt="" coords="343,85,505,115"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="336,139,512,168"/>
+<area shape="rect" id="node9" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="588,5,724,35"/>
+<area shape="rect" id="node11" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="571,59,741,88"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="569,112,743,141"/>
+<area shape="rect" id="node19" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="561,165,751,195"/>
+<area shape="rect" id="node37" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="581,245,731,275"/>
+<area shape="rect" id="node49" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="571,325,741,355"/>
+<area shape="rect" id="node13" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="865,32,967,61"/>
+<area shape="rect" id="node17" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="839,85,993,115"/>
+<area shape="rect" id="node21" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="831,139,1001,168"/>
+<area shape="rect" id="node35" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="801,192,1031,221"/>
+<area shape="rect" id="node23" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="1091,32,1248,61"/>
+<area shape="rect" id="node25" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="1109,85,1229,115"/>
+<area shape="rect" id="node31" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="1081,139,1257,168"/>
+<area shape="rect" id="node33" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1097,192,1241,221"/>
+<area shape="rect" id="node27" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="1308,72,1447,101"/>
+<area shape="rect" id="node29" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="1312,125,1443,155"/>
+<area shape="rect" id="node39" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="876,245,956,275"/>
+<area shape="rect" id="node47" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="821,299,1011,328"/>
+<area shape="rect" id="node41" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="1115,245,1224,275"/>
+<area shape="rect" id="node43" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1315,205,1440,235"/>
+<area shape="rect" id="node45" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="1307,259,1448,288"/>
+<area shape="rect" id="node51" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="865,352,967,381"/>
+<area shape="rect" id="node53" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="1123,325,1216,355"/>
+<area shape="rect" id="node55" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="1125,379,1213,408"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classID__Text.html" title="{ID_Text\n|+ Prefix\l+ Parameter\l|+ ID_Text()\l+ ~ID_Text()\l+ paintScheme()\l+ getCenter()\l+ setCenter()\l+ load()\l+ save()\l+ saveCpp()\l+ saveJSON()\l+ paint()\land 4 more...}" alt="" coords="31,678,148,954"/>
+<area shape="rect" id="node4" href="$classPainting.html" title="{Painting\n|+ Name\l+ State\l|+ Painting()\l+ ~Painting()\l+ getCenter()\l+ getSelected()\l+ newOne()\l+ load()\l+ save()\l+ saveCpp()\l+ saveJSON()\l+ paint()\land 10 more...}" alt="" coords="35,350,144,626"/>
+<area shape="rect" id="node6" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="31,5,148,299"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSubcircuit.html#a3f07a932e7709e1ee06a60ebb92da9e8" title="Subcircuit::getSubcircuitFile" alt="" coords="223,59,407,88"/>
+<area shape="rect" id="node9" href="$classSubcircuit.html#a525b9ae84d30829f3d1728952850a4a3" title="Subcircuit::loadSymbol" alt="" coords="237,165,392,195"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6" title="Schematic::testFile" alt="" coords="248,112,381,141"/>
+<area shape="rect" id="node26" href="$classSubcircuit.html#ae882bc821ddd12d4aeabb7b9eb47d569" title="Subcircuit::remakeSymbol" alt="" coords="228,219,401,248"/>
+<area shape="rect" id="node5" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="456,5,629,35"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aed58e5dacd756fceffb39c7581dcf3ff" title="Schematic::getFileInfo" alt="" coords="467,59,619,88"/>
+<area shape="rect" id="node11" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="475,112,611,141"/>
+<area shape="rect" id="node13" href="$classComponent.html#abab565a9bb19bb4a0909761be8ff7636" title="Component::analyseLine" alt="" coords="460,165,625,195"/>
+<area shape="rect" id="node15" href="$classComponent.html#a53665f0f2ff5aeb70454dde3e60af458" title="Component::getIntegers" alt="" coords="677,85,840,115"/>
+<area shape="rect" id="node17" href="$classComponent.html#ad566497fe43ddfc1ce8d171af56d3e09" title="Component::getPen" alt="" coords="689,139,828,168"/>
+<area shape="rect" id="node19" href="$classComponent.html#a57ba9d4bd50f1a87a3469b8a83397a4b" title="Component::getBrush" alt="" coords="684,192,833,221"/>
+<area shape="rect" id="node21" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="681,245,836,275"/>
+</map>

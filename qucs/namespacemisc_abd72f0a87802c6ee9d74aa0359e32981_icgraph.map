@@ -1,0 +1,31 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classandor4x2.html#a7f4367fd83459f2f0358d6305e4695ce" title="andor4x2::vhdlCode" alt="" coords="211,5,349,35"/>
+<area shape="rect" id="node5" href="$classandor4x3.html#ab03939f76f07d1fd9307fcb6468f8383" title="andor4x3::vhdlCode" alt="" coords="211,59,349,88"/>
+<area shape="rect" id="node7" href="$classandor4x4.html#a9ec9737faa1b7fe647a5cd0391703f81" title="andor4x4::vhdlCode" alt="" coords="211,112,349,141"/>
+<area shape="rect" id="node9" href="$classbinarytogrey4bit.html#a044762ec959b1f2ac09753ab588a8db4" title="binarytogrey4bit::vhdlCode" alt="" coords="192,165,368,195"/>
+<area shape="rect" id="node11" href="$classcomp__1bit.html#a2ce3c0af509271a10dc2c8cf0dbc94f3" title="comp_1bit::vhdlCode" alt="" coords="208,219,352,248"/>
+<area shape="rect" id="node13" href="$classcomp__2bit.html#ad76d100b050cb95fc239de6353f52768" title="comp_2bit::vhdlCode" alt="" coords="208,272,352,301"/>
+<area shape="rect" id="node15" href="$classcomp__4bit.html#a54faa8723fec45d4dd21f1bcb2c1fe5b" title="comp_4bit::vhdlCode" alt="" coords="208,325,352,355"/>
+<area shape="rect" id="node17" href="$classGateComponent.html#a1ae78d3d0d2d9dd2832b011838eaad13" title="GateComponent::vhdlCode" alt="" coords="191,379,369,408"/>
+<area shape="rect" id="node19" href="$classD__FlipFlop.html#ad57c93de0676663cbe4d7e0d975b267e" title="D_FlipFlop::vhdlCode" alt="" coords="207,432,353,461"/>
+<area shape="rect" id="node21" href="$classdff__SR.html#a7e9794420f5fa20bb7baa9826944c4b1" title="dff_SR::vhdlCode" alt="" coords="217,485,343,515"/>
+<area shape="rect" id="node23" href="$classDigi__Source.html#ab69a0612418dbbfc30c99a2dd440ebcc" title="Digi_Source::vhdlCode" alt="" coords="203,539,357,568"/>
+<area shape="rect" id="node25" href="$classdmux2to4.html#a2637aca824c573b6997bd6ec686a8fe2" title="dmux2to4::vhdlCode" alt="" coords="209,592,351,621"/>
+<area shape="rect" id="node27" href="$classdmux3to8.html#a32bb01a1751b2821a54ae2cae32d0318" title="dmux3to8::vhdlCode" alt="" coords="209,645,351,675"/>
+<area shape="rect" id="node29" href="$classdmux4to16.html#a027ea975caa78080fc582e3ac701b958" title="dmux4to16::vhdlCode" alt="" coords="205,699,355,728"/>
+<area shape="rect" id="node31" href="$classfa1b.html#a3d2db3ee8c08736150e683fc2502dfa7" title="fa1b::vhdlCode" alt="" coords="225,752,335,781"/>
+<area shape="rect" id="node33" href="$classfa2b.html#a8343f745a68a4c2f118250bc7e61851a" title="fa2b::vhdlCode" alt="" coords="225,805,335,835"/>
+<area shape="rect" id="node35" href="$classgatedDlatch.html#a79451363af6084152a67866714135fa8" title="gatedDlatch::vhdlCode" alt="" coords="203,859,357,888"/>
+<area shape="rect" id="node37" href="$classgreytobinary4bit.html#a9b65014bb6687c2d5c79ca2f35b1116d" title="greytobinary4bit::vhdlCode" alt="" coords="192,912,368,941"/>
+<area shape="rect" id="node39" href="$classha1b.html#a038c5c8a177613791690f9cca4c50393" title="ha1b::vhdlCode" alt="" coords="224,965,336,995"/>
+<area shape="rect" id="node41" href="$classhpribin4bit.html#a2ce6467f2a5fd653cc898690b6303d87" title="hpribin4bit::vhdlCode" alt="" coords="208,1019,352,1048"/>
+<area shape="rect" id="node43" href="$classJK__FlipFlop.html#aec90afed875ea1e7a9890349353cbcd1" title="JK_FlipFlop::vhdlCode" alt="" coords="203,1072,357,1101"/>
+<area shape="rect" id="node45" href="$classjkff__SR.html#a1108e62f077ccd0541248bdba43c788f" title="jkff_SR::vhdlCode" alt="" coords="216,1125,344,1155"/>
+<area shape="rect" id="node47" href="$classLogical__Buf.html#a1e94815c89cb6a4943ab2b3d75ba6a20" title="Logical_Buf::vhdlCode" alt="" coords="204,1179,356,1208"/>
+<area shape="rect" id="node49" href="$classLogical__Inv.html#a88f37c32a9158bdc17c98d3cd51ace7e" title="Logical_Inv::vhdlCode" alt="" coords="205,1232,355,1261"/>
+<area shape="rect" id="node51" href="$classmux2to1.html#a242482b877cc156353af62f8a9faad11" title="mux2to1::vhdlCode" alt="" coords="213,1285,347,1315"/>
+<area shape="rect" id="node53" href="$classmux4to1.html#a2d00327f921f7278ab2ee94ca196b0be" title="mux4to1::vhdlCode" alt="" coords="213,1339,347,1368"/>
+<area shape="rect" id="node55" href="$classmux8to1.html#afd6b8b35430eefe13d887b47ac192055" title="mux8to1::vhdlCode" alt="" coords="213,1392,347,1421"/>
+<area shape="rect" id="node57" href="$classRS__FlipFlop.html#a20ba873d94895ebffc9e5a45a8231da3" title="RS_FlipFlop::vhdlCode" alt="" coords="201,1445,359,1475"/>
+<area shape="rect" id="node59" href="$classtff__SR.html#a36646da6773af187bfa7742c3597f7ae" title="tff_SR::vhdlCode" alt="" coords="219,1499,341,1528"/>
+</map>

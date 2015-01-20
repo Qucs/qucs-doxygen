@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classLibComp.html#a91812d718da275c50cb82beb9ab5926a" title="LibComp::loadSection" alt="" coords="227,32,376,61"/>
+<area shape="rect" id="node7" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="216,139,387,168"/>
+<area shape="rect" id="node21" href="$classComponent.html#a6be39b767c8cf5c0477f8edfc5c99e27" title="Component::copyComponent" alt="" coords="205,192,397,221"/>
+<area shape="rect" id="node23" href="$classComponent.html#abab565a9bb19bb4a0909761be8ff7636" title="Component::analyseLine" alt="" coords="219,325,384,355"/>
+<area shape="rect" id="node5" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="467,5,603,35"/>
+<area shape="rect" id="node9" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="456,59,613,88"/>
+<area shape="rect" id="node11" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="475,112,595,141"/>
+<area shape="rect" id="node17" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="447,165,623,195"/>
+<area shape="rect" id="node19" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="463,219,607,248"/>
+<area shape="rect" id="node13" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="672,85,811,115"/>
+<area shape="rect" id="node15" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="676,139,807,168"/>
+<area shape="rect" id="node25" href="$classComponent.html#a53665f0f2ff5aeb70454dde3e60af458" title="Component::getIntegers" alt="" coords="453,272,616,301"/>
+<area shape="rect" id="node27" href="$classComponent.html#ad566497fe43ddfc1ce8d171af56d3e09" title="Component::getPen" alt="" coords="465,325,604,355"/>
+<area shape="rect" id="node29" href="$classComponent.html#a57ba9d4bd50f1a87a3469b8a83397a4b" title="Component::getBrush" alt="" coords="460,379,609,408"/>
+<area shape="rect" id="node31" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="457,432,612,461"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSpiceDialog.html#a9744f00cc948796f1bd27cf474a5daf5" title="SpiceDialog::slotButtApply" alt="" coords="223,32,401,61"/>
+<area shape="rect" id="node13" href="$classSpiceDialog.html#a9e6082131df6bae9689c924ecdc25eee" title="SpiceDialog::slotButtCancel" alt="" coords="219,85,405,115"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="455,32,660,61"/>
+<area shape="rect" id="node7" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="731,5,875,35"/>
+<area shape="rect" id="node9" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="711,59,895,88"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="944,59,1112,88"/>
+</map>

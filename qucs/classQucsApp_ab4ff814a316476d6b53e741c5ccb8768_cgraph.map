@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="280,5,408,35"/>
+<area shape="rect" id="node9" href="$classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509" title="QucsDoc::save" alt="" coords="288,59,400,88"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#ae223813596b54c221cd292adb3b81c0f" title="QucsApp::updateSchNameHash" alt="" coords="239,112,449,141"/>
+<area shape="rect" id="node15" href="$classQucsApp.html#ad5e4abc792d281a23c167bedbca47a0f" title="QucsApp::updateSpiceNameHash" alt="" coords="233,165,455,195"/>
+<area shape="rect" id="node18" href="$classQucsApp.html#a0df73710610da708b5149234e9b82e95" title="QucsApp::readProjectFiles" alt="" coords="255,219,433,248"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="540,5,665,35"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="751,5,929,35"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#a55673f055494a3a780b94bc77810eeb7" title="QucsApp::updatePathList" alt="" coords="517,112,688,141"/>
+<area shape="rect" id="node20" href="$classQucsApp.html#a9387330e49d39c27318a1ab178c5145b" title="QucsApp::initContentListView" alt="" coords="504,165,701,195"/>
+<area shape="rect" id="node22" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="535,219,671,248"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6" title="Schematic::testFile" alt="" coords="536,272,669,301"/>
+<area shape="rect" id="node26" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="772,272,908,301"/>
+</map>

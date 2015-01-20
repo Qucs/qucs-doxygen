@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSpiceDialog.html#a2d3a9f53f888875a8e32e774dbabdf26" title="SpiceDialog::slotButtOK" alt="" coords="243,71,405,100"/>
+<area shape="rect" id="node5" href="$classSpiceDialog.html#a9744f00cc948796f1bd27cf474a5daf5" title="SpiceDialog::slotButtApply" alt="" coords="483,19,661,48"/>
+<area shape="rect" id="node15" href="$classSpiceDialog.html#a9e6082131df6bae9689c924ecdc25eee" title="SpiceDialog::slotButtCancel" alt="" coords="479,96,665,125"/>
+<area shape="rect" id="node17" href="$classSpiceDialog.html#aac6e39434a00e03589324f32271b3830" title="SpiceDialog::slotButtBrowse" alt="" coords="229,228,419,257"/>
+<area shape="rect" id="node21" href="$classSpiceDialog.html#af57e06be4e6bee664fc870ffde64560b" title="SpiceDialog::loadSpiceNetList" alt="" coords="473,333,671,363"/>
+<area shape="rect" id="node33" href="$classSpiceDialog.html#afc5113dc7aa5186887685e9cff481a2c" title="SpiceDialog::slotButtEdit" alt="" coords="240,175,408,204"/>
+<area shape="rect" id="node113" href="$classSpiceDialog.html#aa3082f2ff74b1c24921e5828579ebd29" title="SpiceDialog::slotPrepChanged" alt="" coords="224,281,424,311"/>
+<area shape="rect" id="node116" href="$classSpiceDialog.html#a6c18d98c5408b3ac8715c56f3958d469" title="SpiceDialog::slotAddPort" alt="" coords="240,385,408,415"/>
+<area shape="rect" id="node118" href="$classSpiceDialog.html#ad6255e9ce98037e17e09ba33683dc1d8" title="SpiceDialog::slotButtAdd" alt="" coords="488,411,656,440"/>
+<area shape="rect" id="node120" href="$classSpiceDialog.html#a18357dba1897353e9d4676ac009d678a" title="SpiceDialog::slotRemovePort" alt="" coords="227,489,421,519"/>
+<area shape="rect" id="node122" href="$classSpiceDialog.html#ae4e41663bca7a8991a33ff3daf6fc622" title="SpiceDialog::slotButtRemove" alt="" coords="475,515,669,544"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="2056,56,2261,85"/>
+<area shape="rect" id="node9" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="2356,29,2500,59"/>
+<area shape="rect" id="node11" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="2336,83,2520,112"/>
+<area shape="rect" id="node13" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="2592,83,2760,112"/>
+<area shape="rect" id="node19" href="$classQucsApp.html#a00ef30c6620bdd39bc06f0a81133a672" title="QucsApp::getSpiceFileFilter" alt="" coords="480,228,664,257"/>
+<area shape="rect" id="node23" href="$classSpiceDialog.html#ac8ac1bc7e0d3da2ef5d41d4a421f21f9" title="SpiceDialog::slotSkipOut" alt="" coords="732,493,900,523"/>
+<area shape="rect" id="node25" href="$classSpiceDialog.html#ae60ac44cb13ec0fc5494341e6e99731d" title="SpiceDialog::slotGetPrepErr" alt="" coords="723,280,909,309"/>
+<area shape="rect" id="node27" href="$classSpiceDialog.html#a2cead8c79bf22cfdcdebf02ec2c95b10" title="SpiceDialog::slotGetPrepOut" alt="" coords="721,333,911,363"/>
+<area shape="rect" id="node29" href="$classSpiceDialog.html#a683a6e0ae1091c30c8211ddb92b450b7" title="SpiceDialog::slotGetNetlist" alt="" coords="727,387,905,416"/>
+<area shape="rect" id="node31" href="$classSpiceDialog.html#a0bfe60ea7065caa12d6a97071ddd3dfe" title="SpiceDialog::slotGetError" alt="" coords="731,440,901,469"/>
+<area shape="rect" id="node35" href="$classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="509,175,635,204"/>
+<area shape="rect" id="node37" href="$classQucsApp.html#a9ed09eeae42bf73919e74a039228c49f" title="QucsApp::slotTextNew" alt="" coords="737,173,895,203"/>
+<area shape="rect" id="node39" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="747,120,885,149"/>
+<area shape="rect" id="node111" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="731,227,901,256"/>
+<area shape="rect" id="node41" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="985,147,1113,176"/>
+<area shape="rect" id="node43" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="1256,68,1381,97"/>
+<area shape="rect" id="node47" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="1232,279,1405,308"/>
+<area shape="rect" id="node49" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="995,43,1104,72"/>
+<area shape="rect" id="node51" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="960,200,1139,229"/>
+<area shape="rect" id="node45" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1507,68,1685,97"/>
+<area shape="rect" id="node54" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1215,225,1423,255"/>
+<area shape="rect" id="node105" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="1187,172,1451,201"/>
+<area shape="rect" id="node56" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1499,543,1693,572"/>
+<area shape="rect" id="node63" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="2055,755,2263,784"/>
+<area shape="rect" id="node66" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="2312,596,2544,625"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="1787,649,1960,679"/>
+<area shape="rect" id="node60" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1744,543,2003,572"/>
+<area shape="rect" id="node68" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="2325,857,2531,887"/>
+<area shape="rect" id="node71" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="2077,464,2240,493"/>
+<area shape="rect" id="node73" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="1752,279,1995,308"/>
+<area shape="rect" id="node76" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1743,596,2004,625"/>
+<area shape="rect" id="node82" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="1777,332,1969,361"/>
+<area shape="rect" id="node85" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="1769,489,1977,519"/>
+<area shape="rect" id="node88" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="1775,225,1972,255"/>
+<area shape="rect" id="node92" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="1779,703,1968,732"/>
+<area shape="rect" id="node94" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="1777,385,1969,415"/>
+<area shape="rect" id="node97" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1765,857,1981,887"/>
+<area shape="rect" id="node107" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="1508,121,1684,151"/>
+</map>

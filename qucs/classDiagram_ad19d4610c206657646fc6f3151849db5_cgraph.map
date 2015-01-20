@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="248,59,400,88"/>
+<area shape="rect" id="node5" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="259,112,389,141"/>
+<area shape="rect" id="node13" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="235,376,413,405"/>
+<area shape="rect" id="node17" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="259,216,389,245"/>
+<area shape="rect" id="node7" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="463,59,628,88"/>
+<area shape="rect" id="node9" href="$classDiagram.html#aa1ce2a4545ebaec03958fe644e220f25" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="496,5,595,35"/>
+<area shape="rect" id="node11" href="$classDiagram.html#ae04914b55dadc283ce02f97f0de5857c" title="Diagram::insideDiagram" alt="" coords="464,112,627,141"/>
+<area shape="rect" id="node15" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="493,483,597,512"/>
+<area shape="rect" id="node19" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="476,216,615,245"/>
+<area shape="rect" id="node21" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="679,191,817,220"/>
+<area shape="rect" id="node23" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="479,269,612,299"/>
+<area shape="rect" id="node25" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="480,323,611,352"/>
+<area shape="rect" id="node27" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="480,376,611,405"/>
+<area shape="rect" id="node29" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="485,429,605,459"/>
+</map>

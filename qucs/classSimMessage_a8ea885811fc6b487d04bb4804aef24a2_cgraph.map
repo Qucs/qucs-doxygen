@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="229,163,416,192"/>
+<area shape="rect" id="node7" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="715,269,917,299"/>
+<area shape="rect" id="node21" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="259,373,387,403"/>
+<area shape="rect" id="node23" href="$classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="228,427,417,456"/>
+<area shape="rect" id="node5" href="$simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="525,5,608,35"/>
+<area shape="rect" id="node11" href="$classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="467,109,667,139"/>
+<area shape="rect" id="node13" href="$classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="473,163,660,192"/>
+<area shape="rect" id="node15" href="$classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="469,216,664,245"/>
+<area shape="rect" id="node17" href="$classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="473,269,660,299"/>
+<area shape="rect" id="node9" href="$classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="967,269,1169,299"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$structvcd__vardef.html" title="{vcd_vardef\n|+ type\l+ size\l+ code\l+ ident\l+ range\l+ scope\l+ next\l|}" alt="" coords="95,176,180,365"/>
+<area shape="rect" id="node8" href="$structvcd__scope.html" title="{vcd_scope\n|+ type\l+ ident\l+ vardefs\l+ scopes\l+ parent\l+ next\l|}" alt="" coords="173,433,259,605"/>
+<area shape="rect" id="node5" href="$structvcd__range.html" title="{vcd_range\n|+ l\l+ h\l|}" alt="" coords="96,6,179,109"/>
+</map>

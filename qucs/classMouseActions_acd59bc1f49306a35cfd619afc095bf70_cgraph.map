@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="1047,58,1196,87"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1031,161,1212,190"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#a51e6ab4802a4421649b9db8c117e1966" title="MouseActions::MDoubleClickWire2 Double click terminates wire insertion." alt="" coords="245,110,475,139"/>
+<area shape="rect" id="node9" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="523,135,715,165"/>
+<area shape="rect" id="node38" href="$classMouseActions.html#a80809df085b1bccf288152faf1756a7a" title="MouseActions::MMoveWire1 Paint hair cross for &quot;insert wire&quot; mode." alt="" coords="764,137,953,166"/>
+<area shape="rect" id="node42" href="$classMouseActions.html#acbfc5fd19c7f35879ee8d71f81005413" title="MouseActions::MPressWire1 Is called if starting point of wire is pressed." alt="" coords="763,33,955,62"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69" title="Schematic::insertWire" alt="" coords="784,505,933,534"/>
+<area shape="rect" id="node48" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="777,291,940,321"/>
+<area shape="rect" id="node13" href="$classSchematic.html#a8f5c4764dbb9f7928cb0eb9846b14fc0" title="Schematic::insertWireNode1" alt="" coords="1027,398,1216,427"/>
+<area shape="rect" id="node15" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1297,558,1423,587"/>
+<area shape="rect" id="node20" href="$classSchematic.html#aa5f7416b85289244d7145ae2b5fd7d5b" title="Schematic::connectHWires1" alt="" coords="1027,558,1216,587"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a2cd63b87ec94658c613d40f865f1a674" title="Schematic::connectVWires1" alt="" coords="1028,611,1215,641"/>
+<area shape="rect" id="node26" href="$classSchematic.html#ad6b1cfa660d9307869980f2c337c2aec" title="Schematic::insertWireNode2" alt="" coords="1027,345,1216,374"/>
+<area shape="rect" id="node30" href="$classSchematic.html#a7aff95835d56030e8c972898bd8ca6c1" title="Schematic::connectHWires2" alt="" coords="1027,715,1216,745"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a230c5d36b53026e427fdd24ab283f886" title="Schematic::connectVWires2" alt="" coords="1028,451,1215,481"/>
+<area shape="rect" id="node36" href="$classSchematic.html#a7d6f050afa6188d83b9023693f6828c6" title="Schematic::oneLabel" alt="" coords="1049,505,1193,534"/>
+<area shape="rect" id="node17" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1289,371,1431,401"/>
+<area shape="rect" id="node50" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1003,291,1240,321"/>
+<area shape="rect" id="node54" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1025,238,1217,267"/>
+<area shape="rect" id="node52" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1308,291,1412,321"/>
+<area shape="rect" id="node56" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1297,131,1423,161"/>
+<area shape="rect" id="node58" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1317,185,1403,214"/>
+<area shape="rect" id="node60" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1307,238,1413,267"/>
+<area shape="rect" id="node62" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1480,238,1573,267"/>
+<area shape="rect" id="node64" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1621,238,1720,267"/>
+</map>
