@@ -85,74 +85,75 @@
 <a name="l00025"></a>00025 <span class="preprocessor">#ifndef __TRIDIAG_H__</span>
 <a name="l00026"></a>00026 <span class="preprocessor"></span><span class="preprocessor">#define __TRIDIAG_H__</span>
 <a name="l00027"></a>00027 <span class="preprocessor"></span>
-<a name="l00028"></a>00028 <span class="preprocessor">#include &quot;<a class="code" href="tvector_8h.html">tvector.h</a>&quot;</span>
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="comment">// Types of tridiagonal matrices.</span>
-<a name="l00033"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264">00033</a> <span class="keyword">enum</span> <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264">tridiag_type</a> {
-<a name="l00034"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3224f5b2a498f063654d755317b2fc45">00034</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3224f5b2a498f063654d755317b2fc45">TRIDIAG_UNKNOWN</a> = -1,
-<a name="l00035"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a1f1b6a07505310d6e66e828793c89551">00035</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a1f1b6a07505310d6e66e828793c89551">TRIDIAG_NONSYM</a>,
-<a name="l00036"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a33deb081fbbc500ee929fb17aeb663f3">00036</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a33deb081fbbc500ee929fb17aeb663f3">TRIDIAG_SYM</a>,
-<a name="l00037"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3f3ff2bc326c731c723bda5b58506afc">00037</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3f3ff2bc326c731c723bda5b58506afc">TRIDIAG_NONSYM_CYCLIC</a>,
-<a name="l00038"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a0000a093dae5d2892f21c524d1cd2e3c">00038</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a0000a093dae5d2892f21c524d1cd2e3c">TRIDIAG_SYM_CYCLIC</a>
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00042"></a><a class="code" href="classqucs_1_1tridiag.html">00042</a> <span class="keyword">class </span><a class="code" href="classqucs_1_1tridiag.html">tridiag</a>
-<a name="l00043"></a>00043 {
-<a name="l00044"></a>00044  <span class="keyword">public</span>:
-<a name="l00045"></a>00045   <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> ();
-<a name="l00046"></a>00046   <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> &amp;);
-<a name="l00047"></a>00047   <span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> &amp;);
-<a name="l00048"></a>00048   ~<a class="code" href="classqucs_1_1tridiag.html">tridiag</a> ();
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#ad9784a7a38a0dcae8aeaaf7c727cc746">setDiagonal</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> *);
-<a name="l00051"></a>00051   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a5a059865a56e2817589101e991f4b8a2">setOffDiagonal</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> *);
-<a name="l00052"></a>00052   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a5ad3033ed4d19d7ba34d628742a1102f">setA</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> *);
-<a name="l00053"></a>00053   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a970595f0bd94538aebd08d1edd1b589e">setB</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> *);
-<a name="l00054"></a>00054   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a75b5c0e4acd5849c10a449d90790dc4a">setRHS</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> *);
-<a name="l00055"></a><a class="code" href="classqucs_1_1tridiag.html#a221cfdc9dba38a2eb576df862060eb51">00055</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a221cfdc9dba38a2eb576df862060eb51">setType</a> (<span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) { <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>; }
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057   <span class="keywordtype">void</span> solve (<span class="keywordtype">void</span>);
-<a name="l00058"></a>00058   <span class="keywordtype">void</span> solve_ns (<span class="keywordtype">void</span>);
-<a name="l00059"></a>00059   <span class="keywordtype">void</span> solve_ns_cyc (<span class="keywordtype">void</span>);
-<a name="l00060"></a>00060   <span class="keywordtype">void</span> solve_s (<span class="keywordtype">void</span>);
-<a name="l00061"></a>00061   <span class="keywordtype">void</span> solve_s_cyc (<span class="keywordtype">void</span>);
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063  <span class="keyword">private</span>:
-<a name="l00064"></a><a class="code" href="classqucs_1_1tridiag.html#a4805b15ebd4ae6196fcc19c344fb4272">00064</a>   <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> * <a class="code" href="classqucs_1_1tridiag.html#a4805b15ebd4ae6196fcc19c344fb4272">abov</a>;
-<a name="l00065"></a><a class="code" href="classqucs_1_1tridiag.html#a48bef8437ade683ada2f66b4c92eca6a">00065</a>   <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> * <a class="code" href="classqucs_1_1tridiag.html#a48bef8437ade683ada2f66b4c92eca6a">belo</a>;
-<a name="l00066"></a><a class="code" href="classqucs_1_1tridiag.html#aafab82e638c60437fa19c2768a03f7d5">00066</a>   <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> * <a class="code" href="classqucs_1_1tridiag.html#aafab82e638c60437fa19c2768a03f7d5">diag</a>;
-<a name="l00067"></a><a class="code" href="classqucs_1_1tridiag.html#a3f52d2e6481a8a2291052772aaf9fc42">00067</a>   <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> * <a class="code" href="classqucs_1_1tridiag.html#a3f52d2e6481a8a2291052772aaf9fc42">offdiag</a>;
-<a name="l00068"></a><a class="code" href="classqucs_1_1tridiag.html#a7a161742293cc0db7326d1e01979d9d9">00068</a>   <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_type_t&gt;</a> * <a class="code" href="classqucs_1_1tridiag.html#a7a161742293cc0db7326d1e01979d9d9">rhs</a>;
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="classqucs_1_1tridiag.html#a808c348cee2fa592eb2645ffcdaf9ca3">00070</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a808c348cee2fa592eb2645ffcdaf9ca3">d</a>;
-<a name="l00071"></a><a class="code" href="classqucs_1_1tridiag.html#a4120a009964f0d819656e905ba240fa6">00071</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a4120a009964f0d819656e905ba240fa6">e</a>;
-<a name="l00072"></a><a class="code" href="classqucs_1_1tridiag.html#aa92473d19a620ea3014c14859b2f269f">00072</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#aa92473d19a620ea3014c14859b2f269f">f</a>;
-<a name="l00073"></a><a class="code" href="classqucs_1_1tridiag.html#a29a595d693c6caf239b5dd9a9ebcf2dc">00073</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a29a595d693c6caf239b5dd9a9ebcf2dc">z</a>;
-<a name="l00074"></a><a class="code" href="classqucs_1_1tridiag.html#adec2a25e3c5b15f4a2abf6f6bd5d75ed">00074</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#adec2a25e3c5b15f4a2abf6f6bd5d75ed">c</a>;
-<a name="l00075"></a><a class="code" href="classqucs_1_1tridiag.html#a552d78938ebdb0412a7967347e897192">00075</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a552d78938ebdb0412a7967347e897192">b</a>;
-<a name="l00076"></a><a class="code" href="classqucs_1_1tridiag.html#a335ada95d18849ac31f43ec8bb815e74">00076</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a335ada95d18849ac31f43ec8bb815e74">x</a>;
-<a name="l00077"></a><a class="code" href="classqucs_1_1tridiag.html#a8f74aaf6deb2da6de7bac410db64b95d">00077</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a8f74aaf6deb2da6de7bac410db64b95d">al</a>;
-<a name="l00078"></a><a class="code" href="classqucs_1_1tridiag.html#af9e98a1a2ec807a86ea0c70a3656f3dc">00078</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#af9e98a1a2ec807a86ea0c70a3656f3dc">be</a>;
-<a name="l00079"></a><a class="code" href="classqucs_1_1tridiag.html#aa605db49f004e0f88a9496c8b1aae299">00079</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#aa605db49f004e0f88a9496c8b1aae299">ga</a>;
-<a name="l00080"></a><a class="code" href="classqucs_1_1tridiag.html#ac3109aa219584e18622d83f232e3d6b6">00080</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#ac3109aa219584e18622d83f232e3d6b6">de</a>;
-<a name="l00081"></a><a class="code" href="classqucs_1_1tridiag.html#a5cfa9c0f01617a5ef6e0dd55c81b6147">00081</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a5cfa9c0f01617a5ef6e0dd55c81b6147">ep</a>;
-<a name="l00082"></a>00082 
-<a name="l00083"></a><a class="code" href="classqucs_1_1tridiag.html#ad6af9ad502f36da7cfe17c2a3434d70f">00083</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1tridiag.html#ad6af9ad502f36da7cfe17c2a3434d70f">type</a>;
-<a name="l00084"></a>00084 };
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086 } <span class="comment">// namespace qucs</span>
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088 <span class="preprocessor">#include &quot;<a class="code" href="tridiag_8cpp.html">tridiag.cpp</a>&quot;</span>
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090 <span class="preprocessor">#endif </span><span class="comment">/* __TRIDIAG_H__ */</span>
+<a name="l00028"></a>00028 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00029"></a>00029 <span class="comment">//#include &quot;tvector.h&quot;</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="comment">// Types of tridiagonal matrices.</span>
+<a name="l00034"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264">00034</a> <span class="keyword">enum</span> <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264">tridiag_type</a> {
+<a name="l00035"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3224f5b2a498f063654d755317b2fc45">00035</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3224f5b2a498f063654d755317b2fc45">TRIDIAG_UNKNOWN</a> = -1,
+<a name="l00036"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a1f1b6a07505310d6e66e828793c89551">00036</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a1f1b6a07505310d6e66e828793c89551">TRIDIAG_NONSYM</a>,
+<a name="l00037"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a33deb081fbbc500ee929fb17aeb663f3">00037</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a33deb081fbbc500ee929fb17aeb663f3">TRIDIAG_SYM</a>,
+<a name="l00038"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3f3ff2bc326c731c723bda5b58506afc">00038</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a3f3ff2bc326c731c723bda5b58506afc">TRIDIAG_NONSYM_CYCLIC</a>,
+<a name="l00039"></a><a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a0000a093dae5d2892f21c524d1cd2e3c">00039</a>   <a class="code" href="structqucs.html#a1ab532672ff909a2c61c5588fcde9264a0000a093dae5d2892f21c524d1cd2e3c">TRIDIAG_SYM_CYCLIC</a>
+<a name="l00040"></a>00040 };
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
+<a name="l00043"></a><a class="code" href="classqucs_1_1tridiag.html">00043</a> <span class="keyword">class </span><a class="code" href="classqucs_1_1tridiag.html">tridiag</a>
+<a name="l00044"></a>00044 {
+<a name="l00045"></a>00045  <span class="keyword">public</span>:
+<a name="l00046"></a>00046   <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> ();
+<a name="l00047"></a>00047   <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> &amp;);
+<a name="l00048"></a>00048   <span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag</a> &amp;);
+<a name="l00049"></a>00049   ~<a class="code" href="classqucs_1_1tridiag.html">tridiag</a> ();
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#adee7ead939089ad71be44e9f4d256d80">setDiagonal</a> (::std::vector&lt;nr_type_t&gt; *);
+<a name="l00052"></a>00052   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a0ca20acf157804f2f7514617dae2d9f6">setOffDiagonal</a> (std::vector&lt;nr_type_t&gt; *);
+<a name="l00053"></a>00053   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a297021c2f59b8e8eeda1ff395a71cb4f">setA</a> (::std::vector&lt;nr_type_t&gt; *);
+<a name="l00054"></a>00054   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a6d3c84510aa494272932ebd67332d8f0">setB</a> (::std::vector&lt;nr_type_t&gt; *);
+<a name="l00055"></a>00055   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a69c7575a9191523bf274e5c18bc2999c">setRHS</a> (::std::vector&lt;nr_type_t&gt; *);
+<a name="l00056"></a><a class="code" href="classqucs_1_1tridiag.html#a221cfdc9dba38a2eb576df862060eb51">00056</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html#a221cfdc9dba38a2eb576df862060eb51">setType</a> (<span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) { <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>; }
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058   <span class="keywordtype">void</span> solve (<span class="keywordtype">void</span>);
+<a name="l00059"></a>00059   <span class="keywordtype">void</span> solve_ns (<span class="keywordtype">void</span>);
+<a name="l00060"></a>00060   <span class="keywordtype">void</span> solve_ns_cyc (<span class="keywordtype">void</span>);
+<a name="l00061"></a>00061   <span class="keywordtype">void</span> solve_s (<span class="keywordtype">void</span>);
+<a name="l00062"></a>00062   <span class="keywordtype">void</span> solve_s_cyc (<span class="keywordtype">void</span>);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064  <span class="keyword">private</span>:
+<a name="l00065"></a><a class="code" href="classqucs_1_1tridiag.html#a35aef8cc17c34c545531c5ec04134a8b">00065</a>   ::std::vector&lt;nr_type_t&gt; * <a class="code" href="classqucs_1_1tridiag.html#a35aef8cc17c34c545531c5ec04134a8b">abov</a>;
+<a name="l00066"></a><a class="code" href="classqucs_1_1tridiag.html#ae86066e0626e3edea7347fe9de3f3b49">00066</a>   ::std::vector&lt;nr_type_t&gt; * <a class="code" href="classqucs_1_1tridiag.html#ae86066e0626e3edea7347fe9de3f3b49">belo</a>;
+<a name="l00067"></a><a class="code" href="classqucs_1_1tridiag.html#a7cd8985d9f6158e168e312c9006bf672">00067</a>   ::std::vector&lt;nr_type_t&gt; * <a class="code" href="classqucs_1_1tridiag.html#a7cd8985d9f6158e168e312c9006bf672">diag</a>;
+<a name="l00068"></a><a class="code" href="classqucs_1_1tridiag.html#aea27bb646995e0fa794779cf333a074a">00068</a>   ::std::vector&lt;nr_type_t&gt; * <a class="code" href="classqucs_1_1tridiag.html#aea27bb646995e0fa794779cf333a074a">offdiag</a>;
+<a name="l00069"></a><a class="code" href="classqucs_1_1tridiag.html#a3c22dbe2b0496a6fbde1e292c460c469">00069</a>   ::std::vector&lt;nr_type_t&gt; * <a class="code" href="classqucs_1_1tridiag.html#a3c22dbe2b0496a6fbde1e292c460c469">rhs</a>;
+<a name="l00070"></a>00070 
+<a name="l00071"></a><a class="code" href="classqucs_1_1tridiag.html#a808c348cee2fa592eb2645ffcdaf9ca3">00071</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a808c348cee2fa592eb2645ffcdaf9ca3">d</a>;
+<a name="l00072"></a><a class="code" href="classqucs_1_1tridiag.html#a4120a009964f0d819656e905ba240fa6">00072</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a4120a009964f0d819656e905ba240fa6">e</a>;
+<a name="l00073"></a><a class="code" href="classqucs_1_1tridiag.html#aa92473d19a620ea3014c14859b2f269f">00073</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#aa92473d19a620ea3014c14859b2f269f">f</a>;
+<a name="l00074"></a><a class="code" href="classqucs_1_1tridiag.html#a29a595d693c6caf239b5dd9a9ebcf2dc">00074</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a29a595d693c6caf239b5dd9a9ebcf2dc">z</a>;
+<a name="l00075"></a><a class="code" href="classqucs_1_1tridiag.html#adec2a25e3c5b15f4a2abf6f6bd5d75ed">00075</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#adec2a25e3c5b15f4a2abf6f6bd5d75ed">c</a>;
+<a name="l00076"></a><a class="code" href="classqucs_1_1tridiag.html#a552d78938ebdb0412a7967347e897192">00076</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a552d78938ebdb0412a7967347e897192">b</a>;
+<a name="l00077"></a><a class="code" href="classqucs_1_1tridiag.html#a335ada95d18849ac31f43ec8bb815e74">00077</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a335ada95d18849ac31f43ec8bb815e74">x</a>;
+<a name="l00078"></a><a class="code" href="classqucs_1_1tridiag.html#a8f74aaf6deb2da6de7bac410db64b95d">00078</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a8f74aaf6deb2da6de7bac410db64b95d">al</a>;
+<a name="l00079"></a><a class="code" href="classqucs_1_1tridiag.html#af9e98a1a2ec807a86ea0c70a3656f3dc">00079</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#af9e98a1a2ec807a86ea0c70a3656f3dc">be</a>;
+<a name="l00080"></a><a class="code" href="classqucs_1_1tridiag.html#aa605db49f004e0f88a9496c8b1aae299">00080</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#aa605db49f004e0f88a9496c8b1aae299">ga</a>;
+<a name="l00081"></a><a class="code" href="classqucs_1_1tridiag.html#ac3109aa219584e18622d83f232e3d6b6">00081</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#ac3109aa219584e18622d83f232e3d6b6">de</a>;
+<a name="l00082"></a><a class="code" href="classqucs_1_1tridiag.html#a5cfa9c0f01617a5ef6e0dd55c81b6147">00082</a>   nr_type_t * <a class="code" href="classqucs_1_1tridiag.html#a5cfa9c0f01617a5ef6e0dd55c81b6147">ep</a>;
+<a name="l00083"></a>00083 
+<a name="l00084"></a><a class="code" href="classqucs_1_1tridiag.html#ad6af9ad502f36da7cfe17c2a3434d70f">00084</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1tridiag.html#ad6af9ad502f36da7cfe17c2a3434d70f">type</a>;
+<a name="l00085"></a>00085 };
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 } <span class="comment">// namespace qucs</span>
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="preprocessor">#include &quot;<a class="code" href="tridiag_8cpp.html">tridiag.cpp</a>&quot;</span>
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="preprocessor">#endif </span><span class="comment">/* __TRIDIAG_H__ */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 20 2015 20:22:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 23 2015 23:12:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

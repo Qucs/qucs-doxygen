@@ -85,61 +85,64 @@
 <a name="l00025"></a>00025 <span class="preprocessor">#ifndef __SPLINE_H__</span>
 <a name="l00026"></a>00026 <span class="preprocessor"></span><span class="preprocessor">#define __SPLINE_H__</span>
 <a name="l00027"></a>00027 <span class="preprocessor"></span>
-<a name="l00028"></a>00028 <span class="preprocessor">#include &quot;<a class="code" href="tvector_8h.html">tvector.h</a>&quot;</span>
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="comment">// Types of boundary conditions.</span>
-<a name="l00033"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2d">00033</a> <span class="keyword">enum</span> <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2d">spline_boundary_type</a> {
-<a name="l00034"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da49abaeb0a997c9f83258e81d4d07faa5">00034</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da49abaeb0a997c9f83258e81d4d07faa5">SPLINE_BC_UNKNOWN</a> = -1,
-<a name="l00035"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">00035</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>,       <span class="comment">// natural splines -- zero derivatives</span>
-<a name="l00036"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da72760391630c967c9c8302b6e0428787">00036</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da72760391630c967c9c8302b6e0428787">SPLINE_BC_CLAMPED</a>,       <span class="comment">// endpoint derivatives given</span>
-<a name="l00037"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da86bb1bef3cea3480390b55e0322bd61c">00037</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da86bb1bef3cea3480390b55e0322bd61c">SPLINE_BC_PERIODIC</a>       <span class="comment">// periodic splines</span>
-<a name="l00038"></a>00038 };
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 <span class="keyword">class </span>vector;
-<a name="l00041"></a>00041 <span class="keyword">class </span>poly;
-<a name="l00042"></a>00042 
-<a name="l00043"></a><a class="code" href="classqucs_1_1spline.html">00043</a> <span class="keyword">class </span><a class="code" href="classqucs_1_1spline.html">spline</a>
-<a name="l00044"></a>00044 {
-<a name="l00045"></a>00045  <span class="keyword">public</span>:
-<a name="l00046"></a>00046   <a class="code" href="classqucs_1_1spline.html">spline</a> ();
-<a name="l00047"></a>00047   <a class="code" href="classqucs_1_1spline.html">spline</a> (<span class="keywordtype">int</span>);
-<a name="l00048"></a>00048   <a class="code" href="classqucs_1_1spline.html">spline</a> (qucs::vector, qucs::vector);
+<a name="l00028"></a>00028 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00029"></a>00029 <span class="preprocessor">#include &quot;<a class="code" href="tvector_8h.html">tvector.h</a>&quot;</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="keyword">namespace </span><a class="code" href="structqucs.html">qucs</a> {
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="comment">// Types of boundary conditions.</span>
+<a name="l00034"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2d">00034</a> <span class="keyword">enum</span> <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2d">spline_boundary_type</a> {
+<a name="l00035"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da49abaeb0a997c9f83258e81d4d07faa5">00035</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da49abaeb0a997c9f83258e81d4d07faa5">SPLINE_BC_UNKNOWN</a> = -1,
+<a name="l00036"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">00036</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>,       <span class="comment">// natural splines -- zero derivatives</span>
+<a name="l00037"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da72760391630c967c9c8302b6e0428787">00037</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da72760391630c967c9c8302b6e0428787">SPLINE_BC_CLAMPED</a>,       <span class="comment">// endpoint derivatives given</span>
+<a name="l00038"></a><a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da86bb1bef3cea3480390b55e0322bd61c">00038</a>   <a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da86bb1bef3cea3480390b55e0322bd61c">SPLINE_BC_PERIODIC</a>       <span class="comment">// periodic splines</span>
+<a name="l00039"></a>00039 };
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="keyword">class </span>vector;
+<a name="l00042"></a>00042 <span class="keyword">class </span>poly;
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="classqucs_1_1spline.html">00044</a> <span class="keyword">class </span><a class="code" href="classqucs_1_1spline.html">spline</a>
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046  <span class="keyword">public</span>:
+<a name="l00047"></a>00047   <a class="code" href="classqucs_1_1spline.html">spline</a> ();
+<a name="l00048"></a>00048   <a class="code" href="classqucs_1_1spline.html">spline</a> (<span class="keywordtype">int</span>);
 <a name="l00049"></a>00049   <a class="code" href="classqucs_1_1spline.html">spline</a> (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>, <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>);
-<a name="l00050"></a>00050   ~<a class="code" href="classqucs_1_1spline.html">spline</a> ();
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#ac1c3f1a597d065091de4c2ab7650bfe7">vectors</a> (qucs::vector, qucs::vector);
-<a name="l00053"></a>00053   <span class="keywordtype">void</span> vectors (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>, <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>);
-<a name="l00054"></a>00054   <span class="keywordtype">void</span> vectors (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <span class="keywordtype">int</span>);
-<a name="l00055"></a>00055   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a402167f9395066443ed35bb2455665f7">construct</a> (<span class="keywordtype">void</span>);
-<a name="l00056"></a>00056   <a class="code" href="classqucs_1_1poly.html">poly</a> <a class="code" href="classqucs_1_1spline.html#a49f72c9ab2e20408a6d032a6eaa6c381">evaluate</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
-<a name="l00057"></a><a class="code" href="classqucs_1_1spline.html#a85006700a1c343b678953b77408086c7">00057</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a85006700a1c343b678953b77408086c7">setBoundary</a> (<span class="keywordtype">int</span> b) { <a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">boundary</a> = b; }
-<a name="l00058"></a><a class="code" href="classqucs_1_1spline.html#a9c31598f9e4266903f2e5609b2896037">00058</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a9c31598f9e4266903f2e5609b2896037">setDerivatives</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>) { <a class="code" href="classqucs_1_1spline.html#abb561cbadf86729f689a5bbcf4dd76a8">d0</a> = l; <a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">dn</a> = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>; }
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060  <span class="keyword">private</span>:
-<a name="l00061"></a>00061   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * upper_bound (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
-<a name="l00062"></a>00062   <span class="keywordtype">void</span> realloc (<span class="keywordtype">int</span>);
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064  <span class="keyword">private</span>:
-<a name="l00065"></a><a class="code" href="classqucs_1_1spline.html#a29ffd216aae9a34c81f4997345a5d503">00065</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#a29ffd216aae9a34c81f4997345a5d503">x</a>;
-<a name="l00066"></a><a class="code" href="classqucs_1_1spline.html#ada4dc36ddc1b1bde8925cae6e9e1c46f">00066</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#ada4dc36ddc1b1bde8925cae6e9e1c46f">f0</a>;
-<a name="l00067"></a><a class="code" href="classqucs_1_1spline.html#a0fe358e51e2037c3094eea669a1f3bfc">00067</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#a0fe358e51e2037c3094eea669a1f3bfc">f1</a>;
-<a name="l00068"></a><a class="code" href="classqucs_1_1spline.html#ad3763e01e8a009afb738cfe16fc8f0dc">00068</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#ad3763e01e8a009afb738cfe16fc8f0dc">f2</a>;
-<a name="l00069"></a><a class="code" href="classqucs_1_1spline.html#aa87a0920d23f4c8991b189f443853421">00069</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#aa87a0920d23f4c8991b189f443853421">f3</a>;
-<a name="l00070"></a><a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">00070</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="classqucs_1_1spline.html#abb561cbadf86729f689a5bbcf4dd76a8">d0</a>, <a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">dn</a>;
-<a name="l00071"></a><a class="code" href="classqucs_1_1spline.html#a3b541ea72d3a8a6f6a4fc33f900a02b4">00071</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1spline.html#a3b541ea72d3a8a6f6a4fc33f900a02b4">n</a>;
-<a name="l00072"></a><a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">00072</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">boundary</a>;
-<a name="l00073"></a>00073 };
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075 } <span class="comment">// namespace qucs</span>
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077 <span class="preprocessor">#endif </span><span class="comment">/* __SPLINE_H__ */</span>
+<a name="l00050"></a>00050   <a class="code" href="classqucs_1_1spline.html">spline</a> (qucs::vector, qucs::vector);
+<a name="l00051"></a>00051   <a class="code" href="classqucs_1_1spline.html">spline</a> (::std::vector&lt;nr_double_t&gt;, ::std::vector&lt;nr_double_t&gt;);
+<a name="l00052"></a>00052   ~<a class="code" href="classqucs_1_1spline.html">spline</a> ();
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#ac1c3f1a597d065091de4c2ab7650bfe7">vectors</a> (qucs::vector, qucs::vector);
+<a name="l00055"></a>00055   <span class="keywordtype">void</span> vectors (<a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>, <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a>);
+<a name="l00056"></a>00056   <span class="keywordtype">void</span> vectors (::std::vector&lt;nr_double_t&gt;, ::std::vector&lt;nr_double_t&gt;);
+<a name="l00057"></a>00057   <span class="keywordtype">void</span> vectors (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <span class="keywordtype">int</span>);
+<a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a402167f9395066443ed35bb2455665f7">construct</a> (<span class="keywordtype">void</span>);
+<a name="l00059"></a>00059   <a class="code" href="classqucs_1_1poly.html">poly</a> <a class="code" href="classqucs_1_1spline.html#a49f72c9ab2e20408a6d032a6eaa6c381">evaluate</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
+<a name="l00060"></a><a class="code" href="classqucs_1_1spline.html#a85006700a1c343b678953b77408086c7">00060</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a85006700a1c343b678953b77408086c7">setBoundary</a> (<span class="keywordtype">int</span> b) { <a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">boundary</a> = b; }
+<a name="l00061"></a><a class="code" href="classqucs_1_1spline.html#a9c31598f9e4266903f2e5609b2896037">00061</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1spline.html#a9c31598f9e4266903f2e5609b2896037">setDerivatives</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>) { <a class="code" href="classqucs_1_1spline.html#abb561cbadf86729f689a5bbcf4dd76a8">d0</a> = l; <a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">dn</a> = <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>; }
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063  <span class="keyword">private</span>:
+<a name="l00064"></a>00064   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * upper_bound (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
+<a name="l00065"></a>00065   <span class="keywordtype">void</span> realloc (<span class="keywordtype">int</span>);
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067  <span class="keyword">private</span>:
+<a name="l00068"></a><a class="code" href="classqucs_1_1spline.html#a29ffd216aae9a34c81f4997345a5d503">00068</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#a29ffd216aae9a34c81f4997345a5d503">x</a>;
+<a name="l00069"></a><a class="code" href="classqucs_1_1spline.html#ada4dc36ddc1b1bde8925cae6e9e1c46f">00069</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#ada4dc36ddc1b1bde8925cae6e9e1c46f">f0</a>;
+<a name="l00070"></a><a class="code" href="classqucs_1_1spline.html#a0fe358e51e2037c3094eea669a1f3bfc">00070</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#a0fe358e51e2037c3094eea669a1f3bfc">f1</a>;
+<a name="l00071"></a><a class="code" href="classqucs_1_1spline.html#ad3763e01e8a009afb738cfe16fc8f0dc">00071</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#ad3763e01e8a009afb738cfe16fc8f0dc">f2</a>;
+<a name="l00072"></a><a class="code" href="classqucs_1_1spline.html#aa87a0920d23f4c8991b189f443853421">00072</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> * <a class="code" href="classqucs_1_1spline.html#aa87a0920d23f4c8991b189f443853421">f3</a>;
+<a name="l00073"></a><a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">00073</a>   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="classqucs_1_1spline.html#abb561cbadf86729f689a5bbcf4dd76a8">d0</a>, <a class="code" href="classqucs_1_1spline.html#a88974e4000b26f72d8e67d02c3ed8258">dn</a>;
+<a name="l00074"></a><a class="code" href="classqucs_1_1spline.html#a3b541ea72d3a8a6f6a4fc33f900a02b4">00074</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1spline.html#a3b541ea72d3a8a6f6a4fc33f900a02b4">n</a>;
+<a name="l00075"></a><a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">00075</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1spline.html#a1160cd10feecdb782378e6711aa999f5">boundary</a>;
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 } <span class="comment">// namespace qucs</span>
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif </span><span class="comment">/* __SPLINE_H__ */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 20 2015 20:22:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 23 2015 23:12:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

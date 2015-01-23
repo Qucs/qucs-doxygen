@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classqucs_1_1tvector.html" title="{qucs::tvector\&lt; nr_double_t \&gt;\n|&#45; external\l&#45; size\l&#45; capacity\l&#45; data\l|+ tvector()\l+ tvector()\l+ tvector()\l+ operator=()\l+ operator=()\l+ ~tvector()\l+ get()\l+ set()\l+ set()\l+ set()\land 18 more...}" alt="" coords="5,385,195,695"/>
-<area shape="rect" id="node5" href="$classqucs_1_1tvector.html" title="{qucs::tvector\&lt; nr_complex_t \&gt;\n|&#45; external\l&#45; size\l&#45; capacity\l&#45; data\l|+ tvector()\l+ tvector()\l+ tvector()\l+ operator=()\l+ operator=()\l+ ~tvector()\l+ get()\l+ set()\l+ set()\l+ set()\land 18 more...}" alt="" coords="219,385,419,695"/>
+<area shape="rect" id="node3" href="$classqucs_1_1tvector.html" title="{qucs::tvector\&lt; nr_double_t \&gt;\n|# data\l|+ tvector()\l+ tvector()\l+ tvector()\l+ ~tvector()\l+ get()\l+ set()\l+ set()\l+ set()\l+ set()\l+ size()\land 15 more...}" alt="" coords="5,331,195,589"/>
+<area shape="rect" id="node5" href="$classqucs_1_1tvector.html" title="{qucs::tvector\&lt; nr_complex_t \&gt;\n|# data\l|+ tvector()\l+ tvector()\l+ tvector()\l+ ~tvector()\l+ get()\l+ set()\l+ set()\l+ set()\l+ set()\l+ size()\land 15 more...}" alt="" coords="219,331,419,589"/>
 </map>

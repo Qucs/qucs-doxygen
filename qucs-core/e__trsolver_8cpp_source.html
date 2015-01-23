@@ -422,7 +422,7 @@
 <a name="l00371"></a>00371 {
 <a name="l00372"></a>00372     <span class="keywordtype">char</span> buf [1024];
 <a name="l00373"></a>00373 
-<a name="l00374"></a>00374     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;getSize(); <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++) {
+<a name="l00374"></a>00374     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;size(); <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++) {
 <a name="l00375"></a>00375         buf[0] = <span class="charliteral">&#39;\0&#39;</span>;
 <a name="l00376"></a>00376         <span class="comment">//sprintf (buf, &quot;%+.2e%+.2ei&quot;, (double) real (x-&gt;get (r)), (double) imag (x-&gt;get (r)));</span>
 <a name="l00377"></a>00377 
@@ -879,9 +879,9 @@
 <a name="l00828"></a>00828     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; 8; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
 <a name="l00829"></a>00829     {
 <a name="l00830"></a>00830         <span class="comment">// check sizes are the same</span>
-<a name="l00831"></a>00831         assert (src[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;getSize () == dest[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;getSize ());
+<a name="l00831"></a>00831         assert (src[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> () == dest[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> ());
 <a name="l00832"></a>00832         <span class="comment">// copy over the data values</span>
-<a name="l00833"></a>00833         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; src[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<a class="code" href="classqucs_1_1tvector.html#afee07fa6cfbde917796746067198eaba">getSize</a> (); j++)
+<a name="l00833"></a>00833         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; src[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<a class="code" href="classqucs_1_1tvector.html#ae03df40384f23435effac662f7fee1ce">size</a> (); j++)
 <a name="l00834"></a>00834         {
 <a name="l00835"></a>00835             dest[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<a class="code" href="classqucs_1_1tvector.html#a0e3bc3de4b28ad95b779c6e054bf4c88">set</a> (j, src[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>]-&gt;<span class="keyword">get</span> (j));
 <a name="l00836"></a>00836         }
@@ -1161,7 +1161,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 20 2015 20:22:34 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 23 2015 23:12:11 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

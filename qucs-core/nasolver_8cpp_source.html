@@ -308,7 +308,7 @@
 <a name="l00248"></a>00248     <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> == NULL || nlist == NULL) <span class="keywordflow">return</span>;
 <a name="l00249"></a>00249 
 <a name="l00250"></a>00250     <span class="comment">// set each solution to zero</span>
-<a name="l00251"></a>00251     <span class="keywordflow">if</span> (nokeep) <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;getSize (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, 0);
+<a name="l00251"></a>00251     <span class="keywordflow">if</span> (nokeep) <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;size (); <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;set (<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, 0);
 <a name="l00252"></a>00252 
 <a name="l00253"></a>00253     <span class="comment">// then apply the nodeset itself</span>
 <a name="l00254"></a>00254     <span class="keywordflow">for</span> (<a class="code" href="structqucs_1_1nodeset.html">nodeset</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = subnet-&gt;getNodeset (); <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;getNext ())
@@ -1510,7 +1510,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 20 2015 20:22:36 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 23 2015 23:12:12 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
