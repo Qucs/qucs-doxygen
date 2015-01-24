@@ -1,11 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classID__Dialog.html#a562d6d347a17b1c5b87cb8795ee531c7" title="ID_Dialog::slotEditParameter" alt="" coords="467,321,659,350"/>
-<area shape="rect" id="node5" href="$classID__Dialog.html#a4be6fc1375a97b117ffce0355cfc47c0" title="ID_Dialog::slotToggleShow" alt="" coords="219,54,400,83"/>
-<area shape="rect" id="node7" href="$classID__Dialog.html#a0e7f9f1be6bb8bac1e1f14d37075d60a" title="ID_Dialog::slotNameChanged" alt="" coords="212,107,407,137"/>
-<area shape="rect" id="node9" href="$classID__Dialog.html#aedfbf3f2b43c084bcadad6f4423d583b" title="ID_Dialog::slotValueChanged" alt="" coords="212,161,407,190"/>
-<area shape="rect" id="node11" href="$classID__Dialog.html#ad0197bcc9e23cc10a5d7b7587d473bc4" title="ID_Dialog::slotDescrChanged" alt="" coords="212,214,407,243"/>
-<area shape="rect" id="node13" href="$classID__Dialog.html#ad75e063f32bd89b1e33f7ca05f0908bb" title="ID_Dialog::slotTypeChanged" alt="" coords="215,267,404,297"/>
-<area shape="rect" id="node15" href="$classID__Dialog.html#a7bfd8ff19605835bc51124618180eb84" title="ID_Dialog::slotAddParameter" alt="" coords="213,321,405,350"/>
-<area shape="rect" id="node18" href="$classID__Dialog.html#a3c06335b91e71757c76087189b8a7e7c" title="ID_Dialog::slotRemoveParameter" alt="" coords="200,374,419,403"/>
-<area shape="rect" id="node21" href="$classID__Dialog.html#a1258b40e302910d4a8afc5e8efd72fea" title="ID_Dialog::slotOk" alt="" coords="247,427,372,457"/>
+<area shape="rect" id="node3" href="$classID__Dialog.html#a562d6d347a17b1c5b87cb8795ee531c7" title="ID_Dialog::slotEditParameter Place data from selected table row in the edit fields." alt="" coords="213,5,405,35"/>
+<area shape="rect" id="node5" href="$classID__Dialog.html#a7bfd8ff19605835bc51124618180eb84" title="ID_Dialog::slotAddParameter Add new set of parameters from edit fields into table." alt="" coords="213,59,405,88"/>
+<area shape="rect" id="node7" href="$classID__Dialog.html#a3c06335b91e71757c76087189b8a7e7c" title="ID_Dialog::slotRemoveParameter Remove selected row from table." alt="" coords="200,112,419,141"/>
+<area shape="rect" id="node9" href="$classID__Dialog.html#a1258b40e302910d4a8afc5e8efd72fea" title="ID_Dialog::slotOk Commit changes from dialog table to component properties." alt="" coords="247,165,372,195"/>
+<area shape="rect" id="node11" href="$classID__Dialog.html#a2d2c06fb3297e0bc3a451133e9c63999" title="ID_Dialog::slotApply Apply data from edit fields to table." alt="" coords="239,219,380,248"/>
 </map>

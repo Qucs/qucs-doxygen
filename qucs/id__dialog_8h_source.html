@@ -98,52 +98,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="comment"> *                                                                         *</span>
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 
-<a name="l00018"></a>00018 <span class="preprocessor">#ifndef ID_DIALOG_H</span>
-<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define ID_DIALOG_H</span>
-<a name="l00020"></a>00020 <span class="preprocessor"></span>
-<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;QDialog&gt;</span>
-<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;QRegExp&gt;</span>
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classID__Text.html">ID_Text</a>;
-<a name="l00025"></a>00025 <span class="keyword">class </span>QTableWidget;
-<a name="l00026"></a>00026 <span class="keyword">class </span>QLineEdit;
-<a name="l00027"></a>00027 <span class="keyword">class </span>QCheckBox;
-<a name="l00028"></a>00028 <span class="keyword">class </span>QVBoxLayout;
-<a name="l00029"></a>00029 <span class="keyword">class </span>QRegExpValidator;
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="classID__Dialog.html">00032</a> <span class="keyword">class </span><a class="code" href="classID__Dialog.html">ID_Dialog</a> : <span class="keyword">public</span> QDialog  {
-<a name="l00033"></a>00033 Q_OBJECT
-<a name="l00034"></a>00034 <span class="keyword">public</span>:
-<a name="l00035"></a>00035   <a class="code" href="classID__Dialog.html#a6e4db30fb835cf5aa281c72ee92431ea">ID_Dialog</a>(<a class="code" href="classID__Text.html">ID_Text</a>*);
-<a name="l00036"></a>00036  <a class="code" href="classID__Dialog.html#a7735ad7d4c56a88b37b4d64caaad5ffb">~ID_Dialog</a>();
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="keyword">private</span>:
-<a name="l00039"></a><a class="code" href="classID__Dialog.html#a3dcda07028f34da5081cdf6b275c353d">00039</a>   <a class="code" href="classID__Text.html">ID_Text</a> *<a class="code" href="classID__Dialog.html#a3dcda07028f34da5081cdf6b275c353d">idText</a>;
-<a name="l00040"></a>00040 
-<a name="l00041"></a><a class="code" href="classID__Dialog.html#a67b9112cb0f63ff0a26137bdd32a2b85">00041</a>   QVBoxLayout *<a class="code" href="classID__Dialog.html#a67b9112cb0f63ff0a26137bdd32a2b85">all</a>;
-<a name="l00042"></a><a class="code" href="classID__Dialog.html#a43c125101f2711120feb946e4f65e375">00042</a>   QLineEdit *<a class="code" href="classID__Dialog.html#a43c125101f2711120feb946e4f65e375">Prefix</a>;
+<a name="l00022"></a>00022 <span class="preprocessor">#ifndef ID_DIALOG_H</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define ID_DIALOG_H</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;QDialog&gt;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;QRegExp&gt;</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="keyword">class </span><a class="code" href="classID__Text.html">ID_Text</a>;
+<a name="l00029"></a>00029 <span class="keyword">class </span>QTableWidget;
+<a name="l00030"></a>00030 <span class="keyword">class </span>QLineEdit;
+<a name="l00031"></a>00031 <span class="keyword">class </span>QCheckBox;
+<a name="l00032"></a>00032 <span class="keyword">class </span>QVBoxLayout;
+<a name="l00033"></a>00033 <span class="keyword">class </span>QRegExpValidator;
+<a name="l00034"></a>00034 
+<a name="l00038"></a><a class="code" href="classID__Dialog.html">00038</a> <span class="keyword">class </span><a class="code" href="classID__Dialog.html" title="The ID_Dialog class, edit subcircuit symbol properties.">ID_Dialog</a> : <span class="keyword">public</span> QDialog  {
+<a name="l00039"></a>00039 Q_OBJECT
+<a name="l00040"></a>00040 <span class="keyword">public</span>:
+<a name="l00041"></a>00041   <a class="code" href="classID__Dialog.html#a6e4db30fb835cf5aa281c72ee92431ea">ID_Dialog</a>(<a class="code" href="classID__Text.html">ID_Text</a>*);
+<a name="l00042"></a>00042  <a class="code" href="classID__Dialog.html#a7735ad7d4c56a88b37b4d64caaad5ffb">~ID_Dialog</a>();
 <a name="l00043"></a>00043 
-<a name="l00044"></a><a class="code" href="classID__Dialog.html#a13a0f68509c085f17326dae71a43b07e">00044</a>   QTableWidget *<a class="code" href="classID__Dialog.html#a13a0f68509c085f17326dae71a43b07e">ParamTable</a>;
-<a name="l00045"></a><a class="code" href="classID__Dialog.html#ab0a7faa5d90846fc5a54b187a0cd55c7">00045</a>   QCheckBox *<a class="code" href="classID__Dialog.html#ab0a7faa5d90846fc5a54b187a0cd55c7">showCheck</a>;
-<a name="l00046"></a><a class="code" href="classID__Dialog.html#ac9f4bdb3cabb1c83ac58172f76315a09">00046</a>   QLineEdit *<a class="code" href="classID__Dialog.html#a4b27b7900e260bf590c8d39fa7f3d736">ParamNameEdit</a>, *<a class="code" href="classID__Dialog.html#ac9f4bdb3cabb1c83ac58172f76315a09">ValueEdit</a>, *<a class="code" href="classID__Dialog.html#aa48901b00b191ea5eef95170f1ce5a3d">DescriptionEdit</a>, *<a class="code" href="classID__Dialog.html#a2868d6f3d37615095394bd38ae06488f">TypeEdit</a>;
-<a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="classID__Dialog.html#a22db9593bd0c7954a3179c0b15315dae">00048</a>   QRegExp <a class="code" href="classID__Dialog.html#a22db9593bd0c7954a3179c0b15315dae">Expr</a>;
-<a name="l00049"></a><a class="code" href="classID__Dialog.html#a911b751fb36da17fbdbc137d52a81deb">00049</a>   QRegExpValidator *<a class="code" href="classID__Dialog.html#a691e4ecda2c1042bcb492e6d1831c357">SubVal</a>, *<a class="code" href="classID__Dialog.html#ae524b30608274a99f09144c1d2c15011">NameVal</a>, *<a class="code" href="classID__Dialog.html#a911b751fb36da17fbdbc137d52a81deb">ValueVal</a>, *<a class="code" href="classID__Dialog.html#a1828f99cea519b96bdd0abe7f88adb26">DescrVal</a>, *<a class="code" href="classID__Dialog.html#a3f318ac06ca9acc8fac264c8025978e8">TypeVal</a>;
-<a name="l00050"></a>00050 
-<a name="l00051"></a>00051 <span class="keyword">private</span> slots:
-<a name="l00052"></a>00052   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a1258b40e302910d4a8afc5e8efd72fea">slotOk</a>();
-<a name="l00053"></a>00053   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a7bfd8ff19605835bc51124618180eb84">slotAddParameter</a>();
-<a name="l00054"></a>00054   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a3c06335b91e71757c76087189b8a7e7c">slotRemoveParameter</a>();
-<a name="l00055"></a>00055   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a562d6d347a17b1c5b87cb8795ee531c7">slotEditParameter</a>();
-<a name="l00056"></a>00056   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a4be6fc1375a97b117ffce0355cfc47c0">slotToggleShow</a>(<span class="keywordtype">bool</span>);
-<a name="l00057"></a>00057   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a0e7f9f1be6bb8bac1e1f14d37075d60a">slotNameChanged</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#aedfbf3f2b43c084bcadad6f4423d583b">slotValueChanged</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00059"></a>00059   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#ad0197bcc9e23cc10a5d7b7587d473bc4">slotDescrChanged</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#ad75e063f32bd89b1e33f7ca05f0908bb">slotTypeChanged</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00061"></a>00061 };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="preprocessor">#endif</span>
+<a name="l00044"></a>00044 <span class="keyword">private</span>:
+<a name="l00045"></a><a class="code" href="classID__Dialog.html#a3dcda07028f34da5081cdf6b275c353d">00045</a>   <a class="code" href="classID__Text.html">ID_Text</a> *<a class="code" href="classID__Dialog.html#a3dcda07028f34da5081cdf6b275c353d">idText</a>;
+<a name="l00046"></a>00046 
+<a name="l00047"></a><a class="code" href="classID__Dialog.html#a67b9112cb0f63ff0a26137bdd32a2b85">00047</a>   QVBoxLayout *<a class="code" href="classID__Dialog.html#a67b9112cb0f63ff0a26137bdd32a2b85">all</a>;
+<a name="l00048"></a><a class="code" href="classID__Dialog.html#a43c125101f2711120feb946e4f65e375">00048</a>   QLineEdit *<a class="code" href="classID__Dialog.html#a43c125101f2711120feb946e4f65e375">Prefix</a>;
+<a name="l00049"></a>00049 
+<a name="l00050"></a><a class="code" href="classID__Dialog.html#a13a0f68509c085f17326dae71a43b07e">00050</a>   QTableWidget *<a class="code" href="classID__Dialog.html#a13a0f68509c085f17326dae71a43b07e">ParamTable</a>;
+<a name="l00051"></a><a class="code" href="classID__Dialog.html#ab0a7faa5d90846fc5a54b187a0cd55c7">00051</a>   QCheckBox *<a class="code" href="classID__Dialog.html#ab0a7faa5d90846fc5a54b187a0cd55c7">showCheck</a>;
+<a name="l00052"></a><a class="code" href="classID__Dialog.html#ac9f4bdb3cabb1c83ac58172f76315a09">00052</a>   QLineEdit *<a class="code" href="classID__Dialog.html#a4b27b7900e260bf590c8d39fa7f3d736">ParamNameEdit</a>, *<a class="code" href="classID__Dialog.html#ac9f4bdb3cabb1c83ac58172f76315a09">ValueEdit</a>, *<a class="code" href="classID__Dialog.html#aa48901b00b191ea5eef95170f1ce5a3d">DescriptionEdit</a>, *<a class="code" href="classID__Dialog.html#a2868d6f3d37615095394bd38ae06488f">TypeEdit</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a><a class="code" href="classID__Dialog.html#a22db9593bd0c7954a3179c0b15315dae">00054</a>   QRegExp <a class="code" href="classID__Dialog.html#a22db9593bd0c7954a3179c0b15315dae">Expr</a>;
+<a name="l00055"></a><a class="code" href="classID__Dialog.html#a911b751fb36da17fbdbc137d52a81deb">00055</a>   QRegExpValidator *<a class="code" href="classID__Dialog.html#a691e4ecda2c1042bcb492e6d1831c357">SubVal</a>, *<a class="code" href="classID__Dialog.html#ae524b30608274a99f09144c1d2c15011">NameVal</a>, *<a class="code" href="classID__Dialog.html#a911b751fb36da17fbdbc137d52a81deb">ValueVal</a>, *<a class="code" href="classID__Dialog.html#a1828f99cea519b96bdd0abe7f88adb26">DescrVal</a>, *<a class="code" href="classID__Dialog.html#a3f318ac06ca9acc8fac264c8025978e8">TypeVal</a>;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="keyword">private</span> slots:
+<a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a1258b40e302910d4a8afc5e8efd72fea" title="ID_Dialog::slotOk Commit changes from dialog table to component properties.">slotOk</a>();
+<a name="l00059"></a>00059   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a2d2c06fb3297e0bc3a451133e9c63999" title="ID_Dialog::slotApply Apply data from edit fields to table.">slotApply</a>();
+<a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a7bfd8ff19605835bc51124618180eb84" title="ID_Dialog::slotAddParameter Add new set of parameters from edit fields into table.">slotAddParameter</a>();
+<a name="l00061"></a>00061   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a3c06335b91e71757c76087189b8a7e7c" title="ID_Dialog::slotRemoveParameter Remove selected row from table.">slotRemoveParameter</a>();
+<a name="l00062"></a>00062   <span class="keywordtype">void</span> <a class="code" href="classID__Dialog.html#a562d6d347a17b1c5b87cb8795ee531c7" title="ID_Dialog::slotEditParameter Place data from selected table row in the edit fields.">slotEditParameter</a>();
+<a name="l00063"></a>00063 };
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -162,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 23 2015 23:11:27 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 24 2015 10:23:46 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
