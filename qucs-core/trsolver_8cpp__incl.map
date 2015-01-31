@@ -1,35 +1,35 @@
 <map id="G" name="G">
-<area shape="rect" id="node13" href="$compat_8h.html" title="compat.h" alt="" coords="61,547,136,576"/>
-<area shape="rect" id="node15" href="$object_8h.html" title="object.h" alt="" coords="1523,392,1589,421"/>
-<area shape="rect" id="node26" href="$logging_8h.html" title="logging.h" alt="" coords="1373,315,1448,344"/>
-<area shape="rect" id="node28" href="$complex_8h.html" title="complex.h" alt="" coords="575,547,657,576"/>
-<area shape="rect" id="node42" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="1933,315,2000,344"/>
-<area shape="rect" id="node64" href="$sweep_8h.html" title="sweep.h" alt="" coords="2169,83,2239,112"/>
-<area shape="rect" id="node66" href="$net_8h.html" title="net.h" alt="" coords="2024,315,2075,344"/>
-<area shape="rect" id="node73" href="$netdefs_8h.html" title="netdefs.h" alt="" coords="2263,83,2337,112"/>
-<area shape="rect" id="node75" href="$analysis_8h.html" title="The analysis class header file." alt="" coords="1635,315,1715,344"/>
-<area shape="rect" id="node79" href="$nasolver_8h.html" title="nasolver.h" alt="" coords="1092,160,1175,189"/>
-<area shape="rect" id="node135" href="$exception_8h.html" title="exception.h" alt="" coords="1523,315,1611,344"/>
-<area shape="rect" id="node137" href="$exceptionstack_8h.html" title="exceptionstack.h" alt="" coords="1739,315,1859,344"/>
-<area shape="rect" id="node141" href="$history_8h.html" title="history.h" alt="" coords="93,315,165,344"/>
-<area shape="rect" id="node147" href="$trsolver_8h.html" title="trsolver.h" alt="" coords="1633,83,1708,112"/>
-<area shape="rect" id="node151" href="$transient_8h.html" title="transient.h" alt="" coords="2361,83,2444,112"/>
-<area shape="rect" id="node19" href="$property_8h.html" title="property.h" alt="" coords="1451,469,1531,499"/>
-<area shape="rect" id="node32" href="$real_8h.html" title="real.h" alt="" coords="941,624,995,653"/>
-<area shape="rect" id="node36" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="923,701,1013,731"/>
-<area shape="rect" id="node38" href="$precision_8h.html" title="precision.h" alt="" coords="925,779,1011,808"/>
-<area shape="rect" id="node44" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="1613,392,1723,421"/>
-<area shape="rect" id="node50" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="1333,392,1448,421"/>
-<area shape="rect" id="node56" href="$integrator_8h.html" title="integrator.h" alt="" coords="1936,392,2021,421"/>
-<area shape="rect" id="node60" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="1720,469,1800,499"/>
-<area shape="rect" id="node46" href="$pair_8h.html" title="pair.h" alt="" coords="1373,469,1427,499"/>
-<area shape="rect" id="node58" href="$states_8h.html" title="states.h" alt="" coords="1983,469,2052,499"/>
-<area shape="rect" id="node69" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="1797,392,1861,421"/>
-<area shape="rect" id="node81" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="525,315,643,344"/>
-<area shape="rect" id="node83" href="$tvector_8h.html" title="tvector.h" alt="" coords="431,392,503,421"/>
-<area shape="rect" id="node102" href="$tmatrix_8h.html" title="tmatrix.h" alt="" coords="719,392,791,421"/>
-<area shape="rect" id="node105" href="$eqnsys_8h.html" title="eqnsys.h" alt="" coords="717,315,792,344"/>
-<area shape="rect" id="node110" href="$nasolution_8h.html" title="nasolution.h" alt="" coords="1555,469,1645,499"/>
-<area shape="rect" id="node115" href="$nasolver_8cpp.html" title="nasolver.cpp" alt="" coords="1085,237,1181,267"/>
-<area shape="rect" id="node91" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="440,469,525,499"/>
+<area shape="rect" id="node13" href="$compat_8h.html" title="compat.h" alt="" coords="41,547,116,576"/>
+<area shape="rect" id="node15" href="$object_8h.html" title="object.h" alt="" coords="1211,392,1277,421"/>
+<area shape="rect" id="node26" href="$logging_8h.html" title="logging.h" alt="" coords="1597,315,1672,344"/>
+<area shape="rect" id="node28" href="$complex_8h.html" title="complex.h" alt="" coords="488,547,571,576"/>
+<area shape="rect" id="node42" href="$circuit_8h.html" title="The circuit class header file." alt="" coords="1456,315,1523,344"/>
+<area shape="rect" id="node64" href="$sweep_8h.html" title="sweep.h" alt="" coords="2008,83,2077,112"/>
+<area shape="rect" id="node66" href="$net_8h.html" title="net.h" alt="" coords="1381,315,1432,344"/>
+<area shape="rect" id="node73" href="$netdefs_8h.html" title="netdefs.h" alt="" coords="2101,83,2176,112"/>
+<area shape="rect" id="node75" href="$analysis_8h.html" title="The analysis class header file." alt="" coords="1227,315,1307,344"/>
+<area shape="rect" id="node79" href="$nasolver_8h.html" title="nasolver.h" alt="" coords="945,160,1028,189"/>
+<area shape="rect" id="node135" href="$exception_8h.html" title="exception.h" alt="" coords="1696,315,1784,344"/>
+<area shape="rect" id="node137" href="$exceptionstack_8h.html" title="exceptionstack.h" alt="" coords="1808,315,1928,344"/>
+<area shape="rect" id="node141" href="$history_8h.html" title="history.h" alt="" coords="1845,469,1917,499"/>
+<area shape="rect" id="node147" href="$trsolver_8h.html" title="trsolver.h" alt="" coords="1181,83,1256,112"/>
+<area shape="rect" id="node151" href="$transient_8h.html" title="transient.h" alt="" coords="2200,83,2283,112"/>
+<area shape="rect" id="node19" href="$property_8h.html" title="property.h" alt="" coords="1395,469,1475,499"/>
+<area shape="rect" id="node32" href="$real_8h.html" title="real.h" alt="" coords="645,624,699,653"/>
+<area shape="rect" id="node36" href="$constants_8h.html" title="Global physical constants header file." alt="" coords="824,701,915,731"/>
+<area shape="rect" id="node38" href="$precision_8h.html" title="precision.h" alt="" coords="827,779,912,808"/>
+<area shape="rect" id="node44" href="$characteristic_8h.html" title="characteristic.h" alt="" coords="1611,392,1720,421"/>
+<area shape="rect" id="node50" href="$operatingpoint_8h.html" title="operatingpoint.h" alt="" coords="1853,392,1968,421"/>
+<area shape="rect" id="node56" href="$integrator_8h.html" title="integrator.h" alt="" coords="1744,392,1829,421"/>
+<area shape="rect" id="node60" href="$valuelist_8h.html" title="valuelist.h" alt="" coords="1291,469,1371,499"/>
+<area shape="rect" id="node46" href="$pair_8h.html" title="pair.h" alt="" coords="1661,469,1715,499"/>
+<area shape="rect" id="node58" href="$states_8h.html" title="states.h" alt="" coords="1752,469,1821,499"/>
+<area shape="rect" id="node69" href="$ptrlist_8h.html" title="ptrlist.h" alt="" coords="1301,392,1365,421"/>
+<area shape="rect" id="node81" href="$qucs__typedefs_8h.html" title="qucs_typedefs.h" alt="" coords="328,315,445,344"/>
+<area shape="rect" id="node83" href="$tvector_8h.html" title="tvector.h" alt="" coords="572,392,644,421"/>
+<area shape="rect" id="node102" href="$tmatrix_8h.html" title="tmatrix.h" alt="" coords="721,392,793,421"/>
+<area shape="rect" id="node105" href="$eqnsys_8h.html" title="eqnsys.h" alt="" coords="571,315,645,344"/>
+<area shape="rect" id="node110" href="$nasolution_8h.html" title="nasolution.h" alt="" coords="1125,469,1216,499"/>
+<area shape="rect" id="node115" href="$nasolver_8cpp.html" title="nasolver.cpp" alt="" coords="939,237,1035,267"/>
+<area shape="rect" id="node91" href="$tvector_8cpp.html" title="tvector.cpp" alt="" coords="560,469,645,499"/>
 </map>

@@ -104,8 +104,8 @@
 <a name="l00044"></a>00044 <span class="comment">   than the specified time. */</span>
 <a name="l00045"></a><a class="code" href="classqucs_1_1history.html#afd72acf14d81b0a065d7e40f9f591933">00045</a> <span class="keywordtype">void</span> history::truncate (<span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tcut)
 <a name="l00046"></a>00046 {
-<a name="l00047"></a>00047     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
-<a name="l00048"></a>00048     <span class="keywordtype">int</span> ts = this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size ();
+<a name="l00047"></a>00047     std::size_t <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
+<a name="l00048"></a>00048     std::size_t ts = this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size ();
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050     <span class="keywordflow">for</span> (i = this-&gt;leftidx (); i &lt; ts; i++)
 <a name="l00051"></a>00051     {
@@ -114,107 +114,112 @@
 <a name="l00054"></a>00054         <span class="keywordflow">break</span>;
 <a name="l00055"></a>00055       }
 <a name="l00056"></a>00056     }
-<a name="l00057"></a>00057     this-&gt;truncate (ts - i);
+<a name="l00057"></a>00057     this-&gt;resize (ts - i);
 <a name="l00058"></a>00058 }
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 
 <a name="l00061"></a>00061 <span class="comment">/* This function drops those values in the history which are older</span>
 <a name="l00062"></a>00062 <span class="comment">   than the specified age of the history instance. */</span>
 <a name="l00063"></a><a class="code" href="classqucs_1_1history.html#a0a3570505f2aca778855edde47638fc6">00063</a> <span class="keywordtype">void</span> history::drop (<span class="keywordtype">void</span>) {
-<a name="l00064"></a>00064   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = this-&gt;first ();
-<a name="l00065"></a>00065   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = this-&gt;last ();
-<a name="l00066"></a>00066   <span class="keywordflow">if</span> (age &gt; 0.0 &amp;&amp; l - f &gt; age) {
-<a name="l00067"></a>00067     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
-<a name="l00068"></a>00068     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = this-&gt;leftidx ();
-<a name="l00069"></a>00069     <span class="keywordflow">for</span> (r = 0; i &lt; this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size (); r++, i++)
-<a name="l00070"></a>00070       <span class="keywordflow">if</span> (l - (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &lt; age)
-<a name="l00071"></a>00071         <span class="keywordflow">break</span>;
-<a name="l00072"></a>00072     <span class="comment">// keep 2 values being older than specified age</span>
-<a name="l00073"></a>00073     r += this-&gt;unused () - 2;
-<a name="l00074"></a>00074     <span class="keywordflow">if</span> (r &gt; 127)
-<a name="l00075"></a>00075       <span class="comment">/* erase the first r value */</span>
-<a name="l00076"></a>00076       this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;erase(this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin(),this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin()+<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>);
-<a name="l00077"></a>00077   }
-<a name="l00078"></a>00078 }
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080 <span class="comment">/* Interpolates a value using 2 left side and 2 right side values if</span>
-<a name="l00081"></a>00081 <span class="comment">   possible. */</span>
-<a name="l00082"></a><a class="code" href="classqucs_1_1history.html#a5c64a2d056077f527e5e3a734a391e58">00082</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> history::interpol (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">int</span> idx, <span class="keywordtype">bool</span> left) {
-<a name="l00083"></a>00083   <span class="keyword">static</span> <a class="code" href="classqucs_1_1spline.html">spline</a> spl (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>);
-<a name="l00084"></a>00084   <span class="keyword">static</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> (4);
-<a name="l00085"></a>00085   <span class="keyword">static</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (4);
-<a name="l00086"></a>00086 
-<a name="l00087"></a>00087   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = left ? idx + 1: idx;
-<a name="l00088"></a>00088   <span class="keywordflow">if</span> (n &gt; 1 &amp;&amp; n + 2 &lt; this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;size ()) {
-<a name="l00089"></a>00089     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, k, l = this-&gt;leftidx ();
-<a name="l00090"></a>00090     <span class="keywordflow">for</span> (k = 0, i = n - 2; k &lt; 4; i++, k++) {
-<a name="l00091"></a>00091       <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> (k) = (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[i + l];
-<a name="l00092"></a>00092       <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (k) = (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[i];
-<a name="l00093"></a>00093     }
-<a name="l00094"></a>00094     spl.<a class="code" href="classqucs_1_1spline.html#ac1c3f1a597d065091de4c2ab7650bfe7">vectors</a> (y, x);
-<a name="l00095"></a>00095     spl.<a class="code" href="classqucs_1_1spline.html#a402167f9395066443ed35bb2455665f7">construct</a> ();
-<a name="l00096"></a>00096     <span class="keywordflow">return</span> spl.<a class="code" href="classqucs_1_1spline.html#a49f72c9ab2e20408a6d032a6eaa6c381">evaluate</a> (tval).<a class="code" href="classqucs_1_1poly.html#a9cab96446a0a92f53fde9bb56ff6efb3">f0</a>;
-<a name="l00097"></a>00097   }
-<a name="l00098"></a>00098   <span class="keywordflow">return</span> (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[idx];
-<a name="l00099"></a>00099 }
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="comment">/* The function returns the value nearest to the given time value.  If</span>
-<a name="l00102"></a>00102 <span class="comment">   the otional parameter is true then additionally cubic spline</span>
-<a name="l00103"></a>00103 <span class="comment">   interpolation is used. */</span>
-<a name="l00104"></a><a class="code" href="classqucs_1_1history.html#ac390ea0bc3e5c571fd031835e462bb51">00104</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> history::nearest (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">bool</span> interpolate) {
-<a name="l00105"></a>00105   <span class="keywordflow">if</span> (<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a> == NULL)
-<a name="l00106"></a>00106     <span class="keywordflow">return</span> 0.0;
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108   <span class="keywordtype">int</span> l = this-&gt;leftidx ();
-<a name="l00109"></a>00109   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size () - 1;
-<a name="l00110"></a>00110   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = -1;
-<a name="l00111"></a>00111   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a> = std::numeric_limits&lt;nr_double_t&gt;::max();
-<a name="l00112"></a>00112   <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> = <span class="keyword">true</span>;
-<a name="l00113"></a>00113   i = seek (tval, l, r, diff, i);
-<a name="l00114"></a>00114   i = i - l;
-<a name="l00115"></a>00115   <span class="keywordflow">if</span> (interpolate)
-<a name="l00116"></a>00116     <span class="keywordflow">return</span> interpol (tval, i, <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a>);
-<a name="l00117"></a>00117   <span class="keywordflow">return</span> (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
-<a name="l00118"></a>00118 }
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120 <span class="comment">/* The function is utilized in order to find the nearest value to a</span>
-<a name="l00121"></a>00121 <span class="comment">   given time value.  Since the time vector is ordered a recursive</span>
-<a name="l00122"></a>00122 <span class="comment">   lookup algorithm can be used.  The function returns the current</span>
-<a name="l00123"></a>00123 <span class="comment">   index into the time vector as well as the error in time. */</span>
-<a name="l00124"></a><a class="code" href="classqucs_1_1history.html#a7dfcce1d5ed63d360b44313177a7e8e7">00124</a> <span class="keywordtype">int</span> history::seek (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>,
-<a name="l00125"></a>00125                    <span class="keywordtype">int</span> idx) {
-<a name="l00126"></a>00126   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = (l + <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>) / 2;
-<a name="l00127"></a>00127   <span class="keywordflow">if</span> (l == r)
-<a name="l00128"></a>00128     <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
-<a name="l00129"></a>00129   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[i];
-<a name="l00130"></a>00130   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = v - tval;
-<a name="l00131"></a>00131   <span class="keywordflow">if</span> (fabs (d) &lt; <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>) {
-<a name="l00132"></a>00132     <span class="comment">// better approximation</span>
-<a name="l00133"></a>00133     diff = fabs (d);
-<a name="l00134"></a>00134     <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> = d &lt; 0.0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
-<a name="l00135"></a>00135     idx = <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
-<a name="l00136"></a>00136   }
-<a name="l00137"></a>00137   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == l) {
-<a name="l00138"></a>00138     <span class="comment">// no better</span>
-<a name="l00139"></a>00139     <span class="keywordflow">return</span> idx;
-<a name="l00140"></a>00140   }
-<a name="l00141"></a>00141   <span class="keywordflow">if</span> (d &lt; 0.0) {
-<a name="l00142"></a>00142     <span class="comment">// look later</span>
-<a name="l00143"></a>00143     <span class="keywordflow">return</span> seek (tval, i, r, diff, idx);
-<a name="l00144"></a>00144   }
-<a name="l00145"></a>00145   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (d &gt; 0.0) {
-<a name="l00146"></a>00146     <span class="comment">// look earlier</span>
-<a name="l00147"></a>00147     <span class="keywordflow">return</span> seek (tval, l, i, diff, idx);
-<a name="l00148"></a>00148   }
-<a name="l00149"></a>00149   <span class="keywordflow">return</span> idx;
-<a name="l00150"></a>00150 }
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152 } <span class="comment">// namespace qucs</span>
+<a name="l00064"></a>00064   <span class="keywordflow">if</span>(this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;empty())
+<a name="l00065"></a>00065     <span class="keywordflow">return</span>;
+<a name="l00066"></a>00066   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f = this-&gt;first ();
+<a name="l00067"></a>00067   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> l = this-&gt;last ();
+<a name="l00068"></a>00068   <span class="keywordflow">if</span> (age &gt; 0.0 &amp;&amp; l - f &gt; age) {
+<a name="l00069"></a>00069     std::size_t <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>;
+<a name="l00070"></a>00070     std::size_t <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = this-&gt;leftidx ();
+<a name="l00071"></a>00071     <span class="keywordflow">for</span> (r = 0; i &lt; this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size (); r++, i++)
+<a name="l00072"></a>00072       <span class="keywordflow">if</span> (l - (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] &lt; age)
+<a name="l00073"></a>00073         <span class="keywordflow">break</span>;
+<a name="l00074"></a>00074     <span class="comment">// keep 2 values being older than specified age</span>
+<a name="l00075"></a>00075     r += this-&gt;unused ();
+<a name="l00076"></a>00076     <span class="keywordflow">if</span> (r &gt;= 2)
+<a name="l00077"></a>00077       r -= 2;
+<a name="l00078"></a>00078     r = std::max(r,this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;size());
+<a name="l00079"></a>00079     <span class="keywordflow">if</span> (r &gt; 127)
+<a name="l00080"></a>00080       <span class="comment">/* erase the first r value */</span>
+<a name="l00081"></a>00081       this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;erase(this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin(),this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin()+<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>);
+<a name="l00082"></a>00082   }
+<a name="l00083"></a>00083 }
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="comment">/* Interpolates a value using 2 left side and 2 right side values if</span>
+<a name="l00086"></a>00086 <span class="comment">   possible. */</span>
+<a name="l00087"></a><a class="code" href="classqucs_1_1history.html#a5c64a2d056077f527e5e3a734a391e58">00087</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> history::interpol (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">int</span> idx, <span class="keywordtype">bool</span> left) {
+<a name="l00088"></a>00088   <span class="keyword">static</span> <a class="code" href="classqucs_1_1spline.html">spline</a> spl (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>);
+<a name="l00089"></a>00089   <span class="keyword">static</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> (4);
+<a name="l00090"></a>00090   <span class="keyword">static</span> <a class="code" href="classqucs_1_1tvector.html">tvector&lt;nr_double_t&gt;</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (4);
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = left ? idx + 1: idx;
+<a name="l00093"></a>00093   <span class="keywordflow">if</span> (n &gt; 1 &amp;&amp; n + 2 &lt; this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;size ()) {
+<a name="l00094"></a>00094     <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, k, l = this-&gt;leftidx ();
+<a name="l00095"></a>00095     <span class="keywordflow">for</span> (k = 0, i = n - 2; k &lt; 4; i++, k++) {
+<a name="l00096"></a>00096       <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> (k) = (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[i + l];
+<a name="l00097"></a>00097       <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> (k) = (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[i];
+<a name="l00098"></a>00098     }
+<a name="l00099"></a>00099     spl.<a class="code" href="classqucs_1_1spline.html#ac1c3f1a597d065091de4c2ab7650bfe7">vectors</a> (y, x);
+<a name="l00100"></a>00100     spl.<a class="code" href="classqucs_1_1spline.html#a402167f9395066443ed35bb2455665f7">construct</a> ();
+<a name="l00101"></a>00101     <span class="keywordflow">return</span> spl.<a class="code" href="classqucs_1_1spline.html#a49f72c9ab2e20408a6d032a6eaa6c381">evaluate</a> (tval).<a class="code" href="classqucs_1_1poly.html#a9cab96446a0a92f53fde9bb56ff6efb3">f0</a>;
+<a name="l00102"></a>00102   }
+<a name="l00103"></a>00103   <span class="keywordflow">return</span> (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[idx];
+<a name="l00104"></a>00104 }
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="comment">/* The function returns the value nearest to the given time value.  If</span>
+<a name="l00107"></a>00107 <span class="comment">   the otional parameter is true then additionally cubic spline</span>
+<a name="l00108"></a>00108 <span class="comment">   interpolation is used. */</span>
+<a name="l00109"></a><a class="code" href="classqucs_1_1history.html#ac390ea0bc3e5c571fd031835e462bb51">00109</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> history::nearest (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">bool</span> interpolate) {
+<a name="l00110"></a>00110   <span class="keywordflow">if</span> (<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;empty())
+<a name="l00111"></a>00111     <span class="keywordflow">return</span> 0.0;
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113   <span class="keywordtype">int</span> l = this-&gt;leftidx ();
+<a name="l00114"></a>00114   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>-&gt;size () - 1;
+<a name="l00115"></a>00115   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = -1;
+<a name="l00116"></a>00116   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a> = std::numeric_limits&lt;nr_double_t&gt;::max();
+<a name="l00117"></a>00117   <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> = <span class="keyword">true</span>;
+<a name="l00118"></a>00118   i = seek (tval, l, r, diff, i);
+<a name="l00119"></a>00119   i = i - l;
+<a name="l00120"></a>00120   <span class="keywordflow">if</span> (interpolate)
+<a name="l00121"></a>00121     <span class="keywordflow">return</span> interpol (tval, i, <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a>);
+<a name="l00122"></a>00122   <span class="keywordflow">return</span> (*this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>)[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
+<a name="l00123"></a>00123 }
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="comment">/* The function is utilized in order to find the nearest value to a</span>
+<a name="l00126"></a>00126 <span class="comment">   given time value.  Since the time vector is ordered a recursive</span>
+<a name="l00127"></a>00127 <span class="comment">   lookup algorithm can be used.  The function returns the current</span>
+<a name="l00128"></a>00128 <span class="comment">   index into the time vector as well as the error in time. */</span>
+<a name="l00129"></a><a class="code" href="classqucs_1_1history.html#a7dfcce1d5ed63d360b44313177a7e8e7">00129</a> <span class="keywordtype">int</span> history::seek (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tval, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>,
+<a name="l00130"></a>00130                    <span class="keywordtype">int</span> idx) {
+<a name="l00131"></a>00131   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = (l + <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>) / 2;
+<a name="l00132"></a>00132   <span class="keywordflow">if</span> (l == r)
+<a name="l00133"></a>00133     <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
+<a name="l00134"></a>00134   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = (*this-&gt;<a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>)[i];
+<a name="l00135"></a>00135   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = v - tval;
+<a name="l00136"></a>00136   <span class="keywordflow">if</span> (fabs (d) &lt; <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>) {
+<a name="l00137"></a>00137     <span class="comment">// better approximation</span>
+<a name="l00138"></a>00138     diff = fabs (d);
+<a name="l00139"></a>00139     <a class="code" href="namespacequcs.html#a4f5e9ccf3400c7acb2d2cd74cbf52a55" title="complex sign function">sign</a> = d &lt; 0.0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
+<a name="l00140"></a>00140     idx = <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>;
+<a name="l00141"></a>00141   }
+<a name="l00142"></a>00142   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == l) {
+<a name="l00143"></a>00143     <span class="comment">// no better</span>
+<a name="l00144"></a>00144     <span class="keywordflow">return</span> idx;
+<a name="l00145"></a>00145   }
+<a name="l00146"></a>00146   <span class="keywordflow">if</span> (d &lt; 0.0) {
+<a name="l00147"></a>00147     <span class="comment">// look later</span>
+<a name="l00148"></a>00148     <span class="keywordflow">return</span> seek (tval, i, r, diff, idx);
+<a name="l00149"></a>00149   }
+<a name="l00150"></a>00150   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (d &gt; 0.0) {
+<a name="l00151"></a>00151     <span class="comment">// look earlier</span>
+<a name="l00152"></a>00152     <span class="keywordflow">return</span> seek (tval, l, i, diff, idx);
+<a name="l00153"></a>00153   }
+<a name="l00154"></a>00154   <span class="keywordflow">return</span> idx;
+<a name="l00155"></a>00155 }
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 } <span class="comment">// namespace qucs</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 29 2015 10:09:23 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 31 2015 23:20:42 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

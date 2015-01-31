@@ -965,7 +965,7 @@
 <a name="l00905"></a>00905 
 <a name="l00906"></a>00906 <span class="comment">// Appends a history value.</span>
 <a name="l00907"></a><a class="code" href="classqucs_1_1circuit.html#a92c063e3de4c3ae980feef8b1399a5a6">00907</a> <span class="keywordtype">void</span> circuit::appendHistory (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
-<a name="l00908"></a>00908   histories[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>].append (val);
+<a name="l00908"></a>00908   histories[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>].push_back (val);
 <a name="l00909"></a>00909 }
 <a name="l00910"></a>00910 
 <a name="l00911"></a>00911 <span class="comment">// Returns the required age of the history.</span>
@@ -976,7 +976,7 @@
 <a name="l00916"></a>00916 
 <a name="l00917"></a>00917 <span class="comment">// Returns size of the history</span>
 <a name="l00918"></a><a class="code" href="classqucs_1_1circuit.html#ad81a1acbdd883f631c25e1584d4ea176">00918</a> <span class="keywordtype">int</span> circuit::getHistorySize (<span class="keywordtype">void</span>) {
-<a name="l00919"></a>00919   <span class="keywordflow">return</span> histories[0].getSize ();
+<a name="l00919"></a>00919   <span class="keywordflow">return</span> histories[0].size ();
 <a name="l00920"></a>00920 }
 <a name="l00921"></a>00921 
 <a name="l00922"></a>00922 <span class="comment">// Returns the time with the specified index</span>
@@ -1015,7 +1015,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 29 2015 10:09:22 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 31 2015 23:20:42 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
