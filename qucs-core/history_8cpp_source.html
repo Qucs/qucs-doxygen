@@ -135,7 +135,7 @@
 <a name="l00075"></a>00075     r += this-&gt;unused ();
 <a name="l00076"></a>00076     <span class="keywordflow">if</span> (r &gt;= 2)
 <a name="l00077"></a>00077       r -= 2;
-<a name="l00078"></a>00078     r = std::max(r,this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;size());
+<a name="l00078"></a>00078     r = std::min(r,this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;size());
 <a name="l00079"></a>00079     <span class="keywordflow">if</span> (r &gt; 127)
 <a name="l00080"></a>00080       <span class="comment">/* erase the first r value */</span>
 <a name="l00081"></a>00081       this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;erase(this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin(),this-&gt;<a class="code" href="parse__spice_8y.html#ae883f81c44b5bc2ff452939a5b34c01e">values</a>-&gt;begin()+<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>);
@@ -219,7 +219,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 31 2015 23:20:42 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 1 2015 11:01:13 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
