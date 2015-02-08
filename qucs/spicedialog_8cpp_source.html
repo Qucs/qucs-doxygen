@@ -363,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00280"></a>00280   QString s = QFileDialog::getOpenFileName(<span class="keyword">this</span>,
 <a name="l00281"></a>00281                   tr(<span class="stringliteral">&quot;Select a file&quot;</span>),
 <a name="l00282"></a>00282                   <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>.isEmpty() ? QString(<span class="stringliteral">&quot;.&quot;</span>) : <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>,
-<a name="l00283"></a>00283                   tr(<span class="stringliteral">&quot;SPICE netlist&quot;</span>) + <a class="code" href="classSpiceDialog.html#a34140a276580a5e5bc2e555e17b6019d">App</a>-&gt;<a class="code" href="classQucsApp.html#a00ef30c6620bdd39bc06f0a81133a672">getSpiceFileFilter</a> ()
+<a name="l00283"></a>00283                   tr(<span class="stringliteral">&quot;SPICE netlist&quot;</span>) + QString(<span class="stringliteral">&quot; (&quot;</span>) + <a class="code" href="classSpiceDialog.html#a34140a276580a5e5bc2e555e17b6019d">App</a>-&gt;<a class="code" href="classQucsApp.html#aab06a01bf8066d0678a800fc6ea958e1">spiceExtensions</a>.join(<span class="stringliteral">&quot; &quot;</span>) + QString(<span class="stringliteral">&quot;);;&quot;</span>)
 <a name="l00284"></a>00284                       + tr(<span class="stringliteral">&quot;All Files&quot;</span>) + <span class="stringliteral">&quot; (*.*)&quot;</span>);
 <a name="l00285"></a>00285 
 <a name="l00286"></a>00286   <span class="keywordflow">if</span>(s.isEmpty()) {
@@ -744,7 +744,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 7 2015 18:48:39 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 11:44:04 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

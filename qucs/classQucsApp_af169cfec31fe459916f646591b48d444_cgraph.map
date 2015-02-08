@@ -1,5 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSearchDialog.html#a7a077ce7a88a6df6f6d31a0f732258c2" title="SearchDialog::initSearch" alt="" coords="239,32,404,61"/>
-<area shape="rect" id="node5" href="$classSearchDialog.html#a867031f9b52657059cda7e5416b98d34" title="SearchDialog::replace" alt="" coords="455,5,604,35"/>
-<area shape="rect" id="node7" href="$classSearchDialog.html#a304bee31d39067acd228551a39de219e" title="SearchDialog::search" alt="" coords="456,59,603,88"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="239,5,417,35"/>
+<area shape="rect" id="node5" href="$classSearchDialog.html#a7a077ce7a88a6df6f6d31a0f732258c2" title="SearchDialog::initSearch" alt="" coords="245,59,411,88"/>
+<area shape="rect" id="node7" href="$classSearchDialog.html#a867031f9b52657059cda7e5416b98d34" title="SearchDialog::replace" alt="" coords="468,32,617,61"/>
+<area shape="rect" id="node9" href="$classSearchDialog.html#a304bee31d39067acd228551a39de219e" title="SearchDialog::search" alt="" coords="469,85,616,115"/>
 </map>

@@ -21,7 +21,7 @@ var searchData=
   ['qucsmain',['QucsMain',['../main_8cpp.html#acd1e1fca11584d479cbeb2e72c9e151f',1,'QucsMain():&#160;main.cpp'],['../main_8h.html#acd1e1fca11584d479cbeb2e72c9e151f',1,'QucsMain():&#160;main.cpp']]],
   ['qucsmessageoutput',['qucsMessageOutput',['../main_8cpp.html#af0af1507bf87dfa58f617119940f45cd',1,'qucsMessageOutput(QtMsgType type, const char *msg):&#160;main.cpp'],['../main_8h.html#af0af1507bf87dfa58f617119940f45cd',1,'qucsMessageOutput(QtMsgType type, const char *msg):&#160;main.cpp']]],
   ['qucspathlist',['qucsPathList',['../main_8cpp.html#a22af65502ad1b28e5dbc0e2b8a6ce317',1,'qucsPathList():&#160;main.cpp'],['../main_8h.html#a22af65502ad1b28e5dbc0e2b8a6ce317',1,'qucsPathList():&#160;main.cpp']]],
-  ['qucssettings',['qucsSettings',['../classQucsApp.html#a979e3fe123504f6280a5bf9bb7883bbb',1,'QucsApp::qucsSettings()'],['../main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e',1,'QucsSettings():&#160;main.cpp'],['../main_8h.html#ac2e3fb7eed4aa9bd981210dc5df2e02e',1,'QucsSettings():&#160;main.cpp']]],
+  ['qucssettings',['QucsSettings',['../main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e',1,'QucsSettings():&#160;main.cpp'],['../main_8h.html#ac2e3fb7eed4aa9bd981210dc5df2e02e',1,'QucsSettings():&#160;main.cpp']]],
   ['qucssettingsdialog',['QucsSettingsDialog',['../classQucsSettingsDialog.html',1,'QucsSettingsDialog'],['../classQucsSettingsDialog.html#a5b522a81131dc438e2d7c13689620410',1,'QucsSettingsDialog::QucsSettingsDialog()']]],
   ['qucssettingsdialog_2ecpp',['qucssettingsdialog.cpp',['../qucssettingsdialog_8cpp.html',1,'']]],
   ['qucssettingsdialog_2eh',['qucssettingsdialog.h',['../qucssettingsdialog_8h.html',1,'']]],

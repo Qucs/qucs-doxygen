@@ -1,13 +1,13 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classQucsSettingsDialog.html#aeab42774b798e5c45389d6737cd36b3f" title="QucsSettingsDialog::slotApply" alt="" coords="279,31,479,60"/>
-<area shape="rect" id="node10" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="825,135,964,164"/>
-<area shape="rect" id="node12" href="$classQucsApp.html#ab4ff814a316476d6b53e741c5ccb8768" title="QucsApp::slotCMenuCopy" alt="" coords="289,135,468,164"/>
-<area shape="rect" id="node17" href="$classQucsApp.html#a8a79e16c44618c159ae1e5276d3f746e" title="QucsApp::slotFileSaveAs" alt="" coords="293,188,464,217"/>
-<area shape="rect" id="node22" href="$classQucsApp.html#a2f0374da49b42c68f208cbc17e3d4bab" title="QucsApp::slotFileSaveAll" alt="" coords="293,241,464,271"/>
-<area shape="rect" id="node25" href="$classQucsApp.html#a76573b87bb7d8bb4477e5ff8accfe194" title="QucsApp::slotRefreshSchPath" alt="" coords="279,295,479,324"/>
-<area shape="rect" id="node28" href="$classSchematic.html#a469e42788ceccf0be64c29902325f88d" title="Schematic::save" alt="" coords="319,348,439,377"/>
+<area shape="rect" id="node10" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1075,135,1213,164"/>
+<area shape="rect" id="node12" href="$classQucsApp.html#a76573b87bb7d8bb4477e5ff8accfe194" title="QucsApp::slotRefreshSchPath" alt="" coords="279,161,479,191"/>
+<area shape="rect" id="node28" href="$classSchematic.html#a469e42788ceccf0be64c29902325f88d" title="Schematic::save" alt="" coords="319,215,439,244"/>
 <area shape="rect" id="node5" href="$classQucsSettingsDialog.html#a5b522a81131dc438e2d7c13689620410" title="QucsSettingsDialog::QucsSettingsDialog" alt="" coords="764,5,1025,35"/>
 <area shape="rect" id="node7" href="$classQucsSettingsDialog.html#a4f09a405e083087e49438fc8bd52c132" title="QucsSettingsDialog::slotOK" alt="" coords="528,31,715,60"/>
-<area shape="rect" id="node14" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="536,135,707,164"/>
-<area shape="rect" id="node19" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="549,215,693,244"/>
+<area shape="rect" id="node14" href="$classQucsApp.html#ab4ff814a316476d6b53e741c5ccb8768" title="QucsApp::slotCMenuCopy" alt="" coords="532,135,711,164"/>
+<area shape="rect" id="node19" href="$classQucsApp.html#a8a79e16c44618c159ae1e5276d3f746e" title="QucsApp::slotFileSaveAs" alt="" coords="536,188,707,217"/>
+<area shape="rect" id="node21" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="823,213,967,243"/>
+<area shape="rect" id="node24" href="$classQucsApp.html#a2f0374da49b42c68f208cbc17e3d4bab" title="QucsApp::slotFileSaveAll" alt="" coords="536,292,707,321"/>
+<area shape="rect" id="node16" href="$classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="809,135,980,164"/>
 </map>

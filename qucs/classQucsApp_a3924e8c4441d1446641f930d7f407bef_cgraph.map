@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="275,662,453,691"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="260,715,468,745"/>
-<area shape="rect" id="node133" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="232,769,496,798"/>
-<area shape="rect" id="node141" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="277,822,451,851"/>
-<area shape="rect" id="node7" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="544,831,739,861"/>
-<area shape="rect" id="node22" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1109,447,1317,477"/>
-<area shape="rect" id="node29" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="1383,445,1615,474"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="832,85,1005,114"/>
-<area shape="rect" id="node19" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="789,805,1048,834"/>
-<area shape="rect" id="node24" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="1401,498,1596,527"/>
-<area shape="rect" id="node33" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="1923,907,2085,937"/>
-<area shape="rect" id="node44" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="1396,241,1601,270"/>
-<area shape="rect" id="node50" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="1377,1373,1620,1402"/>
-<area shape="rect" id="node56" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="1929,1346,2079,1375"/>
-<area shape="rect" id="node59" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="788,646,1049,675"/>
-<area shape="rect" id="node69" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="1671,1786,1863,1815"/>
-<area shape="rect" id="node73" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="815,909,1023,938"/>
-<area shape="rect" id="node78" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="820,1269,1017,1298"/>
-<area shape="rect" id="node85" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="824,1582,1013,1611"/>
-<area shape="rect" id="node91" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="1403,1530,1595,1559"/>
-<area shape="rect" id="node111" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="811,409,1027,438"/>
-<area shape="rect" id="node121" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1115,1165,1312,1194"/>
-<area shape="rect" id="node11" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1935,213,2073,242"/>
-<area shape="rect" id="node13" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="1135,31,1292,61"/>
-<area shape="rect" id="node15" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="1144,85,1283,114"/>
-<area shape="rect" id="node17" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="1147,138,1280,167"/>
-<area shape="rect" id="node26" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="1409,391,1588,421"/>
-<area shape="rect" id="node31" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1676,549,1857,578"/>
-<area shape="rect" id="node40" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="1923,589,2085,618"/>
-<area shape="rect" id="node42" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="1937,510,2071,539"/>
-<area shape="rect" id="node35" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="2144,881,2381,910"/>
-<area shape="rect" id="node37" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="2167,934,2359,963"/>
-<area shape="rect" id="node46" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1681,241,1852,270"/>
-<area shape="rect" id="node52" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="1681,1269,1852,1298"/>
-<area shape="rect" id="node54" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1913,1655,2095,1685"/>
-<area shape="rect" id="node61" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1123,653,1304,682"/>
-<area shape="rect" id="node75" href="$classTabDiagram.html#a8a9f265d87ebac6d7a684edd6aaf30ff" title="TabDiagram::scrollTo" alt="" coords="1140,959,1287,989"/>
-<area shape="rect" id="node81" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1111,1269,1316,1298"/>
-<area shape="rect" id="node83" href="$qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df" title="Val_CompProp" alt="" coords="1159,1322,1268,1351"/>
-<area shape="rect" id="node89" href="$classMouseActions.html#a51e6ab4802a4421649b9db8c117e1966" title="MouseActions::MDoubleClickWire2 Double click terminates wire insertion." alt="" coords="1099,1582,1328,1611"/>
-<area shape="rect" id="node95" href="$classMouseActions.html#a80809df085b1bccf288152faf1756a7a" title="MouseActions::MMoveWire1 Paint hair cross for &quot;insert wire&quot; mode." alt="" coords="1672,1629,1861,1658"/>
-<area shape="rect" id="node99" href="$classMouseActions.html#acbfc5fd19c7f35879ee8d71f81005413" title="MouseActions::MPressWire1 Is called if starting point of wire is pressed." alt="" coords="1671,1682,1863,1711"/>
-<area shape="rect" id="node93" href="$classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69" title="Schematic::insertWire" alt="" coords="1692,1525,1841,1554"/>
-<area shape="rect" id="node113" href="$classSchematic.html#ae70eb618f437d79d8200c38d78557f1a" title="Schematic::selectElements" alt="" coords="1123,343,1304,373"/>
-<area shape="rect" id="node125" href="$classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96" title="Schematic::copySelectedElements" alt="" coords="1385,1215,1612,1245"/>
-<area shape="rect" id="node127" href="$classMouseActions.html#a4400c10f5f67eab2e017a83391046867" title="MouseActions::MMoveMoving2" alt="" coords="1396,1269,1601,1298"/>
-<area shape="rect" id="node135" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="553,1837,729,1866"/>
-<area shape="rect" id="node137" href="$classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347" title="QucsApp::fillComboBox" alt="" coords="837,1837,1000,1866"/>
-<area shape="rect" id="node139" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="824,1890,1013,1919"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="275,599,453,628"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="260,652,468,682"/>
+<area shape="rect" id="node131" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="232,706,496,735"/>
+<area shape="rect" id="node139" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="277,759,451,788"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="544,807,739,836"/>
+<area shape="rect" id="node22" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1109,448,1317,478"/>
+<area shape="rect" id="node29" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="1383,500,1615,530"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="832,86,1005,115"/>
+<area shape="rect" id="node19" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="789,551,1048,580"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="1401,704,1596,734"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="1955,908,2117,938"/>
+<area shape="rect" id="node44" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="1396,242,1601,271"/>
+<area shape="rect" id="node50" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="1377,1606,1620,1635"/>
+<area shape="rect" id="node56" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="1961,1372,2111,1402"/>
+<area shape="rect" id="node59" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="788,731,1049,760"/>
+<area shape="rect" id="node69" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="1403,1735,1595,1764"/>
+<area shape="rect" id="node73" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="815,960,1023,990"/>
+<area shape="rect" id="node78" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="820,1216,1017,1246"/>
+<area shape="rect" id="node87" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="824,1478,1013,1507"/>
+<area shape="rect" id="node93" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="1403,1400,1595,1430"/>
+<area shape="rect" id="node113" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="811,396,1027,426"/>
+<area shape="rect" id="node123" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1400,1142,1597,1171"/>
+<area shape="rect" id="node11" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1967,291,2105,320"/>
+<area shape="rect" id="node13" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="1135,32,1292,62"/>
+<area shape="rect" id="node15" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="1144,86,1283,115"/>
+<area shape="rect" id="node17" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="1147,139,1280,168"/>
+<area shape="rect" id="node26" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="1409,447,1588,476"/>
+<area shape="rect" id="node31" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1692,704,1873,734"/>
+<area shape="rect" id="node40" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="1955,666,2117,695"/>
+<area shape="rect" id="node42" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="1969,744,2103,774"/>
+<area shape="rect" id="node35" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="2176,882,2413,911"/>
+<area shape="rect" id="node37" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="2199,935,2391,964"/>
+<area shape="rect" id="node46" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1697,242,1868,271"/>
+<area shape="rect" id="node52" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="1697,1582,1868,1611"/>
+<area shape="rect" id="node54" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1945,1555,2127,1584"/>
+<area shape="rect" id="node61" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1123,704,1304,734"/>
+<area shape="rect" id="node75" href="$classTabDiagram.html#a8a9f265d87ebac6d7a684edd6aaf30ff" title="TabDiagram::scrollTo" alt="" coords="1140,1011,1287,1040"/>
+<area shape="rect" id="node80" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="1136,1216,1291,1246"/>
+<area shape="rect" id="node83" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1111,1270,1316,1299"/>
+<area shape="rect" id="node85" href="$qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df" title="Val_CompProp" alt="" coords="1159,1323,1268,1352"/>
+<area shape="rect" id="node91" href="$classMouseActions.html#a51e6ab4802a4421649b9db8c117e1966" title="MouseActions::MDoubleClickWire2 Double click terminates wire insertion." alt="" coords="1099,1478,1328,1507"/>
+<area shape="rect" id="node97" href="$classMouseActions.html#a80809df085b1bccf288152faf1756a7a" title="MouseActions::MMoveWire1 Paint hair cross for &quot;insert wire&quot; mode." alt="" coords="1688,1475,1877,1504"/>
+<area shape="rect" id="node101" href="$classMouseActions.html#acbfc5fd19c7f35879ee8d71f81005413" title="MouseActions::MPressWire1 Is called if starting point of wire is pressed." alt="" coords="1687,1528,1879,1558"/>
+<area shape="rect" id="node95" href="$classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69" title="Schematic::insertWire" alt="" coords="1708,1320,1857,1350"/>
+<area shape="rect" id="node115" href="$classSchematic.html#ae70eb618f437d79d8200c38d78557f1a" title="Schematic::selectElements" alt="" coords="1123,344,1304,374"/>
+<area shape="rect" id="node127" href="$classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96" title="Schematic::copySelectedElements" alt="" coords="1669,1115,1896,1144"/>
+<area shape="rect" id="node133" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="553,1786,729,1815"/>
+<area shape="rect" id="node135" href="$classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347" title="QucsApp::fillComboBox" alt="" coords="837,1786,1000,1815"/>
+<area shape="rect" id="node137" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="824,1839,1013,1868"/>
 </map>

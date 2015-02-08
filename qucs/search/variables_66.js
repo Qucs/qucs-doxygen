@@ -35,7 +35,7 @@ var searchData=
   ['filstream',['filstream',['../classSpiceFile.html#ae6700677c4fdbc8e1676a0d31d5b8153',1,'SpiceFile']]],
   ['focuselement',['focusElement',['../classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250',1,'MouseActions']]],
   ['focusmevent',['focusMEvent',['../classMouseActions.html#a08b72068f8a83c4b66c60256c25955ee',1,'MouseActions']]],
-  ['font',['Font',['../classQucsSettingsDialog.html#a0e4d13fa5aeea750c313a11860475ee1',1,'QucsSettingsDialog::Font()'],['../classGraphicText.html#a419571e51bfda02257e1b478065796d7',1,'GraphicText::Font()'],['../structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db',1,'tQucsSettings::font()']]],
+  ['font',['font',['../structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db',1,'tQucsSettings::font()'],['../classQucsSettingsDialog.html#a0e4d13fa5aeea750c313a11860475ee1',1,'QucsSettingsDialog::Font()'],['../classGraphicText.html#a419571e51bfda02257e1b478065796d7',1,'GraphicText::Font()']]],
   ['fontbutton',['FontButton',['../classQucsSettingsDialog.html#aee6cb41c129753f914b1505ba7ac4a67',1,'QucsSettingsDialog']]],
   ['fontscale',['FontScale',['../classViewPainter.html#a9e4f083eaa435db4f50ec38dbfcf774c',1,'ViewPainter']]],
   ['format',['format',['../structSyntaxHighlighter_1_1HighlightingRule.html#a949ab962f21943b2fef77bf0a6da9a17',1,'SyntaxHighlighter::HighlightingRule']]],

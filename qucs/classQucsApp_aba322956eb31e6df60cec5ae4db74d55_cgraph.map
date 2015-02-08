@@ -1,49 +1,50 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMouseActions.html#ada8a7aeace90479d3fe31c58ceea01e1" title="MouseActions::MMoveElement" alt="" coords="521,164,724,193"/>
-<area shape="rect" id="node16" href="$classMouseActions.html#a964ac8fd47ffa0885cd512a74eef76e2" title="MouseActions::MPressElement" alt="" coords="265,557,471,587"/>
-<area shape="rect" id="node87" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="293,611,443,640"/>
-<area shape="rect" id="node89" href="$classCategory.html#a960a0e59d07a74118852ba06a63b7806" title="Category::getCategories" alt="" coords="287,664,449,693"/>
-<area shape="rect" id="node91" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="304,993,432,1023"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="817,59,967,88"/>
-<area shape="rect" id="node7" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="807,112,977,141"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1060,216,1241,245"/>
-<area shape="rect" id="node12" href="$classElement.html#a0125e1298baa1d1b4042561633c93a91" title="Element::paintScheme" alt="" coords="815,216,969,245"/>
-<area shape="rect" id="node14" href="$classElement.html#a89220202f70fedb96d17373c42ce8d74" title="Element::setCenter" alt="" coords="825,5,959,35"/>
-<area shape="rect" id="node18" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="535,479,711,508"/>
-<area shape="rect" id="node20" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="820,529,964,559"/>
-<area shape="rect" id="node22" href="$classSchematic.html#a8f1177da8106d29f9573f3a119ea1b55" title="Schematic::insertComponent" alt="" coords="528,636,717,665"/>
-<area shape="rect" id="node40" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="536,583,709,612"/>
-<area shape="rect" id="node43" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="553,689,692,719"/>
-<area shape="rect" id="node45" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="541,743,704,772"/>
-<area shape="rect" id="node47" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="541,796,704,825"/>
-<area shape="rect" id="node66" href="$classComponent.html#acac3c01cafba8659753304a89611560d" title="Component::newOne" alt="" coords="551,849,695,879"/>
-<area shape="rect" id="node70" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="557,903,688,932"/>
-<area shape="rect" id="node72" href="$classComponent.html#a6f8673fab9762c1b41472ddc5675a2f3" title="Component::paintScheme" alt="" coords="536,265,709,295"/>
-<area shape="rect" id="node75" href="$classDiagram.html#a5495c159279f502a7be9e4c7310ce3ad" title="Diagram::newOne" alt="" coords="560,319,685,348"/>
-<area shape="rect" id="node79" href="$classDiagram.html#a1b0ea3f7d69a499e3c354c6cdf71058e" title="Diagram::paintScheme" alt="" coords="545,372,700,401"/>
-<area shape="rect" id="node82" href="$classPainting.html#af22801abd64c212ba6e8cd5cbef51b38" title="Painting::newOne" alt="" coords="560,425,685,455"/>
-<area shape="rect" id="node24" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="777,689,1007,719"/>
-<area shape="rect" id="node36" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="808,583,976,612"/>
-<area shape="rect" id="node38" href="$classSchematic.html#ae64db01d913377d19bf221e82e2b1314" title="Schematic::setComponentNumber" alt="" coords="781,636,1003,665"/>
-<area shape="rect" id="node26" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="1073,636,1228,665"/>
-<area shape="rect" id="node30" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="1073,689,1228,719"/>
-<area shape="rect" id="node28" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1307,636,1448,665"/>
-<area shape="rect" id="node32" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1292,689,1463,719"/>
-<area shape="rect" id="node34" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1513,689,1639,719"/>
-<area shape="rect" id="node49" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="773,849,1011,879"/>
-<area shape="rect" id="node53" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="796,796,988,825"/>
-<area shape="rect" id="node51" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1099,903,1203,932"/>
-<area shape="rect" id="node55" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1088,796,1213,825"/>
-<area shape="rect" id="node57" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1108,849,1193,879"/>
-<area shape="rect" id="node59" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1097,743,1204,772"/>
-<area shape="rect" id="node61" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1331,743,1424,772"/>
-<area shape="rect" id="node63" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1527,743,1625,772"/>
-<area shape="rect" id="node68" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Component::Component" alt="" coords="811,903,973,932"/>
-<area shape="rect" id="node77" href="$classDiagram.html#af0f60f8b0775a7521b73a3ff3200a5a8" title="Diagram::Diagram" alt="" coords="828,320,956,349"/>
-<area shape="rect" id="node84" href="$classPainting.html#ac3fafe111582307f5a0a47dae6338b66" title="Painting::Painting" alt="" coords="831,425,953,455"/>
-<area shape="rect" id="node93" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1117,1111,1184,1140"/>
-<area shape="rect" id="node95" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1113,1004,1188,1033"/>
-<area shape="rect" id="node97" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="529,1032,716,1061"/>
-<area shape="rect" id="node101" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="799,1057,985,1087"/>
-<area shape="rect" id="node105" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1111,1057,1191,1087"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="291,453,445,483"/>
+<area shape="rect" id="node5" href="$classMouseActions.html#ada8a7aeace90479d3fe31c58ceea01e1" title="MouseActions::MMoveElement" alt="" coords="521,164,724,193"/>
+<area shape="rect" id="node18" href="$classMouseActions.html#a964ac8fd47ffa0885cd512a74eef76e2" title="MouseActions::MPressElement" alt="" coords="265,557,471,587"/>
+<area shape="rect" id="node89" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="293,611,443,640"/>
+<area shape="rect" id="node91" href="$classCategory.html#a960a0e59d07a74118852ba06a63b7806" title="Category::getCategories" alt="" coords="287,664,449,693"/>
+<area shape="rect" id="node93" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="304,993,432,1023"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="817,59,967,88"/>
+<area shape="rect" id="node9" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="807,112,977,141"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1060,216,1241,245"/>
+<area shape="rect" id="node14" href="$classElement.html#a0125e1298baa1d1b4042561633c93a91" title="Element::paintScheme" alt="" coords="815,216,969,245"/>
+<area shape="rect" id="node16" href="$classElement.html#a89220202f70fedb96d17373c42ce8d74" title="Element::setCenter" alt="" coords="825,5,959,35"/>
+<area shape="rect" id="node20" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="535,479,711,508"/>
+<area shape="rect" id="node22" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="820,529,964,559"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a8f1177da8106d29f9573f3a119ea1b55" title="Schematic::insertComponent" alt="" coords="528,636,717,665"/>
+<area shape="rect" id="node42" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="536,583,709,612"/>
+<area shape="rect" id="node45" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="553,689,692,719"/>
+<area shape="rect" id="node47" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="541,743,704,772"/>
+<area shape="rect" id="node49" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="541,796,704,825"/>
+<area shape="rect" id="node68" href="$classComponent.html#acac3c01cafba8659753304a89611560d" title="Component::newOne" alt="" coords="551,849,695,879"/>
+<area shape="rect" id="node72" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="557,903,688,932"/>
+<area shape="rect" id="node74" href="$classComponent.html#a6f8673fab9762c1b41472ddc5675a2f3" title="Component::paintScheme" alt="" coords="536,265,709,295"/>
+<area shape="rect" id="node77" href="$classDiagram.html#a5495c159279f502a7be9e4c7310ce3ad" title="Diagram::newOne" alt="" coords="560,319,685,348"/>
+<area shape="rect" id="node81" href="$classDiagram.html#a1b0ea3f7d69a499e3c354c6cdf71058e" title="Diagram::paintScheme" alt="" coords="545,372,700,401"/>
+<area shape="rect" id="node84" href="$classPainting.html#af22801abd64c212ba6e8cd5cbef51b38" title="Painting::newOne" alt="" coords="560,425,685,455"/>
+<area shape="rect" id="node26" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="777,689,1007,719"/>
+<area shape="rect" id="node38" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="808,583,976,612"/>
+<area shape="rect" id="node40" href="$classSchematic.html#ae64db01d913377d19bf221e82e2b1314" title="Schematic::setComponentNumber" alt="" coords="781,636,1003,665"/>
+<area shape="rect" id="node28" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="1073,636,1228,665"/>
+<area shape="rect" id="node32" href="$classSchematic.html#a3e704a9cb4177ade1cd0662ab9b0f503" title="Schematic::deleteWire" alt="" coords="1073,689,1228,719"/>
+<area shape="rect" id="node30" href="$classSchematic.html#ab8b9724f4987ff1c847e08c47173d6fd" title="Schematic::splitWire" alt="" coords="1307,636,1448,665"/>
+<area shape="rect" id="node34" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1292,689,1463,719"/>
+<area shape="rect" id="node36" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1513,689,1639,719"/>
+<area shape="rect" id="node51" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="773,849,1011,879"/>
+<area shape="rect" id="node55" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="796,796,988,825"/>
+<area shape="rect" id="node53" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1099,903,1203,932"/>
+<area shape="rect" id="node57" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1088,796,1213,825"/>
+<area shape="rect" id="node59" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1108,849,1193,879"/>
+<area shape="rect" id="node61" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1097,743,1204,772"/>
+<area shape="rect" id="node63" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1331,743,1424,772"/>
+<area shape="rect" id="node65" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1527,743,1625,772"/>
+<area shape="rect" id="node70" href="$classComponent.html#a8775db6d1a2c1afc2e77cd3c8f39da6f" title="Component::Component" alt="" coords="811,903,973,932"/>
+<area shape="rect" id="node79" href="$classDiagram.html#af0f60f8b0775a7521b73a3ff3200a5a8" title="Diagram::Diagram" alt="" coords="828,320,956,349"/>
+<area shape="rect" id="node86" href="$classPainting.html#ac3fafe111582307f5a0a47dae6338b66" title="Painting::Painting" alt="" coords="831,425,953,455"/>
+<area shape="rect" id="node95" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1117,1111,1184,1140"/>
+<area shape="rect" id="node97" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1113,1004,1188,1033"/>
+<area shape="rect" id="node99" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="529,1032,716,1061"/>
+<area shape="rect" id="node103" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="799,1057,985,1087"/>
+<area shape="rect" id="node107" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1111,1057,1191,1087"/>
 </map>

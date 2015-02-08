@@ -42,8 +42,8 @@
 <area shape="rect" id="node67" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1913,1331,2095,1360"/>
 <area shape="rect" id="node74" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1644,712,1825,741"/>
 <area shape="rect" id="node88" href="$classTabDiagram.html#a8a9f265d87ebac6d7a684edd6aaf30ff" title="TabDiagram::scrollTo" alt="" coords="1661,917,1808,947"/>
-<area shape="rect" id="node94" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1632,1072,1837,1101"/>
-<area shape="rect" id="node96" href="$qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df" title="Val_CompProp" alt="" coords="1680,1125,1789,1155"/>
+<area shape="rect" id="node93" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="1657,1072,1812,1101"/>
+<area shape="rect" id="node96" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1632,1125,1837,1155"/>
 <area shape="rect" id="node123" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="1084,1488,1260,1517"/>
 <area shape="rect" id="node125" href="$classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347" title="QucsApp::fillComboBox" alt="" coords="1368,1488,1531,1517"/>
 <area shape="rect" id="node127" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="1355,1541,1544,1571"/>

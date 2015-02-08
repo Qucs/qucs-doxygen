@@ -1,7 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#a0df73710610da708b5149234e9b82e95" title="QucsApp::readProjectFiles" alt="" coords="224,59,403,88"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#a9387330e49d39c27318a1ab178c5145b" title="QucsApp::initContentListView" alt="" coords="451,5,648,35"/>
-<area shape="rect" id="node7" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="481,59,617,88"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6" title="Schematic::testFile" alt="" coords="483,112,616,141"/>
-<area shape="rect" id="node11" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="697,112,833,141"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="236,5,391,35"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a0df73710610da708b5149234e9b82e95" title="QucsApp::readProjectFiles" alt="" coords="224,59,403,88"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a9387330e49d39c27318a1ab178c5145b" title="QucsApp::initContentListView" alt="" coords="451,5,648,35"/>
+<area shape="rect" id="node9" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="481,59,617,88"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6" title="Schematic::testFile" alt="" coords="483,112,616,141"/>
+<area shape="rect" id="node13" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="697,112,833,141"/>
 </map>
