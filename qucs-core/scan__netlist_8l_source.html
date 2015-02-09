@@ -123,35 +123,35 @@
 <a name="l00063"></a>00063   <span class="keywordtype">double</span> factor = 1.0;
 <a name="l00064"></a>00064   <span class="keywordflow">while</span> (isspace (scale[0])) scale++;
 <a name="l00065"></a>00065   <span class="keywordflow">switch</span> (scale[0]) {
-<a name="l00066"></a>00066   <span class="keywordflow">case</span> <span class="charliteral">&#39;E&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+18; <span class="keywordflow">break</span>;
-<a name="l00067"></a>00067   <span class="keywordflow">case</span> <span class="charliteral">&#39;P&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+15; <span class="keywordflow">break</span>;
-<a name="l00068"></a>00068   <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+12; <span class="keywordflow">break</span>;
-<a name="l00069"></a>00069   <span class="keywordflow">case</span> <span class="charliteral">&#39;G&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+09; <span class="keywordflow">break</span>;
-<a name="l00070"></a>00070   <span class="keywordflow">case</span> <span class="charliteral">&#39;M&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+06; <span class="keywordflow">break</span>;
-<a name="l00071"></a>00071   <span class="keywordflow">case</span> <span class="charliteral">&#39;k&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>+03; <span class="keywordflow">break</span>;
+<a name="l00066"></a>00066   <span class="keywordflow">case</span> <span class="charliteral">&#39;E&#39;</span>: factor = 1e+18; <span class="keywordflow">break</span>;
+<a name="l00067"></a>00067   <span class="keywordflow">case</span> <span class="charliteral">&#39;P&#39;</span>: factor = 1e+15; <span class="keywordflow">break</span>;
+<a name="l00068"></a>00068   <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>: factor = 1e+12; <span class="keywordflow">break</span>;
+<a name="l00069"></a>00069   <span class="keywordflow">case</span> <span class="charliteral">&#39;G&#39;</span>: factor = 1e+09; <span class="keywordflow">break</span>;
+<a name="l00070"></a>00070   <span class="keywordflow">case</span> <span class="charliteral">&#39;M&#39;</span>: factor = 1e+06; <span class="keywordflow">break</span>;
+<a name="l00071"></a>00071   <span class="keywordflow">case</span> <span class="charliteral">&#39;k&#39;</span>: factor = 1e+03; <span class="keywordflow">break</span>;
 <a name="l00072"></a>00072   <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>:
 <a name="l00073"></a>00073     <span class="keywordflow">if</span> (scale[1] == <span class="charliteral">&#39;i&#39;</span> &amp;&amp; scale[2] == <span class="charliteral">&#39;l&#39;</span>)
 <a name="l00074"></a>00074       factor = 2.54e-5;
 <a name="l00075"></a>00075     <span class="keywordflow">else</span>
-<a name="l00076"></a>00076       factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-03;
+<a name="l00076"></a>00076       factor = 1e-03;
 <a name="l00077"></a>00077     <span class="keywordflow">break</span>;
-<a name="l00078"></a>00078   <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-06; <span class="keywordflow">break</span>;
-<a name="l00079"></a>00079   <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-09; <span class="keywordflow">break</span>;
-<a name="l00080"></a>00080   <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-12; <span class="keywordflow">break</span>;
+<a name="l00078"></a>00078   <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>: factor = 1e-06; <span class="keywordflow">break</span>;
+<a name="l00079"></a>00079   <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>: factor = 1e-09; <span class="keywordflow">break</span>;
+<a name="l00080"></a>00080   <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>: factor = 1e-12; <span class="keywordflow">break</span>;
 <a name="l00081"></a>00081   <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>:
 <a name="l00082"></a>00082     <span class="keywordflow">if</span> (scale[1] == <span class="charliteral">&#39;t&#39;</span>)
 <a name="l00083"></a>00083       factor = 0.3048;
 <a name="l00084"></a>00084     <span class="keywordflow">else</span>
-<a name="l00085"></a>00085       factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-15;
+<a name="l00085"></a>00085       factor = 1e-15;
 <a name="l00086"></a>00086     <span class="keywordflow">break</span>;
-<a name="l00087"></a>00087   <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>: factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-18; <span class="keywordflow">break</span>;
+<a name="l00087"></a>00087   <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>: factor = 1e-18; <span class="keywordflow">break</span>;
 <a name="l00088"></a>00088   <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:
 <a name="l00089"></a>00089     <span class="keywordflow">if</span> (scale[1] == <span class="charliteral">&#39;B&#39;</span>) {
 <a name="l00090"></a>00090       val = <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">std::pow</a> (10.0, val / 10.0);
 <a name="l00091"></a>00091       <span class="keywordflow">if</span> (scale[2] == <span class="charliteral">&#39;m&#39;</span>)
-<a name="l00092"></a>00092         factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-03;
+<a name="l00092"></a>00092         factor = 1e-03;
 <a name="l00093"></a>00093       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (scale[2] == <span class="charliteral">&#39;u&#39;</span>)
-<a name="l00094"></a>00094         factor = 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-06;
+<a name="l00094"></a>00094         factor = 1e-06;
 <a name="l00095"></a>00095     }
 <a name="l00096"></a>00096     <span class="keywordflow">break</span>;
 <a name="l00097"></a>00097   <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:
@@ -378,7 +378,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:31 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

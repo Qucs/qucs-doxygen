@@ -101,7 +101,7 @@
 <a name="l00063"></a><a class="code" href="structrectline.html#a84515ed5874228a401fe850458c557ab">00063</a> <span class="keywordtype">void</span> <a class="code" href="structrectline.html#a84515ed5874228a401fe850458c557ab">rectline::calcResistivity</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> Mat, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T) {
 <a name="l00064"></a>00064   <span class="keywordflow">if</span> (!strcmp (Mat, <span class="stringliteral">&quot;Copper&quot;</span>)) {
 <a name="l00065"></a>00065     <span class="keywordflow">if</span> (T &lt; 7) {
-<a name="l00066"></a>00066       rho = 2<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-11;
+<a name="l00066"></a>00066       rho = 2e-11;
 <a name="l00067"></a>00067     }
 <a name="l00068"></a>00068     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (T &lt; 15) {
 <a name="l00069"></a>00069       rho = 6.66667e-17 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 5.0) - 3.88549e-15 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 4.0) +
@@ -135,13 +135,13 @@
 <a name="l00097"></a>00097       rho = 0.00000000024;
 <a name="l00098"></a>00098     }
 <a name="l00099"></a>00099     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (T &lt; 65) {
-<a name="l00100"></a>00100       rho = 2<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-12 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 2.0) - 8<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-11 * T + 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-9;
+<a name="l00100"></a>00100       rho = 2e-12 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 2.0) - 8e-11 * T + 1e-9;
 <a name="l00101"></a>00101     }
 <a name="l00102"></a>00102     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (T &lt; 80) {
-<a name="l00103"></a>00103       rho = 5<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-13 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 3.0) - 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-10 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 2.0) + 9<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-9 * T - 2<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-7;
+<a name="l00103"></a>00103       rho = 5e-13 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 3.0) - 1e-10 * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (T, 2.0) + 9e-9 * T - 2e-7;
 <a name="l00104"></a>00104     }
 <a name="l00105"></a>00105     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (T &lt; 300) {
-<a name="l00106"></a>00106       rho = 8<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-11 * T - 1<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-10;
+<a name="l00106"></a>00106       rho = 8e-11 * T - 1e-10;
 <a name="l00107"></a>00107     }
 <a name="l00108"></a>00108     <span class="keywordflow">else</span> {
 <a name="l00109"></a>00109       rho = 2.4e-8;
@@ -203,7 +203,7 @@
 <a name="l00205"></a>00205   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
 <a name="l00206"></a>00206   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = getPropertyDouble (<span class="stringliteral">&quot;Temp&quot;</span>);
 <a name="l00207"></a>00207   matrix s = getMatrixS ();
-<a name="l00208"></a>00208   matrix <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <a class="code" href="namespacequcs.html#a1e1bd76ee9f68d155193fef7755c848c" title="Create identity matrix with specified number of rows and columns.">eye</a> (getSize ());
+<a name="l00208"></a>00208   matrix e = <a class="code" href="namespacequcs.html#a1e1bd76ee9f68d155193fef7755c848c" title="Create identity matrix with specified number of rows and columns.">eye</a> (getSize ());
 <a name="l00209"></a>00209   setMatrixN (<a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / <a class="code" href="group__qucsPhysConstants.html#ga9a5dcfcfc8f0501b467537138ec1661a" title="standard temperature">T0</a> * (e - s * <a class="code" href="namespacequcs.html#aa2406fc8e3e9146337c35da97caafb06" title="Matrix transposition.">transpose</a> (<a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (s))));
 <a name="l00210"></a>00210 }
 <a name="l00211"></a>00211 
@@ -294,10 +294,10 @@
 <a name="l00304"></a><a class="code" href="rectline_8cpp.html#a81b4394386247bd0004693ae261471f2">00304</a> <a class="code" href="structqucs.html#a22dddfa38928996c2851157e7609cc33">PROP_REQ</a> [] = {
 <a name="l00305"></a>00305   { <span class="stringliteral">&quot;a&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 2.86e-2, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4129c2429762ec32998c31828cb36a57">PROP_POS_RANGEX</a> },
 <a name="l00306"></a>00306   { <span class="stringliteral">&quot;b&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1.016e-2, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4129c2429762ec32998c31828cb36a57">PROP_POS_RANGEX</a> },
-<a name="l00307"></a>00307   { <span class="stringliteral">&quot;L&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1500<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
+<a name="l00307"></a>00307   { <span class="stringliteral">&quot;L&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1500e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
 <a name="l00308"></a>00308   { <span class="stringliteral">&quot;er&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#aa6ae43a3d5db7a8e127e51641f27de7c">PROP_RNGII</a> (1, 100) },
 <a name="l00309"></a>00309   { <span class="stringliteral">&quot;mur&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#aa6ae43a3d5db7a8e127e51641f27de7c">PROP_RNGII</a> (1, 100) },
-<a name="l00310"></a>00310   { <span class="stringliteral">&quot;tand&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 4<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-4, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00310"></a>00310   { <span class="stringliteral">&quot;tand&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 4e-4, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
 <a name="l00311"></a>00311   { <span class="stringliteral">&quot;rho&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 0.022e-6, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
 <a name="l00312"></a>00312   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
 <a name="l00313"></a><a class="code" href="rectline_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00313</a> <a class="code" href="structqucs.html#a23d1ecdd5939cc3ab98c05aed05eb1be">PROP_OPT</a> [] = {
@@ -311,7 +311,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:31 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

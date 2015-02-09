@@ -111,7 +111,7 @@
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="comment">/* This copy constructor creates a instance of the exception class based</span>
 <a name="l00053"></a>00053 <span class="comment">   on the given exception. */</span>
-<a name="l00054"></a>00054 exception::exception (<span class="keyword">const</span> exception &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
+<a name="l00054"></a>00054 exception::exception (<span class="keyword">const</span> exception &amp; e) {
 <a name="l00055"></a>00055   txt = e.txt ? strdup (e.txt) : NULL;
 <a name="l00056"></a>00056   <a class="code" href="parse__vcd_8y.html#afb9ed1b8a27eb20854efe6e23e297683">code</a> = e.code;
 <a name="l00057"></a>00057   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = e.data;
@@ -141,7 +141,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:23 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -129,7 +129,7 @@
 <a name="l00069"></a>00069 
 <a name="l00070"></a>00070 <span class="comment">/* The copy constructor creates a new instance of the environment</span>
 <a name="l00071"></a>00071 <span class="comment">   class based on the given environment object. */</span>
-<a name="l00072"></a><a class="code" href="classqucs_1_1environment.html#ad8c99bbbacd53615cab51eb6e7fce6fb">00072</a> environment::environment (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>)  {
+<a name="l00072"></a><a class="code" href="classqucs_1_1environment.html#ad8c99bbbacd53615cab51eb6e7fce6fb">00072</a> environment::environment (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; e)  {
 <a name="l00073"></a>00073   this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = e.<a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
 <a name="l00074"></a>00074   copyVariables (e.<a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">root</a>);
 <a name="l00075"></a>00075   solvee = e.<a class="code" href="classqucs_1_1environment.html#a7074076365eb5d3c469b21e4b73eb1d1">solvee</a>;
@@ -141,7 +141,7 @@
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082 <span class="comment">/* Very alike the copy constructor the function copies the content of</span>
 <a name="l00083"></a>00083 <span class="comment">   the given environment into the calling environment. */</span>
-<a name="l00084"></a><a class="code" href="classqucs_1_1environment.html#a54789f3d29ed725ab1cc0c7a85a2c4b1">00084</a> <span class="keywordtype">void</span> environment::copy (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>) {
+<a name="l00084"></a><a class="code" href="classqucs_1_1environment.html#a54789f3d29ed725ab1cc0c7a85a2c4b1">00084</a> <span class="keywordtype">void</span> environment::copy (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp; e) {
 <a name="l00085"></a>00085   this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = e.<a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
 <a name="l00086"></a>00086   deleteVariables ();
 <a name="l00087"></a>00087   copyVariables (e.<a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">root</a>);
@@ -479,7 +479,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:23 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

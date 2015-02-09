@@ -190,7 +190,7 @@
 <a name="l00130"></a>00130 
 <a name="l00131"></a>00131     <span class="comment">// compute strip thickness effect</span>
 <a name="l00132"></a>00132     <span class="keywordflow">if</span> (t != 0) {
-<a name="l00133"></a>00133       dW1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * e / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (t / h) +
+<a name="l00133"></a>00133       dW1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * euler / <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (t / h) +
 <a name="l00134"></a>00134                                             <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (one_over_pi / (W / t + 1.10))));
 <a name="l00135"></a>00135     }
 <a name="l00136"></a>00136     <span class="keywordflow">else</span> dW1 = 0;
@@ -257,7 +257,7 @@
 <a name="l00197"></a>00197 
 <a name="l00198"></a>00198     <span class="comment">// compute strip thickness effect</span>
 <a name="l00199"></a>00199     <span class="keywordflow">if</span> (t != 0) {
-<a name="l00200"></a>00200       du1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + 4 * e / t / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (<a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (6.517 * u))));
+<a name="l00200"></a>00200       du1 = t / pi * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (1 + 4 * euler / t / <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (<a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (6.517 * u))));
 <a name="l00201"></a>00201     }
 <a name="l00202"></a>00202     <span class="keywordflow">else</span> du1 = 0;
 <a name="l00203"></a>00203     du = du1 * (1 + <a class="code" href="namespacequcs.html#af7caa1c66cbd98f51b50645f951a3398" title="Compute complex hyperbolic secant.">sech</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1))) / 2;
@@ -562,7 +562,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:31 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

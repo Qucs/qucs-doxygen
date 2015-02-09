@@ -188,7 +188,7 @@
 <a name="l00128"></a>00128 <span class="comment">   shrink the hash codes if these would be placed somewhere else.  */</span>
 <a name="l00129"></a>00129 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
 <a name="l00130"></a><a class="code" href="classqucs_1_1hash.html#ab10741bfe9bf6be7b56b634b8f79115a">00130</a> <span class="keywordtype">void</span> qucs::hash&lt;type_t&gt;::rehash (<span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a>) {
-<a name="l00131"></a>00131   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
+<a name="l00131"></a>00131   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, e;
 <a name="l00132"></a>00132   <a class="code" href="classqucs_1_1hashbucket.html">hashbucket&lt;type_t&gt;</a> * bucket, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00133"></a>00133 
 <a name="l00134"></a>00134   <span class="comment">// Expand!</span>
@@ -255,11 +255,11 @@
 <a name="l00195"></a>00195 
 <a name="l00196"></a>00196   <span class="comment">/* Check if the key is already stored. If so replace the value. */</span>
 <a name="l00197"></a>00197   <span class="keywordflow">if</span> (bucket) {
-<a name="l00198"></a>00198     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = 0; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> &lt; bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#a4ede83c0a5bdbb57956d8df11fd77026">size</a>; <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>++) {
-<a name="l00199"></a>00199       <span class="keywordflow">if</span> (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;code == code) {
-<a name="l00200"></a>00200         <span class="keywordflow">if</span> (equals (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;key, key) == 0) {
-<a name="l00201"></a>00201           type_t * old = bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;value;
-<a name="l00202"></a>00202           bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>]-&gt;value = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
+<a name="l00198"></a>00198     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> e = 0; e &lt; bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#a4ede83c0a5bdbb57956d8df11fd77026">size</a>; e++) {
+<a name="l00199"></a>00199       <span class="keywordflow">if</span> (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;code == code) {
+<a name="l00200"></a>00200         <span class="keywordflow">if</span> (equals (bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;key, key) == 0) {
+<a name="l00201"></a>00201           type_t * old = bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;value;
+<a name="l00202"></a>00202           bucket-&gt;<a class="code" href="classqucs_1_1hashbucket.html#ad209c83c4991e524e98536f8dc54cc57">entry</a>[e]-&gt;value = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>;
 <a name="l00203"></a>00203           <span class="keywordflow">return</span> old;
 <a name="l00204"></a>00204         }
 <a name="l00205"></a>00205       }
@@ -474,7 +474,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:59 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:30 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

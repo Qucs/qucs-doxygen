@@ -186,7 +186,7 @@
 <a name="l00126"></a>00126 
 <a name="l00127"></a>00127 <span class="comment">// This function appends a dependency vector to the current dataset.</span>
 <a name="l00128"></a><a class="code" href="classqucs_1_1dataset.html#a2aea0af2a5e92c818c54b832cd2ef4de">00128</a> <span class="keywordtype">void</span> dataset::appendDependency (<a class="code" href="classqucs_1_1vector.html">vector</a> * <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l00129"></a>00129   <a class="code" href="classqucs_1_1vector.html">vector</a> * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
+<a name="l00129"></a>00129   <a class="code" href="classqucs_1_1vector.html">vector</a> * e;
 <a name="l00130"></a>00130   <span class="keywordflow">if</span> (dependencies) {
 <a name="l00131"></a>00131     <span class="keywordflow">for</span> (e = dependencies; e-&gt;<a class="code" href="classqucs_1_1vector.html#afc20bfbdf24e88096add4c5535d24fb7">getNext</a> (); e = (<a class="code" href="classqucs_1_1vector.html">vector</a> *) e-&gt;<a class="code" href="classqucs_1_1vector.html#afc20bfbdf24e88096add4c5535d24fb7">getNext</a> ()) ;
 <a name="l00132"></a>00132     v-&gt;<a class="code" href="classqucs_1_1vector.html#a5c4ce31e359a9f0097be38020852d548">setPrev</a> (e);
@@ -244,7 +244,7 @@
 <a name="l00184"></a>00184 
 <a name="l00185"></a>00185 <span class="comment">// This function appends a variable vector to the current dataset.</span>
 <a name="l00186"></a><a class="code" href="classqucs_1_1dataset.html#a0d3ca591ad5cc2dd3dc0b6f9ad13d057">00186</a> <span class="keywordtype">void</span> <a class="code" href="parse__dataset_8y.html#abc744f79b4247bbde43702e84dc434dc">dataset::appendVariable</a> (<a class="code" href="classqucs_1_1vector.html">vector</a> * <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) {
-<a name="l00187"></a>00187   <a class="code" href="classqucs_1_1vector.html">vector</a> * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>;
+<a name="l00187"></a>00187   <a class="code" href="classqucs_1_1vector.html">vector</a> * e;
 <a name="l00188"></a>00188   <span class="keywordflow">if</span> (variables) {
 <a name="l00189"></a>00189     <span class="keywordflow">for</span> (e = variables; e-&gt;<a class="code" href="classqucs_1_1vector.html#afc20bfbdf24e88096add4c5535d24fb7">getNext</a> (); e = (<a class="code" href="classqucs_1_1vector.html">vector</a> *) e-&gt;<a class="code" href="classqucs_1_1vector.html#afc20bfbdf24e88096add4c5535d24fb7">getNext</a> ()) ;
 <a name="l00190"></a>00190     v-&gt;<a class="code" href="classqucs_1_1vector.html#a5c4ce31e359a9f0097be38020852d548">setPrev</a> (e);
@@ -624,7 +624,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:22 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

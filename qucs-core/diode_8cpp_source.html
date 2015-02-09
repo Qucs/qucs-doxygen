@@ -362,7 +362,7 @@
 <a name="l00302"></a>00302     <a class="code" href="structdiode.html#a0450396ae4196f9b6c417776a0e9a03b">Id</a> = <a class="code" href="namespacequcs_1_1device.html#a0f21311fd4019d409bf3edd81ff47245">pnCurrent</a> (<a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a>, Is, Ut * N) + <a class="code" href="namespacequcs_1_1device.html#a0f21311fd4019d409bf3edd81ff47245">pnCurrent</a> (<a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a>, Isr, Ut * Nr);
 <a name="l00303"></a>00303   }
 <a name="l00304"></a>00304   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> == 0 || <a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a> &gt;= -<a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a>) { <span class="comment">// reverse region</span>
-<a name="l00305"></a>00305     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = 3 * N * Ut / (<a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a> * e);
+<a name="l00305"></a>00305     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = 3 * N * Ut / (<a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a> * euler);
 <a name="l00306"></a>00306     a = <a class="code" href="namespacequcs.html#ac9d2d6081f9378e7504c0b009cb92ad4" title="Compute the third power of input.">cubic</a> (a);
 <a name="l00307"></a>00307     <a class="code" href="structdiode.html#a0450396ae4196f9b6c417776a0e9a03b">Id</a> = -Is * (1 + a);
 <a name="l00308"></a>00308     <a class="code" href="structdiode.html#ae80e2993281d0e12b9ece62601779cef">gd</a> = +Is * 3 * a / <a class="code" href="structdiode.html#aabb70e8ef0877e66c8e1512f17a92162">Ud</a>;
@@ -551,7 +551,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:23 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

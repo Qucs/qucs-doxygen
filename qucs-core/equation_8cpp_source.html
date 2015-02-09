@@ -1398,7 +1398,7 @@
 <a name="l01338"></a>01338     }
 <a name="l01339"></a>01339     <span class="keywordflow">else</span>
 <a name="l01340"></a>01340     {
-<a name="l01341"></a>01341         qucs::exception * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a5ec150e2da48e635161ebf8a650c4498">EXCEPTION_MATH</a>);
+<a name="l01341"></a>01341         qucs::exception * e = <span class="keyword">new</span> qucs::exception (<a class="code" href="structqucs.html#ac060e999cf6725990fdd6c65600a62e5a5ec150e2da48e635161ebf8a650c4498">EXCEPTION_MATH</a>);
 <a name="l01342"></a>01342         e-&gt;setText (<span class="stringliteral">&quot;evaluator exception&quot;</span>);
 <a name="l01343"></a>01343         <a class="code" href="exceptionstack_8h.html#a8da005873bb805e4071f4b7cd9da6cdb">throw_exception</a> (e);
 <a name="l01344"></a>01344     }
@@ -2518,7 +2518,7 @@
 <a name="l02458"></a><a class="code" href="structqucs.html#a9fe86a83757cb992c964cdc83a321e20">02458</a> <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structqucs_1_1pconstant.html">pconstant</a> <a class="code" href="structqucs.html#a9fe86a83757cb992c964cdc83a321e20">pconstants</a>[] =
 <a name="l02459"></a>02459 {
 <a name="l02460"></a>02460     { <span class="stringliteral">&quot;pi&quot;</span>, <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a> },
-<a name="l02461"></a>02461     { <span class="stringliteral">&quot;e&quot;</span>,  <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>  },
+<a name="l02461"></a>02461     { <span class="stringliteral">&quot;e&quot;</span>,  <a class="code" href="group__qucsMathConstants.html#ga1054d8f6ee1cf8670a220acfc42f7753" title="Euler&#39;s constant ( )">euler</a>  },
 <a name="l02462"></a>02462     { <span class="stringliteral">&quot;kB&quot;</span>, <a class="code" href="group__qucsPhysConstants.html#ga0d8f03a5334f35172c7702f6db2f87bd" title="Boltzmann constant ( )">kB</a>   },
 <a name="l02463"></a>02463     { <span class="stringliteral">&quot;q&quot;</span>,  <a class="code" href="group__qucsPhysConstants.html#ga2749c261a4b1bd6f0022b61e6f177500" title="Elementary charge ( )">Q_e</a>    },
 <a name="l02464"></a>02464     { NULL, 0    }
@@ -2699,7 +2699,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:23 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

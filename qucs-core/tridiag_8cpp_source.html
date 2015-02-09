@@ -201,7 +201,7 @@
 <a name="l00141"></a><a class="code" href="classqucs_1_1tridiag.html#adbfb71917f8f7819f3a307996d5a2074">00141</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag&lt;nr_type_t&gt;::solve_ns</a> (<span class="keywordtype">void</span>) {
 <a name="l00142"></a>00142   <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = al = &amp;diag-&gt;front(); <span class="comment">//diag-&gt;getData ();</span>
 <a name="l00143"></a>00143   f = ga = &amp;abov-&gt;front (); <span class="comment">//abov-&gt;getData ();</span>
-<a name="l00144"></a>00144   <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = &amp;belo-&gt;front(); <span class="comment">// belo-&gt;getData ();</span>
+<a name="l00144"></a>00144   e = &amp;belo-&gt;front(); <span class="comment">// belo-&gt;getData ();</span>
 <a name="l00145"></a>00145   b = <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = &amp;rhs-&gt;front(); <span class="comment">//rhs-&gt;getData ();</span>
 <a name="l00146"></a>00146   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>)diag-&gt;size(); <span class="comment">//diag-&gt;getSize ();</span>
 <a name="l00147"></a>00147 
@@ -209,15 +209,15 @@
 <a name="l00149"></a>00149   al[0] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[0];
 <a name="l00150"></a>00150   ga[0] = f[0] / al[0];
 <a name="l00151"></a>00151   <span class="keywordflow">for</span> (i = 1; i &lt; n - 1; i++) {
-<a name="l00152"></a>00152     al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * ga[i-1];
+<a name="l00152"></a>00152     al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - e[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * ga[i-1];
 <a name="l00153"></a>00153     ga[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = f[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] / al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
 <a name="l00154"></a>00154   }
-<a name="l00155"></a>00155   al[n-1] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[n-1] - <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[n-1] * ga[n-2];
+<a name="l00155"></a>00155   al[n-1] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[n-1] - e[n-1] * ga[n-2];
 <a name="l00156"></a>00156 
 <a name="l00157"></a>00157   <span class="comment">// update b = Lc</span>
 <a name="l00158"></a>00158   <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>[0] = b[0] / <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[0];
 <a name="l00159"></a>00159   <span class="keywordflow">for</span> (i = 1; i &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; i++) {
-<a name="l00160"></a>00160     <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = (b[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>[i-1]) / al[i];
+<a name="l00160"></a>00160     <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = (b[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - e[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>[i-1]) / al[i];
 <a name="l00161"></a>00161   }
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163   <span class="comment">// back substitution Rx = c</span>
@@ -240,7 +240,7 @@
 <a name="l00180"></a><a class="code" href="classqucs_1_1tridiag.html#ae7be3c910ee23142e6cdbe6ce4c3a675">00180</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1tridiag.html">tridiag&lt;nr_type_t&gt;::solve_ns_cyc</a> (<span class="keywordtype">void</span>) {
 <a name="l00181"></a>00181   <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = al = &amp;diag-&gt;front(); <span class="comment">//diag-&gt;getData ();</span>
 <a name="l00182"></a>00182   f = ga = &amp;abov-&gt;front (); <span class="comment">//abov-&gt;getData ();</span>
-<a name="l00183"></a>00183   <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = be = &amp;belo-&gt;front(); <span class="comment">// belo-&gt;getData ();</span>
+<a name="l00183"></a>00183   e = be = &amp;belo-&gt;front(); <span class="comment">// belo-&gt;getData ();</span>
 <a name="l00184"></a>00184   b = <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> = <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = &amp;rhs-&gt;front(); <span class="comment">//rhs-&gt;getData ();</span>
 <a name="l00185"></a>00185   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>)diag-&gt;size(); <span class="comment">//diag-&gt;getSize ();</span>
 <a name="l00186"></a>00186   de = <span class="keyword">new</span> nr_type_t[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>];
@@ -249,21 +249,21 @@
 <a name="l00189"></a>00189   <span class="comment">// factorize A = LU</span>
 <a name="l00190"></a>00190   al[0] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[0];
 <a name="l00191"></a>00191   ga[0] = f[0] / al[0];
-<a name="l00192"></a>00192   de[0] = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[0] / al[0];
+<a name="l00192"></a>00192   de[0] = e[0] / al[0];
 <a name="l00193"></a>00193   <span class="keywordflow">for</span> (i = 1; i &lt; n - 2; i++) {
-<a name="l00194"></a>00194     al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * ga[i-1];
+<a name="l00194"></a>00194     al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] - e[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * ga[i-1];
 <a name="l00195"></a>00195     ga[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = f[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] / al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
-<a name="l00196"></a>00196     be[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
+<a name="l00196"></a>00196     be[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = e[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
 <a name="l00197"></a>00197     de[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = -be[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * de[i-1] / al[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
 <a name="l00198"></a>00198   }
-<a name="l00199"></a>00199   al[n-2] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[n-2] - <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[n-2] * ga[n-3];
-<a name="l00200"></a>00200   be[n-2] = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[n-2];
+<a name="l00199"></a>00199   al[n-2] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[n-2] - e[n-2] * ga[n-3];
+<a name="l00200"></a>00200   be[n-2] = e[n-2];
 <a name="l00201"></a>00201   ep[2] = f[n-1];
 <a name="l00202"></a>00202   <span class="keywordflow">for</span> (i = 3; i &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; i++) {
 <a name="l00203"></a>00203     ep[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] = -ep[i-1] * ga[i-3];
 <a name="l00204"></a>00204   }
 <a name="l00205"></a>00205   ga[n-2] = (f[n-2] - be[n-2] * de[n-3]) / al[n-2];
-<a name="l00206"></a>00206   be[n-1] = <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>[n-1] - ep[n-1] * ga[n-3];
+<a name="l00206"></a>00206   be[n-1] = e[n-1] - ep[n-1] * ga[n-3];
 <a name="l00207"></a>00207   al[n-1] = <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>[n-1] - be[n-1] * ga[n-2];
 <a name="l00208"></a>00208   <span class="keywordflow">for</span> (i = 2; i &lt; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; i++) {
 <a name="l00209"></a>00209     al[n-1] -= ep[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] * de[i-2];
@@ -402,7 +402,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:32 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

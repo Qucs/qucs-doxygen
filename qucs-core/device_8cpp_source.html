@@ -206,7 +206,7 @@
 <a name="l00146"></a>00146     I = g * Upn;
 <a name="l00147"></a>00147   }
 <a name="l00148"></a>00148   <span class="keywordflow">else</span> {
-<a name="l00149"></a>00149     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (std::min (Upn / Ute, 709.0));
+<a name="l00149"></a>00149     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> e = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (std::min (Upn / Ute, 709.0));
 <a name="l00150"></a>00150     I = Iss * (e - 1);
 <a name="l00151"></a>00151     g = Iss * e / Ute;
 <a name="l00152"></a>00152   }
@@ -216,13 +216,13 @@
 <a name="l00156"></a><a class="code" href="namespacequcs_1_1device.html#a93a1442f99146488a2569d5e1a46ab35">00156</a> <span class="keywordtype">void</span> <a class="code" href="namespacequcs_1_1device.html#a93a1442f99146488a2569d5e1a46ab35">device::pnJunctionBIP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Upn, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Iss, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Ute,
 <a name="l00157"></a>00157                             <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; I, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; g) {
 <a name="l00158"></a>00158   <span class="keywordflow">if</span> (Upn &lt; -3 * Ute) {
-<a name="l00159"></a>00159     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = 3 * Ute / (Upn * <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>);
+<a name="l00159"></a>00159     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a = 3 * Ute / (Upn * <a class="code" href="group__qucsMathConstants.html#ga1054d8f6ee1cf8670a220acfc42f7753" title="Euler&#39;s constant ( )">euler</a>);
 <a name="l00160"></a>00160     a = <a class="code" href="namespacequcs.html#ac9d2d6081f9378e7504c0b009cb92ad4" title="Compute the third power of input.">cubic</a> (a);
 <a name="l00161"></a>00161     I = -Iss * (1 + a);
 <a name="l00162"></a>00162     g = +Iss * 3 * a / Upn;
 <a name="l00163"></a>00163   }
 <a name="l00164"></a>00164   <span class="keywordflow">else</span> {
-<a name="l00165"></a>00165     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (std::min (Upn / Ute, 709.0));
+<a name="l00165"></a>00165     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> e = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> (std::min (Upn / Ute, 709.0));
 <a name="l00166"></a>00166     I = Iss * (e - 1);
 <a name="l00167"></a>00167     g = Iss * e / Ute;
 <a name="l00168"></a>00168   }
@@ -269,7 +269,7 @@
 <a name="l00209"></a>00209     a = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">exp</a> ((1 + Mj) * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">log</a> (a));
 <a name="l00210"></a>00210     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a> = 1 - Fc * (1 + Mj);
 <a name="l00211"></a>00211     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a> = Fc * Vj;
-<a name="l00212"></a>00212     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a> = Vj * (1 - b) / (1 - Mj);
+<a name="l00212"></a>00212     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> e = Vj * (1 - b) / (1 - Mj);
 <a name="l00213"></a>00213     q = Cj * (e + (c * (Uj - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) + Mj / 2 / Vj * (<a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (Uj) - <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (d))) / a);
 <a name="l00214"></a>00214 <span class="preprocessor">#else </span><span class="comment">/* this variant is numerically more stable */</span>
 <a name="l00215"></a>00215     a = 1 - Fc;
@@ -471,13 +471,13 @@
 <a name="l00411"></a><a class="code" href="namespacequcs_1_1device.html#a269e7f8e0c6fe8c076b23b0ec596cef2">00411</a> <a class="code" href="namespacequcs_1_1device.html#a269e7f8e0c6fe8c076b23b0ec596cef2">device::pnCapacitance_F</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T1, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T2, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>,
 <a name="l00412"></a>00412                          <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> VR) {
 <a name="l00413"></a>00413   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> DT = T2 - T1;
-<a name="l00414"></a>00414   <span class="keywordflow">return</span> 1 + M * (4<a class="code" href="group__qucsMathConstants.html#gae162651ba6f0c9b150cf9bd8c41113c8" title="Euler&#39;s constant ( )">e</a>-4 * DT - VR + 1);
+<a name="l00414"></a>00414   <span class="keywordflow">return</span> 1 + M * (4e-4 * DT - VR + 1);
 <a name="l00415"></a>00415 }
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 15:26:22 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
