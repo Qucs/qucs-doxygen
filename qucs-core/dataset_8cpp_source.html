@@ -349,7 +349,7 @@
 <a name="l00289"></a>00289 <span class="comment">/* The function goes through the list of variables in the dataset and</span>
 <a name="l00290"></a>00290 <span class="comment">   returns the vector specified by the given name.  If there is no</span>
 <a name="l00291"></a>00291 <span class="comment">   such variable registered the function returns NULL. */</span>
-<a name="l00292"></a><a class="code" href="classqucs_1_1dataset.html#a69acdc12cb2f2add58f3e059727de0b1">00292</a> <a class="code" href="classqucs_1_1vector.html">vector</a> * dataset::findVariable (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) {
+<a name="l00292"></a><a class="code" href="classqucs_1_1dataset.html#a69acdc12cb2f2add58f3e059727de0b1">00292</a> <a class="code" href="classqucs_1_1vector.html">vector</a> * dataset::findVariable (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) {
 <a name="l00293"></a>00293   <span class="keywordflow">for</span> (<a class="code" href="classqucs_1_1vector.html">vector</a> * <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = variables; <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> != NULL; <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = (<a class="code" href="classqucs_1_1vector.html">vector</a> *) <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>-&gt;getNext ()) {
 <a name="l00294"></a>00294     <span class="keywordflow">if</span> (!strcmp (<a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>-&gt;getName (), name.c_str()))
 <a name="l00295"></a>00295       <span class="keywordflow">return</span> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>;
@@ -624,7 +624,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:04 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

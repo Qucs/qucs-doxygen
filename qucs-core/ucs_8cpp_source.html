@@ -222,11 +222,11 @@
 <a name="l00163"></a>00163 
 <a name="l00164"></a>00164   <span class="keywordflow">else</span> { <span class="comment">//no argument, look into netlist</span>
 <a name="l00165"></a>00165 
-<a name="l00166"></a>00166     std::string sLine = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00166"></a>00166     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> sLine = <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00167"></a>00167     std::ifstream file;
 <a name="l00168"></a>00168 
-<a name="l00169"></a>00169     std::string projPathNet =<span class="stringliteral">&quot;&quot;</span>;
-<a name="l00170"></a>00170     std::string projVaMoules = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00169"></a>00169     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> projPathNet =<span class="stringliteral">&quot;&quot;</span>;
+<a name="l00170"></a>00170     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> projVaMoules = <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00171"></a>00171 
 <a name="l00172"></a>00172     file.open(infile);
 <a name="l00173"></a>00173 
@@ -261,7 +261,7 @@
 <a name="l00202"></a>00202 
 <a name="l00203"></a>00203             <span class="comment">// put module names into list</span>
 <a name="l00204"></a>00204             std::istringstream ss(sLine);
-<a name="l00205"></a>00205             std::string token;
+<a name="l00205"></a>00205             <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> token;
 <a name="l00206"></a>00206 
 <a name="l00207"></a>00207             <span class="keywordflow">while</span>(std::getline(ss, token, <span class="charliteral">&#39; &#39;</span>)) {
 <a name="l00208"></a>00208                 std::cout &lt;&lt; token &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
@@ -277,7 +277,7 @@
 <a name="l00218"></a>00218 
 <a name="l00219"></a>00219 
 <a name="l00220"></a>00220   <span class="comment">// create root environment</span>
-<a name="l00221"></a>00221   root = <span class="keyword">new</span> environment (std::string(<span class="stringliteral">&quot;root&quot;</span>));
+<a name="l00221"></a>00221   root = <span class="keyword">new</span> environment (<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(<span class="stringliteral">&quot;root&quot;</span>));
 <a name="l00222"></a>00222 
 <a name="l00223"></a>00223   <span class="comment">// create netlist object and input</span>
 <a name="l00224"></a>00224   subnet = <span class="keyword">new</span> net (<span class="stringliteral">&quot;subnet&quot;</span>);
@@ -335,7 +335,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:07 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

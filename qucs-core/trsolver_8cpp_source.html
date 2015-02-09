@@ -135,7 +135,7 @@
 <a name="l00075"></a>00075 }
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077 <span class="comment">// Constructor creates a named instance of the trsolver class.</span>
-<a name="l00078"></a><a class="code" href="structqucs_1_1trsolver.html#a028d61b34778af903604fed5e973a56e">00078</a> trsolver::trsolver (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
+<a name="l00078"></a><a class="code" href="structqucs_1_1trsolver.html#a028d61b34778af903604fed5e973a56e">00078</a> trsolver::trsolver (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
 <a name="l00079"></a>00079     : <a class="code" href="classqucs_1_1nasolver.html">nasolver</a>&lt;<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&gt; (n), <a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>&lt;<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&gt; ()
 <a name="l00080"></a>00080 {
 <a name="l00081"></a>00081     <a class="code" href="structqucs_1_1trsolver.html#a33f47349e0136c248f5ad184b66b604f">swp</a> = NULL;
@@ -937,7 +937,7 @@
 <a name="l00877"></a>00877     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> LTEreltol = getPropertyDouble (<span class="stringliteral">&quot;LTEreltol&quot;</span>);
 <a name="l00878"></a>00878     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> LTEabstol = getPropertyDouble (<span class="stringliteral">&quot;LTEabstol&quot;</span>);
 <a name="l00879"></a>00879     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> LTEfactor = getPropertyDouble (<span class="stringliteral">&quot;LTEfactor&quot;</span>);
-<a name="l00880"></a>00880     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> dif, rel, <a class="code" href="test__libqucs_8cpp.html#a2687e4b3cb5da7dbd00e565343f66c6c">tol</a>, lte, q, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> =  std::numeric_limits&lt;nr_double_t&gt;::max();
+<a name="l00880"></a>00880     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> dif, rel, <a class="code" href="testDefine_8h.html#a7fe7a2d892789540ed424673579f2f35">tol</a>, lte, q, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> =  std::numeric_limits&lt;nr_double_t&gt;::max();
 <a name="l00881"></a>00881     <span class="keywordtype">int</span> <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = countNodes ();
 <a name="l00882"></a>00882     <span class="keywordtype">int</span> <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a> = countVoltageSources ();
 <a name="l00883"></a>00883 
@@ -1028,7 +1028,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

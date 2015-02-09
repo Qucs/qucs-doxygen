@@ -126,7 +126,7 @@
 <a name="l00066"></a>00066 }
 <a name="l00067"></a>00067 
 <a name="l00068"></a>00068 <span class="comment">// Constructor creates a named instance of the net class.</span>
-<a name="l00069"></a><a class="code" href="classqucs_1_1net.html#a5cd727a4cb111002e94709277d111684">00069</a> net::net (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
+<a name="l00069"></a><a class="code" href="classqucs_1_1net.html#a5cd727a4cb111002e94709277d111684">00069</a> net::net (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
 <a name="l00070"></a>00070   <a class="code" href="classqucs_1_1net.html#a5c8251bc87d593b1bcce090d54cc82b3">root</a> = <a class="code" href="classqucs_1_1net.html#a4dc379705570e26c5bb53c2ddaab259c">drop</a> = NULL;
 <a name="l00071"></a>00071   <a class="code" href="classqucs_1_1net.html#a2bec12af04cd39776b5fca8410662e57">nPorts</a> = <a class="code" href="classqucs_1_1net.html#a08f0d87f52f34c04b54716d32ff3a4e8">nCircuits</a> = <a class="code" href="classqucs_1_1net.html#a8e2804fa48d7e0cf6abc10f709b45cc2">nSources</a> = 0;
 <a name="l00072"></a>00072   <a class="code" href="classqucs_1_1net.html#a65bed578eda07c03b4ed9846c5b27fa1">insertedNodes</a> = <a class="code" href="classqucs_1_1net.html#a61653dccda920c977d0f882093ad9e07">inserted</a> = <a class="code" href="classqucs_1_1net.html#a2b92a9d073782ed2a6ecfb93bd4c7b18">reduced</a> = 0;
@@ -258,7 +258,7 @@
 <a name="l00198"></a>00198 <span class="comment">/* The function returns the analysis associated with the netlist</span>
 <a name="l00199"></a>00199 <span class="comment">   object specified by the given instance name and returns NULL if</span>
 <a name="l00200"></a>00200 <span class="comment">   there is no such analysis. */</span>
-<a name="l00201"></a><a class="code" href="classqucs_1_1net.html#a419d2671227dfeb41177f5c2c5f08351">00201</a> analysis * net::findAnalysis (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00201"></a><a class="code" href="classqucs_1_1net.html#a419d2671227dfeb41177f5c2c5f08351">00201</a> analysis * net::findAnalysis (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00202"></a>00202   <span class="keywordflow">for</span> (<span class="keyword">auto</span> *a : *actions) {
 <a name="l00203"></a>00203     <span class="keywordflow">if</span> (a-&gt;getName ()== <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
 <a name="l00204"></a>00204       <span class="keywordflow">return</span> a;
@@ -652,7 +652,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

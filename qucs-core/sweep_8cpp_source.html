@@ -109,7 +109,7 @@
 <a name="l00049"></a>00049 }
 <a name="l00050"></a>00050 
 <a name="l00051"></a>00051 <span class="comment">// Constructor creates a named instance of the sweep class.</span>
-<a name="l00052"></a><a class="code" href="classqucs_1_1sweep.html#aba2ba3061922c026671fd9d3ee10a326">00052</a> sweep::sweep (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
+<a name="l00052"></a><a class="code" href="classqucs_1_1sweep.html#aba2ba3061922c026671fd9d3ee10a326">00052</a> sweep::sweep (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
 <a name="l00053"></a>00053   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a4b7c40870f66b77f6d0e58634aa75d82a0c7a23734dd4bc936f878941ab40336b">SWEEP_UNKNOWN</a>;
 <a name="l00054"></a>00054   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = NULL;
 <a name="l00055"></a>00055   <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> = 0;
@@ -219,7 +219,7 @@
 <a name="l00159"></a>00159 }
 <a name="l00160"></a>00160 
 <a name="l00161"></a>00161 <span class="comment">// Constructor creates a named instance of the linsweep class.</span>
-<a name="l00162"></a><a class="code" href="classqucs_1_1linsweep.html#a34aefb32ffd8ec9f01bc4bd2b87b6887">00162</a> linsweep::linsweep (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
+<a name="l00162"></a><a class="code" href="classqucs_1_1linsweep.html#a34aefb32ffd8ec9f01bc4bd2b87b6887">00162</a> linsweep::linsweep (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
 <a name="l00163"></a>00163   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a4b7c40870f66b77f6d0e58634aa75d82a03bd61d396097852ea564425efd9bc9c">SWEEP_LINEAR</a>;
 <a name="l00164"></a>00164 }
 <a name="l00165"></a>00165 
@@ -242,7 +242,7 @@
 <a name="l00182"></a>00182 }
 <a name="l00183"></a>00183 
 <a name="l00184"></a>00184 <span class="comment">// Constructor creates a named instance of the logsweep class.</span>
-<a name="l00185"></a><a class="code" href="classqucs_1_1logsweep.html#ab02c4cfd1cdbb4ab8e3f56b486c09a94">00185</a> logsweep::logsweep (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
+<a name="l00185"></a><a class="code" href="classqucs_1_1logsweep.html#ab02c4cfd1cdbb4ab8e3f56b486c09a94">00185</a> logsweep::logsweep (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
 <a name="l00186"></a>00186   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a4b7c40870f66b77f6d0e58634aa75d82a7b94652c7bfdc53e492047c53b71947f">SWEEP_LOGARITHMIC</a>;
 <a name="l00187"></a>00187 }
 <a name="l00188"></a>00188 
@@ -265,7 +265,7 @@
 <a name="l00205"></a>00205 }
 <a name="l00206"></a>00206 
 <a name="l00207"></a>00207 <span class="comment">// Constructor creates a named instance of the consweep class.</span>
-<a name="l00208"></a><a class="code" href="classqucs_1_1consweep.html#a49bf8539fee8b4ab451ad05af2d4bb79">00208</a>   consweep::consweep (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
+<a name="l00208"></a><a class="code" href="classqucs_1_1consweep.html#a49bf8539fee8b4ab451ad05af2d4bb79">00208</a>   consweep::consweep (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
 <a name="l00209"></a>00209   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a4b7c40870f66b77f6d0e58634aa75d82a8512b241097352b1a2eb66d9ded16328">SWEEP_CONSTANT</a>;
 <a name="l00210"></a>00210 }
 <a name="l00211"></a>00211 
@@ -286,7 +286,7 @@
 <a name="l00226"></a>00226 }
 <a name="l00227"></a>00227 
 <a name="l00228"></a>00228 <span class="comment">// Constructor creates a named instance of the lstsweep class.</span>
-<a name="l00229"></a><a class="code" href="classqucs_1_1lstsweep.html#a46672b0ddc166d4f8a679b6bad6325c6">00229</a> lstsweep::lstsweep (<span class="keyword">const</span> std::string&amp; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
+<a name="l00229"></a><a class="code" href="classqucs_1_1lstsweep.html#a46672b0ddc166d4f8a679b6bad6325c6">00229</a> lstsweep::lstsweep (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>&amp; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1sweep.html">sweep</a> (n) {
 <a name="l00230"></a>00230   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a4b7c40870f66b77f6d0e58634aa75d82a05bcaaa3774ff3738532bd88f435c1fd">SWEEP_LIST</a>;
 <a name="l00231"></a>00231 }
 <a name="l00232"></a>00232 
@@ -306,7 +306,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -146,12 +146,12 @@
 <a name="l00086"></a>00086 }
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 <span class="comment">// This function finds the specified node name in the list.</span>
-<a name="l00089"></a><a class="code" href="classqucs_1_1nodelist.html#adbc247dd7a72eef96b48123c499b85aa">00089</a> <span class="keywordtype">bool</span> nodelist::contains (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
+<a name="l00089"></a><a class="code" href="classqucs_1_1nodelist.html#adbc247dd7a72eef96b48123c499b85aa">00089</a> <span class="keywordtype">bool</span> nodelist::contains (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
 <a name="l00090"></a>00090   <span class="keywordflow">return</span> std::find_if(root.begin(),root.end(),[<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>](<a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> *<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) { <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;name == <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>; }) != root.end();
 <a name="l00091"></a>00091 }
 <a name="l00092"></a>00092 
 <a name="l00093"></a>00093 <span class="comment">// Returns the node number of the given node name.</span>
-<a name="l00094"></a><a class="code" href="classqucs_1_1nodelist.html#a20e32dbf1d11f55d367e0337902ed76f">00094</a> <span class="keywordtype">int</span> nodelist::getNodeNr (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
+<a name="l00094"></a><a class="code" href="classqucs_1_1nodelist.html#a20e32dbf1d11f55d367e0337902ed76f">00094</a> <span class="keywordtype">int</span> nodelist::getNodeNr (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
 <a name="l00095"></a>00095   
 <a name="l00096"></a>00096   <span class="keywordflow">if</span>(sorting) {
 <a name="l00097"></a>00097     <span class="keyword">auto</span> it = std::find_if(narray.begin(),narray.end(),[<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>](<a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> *<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) { <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;name == <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>; });
@@ -167,7 +167,7 @@
 <a name="l00107"></a>00107 
 <a name="l00108"></a>00108 <span class="comment">/* This function returns the node name positioned at the specified</span>
 <a name="l00109"></a>00109 <span class="comment">   location in the node name list. */</span>
-<a name="l00110"></a><a class="code" href="classqucs_1_1nodelist.html#ac7d150a298af3b4f18d0b41f5724a7eb">00110</a> std::string nodelist::get (<span class="keywordtype">int</span> nr)<span class="keyword"> const </span>{
+<a name="l00110"></a><a class="code" href="classqucs_1_1nodelist.html#ac7d150a298af3b4f18d0b41f5724a7eb">00110</a> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> nodelist::get (<span class="keywordtype">int</span> nr)<span class="keyword"> const </span>{
 <a name="l00111"></a>00111   <span class="keywordflow">return</span> narray[nr + 1]-&gt;name;
 <a name="l00112"></a>00112 }
 <a name="l00113"></a>00113 
@@ -180,7 +180,7 @@
 <a name="l00120"></a>00120 
 <a name="l00121"></a>00121 <span class="comment">/* The function returns the nodelist structure with the given name in</span>
 <a name="l00122"></a>00122 <span class="comment">   the node name list.  It returns NULL if there is no such node. */</span>
-<a name="l00123"></a><a class="code" href="classqucs_1_1nodelist.html#a7e1c219c4baa3e8c8a84a3a190f8a91e">00123</a> <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * nodelist::getNode (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
+<a name="l00123"></a><a class="code" href="classqucs_1_1nodelist.html#a7e1c219c4baa3e8c8a84a3a190f8a91e">00123</a> <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * nodelist::getNode (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)<span class="keyword"> const </span>{
 <a name="l00124"></a>00124   <span class="keyword">auto</span> it = std::find_if(root.begin(),root.end(),[<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>](<a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> *<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) { <span class="keywordflow">return</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;name == <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>; });
 <a name="l00125"></a>00125   <span class="keywordflow">if</span>(it != root.end())
 <a name="l00126"></a>00126     <span class="keywordflow">return</span> *it;
@@ -189,14 +189,14 @@
 <a name="l00129"></a>00129 
 <a name="l00130"></a>00130 <span class="comment">/* Returns a comma separated list of the circuits connected to the</span>
 <a name="l00131"></a>00131 <span class="comment">   node specified by the given number. */</span>
-<a name="l00132"></a><a class="code" href="classqucs_1_1nodelist.html#a83cbb20e6959c782523b9138820afd64">00132</a> std::string nodelist::getNodeString (<span class="keywordtype">int</span> nr)<span class="keyword"> const </span>{
-<a name="l00133"></a>00133   std::string txt;
+<a name="l00132"></a><a class="code" href="classqucs_1_1nodelist.html#a83cbb20e6959c782523b9138820afd64">00132</a> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> nodelist::getNodeString (<span class="keywordtype">int</span> nr)<span class="keyword"> const </span>{
+<a name="l00133"></a>00133   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> txt;
 <a name="l00134"></a>00134   <span class="comment">// find the specified node</span>
 <a name="l00135"></a>00135   <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = getNode (nr);
 <a name="l00136"></a>00136   <span class="comment">// append circuit names connected to the node</span>
 <a name="l00137"></a>00137   std::size_t <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>=0;
 <a name="l00138"></a>00138   <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;currentn: *n) {
-<a name="l00139"></a>00139     <span class="keyword">const</span> std::string <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = currentn-&gt;getCircuit()-&gt;getName ();
+<a name="l00139"></a>00139     <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = currentn-&gt;getCircuit()-&gt;getName ();
 <a name="l00140"></a>00140     txt+=<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>;
 <a name="l00141"></a>00141     <span class="keywordflow">if</span> (i != n-&gt;size() - 1)
 <a name="l00142"></a>00142       txt+=<span class="stringliteral">&quot;,&quot;</span>;
@@ -411,7 +411,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

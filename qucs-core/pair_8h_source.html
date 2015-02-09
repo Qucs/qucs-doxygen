@@ -94,21 +94,21 @@
 <a name="l00034"></a>00034 {
 <a name="l00035"></a>00035  <span class="keyword">public</span>:
 <a name="l00036"></a><a class="code" href="classqucs_1_1pair.html#a49bceea6888f5f570e865dac5d8cc266">00036</a>   <a class="code" href="classqucs_1_1pair.html">pair</a> () :
-<a name="l00037"></a>00037     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(std::string(),0.0)
+<a name="l00037"></a>00037     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(std::<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">string</a>(),0.0)
 <a name="l00038"></a>00038   {};
 <a name="l00039"></a>00039 
 <a name="l00040"></a><a class="code" href="classqucs_1_1pair.html#a287f1b4a6490613fc401f81912366fe7">00040</a>   <a class="code" href="classqucs_1_1pair.html">pair</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> s) :
-<a name="l00041"></a>00041   <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s != nullptr ? std::string(s) : std::string(),0.0)
+<a name="l00041"></a>00041   <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s != nullptr ? std::<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">string</a>(s) : std::<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">string</a>(),0.0)
 <a name="l00042"></a>00042   {};
 <a name="l00043"></a>00043 
 <a name="l00044"></a><a class="code" href="classqucs_1_1pair.html#ac5ec42d0e63faa9ada4d1947e6c44017">00044</a>   <a class="code" href="classqucs_1_1pair.html">pair</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) :
-<a name="l00045"></a>00045     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s != nullptr ? std::string(s) : std::string(),v)
+<a name="l00045"></a>00045     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s != nullptr ? std::<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">string</a>(s) : std::<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">string</a>(),v)
 <a name="l00046"></a>00046   {} ;
 <a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="classqucs_1_1pair.html#a662e8e4d49871ce0e56c3d3bf545905b">00048</a>   <a class="code" href="classqucs_1_1pair.html#a662e8e4d49871ce0e56c3d3bf545905b">pair</a>(<span class="keyword">const</span> std::string s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) : <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s,v) {};
+<a name="l00048"></a><a class="code" href="classqucs_1_1pair.html#a662e8e4d49871ce0e56c3d3bf545905b">00048</a>   <a class="code" href="classqucs_1_1pair.html#a662e8e4d49871ce0e56c3d3bf545905b">pair</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>) : <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>(s,v) {};
 <a name="l00049"></a>00049 
 <a name="l00050"></a><a class="code" href="classqucs_1_1pair.html#a8cc66f1ef6243aef2526abbb72405a43">00050</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1pair.html#a8cc66f1ef6243aef2526abbb72405a43">setName</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> s) {
-<a name="l00051"></a>00051     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>.first = s != <span class="keyword">nullptr</span> ? std::string(s) : std::string();
+<a name="l00051"></a>00051     <a class="code" href="classqucs_1_1pair.html#a297a62282ec657b7d715c8ec5637a6e2">p</a>.first = s != <span class="keyword">nullptr</span> ? <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(s) : <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
 <a name="l00052"></a>00052   };
 <a name="l00053"></a>00053 
 <a name="l00054"></a><a class="code" href="classqucs_1_1pair.html#abea25d185b95092b894e94b8b4dc6b34">00054</a>   <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="classqucs_1_1pair.html#abea25d185b95092b894e94b8b4dc6b34">getName</a> (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
@@ -134,7 +134,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

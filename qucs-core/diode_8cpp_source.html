@@ -280,7 +280,7 @@
 <a name="l00220"></a>00220   <span class="comment">// calculate actual breakdown voltage</span>
 <a name="l00221"></a>00221   <a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> = <a class="code" href="classqucs_1_1object.html#a467add31fa0263a85a12d0c42255c427">getScaledProperty</a> (<span class="stringliteral">&quot;Bv&quot;</span>);
 <a name="l00222"></a>00222   <span class="keywordflow">if</span> (<a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> != 0) {
-<a name="l00223"></a>00223     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Ibv, Is, <a class="code" href="test__libqucs_8cpp.html#a2687e4b3cb5da7dbd00e565343f66c6c">tol</a>, Ut, Xbv, Xibv;
+<a name="l00223"></a>00223     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> Ibv, Is, <a class="code" href="testDefine_8h.html#a7fe7a2d892789540ed424673579f2f35">tol</a>, Ut, Xbv, Xibv;
 <a name="l00224"></a>00224     Ibv = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Ibv&quot;</span>);
 <a name="l00225"></a>00225     Is = <a class="code" href="classqucs_1_1object.html#a467add31fa0263a85a12d0c42255c427">getScaledProperty</a> (<span class="stringliteral">&quot;Is&quot;</span>);
 <a name="l00226"></a>00226     Ut = <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) * kBoverQ;
@@ -299,7 +299,7 @@
 <a name="l00239"></a>00239       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; 25 ; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++) {
 <a name="l00240"></a>00240         Xbv = <a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> - Ut * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (Ibv / Is + 1 - Xbv / Ut);
 <a name="l00241"></a>00241         Xibv = Is * (<a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> ((<a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> - Xbv) / Ut) - 1 + Xbv / Ut);
-<a name="l00242"></a>00242         <span class="keywordflow">if</span> (fabs (Xibv - Ibv) &lt; <a class="code" href="test__libqucs_8cpp.html#a2687e4b3cb5da7dbd00e565343f66c6c">tol</a>) {
+<a name="l00242"></a>00242         <span class="keywordflow">if</span> (fabs (Xibv - Ibv) &lt; <a class="code" href="testDefine_8h.html#a7fe7a2d892789540ed424673579f2f35">tol</a>) {
 <a name="l00243"></a>00243           <a class="code" href="structdiode.html#a3d0dd74eb176ed068b651ba34ce07116">Bv</a> = Xbv;
 <a name="l00244"></a>00244           good = 1;
 <a name="l00245"></a>00245           <span class="keywordflow">break</span>;
@@ -551,7 +551,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:04 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -135,13 +135,13 @@
 <a name="l00075"></a>00075  <span class="keyword">public</span>:
 <a name="l00076"></a>00076   <a class="code" href="classqucs_1_1tvector.html">tvector</a> () = <span class="keywordflow">default</span>;
 <a name="l00077"></a><a class="code" href="classqucs_1_1tvector.html#a90e2646c840a6657d1d301ccacec9e8d">00077</a>   <a class="code" href="classqucs_1_1tvector.html#a90e2646c840a6657d1d301ccacec9e8d">tvector</a> (<span class="keyword">const</span> std::size_t <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) : <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>(i) {};
-<a name="l00078"></a>00078   <a class="code" href="classqucs_1_1tvector.html">tvector</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> &amp;) = <span class="keywordflow">default</span>;
-<a name="l00079"></a>00079   ~<a class="code" href="classqucs_1_1tvector.html">tvector</a> () = <span class="keywordflow">default</span>;
+<a name="l00078"></a>00078   tvector (<span class="keyword">const</span> tvector &amp;) = <span class="keywordflow">default</span>;
+<a name="l00079"></a>00079   ~tvector () = <span class="keywordflow">default</span>;
 <a name="l00080"></a>00080   nr_type_t <span class="keyword">get</span> (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>);
 <a name="l00081"></a>00081   <span class="keywordtype">void</span> <span class="keyword">set</span> (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>, nr_type_t);
 <a name="l00082"></a>00082   <span class="keywordtype">void</span> <span class="keyword">set</span> (nr_type_t);
 <a name="l00083"></a>00083   <span class="keywordtype">void</span> <span class="keyword">set</span> (nr_type_t, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>);
-<a name="l00084"></a>00084   <span class="keywordtype">void</span> <span class="keyword">set</span> (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>);
+<a name="l00084"></a>00084   <span class="keywordtype">void</span> <span class="keyword">set</span> (tvector, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>, <a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>);
 <a name="l00085"></a><a class="code" href="classqucs_1_1tvector.html#ae03df40384f23435effac662f7fee1ce">00085</a>   std::size_t  <a class="code" href="classqucs_1_1tvector.html#ae03df40384f23435effac662f7fee1ce">size</a> (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>.size (); }
 <a name="l00086"></a><a class="code" href="classqucs_1_1tvector.html#aaa2c0afc40b8279080b5822f5df0bcb6">00086</a>   nr_type_t * <a class="code" href="classqucs_1_1tvector.html#aaa2c0afc40b8279080b5822f5df0bcb6">getData</a> (<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>.data(); }
 <a name="l00087"></a>00087   <span class="keywordtype">void</span> clear (<span class="keywordtype">void</span>);
@@ -153,39 +153,39 @@
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094   <span class="comment">// some basic vector operations</span>
 <a name="l00095"></a>00095 <span class="preprocessor">#ifndef _MSC_VER</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span>  <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator +&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00097"></a>00097   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator -&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00098"></a>00098   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator *&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
-<a name="l00099"></a>00099   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator *&lt;&gt; (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00100"></a>00100   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator *&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00101"></a>00101   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator -&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00102"></a>00102   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator +&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, nr_type_t);
-<a name="l00103"></a>00103   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator +&lt;&gt; (nr_type_t, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
+<a name="l00096"></a>00096 <span class="preprocessor"></span>  <span class="keyword">friend</span> tvector operator +&lt;&gt; (tvector, tvector);
+<a name="l00097"></a>00097   <span class="keyword">friend</span> tvector operator -&lt;&gt; (tvector, tvector);
+<a name="l00098"></a>00098   <span class="keyword">friend</span> tvector operator *&lt;&gt; (tvector, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
+<a name="l00099"></a>00099   <span class="keyword">friend</span> tvector operator *&lt;&gt; (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>, tvector);
+<a name="l00100"></a>00100   <span class="keyword">friend</span> tvector operator *&lt;&gt; (tvector, tvector);
+<a name="l00101"></a>00101   <span class="keyword">friend</span> tvector operator -&lt;&gt; (tvector);
+<a name="l00102"></a>00102   <span class="keyword">friend</span> tvector operator +&lt;&gt; (tvector, nr_type_t);
+<a name="l00103"></a>00103   <span class="keyword">friend</span> tvector operator +&lt;&gt; (nr_type_t, tvector);
 <a name="l00104"></a>00104 <span class="preprocessor">#endif</span>
 <a name="l00105"></a>00105 <span class="preprocessor"></span>
 <a name="l00106"></a>00106   <span class="comment">// other operations</span>
 <a name="l00107"></a>00107 <span class="preprocessor">#ifndef _MSC_VER</span>
-<a name="l00108"></a>00108 <span class="preprocessor"></span>  <span class="keyword">friend</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> norm&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00109"></a>00109   <span class="keyword">friend</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> maxnorm&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00110"></a>00110   <span class="keyword">friend</span> nr_type_t   sum&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00111"></a>00111   <span class="keyword">friend</span> nr_type_t   scalar&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00112"></a>00112   <span class="keyword">friend</span> <a class="code" href="classqucs_1_1tvector.html">tvector</a>     conj&lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
+<a name="l00108"></a>00108 <span class="preprocessor"></span>  <span class="keyword">friend</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> norm&lt;&gt; (tvector);
+<a name="l00109"></a>00109   <span class="keyword">friend</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> maxnorm&lt;&gt; (tvector);
+<a name="l00110"></a>00110   <span class="keyword">friend</span> nr_type_t   sum&lt;&gt; (tvector);
+<a name="l00111"></a>00111   <span class="keyword">friend</span> nr_type_t   scalar&lt;&gt; (tvector, tvector);
+<a name="l00112"></a>00112   <span class="keyword">friend</span> tvector     conj&lt;&gt; (tvector);
 <a name="l00113"></a>00113 <span class="preprocessor">#endif</span>
 <a name="l00114"></a>00114 <span class="preprocessor"></span>
 <a name="l00115"></a>00115   <span class="comment">// comparisons</span>
 <a name="l00116"></a>00116 <span class="preprocessor">#ifndef _MSC_VER</span>
-<a name="l00117"></a>00117 <span class="preprocessor"></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator &lt; &lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00118"></a>00118   <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator &gt; &lt;&gt; (<a class="code" href="classqucs_1_1tvector.html">tvector</a>, <a class="code" href="classqucs_1_1tvector.html">tvector</a>);
+<a name="l00117"></a>00117 <span class="preprocessor"></span>  <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator &lt; &lt;&gt; (tvector, tvector);
+<a name="l00118"></a>00118   <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator &gt; &lt;&gt; (tvector, tvector);
 <a name="l00119"></a>00119 <span class="preprocessor">#endif</span>
 <a name="l00120"></a>00120 <span class="preprocessor"></span>
 <a name="l00121"></a>00121   <span class="comment">// intrinsic operators</span>
-<a name="l00122"></a>00122   <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator += (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00123"></a>00123   <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator -= (<a class="code" href="classqucs_1_1tvector.html">tvector</a>);
-<a name="l00124"></a>00124   <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator *= (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
-<a name="l00125"></a>00125   <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator /= (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
+<a name="l00122"></a>00122   tvector operator += (tvector);
+<a name="l00123"></a>00123   tvector operator -= (tvector);
+<a name="l00124"></a>00124   tvector operator *= (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
+<a name="l00125"></a>00125   tvector operator /= (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>);
 <a name="l00126"></a>00126 
 <a name="l00127"></a>00127   <span class="comment">// assignment operators</span>
-<a name="l00128"></a>00128   <a class="code" href="classqucs_1_1tvector.html">tvector</a> operator = (<span class="keyword">const</span> nr_type_t);
+<a name="l00128"></a>00128   tvector operator = (<span class="keyword">const</span> nr_type_t);
 <a name="l00129"></a>00129 
 <a name="l00130"></a>00130   <span class="comment">// easy accessor operators</span>
 <a name="l00131"></a><a class="code" href="classqucs_1_1tvector.html#a4bf7ea45016f90c8cabbce0ffef038eb">00131</a>   nr_type_t  operator () (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)<span class="keyword"> const </span>{
@@ -223,7 +223,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:07 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

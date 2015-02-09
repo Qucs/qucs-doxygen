@@ -102,7 +102,7 @@
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043 <span class="comment">/* This function adds a property consisting of a key and a string</span>
 <a name="l00044"></a>00044 <span class="comment">   value to the object. */</span>
-<a name="l00045"></a><a class="code" href="classqucs_1_1object.html#a89cc610a4a4480d3626ac557d6dccaf8">00045</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
+<a name="l00045"></a><a class="code" href="classqucs_1_1object.html#a89cc610a4a4480d3626ac557d6dccaf8">00045</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
 <a name="l00046"></a>00046   <span class="keyword">property</span> p;
 <a name="l00047"></a>00047   p.set(val);
 <a name="l00048"></a>00048   p.setDefault(def);
@@ -111,7 +111,7 @@
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="comment">/* This function sets the specified property consisting of a key and a</span>
 <a name="l00053"></a>00053 <span class="comment">   string value in the object. */</span>
-<a name="l00054"></a><a class="code" href="classqucs_1_1object.html#a72f4a6123b446549239e5ff21eacd673">00054</a> <span class="keywordtype">void</span> object::setProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> val) {
+<a name="l00054"></a><a class="code" href="classqucs_1_1object.html#a72f4a6123b446549239e5ff21eacd673">00054</a> <span class="keywordtype">void</span> object::setProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> val) {
 <a name="l00055"></a>00055     <span class="keyword">auto</span> it = props.find(n);
 <a name="l00056"></a>00056     <span class="keywordflow">if</span>(it != props.end())
 <a name="l00057"></a>00057       (*it).second.set(val);
@@ -121,7 +121,7 @@
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062 <span class="comment">/* This function adds a property consisting of a key and a double</span>
 <a name="l00063"></a>00063 <span class="comment">   value to the object. */</span>
-<a name="l00064"></a><a class="code" href="classqucs_1_1object.html#a362f0cdd07ba1a1157e64d8d2a858b81">00064</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
+<a name="l00064"></a><a class="code" href="classqucs_1_1object.html#a362f0cdd07ba1a1157e64d8d2a858b81">00064</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
 <a name="l00065"></a>00065   <span class="keyword">property</span> p;
 <a name="l00066"></a>00066   p.set(val);
 <a name="l00067"></a>00067   p.setDefault(def);
@@ -130,7 +130,7 @@
 <a name="l00070"></a>00070 
 <a name="l00071"></a>00071 <span class="comment">/* This function sets the specified property consisting of a key and a</span>
 <a name="l00072"></a>00072 <span class="comment">   double value in the object. */</span>
-<a name="l00073"></a><a class="code" href="classqucs_1_1object.html#a07df8ef9f982ef4a353732951dabce01">00073</a> <span class="keywordtype">void</span> object::setProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
+<a name="l00073"></a><a class="code" href="classqucs_1_1object.html#a07df8ef9f982ef4a353732951dabce01">00073</a> <span class="keywordtype">void</span> object::setProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
 <a name="l00074"></a>00074   <span class="keyword">auto</span> it = props.find(n);
 <a name="l00075"></a>00075   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00076"></a>00076     (*it).second.set(val);
@@ -141,13 +141,13 @@
 <a name="l00081"></a>00081 <span class="comment">/* Th function sets the specified property consisting of a key and a</span>
 <a name="l00082"></a>00082 <span class="comment">   double value in the object.  The property is marked a scalability</span>
 <a name="l00083"></a>00083 <span class="comment">   property. */</span>
-<a name="l00084"></a><a class="code" href="classqucs_1_1object.html#a5606a92ab53d854491432d196e3550a6">00084</a> <span class="keywordtype">void</span> object::setScaledProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
+<a name="l00084"></a><a class="code" href="classqucs_1_1object.html#a5606a92ab53d854491432d196e3550a6">00084</a> <span class="keywordtype">void</span> object::setScaledProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> val) {
 <a name="l00085"></a>00085   setProperty (<span class="stringliteral">&quot;Scaled:&quot;</span>+n, val);
 <a name="l00086"></a>00086 }
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 <span class="comment">/* This function adds a property consisting of a key and a variable</span>
 <a name="l00089"></a>00089 <span class="comment">   value to the object. */</span>
-<a name="l00090"></a><a class="code" href="classqucs_1_1object.html#ae0d8c4d08faf5f9b6c24db66f2b0eed9">00090</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="classqucs_1_1variable.html">variable</a> * <span class="keyword">const</span> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
+<a name="l00090"></a><a class="code" href="classqucs_1_1object.html#ae0d8c4d08faf5f9b6c24db66f2b0eed9">00090</a> <span class="keywordtype">void</span> object::addProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <a class="code" href="classqucs_1_1variable.html">variable</a> * <span class="keyword">const</span> val, <span class="keyword">const</span> <span class="keywordtype">bool</span> def) {
 <a name="l00091"></a>00091   <span class="keyword">property</span> p;
 <a name="l00092"></a>00092   p.set(val);
 <a name="l00093"></a>00093   p.setDefault(def);
@@ -157,7 +157,7 @@
 <a name="l00097"></a>00097 <span class="comment">/* Returns the requested property value which has been previously</span>
 <a name="l00098"></a>00098 <span class="comment">   added as its vector representation.  If there is no such property</span>
 <a name="l00099"></a>00099 <span class="comment">   the function returns NULL. */</span>
-<a name="l00100"></a><a class="code" href="classqucs_1_1object.html#a0cf4c5adabe6d08df53b6137845b1421">00100</a> qucs::vector * object::getPropertyVector (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00100"></a><a class="code" href="classqucs_1_1object.html#a0cf4c5adabe6d08df53b6137845b1421">00100</a> qucs::vector * object::getPropertyVector (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00101"></a>00101   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00102"></a>00102   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00103"></a>00103     <span class="keywordflow">return</span> (*it).second.getVector();
@@ -168,7 +168,7 @@
 <a name="l00108"></a>00108 <span class="comment">/* Returns the requested property value which has been previously</span>
 <a name="l00109"></a>00109 <span class="comment">   added as its text representation.  If there is no such property the</span>
 <a name="l00110"></a>00110 <span class="comment">   function returns NULL. */</span>
-<a name="l00111"></a><a class="code" href="classqucs_1_1object.html#a36314693916e9ee95c839b05b973d95b">00111</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * object::getPropertyString (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00111"></a><a class="code" href="classqucs_1_1object.html#a36314693916e9ee95c839b05b973d95b">00111</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * object::getPropertyString (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00112"></a>00112   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00113"></a>00113   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00114"></a>00114     <span class="keywordflow">return</span> (*it).second.getString();
@@ -178,7 +178,7 @@
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119 <span class="comment">/* Returns the requested property reference variable name.  If there</span>
 <a name="l00120"></a>00120 <span class="comment">   is no such property the function returns NULL. */</span>
-<a name="l00121"></a><a class="code" href="classqucs_1_1object.html#a5a6c3ef0afb5c910cac2e41b21525cc7">00121</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * object::getPropertyReference (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00121"></a><a class="code" href="classqucs_1_1object.html#a5a6c3ef0afb5c910cac2e41b21525cc7">00121</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * object::getPropertyReference (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00122"></a>00122   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00123"></a>00123   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00124"></a>00124     <span class="keywordflow">return</span> (*it).second.getReference();
@@ -189,7 +189,7 @@
 <a name="l00129"></a>00129 <span class="comment">/* Returns the requested property value which has been previously</span>
 <a name="l00130"></a>00130 <span class="comment">   added as its double representation.  If there is no such property</span>
 <a name="l00131"></a>00131 <span class="comment">   the function returns zero. */</span>
-<a name="l00132"></a><a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">00132</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> object::getPropertyDouble (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00132"></a><a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">00132</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> object::getPropertyDouble (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00133"></a>00133   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00134"></a>00134   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00135"></a>00135     <span class="keywordflow">return</span> (*it).second.getDouble();
@@ -200,8 +200,8 @@
 <a name="l00140"></a>00140 <span class="comment">/* The functions returns the requested (scalability) property value</span>
 <a name="l00141"></a>00141 <span class="comment">   which has been previously added.  If there is no such scaled</span>
 <a name="l00142"></a>00142 <span class="comment">   property the function returns the standard property or zero. */</span>
-<a name="l00143"></a><a class="code" href="classqucs_1_1object.html#a467add31fa0263a85a12d0c42255c427">00143</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> object::getScaledProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const</span>{
-<a name="l00144"></a>00144   std::string txt = <span class="stringliteral">&quot;Scaled:&quot;</span>+<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l00143"></a><a class="code" href="classqucs_1_1object.html#a467add31fa0263a85a12d0c42255c427">00143</a> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> object::getScaledProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const</span>{
+<a name="l00144"></a>00144   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> txt = <span class="stringliteral">&quot;Scaled:&quot;</span>+<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
 <a name="l00145"></a>00145   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(txt);
 <a name="l00146"></a>00146   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00147"></a>00147     <span class="keywordflow">return</span> (*it).second.getDouble();
@@ -212,7 +212,7 @@
 <a name="l00152"></a>00152 <span class="comment">/* Returns the requested property value which has been previously</span>
 <a name="l00153"></a>00153 <span class="comment">   added as its integer representation.  If there is no such property</span>
 <a name="l00154"></a>00154 <span class="comment">   the function returns zero. */</span>
-<a name="l00155"></a><a class="code" href="classqucs_1_1object.html#a996c6c3de5d7d99f6d26bef628dbe8ba">00155</a> <span class="keywordtype">int</span> object::getPropertyInteger (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00155"></a><a class="code" href="classqucs_1_1object.html#a996c6c3de5d7d99f6d26bef628dbe8ba">00155</a> <span class="keywordtype">int</span> object::getPropertyInteger (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00156"></a>00156   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00157"></a>00157   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00158"></a>00158     <span class="keywordflow">return</span> (*it).second.getInteger();
@@ -222,14 +222,14 @@
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163 <span class="comment">/* The function checks whether the object has got a certain property</span>
 <a name="l00164"></a>00164 <span class="comment">   value.  If so it returns non-zero, otherwise it returns zero. */</span>
-<a name="l00165"></a><a class="code" href="classqucs_1_1object.html#a2191f5ca18e9e9e85276615f9889a622">00165</a> <span class="keywordtype">bool</span> object::hasProperty (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00165"></a><a class="code" href="classqucs_1_1object.html#a2191f5ca18e9e9e85276615f9889a622">00165</a> <span class="keywordtype">bool</span> object::hasProperty (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00166"></a>00166   <span class="keywordflow">return</span> props.find(n) !=  props.end();
 <a name="l00167"></a>00167 }
 <a name="l00168"></a>00168 
 <a name="l00169"></a>00169 <span class="comment">/* The function checks whether the object has got a certain property</span>
 <a name="l00170"></a>00170 <span class="comment">   value and if this has its default value.  If so it returns  non-zero,</span>
 <a name="l00171"></a>00171 <span class="comment">   otherwise it returns zero. */</span>
-<a name="l00172"></a><a class="code" href="classqucs_1_1object.html#ad251bea623667bc8ced15990b3faa0e8">00172</a> <span class="keywordtype">bool</span> object::isPropertyGiven (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
+<a name="l00172"></a><a class="code" href="classqucs_1_1object.html#ad251bea623667bc8ced15990b3faa0e8">00172</a> <span class="keywordtype">bool</span> object::isPropertyGiven (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)<span class="keyword"> const </span>{
 <a name="l00173"></a>00173   <span class="keyword">const</span> <span class="keyword">auto</span> &amp;it = props.find(n);
 <a name="l00174"></a>00174   <span class="keywordflow">if</span>(it != props.end())
 <a name="l00175"></a>00175     <span class="keywordflow">return</span> !(*it).second.isDefault();
@@ -244,11 +244,11 @@
 <a name="l00184"></a>00184 
 <a name="l00185"></a>00185 <span class="comment">// This function returns a text representation of the objects properties.</span>
 <a name="l00186"></a><a class="code" href="classqucs_1_1object.html#a725af7b165c0dff05e319074c09ab398">00186</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * object::propertyList (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
-<a name="l00187"></a>00187   std::string ptxt;
+<a name="l00187"></a>00187   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> ptxt;
 <a name="l00188"></a>00188   <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = props.cbegin(); it != props.cend(); ++it) {      
-<a name="l00189"></a>00189     std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = it-&gt;first;    
-<a name="l00190"></a>00190     std::string val = it-&gt;second.toString ();
-<a name="l00191"></a>00191     std::string text = n+<span class="stringliteral">&quot;=\&quot;&quot;</span>+val+<span class="stringliteral">&quot;\&quot;&quot;</span>;
+<a name="l00189"></a>00189     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = it-&gt;first;    
+<a name="l00190"></a>00190     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> val = it-&gt;second.toString ();
+<a name="l00191"></a>00191     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> text = n+<span class="stringliteral">&quot;=\&quot;&quot;</span>+val+<span class="stringliteral">&quot;\&quot;&quot;</span>;
 <a name="l00192"></a>00192     ptxt += text;
 <a name="l00193"></a>00193   }
 <a name="l00194"></a>00194   <span class="keywordflow">return</span> ptxt.c_str();
@@ -259,7 +259,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

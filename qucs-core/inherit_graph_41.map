@@ -1,7 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classqucs_1_1eqn_1_1node.html" title="qucs::eqn::node" alt="" coords="5,85,120,115"/>
-<area shape="rect" id="node3" href="$classqucs_1_1eqn_1_1application.html" title="qucs::eqn::application" alt="" coords="171,5,320,35"/>
-<area shape="rect" id="node5" href="$classqucs_1_1eqn_1_1assignment.html" title="qucs::eqn::assignment" alt="" coords="168,59,323,88"/>
-<area shape="rect" id="node7" href="$classqucs_1_1eqn_1_1constant.html" title="qucs::eqn::constant" alt="" coords="177,112,313,141"/>
-<area shape="rect" id="node9" href="$classqucs_1_1eqn_1_1reference.html" title="qucs::eqn::reference" alt="" coords="175,165,316,195"/>
+<area shape="rect" id="node1" href="$classqucs_1_1eqn_1_1checker.html" title="qucs::eqn::checker" alt="" coords="5,5,139,35"/>
 </map>

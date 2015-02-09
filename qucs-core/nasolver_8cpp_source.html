@@ -137,7 +137,7 @@
 <a name="l00077"></a>00077 
 <a name="l00078"></a>00078 <span class="comment">// Constructor creates a named instance of the nasolver class.</span>
 <a name="l00079"></a>00079 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00080"></a><a class="code" href="classqucs_1_1nasolver.html#a285543e2371415cf15770325ed9596d8">00080</a> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::nasolver</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : analysis (n)
+<a name="l00080"></a><a class="code" href="classqucs_1_1nasolver.html#a285543e2371415cf15770325ed9596d8">00080</a> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::nasolver</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : analysis (n)
 <a name="l00081"></a>00081 {
 <a name="l00082"></a>00082     <a class="code" href="classqucs_1_1nasolver.html#a1cd43e1591e2aa3936e7e468a590f5b1">nlist</a> = NULL;
 <a name="l00083"></a>00083     <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a> = <a class="code" href="eqndefined_8cpp.html#ad1368c2a0fa68385ecdd9f1016563c08">C</a> = NULL;
@@ -978,7 +978,7 @@
 <a name="l00918"></a>00918 
 <a name="l00919"></a>00919 <span class="comment">// Returns the node number of the give node name.</span>
 <a name="l00920"></a>00920 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l00921"></a><a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">00921</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::getNodeNr</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)
+<a name="l00921"></a><a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">00921</a> <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::getNodeNr</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a>)
 <a name="l00922"></a>00922 {
 <a name="l00923"></a>00923     <span class="keywordflow">return</span> nlist-&gt;<a class="code" href="classqucs_1_1nasolver.html#a07d28072d8389ef21dc63a33307f65e6">getNodeNr</a> (str);
 <a name="l00924"></a>00924 }
@@ -1373,7 +1373,7 @@
 <a name="l01313"></a>01313 <span class="comment">/* This function saves the results of a single solve() functionality</span>
 <a name="l01314"></a>01314 <span class="comment">   into the output dataset. */</span>
 <a name="l01315"></a>01315 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01316"></a><a class="code" href="classqucs_1_1nasolver.html#a45e8941aa74dec4799210aa4072d31cc">01316</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::saveResults</a> (<span class="keyword">const</span> std::string &amp;volts, <span class="keyword">const</span> std::string &amp;amps,
+<a name="l01316"></a><a class="code" href="classqucs_1_1nasolver.html#a45e8941aa74dec4799210aa4072d31cc">01316</a> <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::saveResults</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;volts, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;amps,
 <a name="l01317"></a>01317                                        <span class="keywordtype">int</span> saveOPs, qucs::vector * f)
 <a name="l01318"></a>01318 {
 <a name="l01319"></a>01319     <span class="keywordtype">int</span> <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a> = countNodes ();
@@ -1384,7 +1384,7 @@
 <a name="l01324"></a>01324     {
 <a name="l01325"></a>01325         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="equation_8cpp.html#a540f72cb9bcf86a19e3bbc259b9ec3e0">N</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
 <a name="l01326"></a>01326         {
-<a name="l01327"></a>01327           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createV (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, volts, saveOPs);
+<a name="l01327"></a>01327           <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createV (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, volts, saveOPs);
 <a name="l01328"></a>01328           <span class="keywordflow">if</span>(!n.empty())
 <a name="l01329"></a>01329             {
 <a name="l01330"></a>01330                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>), f);
@@ -1397,7 +1397,7 @@
 <a name="l01337"></a>01337     {
 <a name="l01338"></a>01338         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> = 0; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> &lt; <a class="code" href="evaluate_8cpp.html#a92592142cb41364b6fe6ef9cc1a16dbd">M</a>; <a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>++)
 <a name="l01339"></a>01339         {
-<a name="l01340"></a>01340           std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createI (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, amps, saveOPs);
+<a name="l01340"></a>01340           <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createI (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a>, amps, saveOPs);
 <a name="l01341"></a>01341           <span class="keywordflow">if</span> (!n.empty())
 <a name="l01342"></a>01342             {
 <a name="l01343"></a>01343                 saveVariable (n, <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>-&gt;get (<a class="code" href="parse__mdl_8y.html#a514f1b439f404f86f77090fa9edc96ce">r</a> + N), f);
@@ -1415,7 +1415,7 @@
 <a name="l01355"></a>01355             <span class="keywordflow">if</span> (!<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getSubcircuit().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>)) <span class="keywordflow">continue</span>;
 <a name="l01356"></a>01356             <span class="keywordflow">if</span> (volts != <span class="stringliteral">&quot;vn&quot;</span>)
 <a name="l01357"></a>01357                 <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;saveOperatingPoints ();          
-<a name="l01358"></a>01358             std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), volts);
+<a name="l01358"></a>01358             <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), volts);
 <a name="l01359"></a>01359             saveVariable (n, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vr&quot;</span>),
 <a name="l01360"></a>01360                                    <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoint (<span class="stringliteral">&quot;Vi&quot;</span>)), f);
 <a name="l01361"></a>01361         }
@@ -1433,7 +1433,7 @@
 <a name="l01373"></a>01373             <span class="keywordflow">for</span> (<span class="keyword">auto</span> ops: <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getOperatingPoints ())
 <a name="l01374"></a>01374             {
 <a name="l01375"></a>01375                 <a class="code" href="structqucs.html#a5cf184620dc537d2fa681cd8ef499c27">operatingpoint</a> &amp;p = ops.second;
-<a name="l01376"></a>01376                 std::string <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), p.getName ());
+<a name="l01376"></a>01376                 <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = createOP (<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>-&gt;getName (), p.getName ());
 <a name="l01377"></a>01377                 saveVariable (n, p.getValue (), f);
 <a name="l01378"></a>01378             }
 <a name="l01379"></a>01379         }
@@ -1443,7 +1443,7 @@
 <a name="l01383"></a>01383 <span class="comment">/* Create an appropriate variable name for operating points.  The</span>
 <a name="l01384"></a>01384 <span class="comment">   caller is responsible to free() the returned string. */</span>
 <a name="l01385"></a>01385 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01386"></a><a class="code" href="classqucs_1_1nasolver.html#af04d0a96ec03713b976aacac341360a7">01386</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createOP</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
+<a name="l01386"></a><a class="code" href="classqucs_1_1nasolver.html#af04d0a96ec03713b976aacac341360a7">01386</a> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createOP</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>)
 <a name="l01387"></a>01387 {
 <a name="l01388"></a>01388     <span class="keywordflow">return</span> c+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
 <a name="l01389"></a>01389 }
@@ -1451,39 +1451,39 @@
 <a name="l01391"></a>01391 <span class="comment">/* Creates an appropriate variable name for voltages.  The caller is</span>
 <a name="l01392"></a>01392 <span class="comment">   responsible to free() the returned string. */</span>
 <a name="l01393"></a>01393 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01394"></a><a class="code" href="classqucs_1_1nasolver.html#a782d40d12f44ad9b66889f1659ee6bfe">01394</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createV</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;volts, <span class="keywordtype">int</span> saveOPs)
+<a name="l01394"></a><a class="code" href="classqucs_1_1nasolver.html#a782d40d12f44ad9b66889f1659ee6bfe">01394</a> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createV</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;volts, <span class="keywordtype">int</span> saveOPs)
 <a name="l01395"></a>01395 {
 <a name="l01396"></a>01396     <span class="keywordflow">if</span> (nlist-&gt;isInternal (n))
-<a name="l01397"></a>01397       <span class="keywordflow">return</span> std::string();
-<a name="l01398"></a>01398     std::string <a class="code" href="classqucs_1_1node.html">node</a> = nlist-&gt;get (n);
+<a name="l01397"></a>01397       <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
+<a name="l01398"></a>01398     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1node.html">node</a> = nlist-&gt;get (n);
 <a name="l01399"></a>01399     <span class="keywordflow">if</span>(node.find(<span class="charliteral">&#39;.&#39;</span>)!=std::string::npos &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
-<a name="l01400"></a>01400       <span class="keywordflow">return</span> std::string();
-<a name="l01401"></a>01401     std::string ret = node+<span class="stringliteral">&quot;.&quot;</span>+volts;
+<a name="l01400"></a>01400       <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
+<a name="l01401"></a>01401     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> ret = node+<span class="stringliteral">&quot;.&quot;</span>+volts;
 <a name="l01402"></a>01402     <span class="keywordflow">return</span> ret;
 <a name="l01403"></a>01403 }
 <a name="l01404"></a>01404 
 <a name="l01405"></a>01405 <span class="comment">/* Create an appropriate variable name for currents.  The caller is</span>
 <a name="l01406"></a>01406 <span class="comment">   responsible to free() the returned string. */</span>
 <a name="l01407"></a>01407 <span class="keyword">template</span> &lt;<span class="keyword">class</span> nr_type_t&gt;
-<a name="l01408"></a><a class="code" href="classqucs_1_1nasolver.html#a958a9fb65bb154b7e6f2881f3aefa22d">01408</a> std::string <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createI</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> std::string &amp;amps, <span class="keywordtype">int</span> saveOPs)
+<a name="l01408"></a><a class="code" href="classqucs_1_1nasolver.html#a958a9fb65bb154b7e6f2881f3aefa22d">01408</a> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;::createI</a> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;amps, <span class="keywordtype">int</span> saveOPs)
 <a name="l01409"></a>01409 {
 <a name="l01410"></a>01410     <a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> * vs = findVoltageSource (n);
 <a name="l01411"></a>01411 
 <a name="l01412"></a>01412     <span class="comment">// don&#39;t output internal (helper) voltage sources</span>
 <a name="l01413"></a>01413     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a47571bb02f1a91f15d2f5113dc218394">isInternalVoltageSource</a> ())
-<a name="l01414"></a>01414       <span class="keywordflow">return</span> std::string();
+<a name="l01414"></a>01414       <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
 <a name="l01415"></a>01415 
 <a name="l01416"></a>01416     <span class="comment">/* save only current through real voltage sources and explicit</span>
 <a name="l01417"></a>01417 <span class="comment">       current probes */</span>
 <a name="l01418"></a>01418     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#afeaa2dee98525fc02dd5969ec28cdb46">isVSource</a> () &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#a136808d349e47fd30a0eb5e2984adeee">SAVE_OPS</a>))
-<a name="l01419"></a>01419       <span class="keywordflow">return</span> std::string();
+<a name="l01419"></a>01419       <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
 <a name="l01420"></a>01420 
 <a name="l01421"></a>01421     <span class="comment">// don&#39;t output subcircuit components if not requested</span>
 <a name="l01422"></a>01422     <span class="keywordflow">if</span> (!vs-&gt;<a class="code" href="classqucs_1_1circuit.html#ab6465479d9cff61bcfe7869b678790b7">getSubcircuit</a> ().empty() &amp;&amp; !(saveOPs &amp; <a class="code" href="analysis_8h.html#af16d225d729cd6e3183261ab324d814b">SAVE_ALL</a>))
-<a name="l01423"></a>01423       <span class="keywordflow">return</span> std::string();
+<a name="l01423"></a>01423       <span class="keywordflow">return</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
 <a name="l01424"></a>01424 
 <a name="l01425"></a>01425     <span class="comment">// create appropriate current name for single/multiple voltage sources</span>
-<a name="l01426"></a>01426     std::string <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ();
+<a name="l01426"></a>01426     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = vs-&gt;<a class="code" href="classqucs_1_1object.html#a3134f6d4b6abda0fb40ac2a9fb4344cc" title="Get the name of the object.">getName</a> ();
 <a name="l01427"></a>01427     <span class="keywordflow">if</span> (vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a4665cb89cb115ad292275212a9e47144">getVoltageSources</a> () &gt; 1)
 <a name="l01428"></a>01428       <span class="keywordflow">return</span> name+<span class="stringliteral">&quot;.&quot;</span>+amps+std::to_string(n - vs-&gt;<a class="code" href="classqucs_1_1circuit.html#a393ca06fd0735f88c9cd98e82a67a074">getVoltageSource</a> () + 1);
 <a name="l01429"></a>01429     <span class="keywordflow">else</span>
@@ -1510,7 +1510,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

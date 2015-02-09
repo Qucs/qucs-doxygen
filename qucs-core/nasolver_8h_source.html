@@ -112,7 +112,7 @@
 <a name="l00052"></a>00052 {
 <a name="l00053"></a>00053 <span class="keyword">public</span>:
 <a name="l00054"></a>00054     <a class="code" href="classqucs_1_1nasolver.html">nasolver</a> ();
-<a name="l00055"></a>00055     <a class="code" href="classqucs_1_1nasolver.html">nasolver</a> (<span class="keyword">const</span> std::string&amp;);
+<a name="l00055"></a>00055     <a class="code" href="classqucs_1_1nasolver.html">nasolver</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>&amp;);
 <a name="l00056"></a>00056     <a class="code" href="classqucs_1_1nasolver.html">nasolver</a> (<a class="code" href="classqucs_1_1nasolver.html">nasolver</a> &amp;);
 <a name="l00057"></a>00057     ~<a class="code" href="classqucs_1_1nasolver.html">nasolver</a> ();
 <a name="l00058"></a>00058     <span class="keywordtype">int</span>  <a class="code" href="classqucs_1_1nasolver.html#ab2d2856208954e2619e2a417775b3372">solve_once</a> (<span class="keywordtype">void</span>);
@@ -122,9 +122,9 @@
 <a name="l00062"></a>00062     <span class="keywordtype">int</span>  <a class="code" href="classqucs_1_1nasolver.html#aa6569bfed1dfee556ee79842373509bf">solve_linear</a> (<span class="keywordtype">void</span>);
 <a name="l00063"></a>00063     <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html#a880c216ea3ca329c03e78f5caf6e6fd4">solve_pre</a> (<span class="keywordtype">void</span>);
 <a name="l00064"></a>00064     <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html#a92600d02c4b536170044834e2a8531f6">solve_post</a> (<span class="keywordtype">void</span>);
-<a name="l00065"></a><a class="code" href="classqucs_1_1nasolver.html#a629e3245d6077438740cf5c57d50c8e2">00065</a>     <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html#a629e3245d6077438740cf5c57d50c8e2">setDescription</a> (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) { desc = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; }
-<a name="l00066"></a><a class="code" href="classqucs_1_1nasolver.html#acf3cfe918702ddfa0c66c1717bae4909">00066</a>     std::string <a class="code" href="classqucs_1_1nasolver.html#acf3cfe918702ddfa0c66c1717bae4909">getDescription</a> (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> desc; }
-<a name="l00067"></a>00067     <span class="keywordtype">void</span> saveResults (<span class="keyword">const</span> std::string &amp;, <span class="keyword">const</span> std::string &amp;, <span class="keywordtype">int</span>, qucs::vector * f = NULL);
+<a name="l00065"></a><a class="code" href="classqucs_1_1nasolver.html#a629e3245d6077438740cf5c57d50c8e2">00065</a>     <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html#a629e3245d6077438740cf5c57d50c8e2">setDescription</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) { desc = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>; }
+<a name="l00066"></a><a class="code" href="classqucs_1_1nasolver.html#acf3cfe918702ddfa0c66c1717bae4909">00066</a>     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1nasolver.html#acf3cfe918702ddfa0c66c1717bae4909">getDescription</a> (<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> desc; }
+<a name="l00067"></a>00067     <span class="keywordtype">void</span> saveResults (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;, <span class="keywordtype">int</span>, qucs::vector * f = NULL);
 <a name="l00068"></a><a class="code" href="classqucs_1_1nasolver.html#a8a804b1f4ba868913a6da2568bdf75e4">00068</a>     <span class="keyword">typedef</span> void (* calculate_func_t) (<a class="code" href="classqucs_1_1nasolver.html">nasolver&lt;nr_type_t&gt;</a> *);
 <a name="l00069"></a><a class="code" href="classqucs_1_1nasolver.html#ad5b0796e64c30a8f4cf5f0a09ffc38ae">00069</a>     <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nasolver.html#ad5b0796e64c30a8f4cf5f0a09ffc38ae">setCalculation</a> (calculate_func_t f) { calculate_func = f; }
 <a name="l00070"></a><a class="code" href="classqucs_1_1nasolver.html#a45f068dc4416e3f3d5322ec560f6b679">00070</a>     <span class="keywordtype">void</span> calculate (<span class="keywordtype">void</span>)
@@ -142,7 +142,7 @@
 <a name="l00084"></a>00084     <span class="keywordtype">void</span> savePreviousIteration (<span class="keywordtype">void</span>);
 <a name="l00085"></a>00085     <span class="keywordtype">void</span> restorePreviousIteration (<span class="keywordtype">void</span>);
 <a name="l00086"></a>00086     <span class="keywordtype">int</span>  countNodes (<span class="keywordtype">void</span>);
-<a name="l00087"></a>00087     <span class="keywordtype">int</span>  getNodeNr (<span class="keyword">const</span> std::string &amp;);
+<a name="l00087"></a>00087     <span class="keywordtype">int</span>  getNodeNr (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;);
 <a name="l00088"></a>00088     <span class="keywordtype">int</span>  findAssignedNode (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *, <span class="keywordtype">int</span>);
 <a name="l00089"></a>00089     <span class="keywordtype">int</span>  countVoltageSources (<span class="keywordtype">void</span>);
 <a name="l00090"></a>00090     <span class="keywordtype">void</span> saveSolution (<span class="keywordtype">void</span>);
@@ -167,9 +167,9 @@
 <a name="l00109"></a>00109     <span class="keywordtype">void</span> applyAttenuation (<span class="keywordtype">void</span>);
 <a name="l00110"></a>00110     <span class="keywordtype">void</span> lineSearch (<span class="keywordtype">void</span>);
 <a name="l00111"></a>00111     <span class="keywordtype">void</span> steepestDescent (<span class="keywordtype">void</span>);
-<a name="l00112"></a>00112     std::string createV (<span class="keywordtype">int</span>, <span class="keyword">const</span> std::string&amp;, <span class="keywordtype">int</span>);
-<a name="l00113"></a>00113     std::string createI (<span class="keywordtype">int</span>, <span class="keyword">const</span> std::string&amp;, <span class="keywordtype">int</span>);
-<a name="l00114"></a>00114     std::string createOP (<span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> std::string &amp;);
+<a name="l00112"></a>00112     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> createV (<span class="keywordtype">int</span>, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>&amp;, <span class="keywordtype">int</span>);
+<a name="l00113"></a>00113     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> createI (<span class="keywordtype">int</span>, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>&amp;, <span class="keywordtype">int</span>);
+<a name="l00114"></a>00114     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> createOP (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>&amp;, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;);
 <a name="l00115"></a>00115     <span class="keywordtype">void</span> saveNodeVoltages (<span class="keywordtype">void</span>);
 <a name="l00116"></a>00116     <span class="keywordtype">void</span> saveBranchCurrents (<span class="keywordtype">void</span>);
 <a name="l00117"></a>00117     nr_type_t MatValX (<a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> *);
@@ -188,7 +188,7 @@
 <a name="l00130"></a><a class="code" href="classqucs_1_1nasolver.html#a6431ca92d391749f2025db3446fd2c68">00130</a>     <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html#a6431ca92d391749f2025db3446fd2c68">eqnAlgo</a>;
 <a name="l00131"></a><a class="code" href="classqucs_1_1nasolver.html#a6523dbb0430b5517e9260b6ae11f7b7a">00131</a>     <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nasolver.html#a6523dbb0430b5517e9260b6ae11f7b7a">updateMatrix</a>;
 <a name="l00132"></a><a class="code" href="classqucs_1_1nasolver.html#a830b4636c91ed2b25552b15f61b12db0">00132</a>     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> gMin, <a class="code" href="classqucs_1_1nasolver.html#a830b4636c91ed2b25552b15f61b12db0">srcFactor</a>;
-<a name="l00133"></a><a class="code" href="classqucs_1_1nasolver.html#a50713fb9dd92b8ae9e781afea1e6dabc">00133</a>     std::string <a class="code" href="classqucs_1_1nasolver.html#a50713fb9dd92b8ae9e781afea1e6dabc">desc</a>;
+<a name="l00133"></a><a class="code" href="classqucs_1_1nasolver.html#a50713fb9dd92b8ae9e781afea1e6dabc">00133</a>     <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1nasolver.html#a50713fb9dd92b8ae9e781afea1e6dabc">desc</a>;
 <a name="l00134"></a><a class="code" href="classqucs_1_1nasolver.html#a1cd43e1591e2aa3936e7e468a590f5b1">00134</a>     <a class="code" href="classqucs_1_1nodelist.html">nodelist</a> * <a class="code" href="classqucs_1_1nasolver.html#a1cd43e1591e2aa3936e7e468a590f5b1">nlist</a>;
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136 <span class="keyword">private</span>:
@@ -212,7 +212,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -102,7 +102,7 @@
 <a name="l00055"></a>00055 {
 <a name="l00056"></a>00056  <span class="keyword">public</span>:
 <a name="l00057"></a>00057   <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> ();
-<a name="l00058"></a>00058   <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> (<span class="keyword">const</span> std::string &amp; p_name);
+<a name="l00058"></a>00058   <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp; p_name);
 <a name="l00059"></a>00059   <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp;);
 <a name="l00060"></a>00060   <span class="keyword">virtual</span> ~<a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> ();
 <a name="l00061"></a>00061   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1environment.html#a54789f3d29ed725ab1cc0c7a85a2c4b1">copy</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1environment.html" title="Houses the settings for netlist evaluation.">environment</a> &amp;);
@@ -150,16 +150,16 @@
 <a name="l00105"></a>00105     <a class="code" href="classqucs_1_1environment.html#a0b8a06e5e53d71ba0a2d005b8e8c3077">children</a>.remove (child);
 <a name="l00106"></a>00106   }
 <a name="l00107"></a>00107 
-<a name="l00109"></a><a class="code" href="classqucs_1_1environment.html#ace2fec15efb93ad7ef84163dde9941c0">00109</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1environment.html#ace2fec15efb93ad7ef84163dde9941c0">setName</a> (<span class="keyword">const</span> std::string &amp;p_name) {
+<a name="l00109"></a><a class="code" href="classqucs_1_1environment.html#ace2fec15efb93ad7ef84163dde9941c0">00109</a>   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1environment.html#ace2fec15efb93ad7ef84163dde9941c0">setName</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;p_name) {
 <a name="l00110"></a>00110     this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = p_name;
 <a name="l00111"></a>00111   }
 <a name="l00112"></a>00112 
-<a name="l00114"></a><a class="code" href="classqucs_1_1environment.html#a8883c202686d8c4aa2e69283d5377e9e">00114</a>   <span class="keyword">const</span> std::string &amp; <a class="code" href="classqucs_1_1environment.html#a8883c202686d8c4aa2e69283d5377e9e">getName</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00114"></a><a class="code" href="classqucs_1_1environment.html#a8883c202686d8c4aa2e69283d5377e9e">00114</a>   <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp; <a class="code" href="classqucs_1_1environment.html#a8883c202686d8c4aa2e69283d5377e9e">getName</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
 <a name="l00115"></a>00115     <span class="keywordflow">return</span> this-&gt;<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>;
 <a name="l00116"></a>00116   }
 <a name="l00117"></a>00117 
 <a name="l00118"></a>00118  <span class="keyword">private</span>:
-<a name="l00119"></a><a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">00119</a>   std::string <a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
+<a name="l00119"></a><a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">00119</a>   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="classqucs_1_1environment.html#abe4dc9a353ad166a05bfa62b1d3aed40">name</a>;
 <a name="l00120"></a><a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">00120</a>   <a class="code" href="classqucs_1_1variable.html">variable</a> * <a class="code" href="classqucs_1_1environment.html#a720e493e3b764770e63cc76fa96439d3">root</a>;
 <a name="l00121"></a><a class="code" href="classqucs_1_1environment.html#ac6b778bdeca5442d529f3ede9774c040">00121</a>   eqn::checker * <a class="code" href="classqucs_1_1environment.html#ac6b778bdeca5442d529f3ede9774c040">checkee</a>;
 <a name="l00122"></a><a class="code" href="classqucs_1_1environment.html#a7074076365eb5d3c469b21e4b73eb1d1">00122</a>   eqn::solver * <a class="code" href="classqucs_1_1environment.html#a7074076365eb5d3c469b21e4b73eb1d1">solvee</a>;
@@ -175,7 +175,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:04 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:32:53 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -101,7 +101,7 @@
 <a name="l00041"></a>00041 
 <a name="l00042"></a><a class="code" href="structqucs_1_1nodelist__t.html">00042</a> <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> {
 <a name="l00043"></a>00043 <span class="keyword">public</span>:
-<a name="l00044"></a><a class="code" href="structqucs_1_1nodelist__t.html#a97e034f834d897834a23f2e3e9c46814">00044</a>   <a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">bool</span> intern = <span class="keyword">false</span>) :
+<a name="l00044"></a><a class="code" href="structqucs_1_1nodelist__t.html#a97e034f834d897834a23f2e3e9c46814">00044</a>   <a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">bool</span> intern = <span class="keyword">false</span>) :
 <a name="l00045"></a>00045     <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>(0), <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>(<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>), <a class="code" href="structqucs_1_1nodelist__t.html#a97fa32f7eebeb482ceb064d154ef9ada">internal</a>(intern), <a class="code" href="parse__netlist_8y.html#a6da5270e48c8b5c2f0dbaa008af4df76">nodes</a>() {}
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047   nodelist_t(nodelist_t &amp;<a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>) = <span class="keywordflow">default</span>;
@@ -119,7 +119,7 @@
 <a name="l00059"></a>00059 <span class="preprocessor">#endif</span>
 <a name="l00060"></a>00060 <span class="preprocessor"></span>
 <a name="l00062"></a><a class="code" href="structqucs_1_1nodelist__t.html#adb05bc3207e7adc4df3d26ca7e489c26">00062</a>   std::size_t <a class="code" href="structqucs_1_1nodelist__t.html#adb05bc3207e7adc4df3d26ca7e489c26">n</a>;
-<a name="l00064"></a><a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">00064</a>   std::string <a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">name</a>;
+<a name="l00064"></a><a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">00064</a>   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <a class="code" href="structqucs_1_1nodelist__t.html#a77b43c75dca945562a4b5d070d0f5510">name</a>;
 <a name="l00065"></a><a class="code" href="structqucs_1_1nodelist__t.html#a97fa32f7eebeb482ceb064d154ef9ada">00065</a>   <span class="keywordtype">bool</span> <span class="keyword">internal</span>;
 <a name="l00066"></a>00066 
 <a name="l00067"></a><a class="code" href="structqucs_1_1nodelist__t.html#a7d2e295b7c552f0717365e61283f16cc">00067</a>   <a class="code" href="structqucs_1_1nodelist__t.html#ab2d9de80fec7e71cb6cb2731aa9893b1">reference</a> operator[] (<a class="code" href="structqucs_1_1nodelist__t.html#afb551e4d2de55b125cb16ca9fa3e0a5d">size_type</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
@@ -170,17 +170,17 @@
 <a name="l00112"></a>00112   <a class="code" href="classqucs_1_1nodelist.html">nodelist</a> (<a class="code" href="classqucs_1_1net.html">net</a> *);
 <a name="l00113"></a>00113   ~<a class="code" href="classqucs_1_1nodelist.html">nodelist</a> ();
 <a name="l00114"></a>00114   <span class="keywordtype">int</span> length (<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
-<a name="l00115"></a>00115   <span class="keywordtype">int</span> getNodeNr (<span class="keyword">const</span> std::string &amp;) <span class="keyword">const</span> ;
-<a name="l00116"></a>00116   std::string <span class="keyword">get</span> (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>) <span class="keyword">const</span> ;
+<a name="l00115"></a>00115   <span class="keywordtype">int</span> getNodeNr (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;) <span class="keyword">const</span> ;
+<a name="l00116"></a>00116   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> <span class="keyword">get</span> (<a class="code" href="parse__citi_8y.html#a410a93b01e4266fc225a4c9cd6349be4">int</a>) <span class="keyword">const</span> ;
 <a name="l00117"></a>00117   <span class="keywordtype">bool</span> isInternal (<span class="keywordtype">int</span>) <span class="keyword">const</span> ;
 <a name="l00118"></a>00118   <span class="keywordtype">void</span> assignNodes (<span class="keywordtype">void</span>);
 <a name="l00119"></a>00119   <span class="keywordtype">void</span> print (<span class="keywordtype">void</span>) <span class="keyword">const</span>;
-<a name="l00120"></a>00120   std::string getNodeString (<span class="keywordtype">int</span>) <span class="keyword">const</span>;
+<a name="l00120"></a>00120   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> getNodeString (<span class="keywordtype">int</span>) <span class="keyword">const</span>;
 <a name="l00121"></a>00121   <span class="keywordtype">void</span> sort (<span class="keywordtype">void</span>);
 <a name="l00122"></a>00122   <span class="keywordtype">void</span> <span class="keyword">remove</span> (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *);
 <a name="l00123"></a>00123   <span class="keywordtype">void</span> insert (<a class="code" href="classqucs_1_1circuit.html" title="base class for qucs circuit elements.">circuit</a> *);
 <a name="l00124"></a>00124   <span class="keywordtype">void</span> sortedNodes (<a class="code" href="classqucs_1_1node.html">node</a> **, <a class="code" href="classqucs_1_1node.html">node</a> **);
-<a name="l00125"></a>00125   <span class="keyword">struct </span>nodelist_t * getNode (<span class="keyword">const</span> std::string &amp;) <span class="keyword">const</span>;
+<a name="l00125"></a>00125   <span class="keyword">struct </span>nodelist_t * getNode (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;) <span class="keyword">const</span>;
 <a name="l00126"></a><a class="code" href="classqucs_1_1nodelist.html#a7d645282e37cffc6dedea750a2724033">00126</a>   <span class="keyword">struct </span><a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> * <a class="code" href="classqucs_1_1nodelist.html#a7d645282e37cffc6dedea750a2724033">getNode</a> (<span class="keywordtype">int</span> nr)<span class="keyword"> const </span>{
 <a name="l00127"></a>00127     <span class="keywordflow">return</span> <a class="code" href="classqucs_1_1nodelist.html#a2b9ebe7031ef7e08eb8cf252f66dfb37">narray</a>[nr + 1];
 <a name="l00128"></a>00128   }
@@ -192,7 +192,7 @@
 <a name="l00134"></a><a class="code" href="classqucs_1_1nodelist.html#a2b9ebe7031ef7e08eb8cf252f66dfb37">00134</a>   std::vector&lt;nodelist_t *&gt; <a class="code" href="classqucs_1_1nodelist.html#a2b9ebe7031ef7e08eb8cf252f66dfb37">narray</a>;
 <a name="l00135"></a><a class="code" href="classqucs_1_1nodelist.html#a89a9ef4094bc2c1af5f5df2874ddee22">00135</a>   std::list&lt;nodelist_t *&gt; <a class="code" href="classqucs_1_1nodelist.html#a89a9ef4094bc2c1af5f5df2874ddee22">root</a>;
 <a name="l00136"></a><a class="code" href="classqucs_1_1nodelist.html#aa4f21611988b955bf824783e88062ada">00136</a>   <span class="keywordtype">int</span> <a class="code" href="classqucs_1_1nodelist.html#aa4f21611988b955bf824783e88062ada">sorting</a>;
-<a name="l00137"></a>00137   <span class="keywordtype">bool</span> <a class="code" href="classqucs_1_1nodelist.html#adbc247dd7a72eef96b48123c499b85aa">contains</a> (<span class="keyword">const</span> std::string &amp;) <span class="keyword">const</span>;
+<a name="l00137"></a>00137   <span class="keywordtype">bool</span> <a class="code" href="classqucs_1_1nodelist.html#adbc247dd7a72eef96b48123c499b85aa">contains</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;) <span class="keyword">const</span>;
 <a name="l00138"></a>00138   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nodelist.html#aa442555b08505814c25366176a3662d6">insert</a> (<span class="keyword">struct</span> <a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> *);
 <a name="l00139"></a>00139   <span class="keywordtype">void</span> <a class="code" href="classqucs_1_1nodelist.html#a3bd74b9e25d193ca31ecff10408f7465">addCircuitNode</a> (<span class="keyword">struct</span> <a class="code" href="structqucs_1_1nodelist__t.html">nodelist_t</a> *, <a class="code" href="classqucs_1_1node.html">node</a> *);
 <a name="l00140"></a>00140 };
@@ -204,7 +204,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

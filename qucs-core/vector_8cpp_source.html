@@ -144,7 +144,7 @@
 <a name="l00084"></a>00084 }
 <a name="l00085"></a>00085 
 <a name="l00086"></a>00086 <span class="comment">// Constructor creates an named instance of the vector class.</span>
-<a name="l00087"></a><a class="code" href="classqucs_1_1vector.html#a200ea7eda69e4d1d46860852d4508cbd">00087</a> vector::vector (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
+<a name="l00087"></a><a class="code" href="classqucs_1_1vector.html#a200ea7eda69e4d1d46860852d4508cbd">00087</a> vector::vector (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
 <a name="l00088"></a>00088   <a class="code" href="classqucs_1_1vector.html#adb213612686bc7fe1e1c36f39b2a8d0a">capacity</a> = <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> = 0;
 <a name="l00089"></a>00089   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = NULL;
 <a name="l00090"></a>00090   <a class="code" href="classqucs_1_1vector.html#a0636b2c3ab6e657cb5e698de6738659d">dependencies</a> = NULL;
@@ -155,7 +155,7 @@
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 <span class="comment">/* This constructor creates a named instance of the vector class with</span>
 <a name="l00097"></a>00097 <span class="comment">   a given initial size. */</span>
-<a name="l00098"></a><a class="code" href="classqucs_1_1vector.html#ace52ab6f2391f001da586c01205e82a9">00098</a>   vector::vector (<span class="keyword">const</span> std::string &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> s) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
+<a name="l00098"></a><a class="code" href="classqucs_1_1vector.html#ace52ab6f2391f001da586c01205e82a9">00098</a>   vector::vector (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>, <span class="keywordtype">int</span> s) : <a class="code" href="classqucs_1_1object.html" title="generic object class.">object</a> (n) {
 <a name="l00099"></a>00099   assert (s &gt;= 0);
 <a name="l00100"></a>00100   <a class="code" href="classqucs_1_1vector.html#adb213612686bc7fe1e1c36f39b2a8d0a">capacity</a> = <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> = s;
 <a name="l00101"></a>00101   <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> = s &gt; 0 ? (<a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> *)
@@ -301,7 +301,7 @@
 <a name="l00241"></a>00241 
 <a name="l00242"></a>00242 <span class="comment">/* Unwraps a phase vector in radians.  Adds +/- 2*Pi if consecutive</span>
 <a name="l00243"></a>00243 <span class="comment">   values jump about |Pi|. */</span>
-<a name="l00244"></a><a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">00244</a> vector <a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">unwrap</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="test__libqucs_8cpp.html#a2687e4b3cb5da7dbd00e565343f66c6c">tol</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a>) {
+<a name="l00244"></a><a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">00244</a> vector <a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">unwrap</a> (vector <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="testDefine_8h.html#a7fe7a2d892789540ed424673579f2f35">tol</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a>) {
 <a name="l00245"></a>00245   vector <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (v.getSize ());
 <a name="l00246"></a>00246   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__touchstone_8y.html#ae497fde5c5e9cfdd4ad26802f4bda864">add</a> = 0;
 <a name="l00247"></a>00247   <a class="code" href="parse__netlist_8y.html#a937d4dd628a8858b443a399410d2600b">result</a> (0) = <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> (0);
@@ -1335,7 +1335,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:07 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:01 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

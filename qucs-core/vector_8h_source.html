@@ -119,10 +119,10 @@
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060  <span class="keyword">public</span>:
 <a name="l00061"></a>00061   <a class="code" href="classqucs_1_1vector.html">vector</a> ();
-<a name="l00062"></a>00062   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keyword">const</span> std::string &amp;);
+<a name="l00062"></a>00062   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;);
 <a name="l00063"></a>00063   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keywordtype">int</span>);
 <a name="l00064"></a>00064   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keywordtype">int</span>, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>);
-<a name="l00065"></a>00065   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keyword">const</span> std::string &amp;, <span class="keywordtype">int</span>);
+<a name="l00065"></a>00065   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> &amp;, <span class="keywordtype">int</span>);
 <a name="l00066"></a>00066   <a class="code" href="classqucs_1_1vector.html">vector</a> (<span class="keyword">const</span> <a class="code" href="classqucs_1_1vector.html">vector</a> &amp;);
 <a name="l00067"></a>00067   <span class="keyword">const</span> <a class="code" href="classqucs_1_1vector.html">vector</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classqucs_1_1vector.html">vector</a> &amp;);
 <a name="l00068"></a>00068   ~<a class="code" href="classqucs_1_1vector.html">vector</a> ();
@@ -334,7 +334,7 @@
 <a name="l00274"></a>00274 vector <a class="code" href="namespacequcs.html#a0c4db4d0941a2db9a1eb174a45644131" title="Converts admittance to reflexion coefficient.">ytor</a>   (vector, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> zref = 50.0);
 <a name="l00275"></a>00275 vector <a class="code" href="namespacequcs.html#a41c6fe30558720b6d9f475f4cfa3b325" title="Converts reflexion coefficient to admittance.">rtoy</a>   (vector, <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> zref = 50.0);
 <a name="l00276"></a>00276 vector <a class="code" href="namespacequcs.html#a2731b66b996571ee75aaec98d07bba26">diff</a>   (vector, vector, <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 1);
-<a name="l00277"></a>00277 vector <a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">unwrap</a> (vector, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="test__libqucs_8cpp.html#a2687e4b3cb5da7dbd00e565343f66c6c">tol</a> = <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a> = 2 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a>);
+<a name="l00277"></a>00277 vector <a class="code" href="namespacequcs.html#a86d59cfaf00af577cd1e578238374cd8">unwrap</a> (vector, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="testDefine_8h.html#a7fe7a2d892789540ed424673579f2f35">tol</a> = <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="namespacequcs.html#a3f56d0621b319f8a3f5e705aaab00cee" title="Heaviside step function for complex number.">step</a> = 2 * <a class="code" href="group__qucsMathConstants.html#gadd6907124914c89edd2336be1f8f28c0" title="Archimedes&#39; constant ( )">pi</a>);
 <a name="l00278"></a>00278 vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a>   (vector, <span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>);
 <a name="l00279"></a>00279 vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a>   (<span class="keyword">const</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>, vector);
 <a name="l00280"></a>00280 vector <a class="code" href="namespacequcs.html#a931156708192db109ce016277f217b60" title="Construct a complex number using polar notation.">polar</a>   (vector, vector);
@@ -398,7 +398,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:07 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:01 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

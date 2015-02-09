@@ -112,7 +112,7 @@
 <a name="l00052"></a>00052 %<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>-prefix <span class="stringliteral">&quot;touchstone_&quot;</span>
 <a name="l00053"></a>00053 
 <a name="l00054"></a>00054 %token InvalidCharacter
-<a name="l00055"></a>00055 %token Float
+<a name="l00055"></a>00055 %token <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a>
 <a name="l00056"></a>00056 %token Option
 <a name="l00057"></a>00057 %token Eol
 <a name="l00058"></a>00058 
@@ -125,7 +125,7 @@
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066 %type &lt;list&gt; OptionList
 <a name="l00067"></a>00067 %type &lt;ident&gt; Option
-<a name="l00068"></a>00068 %type &lt;f&gt; Float
+<a name="l00068"></a>00068 %type &lt;f&gt; <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a>
 <a name="l00069"></a>00069 %type &lt;v&gt; DataLine Dataset
 <a name="l00070"></a>00070 
 <a name="l00071"></a>00071 %%
@@ -135,7 +135,7 @@
 <a name="l00075"></a>00075 ;
 <a name="l00076"></a>00076 
 <a name="l00077"></a>00077 OptionLine: <span class="comment">/* option line */</span>
-<a name="l00078"></a>00078     <span class="charliteral">&#39;#&#39;</span> OptionList <span class="charliteral">&#39;R&#39;</span> Float OptionList Eol {
+<a name="l00078"></a>00078     <span class="charliteral">&#39;#&#39;</span> OptionList <span class="charliteral">&#39;R&#39;</span> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> OptionList Eol {
 <a name="l00079"></a>00079     <a class="code" href="check__touchstone_8cpp.html#ab504450eae3d9e68c1639637131069d5">touchstone_vector</a> = NULL;
 <a name="l00080"></a>00080     <a class="code" href="check__touchstone_8cpp.html#af369afd60213e188a086604f10c52e6f">touchstone_options</a>.<a class="code" href="structtouchstone__t.html#a885a8b9771b5c4a7ba3d13a57466bff9">resistance</a> = $4;
 <a name="l00081"></a>00081   }
@@ -169,14 +169,14 @@
 <a name="l00109"></a>00109 ;
 <a name="l00110"></a>00110 
 <a name="l00111"></a>00111 DataLine:
-<a name="l00112"></a>00112     Float Float Float {
+<a name="l00112"></a>00112     <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00113"></a>00113     <span class="comment">/* 1-port start */</span>
 <a name="l00114"></a>00114     $$ = <span class="keyword">new</span> vector ();
 <a name="l00115"></a>00115     $$-&gt;add ($1);
 <a name="l00116"></a>00116     $$-&gt;add ($2);
 <a name="l00117"></a>00117     $$-&gt;add ($3);
 <a name="l00118"></a>00118   }
-<a name="l00119"></a>00119   | Float Float Float Float Float {
+<a name="l00119"></a>00119   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00120"></a>00120     <span class="comment">/* noise parameters */</span>
 <a name="l00121"></a>00121     $$ = <span class="keyword">new</span> vector ();
 <a name="l00122"></a>00122     $$-&gt;add ($1);
@@ -185,7 +185,7 @@
 <a name="l00125"></a>00125     $$-&gt;add ($4);
 <a name="l00126"></a>00126     $$-&gt;add ($5);
 <a name="l00127"></a>00127   }
-<a name="l00128"></a>00128   | Float Float Float Float Float Float Float Float Float {
+<a name="l00128"></a>00128   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00129"></a>00129     <span class="comment">/* 2-port and 4- to n-port start */</span>
 <a name="l00130"></a>00130     $$ = <span class="keyword">new</span> vector ();
 <a name="l00131"></a>00131     $$-&gt;add ($1);
@@ -198,7 +198,7 @@
 <a name="l00138"></a>00138     $$-&gt;add ($8);
 <a name="l00139"></a>00139     $$-&gt;add ($9);
 <a name="l00140"></a>00140   }
-<a name="l00141"></a>00141   | Float Float Float Float Float Float Float {
+<a name="l00141"></a>00141   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00142"></a>00142     <span class="comment">/* 3-port start */</span>
 <a name="l00143"></a>00143     $$ = <span class="keyword">new</span> vector ();
 <a name="l00144"></a>00144     $$-&gt;add ($1);
@@ -209,7 +209,7 @@
 <a name="l00149"></a>00149     $$-&gt;add ($6);
 <a name="l00150"></a>00150     $$-&gt;add ($7);
 <a name="l00151"></a>00151   }
-<a name="l00152"></a>00152   | Float Float Float Float Float Float Float Float {
+<a name="l00152"></a>00152   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00153"></a>00153     <span class="comment">/* 4- and n-port continued */</span>
 <a name="l00154"></a>00154     $$ = <span class="keyword">new</span> vector ();
 <a name="l00155"></a>00155     $$-&gt;add ($1);
@@ -221,7 +221,7 @@
 <a name="l00161"></a>00161     $$-&gt;add ($7);
 <a name="l00162"></a>00162     $$-&gt;add ($8);
 <a name="l00163"></a>00163   }
-<a name="l00164"></a>00164   | Float Float Float Float Float Float {
+<a name="l00164"></a>00164   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00165"></a>00165     <span class="comment">/* 3- and n-port continued */</span>
 <a name="l00166"></a>00166     $$ = <span class="keyword">new</span> vector ();
 <a name="l00167"></a>00167     $$-&gt;add ($1);
@@ -231,7 +231,7 @@
 <a name="l00171"></a>00171     $$-&gt;add ($5);
 <a name="l00172"></a>00172     $$-&gt;add ($6);
 <a name="l00173"></a>00173   }
-<a name="l00174"></a>00174   | Float Float Float Float {
+<a name="l00174"></a>00174   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00175"></a>00175     <span class="comment">/* n-port continued */</span>
 <a name="l00176"></a>00176     $$ = <span class="keyword">new</span> vector ();
 <a name="l00177"></a>00177     $$-&gt;add ($1);
@@ -239,7 +239,7 @@
 <a name="l00179"></a>00179     $$-&gt;add ($3);
 <a name="l00180"></a>00180     $$-&gt;add ($4);
 <a name="l00181"></a>00181   }
-<a name="l00182"></a>00182   | Float Float {
+<a name="l00182"></a>00182   | <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> <a class="code" href="namespacetesting_1_1internal.html#a97de600d6dbfffe7091b878ac4b3a9a7">Float</a> {
 <a name="l00183"></a>00183     <span class="comment">/* n-port continued */</span>
 <a name="l00184"></a>00184     $$ = <span class="keyword">new</span> vector ();
 <a name="l00185"></a>00185     $$-&gt;add ($1);
@@ -257,7 +257,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -107,7 +107,7 @@
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048 <span class="comment">// This constructor creates a named instance of the variable class.</span>
 <a name="l00049"></a><a class="code" href="classqucs_1_1variable.html#aed9a4e7d48d991e5837234ff7863691a">00049</a> variable::variable (<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l00050"></a>00050   <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = n ? std::string(n) : std::string();
+<a name="l00050"></a>00050   <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = n ? <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(n) : <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>();
 <a name="l00051"></a>00051   <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a> = NULL;
 <a name="l00052"></a>00052   <a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a> = <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3a5d2caa72b21849fe59a1d954364db571">VAR_UNKNOWN</a>;
 <a name="l00053"></a>00053   pass = <span class="keyword">true</span>;
@@ -126,7 +126,7 @@
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067 <span class="comment">// Creates textual representation of a variable.</span>
 <a name="l00068"></a><a class="code" href="classqucs_1_1variable.html#a09e7282d656b32c29f781b958101ac7d">00068</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * variable::toString (<span class="keywordtype">void</span>) {
-<a name="l00069"></a>00069   std::string text;
+<a name="l00069"></a>00069   <a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a> text;
 <a name="l00070"></a>00070   <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__spice_8y.html#ab50d783982593ef993ea0b68f7ad8b80">str</a> = NULL;
 <a name="l00071"></a>00071   <span class="keywordtype">char</span> * val = NULL;
 <a name="l00072"></a>00072   <span class="keywordflow">switch</span> (<a class="code" href="parse__vcd_8y.html#ae0bd5e8ec17b2aad3338041991eb1056">type</a>) {
@@ -135,24 +135,24 @@
 <a name="l00075"></a>00075     <span class="keywordflow">break</span>;
 <a name="l00076"></a>00076   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3ad0870e1746c3db803845652ff721b40b">VAR_CONSTANT</a>:
 <a name="l00077"></a>00077     str = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.c-&gt;toString ();
-<a name="l00078"></a>00078     text = <span class="stringliteral">&quot;constant: &quot;</span>+std::string(str);
+<a name="l00078"></a>00078     text = <span class="stringliteral">&quot;constant: &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(str);
 <a name="l00079"></a>00079     <span class="keywordflow">break</span>;
 <a name="l00080"></a>00080   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3aa53573f141627f7bf8e430b86e628508">VAR_VALUE</a>:
 <a name="l00081"></a>00081     str = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.v-&gt;toString ();
-<a name="l00082"></a>00082     text = <span class="stringliteral">&quot;value: &quot;</span>+std::string(str);
+<a name="l00082"></a>00082     text = <span class="stringliteral">&quot;value: &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(str);
 <a name="l00083"></a>00083     <span class="keywordflow">break</span>;
 <a name="l00084"></a>00084   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3a95af9ee92e28dd8f566d40ebec1b1217">VAR_REFERENCE</a>:
 <a name="l00085"></a>00085     str = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.r-&gt;toString ();
 <a name="l00086"></a>00086     val = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.r-&gt;getResult()-&gt;toString ();
-<a name="l00087"></a>00087     text = <span class="stringliteral">&quot;reference: &quot;</span>+std::string(str)+<span class="stringliteral">&quot; = &quot;</span>+std::string(val);
+<a name="l00087"></a>00087     text = <span class="stringliteral">&quot;reference: &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(str)+<span class="stringliteral">&quot; = &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(val);
 <a name="l00088"></a>00088     <span class="keywordflow">break</span>;
 <a name="l00089"></a>00089   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3ace565f909ff9c7228f8b044678c5aeff">VAR_SUBSTRATE</a>:
 <a name="l00090"></a>00090     str = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.s-&gt;getName ();
-<a name="l00091"></a>00091     text = <span class="stringliteral">&quot;substrate: &quot;</span>+std::string(str);
+<a name="l00091"></a>00091     text = <span class="stringliteral">&quot;substrate: &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(str);
 <a name="l00092"></a>00092     <span class="keywordflow">break</span>;
 <a name="l00093"></a>00093   <span class="keywordflow">case</span> <a class="code" href="structqucs.html#a68a1a25fc3c2c4db9068a07d393f27d3aa3f038f4446cf86322e7b8fb8cf8c185">VAR_ANALYSIS</a>:
 <a name="l00094"></a>00094     str = <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>.a-&gt;getName ();
-<a name="l00095"></a>00095     text = <span class="stringliteral">&quot;analysis: &quot;</span>+std::string(str);
+<a name="l00095"></a>00095     text = <span class="stringliteral">&quot;analysis: &quot;</span>+<a class="code" href="namespacetesting_1_1internal.html#a5ca8a348395a6145775c1a2334e21889">std::string</a>(str);
 <a name="l00096"></a>00096     <span class="keywordflow">break</span>;
 <a name="l00097"></a>00097   <span class="keywordflow">default</span>:
 <a name="l00098"></a>00098     text = <span class="stringliteral">&quot;?variable?&quot;</span>;
@@ -166,7 +166,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 11:45:07 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 9 2015 14:33:00 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
