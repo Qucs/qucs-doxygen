@@ -3,49 +3,49 @@
 <area shape="rect" id="node5" href="$classComponentDialog.html#a913b50a6f72f8a855d4b4cc20355803e" title="ComponentDialog::slotSimEntered" alt="" coords="309,59,531,88"/>
 <area shape="rect" id="node7" href="$classComponentDialog.html#a6f2d165b0beed640cd22d8c885f9d83b" title="ComponentDialog::slotSimTypeChange" alt="" coords="295,213,545,243"/>
 <area shape="rect" id="node9" href="$classComponentDialog.html#a44591604471a9ad6b245a98461bea1d9" title="ComponentDialog::slotNumberChanged" alt="" coords="595,211,848,240"/>
-<area shape="rect" id="node15" href="$classComponentDialog.html#ad6c5bdb2bab40553c87a283daa251927" title="ComponentDialog::slotValuesEntered" alt="" coords="300,368,540,397"/>
-<area shape="rect" id="node17" href="$classComponentDialog.html#a84e6f0b71050e4bc4ef7298b11e1cb47" title="ComponentDialog::slotButtOK" alt="" coords="623,447,820,476"/>
-<area shape="rect" id="node19" href="$classComponentDialog.html#aed67cc78776c23f0f1d9b84d6ed3d2f6" title="ComponentDialog::slotApplyInput" alt="" coords="899,369,1115,399"/>
+<area shape="rect" id="node15" href="$classComponentDialog.html#ad6c5bdb2bab40553c87a283daa251927" title="ComponentDialog::slotValuesEntered" alt="" coords="300,472,540,501"/>
+<area shape="rect" id="node17" href="$classComponentDialog.html#a84e6f0b71050e4bc4ef7298b11e1cb47" title="ComponentDialog::slotButtOK" alt="" coords="623,445,820,475"/>
+<area shape="rect" id="node19" href="$classComponentDialog.html#aed67cc78776c23f0f1d9b84d6ed3d2f6" title="ComponentDialog::slotApplyInput" alt="" coords="899,368,1115,397"/>
 <area shape="rect" id="node21" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="1225,264,1369,293"/>
 <area shape="rect" id="node33" href="$classComponentDialog.html#a1f494817f769449da0f592fc41abb4be" title="ComponentDialog::slotSelectProperty" alt="" coords="1489,867,1729,896"/>
 <area shape="rect" id="node35" href="$classComponentDialog.html#aa0b7e75a604e06786cb8cc01fec99485" title="ComponentDialog::slotButtCancel" alt="" coords="897,553,1116,583"/>
 <area shape="rect" id="node37" href="$classComponentDialog.html#aff84a6edbf0bc493ded988f2209f3f17" title="ComponentDialog::slotStartEntered" alt="" coords="307,525,533,555"/>
 <area shape="rect" id="node39" href="$classComponentDialog.html#ab61c05b2181f14d37c69ead322066297" title="ComponentDialog::slotStopEntered" alt="" coords="307,579,533,608"/>
 <area shape="rect" id="node41" href="$classComponentDialog.html#a7927392d0c213012f80a348566cf69ca" title="ComponentDialog::slotStepEntered" alt="" coords="307,632,533,661"/>
-<area shape="rect" id="node43" href="$classComponentDialog.html#a05e40625fb8df086fbcb90ffc8716827" title="ComponentDialog::slotNumberEntered" alt="" coords="297,472,543,501"/>
+<area shape="rect" id="node43" href="$classComponentDialog.html#a05e40625fb8df086fbcb90ffc8716827" title="ComponentDialog::slotNumberEntered" alt="" coords="297,419,543,448"/>
 <area shape="rect" id="node47" href="$classComponentDialog.html#af603393ad950e2adc3c99be750101239" title="ComponentDialog::slotStepChanged" alt="" coords="604,264,839,293"/>
 <area shape="rect" id="node51" href="$classComponentDialog.html#a3afad4fbb963ae929ed825b3421e221c" title="ComponentDialog::slotApplyPropName" alt="" coords="295,789,545,819"/>
 <area shape="rect" id="node53" href="$classComponentDialog.html#a5d25ceab33e4098e4b20a7c186a5d52e" title="Is called if the &quot;RETURN&quot; key is pressed in the &quot;edit&quot; Widget." alt="" coords="301,685,539,715"/>
 <area shape="rect" id="node57" href="$classComponentDialog.html#af71c8e0ffd04d56ae9117a13f3942193" title="ComponentDialog::slotApplyChange" alt="" coords="605,893,837,923"/>
 <area shape="rect" id="node60" href="$classComponentDialog.html#ad45267411ae461bd9e059f4edd068364" title="ComponentDialog::slotEditFile" alt="" coords="321,1152,519,1181"/>
-<area shape="rect" id="node109" href="$classComponentDialog.html#a08d8ec54bc3439db05657e4d890b6842" title="ComponentDialog::slotBrowseFile" alt="" coords="311,995,529,1024"/>
-<area shape="rect" id="node111" href="$classComponentDialog.html#a88e80a5b08c74357b8435752342a2f93" title="ComponentDialog::slotApplyState" alt="" coords="311,1048,529,1077"/>
-<area shape="rect" id="node113" href="$classComponentDialog.html#a95a6b79cc88f1d67d54a8fcdf609fa11" title="Add description if missing." alt="" coords="620,947,823,976"/>
-<area shape="rect" id="node116" href="$classComponentDialog.html#a1870a788984c5187a451b90f3f43a557" title="Is called if the remove button is pressed." alt="" coords="619,1049,824,1079"/>
+<area shape="rect" id="node102" href="$classComponentDialog.html#a08d8ec54bc3439db05657e4d890b6842" title="ComponentDialog::slotBrowseFile" alt="" coords="311,995,529,1024"/>
+<area shape="rect" id="node104" href="$classComponentDialog.html#a88e80a5b08c74357b8435752342a2f93" title="ComponentDialog::slotApplyState" alt="" coords="311,1048,529,1077"/>
+<area shape="rect" id="node106" href="$classComponentDialog.html#a95a6b79cc88f1d67d54a8fcdf609fa11" title="Add description if missing." alt="" coords="620,947,823,976"/>
+<area shape="rect" id="node109" href="$classComponentDialog.html#a1870a788984c5187a451b90f3f43a557" title="Is called if the remove button is pressed." alt="" coords="619,1049,824,1079"/>
+<area shape="rect" id="node112" href="$classComponentDialog.html#af410b89570a5bcc6c1173fe9918f6ed0" title="ComponentDialog::slotButtUp Move a table item up." alt="" coords="323,1205,517,1235"/>
+<area shape="rect" id="node114" href="$classComponentDialog.html#a35d1ee783f858adf8fd4a56824eecc34" title="ComponentDialog::slotButtDown Move a table item down." alt="" coords="313,1259,527,1288"/>
 <area shape="rect" id="node11" href="$namespacemisc.html#a97e56bf4173a32864170888a32880dee" title="misc::str2num" alt="" coords="955,264,1059,293"/>
 <area shape="rect" id="node13" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="955,211,1059,240"/>
-<area shape="rect" id="node23" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1195,369,1400,399"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1195,368,1400,397"/>
 <area shape="rect" id="node31" href="$classComponentDialog.html#ac42ec294e5b01f63b1cc76ba7bb8436e" title="ComponentDialog::updateCompPropsList" alt="" coords="1167,476,1428,505"/>
-<area shape="rect" id="node25" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1537,343,1681,372"/>
-<area shape="rect" id="node27" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="1517,396,1701,425"/>
-<area shape="rect" id="node29" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="1803,396,1971,425"/>
+<area shape="rect" id="node25" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1537,341,1681,371"/>
+<area shape="rect" id="node27" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="1517,395,1701,424"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984" title="Schematic::getWireLabel" alt="" coords="1811,395,1979,424"/>
 <area shape="rect" id="node62" href="$classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="659,1152,784,1181"/>
 <area shape="rect" id="node64" href="$classQucsApp.html#a9ed09eeae42bf73919e74a039228c49f" title="QucsApp::slotTextNew" alt="" coords="928,1073,1085,1103"/>
 <area shape="rect" id="node66" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="1220,1073,1375,1103"/>
 <area shape="rect" id="node69" href="$classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="937,1231,1076,1260"/>
-<area shape="rect" id="node107" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="921,1177,1092,1207"/>
+<area shape="rect" id="node100" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="921,1177,1092,1207"/>
 <area shape="rect" id="node71" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="1233,1231,1361,1260"/>
 <area shape="rect" id="node73" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="1547,1179,1672,1208"/>
 <area shape="rect" id="node77" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="1523,1389,1696,1419"/>
 <area shape="rect" id="node79" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="1243,1127,1352,1156"/>
 <area shape="rect" id="node81" href="$classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1208,1284,1387,1313"/>
-<area shape="rect" id="node75" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1797,1204,1976,1233"/>
+<area shape="rect" id="node75" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1805,1204,1984,1233"/>
 <area shape="rect" id="node84" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1505,1336,1713,1365"/>
-<area shape="rect" id="node101" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="1477,1283,1741,1312"/>
-<area shape="rect" id="node86" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1789,1323,1984,1352"/>
-<area shape="rect" id="node93" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="2343,1349,2551,1379"/>
-<area shape="rect" id="node96" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="2600,1349,2832,1379"/>
-<area shape="rect" id="node88" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="2076,1297,2249,1327"/>
-<area shape="rect" id="node90" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="2033,1244,2292,1273"/>
-<area shape="rect" id="node103" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="1799,1269,1975,1299"/>
+<area shape="rect" id="node94" href="$classQucsApp.html#a3276d8bf976ce9cbe96880dcb88bfc33" title="QucsApp::changeSchematicSymbolMode" alt="" coords="1477,1283,1741,1312"/>
+<area shape="rect" id="node86" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="2067,1335,2261,1364"/>
+<area shape="rect" id="node88" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1791,1373,1999,1403"/>
+<area shape="rect" id="node91" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="2048,1400,2280,1429"/>
+<area shape="rect" id="node96" href="$classQucsApp.html#a4ec09c549f14f02a761668c245b3f6b1" title="QucsApp::switchEditMode" alt="" coords="1807,1269,1983,1299"/>
 </map>

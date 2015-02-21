@@ -22,6 +22,7 @@ var searchData=
   ['buttchangeicon',['ButtChangeIcon',['../classLoadDialog.html#a2d6b97c35a7ebbcb60d375146fa66dbd',1,'LoadDialog']]],
   ['buttclose',['ButtClose',['../classPackageDialog.html#a585dc617b1deed41fbe209037286bd7d',1,'PackageDialog']]],
   ['buttcreatenext',['ButtCreateNext',['../classLibraryDialog.html#a1129d8d9c7e04663636605271e934290',1,'LibraryDialog']]],
+  ['buttdown',['ButtDown',['../classComponentDialog.html#ababb23986a5f1c31844f9895bf3b82e3',1,'ComponentDialog']]],
   ['buttedit',['ButtEdit',['../classSpiceDialog.html#a5ee1624876e90081a17b3a53e6126324',1,'SpiceDialog']]],
   ['buttok',['ButtOk',['../classLoadDialog.html#a8c8dadc52a7326bf35ad362ec0bf3dd7',1,'LoadDialog::ButtOk()'],['../classSpiceDialog.html#ad5cbc91a9ab49cfd8293e1e498ff9df3',1,'SpiceDialog::ButtOK()']]],
   ['buttoncancel',['ButtonCancel',['../classLabelDialog.html#a055816b825abd0869caad67abc154818',1,'LabelDialog::ButtonCancel()'],['../classNewProjDialog.html#a755b695bdf7791b5f976965866cd2b43',1,'NewProjDialog::ButtonCancel()']]],
@@ -32,5 +33,6 @@ var searchData=
   ['buttrem',['ButtRem',['../classComponentDialog.html#a1e4609279ebf12ef9b75aa541abe191b',1,'ComponentDialog']]],
   ['buttremove',['ButtRemove',['../classSpiceDialog.html#a405ceefea86b6068dfc66d0ebf689b47',1,'SpiceDialog']]],
   ['buttselectall',['ButtSelectAll',['../classLibraryDialog.html#a7bfbe8e2617a4d0b3ebbbb4f04ec4dfb',1,'LibraryDialog::ButtSelectAll()'],['../classLoadDialog.html#a2ee47dc484de1cde9c0b81029b732842',1,'LoadDialog::ButtSelectAll()']]],
-  ['buttselectnone',['ButtSelectNone',['../classLibraryDialog.html#a886f05e692bddca866db527516f70f14',1,'LibraryDialog::ButtSelectNone()'],['../classLoadDialog.html#ab1026ddab2c72cb7f0c603ec0ff8d2a5',1,'LoadDialog::ButtSelectNone()']]]
+  ['buttselectnone',['ButtSelectNone',['../classLibraryDialog.html#a886f05e692bddca866db527516f70f14',1,'LibraryDialog::ButtSelectNone()'],['../classLoadDialog.html#ab1026ddab2c72cb7f0c603ec0ff8d2a5',1,'LoadDialog::ButtSelectNone()']]],
+  ['buttup',['ButtUp',['../classComponentDialog.html#aa6f1039e056c49fc3744b1fb44edb4fd',1,'ComponentDialog']]]
 ];

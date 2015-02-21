@@ -1,10 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$components_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/components.h" alt="" coords="628,83,1044,112"/>
-<area shape="rect" id="node13" href="$ground_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ground.cpp" alt="" coords="1068,83,1465,112"/>
-<area shape="rect" id="node15" href="$matchdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/matchdialog.cpp" alt="" coords="1489,83,1889,112"/>
-<area shape="rect" id="node17" href="$qucs__actions_8cpp.html" title="Actions implementation for the GUI menu items." alt="" coords="1913,83,2276,112"/>
+<area shape="rect" id="node3" href="$components_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/components.h" alt="" coords="812,83,1228,112"/>
+<area shape="rect" id="node15" href="$ground_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ground.cpp" alt="" coords="1252,83,1649,112"/>
+<area shape="rect" id="node17" href="$matchdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/matchdialog.cpp" alt="" coords="1673,83,2073,112"/>
+<area shape="rect" id="node19" href="$qucs__actions_8cpp.html" title="Actions implementation for the GUI menu items." alt="" coords="2097,83,2460,112"/>
 <area shape="rect" id="node5" href="$component_8cpp.html" title="Implementation of the Component class." alt="" coords="5,160,429,189"/>
 <area shape="rect" id="node7" href="$loaddialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/loaddialog.cpp" alt="" coords="453,160,840,189"/>
-<area shape="rect" id="node9" href="$module_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/module.cpp" alt="" coords="864,160,1189,189"/>
-<area shape="rect" id="node11" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="1213,160,1525,189"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="Implementation of the main application." alt="" coords="864,160,1176,189"/>
+<area shape="rect" id="node11" href="$module_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/module.cpp" alt="" coords="1200,160,1525,189"/>
+<area shape="rect" id="node13" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="1549,160,1861,189"/>
 </map>

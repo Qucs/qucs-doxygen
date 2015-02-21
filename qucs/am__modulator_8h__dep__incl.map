@@ -1,8 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$am__modulator_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/am_modulator.cpp" alt="" coords="161,83,604,112"/>
-<area shape="rect" id="node5" href="$components_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/components.h" alt="" coords="628,83,1044,112"/>
+<area shape="rect" id="node3" href="$am__modulator_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/am_modulator.cpp" alt="" coords="345,83,788,112"/>
+<area shape="rect" id="node5" href="$components_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/components.h" alt="" coords="812,83,1228,112"/>
 <area shape="rect" id="node7" href="$component_8cpp.html" title="Implementation of the Component class." alt="" coords="5,160,429,189"/>
 <area shape="rect" id="node9" href="$loaddialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/loaddialog.cpp" alt="" coords="453,160,840,189"/>
-<area shape="rect" id="node11" href="$module_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/module.cpp" alt="" coords="864,160,1189,189"/>
-<area shape="rect" id="node13" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="1213,160,1525,189"/>
+<area shape="rect" id="node11" href="$main_8cpp.html" title="Implementation of the main application." alt="" coords="864,160,1176,189"/>
+<area shape="rect" id="node13" href="$module_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/module.cpp" alt="" coords="1200,160,1525,189"/>
+<area shape="rect" id="node15" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="1549,160,1861,189"/>
 </map>
