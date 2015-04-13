@@ -113,6 +113,8 @@ var searchData=
   ['projdel',['projDel',['../classQucsApp.html#a7d7ce0265b2c217800768b3579ec9c38',1,'QucsApp']]],
   ['projdir',['projDir',['../classLoadDialog.html#a73f297fdc443c3364dac2ed406a510c9',1,'LoadDialog']]],
   ['projects',['Projects',['../classQucsApp.html#a31fbf006da2167fc516bbc5ce8e0d28c',1,'QucsApp']]],
+  ['projectview_2ecpp',['projectView.cpp',['../projectView_8cpp.html',1,'']]],
+  ['projectview_2eh',['projectView.h',['../projectView_8h.html',1,'']]],
   ['projmenu',['projMenu',['../classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd',1,'QucsApp']]],
   ['projname',['ProjName',['../classNewProjDialog.html#a2ce2e9275ceb51a0b1d7be763c236461',1,'NewProjDialog::ProjName()'],['../classQucsApp.html#a346d3b157d16b8b09ea079dd2098cd47',1,'QucsApp::ProjName()']]],
   ['projnew',['projNew',['../classQucsApp.html#ad7168938fdc4541b617c7869a5420b66',1,'QucsApp']]],

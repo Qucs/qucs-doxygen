@@ -7,7 +7,7 @@
 <area shape="rect" id="node32" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1040,531,1221,560"/>
 <area shape="rect" id="node63" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="495,296,639,325"/>
 <area shape="rect" id="node7" href="$classQucsApp.html#aba322956eb31e6df60cec5ae4db74d55" title="QucsApp::slotSelectComponent" alt="" coords="1879,992,2087,1021"/>
-<area shape="rect" id="node13" href="$classQucsApp.html#ad70c7b7468f3a704c7ec5ae6b2f90c3c" title="QucsApp::slotSelectSubcircuit" alt="" coords="1883,1045,2083,1075"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#ab57330cad63942e3900e7456ae2cb7aa" title="QucsApp::slotSelectSubcircuit" alt="" coords="1883,1045,2083,1075"/>
 <area shape="rect" id="node18" href="$classQucsApp.html#ab29e9595faa1449170bdfd5501b7a963" title="QucsApp::slotInsertEquation" alt="" coords="1888,725,2077,755"/>
 <area shape="rect" id="node22" href="$classQucsApp.html#ae0c7b7957151aa730ff0f8e4fbf24fef" title="QucsApp::slotInsertGround" alt="" coords="1893,779,2072,808"/>
 <area shape="rect" id="node25" href="$classQucsApp.html#aa69bff1eec9918aaa34983116ce1cec8" title="QucsApp::slotInsertPort" alt="" coords="1901,832,2064,861"/>
@@ -24,7 +24,7 @@
 <area shape="rect" id="node40" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1876,352,2089,381"/>
 <area shape="rect" id="node42" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1852,512,2113,541"/>
 <area shape="rect" id="node44" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1853,565,2112,595"/>
-<area shape="rect" id="node46" href="$classQucsApp.html#a4f53f2154de0a0a3a6f5c801a73727ce" title="QucsApp::slotOpenContent" alt="" coords="1892,672,2073,701"/>
+<area shape="rect" id="node46" href="$classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="1892,672,2073,701"/>
 <area shape="rect" id="node49" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1879,405,2087,435"/>
 <area shape="rect" id="node51" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1912,619,2053,648"/>
 <area shape="rect" id="node65" href="$classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="756,531,921,560"/>

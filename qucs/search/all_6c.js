@@ -41,7 +41,7 @@ var searchData=
   ['libraries',['Libraries',['../classTextDoc.html#abaceca15971c60a33142da26e1b0b911',1,'TextDoc']]],
   ['library',['Library',['../classTextDoc.html#a74c01826553f0454c99bc6e620aa0cea',1,'TextDoc']]],
   ['librarycheck',['LibraryCheck',['../classPackageDialog.html#a678dbec9644883a3528823f186a307e0',1,'PackageDialog']]],
-  ['librarydialog',['LibraryDialog',['../classLibraryDialog.html',1,'LibraryDialog'],['../classLibraryDialog.html#ac6d4d730ee16ddbf892639a468660bc9',1,'LibraryDialog::LibraryDialog()']]],
+  ['librarydialog',['LibraryDialog',['../classLibraryDialog.html',1,'LibraryDialog'],['../classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98',1,'LibraryDialog::LibraryDialog()']]],
   ['librarydialog_2ecpp',['librarydialog.cpp',['../librarydialog_8cpp.html',1,'']]],
   ['librarydialog_2eh',['librarydialog.h',['../librarydialog_8h.html',1,'']]],
   ['libsavename',['libSaveName',['../classLibraryDialog.html#a22e0f399e83883d24fc1796c1a8e24c9',1,'LibraryDialog']]],

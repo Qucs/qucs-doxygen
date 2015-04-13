@@ -29,6 +29,8 @@ var searchData=
   ['potentiometer_2eh',['potentiometer.h',['../potentiometer_8h.html',1,'']]],
   ['printerwriter_2ecpp',['printerwriter.cpp',['../printerwriter_8cpp.html',1,'']]],
   ['printerwriter_2eh',['printerwriter.h',['../printerwriter_8h.html',1,'']]],
+  ['projectview_2ecpp',['projectView.cpp',['../projectView_8cpp.html',1,'']]],
+  ['projectview_2eh',['projectView.h',['../projectView_8h.html',1,'']]],
   ['psdiagram_2ecpp',['psdiagram.cpp',['../psdiagram_8cpp.html',1,'']]],
   ['psdiagram_2eh',['psdiagram.h',['../psdiagram_8h.html',1,'']]]
 ];

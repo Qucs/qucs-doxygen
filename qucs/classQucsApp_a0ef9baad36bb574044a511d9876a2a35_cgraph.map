@@ -1,5 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="241,5,369,35"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="420,5,545,35"/>
-<area shape="rect" id="node7" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="596,5,775,35"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="276,5,404,35"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#abc9b64e52b905e3a287dc618d8507d2c" title="QucsApp::slotUpdateTreeview" alt="" coords="240,59,440,88"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="489,5,615,35"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="665,5,844,35"/>
 </map>

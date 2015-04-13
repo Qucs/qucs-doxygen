@@ -21,7 +21,7 @@ var searchData=
   ['textparam',['textParam',['../classComponentDialog.html#ab828df17894c698a3027c93518f7582f',1,'ComponentDialog']]],
   ['texts',['Texts',['../classComponent.html#a183fb71dbd80f85eda0683cda9265590',1,'Component::Texts()'],['../classDiagram.html#a8fcad3f445de2ca2ba9ca58d03791769',1,'Diagram::Texts()']]],
   ['textsim',['textSim',['../classComponentDialog.html#abb88ce2d3087037428315b0a6830a67c',1,'ComponentDialog']]],
-  ['textsize',['TextSize',['../classGraphicTextDialog.html#a901007fcf6e9334780f6cb318677eff4',1,'GraphicTextDialog::TextSize()'],['../classComponent.html#a439c7a506532e1005a785d33916510c0',1,'Component::textSize()']]],
+  ['textsize',['textSize',['../classComponent.html#a439c7a506532e1005a785d33916510c0',1,'Component::textSize()'],['../classGraphicTextDialog.html#a901007fcf6e9334780f6cb318677eff4',1,'GraphicTextDialog::TextSize()']]],
   ['textstart',['textStart',['../classComponentDialog.html#a13544fbfdd06a3dd910a7e0021f40955',1,'ComponentDialog']]],
   ['textstate_5ftype',['textstate_type',['../syntax_8h.html#ad6f76c7e8f6ac2bcf9a12fc933d17817',1,'syntax.h']]],
   ['textstatus',['textStatus',['../classSpiceDialog.html#a8330f5bf174b2c8ffe97643dafc41706',1,'SpiceDialog']]],

@@ -78,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#define-members">Defines</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp File Reference</div>  </div>
@@ -114,6 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="messagedock_8h_source.html">messagedock.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="wire_8h_source.html">wire.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="module_8h_source.html">module.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="projectView_8h_source.html">projectView.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="components_8h_source.html">components/components.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="paintings_8h_source.html">paintings/paintings.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="diagrams_8h_source.html">diagrams/diagrams.h</a>&quot;</code><br/>
@@ -137,12 +139,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <p><a href="qucs_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qucs_8cpp.html#a53e7fb776bdab8ec26bae31bd14e838f">APPEND_MENU</a>(action, slot, text)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qucs_8cpp.html#ab308523b9287d6370177a8b11b417d26">smallsave_xpm</a> []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qucs_8cpp.html#a098a06ee0c473d9178da66df32798581">empty_xpm</a> []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qucs_8cpp.html#a372caee5282c48e430cb5b8add470027">lastDirOpenSave</a></td></tr>
 </table>
+<hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a53e7fb776bdab8ec26bae31bd14e838f"></a><!-- doxytag: member="qucs.cpp::APPEND_MENU" ref="a53e7fb776bdab8ec26bae31bd14e838f" args="(action, slot, text)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="qucs_8cpp.html#a53e7fb776bdab8ec26bae31bd14e838f">APPEND_MENU</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">action, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">slot, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">text&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment">{ \
+  action = <span class="keyword">new</span> QAction(tr(text), ContentMenu); \
+  connect(action, SIGNAL(triggered()), SLOT(slot())); \
+  ContentMenu-&gt;addAction(action); \
+  }
+</pre></div>
+</div>
+</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a098a06ee0c473d9178da66df32798581"></a><!-- doxytag: member="qucs.cpp::empty_xpm" ref="a098a06ee0c473d9178da66df32798581" args="[]" -->
 <div class="memitem">
@@ -158,7 +202,7 @@ Variables</h2></td></tr>
 <span class="stringliteral">&quot;1 17 1 1&quot;</span>, <span class="stringliteral">&quot;  c None&quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>,
 <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot; &quot;</span>}
 </pre></div>
-<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l00113">113</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
+<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l00114">114</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +217,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l01599">1599</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
+<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l01395">1395</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
 
 </div>
 </div>
@@ -188,7 +232,7 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l00076">76</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
+<p>Definition at line <a class="el" href="qucs_8cpp_source.html#l00077">77</a> of file <a class="el" href="qucs_8cpp_source.html">qucs.cpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +254,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 03:45:30 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 13 2015 04:30:06 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
