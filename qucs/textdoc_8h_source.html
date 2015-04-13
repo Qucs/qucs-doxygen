@@ -109,75 +109,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031 <span class="keyword">class </span><a class="code" href="classSyntaxHighlighter.html">SyntaxHighlighter</a>;
 <a name="l00032"></a>00032 <span class="keyword">class </span>QString;
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="qucsdoc_8cpp.html#ab308523b9287d6370177a8b11b417d26">smallsave_xpm</a>[];<span class="comment">// icon for unsaved files (diskette)</span>
-<a name="l00035"></a>00035 <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="qucs_8cpp.html#a098a06ee0c473d9178da66df32798581">empty_xpm</a>[];    <span class="comment">// provides same height than &quot;smallsave_xpm&quot;</span>
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="comment">// device type flags</span>
-<a name="l00038"></a><a class="code" href="textdoc_8h.html#a98bf61d14063e70751e6129d4b6b5b53">00038</a> <span class="preprocessor">#define DEV_BJT      0x0001</span>
-<a name="l00039"></a><a class="code" href="textdoc_8h.html#a5da20803b22425e804b5f8e746ee474a">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MOS      0x0002</span>
-<a name="l00040"></a><a class="code" href="textdoc_8h.html#ad1f21e70818dae5bb4c9bb367d51e2cf">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MASK_DEV 0x00FF</span>
-<a name="l00041"></a><a class="code" href="textdoc_8h.html#a65b71e80d30e30ed8c21ceaa33ef2755">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_DIG      0x0100</span>
-<a name="l00042"></a><a class="code" href="textdoc_8h.html#a93af72b084a1fab2972f24e78ce6c59b">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_ANA      0x0200</span>
-<a name="l00043"></a><a class="code" href="textdoc_8h.html#a1b2ebc4f157b2ce422cb1f71214a8346">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_ALL      0x0300</span>
-<a name="l00044"></a><a class="code" href="textdoc_8h.html#ae1651210e1bafc0ce537862f2331c07f">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MASK_TYP 0xFF00</span>
-<a name="l00045"></a><a class="code" href="textdoc_8h.html#ad62fc63243c5b48e860cde67eed29246">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_DEF      0x0200 // default value</span>
-<a name="l00046"></a>00046 <span class="preprocessor"></span>
-<a name="l00050"></a><a class="code" href="classTextDoc.html">00050</a> <span class="keyword">class </span><a class="code" href="classTextDoc.html" title="The TextDoc class definition.">TextDoc</a> : <span class="keyword">public</span> QPlainTextEdit, <span class="keyword">public</span> <a class="code" href="classQucsDoc.html">QucsDoc</a> {
-<a name="l00051"></a>00051   Q_OBJECT
-<a name="l00052"></a>00052 <span class="keyword">public</span>:
-<a name="l00053"></a>00053   <a class="code" href="classTextDoc.html#ab5f105436b7e8e58f34d5c4dc960395d" title="TextDoc::TextDoc Text document constructor.">TextDoc</a> (<a class="code" href="classQucsApp.html">QucsApp</a> *, <span class="keyword">const</span> QString&amp;);
-<a name="l00054"></a>00054  <a class="code" href="classTextDoc.html#aa5e6cdb474594f8fe3a209147dc275cd" title="TextDoc::~TextDoc Text document destructor.">~TextDoc</a> ();
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#ab6288282e80a2b72ba85b96dbce891ca" title="TextDoc::setName sets the text file name on its tab.">setName</a> (<span class="keyword">const</span> QString&amp;);
-<a name="l00057"></a>00057   <span class="keywordtype">bool</span>  <a class="code" href="classTextDoc.html#a4dbea37e1a9143e5e977ce1ddc83800f" title="TextDoc::load loads a text document.">load</a> ();
-<a name="l00058"></a>00058   <span class="keywordtype">int</span>   <a class="code" href="classTextDoc.html#a4f93138f8b8750360668c9dd7fa3c30c" title="TextDoc::save saves the current document and it settings.">save</a> ();
-<a name="l00059"></a>00059   <span class="keywordtype">float</span> <a class="code" href="classTextDoc.html#a1f326bd3e1c8297a58edfecb0b950827" title="TextDoc::zoomBy increases/decreases the text font size.">zoomBy</a> (<span class="keywordtype">float</span>);
-<a name="l00060"></a>00060   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#ab6fef9ee29cf355705679ddd72b517b8" title="TextDoc::showNoZoom resets the font scaling.">showNoZoom</a> ();
-<a name="l00061"></a>00061   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a595fa965253c831abf6caa3e66564e71" title="TextDoc::becomeCurrent sets text document as current.">becomeCurrent</a> (<span class="keywordtype">bool</span>);
-<a name="l00062"></a>00062   <span class="keywordtype">bool</span>  <a class="code" href="classTextDoc.html#af3999e6abf8fb19052a44e91529b04ee" title="TextDoc::loadSimulationTime set SimTime member variable.">loadSimulationTime</a> (QString&amp;);
-<a name="l00063"></a>00063   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a6c710662558e7d1d5bf8a06e6ffc4b34" title="TextDoc::commentSelected toggles the comment of selected text See also QucsApp::slotEditActivate.">commentSelected</a> ();
-<a name="l00064"></a>00064   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a8e2748cad7af163c71ab02f37d316575" title="TextDoc::insertSkeleton adds a basic skeleton for type of text file.">insertSkeleton</a> ();
-<a name="l00065"></a>00065   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)">setLanguage</a> (<span class="keywordtype">int</span>);
-<a name="l00066"></a>00066   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)">setLanguage</a> (<span class="keyword">const</span> QString&amp;);
-<a name="l00067"></a>00067   QString <a class="code" href="classTextDoc.html#af6a276e7141ad185d212b3cbd53748f6" title="TextDoc::getModuleName parse the module name ou of the text file contents.">getModuleName</a> (<span class="keywordtype">void</span>);
+<a name="l00034"></a>00034 <span class="comment">// device type flags</span>
+<a name="l00035"></a><a class="code" href="textdoc_8h.html#a98bf61d14063e70751e6129d4b6b5b53">00035</a> <span class="preprocessor">#define DEV_BJT      0x0001</span>
+<a name="l00036"></a><a class="code" href="textdoc_8h.html#a5da20803b22425e804b5f8e746ee474a">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MOS      0x0002</span>
+<a name="l00037"></a><a class="code" href="textdoc_8h.html#ad1f21e70818dae5bb4c9bb367d51e2cf">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MASK_DEV 0x00FF</span>
+<a name="l00038"></a><a class="code" href="textdoc_8h.html#a65b71e80d30e30ed8c21ceaa33ef2755">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_DIG      0x0100</span>
+<a name="l00039"></a><a class="code" href="textdoc_8h.html#a93af72b084a1fab2972f24e78ce6c59b">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_ANA      0x0200</span>
+<a name="l00040"></a><a class="code" href="textdoc_8h.html#a1b2ebc4f157b2ce422cb1f71214a8346">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_ALL      0x0300</span>
+<a name="l00041"></a><a class="code" href="textdoc_8h.html#ae1651210e1bafc0ce537862f2331c07f">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_MASK_TYP 0xFF00</span>
+<a name="l00042"></a><a class="code" href="textdoc_8h.html#ad62fc63243c5b48e860cde67eed29246">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define DEV_DEF      0x0200 // default value</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00047"></a><a class="code" href="classTextDoc.html">00047</a> <span class="keyword">class </span><a class="code" href="classTextDoc.html" title="The TextDoc class definition.">TextDoc</a> : <span class="keyword">public</span> QPlainTextEdit, <span class="keyword">public</span> <a class="code" href="classQucsDoc.html">QucsDoc</a> {
+<a name="l00048"></a>00048   Q_OBJECT
+<a name="l00049"></a>00049 <span class="keyword">public</span>:
+<a name="l00050"></a>00050   <a class="code" href="classTextDoc.html#ab5f105436b7e8e58f34d5c4dc960395d" title="TextDoc::TextDoc Text document constructor.">TextDoc</a> (<a class="code" href="classQucsApp.html">QucsApp</a> *, <span class="keyword">const</span> QString&amp;);
+<a name="l00051"></a>00051  <a class="code" href="classTextDoc.html#aa5e6cdb474594f8fe3a209147dc275cd" title="TextDoc::~TextDoc Text document destructor.">~TextDoc</a> ();
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#ab6288282e80a2b72ba85b96dbce891ca" title="TextDoc::setName sets the text file name on its tab.">setName</a> (<span class="keyword">const</span> QString&amp;);
+<a name="l00054"></a>00054   <span class="keywordtype">bool</span>  <a class="code" href="classTextDoc.html#a4dbea37e1a9143e5e977ce1ddc83800f" title="TextDoc::load loads a text document.">load</a> ();
+<a name="l00055"></a>00055   <span class="keywordtype">int</span>   <a class="code" href="classTextDoc.html#a4f93138f8b8750360668c9dd7fa3c30c" title="TextDoc::save saves the current document and it settings.">save</a> ();
+<a name="l00056"></a>00056   <span class="keywordtype">float</span> <a class="code" href="classTextDoc.html#a1f326bd3e1c8297a58edfecb0b950827" title="TextDoc::zoomBy increases/decreases the text font size.">zoomBy</a> (<span class="keywordtype">float</span>);
+<a name="l00057"></a>00057   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#ab6fef9ee29cf355705679ddd72b517b8" title="TextDoc::showNoZoom resets the font scaling.">showNoZoom</a> ();
+<a name="l00058"></a>00058   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a595fa965253c831abf6caa3e66564e71" title="TextDoc::becomeCurrent sets text document as current.">becomeCurrent</a> (<span class="keywordtype">bool</span>);
+<a name="l00059"></a>00059   <span class="keywordtype">bool</span>  <a class="code" href="classTextDoc.html#af3999e6abf8fb19052a44e91529b04ee" title="TextDoc::loadSimulationTime set SimTime member variable.">loadSimulationTime</a> (QString&amp;);
+<a name="l00060"></a>00060   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a6c710662558e7d1d5bf8a06e6ffc4b34" title="TextDoc::commentSelected toggles the comment of selected text See also QucsApp::slotEditActivate.">commentSelected</a> ();
+<a name="l00061"></a>00061   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a8e2748cad7af163c71ab02f37d316575" title="TextDoc::insertSkeleton adds a basic skeleton for type of text file.">insertSkeleton</a> ();
+<a name="l00062"></a>00062   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)">setLanguage</a> (<span class="keywordtype">int</span>);
+<a name="l00063"></a>00063   <span class="keywordtype">void</span>  <a class="code" href="classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)">setLanguage</a> (<span class="keyword">const</span> QString&amp;);
+<a name="l00064"></a>00064   QString <a class="code" href="classTextDoc.html#af6a276e7141ad185d212b3cbd53748f6" title="TextDoc::getModuleName parse the module name ou of the text file contents.">getModuleName</a> (<span class="keywordtype">void</span>);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 
+<a name="l00067"></a><a class="code" href="classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1">00067</a>   QFont <a class="code" href="classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1">TextFont</a>;
 <a name="l00068"></a>00068 
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1">00070</a>   QFont <a class="code" href="classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1">TextFont</a>;
-<a name="l00071"></a>00071 
-<a name="l00072"></a><a class="code" href="classTextDoc.html#a92ff1b5848fb493964628fe93b46017e">00072</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a92ff1b5848fb493964628fe93b46017e">simulation</a>;   <span class="comment">// simulation or module</span>
-<a name="l00073"></a><a class="code" href="classTextDoc.html#a74c01826553f0454c99bc6e620aa0cea">00073</a>   QString <a class="code" href="classTextDoc.html#a74c01826553f0454c99bc6e620aa0cea">Library</a>;   <span class="comment">// library this document belongs to</span>
-<a name="l00074"></a><a class="code" href="classTextDoc.html#abaceca15971c60a33142da26e1b0b911">00074</a>   QString <a class="code" href="classTextDoc.html#abaceca15971c60a33142da26e1b0b911">Libraries</a>; <span class="comment">// libraries to be linked with</span>
-<a name="l00075"></a><a class="code" href="classTextDoc.html#a770e68f4d17f08ee75915a52d9d8163c">00075</a>   QString <a class="code" href="classTextDoc.html#a770e68f4d17f08ee75915a52d9d8163c">ShortDesc</a>; <span class="comment">// icon description</span>
-<a name="l00076"></a><a class="code" href="classTextDoc.html#a28eee7ebea09cfcc66a4d4a9a65e3970">00076</a>   QString <a class="code" href="classTextDoc.html#a28eee7ebea09cfcc66a4d4a9a65e3970">LongDesc</a>;  <span class="comment">// component description</span>
-<a name="l00077"></a><a class="code" href="classTextDoc.html#ac00b1bd74d7c74aa4d3f97e25922f121">00077</a>   QString <a class="code" href="classTextDoc.html#ac00b1bd74d7c74aa4d3f97e25922f121">Icon</a>;      <span class="comment">// icon file</span>
-<a name="l00078"></a><a class="code" href="classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7">00078</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7">recreate</a>;     <span class="comment">// recreate output file</span>
-<a name="l00079"></a><a class="code" href="classTextDoc.html#a6f65b8a3791e11639179c84d8eecfa35">00079</a>   <span class="keywordtype">int</span> <a class="code" href="classTextDoc.html#a6f65b8a3791e11639179c84d8eecfa35">devtype</a>;       <span class="comment">// device type</span>
+<a name="l00069"></a><a class="code" href="classTextDoc.html#a92ff1b5848fb493964628fe93b46017e">00069</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a92ff1b5848fb493964628fe93b46017e">simulation</a>;   <span class="comment">// simulation or module</span>
+<a name="l00070"></a><a class="code" href="classTextDoc.html#a74c01826553f0454c99bc6e620aa0cea">00070</a>   QString <a class="code" href="classTextDoc.html#a74c01826553f0454c99bc6e620aa0cea">Library</a>;   <span class="comment">// library this document belongs to</span>
+<a name="l00071"></a><a class="code" href="classTextDoc.html#abaceca15971c60a33142da26e1b0b911">00071</a>   QString <a class="code" href="classTextDoc.html#abaceca15971c60a33142da26e1b0b911">Libraries</a>; <span class="comment">// libraries to be linked with</span>
+<a name="l00072"></a><a class="code" href="classTextDoc.html#a770e68f4d17f08ee75915a52d9d8163c">00072</a>   QString <a class="code" href="classTextDoc.html#a770e68f4d17f08ee75915a52d9d8163c">ShortDesc</a>; <span class="comment">// icon description</span>
+<a name="l00073"></a><a class="code" href="classTextDoc.html#a28eee7ebea09cfcc66a4d4a9a65e3970">00073</a>   QString <a class="code" href="classTextDoc.html#a28eee7ebea09cfcc66a4d4a9a65e3970">LongDesc</a>;  <span class="comment">// component description</span>
+<a name="l00074"></a><a class="code" href="classTextDoc.html#ac00b1bd74d7c74aa4d3f97e25922f121">00074</a>   QString <a class="code" href="classTextDoc.html#ac00b1bd74d7c74aa4d3f97e25922f121">Icon</a>;      <span class="comment">// icon file</span>
+<a name="l00075"></a><a class="code" href="classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7">00075</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a2d4bd5e997cc7acd522838a37f2ffbe7">recreate</a>;     <span class="comment">// recreate output file</span>
+<a name="l00076"></a><a class="code" href="classTextDoc.html#a6f65b8a3791e11639179c84d8eecfa35">00076</a>   <span class="keywordtype">int</span> <a class="code" href="classTextDoc.html#a6f65b8a3791e11639179c84d8eecfa35">devtype</a>;       <span class="comment">// device type</span>
+<a name="l00077"></a>00077 
+<a name="l00078"></a><a class="code" href="classTextDoc.html#af0a6340f2470cd88069b5adfcd2450aa">00078</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#af0a6340f2470cd88069b5adfcd2450aa">SetChanged</a>;
+<a name="l00079"></a><a class="code" href="classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47">00079</a>   <span class="keywordtype">int</span> <a class="code" href="classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47">language</a>;
 <a name="l00080"></a>00080 
-<a name="l00081"></a><a class="code" href="classTextDoc.html#af0a6340f2470cd88069b5adfcd2450aa">00081</a>   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#af0a6340f2470cd88069b5adfcd2450aa">SetChanged</a>;
-<a name="l00082"></a><a class="code" href="classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47">00082</a>   <span class="keywordtype">int</span> <a class="code" href="classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47">language</a>;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#ad4c87f286f728525e37b8167b682be15" title="TextDoc::loadSettings loads the text document settings.">loadSettings</a> (<span class="keywordtype">void</span>);
-<a name="l00085"></a>00085   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a1deefee44cff31d2794013e98e79dfaf" title="TextDoc::saveSettings saves the text document settings .cfg.">saveSettings</a> (<span class="keywordtype">void</span>);
-<a name="l00086"></a>00086   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a67d94311708265ff0efd4111e117efbe">refreshLanguage</a>(<span class="keywordtype">void</span>);
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088   QMenu* <a class="code" href="classTextDoc.html#ab5f79ca25c4015b7e73311f7fc58cfda" title="TextDoc::createStandardContextMenu creates the standard context menu.">createStandardContextMenu</a>();
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090 <span class="keyword">public</span> slots:
-<a name="l00091"></a>00091   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a8f9288e8a96d5d572531dc8061d3227c">search</a>(<span class="keyword">const</span> QString &amp;str, <span class="keywordtype">bool</span> CaseSensitive, <span class="keywordtype">bool</span> wordOnly, <span class="keywordtype">bool</span> backward);
-<a name="l00092"></a>00092   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#adf2604f5dcb2d13d50f38e7392caff66">replace</a>(<span class="keyword">const</span> QString &amp;str, <span class="keyword">const</span> QString &amp;str2, <span class="keywordtype">bool</span> needConfirmed,
-<a name="l00093"></a>00093                <span class="keywordtype">bool</span> CaseSensitive, <span class="keywordtype">bool</span> wordOnly, <span class="keywordtype">bool</span> backward);
-<a name="l00094"></a>00094   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a19cb595557bc58dd7e9e8ed7c0c165dd" title="TextDoc::slotCursorPosChanged update status bar with line:column.">slotCursorPosChanged</a> ();
-<a name="l00095"></a>00095   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes.">slotSetChanged</a> ();
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097 <span class="keyword">private</span>:
-<a name="l00098"></a><a class="code" href="classTextDoc.html#a94d55a33d7329ef7e9fb29ac48877825">00098</a>   <a class="code" href="classSyntaxHighlighter.html">SyntaxHighlighter</a> * <a class="code" href="classTextDoc.html#a94d55a33d7329ef7e9fb29ac48877825">syntaxHighlight</a>;
+<a name="l00081"></a>00081   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#ad4c87f286f728525e37b8167b682be15" title="TextDoc::loadSettings loads the text document settings.">loadSettings</a> (<span class="keywordtype">void</span>);
+<a name="l00082"></a>00082   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a1deefee44cff31d2794013e98e79dfaf" title="TextDoc::saveSettings saves the text document settings .cfg.">saveSettings</a> (<span class="keywordtype">void</span>);
+<a name="l00083"></a>00083   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a67d94311708265ff0efd4111e117efbe">refreshLanguage</a>(<span class="keywordtype">void</span>);
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085   QMenu* <a class="code" href="classTextDoc.html#ab5f79ca25c4015b7e73311f7fc58cfda" title="TextDoc::createStandardContextMenu creates the standard context menu.">createStandardContextMenu</a>();
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 signals:
+<a name="l00088"></a>00088   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#aa48b379f36eb5bb61812e45ab69ac2ec">signalCursorPosChanged</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);
+<a name="l00089"></a>00089   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc">signalFileChanged</a>(<span class="keywordtype">bool</span>);
+<a name="l00090"></a>00090   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e">signalUndoState</a>(<span class="keywordtype">bool</span>);
+<a name="l00091"></a>00091   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93">signalRedoState</a>(<span class="keywordtype">bool</span>);
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="keyword">public</span> slots:
+<a name="l00094"></a>00094   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a8f9288e8a96d5d572531dc8061d3227c">search</a>(<span class="keyword">const</span> QString &amp;str, <span class="keywordtype">bool</span> CaseSensitive, <span class="keywordtype">bool</span> wordOnly, <span class="keywordtype">bool</span> backward);
+<a name="l00095"></a>00095   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#adf2604f5dcb2d13d50f38e7392caff66">replace</a>(<span class="keyword">const</span> QString &amp;str, <span class="keyword">const</span> QString &amp;str2, <span class="keywordtype">bool</span> needConfirmed,
+<a name="l00096"></a>00096                <span class="keywordtype">bool</span> CaseSensitive, <span class="keywordtype">bool</span> wordOnly, <span class="keywordtype">bool</span> backward);
+<a name="l00097"></a>00097   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a19cb595557bc58dd7e9e8ed7c0c165dd" title="TextDoc::slotCursorPosChanged update status bar with line:column.">slotCursorPosChanged</a> ();
+<a name="l00098"></a>00098   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes.">slotSetChanged</a> ();
 <a name="l00099"></a>00099 
-<a name="l00100"></a>00100 <span class="keyword">private</span> slots:
-<a name="l00101"></a>00101   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#ad3e6da70cf5db3490505a5d50b30624e" title="TextDoc::highlightCurrentLine mark the current line.">highlightCurrentLine</a>();
-<a name="l00102"></a>00102   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a1ee000e07bf1e4576923d2ef41ba526d">baseSearch</a>(<span class="keyword">const</span> QString &amp;, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>);
-<a name="l00103"></a>00103 };
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00100"></a>00100 <span class="keyword">private</span>:
+<a name="l00101"></a><a class="code" href="classTextDoc.html#a94d55a33d7329ef7e9fb29ac48877825">00101</a>   <a class="code" href="classSyntaxHighlighter.html">SyntaxHighlighter</a> * <a class="code" href="classTextDoc.html#a94d55a33d7329ef7e9fb29ac48877825">syntaxHighlight</a>;
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <span class="keyword">private</span> slots:
+<a name="l00104"></a>00104   <span class="keywordtype">void</span> <a class="code" href="classTextDoc.html#ad3e6da70cf5db3490505a5d50b30624e" title="TextDoc::highlightCurrentLine mark the current line.">highlightCurrentLine</a>();
+<a name="l00105"></a>00105   <span class="keywordtype">bool</span> <a class="code" href="classTextDoc.html#a1ee000e07bf1e4576923d2ef41ba526d">baseSearch</a>(<span class="keyword">const</span> QString &amp;, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>);
+<a name="l00106"></a>00106 };
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -196,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 4 2015 15:39:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 13 2015 03:45:29 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

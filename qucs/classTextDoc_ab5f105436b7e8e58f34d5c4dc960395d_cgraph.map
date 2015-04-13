@@ -1,8 +1,11 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)" alt="" coords="215,5,369,35"/>
-<area shape="rect" id="node5" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="205,59,379,88"/>
-<area shape="rect" id="node7" href="$classTextDoc.html#a19cb595557bc58dd7e9e8ed7c0c165dd" title="TextDoc::slotCursorPosChanged update status bar with line:column." alt="" coords="185,112,399,141"/>
-<area shape="rect" id="node11" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="189,165,395,195"/>
-<area shape="rect" id="node13" href="$classTextDoc.html#ad3e6da70cf5db3490505a5d50b30624e" title="TextDoc::highlightCurrentLine mark the current line." alt="" coords="195,219,389,248"/>
-<area shape="rect" id="node9" href="$classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75" title="QucsApp::printCursorPosition" alt="" coords="448,112,643,141"/>
+<area shape="rect" id="node5" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="205,160,379,189"/>
+<area shape="rect" id="node7" href="$classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc" title="TextDoc::signalFileChanged" alt="" coords="469,64,656,93"/>
+<area shape="rect" id="node9" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="475,129,651,159"/>
+<area shape="rect" id="node11" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="475,207,651,236"/>
+<area shape="rect" id="node13" href="$classTextDoc.html#a19cb595557bc58dd7e9e8ed7c0c165dd" title="TextDoc::slotCursorPosChanged update status bar with line:column." alt="" coords="185,264,399,293"/>
+<area shape="rect" id="node15" href="$classTextDoc.html#aa48b379f36eb5bb61812e45ab69ac2ec" title="TextDoc::signalCursorPosChanged" alt="" coords="449,285,676,315"/>
+<area shape="rect" id="node21" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="189,368,395,397"/>
+<area shape="rect" id="node23" href="$classTextDoc.html#ad3e6da70cf5db3490505a5d50b30624e" title="TextDoc::highlightCurrentLine mark the current line." alt="" coords="195,421,389,451"/>
 </map>

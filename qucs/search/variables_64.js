@@ -43,6 +43,6 @@ var searchData=
   ['dtype',['DType',['../classNode.html#a66bdfecbff0356b860a9344b4cf83503',1,'Node']]],
   ['dwidth',['dwidth',['../classExportDialog.html#ac448cf9d66e23f6860f20fd4b95a830b',1,'ExportDialog']]],
   ['dwidthsel',['dwidthsel',['../classExportDialog.html#a6df9ffd27b6694153775d9758574a2fd',1,'ExportDialog']]],
-  ['dx',['dx',['../structtQucsSettings.html#a6bff4be70a3e6001e742ec4db039c024',1,'tQucsSettings::dx()'],['../classViewPainter.html#af36a991afccb761e7e99e43004895073',1,'ViewPainter::DX()']]],
+  ['dx',['DX',['../classViewPainter.html#af36a991afccb761e7e99e43004895073',1,'ViewPainter::DX()'],['../structtQucsSettings.html#a6bff4be70a3e6001e742ec4db039c024',1,'tQucsSettings::dx()']]],
   ['dy',['dy',['../structtQucsSettings.html#a4ad269745402329daddb963783c44157',1,'tQucsSettings::dy()'],['../classViewPainter.html#ad6b06d8ae21dfb73d6d6c156e35208f7',1,'ViewPainter::DY()']]]
 ];

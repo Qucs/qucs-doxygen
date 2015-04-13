@@ -1,19 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#aa5b3bc6f84bd5ceaecc4935ef11763ee" title="QucsApp::performToggleAction" alt="" coords="223,75,425,104"/>
-<area shape="rect" id="node7" href="$classMouseActions.html#a86893d4f77b0c94649e830b08f7f376e" title="MouseActions::MMoveMoveTextB Paints mouse symbol for &quot;move component text&quot; mode." alt="" coords="761,259,983,288"/>
-<area shape="rect" id="node11" href="$classMouseActions.html#a2f836f3d4eed8a7d756c18c031e85f80" title="MouseActions::MPressMoveText" alt="" coords="216,155,432,184"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="519,48,673,77"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1060,245,1241,275"/>
-<area shape="rect" id="node13" href="$classSchematic.html#acbf7acca512b9e672cece0173e97e50c" title="Schematic::selectCompText" alt="" coords="503,101,689,131"/>
-<area shape="rect" id="node15" href="$classMouseActions.html#acd9d681cccefbe22d477e21c9cd7aaa4" title="MouseActions::MMoveMoveText Paint rectangle around component text being mouse moved." alt="" coords="765,205,979,235"/>
-<area shape="rect" id="node18" href="$classMouseActions.html#a69ed77192c805d2c7cedd295c3fdac9e" title="MouseActions::MReleaseMoveText" alt="" coords="481,155,711,184"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="791,152,953,181"/>
-<area shape="rect" id="node23" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1032,165,1269,195"/>
-<area shape="rect" id="node27" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1055,112,1247,141"/>
-<area shape="rect" id="node25" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1328,165,1432,195"/>
-<area shape="rect" id="node29" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1317,112,1443,141"/>
-<area shape="rect" id="node31" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1337,5,1423,35"/>
-<area shape="rect" id="node33" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1327,59,1433,88"/>
-<area shape="rect" id="node35" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1491,59,1584,88"/>
-<area shape="rect" id="node37" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1632,59,1731,88"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#aa5b3bc6f84bd5ceaecc4935ef11763ee" title="QucsApp::performToggleAction" alt="" coords="223,141,425,171"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#a86893d4f77b0c94649e830b08f7f376e" title="MouseActions::MMoveMoveTextB Paints mouse symbol for &quot;move component text&quot; mode." alt="" coords="761,325,983,355"/>
+<area shape="rect" id="node11" href="$classMouseActions.html#a2f836f3d4eed8a7d756c18c031e85f80" title="MouseActions::MPressMoveText" alt="" coords="216,221,432,251"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="519,115,673,144"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1060,325,1241,355"/>
+<area shape="rect" id="node13" href="$classSchematic.html#acbf7acca512b9e672cece0173e97e50c" title="Schematic::selectCompText" alt="" coords="503,168,689,197"/>
+<area shape="rect" id="node15" href="$classMouseActions.html#acd9d681cccefbe22d477e21c9cd7aaa4" title="MouseActions::MMoveMoveText Paint rectangle around component text being mouse moved." alt="" coords="765,272,979,301"/>
+<area shape="rect" id="node18" href="$classMouseActions.html#a69ed77192c805d2c7cedd295c3fdac9e" title="MouseActions::MReleaseMoveText" alt="" coords="481,221,711,251"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="791,192,953,221"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1052,219,1249,248"/>
+<area shape="rect" id="node25" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1032,272,1269,301"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1057,112,1244,141"/>
+<area shape="rect" id="node31" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1057,165,1244,195"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1055,59,1247,88"/>
+<area shape="rect" id="node27" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1328,219,1432,248"/>
+<area shape="rect" id="node35" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1317,5,1443,35"/>
+<area shape="rect" id="node37" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1337,59,1423,88"/>
+<area shape="rect" id="node39" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1327,112,1433,141"/>
+<area shape="rect" id="node41" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1491,112,1584,141"/>
+<area shape="rect" id="node43" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1632,112,1731,141"/>
 </map>

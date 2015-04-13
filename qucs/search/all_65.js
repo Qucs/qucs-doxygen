@@ -46,7 +46,7 @@ var searchData=
   ['ellipsearc',['EllipseArc',['../classEllipseArc.html',1,'EllipseArc'],['../classEllipseArc.html#a4ef122cb43e08fd7f640212b3b4e85da',1,'EllipseArc::EllipseArc()']]],
   ['ellipsearc_2ecpp',['ellipsearc.cpp',['../ellipsearc_8cpp.html',1,'']]],
   ['ellipsearc_2eh',['ellipsearc.h',['../ellipsearc_8h.html',1,'']]],
-  ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../qucsdoc_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../qucsdoc_8h.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../textdoc_8h.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp']]],
+  ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'qucs.cpp']]],
   ['encode_5fstring',['encode_String',['../mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb',1,'encode_String(const QString &amp;Input, QString &amp;Output):&#160;mnemo.cpp'],['../mnemo_8h.html#a710596b4cf74c0fc2b90e3694473bd8c',1,'encode_String(const QString &amp;, QString &amp;):&#160;mnemo.cpp']]],
   ['endelementmoving',['endElementMoving',['../classMouseActions.html#a4bc0f036799361576eba251978c41a73',1,'MouseActions']]],
   ['endnetlistdigital',['endNetlistDigital',['../classSchematic.html#af893d90555f7295e7bf11acf9fa13f73',1,'Schematic']]],

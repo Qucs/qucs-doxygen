@@ -33,7 +33,7 @@
 <area shape="rect" id="node62" href="$classSchematic.html#a230c5d36b53026e427fdd24ab283f886" title="Schematic::connectVWires2" alt="" coords="1383,1084,1569,1113"/>
 <area shape="rect" id="node65" href="$classSchematic.html#a7d6f050afa6188d83b9023693f6828c6" title="Schematic::oneLabel" alt="" coords="1404,1188,1548,1217"/>
 <area shape="rect" id="node69" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="1361,1711,1591,1740"/>
-<area shape="rect" id="node74" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="2109,795,2347,824"/>
+<area shape="rect" id="node74" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="2111,795,2308,824"/>
 <area shape="rect" id="node82" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="827,933,1000,963"/>
 <area shape="rect" id="node84" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="784,776,1043,805"/>
 <area shape="rect" id="node89" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="1379,820,1573,849"/>

@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="237,5,392,35"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1297,279,1476,308"/>
-<area shape="rect" id="node7" href="$classQucsApp.html#aceaecb4d84e675e470037afd19135d32" title="QucsApp::saveAs" alt="" coords="520,291,648,320"/>
-<area shape="rect" id="node22" href="$classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509" title="QucsDoc::save" alt="" coords="803,368,915,397"/>
-<area shape="rect" id="node37" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="804,475,913,504"/>
-<area shape="rect" id="node39" href="$classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c" title="QucsApp::slotResetWarnings" alt="" coords="217,1184,412,1213"/>
-<area shape="rect" id="node42" href="$classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae" title="QucsApp::slotViewOctaveDock" alt="" coords="212,817,417,847"/>
-<area shape="rect" id="node56" href="$classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb" title="OctaveWindow::runOctaveScript" alt="" coords="477,896,691,925"/>
-<area shape="rect" id="node59" href="$classQucsApp.html#a26a185183ba4662fe20541cd76f3dd35" title="QucsApp::slotAfterSimulation" alt="" coords="217,739,412,768"/>
-<area shape="rect" id="node67" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="495,632,673,661"/>
-<area shape="rect" id="node94" href="$classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="225,1131,404,1160"/>
-<area shape="rect" id="node119" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="229,1237,400,1267"/>
-<area shape="rect" id="node9" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="1063,317,1188,347"/>
-<area shape="rect" id="node13" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="795,421,923,451"/>
-<area shape="rect" id="node16" href="$classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe" title="QucsDoc::setName" alt="" coords="789,160,928,189"/>
-<area shape="rect" id="node18" href="$classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71" title="QucsApp::updateRecentFilesList" alt="" coords="752,264,965,293"/>
-<area shape="rect" id="node24" href="$classQucsApp.html#a8d660a5a6479c2683e03282a23a42c65" title="QucsApp::updatePortNumber" alt="" coords="1029,160,1221,189"/>
-<area shape="rect" id="node20" href="$classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e" title="QucsApp::slotUpdateRecentFiles" alt="" coords="1017,264,1233,293"/>
-<area shape="rect" id="node26" href="$simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1345,1024,1428,1053"/>
-<area shape="rect" id="node28" href="$classQucsDoc.html#ac835da875203c51c60e6fd6a3a885b08" title="QucsDoc::fileSuffix" alt="" coords="1319,187,1455,216"/>
-<area shape="rect" id="node31" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1284,133,1489,163"/>
-<area shape="rect" id="node33" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1569,160,1713,189"/>
-<area shape="rect" id="node35" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="1549,107,1733,136"/>
-<area shape="rect" id="node44" href="$classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07" title="OctaveWindow::startOctave" alt="" coords="491,843,677,872"/>
-<area shape="rect" id="node46" href="$classOctaveWindow.html#ad7b2fcd2b553afee52d026b12c8c7ff2" title="OctaveWindow::slotDisplayErr" alt="" coords="759,949,959,979"/>
-<area shape="rect" id="node48" href="$classOctaveWindow.html#a0813c5c0702e72b1850a2e452140aebc" title="OctaveWindow::slotDisplayMsg" alt="" coords="755,843,963,872"/>
-<area shape="rect" id="node50" href="$classOctaveWindow.html#a124bba60516efba575705db3e7616471" title="OctaveWindow::slotOctaveEnded" alt="" coords="749,896,968,925"/>
-<area shape="rect" id="node52" href="$classOctaveWindow.html#a2696584a025ce5e71f32e88006d9da1f" title="OctaveWindow::adjustDirectory" alt="" coords="756,1003,961,1032"/>
-<area shape="rect" id="node54" href="$classOctaveWindow.html#a07709f3f94100f11625d52580b64c8c5" title="OctaveWindow::sendCommand" alt="" coords="1023,1027,1228,1056"/>
-<area shape="rect" id="node61" href="$classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd" title="QucsApp::slotShowWarnings" alt="" coords="488,739,680,768"/>
-<area shape="rect" id="node63" href="$classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae" title="Close and delete simulation dialog." alt="" coords="504,685,664,715"/>
-<area shape="rect" id="node70" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="791,685,927,715"/>
-<area shape="rect" id="node73" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="772,739,945,768"/>
-<area shape="rect" id="node76" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="777,579,940,608"/>
-<area shape="rect" id="node78" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="764,632,953,661"/>
-<area shape="rect" id="node80" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="1051,632,1200,661"/>
-<area shape="rect" id="node82" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="1061,843,1189,872"/>
-<area shape="rect" id="node84" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1608,883,1675,912"/>
-<area shape="rect" id="node86" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1604,816,1679,845"/>
-<area shape="rect" id="node88" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="1293,843,1480,872"/>
-<area shape="rect" id="node96" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1285,1155,1488,1184"/>
-<area shape="rect" id="node100" href="$classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="1293,1285,1480,1315"/>
-<area shape="rect" id="node102" href="$classSimMessage.html#a77fdce549e16372342dcf227a40c0921" title="SimMessage::slotReadSpiceNetlist" alt="" coords="469,1416,699,1445"/>
-<area shape="rect" id="node104" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="468,1208,700,1237"/>
-<area shape="rect" id="node106" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="773,1208,944,1237"/>
-<area shape="rect" id="node98" href="$classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1540,1155,1743,1184"/>
-<area shape="rect" id="node108" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="1032,1155,1219,1184"/>
-<area shape="rect" id="node114" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="1061,1208,1189,1237"/>
-<area shape="rect" id="node116" href="$classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="1031,1261,1220,1291"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="237,31,392,60"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="1297,320,1476,349"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#aceaecb4d84e675e470037afd19135d32" title="QucsApp::saveAs" alt="" coords="520,293,648,323"/>
+<area shape="rect" id="node24" href="$classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509" title="QucsDoc::save" alt="" coords="803,396,915,425"/>
+<area shape="rect" id="node39" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="804,503,913,532"/>
+<area shape="rect" id="node41" href="$classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c" title="QucsApp::slotResetWarnings" alt="" coords="217,1212,412,1241"/>
+<area shape="rect" id="node44" href="$classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae" title="QucsApp::slotViewOctaveDock" alt="" coords="212,845,417,875"/>
+<area shape="rect" id="node58" href="$classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb" title="OctaveWindow::runOctaveScript" alt="" coords="477,924,691,953"/>
+<area shape="rect" id="node61" href="$classQucsApp.html#a26a185183ba4662fe20541cd76f3dd35" title="QucsApp::slotAfterSimulation" alt="" coords="217,767,412,796"/>
+<area shape="rect" id="node69" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="495,660,673,689"/>
+<area shape="rect" id="node92" href="$classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="225,1159,404,1188"/>
+<area shape="rect" id="node117" href="$classQucsApp.html#a2be08107300ffb12568bb84584bd5afb" title="QucsApp::signalKillEmAll" alt="" coords="229,1265,400,1295"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="1063,345,1188,375"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="795,449,923,479"/>
+<area shape="rect" id="node16" href="$classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe" title="QucsDoc::setName" alt="" coords="789,135,928,164"/>
+<area shape="rect" id="node18" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="784,188,933,217"/>
+<area shape="rect" id="node20" href="$classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71" title="QucsApp::updateRecentFilesList" alt="" coords="752,241,965,271"/>
+<area shape="rect" id="node26" href="$classQucsApp.html#a8d660a5a6479c2683e03282a23a42c65" title="QucsApp::updatePortNumber" alt="" coords="1029,32,1221,61"/>
+<area shape="rect" id="node22" href="$classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e" title="QucsApp::slotUpdateRecentFiles" alt="" coords="1017,241,1233,271"/>
+<area shape="rect" id="node28" href="$simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1345,1053,1428,1083"/>
+<area shape="rect" id="node30" href="$classQucsDoc.html#ac835da875203c51c60e6fd6a3a885b08" title="QucsDoc::fileSuffix" alt="" coords="1319,5,1455,35"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a377a769183e90c6b813cfe2d27921a48" title="Schematic::recreateComponent" alt="" coords="1284,59,1489,88"/>
+<area shape="rect" id="node35" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1569,85,1713,115"/>
+<area shape="rect" id="node37" href="$classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2" title="Schematic::placeNodeLabel" alt="" coords="1549,32,1733,61"/>
+<area shape="rect" id="node46" href="$classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07" title="OctaveWindow::startOctave" alt="" coords="491,871,677,900"/>
+<area shape="rect" id="node48" href="$classOctaveWindow.html#ad7b2fcd2b553afee52d026b12c8c7ff2" title="OctaveWindow::slotDisplayErr" alt="" coords="759,977,959,1007"/>
+<area shape="rect" id="node50" href="$classOctaveWindow.html#a0813c5c0702e72b1850a2e452140aebc" title="OctaveWindow::slotDisplayMsg" alt="" coords="755,1031,963,1060"/>
+<area shape="rect" id="node52" href="$classOctaveWindow.html#a124bba60516efba575705db3e7616471" title="OctaveWindow::slotOctaveEnded" alt="" coords="749,871,968,900"/>
+<area shape="rect" id="node54" href="$classOctaveWindow.html#a2696584a025ce5e71f32e88006d9da1f" title="OctaveWindow::adjustDirectory" alt="" coords="756,924,961,953"/>
+<area shape="rect" id="node56" href="$classOctaveWindow.html#a07709f3f94100f11625d52580b64c8c5" title="OctaveWindow::sendCommand" alt="" coords="1023,1001,1228,1031"/>
+<area shape="rect" id="node63" href="$classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd" title="QucsApp::slotShowWarnings" alt="" coords="488,767,680,796"/>
+<area shape="rect" id="node65" href="$classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae" title="Close and delete simulation dialog." alt="" coords="504,713,664,743"/>
+<area shape="rect" id="node72" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="791,767,927,796"/>
+<area shape="rect" id="node75" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="772,607,945,636"/>
+<area shape="rect" id="node78" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="777,660,940,689"/>
+<area shape="rect" id="node80" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="764,713,953,743"/>
+<area shape="rect" id="node82" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="1051,713,1200,743"/>
+<area shape="rect" id="node84" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="1061,871,1189,900"/>
+<area shape="rect" id="node86" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1353,897,1420,927"/>
+<area shape="rect" id="node88" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1349,844,1424,873"/>
+<area shape="rect" id="node94" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1285,1183,1488,1212"/>
+<area shape="rect" id="node98" href="$classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="1293,1313,1480,1343"/>
+<area shape="rect" id="node100" href="$classSimMessage.html#a77fdce549e16372342dcf227a40c0921" title="SimMessage::slotReadSpiceNetlist" alt="" coords="469,1444,699,1473"/>
+<area shape="rect" id="node102" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="468,1236,700,1265"/>
+<area shape="rect" id="node104" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="773,1236,944,1265"/>
+<area shape="rect" id="node96" href="$classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1540,1183,1743,1212"/>
+<area shape="rect" id="node106" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="1032,1183,1219,1212"/>
+<area shape="rect" id="node112" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="1061,1236,1189,1265"/>
+<area shape="rect" id="node114" href="$classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="1031,1289,1220,1319"/>
 </map>

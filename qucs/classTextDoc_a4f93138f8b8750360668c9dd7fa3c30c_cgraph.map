@@ -1,7 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classTextDoc.html#a1deefee44cff31d2794013e98e79dfaf" title="TextDoc::saveSettings saves the text document settings .cfg." alt="" coords="173,5,328,35"/>
-<area shape="rect" id="node5" href="$classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)" alt="" coords="413,84,568,113"/>
-<area shape="rect" id="node7" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="164,109,337,139"/>
-<area shape="rect" id="node9" href="$classTextDoc.html#a67d94311708265ff0efd4111e117efbe" title="TextDoc::refreshLanguage" alt="" coords="163,163,339,192"/>
-<area shape="rect" id="node12" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="388,163,593,192"/>
+<area shape="rect" id="node3" href="$classTextDoc.html#a1deefee44cff31d2794013e98e79dfaf" title="TextDoc::saveSettings saves the text document settings .cfg." alt="" coords="173,33,328,63"/>
+<area shape="rect" id="node5" href="$classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)" alt="" coords="413,165,568,195"/>
+<area shape="rect" id="node7" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="164,87,337,116"/>
+<area shape="rect" id="node15" href="$classTextDoc.html#a67d94311708265ff0efd4111e117efbe" title="TextDoc::refreshLanguage" alt="" coords="163,191,339,220"/>
+<area shape="rect" id="node9" href="$classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc" title="TextDoc::signalFileChanged" alt="" coords="397,59,584,88"/>
+<area shape="rect" id="node11" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="403,112,579,141"/>
+<area shape="rect" id="node13" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="403,5,579,35"/>
+<area shape="rect" id="node18" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="388,219,593,248"/>
 </map>

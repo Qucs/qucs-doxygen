@@ -27,7 +27,7 @@ var searchData=
   ['edittoolbar',['editToolbar',['../classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe',1,'QucsApp']]],
   ['editvalues',['editValues',['../classComponentDialog.html#aaa1c31de74e631af0eee384f5bf52223',1,'ComponentDialog']]],
   ['ellips',['Ellips',['../classComponent.html#a78ed6bd111759b743518d0395918e9b9',1,'Component']]],
-  ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../qucsdoc_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../qucsdoc_8h.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp'],['../textdoc_8h.html#a098a06ee0c473d9178da66df32798581',1,'empty_xpm():&#160;qucsdoc.cpp']]],
+  ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'qucs.cpp']]],
   ['entityname',['EntityName',['../classVHDL__File.html#ac1a9f3b38d3d010ff2995880fcdd4d11',1,'VHDL_File::EntityName()'],['../classVHDL__File__Info.html#adb7928e37b056e6f52a5814f31c16375',1,'VHDL_File_Info::EntityName()']]],
   ['error',['Error',['../classSpiceDialog.html#a086a375e8222aea6cdb5dd4f67fe567d',1,'SpiceDialog']]],
   ['errtext',['ErrText',['../classSpiceFile.html#a48c56c4b0de9de0d772507f57068ad0a',1,'SpiceFile::ErrText()'],['../classVerilog__File.html#a35399a6c516dc206afdbc758789db956',1,'Verilog_File::ErrText()'],['../classVHDL__File.html#a3e51a5dd1056563ea696f105a1de2db4',1,'VHDL_File::ErrText()'],['../classLibraryDialog.html#a041b0050c76cc195c32e0f2bd508c762',1,'LibraryDialog::ErrText()'],['../classSimMessage.html#a9b43426ec3da1c0e8db2aa41474d3bd4',1,'SimMessage::ErrText()']]],

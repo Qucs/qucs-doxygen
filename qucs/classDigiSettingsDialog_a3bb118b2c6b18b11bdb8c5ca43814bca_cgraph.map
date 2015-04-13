@@ -4,4 +4,7 @@
 <area shape="rect" id="node7" href="$classDigiSettingsDialog.html#aa5be5e12302741940b091c74fee2fd1e" title="DigiSettingsDialog::slotOk" alt="" coords="332,112,508,141"/>
 <area shape="rect" id="node9" href="$namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134" title="misc::VHDL_Time" alt="" coords="608,85,739,115"/>
 <area shape="rect" id="node11" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="587,139,760,168"/>
+<area shape="rect" id="node13" href="$classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc" title="TextDoc::signalFileChanged" alt="" coords="808,85,995,115"/>
+<area shape="rect" id="node15" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="813,139,989,168"/>
+<area shape="rect" id="node17" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="813,192,989,221"/>
 </map>

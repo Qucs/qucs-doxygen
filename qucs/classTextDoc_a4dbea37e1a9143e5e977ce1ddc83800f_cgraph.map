@@ -1,7 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)" alt="" coords="408,30,563,59"/>
-<area shape="rect" id="node5" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="159,29,332,58"/>
-<area shape="rect" id="node7" href="$classTextDoc.html#ad4c87f286f728525e37b8167b682be15" title="TextDoc::loadSettings loads the text document settings." alt="" coords="169,82,321,111"/>
-<area shape="rect" id="node9" href="$classTextDoc.html#a67d94311708265ff0efd4111e117efbe" title="TextDoc::refreshLanguage" alt="" coords="157,135,333,165"/>
-<area shape="rect" id="node12" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="383,135,588,165"/>
+<area shape="rect" id="node3" href="$classTextDoc.html#a162b43cecd5a2f388febadb987ba7b6b" title="TextDoc::setLanguage(int)" alt="" coords="408,165,563,195"/>
+<area shape="rect" id="node5" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="159,60,332,89"/>
+<area shape="rect" id="node13" href="$classTextDoc.html#ad4c87f286f728525e37b8167b682be15" title="TextDoc::loadSettings loads the text document settings." alt="" coords="169,165,321,195"/>
+<area shape="rect" id="node15" href="$classTextDoc.html#a67d94311708265ff0efd4111e117efbe" title="TextDoc::refreshLanguage" alt="" coords="157,219,333,248"/>
+<area shape="rect" id="node7" href="$classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc" title="TextDoc::signalFileChanged" alt="" coords="392,112,579,141"/>
+<area shape="rect" id="node9" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="397,5,573,35"/>
+<area shape="rect" id="node11" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="397,59,573,88"/>
+<area shape="rect" id="node18" href="$classSyntaxHighlighter.html#a4f6a0ab0b27b16a788947e779674b146" title="SyntaxHighlighter::setLanguage" alt="" coords="383,219,588,248"/>
 </map>

@@ -3,24 +3,27 @@
 <area shape="rect" id="node5" href="$classTextDoc.html#a6c710662558e7d1d5bf8a06e6ffc4b34" title="TextDoc::commentSelected toggles the comment of selected text See also QucsApp::slotEditActivate." alt="" coords="241,59,425,88"/>
 <area shape="rect" id="node7" href="$classQucsApp.html#aa5b3bc6f84bd5ceaecc4935ef11763ee" title="QucsApp::performToggleAction" alt="" coords="232,112,435,141"/>
 <area shape="rect" id="node11" href="$classSchematic.html#a21a32952eeac7109af7cd3549b6376a5" title="Schematic::activateSelectedComponents" alt="" coords="756,108,1017,137"/>
-<area shape="rect" id="node34" href="$classMouseActions.html#a1a3fa5741caa70737f4cf0e6b8ba3af1" title="MouseActions::MMoveActivate Paints a crossed box mouse cursor to &quot;(de)activate&quot; components." alt="" coords="785,372,988,401"/>
-<area shape="rect" id="node38" href="$classMouseActions.html#af8ae9255ade44c2c87f35fcb4eb090e0" title="MouseActions::MPressActivate" alt="" coords="231,267,436,296"/>
+<area shape="rect" id="node40" href="$classMouseActions.html#a1a3fa5741caa70737f4cf0e6b8ba3af1" title="MouseActions::MMoveActivate Paints a crossed box mouse cursor to &quot;(de)activate&quot; components." alt="" coords="785,372,988,401"/>
+<area shape="rect" id="node44" href="$classMouseActions.html#af8ae9255ade44c2c87f35fcb4eb090e0" title="MouseActions::MPressActivate" alt="" coords="231,267,436,296"/>
 <area shape="rect" id="node9" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="519,112,673,141"/>
 <area shape="rect" id="node13" href="$classSchematic.html#a7d6f050afa6188d83b9023693f6828c6" title="Schematic::oneLabel" alt="" coords="1087,135,1231,164"/>
 <area shape="rect" id="node15" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="1077,188,1240,217"/>
-<area shape="rect" id="node17" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1299,161,1536,191"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1321,215,1513,244"/>
-<area shape="rect" id="node19" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1595,161,1699,191"/>
-<area shape="rect" id="node23" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1584,215,1709,244"/>
-<area shape="rect" id="node25" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1604,268,1689,297"/>
-<area shape="rect" id="node27" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1593,321,1700,351"/>
-<area shape="rect" id="node29" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1757,321,1851,351"/>
-<area shape="rect" id="node31" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1899,321,1997,351"/>
-<area shape="rect" id="node36" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1068,347,1249,376"/>
-<area shape="rect" id="node40" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="757,161,1016,191"/>
-<area shape="rect" id="node44" href="$classMouseActions.html#ad2e7b4807326e8f6bc6374078538e38c" title="MouseActions::MReleaseActivate" alt="" coords="487,267,705,296"/>
-<area shape="rect" id="node56" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="500,320,692,349"/>
-<area shape="rect" id="node46" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="764,215,1009,244"/>
-<area shape="rect" id="node52" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="784,268,989,297"/>
-<area shape="rect" id="node54" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1073,268,1244,297"/>
+<area shape="rect" id="node17" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1319,81,1516,111"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1299,135,1536,164"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1324,241,1511,271"/>
+<area shape="rect" id="node25" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1324,295,1511,324"/>
+<area shape="rect" id="node27" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1321,188,1513,217"/>
+<area shape="rect" id="node21" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="1595,135,1699,164"/>
+<area shape="rect" id="node29" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="1584,188,1709,217"/>
+<area shape="rect" id="node31" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="1604,241,1689,271"/>
+<area shape="rect" id="node33" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1593,295,1700,324"/>
+<area shape="rect" id="node35" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1757,295,1851,324"/>
+<area shape="rect" id="node37" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1899,295,1997,324"/>
+<area shape="rect" id="node42" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1068,347,1249,376"/>
+<area shape="rect" id="node46" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="757,161,1016,191"/>
+<area shape="rect" id="node50" href="$classMouseActions.html#ad2e7b4807326e8f6bc6374078538e38c" title="MouseActions::MReleaseActivate" alt="" coords="487,267,705,296"/>
+<area shape="rect" id="node62" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="500,320,692,349"/>
+<area shape="rect" id="node52" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="764,215,1009,244"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="784,268,989,297"/>
+<area shape="rect" id="node60" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1073,268,1244,297"/>
 </map>

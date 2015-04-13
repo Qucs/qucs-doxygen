@@ -3,4 +3,7 @@
 <area shape="rect" id="node5" href="$classVASettingsDialog.html#af82dce13730394432c1b4f73644e8273" title="VASettingsDialog::slotBrowse" alt="" coords="292,59,489,88"/>
 <area shape="rect" id="node7" href="$classVASettingsDialog.html#a0eb3f38b17debd594c35ae02bbd6d8ff" title="VASettingsDialog::slotOk" alt="" coords="305,112,476,141"/>
 <area shape="rect" id="node9" href="$classTextDoc.html#a1c7919cfab7b0474632b7d27e25781e8" title="TextDoc::slotSetChanged togles tab icon to indicate unsaved changes." alt="" coords="539,112,712,141"/>
+<area shape="rect" id="node11" href="$classTextDoc.html#ab44400d1d5ebbb605281b6159453cbbc" title="TextDoc::signalFileChanged" alt="" coords="760,59,947,88"/>
+<area shape="rect" id="node13" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="765,112,941,141"/>
+<area shape="rect" id="node15" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="765,165,941,195"/>
 </map>

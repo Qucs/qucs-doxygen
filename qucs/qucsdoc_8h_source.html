@@ -108,47 +108,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 <span class="keyword">class </span>QPrinter;
 <a name="l00026"></a>00026 <span class="keyword">class </span>QPainter;
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="qucsdoc_8cpp.html#ab308523b9287d6370177a8b11b417d26">smallsave_xpm</a>[];<span class="comment">// icon for unsaved files (diskette)</span>
-<a name="l00029"></a>00029 <span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="qucs_8cpp.html#a098a06ee0c473d9178da66df32798581">empty_xpm</a>[];    <span class="comment">// provides same height than &quot;smallsave_xpm&quot;</span>
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="classQucsDoc.html">00032</a> <span class="keyword">class </span><a class="code" href="classQucsDoc.html">QucsDoc</a> {
-<a name="l00033"></a>00033 <span class="keyword">public</span>: 
-<a name="l00034"></a>00034   <a class="code" href="classQucsDoc.html#a0f09ab4d61dccf8616c36f0db9244aca">QucsDoc</a>(<a class="code" href="classQucsApp.html">QucsApp</a>*, <span class="keyword">const</span> QString&amp;);
-<a name="l00035"></a><a class="code" href="classQucsDoc.html#afb2b827667fca79d0ec2a0ccf23e1d58">00035</a>   <span class="keyword">virtual</span> <a class="code" href="classQucsDoc.html#afb2b827667fca79d0ec2a0ccf23e1d58">~QucsDoc</a>() {};
-<a name="l00036"></a>00036 
-<a name="l00037"></a><a class="code" href="classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe">00037</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe">setName</a>(<span class="keyword">const</span> QString&amp;) {};
-<a name="l00038"></a><a class="code" href="classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3">00038</a>   <span class="keyword">virtual</span> <span class="keywordtype">bool</span>  <a class="code" href="classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3">load</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; };
-<a name="l00039"></a><a class="code" href="classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509">00039</a>   <span class="keyword">virtual</span> <span class="keywordtype">int</span>   <a class="code" href="classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509">save</a>() { <span class="keywordflow">return</span> 0; };
-<a name="l00040"></a><a class="code" href="classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e">00040</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e">print</a>(QPrinter*, QPainter*, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>) {};
-<a name="l00041"></a><a class="code" href="classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7">00041</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7">becomeCurrent</a>(<span class="keywordtype">bool</span>) {};
-<a name="l00042"></a><a class="code" href="classQucsDoc.html#a0db1d0ad534188792cc332d168d77c9f">00042</a>   <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classQucsDoc.html#a0db1d0ad534188792cc332d168d77c9f">zoomBy</a>(<span class="keywordtype">float</span>) { <span class="keywordflow">return</span> 1.0; };
-<a name="l00043"></a><a class="code" href="classQucsDoc.html#adf7a5beb33eacbadc49b61f06c929e2a">00043</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#adf7a5beb33eacbadc49b61f06c929e2a">showAll</a>() {};
-<a name="l00044"></a><a class="code" href="classQucsDoc.html#a4e2c4895d06d2fd5b93c75ca6bd99365">00044</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a4e2c4895d06d2fd5b93c75ca6bd99365">showNoZoom</a>() {};
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <span class="keyword">static</span> QString <a class="code" href="classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899">fileSuffix</a> (<span class="keyword">const</span> QString&amp;);
-<a name="l00047"></a>00047   QString <a class="code" href="classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899">fileSuffix</a> (<span class="keywordtype">void</span>);
-<a name="l00048"></a>00048   <span class="keyword">static</span> QString <a class="code" href="classQucsDoc.html#af21d2601d30cbc54ddddf3224768a777">fileBase</a> (<span class="keyword">const</span> QString&amp;);
-<a name="l00049"></a>00049   QString <a class="code" href="classQucsDoc.html#af21d2601d30cbc54ddddf3224768a777">fileBase</a> (<span class="keywordtype">void</span>);
-<a name="l00050"></a>00050 
-<a name="l00051"></a><a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">00051</a>   QString <a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>;
-<a name="l00052"></a><a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">00052</a>   QString <a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">DataSet</a>;     <span class="comment">// name of the default dataset</span>
-<a name="l00053"></a><a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">00053</a>   QString <a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">DataDisplay</a>; <span class="comment">// name of the default data display</span>
-<a name="l00054"></a><a class="code" href="classQucsDoc.html#aea1d73563edc260b6f7fec1f21c67178">00054</a>   QString <a class="code" href="classQucsDoc.html#aea1d73563edc260b6f7fec1f21c67178">Script</a>;
-<a name="l00055"></a><a class="code" href="classQucsDoc.html#afb106714ab8031b541f7fbf0a0f4ed29">00055</a>   QString <a class="code" href="classQucsDoc.html#afb106714ab8031b541f7fbf0a0f4ed29">SimTime</a>;     <span class="comment">// used for VHDL simulation, but stored in datadisplay</span>
-<a name="l00056"></a><a class="code" href="classQucsDoc.html#a090d0ae3b26c16265635b51cab8daf67">00056</a>   QDateTime <a class="code" href="classQucsDoc.html#a090d0ae3b26c16265635b51cab8daf67">lastSaved</a>;
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">00058</a>   <span class="keywordtype">float</span> <a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a>;
-<a name="l00059"></a><a class="code" href="classQucsDoc.html#a6bf0b3e4824ace79ccf2b9a43932b379">00059</a>   <a class="code" href="classQucsApp.html">QucsApp</a> *<a class="code" href="classQucsDoc.html#a6bf0b3e4824ace79ccf2b9a43932b379">App</a>;
-<a name="l00060"></a><a class="code" href="classQucsDoc.html#add1f5816d2da623e61ac7cff6397f7af">00060</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#add1f5816d2da623e61ac7cff6397f7af">DocChanged</a>;
-<a name="l00061"></a><a class="code" href="classQucsDoc.html#aee2896e832ce4383524673779dbcca4b">00061</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#aee2896e832ce4383524673779dbcca4b">SimOpenDpl</a>;   <span class="comment">// open data display after simulation ?</span>
-<a name="l00062"></a><a class="code" href="classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346">00062</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346">SimRunScript</a>; <span class="comment">// run script after simulation ?</span>
-<a name="l00063"></a><a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">00063</a>   <span class="keywordtype">int</span>  <a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a>;     <span class="comment">// -1=no, 0=calculation running, &gt;0=show DC bias points</span>
-<a name="l00064"></a><a class="code" href="classQucsDoc.html#a803adc5162a2188bc4fbd742ed890821">00064</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#a803adc5162a2188bc4fbd742ed890821">GridOn</a>;
-<a name="l00065"></a><a class="code" href="classQucsDoc.html#abaa82613f88be2f38814d381be76f206">00065</a>   <span class="keywordtype">int</span>  <a class="code" href="classQucsDoc.html#a67ff5182a74b6bb587492f33b15556f9">tmpPosX</a>, <a class="code" href="classQucsDoc.html#abaa82613f88be2f38814d381be76f206">tmpPosY</a>;
-<a name="l00066"></a>00066 };
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068 <span class="preprocessor">#endif</span>
+<a name="l00028"></a><a class="code" href="classQucsDoc.html">00028</a> <span class="keyword">class </span><a class="code" href="classQucsDoc.html">QucsDoc</a> {
+<a name="l00029"></a>00029 <span class="keyword">public</span>: 
+<a name="l00030"></a>00030   <a class="code" href="classQucsDoc.html#a0f09ab4d61dccf8616c36f0db9244aca">QucsDoc</a>(<a class="code" href="classQucsApp.html">QucsApp</a>*, <span class="keyword">const</span> QString&amp;);
+<a name="l00031"></a><a class="code" href="classQucsDoc.html#afb2b827667fca79d0ec2a0ccf23e1d58">00031</a>   <span class="keyword">virtual</span> <a class="code" href="classQucsDoc.html#afb2b827667fca79d0ec2a0ccf23e1d58">~QucsDoc</a>() {};
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe">00033</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a00d81c661aabc1d11dcc0f4889bbfbbe">setName</a>(<span class="keyword">const</span> QString&amp;) {};
+<a name="l00034"></a><a class="code" href="classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3">00034</a>   <span class="keyword">virtual</span> <span class="keywordtype">bool</span>  <a class="code" href="classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3">load</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; };
+<a name="l00035"></a><a class="code" href="classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509">00035</a>   <span class="keyword">virtual</span> <span class="keywordtype">int</span>   <a class="code" href="classQucsDoc.html#ac6adc86a294176c8c62e44de65e5f509">save</a>() { <span class="keywordflow">return</span> 0; };
+<a name="l00036"></a><a class="code" href="classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e">00036</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e">print</a>(QPrinter*, QPainter*, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>) {};
+<a name="l00037"></a><a class="code" href="classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7">00037</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7">becomeCurrent</a>(<span class="keywordtype">bool</span>) {};
+<a name="l00038"></a><a class="code" href="classQucsDoc.html#a0db1d0ad534188792cc332d168d77c9f">00038</a>   <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="classQucsDoc.html#a0db1d0ad534188792cc332d168d77c9f">zoomBy</a>(<span class="keywordtype">float</span>) { <span class="keywordflow">return</span> 1.0; };
+<a name="l00039"></a><a class="code" href="classQucsDoc.html#adf7a5beb33eacbadc49b61f06c929e2a">00039</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#adf7a5beb33eacbadc49b61f06c929e2a">showAll</a>() {};
+<a name="l00040"></a><a class="code" href="classQucsDoc.html#a4e2c4895d06d2fd5b93c75ca6bd99365">00040</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span>  <a class="code" href="classQucsDoc.html#a4e2c4895d06d2fd5b93c75ca6bd99365">showNoZoom</a>() {};
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <span class="keyword">static</span> QString <a class="code" href="classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899">fileSuffix</a> (<span class="keyword">const</span> QString&amp;);
+<a name="l00043"></a>00043   QString <a class="code" href="classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899">fileSuffix</a> (<span class="keywordtype">void</span>);
+<a name="l00044"></a>00044   <span class="keyword">static</span> QString <a class="code" href="classQucsDoc.html#af21d2601d30cbc54ddddf3224768a777">fileBase</a> (<span class="keyword">const</span> QString&amp;);
+<a name="l00045"></a>00045   QString <a class="code" href="classQucsDoc.html#af21d2601d30cbc54ddddf3224768a777">fileBase</a> (<span class="keywordtype">void</span>);
+<a name="l00046"></a>00046 
+<a name="l00047"></a><a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">00047</a>   QString <a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>;
+<a name="l00048"></a><a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">00048</a>   QString <a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">DataSet</a>;     <span class="comment">// name of the default dataset</span>
+<a name="l00049"></a><a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">00049</a>   QString <a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">DataDisplay</a>; <span class="comment">// name of the default data display</span>
+<a name="l00050"></a><a class="code" href="classQucsDoc.html#aea1d73563edc260b6f7fec1f21c67178">00050</a>   QString <a class="code" href="classQucsDoc.html#aea1d73563edc260b6f7fec1f21c67178">Script</a>;
+<a name="l00051"></a><a class="code" href="classQucsDoc.html#afb106714ab8031b541f7fbf0a0f4ed29">00051</a>   QString <a class="code" href="classQucsDoc.html#afb106714ab8031b541f7fbf0a0f4ed29">SimTime</a>;     <span class="comment">// used for VHDL simulation, but stored in datadisplay</span>
+<a name="l00052"></a><a class="code" href="classQucsDoc.html#a090d0ae3b26c16265635b51cab8daf67">00052</a>   QDateTime <a class="code" href="classQucsDoc.html#a090d0ae3b26c16265635b51cab8daf67">lastSaved</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a><a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">00054</a>   <span class="keywordtype">float</span> <a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a>;
+<a name="l00055"></a><a class="code" href="classQucsDoc.html#a6bf0b3e4824ace79ccf2b9a43932b379">00055</a>   <a class="code" href="classQucsApp.html">QucsApp</a> *<a class="code" href="classQucsDoc.html#a6bf0b3e4824ace79ccf2b9a43932b379">App</a>;
+<a name="l00056"></a><a class="code" href="classQucsDoc.html#add1f5816d2da623e61ac7cff6397f7af">00056</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#add1f5816d2da623e61ac7cff6397f7af">DocChanged</a>;
+<a name="l00057"></a><a class="code" href="classQucsDoc.html#aee2896e832ce4383524673779dbcca4b">00057</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#aee2896e832ce4383524673779dbcca4b">SimOpenDpl</a>;   <span class="comment">// open data display after simulation ?</span>
+<a name="l00058"></a><a class="code" href="classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346">00058</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346">SimRunScript</a>; <span class="comment">// run script after simulation ?</span>
+<a name="l00059"></a><a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">00059</a>   <span class="keywordtype">int</span>  <a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a>;     <span class="comment">// -1=no, 0=calculation running, &gt;0=show DC bias points</span>
+<a name="l00060"></a><a class="code" href="classQucsDoc.html#a803adc5162a2188bc4fbd742ed890821">00060</a>   <span class="keywordtype">bool</span> <a class="code" href="classQucsDoc.html#a803adc5162a2188bc4fbd742ed890821">GridOn</a>;
+<a name="l00061"></a><a class="code" href="classQucsDoc.html#abaa82613f88be2f38814d381be76f206">00061</a>   <span class="keywordtype">int</span>  <a class="code" href="classQucsDoc.html#a67ff5182a74b6bb587492f33b15556f9">tmpPosX</a>, <a class="code" href="classQucsDoc.html#abaa82613f88be2f38814d381be76f206">tmpPosY</a>;
+<a name="l00062"></a>00062 };
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -167,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 4 2015 15:39:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 13 2015 03:45:29 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

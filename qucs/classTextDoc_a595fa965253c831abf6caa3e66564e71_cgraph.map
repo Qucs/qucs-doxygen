@@ -1,4 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classTextDoc.html#a19cb595557bc58dd7e9e8ed7c0c165dd" title="TextDoc::slotCursorPosChanged update status bar with line:column." alt="" coords="225,5,439,35"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75" title="QucsApp::printCursorPosition" alt="" coords="488,5,683,35"/>
+<area shape="rect" id="node7" href="$classTextDoc.html#a2835cae4234335f2c4c5b201254f7e2e" title="TextDoc::signalUndoState" alt="" coords="244,59,420,88"/>
+<area shape="rect" id="node9" href="$classTextDoc.html#a9d67ff02678d0d984b418fa220d98b93" title="TextDoc::signalRedoState" alt="" coords="244,112,420,141"/>
+<area shape="rect" id="node5" href="$classTextDoc.html#aa48b379f36eb5bb61812e45ab69ac2ec" title="TextDoc::signalCursorPosChanged" alt="" coords="489,5,716,35"/>
 </map>

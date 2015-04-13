@@ -1,13 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMouseActions.html#a86893d4f77b0c94649e830b08f7f376e" title="MouseActions::MMoveMoveTextB Paints mouse symbol for &quot;move component text&quot; mode." alt="" coords="287,5,508,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="316,59,479,88"/>
+<area shape="rect" id="node3" href="$classMouseActions.html#a86893d4f77b0c94649e830b08f7f376e" title="MouseActions::MMoveMoveTextB Paints mouse symbol for &quot;move component text&quot; mode." alt="" coords="287,32,508,61"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="316,139,479,168"/>
 <area shape="rect" id="node5" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="585,5,767,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="557,59,795,88"/>
-<area shape="rect" id="node13" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="580,112,772,141"/>
-<area shape="rect" id="node11" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="853,59,957,88"/>
-<area shape="rect" id="node15" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="843,112,968,141"/>
-<area shape="rect" id="node17" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="863,165,948,195"/>
-<area shape="rect" id="node19" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="852,219,959,248"/>
-<area shape="rect" id="node21" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1016,219,1109,248"/>
-<area shape="rect" id="node23" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1157,219,1256,248"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="577,59,775,88"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="557,112,795,141"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="583,165,769,195"/>
+<area shape="rect" id="node17" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="583,219,769,248"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="580,272,772,301"/>
+<area shape="rect" id="node13" href="$classPainting.html#a5d7241f13e363773a7c4032fa22c3518" title="Painting::save" alt="" coords="853,139,957,168"/>
+<area shape="rect" id="node21" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="843,219,968,248"/>
+<area shape="rect" id="node23" href="$classWire.html#a4f77d07243136879d4ac132f2ca037a2" title="Wire::save" alt="" coords="863,272,948,301"/>
+<area shape="rect" id="node25" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="852,325,959,355"/>
+<area shape="rect" id="node27" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1016,325,1109,355"/>
+<area shape="rect" id="node29" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1157,325,1256,355"/>
 </map>
