@@ -2839,26 +2839,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l02765"></a>02765 
 <a name="l02766"></a><a class="code" href="classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71">02766</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71">QucsApp::updateRecentFilesList</a>(QString s)
 <a name="l02767"></a>02767 {
-<a name="l02768"></a>02768   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.removeAll(s);
-<a name="l02769"></a>02769   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.append(s);
-<a name="l02770"></a>02770   <span class="keywordflow">if</span> (<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.size() &gt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>) {
-<a name="l02771"></a>02771     <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.removeFirst();
-<a name="l02772"></a>02772   }
-<a name="l02773"></a>02773   <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">slotUpdateRecentFiles</a>();
-<a name="l02774"></a>02774 }
-<a name="l02775"></a>02775 
-<a name="l02776"></a><a class="code" href="classQucsApp.html#a0bf5fdbea5342332cae0f3e8e758a5f7">02776</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a0bf5fdbea5342332cae0f3e8e758a5f7">QucsApp::slotSaveDiagramToGraphicsFile</a>()
-<a name="l02777"></a>02777 {
-<a name="l02778"></a>02778   <a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">slotSaveSchematicToGraphicsFile</a>(<span class="keyword">true</span>);
-<a name="l02779"></a>02779 }
-<a name="l02780"></a>02780 
-<a name="l02781"></a><a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">02781</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">QucsApp::slotSaveSchematicToGraphicsFile</a>(<span class="keywordtype">bool</span> diagram)
-<a name="l02782"></a>02782 {
-<a name="l02783"></a>02783   ImageWriter *writer = <span class="keyword">new</span> ImageWriter();
-<a name="l02784"></a>02784   writer-&gt;setDiagram(diagram);
-<a name="l02785"></a>02785   writer-&gt;print(<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage());
-<a name="l02786"></a>02786   <span class="keyword">delete</span> writer;
-<a name="l02787"></a>02787 }
+<a name="l02768"></a>02768   QSettings* settings = <span class="keyword">new</span> QSettings(<span class="stringliteral">&quot;qucs&quot;</span>,<span class="stringliteral">&quot;qucs&quot;</span>);
+<a name="l02769"></a>02769   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.removeAll(s);
+<a name="l02770"></a>02770   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.prepend(s);
+<a name="l02771"></a>02771   <span class="keywordflow">if</span> (<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.size() &gt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>) {
+<a name="l02772"></a>02772     <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.removeLast();
+<a name="l02773"></a>02773   }
+<a name="l02774"></a>02774   settings-&gt;setValue(<span class="stringliteral">&quot;RecentDocs&quot;</span>,<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.join(<span class="stringliteral">&quot;*&quot;</span>));
+<a name="l02775"></a>02775   <span class="keyword">delete</span> settings;
+<a name="l02776"></a>02776   <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">slotUpdateRecentFiles</a>();
+<a name="l02777"></a>02777 }
+<a name="l02778"></a>02778 
+<a name="l02779"></a><a class="code" href="classQucsApp.html#a0bf5fdbea5342332cae0f3e8e758a5f7">02779</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a0bf5fdbea5342332cae0f3e8e758a5f7">QucsApp::slotSaveDiagramToGraphicsFile</a>()
+<a name="l02780"></a>02780 {
+<a name="l02781"></a>02781   <a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">slotSaveSchematicToGraphicsFile</a>(<span class="keyword">true</span>);
+<a name="l02782"></a>02782 }
+<a name="l02783"></a>02783 
+<a name="l02784"></a><a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">02784</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a3e3e5ef281974a93f518e759c7a31518">QucsApp::slotSaveSchematicToGraphicsFile</a>(<span class="keywordtype">bool</span> diagram)
+<a name="l02785"></a>02785 {
+<a name="l02786"></a>02786   ImageWriter *writer = <span class="keyword">new</span> ImageWriter(<a class="code" href="classQucsApp.html#a0b5d68bd5b86c5f3a657d1af5fe6fb0a">lastExportFilename</a>);
+<a name="l02787"></a>02787   writer-&gt;setDiagram(diagram);
+<a name="l02788"></a>02788   writer-&gt;print(<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage());
+<a name="l02789"></a>02789   <a class="code" href="classQucsApp.html#a0b5d68bd5b86c5f3a657d1af5fe6fb0a">lastExportFilename</a> = writer-&gt;getLastSavedFile();
+<a name="l02790"></a>02790   <span class="keyword">delete</span> writer;
+<a name="l02791"></a>02791 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -2877,7 +2881,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 16 2015 07:14:15 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 18 2015 13:01:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
