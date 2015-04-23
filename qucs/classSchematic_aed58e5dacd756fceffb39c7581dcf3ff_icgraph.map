@@ -1,16 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="211,112,392,141"/>
-<area shape="rect" id="node29" href="$classSubcircuit.html#a3f07a932e7709e1ee06a60ebb92da9e8" title="Subcircuit::getSubcircuitFile" alt="" coords="209,165,393,195"/>
-<area shape="rect" id="node5" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="443,112,624,141"/>
-<area shape="rect" id="node7" href="$classSchematic.html#a7953e0fa01e98342403b18f3f6452803" title="Schematic::throughAllComps" alt="" coords="672,112,864,141"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d" title="Schematic::giveNodeNames" alt="" coords="912,85,1101,115"/>
-<area shape="rect" id="node11" href="$classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541" title="Schematic::createLibNetlist" alt="" coords="1153,31,1335,60"/>
-<area shape="rect" id="node20" href="$classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd" title="Schematic::createSubNetlist" alt="" coords="1149,137,1339,167"/>
-<area shape="rect" id="node23" href="$classSchematic.html#ab6e3d115def1254b5af41ad96091a258" title="Schematic::prepareNetlist" alt="" coords="1157,84,1331,113"/>
-<area shape="rect" id="node13" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1387,31,1544,60"/>
-<area shape="rect" id="node15" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1836,5,2017,35"/>
-<area shape="rect" id="node17" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1592,31,1787,60"/>
-<area shape="rect" id="node25" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1428,84,1503,113"/>
-<area shape="rect" id="node27" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1664,84,1715,113"/>
-<area shape="rect" id="node31" href="$classSubcircuit.html#af901eef17e7c39eb548f9c4a11cfc8cd" title="Subcircuit::createSymbol" alt="" coords="449,165,617,195"/>
+<area shape="rect" id="node3" href="$classComponentDialog.html#a08d8ec54bc3439db05657e4d890b6842" title="ComponentDialog::slotBrowseFile" alt="" coords="209,59,428,88"/>
+<area shape="rect" id="node7" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="228,112,409,141"/>
+<area shape="rect" id="node33" href="$classSubcircuit.html#a3f07a932e7709e1ee06a60ebb92da9e8" title="Subcircuit::getSubcircuitFile" alt="" coords="227,165,411,195"/>
+<area shape="rect" id="node5" href="$classComponentDialog.html#abbdd96cf933884ab290f90e99503db08" title="ComponentDialog::ComponentDialog" alt="" coords="479,59,716,88"/>
+<area shape="rect" id="node9" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="507,112,688,141"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="765,112,957,141"/>
+<area shape="rect" id="node13" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="1005,85,1195,115"/>
+<area shape="rect" id="node15" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1247,31,1428,60"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1243,137,1432,167"/>
+<area shape="rect" id="node27" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1251,84,1424,113"/>
+<area shape="rect" id="node17" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1480,31,1637,60"/>
+<area shape="rect" id="node19" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1929,5,2111,35"/>
+<area shape="rect" id="node21" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1685,31,1880,60"/>
+<area shape="rect" id="node29" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1521,84,1596,113"/>
+<area shape="rect" id="node31" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1757,84,1808,113"/>
+<area shape="rect" id="node35" href="$classSubcircuit.html#af901eef17e7c39eb548f9c4a11cfc8cd" title="Subcircuit::createSymbol" alt="" coords="513,165,681,195"/>
 </map>

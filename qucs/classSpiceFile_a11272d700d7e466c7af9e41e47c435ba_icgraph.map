@@ -1,10 +1,10 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="245,112,427,141"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a7953e0fa01e98342403b18f3f6452803" title="Schematic::throughAllComps" alt="" coords="475,112,667,141"/>
-<area shape="rect" id="node7" href="$classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d" title="Schematic::giveNodeNames" alt="" coords="715,85,904,115"/>
-<area shape="rect" id="node9" href="$classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541" title="Schematic::createLibNetlist" alt="" coords="956,31,1137,60"/>
-<area shape="rect" id="node18" href="$classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd" title="Schematic::createSubNetlist" alt="" coords="952,137,1141,167"/>
-<area shape="rect" id="node21" href="$classSchematic.html#ab6e3d115def1254b5af41ad96091a258" title="Schematic::prepareNetlist" alt="" coords="960,84,1133,113"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="475,112,667,141"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="715,85,904,115"/>
+<area shape="rect" id="node9" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="956,31,1137,60"/>
+<area shape="rect" id="node18" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="952,137,1141,167"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="960,84,1133,113"/>
 <area shape="rect" id="node11" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1189,31,1347,60"/>
 <area shape="rect" id="node13" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1639,5,1820,35"/>
 <area shape="rect" id="node15" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1395,31,1589,60"/>

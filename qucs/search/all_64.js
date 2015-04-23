@@ -74,7 +74,7 @@ var searchData=
   ['directive',['Directive',['../structtQucsSettings.html#aa3cc574b9f0e0d136a9da767200d314e',1,'tQucsSettings']]],
   ['directiveformat',['directiveFormat',['../classSyntaxHighlighter.html#a7ccb46f13711bff94d18fdf3c179fcef',1,'SyntaxHighlighter']]],
   ['disp',['disp',['../classComponentDialog.html#aa9a6589f25a39d074a596342397c8d3a',1,'ComponentDialog']]],
-  ['display',['Display',['../classSimMessage.html#a401e0bfa614922ce93650936c76b18b8',1,'SimMessage::Display()'],['../structProperty.html#aa3f03a07299a2d828c261efce66b8ae3',1,'Property::display()'],['../structSubParameter.html#a7e60adbe69354eabbbc3f2e4c89f49a6',1,'SubParameter::display()']]],
+  ['display',['display',['../structProperty.html#aa3f03a07299a2d828c261efce66b8ae3',1,'Property::display()'],['../structSubParameter.html#a7e60adbe69354eabbbc3f2e4c89f49a6',1,'SubParameter::display()'],['../classSimMessage.html#a401e0bfa614922ce93650936c76b18b8',1,'SimMessage::Display()']]],
   ['displaydatapage',['displayDataPage',['../classSimMessage.html#a0cb8f56292331d85695a5455c8bb10e0',1,'SimMessage']]],
   ['distrhor',['distrHor',['../classQucsApp.html#a886389efc019f34cc9c108f25a2d7d81',1,'QucsApp']]],
   ['distributehorizontal',['distributeHorizontal',['../classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3',1,'Schematic']]],

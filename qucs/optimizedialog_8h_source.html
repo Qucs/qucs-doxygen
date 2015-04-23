@@ -141,32 +141,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#ac71a126a5d48974e0612221ff2dd27ae">slotChangeGoalName</a>(<span class="keyword">const</span> QString&amp;);
 <a name="l00059"></a>00059   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#a49a33bc5d97a27cfd106c20208e2ac06">slotChangeGoalNum</a>(<span class="keyword">const</span> QString&amp;);
 <a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#a4c02fb4bf8e42e35a1889c70ce88ebbe">slotChangeGoalType</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="keyword">private</span>:
-<a name="l00063"></a>00063   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#a96aef1b5d662cbe6b61c33fc5044ddde">createASCOFiles</a>();
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 <span class="keyword">public</span>:
-<a name="l00066"></a><a class="code" href="classOptimizeDialog.html#a53b671a314e4988c2bf136691c1d5efa">00066</a>   <a class="code" href="classOptimize__Sim.html">Optimize_Sim</a> *<a class="code" href="classOptimizeDialog.html#a53b671a314e4988c2bf136691c1d5efa">Comp</a>;
-<a name="l00067"></a><a class="code" href="classOptimizeDialog.html#a5f8cc8085ab91246b546fe06a19d8c7b">00067</a>   <a class="code" href="classSchematic.html">Schematic</a> *<a class="code" href="classOptimizeDialog.html#a5f8cc8085ab91246b546fe06a19d8c7b">Doc</a>;
-<a name="l00068"></a><a class="code" href="classOptimizeDialog.html#af4ad7ac6dd1681c09a53fdad953b49be">00068</a>   <span class="keywordtype">bool</span> <a class="code" href="classOptimizeDialog.html#af4ad7ac6dd1681c09a53fdad953b49be">changed</a>;
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="classOptimizeDialog.html#a0a5a67ba37d395734dab0ad0f5173c92">00070</a>   QVBoxLayout *<a class="code" href="classOptimizeDialog.html#a0a5a67ba37d395734dab0ad0f5173c92">all</a>;
-<a name="l00071"></a><a class="code" href="classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15">00071</a>   QLineEdit *<a class="code" href="classOptimizeDialog.html#a89f4d2b90594948939423f04550651f2">NameEdit</a>, *<a class="code" href="classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15">VarNameEdit</a>,
-<a name="l00072"></a>00072             *<a class="code" href="classOptimizeDialog.html#af375f31f4f5ba26fbfe40633e07c4217">VarInitEdit</a>, *<a class="code" href="classOptimizeDialog.html#a27f0469dd6f14571390d474f53a010c8">VarMinEdit</a>, *<a class="code" href="classOptimizeDialog.html#a99e7718a5eb39cab40398780bad2cfe7">VarMaxEdit</a>,
-<a name="l00073"></a>00073             *<a class="code" href="classOptimizeDialog.html#abefaac466cb5eb43895c389ca07eb809">IterEdit</a>, *<a class="code" href="classOptimizeDialog.html#a6f07a603269cc7ad7592933c51d1a08c">RefreshEdit</a>, *<a class="code" href="classOptimizeDialog.html#af958c8a9784bbb01f7a18f5a2bd3cd24">ParentsEdit</a>, *<a class="code" href="classOptimizeDialog.html#a4c44e81804e419aaaadf4ad572ffed7d">ConstEdit</a>, *<a class="code" href="classOptimizeDialog.html#aa510934b0f071e842049ab87d4ff209e">CrossEdit</a>,
-<a name="l00074"></a>00074             *<a class="code" href="classOptimizeDialog.html#a8e3d91078ad3b8238be68e882c8f3f45">SeedEdit</a>, *<a class="code" href="classOptimizeDialog.html#abffce2e7c7b78087b3ce558a790ab402">CostVarEdit</a>, *<a class="code" href="classOptimizeDialog.html#a8f717422528e72b30d1074906ec2a07e">CostObjEdit</a>, *<a class="code" href="classOptimizeDialog.html#a7f6b7d7ef147add00279226144f057dd">CostConEdit</a>,
-<a name="l00075"></a>00075             *<a class="code" href="classOptimizeDialog.html#aeb49b427857101ff2fc802d4cf8ef01b">GoalNameEdit</a>, *<a class="code" href="classOptimizeDialog.html#aa91cf8dd777897fce781b3c7eaf874fe">GoalNumEdit</a>;
-<a name="l00076"></a><a class="code" href="classOptimizeDialog.html#aecb40e2ef19d876b79d61ff4900e9361">00076</a>   QCheckBox *<a class="code" href="classOptimizeDialog.html#aecb40e2ef19d876b79d61ff4900e9361">VarActiveCheck</a>;
-<a name="l00077"></a><a class="code" href="classOptimizeDialog.html#aa2ccb150b6eddab6b3345d461bab4a04">00077</a>   QComboBox *<a class="code" href="classOptimizeDialog.html#a59e542b537b6f9bfa9a2c4650559afa2">SimEdit</a>, *<a class="code" href="classOptimizeDialog.html#a783ed8db32cfd6206b83610e3e324b88">GoalTypeCombo</a>, *<a class="code" href="classOptimizeDialog.html#ab23948963fed57114bb264daadc6c4ba">MethodCombo</a>, *<a class="code" href="classOptimizeDialog.html#aa2ccb150b6eddab6b3345d461bab4a04">VarTypeCombo</a>;
-<a name="l00078"></a><a class="code" href="classOptimizeDialog.html#a72e1bf9507b6e95499c7e6db705bbc11">00078</a>   QTableWidget *<a class="code" href="classOptimizeDialog.html#a72e1bf9507b6e95499c7e6db705bbc11">VarTable</a>, *<a class="code" href="classOptimizeDialog.html#ae79814560298eb85b07d5e397fc95fe8">GoalTable</a>;
-<a name="l00079"></a>00079 
-<a name="l00080"></a><a class="code" href="classOptimizeDialog.html#a30bb35f056ed08ce759456431ffbc012">00080</a>   QRegExp <a class="code" href="classOptimizeDialog.html#a30bb35f056ed08ce759456431ffbc012">Expr</a>;
-<a name="l00081"></a><a class="code" href="classOptimizeDialog.html#afd4465707f3f8e528c8cf740c170f863">00081</a>   QRegExpValidator *<a class="code" href="classOptimizeDialog.html#afd4465707f3f8e528c8cf740c170f863">Validator</a>;
-<a name="l00082"></a><a class="code" href="classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842">00082</a>   QDoubleValidator *<a class="code" href="classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842">numVal</a>;
-<a name="l00083"></a><a class="code" href="classOptimizeDialog.html#a112d82ebf571491bcebae892b1a46d93">00083</a>   QIntValidator *<a class="code" href="classOptimizeDialog.html#a112d82ebf571491bcebae892b1a46d93">intVal</a>;
-<a name="l00084"></a>00084 };
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086 <span class="preprocessor">#endif</span>
+<a name="l00061"></a>00061   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#aed3ed3be079fc4f5448210e8198c890b">slotCreateEqn</a>();
+<a name="l00062"></a>00062   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#a91d0e7276f1cd2d47e90e1f52ae2f68b">slotSetPrecision</a>(<span class="keyword">const</span> QPoint&amp;);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="keyword">private</span>:
+<a name="l00065"></a>00065   <span class="keywordtype">void</span> <a class="code" href="classOptimizeDialog.html#a96aef1b5d662cbe6b61c33fc5044ddde">createASCOFiles</a>();
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="keyword">public</span>:
+<a name="l00068"></a><a class="code" href="classOptimizeDialog.html#a53b671a314e4988c2bf136691c1d5efa">00068</a>   <a class="code" href="classOptimize__Sim.html">Optimize_Sim</a> *<a class="code" href="classOptimizeDialog.html#a53b671a314e4988c2bf136691c1d5efa">Comp</a>;
+<a name="l00069"></a><a class="code" href="classOptimizeDialog.html#a5f8cc8085ab91246b546fe06a19d8c7b">00069</a>   <a class="code" href="classSchematic.html">Schematic</a> *<a class="code" href="classOptimizeDialog.html#a5f8cc8085ab91246b546fe06a19d8c7b">Doc</a>;
+<a name="l00070"></a><a class="code" href="classOptimizeDialog.html#af4ad7ac6dd1681c09a53fdad953b49be">00070</a>   <span class="keywordtype">bool</span> <a class="code" href="classOptimizeDialog.html#af4ad7ac6dd1681c09a53fdad953b49be">changed</a>;
+<a name="l00071"></a><a class="code" href="classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e">00071</a>   <span class="keywordtype">int</span> <a class="code" href="classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e">numPrec</a>;
+<a name="l00072"></a>00072 
+<a name="l00073"></a><a class="code" href="classOptimizeDialog.html#a0a5a67ba37d395734dab0ad0f5173c92">00073</a>   QVBoxLayout *<a class="code" href="classOptimizeDialog.html#a0a5a67ba37d395734dab0ad0f5173c92">all</a>;
+<a name="l00074"></a><a class="code" href="classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15">00074</a>   QLineEdit *<a class="code" href="classOptimizeDialog.html#a89f4d2b90594948939423f04550651f2">NameEdit</a>, *<a class="code" href="classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15">VarNameEdit</a>,
+<a name="l00075"></a>00075             *<a class="code" href="classOptimizeDialog.html#af375f31f4f5ba26fbfe40633e07c4217">VarInitEdit</a>, *<a class="code" href="classOptimizeDialog.html#a27f0469dd6f14571390d474f53a010c8">VarMinEdit</a>, *<a class="code" href="classOptimizeDialog.html#a99e7718a5eb39cab40398780bad2cfe7">VarMaxEdit</a>,
+<a name="l00076"></a>00076             *<a class="code" href="classOptimizeDialog.html#abefaac466cb5eb43895c389ca07eb809">IterEdit</a>, *<a class="code" href="classOptimizeDialog.html#a6f07a603269cc7ad7592933c51d1a08c">RefreshEdit</a>, *<a class="code" href="classOptimizeDialog.html#af958c8a9784bbb01f7a18f5a2bd3cd24">ParentsEdit</a>, *<a class="code" href="classOptimizeDialog.html#a4c44e81804e419aaaadf4ad572ffed7d">ConstEdit</a>, *<a class="code" href="classOptimizeDialog.html#aa510934b0f071e842049ab87d4ff209e">CrossEdit</a>,
+<a name="l00077"></a>00077             *<a class="code" href="classOptimizeDialog.html#a8e3d91078ad3b8238be68e882c8f3f45">SeedEdit</a>, *<a class="code" href="classOptimizeDialog.html#abffce2e7c7b78087b3ce558a790ab402">CostVarEdit</a>, *<a class="code" href="classOptimizeDialog.html#a8f717422528e72b30d1074906ec2a07e">CostObjEdit</a>, *<a class="code" href="classOptimizeDialog.html#a7f6b7d7ef147add00279226144f057dd">CostConEdit</a>,
+<a name="l00078"></a>00078             *<a class="code" href="classOptimizeDialog.html#aeb49b427857101ff2fc802d4cf8ef01b">GoalNameEdit</a>, *<a class="code" href="classOptimizeDialog.html#aa91cf8dd777897fce781b3c7eaf874fe">GoalNumEdit</a>;
+<a name="l00079"></a><a class="code" href="classOptimizeDialog.html#aecb40e2ef19d876b79d61ff4900e9361">00079</a>   QCheckBox *<a class="code" href="classOptimizeDialog.html#aecb40e2ef19d876b79d61ff4900e9361">VarActiveCheck</a>;
+<a name="l00080"></a><a class="code" href="classOptimizeDialog.html#aa2ccb150b6eddab6b3345d461bab4a04">00080</a>   QComboBox *<a class="code" href="classOptimizeDialog.html#a59e542b537b6f9bfa9a2c4650559afa2">SimEdit</a>, *<a class="code" href="classOptimizeDialog.html#a783ed8db32cfd6206b83610e3e324b88">GoalTypeCombo</a>, *<a class="code" href="classOptimizeDialog.html#ab23948963fed57114bb264daadc6c4ba">MethodCombo</a>, *<a class="code" href="classOptimizeDialog.html#aa2ccb150b6eddab6b3345d461bab4a04">VarTypeCombo</a>;
+<a name="l00081"></a><a class="code" href="classOptimizeDialog.html#a72e1bf9507b6e95499c7e6db705bbc11">00081</a>   QTableWidget *<a class="code" href="classOptimizeDialog.html#a72e1bf9507b6e95499c7e6db705bbc11">VarTable</a>, *<a class="code" href="classOptimizeDialog.html#ae79814560298eb85b07d5e397fc95fe8">GoalTable</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a><a class="code" href="classOptimizeDialog.html#a30bb35f056ed08ce759456431ffbc012">00083</a>   QRegExp <a class="code" href="classOptimizeDialog.html#a30bb35f056ed08ce759456431ffbc012">Expr</a>;
+<a name="l00084"></a><a class="code" href="classOptimizeDialog.html#afd4465707f3f8e528c8cf740c170f863">00084</a>   QRegExpValidator *<a class="code" href="classOptimizeDialog.html#afd4465707f3f8e528c8cf740c170f863">Validator</a>;
+<a name="l00085"></a><a class="code" href="classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842">00085</a>   QDoubleValidator *<a class="code" href="classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842">numVal</a>;
+<a name="l00086"></a><a class="code" href="classOptimizeDialog.html#a112d82ebf571491bcebae892b1a46d93">00086</a>   QIntValidator *<a class="code" href="classOptimizeDialog.html#a112d82ebf571491bcebae892b1a46d93">intVal</a>;
+<a name="l00087"></a>00087 };
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -185,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 23 2015 20:38:08 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2015 22:17:51 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

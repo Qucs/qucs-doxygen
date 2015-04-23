@@ -38,7 +38,7 @@ var searchData=
   ['process',['Process',['../classImportDialog.html#a8c9c5f6105b62bf408dd641baeeb178f',1,'ImportDialog']]],
   ['program',['Program',['../classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61',1,'SimMessage']]],
   ['progresstext',['ProgressText',['../classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633',1,'SimMessage']]],
-  ['progtext',['ProgText',['../classSimMessage.html#aa360be76d1da38079b9850b8da0aa25c',1,'SimMessage']]],
+  ['progtext',['ProgText',['../classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5',1,'SimMessage']]],
   ['projclose',['projClose',['../classQucsApp.html#abea54876387570e6d9c694f453a84bc5',1,'QucsApp']]],
   ['projdel',['projDel',['../classQucsApp.html#a7d7ce0265b2c217800768b3579ec9c38',1,'QucsApp']]],
   ['projdir',['projDir',['../classLoadDialog.html#a73f297fdc443c3364dac2ed406a510c9',1,'LoadDialog']]],

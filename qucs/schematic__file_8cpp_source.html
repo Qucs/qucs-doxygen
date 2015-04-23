@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023 <span class="preprocessor">#include &lt;QMessageBox&gt;</span>
 <a name="l00024"></a>00024 <span class="preprocessor">#include &lt;QDir&gt;</span>
 <a name="l00025"></a>00025 <span class="preprocessor">#include &lt;QStringList&gt;</span>
-<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;QTextEdit&gt;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;QPlainTextEdit&gt;</span>
 <a name="l00027"></a>00027 <span class="preprocessor">#include &lt;Q3PtrList&gt;</span>
 <a name="l00028"></a>00028 <span class="preprocessor">#include &lt;QTextStream&gt;</span>
 <a name="l00029"></a>00029 <span class="preprocessor">#include &lt;QList&gt;</span>
@@ -1265,8 +1265,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01183"></a>01183 <span class="comment">// ---------------------------------------------------</span>
 <a name="l01184"></a>01184 <span class="comment">// Goes through all schematic components and allows special component</span>
 <a name="l01185"></a>01185 <span class="comment">// handling, e.g. like subcircuit netlisting.</span>
-<a name="l01186"></a><a class="code" href="classSchematic.html#a7953e0fa01e98342403b18f3f6452803">01186</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a7953e0fa01e98342403b18f3f6452803">Schematic::throughAllComps</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
-<a name="l01187"></a>01187                    QStringList&amp; Collect, QTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
+<a name="l01186"></a><a class="code" href="classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921">01186</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921">Schematic::throughAllComps</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
+<a name="l01187"></a>01187                    QStringList&amp; Collect, QPlainTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
 <a name="l01188"></a>01188 {
 <a name="l01189"></a>01189   <span class="keywordtype">bool</span> r;
 <a name="l01190"></a>01190   QString s;
@@ -1281,12 +1281,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01199"></a>01199     <span class="comment">// check analog/digital typed components</span>
 <a name="l01200"></a>01200     <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
 <a name="l01201"></a>01201       <span class="keywordflow">if</span>((pc-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> &amp; <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>) == 0) {
-<a name="l01202"></a>01202         ErrText-&gt;insert(QObject::tr(<span class="stringliteral">&quot;ERROR: Component \&quot;%1\&quot; has no analog model.&quot;</span>).arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
+<a name="l01202"></a>01202         ErrText-&gt;appendPlainText(QObject::tr(<span class="stringliteral">&quot;ERROR: Component \&quot;%1\&quot; has no analog model.&quot;</span>).arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01203"></a>01203         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01204"></a>01204       }
 <a name="l01205"></a>01205     } <span class="keywordflow">else</span> {
 <a name="l01206"></a>01206       <span class="keywordflow">if</span>((pc-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> &amp; <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>) == 0) {
-<a name="l01207"></a>01207         ErrText-&gt;insert(QObject::tr(<span class="stringliteral">&quot;ERROR: Component \&quot;%1\&quot; has no digital model.&quot;</span>).arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
+<a name="l01207"></a>01207         ErrText-&gt;appendPlainText(QObject::tr(<span class="stringliteral">&quot;ERROR: Component \&quot;%1\&quot; has no digital model.&quot;</span>).arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01208"></a>01208         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01209"></a>01209       }
 <a name="l01210"></a>01210     }
@@ -1332,14 +1332,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01250"></a>01250       <span class="keywordflow">if</span>(!d-&gt;<a class="code" href="classSchematic.html#a971393320f98a4675a9cb44e8cebce77">loadDocument</a>())      <span class="comment">// load document if possible</span>
 <a name="l01251"></a>01251       {
 <a name="l01252"></a>01252           <span class="keyword">delete</span> d;
-<a name="l01253"></a>01253           ErrText-&gt;insert(QObject::tr(<span class="stringliteral">&quot;ERROR: Cannot load subcircuit \&quot;%1\&quot;.&quot;</span>).arg(s));
+<a name="l01253"></a>01253           ErrText-&gt;appendPlainText(QObject::tr(<span class="stringliteral">&quot;ERROR: Cannot load subcircuit \&quot;%1\&quot;.&quot;</span>).arg(s));
 <a name="l01254"></a>01254           <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01255"></a>01255       }
 <a name="l01256"></a>01256       d-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a> = s;
 <a name="l01257"></a>01257       d-&gt;<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a> = <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>;
 <a name="l01258"></a>01258       d-&gt;<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>;
 <a name="l01259"></a>01259       d-&gt;<a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a> = <a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a>;
-<a name="l01260"></a>01260       r = d-&gt;<a class="code" href="classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd">createSubNetlist</a>(stream, countInit, Collect, ErrText, NumPorts);
+<a name="l01260"></a>01260       r = d-&gt;<a class="code" href="classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd">createSubNetlist</a>(stream, countInit, Collect, ErrText, NumPorts);
 <a name="l01261"></a>01261       <span class="keywordflow">if</span> (r)
 <a name="l01262"></a>01262       {
 <a name="l01263"></a>01263         i = 0;
@@ -1365,7 +1365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01283"></a>01283     <span class="comment">// handle library symbols</span>
 <a name="l01284"></a>01284     <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;Lib&quot;</span>) {
 <a name="l01285"></a>01285       <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a>) {
-<a name="l01286"></a>01286   ErrText-&gt;insert(
+<a name="l01286"></a>01286   ErrText-&gt;appendPlainText(
 <a name="l01287"></a>01287       QObject::tr(<span class="stringliteral">&quot;WARNING: Skipping library component \&quot;%1\&quot;.&quot;</span>).
 <a name="l01288"></a>01288       arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01289"></a>01289   <span class="keywordflow">continue</span>;
@@ -1385,7 +1385,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01303"></a>01303     r = ((<a class="code" href="classLibComp.html">LibComp</a>*)pc)-&gt;createSubNetlist(stream, Collect, 2);
 <a name="l01304"></a>01304       }
 <a name="l01305"></a>01305       <span class="keywordflow">if</span>(!r) {
-<a name="l01306"></a>01306   ErrText-&gt;insert(
+<a name="l01306"></a>01306   ErrText-&gt;appendPlainText(
 <a name="l01307"></a>01307       QObject::tr(<span class="stringliteral">&quot;ERROR: Cannot load library component \&quot;%1\&quot;.&quot;</span>).
 <a name="l01308"></a>01308       arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01309"></a>01309   <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -1399,7 +1399,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01317"></a>01317       <span class="comment">// tell the spice component it belongs to this schematic</span>
 <a name="l01318"></a>01318       pc-&gt;<a class="code" href="classComponent.html#ad7047dd13d9f3da38d4053f868411d09">setSchematic</a> (<span class="keyword">this</span>);
 <a name="l01319"></a>01319       <span class="keywordflow">if</span>(s.isEmpty()) {
-<a name="l01320"></a>01320         ErrText-&gt;insert(QObject::tr(<span class="stringliteral">&quot;ERROR: No file name in SPICE component \&quot;%1\&quot;.&quot;</span>).
+<a name="l01320"></a>01320         ErrText-&gt;appendPlainText(QObject::tr(<span class="stringliteral">&quot;ERROR: No file name in SPICE component \&quot;%1\&quot;.&quot;</span>).
 <a name="l01321"></a>01321                         arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01322"></a>01322         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01323"></a>01323       }
@@ -1411,7 +1411,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01329"></a>01329 
 <a name="l01330"></a>01330       <a class="code" href="classSpiceFile.html">SpiceFile</a> *sf = (<a class="code" href="classSpiceFile.html">SpiceFile</a>*)pc;
 <a name="l01331"></a>01331       r = sf-&gt;<a class="code" href="classSpiceFile.html#ac5957c82d869186302b221c8638584a6">createSubNetlist</a>(stream);
-<a name="l01332"></a>01332       ErrText-&gt;insert(sf-&gt;<a class="code" href="classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90">getErrorText</a>());
+<a name="l01332"></a>01332       ErrText-&gt;appendPlainText(sf-&gt;<a class="code" href="classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90">getErrorText</a>());
 <a name="l01333"></a>01333       <span class="keywordflow">if</span>(!r) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01334"></a>01334       <span class="keywordflow">continue</span>;
 <a name="l01335"></a>01335     }
@@ -1424,7 +1424,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01342"></a>01342   <span class="keywordflow">continue</span>;
 <a name="l01343"></a>01343       s = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value;
 <a name="l01344"></a>01344       <span class="keywordflow">if</span>(s.isEmpty()) {
-<a name="l01345"></a>01345         ErrText-&gt;insert(QObject::tr(<span class="stringliteral">&quot;ERROR: No file name in %1 component \&quot;%2\&quot;.&quot;</span>).
+<a name="l01345"></a>01345         ErrText-&gt;appendPlainText(QObject::tr(<span class="stringliteral">&quot;ERROR: No file name in %1 component \&quot;%2\&quot;.&quot;</span>).
 <a name="l01346"></a>01346       arg(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a>).
 <a name="l01347"></a>01347                         arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01348"></a>01348         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -1439,13 +1439,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01357"></a>01357       <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;VHDL&quot;</span>) {
 <a name="l01358"></a>01358   <a class="code" href="classVHDL__File.html">VHDL_File</a> *vf = (<a class="code" href="classVHDL__File.html">VHDL_File</a>*)pc;
 <a name="l01359"></a>01359   r = vf-&gt;<a class="code" href="classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c">createSubNetlist</a>(stream);
-<a name="l01360"></a>01360   ErrText-&gt;insert(vf-&gt;<a class="code" href="classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4">getErrorText</a>());
+<a name="l01360"></a>01360   ErrText-&gt;appendPlainText(vf-&gt;<a class="code" href="classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4">getErrorText</a>());
 <a name="l01361"></a>01361   <span class="keywordflow">if</span>(!r) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01362"></a>01362       }
 <a name="l01363"></a>01363       <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;Verilog&quot;</span>) {
 <a name="l01364"></a>01364   <a class="code" href="classVerilog__File.html">Verilog_File</a> *vf = (<a class="code" href="classVerilog__File.html">Verilog_File</a>*)pc;
 <a name="l01365"></a>01365   r = vf-&gt;<a class="code" href="classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48">createSubNetlist</a>(stream);
-<a name="l01366"></a>01366   ErrText-&gt;insert(vf-&gt;<a class="code" href="classVerilog__File.html#a0945cf70d92970b0607197362fdd29e0">getErrorText</a>());
+<a name="l01366"></a>01366   ErrText-&gt;appendPlainText(vf-&gt;<a class="code" href="classVerilog__File.html#a0945cf70d92970b0607197362fdd29e0">getErrorText</a>());
 <a name="l01367"></a>01367   <span class="keywordflow">if</span>(!r) <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01368"></a>01368       }
 <a name="l01369"></a>01369       <span class="keywordflow">continue</span>;
@@ -1458,8 +1458,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01376"></a>01376 <span class="comment">// Follows the wire lines in order to determine the node names for</span>
 <a name="l01377"></a>01377 <span class="comment">// each component. Output into &quot;stream&quot;, NodeSets are collected in</span>
 <a name="l01378"></a>01378 <span class="comment">// &quot;Collect&quot; and counted with &quot;countInit&quot;.</span>
-<a name="l01379"></a><a class="code" href="classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d">01379</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d">Schematic::giveNodeNames</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
-<a name="l01380"></a>01380                    QStringList&amp; Collect, QTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
+<a name="l01379"></a><a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">01379</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">Schematic::giveNodeNames</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
+<a name="l01380"></a>01380                    QStringList&amp; Collect, QPlainTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
 <a name="l01381"></a>01381 {
 <a name="l01382"></a>01382   <span class="comment">// delete the node names</span>
 <a name="l01383"></a>01383   <span class="keywordflow">for</span>(<a class="code" href="classNode.html">Node</a> *pn = <a class="code" href="classSchematic.html#af4291df84ee3bfdac29144c8e3437102">DocNodes</a>.first(); pn != 0; pn = <a class="code" href="classSchematic.html#af4291df84ee3bfdac29144c8e3437102">DocNodes</a>.next()) {
@@ -1483,7 +1483,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01401"></a>01401     }
 <a name="l01402"></a>01402 
 <a name="l01403"></a>01403   <span class="comment">// go through components</span>
-<a name="l01404"></a>01404   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a7953e0fa01e98342403b18f3f6452803">throughAllComps</a>(stream, countInit, Collect, ErrText, NumPorts))
+<a name="l01404"></a>01404   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921">throughAllComps</a>(stream, countInit, Collect, ErrText, NumPorts))
 <a name="l01405"></a>01405     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01406"></a>01406 
 <a name="l01407"></a>01407   <span class="comment">// work on named nodes first in order to preserve the user given names</span>
@@ -1499,7 +1499,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01417"></a>01417 }
 <a name="l01418"></a>01418 
 <a name="l01419"></a>01419 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01420"></a><a class="code" href="classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541">01420</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541">Schematic::createLibNetlist</a>(QTextStream *stream, QTextEdit *ErrText,
+<a name="l01420"></a><a class="code" href="classSchematic.html#acc596c5cb39928e02a1b61365079d0f4">01420</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#acc596c5cb39928e02a1b61365079d0f4">Schematic::createLibNetlist</a>(QTextStream *stream, QPlainTextEdit *ErrText,
 <a name="l01421"></a>01421          <span class="keywordtype">int</span> NumPorts)
 <a name="l01422"></a>01422 {
 <a name="l01423"></a>01423   <span class="keywordtype">int</span> countInit = 0;
@@ -1509,7 +1509,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01427"></a>01427   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();
 <a name="l01428"></a>01428   <span class="comment">// Apply node names and collect subcircuits and file include</span>
 <a name="l01429"></a>01429   <a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a> = <span class="keyword">true</span>;
-<a name="l01430"></a>01430   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d">giveNodeNames</a>(stream, countInit, Collect, ErrText, NumPorts)) {
+<a name="l01430"></a>01430   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">giveNodeNames</a>(stream, countInit, Collect, ErrText, NumPorts)) {
 <a name="l01431"></a>01431     <a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a> = <span class="keyword">false</span>;
 <a name="l01432"></a>01432     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01433"></a>01433   }
@@ -1527,7 +1527,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01445"></a>01445   (*stream) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; c &lt;&lt; <span class="stringliteral">&quot; TOP LEVEL MARK &quot;</span> &lt;&lt; c &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
 <a name="l01446"></a>01446 
 <a name="l01447"></a>01447   <span class="comment">// Emit subcircuit components</span>
-<a name="l01448"></a>01448   <a class="code" href="classSchematic.html#aefeef01b2d6b585e19c5eceec1bd82e1">createSubNetlistPlain</a>(stream, ErrText, NumPorts);
+<a name="l01448"></a>01448   <a class="code" href="classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6">createSubNetlistPlain</a>(stream, ErrText, NumPorts);
 <a name="l01449"></a>01449 
 <a name="l01450"></a>01450   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
 <a name="l01451"></a>01451   <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -1539,7 +1539,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01457"></a><a class="code" href="schematic__file_8cpp.html#ab483c95e1105c825907c7f4771d2824d">01457</a> <span class="preprocessor"></span><span class="preprocessor">#define VHDL_LIBRARIES   &quot;\nlibrary ieee;\nuse ieee.std_logic_1164.all;\n&quot;</span>
 <a name="l01458"></a>01458 <span class="preprocessor"></span>
 <a name="l01459"></a>01459 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01460"></a><a class="code" href="classSchematic.html#aefeef01b2d6b585e19c5eceec1bd82e1">01460</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aefeef01b2d6b585e19c5eceec1bd82e1">Schematic::createSubNetlistPlain</a>(QTextStream *stream, QTextEdit *ErrText,
+<a name="l01460"></a><a class="code" href="classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6">01460</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6">Schematic::createSubNetlistPlain</a>(QTextStream *stream, QPlainTextEdit *ErrText,
 <a name="l01461"></a>01461 <span class="keywordtype">int</span> NumPorts)
 <a name="l01462"></a>01462 {
 <a name="l01463"></a>01463   <span class="keywordtype">int</span> i, z;
@@ -1560,7 +1560,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01478"></a>01478     QString f = <a class="code" href="namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d">misc::properAbsFileName</a>(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>) + <span class="stringliteral">&quot;.lst&quot;</span>;
 <a name="l01479"></a>01479     ofile.setFileName(f);
 <a name="l01480"></a>01480     <span class="keywordflow">if</span>(!ofile.open(IO_WriteOnly)) {
-<a name="l01481"></a>01481       ErrText-&gt;insert(tr(<span class="stringliteral">&quot;ERROR: Cannot create library file \&quot;%s\&quot;.&quot;</span>).arg(f));
+<a name="l01481"></a>01481       ErrText-&gt;appendPlainText(tr(<span class="stringliteral">&quot;ERROR: Cannot create library file \&quot;%s\&quot;.&quot;</span>).arg(f));
 <a name="l01482"></a>01482       <span class="keywordflow">return</span>;
 <a name="l01483"></a>01483     }
 <a name="l01484"></a>01484     tstream = <span class="keyword">new</span> QTextStream(&amp;ofile);
@@ -1571,7 +1571,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01489"></a>01489   <a class="code" href="classSchematic.html#a2c7ba9b5e0735563a02fde11de0f3189">PortTypes</a>.clear();
 <a name="l01490"></a>01490   <span class="keywordflow">for</span>(pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
 <a name="l01491"></a>01491     <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a>.at(0) == <span class="charliteral">&#39;.&#39;</span>) { <span class="comment">// no simulations in subcircuits</span>
-<a name="l01492"></a>01492       ErrText-&gt;insert(
+<a name="l01492"></a>01492       ErrText-&gt;appendPlainText(
 <a name="l01493"></a>01493         QObject::tr(<span class="stringliteral">&quot;WARNING: Ignore simulation component in subcircuit \&quot;%1\&quot;.&quot;</span>).arg(<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>)+<span class="stringliteral">&quot;\n&quot;</span>);
 <a name="l01494"></a>01494       <span class="keywordflow">continue</span>;
 <a name="l01495"></a>01495     }
@@ -1723,7 +1723,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01641"></a>01641         <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> != <span class="stringliteral">&quot;Eqn&quot;</span>) {
 <a name="l01642"></a>01642           s = pc-&gt;<a class="code" href="classComponent.html#aca662dcb71726b77eb5db6af76c63624">get_Verilog_Code</a>(NumPorts);
 <a name="l01643"></a>01643           <span class="keywordflow">if</span>(s.length()&gt;0 &amp;&amp; s.at(0) == <span class="stringliteral">&#39;\xA7&#39;</span>) {  <span class="comment">//section symbol</span>
-<a name="l01644"></a>01644             ErrText-&gt;insert(s.mid(1));
+<a name="l01644"></a>01644             ErrText-&gt;appendPlainText(s.mid(1));
 <a name="l01645"></a>01645           }
 <a name="l01646"></a>01646           <span class="keywordflow">else</span> (*tstream) &lt;&lt; s;
 <a name="l01647"></a>01647         }
@@ -1772,7 +1772,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01690"></a>01690       <span class="comment">// write all equations into netlist file</span>
 <a name="l01691"></a>01691       <span class="keywordflow">for</span>(pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
 <a name="l01692"></a>01692         <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;Eqn&quot;</span>) {
-<a name="l01693"></a>01693           ErrText-&gt;insert(
+<a name="l01693"></a>01693           ErrText-&gt;appendPlainText(
 <a name="l01694"></a>01694                       QObject::tr(<span class="stringliteral">&quot;WARNING: Equations in \&quot;%1\&quot; are &#39;time&#39; typed.&quot;</span>).
 <a name="l01695"></a>01695           arg(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>));
 <a name="l01696"></a>01696           (*tstream) &lt;&lt; pc-&gt;<a class="code" href="classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7">get_VHDL_Code</a>(NumPorts);
@@ -1789,7 +1789,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01707"></a>01707         <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> != <span class="stringliteral">&quot;Eqn&quot;</span>) {
 <a name="l01708"></a>01708             s = pc-&gt;<a class="code" href="classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7">get_VHDL_Code</a>(NumPorts);
 <a name="l01709"></a>01709             <span class="keywordflow">if</span>(s.length()&gt;0 &amp;&amp; s.at(0) == <span class="stringliteral">&#39;\xA7&#39;</span>) {  <span class="comment">//section symbol</span>
-<a name="l01710"></a>01710               ErrText-&gt;insert(s.mid(1));
+<a name="l01710"></a>01710               ErrText-&gt;appendPlainText(s.mid(1));
 <a name="l01711"></a>01711           }
 <a name="l01712"></a>01712           <span class="keywordflow">else</span> (*tstream) &lt;&lt; s;
 <a name="l01713"></a>01713         }
@@ -1807,13 +1807,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01725"></a>01725 }
 <a name="l01726"></a>01726 <span class="comment">// ---------------------------------------------------</span>
 <a name="l01727"></a>01727 <span class="comment">// Write the netlist as subcircuit to the text stream &#39;stream&#39;.</span>
-<a name="l01728"></a><a class="code" href="classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd">01728</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd">Schematic::createSubNetlist</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
-<a name="l01729"></a>01729                      QStringList&amp; Collect, QTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
+<a name="l01728"></a><a class="code" href="classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd">01728</a> <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd">Schematic::createSubNetlist</a>(QTextStream *stream, <span class="keywordtype">int</span>&amp; countInit,
+<a name="l01729"></a>01729                      QStringList&amp; Collect, QPlainTextEdit *ErrText, <span class="keywordtype">int</span> NumPorts)
 <a name="l01730"></a>01730 {
 <a name="l01731"></a>01731 <span class="comment">//  int Collect_count = Collect.count();   // position for this subcircuit</span>
 <a name="l01732"></a>01732 
 <a name="l01733"></a>01733   <span class="comment">// TODO: NodeSets have to be put into the subcircuit block.</span>
-<a name="l01734"></a>01734   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d">giveNodeNames</a>(stream, countInit, Collect, ErrText, NumPorts))
+<a name="l01734"></a>01734   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">giveNodeNames</a>(stream, countInit, Collect, ErrText, NumPorts))
 <a name="l01735"></a>01735     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01736"></a>01736 
 <a name="l01737"></a>01737 <span class="comment">/*  Example for TODO</span>
@@ -1825,7 +1825,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01743"></a>01743 <span class="comment">      else it++;*/</span>
 <a name="l01744"></a>01744 
 <a name="l01745"></a>01745   <span class="comment">// Emit subcircuit components</span>
-<a name="l01746"></a>01746   <a class="code" href="classSchematic.html#aefeef01b2d6b585e19c5eceec1bd82e1">createSubNetlistPlain</a>(stream, ErrText, NumPorts);
+<a name="l01746"></a>01746   <a class="code" href="classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6">createSubNetlistPlain</a>(stream, ErrText, NumPorts);
 <a name="l01747"></a>01747 
 <a name="l01748"></a>01748   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
 <a name="l01749"></a>01749   <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -1833,8 +1833,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01751"></a>01751 
 <a name="l01752"></a>01752 <span class="comment">// ---------------------------------------------------</span>
 <a name="l01753"></a>01753 <span class="comment">// Determines the node names and writes subcircuits into netlist file.</span>
-<a name="l01754"></a><a class="code" href="classSchematic.html#ab6e3d115def1254b5af41ad96091a258">01754</a> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#ab6e3d115def1254b5af41ad96091a258">Schematic::prepareNetlist</a>(QTextStream&amp; stream, QStringList&amp; Collect,
-<a name="l01755"></a>01755                               QTextEdit *ErrText)
+<a name="l01754"></a><a class="code" href="classSchematic.html#a436ec9032e80a36eaa51559bea05414b">01754</a> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#a436ec9032e80a36eaa51559bea05414b">Schematic::prepareNetlist</a>(QTextStream&amp; stream, QStringList&amp; Collect,
+<a name="l01755"></a>01755                               QPlainTextEdit *ErrText)
 <a name="l01756"></a>01756 {
 <a name="l01757"></a>01757   <span class="keywordflow">if</span>(<a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> &gt; 0) <a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> = -1;  <span class="comment">// do not show DC bias anymore</span>
 <a name="l01758"></a>01758 
@@ -1849,7 +1849,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01767"></a>01767     <span class="keywordflow">if</span>(pc-&gt;Model.at(0) == <span class="charliteral">&#39;.&#39;</span>) {
 <a name="l01768"></a>01768       <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;.Digi&quot;</span>) {
 <a name="l01769"></a>01769         <span class="keywordflow">if</span>(allTypes &amp; <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>) {
-<a name="l01770"></a>01770           ErrText-&gt;insert(
+<a name="l01770"></a>01770           ErrText-&gt;appendPlainText(
 <a name="l01771"></a>01771              QObject::tr(<span class="stringliteral">&quot;ERROR: Only one digital simulation allowed.&quot;</span>));
 <a name="l01772"></a>01772           <span class="keywordflow">return</span> -10;
 <a name="l01773"></a>01773         }
@@ -1862,7 +1862,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01780"></a>01780       }
 <a name="l01781"></a>01781       <span class="keywordflow">else</span> allTypes |= <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>;
 <a name="l01782"></a>01782       <span class="keywordflow">if</span>((allTypes &amp; <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) == <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) {
-<a name="l01783"></a>01783         ErrText-&gt;insert(
+<a name="l01783"></a>01783         ErrText-&gt;appendPlainText(
 <a name="l01784"></a>01784            QObject::tr(<span class="stringliteral">&quot;ERROR: Analog and digital simulations cannot be mixed.&quot;</span>));
 <a name="l01785"></a>01785         <span class="keywordflow">return</span> -10;
 <a name="l01786"></a>01786       }
@@ -1881,7 +1881,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01799"></a>01799     }
 <a name="l01800"></a>01800     <span class="keywordflow">else</span> {
 <a name="l01801"></a>01801       <span class="keywordflow">if</span>(NumPorts &lt; 1 &amp;&amp; isTruthTable) {
-<a name="l01802"></a>01802         ErrText-&gt;insert(
+<a name="l01802"></a>01802         ErrText-&gt;appendPlainText(
 <a name="l01803"></a>01803            QObject::tr(<span class="stringliteral">&quot;ERROR: Digital simulation needs at least one digital source.&quot;</span>));
 <a name="l01804"></a>01804         <span class="keywordflow">return</span> -10;
 <a name="l01805"></a>01805       }
@@ -1908,7 +1908,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01826"></a>01826   }
 <a name="l01827"></a>01827 
 <a name="l01828"></a>01828   <span class="keywordtype">int</span> countInit = 0;  <span class="comment">// counts the nodesets to give them unique names</span>
-<a name="l01829"></a>01829   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d">giveNodeNames</a>(&amp;stream, countInit, Collect, ErrText, NumPorts))
+<a name="l01829"></a>01829   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">giveNodeNames</a>(&amp;stream, countInit, Collect, ErrText, NumPorts))
 <a name="l01830"></a>01830     <span class="keywordflow">return</span> -10;
 <a name="l01831"></a>01831 
 <a name="l01832"></a>01832   <span class="keywordflow">if</span>(allTypes &amp; isAnalogComponent)
@@ -2034,7 +2034,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 23 2015 20:38:10 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2015 22:17:52 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

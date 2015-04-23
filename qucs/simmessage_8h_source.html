@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 <span class="preprocessor">#include &lt;QTextStream&gt;</span>
 <a name="l00026"></a>00026 <span class="preprocessor">#include &lt;QVBoxLayout&gt;</span>
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="keyword">class </span>QTextEdit;
+<a name="l00028"></a>00028 <span class="keyword">class </span>QPlainTextEdit;
 <a name="l00029"></a>00029 <span class="keyword">class </span>QTextStream;
 <a name="l00030"></a>00030 <span class="keyword">class </span>QVBoxLayout;
 <a name="l00031"></a>00031 <span class="keyword">class </span>QPushButton;
@@ -169,26 +169,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00086"></a><a class="code" href="classSimMessage.html#a992860a43ff7feed8c924be11d8c0921">00086</a>   <span class="keywordtype">bool</span> <a class="code" href="classSimMessage.html#a992860a43ff7feed8c924be11d8c0921">SimRunScript</a>;
 <a name="l00087"></a><a class="code" href="classSimMessage.html#a6e730a06ee74b4f3b51a5ecc5d8a3c5f">00087</a>   QString <a class="code" href="classSimMessage.html#aec017aa352bde80dc01788acc9b405dc">DocName</a>, <a class="code" href="classSimMessage.html#ad27c8e79b56a7fa071cb1365b52cc23f">DataSet</a>, <a class="code" href="classSimMessage.html#aeb3edab205a4475e9b93a6edb968d339">DataDisplay</a>, <a class="code" href="classSimMessage.html#a6e730a06ee74b4f3b51a5ecc5d8a3c5f">Script</a>;
 <a name="l00088"></a>00088 
-<a name="l00089"></a><a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">00089</a>   QProcess      <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>;
-<a name="l00090"></a><a class="code" href="classSimMessage.html#aa360be76d1da38079b9850b8da0aa25c">00090</a>   QTextEdit    *<a class="code" href="classSimMessage.html#aa360be76d1da38079b9850b8da0aa25c">ProgText</a>, *<a class="code" href="classSimMessage.html#a9b43426ec3da1c0e8db2aa41474d3bd4">ErrText</a>;
-<a name="l00091"></a><a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">00091</a>   <span class="keywordtype">bool</span>          <a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">wasLF</a>;   <span class="comment">// linefeed for &quot;ProgText&quot;</span>
-<a name="l00092"></a><a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">00092</a>   QPushButton  *<a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">Display</a>, *<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>;
-<a name="l00093"></a><a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">00093</a>   QProgressBar *<a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>;
-<a name="l00094"></a><a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">00094</a>   QString       <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>;
-<a name="l00095"></a>00095 
-<a name="l00096"></a><a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">00096</a>   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>    *<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>;
-<a name="l00097"></a><a class="code" href="classSimMessage.html#a232cda731bf3d8fbb6462cc091ecd7c8">00097</a>   <span class="keywordtype">int</span>           <a class="code" href="classSimMessage.html#a232cda731bf3d8fbb6462cc091ecd7c8">SimPorts</a>;
-<a name="l00098"></a><a class="code" href="classSimMessage.html#a9cbdd0b32c02ef9a8810f7080af6eeac">00098</a>   <span class="keywordtype">bool</span>          <a class="code" href="classSimMessage.html#a9cbdd0b32c02ef9a8810f7080af6eeac">makeSubcircuit</a>, <a class="code" href="classSimMessage.html#a48089bee1e90fab4d4ede37bbea532ba">insertSim</a>;
-<a name="l00099"></a><a class="code" href="classSimMessage.html#a6bc69ec3b2a9ee07e4415ba1e4abf404">00099</a>   QStringList   <a class="code" href="classSimMessage.html#a6bc69ec3b2a9ee07e4415ba1e4abf404">Collect</a>;
-<a name="l00100"></a><a class="code" href="classSimMessage.html#ae5e9dfcb99c4b5c0b5c5e948ae9b1cc1">00100</a>   QFile         <a class="code" href="classSimMessage.html#ae5e9dfcb99c4b5c0b5c5e948ae9b1cc1">NetlistFile</a>;
-<a name="l00101"></a><a class="code" href="classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a">00101</a>   QTextStream   <a class="code" href="classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a">Stream</a>;
-<a name="l00102"></a>00102 
-<a name="l00103"></a><a class="code" href="classSimMessage.html#a0835bb798a04ccd38c459d586a91245d">00103</a>   QVBoxLayout  *<a class="code" href="classSimMessage.html#a0835bb798a04ccd38c459d586a91245d">all</a>;
-<a name="l00104"></a>00104 <span class="keyword">protected</span>:
-<a name="l00105"></a><a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">00105</a>   QString <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a>;
-<a name="l00106"></a>00106 };
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108 <span class="preprocessor">#endif</span>
+<a name="l00089"></a><a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">00089</a>   QProcess       <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>;
+<a name="l00090"></a><a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">00090</a>   QPlainTextEdit *<a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>, *<a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>;
+<a name="l00091"></a><a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">00091</a>   <span class="keywordtype">bool</span>           <a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">wasLF</a>;   <span class="comment">// linefeed for &quot;ProgText&quot;</span>
+<a name="l00092"></a><a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">00092</a>   <span class="keywordtype">bool</span>           <a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">simKilled</a>; <span class="comment">// true if simulation was aborted by the user</span>
+<a name="l00093"></a><a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">00093</a>   QPushButton    *<a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">Display</a>, *<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>;
+<a name="l00094"></a><a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">00094</a>   QProgressBar   *<a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>;
+<a name="l00095"></a><a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">00095</a>   QString        <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>;
+<a name="l00096"></a>00096 
+<a name="l00097"></a><a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">00097</a>   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>      *<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>;
+<a name="l00098"></a><a class="code" href="classSimMessage.html#a232cda731bf3d8fbb6462cc091ecd7c8">00098</a>   <span class="keywordtype">int</span>            <a class="code" href="classSimMessage.html#a232cda731bf3d8fbb6462cc091ecd7c8">SimPorts</a>;
+<a name="l00099"></a><a class="code" href="classSimMessage.html#a9cbdd0b32c02ef9a8810f7080af6eeac">00099</a>   <span class="keywordtype">bool</span>           <a class="code" href="classSimMessage.html#a9cbdd0b32c02ef9a8810f7080af6eeac">makeSubcircuit</a>, <a class="code" href="classSimMessage.html#a48089bee1e90fab4d4ede37bbea532ba">insertSim</a>;
+<a name="l00100"></a><a class="code" href="classSimMessage.html#a6bc69ec3b2a9ee07e4415ba1e4abf404">00100</a>   QStringList    <a class="code" href="classSimMessage.html#a6bc69ec3b2a9ee07e4415ba1e4abf404">Collect</a>;
+<a name="l00101"></a><a class="code" href="classSimMessage.html#ae5e9dfcb99c4b5c0b5c5e948ae9b1cc1">00101</a>   QFile          <a class="code" href="classSimMessage.html#ae5e9dfcb99c4b5c0b5c5e948ae9b1cc1">NetlistFile</a>;
+<a name="l00102"></a><a class="code" href="classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a">00102</a>   QTextStream    <a class="code" href="classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a">Stream</a>;
+<a name="l00103"></a>00103 
+<a name="l00104"></a><a class="code" href="classSimMessage.html#a0835bb798a04ccd38c459d586a91245d">00104</a>   QVBoxLayout  *<a class="code" href="classSimMessage.html#a0835bb798a04ccd38c459d586a91245d">all</a>;
+<a name="l00105"></a>00105 <span class="keyword">protected</span>:
+<a name="l00106"></a><a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">00106</a>   QString <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a>;
+<a name="l00107"></a>00107 };
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -207,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 23 2015 20:38:09 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2015 22:17:52 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

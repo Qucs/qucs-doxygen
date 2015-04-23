@@ -2,7 +2,7 @@ var searchData=
 [
   ['tabview',['TabView',['../classQucsApp.html#a7bb309c9a24921c091c005a7fee29644',1,'QucsApp']]],
   ['task',['Task',['../structtQucsSettings.html#adc343cde5d75b784c1b26de921b62cf9',1,'tQucsSettings']]],
-  ['text',['text',['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()'],['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()']]],
+  ['text',['Text',['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()'],['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()']]],
   ['textantialiasing',['TextAntiAliasing',['../structtQucsSettings.html#ace79b67d2c621be43c8bdc98e73c305f',1,'tQucsSettings']]],
   ['textdescr',['textDescr',['../classLibraryDialog.html#af551a33e9cd948c148fe810058a83109',1,'LibraryDialog']]],
   ['textfont',['TextFont',['../classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1',1,'TextDoc']]],

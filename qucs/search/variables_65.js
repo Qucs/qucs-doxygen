@@ -30,7 +30,7 @@ var searchData=
   ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'qucs.cpp']]],
   ['entityname',['EntityName',['../classVHDL__File.html#ac1a9f3b38d3d010ff2995880fcdd4d11',1,'VHDL_File::EntityName()'],['../classVHDL__File__Info.html#adb7928e37b056e6f52a5814f31c16375',1,'VHDL_File_Info::EntityName()']]],
   ['error',['Error',['../classSpiceDialog.html#a086a375e8222aea6cdb5dd4f67fe567d',1,'SpiceDialog']]],
-  ['errtext',['ErrText',['../classSpiceFile.html#a48c56c4b0de9de0d772507f57068ad0a',1,'SpiceFile::ErrText()'],['../classVerilog__File.html#a35399a6c516dc206afdbc758789db956',1,'Verilog_File::ErrText()'],['../classVHDL__File.html#a3e51a5dd1056563ea696f105a1de2db4',1,'VHDL_File::ErrText()'],['../classLibraryDialog.html#a041b0050c76cc195c32e0f2bd508c762',1,'LibraryDialog::ErrText()'],['../classSimMessage.html#a9b43426ec3da1c0e8db2aa41474d3bd4',1,'SimMessage::ErrText()']]],
+  ['errtext',['ErrText',['../classSpiceFile.html#a48c56c4b0de9de0d772507f57068ad0a',1,'SpiceFile::ErrText()'],['../classVerilog__File.html#a35399a6c516dc206afdbc758789db956',1,'Verilog_File::ErrText()'],['../classVHDL__File.html#a3e51a5dd1056563ea696f105a1de2db4',1,'VHDL_File::ErrText()'],['../classLibraryDialog.html#a8c560b08cc186c2b099c94da6512041a',1,'LibraryDialog::ErrText()'],['../classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e',1,'SimMessage::ErrText()']]],
   ['examplesdir',['ExamplesDir',['../structtQucsSettings.html#a2d1cb813e10dc15b84c224f52ff61167',1,'tQucsSettings']]],
   ['exportasimage',['exportAsImage',['../classQucsApp.html#ac46bcb3fd090de847c1596dff63031bd',1,'QucsApp']]],
   ['exportbutt',['ExportButt',['../classExportDialog.html#a815b0ee0b08ba45e85d0a14ffbc28d5f',1,'ExportDialog']]],

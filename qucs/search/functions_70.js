@@ -32,7 +32,7 @@ var searchData=
   ['portsymbol',['PortSymbol',['../classPortSymbol.html#a35850b3c85e782f8f8cb43fe23a37d38',1,'PortSymbol']]],
   ['postpaintevent',['PostPaintEvent',['../classSchematic.html#a2be09396e97936a98c8d349cfe30deb0',1,'Schematic']]],
   ['potentiometer',['potentiometer',['../classpotentiometer.html#a16564375bd78867f09c08a70f4f03b91',1,'potentiometer']]],
-  ['preparenetlist',['prepareNetlist',['../classSchematic.html#ab6e3d115def1254b5af41ad96091a258',1,'Schematic']]],
+  ['preparenetlist',['prepareNetlist',['../classSchematic.html#a436ec9032e80a36eaa51559bea05414b',1,'Schematic']]],
   ['print',['print',['../classComponent.html#a4991c546c812d3d1ed87d0286e80b3c2',1,'Component::print()'],['../classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e',1,'QucsDoc::print()'],['../classSchematic.html#a01c8c00f46a337d2b071be7f6b762dda',1,'Schematic::print()']]],
   ['printcurrentdocument',['printCurrentDocument',['../classQucsApp.html#a760ead47ff72ea5d9389411ba3392443',1,'QucsApp']]],
   ['printcursorposition',['printCursorPosition',['../classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75',1,'QucsApp']]],

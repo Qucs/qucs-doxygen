@@ -1,13 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#aefeef01b2d6b585e19c5eceec1bd82e1" title="Schematic::createSubNetlistPlain" alt="" coords="253,57,472,87"/>
-<area shape="rect" id="node5" href="$classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541" title="Schematic::createLibNetlist" alt="" coords="1236,31,1417,60"/>
-<area shape="rect" id="node14" href="$classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd" title="Schematic::createSubNetlist" alt="" coords="520,83,709,112"/>
+<area shape="rect" id="node3" href="$classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6" title="Schematic::createSubNetlistPlain" alt="" coords="253,57,472,87"/>
+<area shape="rect" id="node5" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1236,31,1417,60"/>
+<area shape="rect" id="node14" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="520,83,709,112"/>
 <area shape="rect" id="node7" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1467,31,1624,60"/>
 <area shape="rect" id="node9" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1916,5,2097,35"/>
 <area shape="rect" id="node11" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1672,31,1867,60"/>
-<area shape="rect" id="node16" href="$classSchematic.html#a7953e0fa01e98342403b18f3f6452803" title="Schematic::throughAllComps" alt="" coords="757,83,949,112"/>
-<area shape="rect" id="node18" href="$classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d" title="Schematic::giveNodeNames" alt="" coords="997,84,1187,113"/>
-<area shape="rect" id="node22" href="$classSchematic.html#ab6e3d115def1254b5af41ad96091a258" title="Schematic::prepareNetlist" alt="" coords="1240,84,1413,113"/>
+<area shape="rect" id="node16" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="757,83,949,112"/>
+<area shape="rect" id="node18" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="997,84,1187,113"/>
+<area shape="rect" id="node22" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1240,84,1413,113"/>
 <area shape="rect" id="node24" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1508,84,1583,113"/>
 <area shape="rect" id="node26" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1744,84,1795,113"/>
 </map>

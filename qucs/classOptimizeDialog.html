@@ -107,6 +107,7 @@ Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOptimize__Sim.html">Optimize_Sim</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a53b671a314e4988c2bf136691c1d5efa">Comp</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSchematic.html">Schematic</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a5f8cc8085ab91246b546fe06a19d8c7b">Doc</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#af4ad7ac6dd1681c09a53fdad953b49be">changed</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e">numPrec</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a0a5a67ba37d395734dab0ad0f5173c92">all</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a89f4d2b90594948939423f04550651f2">NameEdit</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15">VarNameEdit</a></td></tr>
@@ -155,6 +156,8 @@ Private Slots</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#ac71a126a5d48974e0612221ff2dd27ae">slotChangeGoalName</a> (const QString &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a49a33bc5d97a27cfd106c20208e2ac06">slotChangeGoalNum</a> (const QString &amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a4c02fb4bf8e42e35a1889c70ce88ebbe">slotChangeGoalType</a> (const QString &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#aed3ed3be079fc4f5448210e8198c890b">slotCreateEqn</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a91d0e7276f1cd2d47e90e1f52ae2f68b">slotSetPrecision</a> (const QPoint &amp;)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizeDialog.html#a96aef1b5d662cbe6b61c33fc5044ddde">createASCOFiles</a> ()</td></tr>
@@ -188,14 +191,14 @@ Private Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00037">37</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00048">48</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classOptimizeDialog_a8bc6ed2334cafdd3adb0053b9201a3df_cgraph.png" border="0" usemap="#classOptimizeDialog_a8bc6ed2334cafdd3adb0053b9201a3df_cgraph" alt=""/></div>
 <map name="classOptimizeDialog_a8bc6ed2334cafdd3adb0053b9201a3df_cgraph" id="classOptimizeDialog_a8bc6ed2334cafdd3adb0053b9201a3df_cgraph">
-<area shape="rect" id="node3" href="classOptimizeDialog.html#abd31c9a1d6b30e4146ac510b1b16b54b" title="OptimizeDialog::slotEditVariable" alt="" coords="557,405,768,435"/><area shape="rect" id="node5" href="classOptimizeDialog.html#a45e66387b026bcde559b74e1f402e6d8" title="OptimizeDialog::slotChangeVarName" alt="" coords="265,59,505,88"/><area shape="rect" id="node7" href="classOptimizeDialog.html#a982fa93eaa9086a4e3229977af70ac39" title="OptimizeDialog::slotChangeVarActive" alt="" coords="264,112,507,141"/><area shape="rect" id="node9" href="classOptimizeDialog.html#abfb3a56c79b175cd4227fcf4afe9631f" title="OptimizeDialog::slotChangeVarInit" alt="" coords="275,165,496,195"/><area shape="rect" id="node11" href="classOptimizeDialog.html#afd0e821706c47f976a1718d928868575" title="OptimizeDialog::slotChangeVarMin" alt="" coords="272,219,499,248"/><area shape="rect" id="node13" href="classOptimizeDialog.html#afd7dc5cc796a970ee1cf234a0b66e657" title="OptimizeDialog::slotChangeVarMax" alt="" coords="271,272,500,301"/><area shape="rect" id="node15" href="classOptimizeDialog.html#adcceec00752ea2db7fd84cc0d492e519" title="OptimizeDialog::slotChangeVarType" alt="" coords="268,325,503,355"/><area shape="rect" id="node17" href="classOptimizeDialog.html#aa108b1aaba9236163c4ee27fd7503255" title="OptimizeDialog::slotAddVariable" alt="" coords="280,483,491,512"/><area shape="rect" id="node20" href="classOptimizeDialog.html#af01726b21846ecbbe109fc7e5d1191c6" title="OptimizeDialog::slotDeleteVariable" alt="" coords="273,5,497,35"/><area shape="rect" id="node23" href="classOptimizeDialog.html#a339cec51de269a0f91319dffb8a835f7" title="OptimizeDialog::slotEditGoal" alt="" coords="568,741,757,771"/><area shape="rect" id="node25" href="classOptimizeDialog.html#ac71a126a5d48974e0612221ff2dd27ae" title="OptimizeDialog::slotChangeGoalName" alt="" coords="263,536,508,565"/><area shape="rect" id="node27" href="classOptimizeDialog.html#a49a33bc5d97a27cfd106c20208e2ac06" title="OptimizeDialog::slotChangeGoalNum" alt="" coords="265,589,505,619"/><area shape="rect" id="node29" href="classOptimizeDialog.html#a4c02fb4bf8e42e35a1889c70ce88ebbe" title="OptimizeDialog::slotChangeGoalType" alt="" coords="265,643,505,672"/><area shape="rect" id="node31" href="classOptimizeDialog.html#ae71f7ce1115d58c0769067716aed2603" title="OptimizeDialog::slotAddGoal" alt="" coords="291,696,480,725"/><area shape="rect" id="node34" href="classOptimizeDialog.html#a4403c32862a37576a6c092b6278c3448" title="OptimizeDialog::slotDeleteGoal" alt="" coords="283,379,488,408"/><area shape="rect" id="node37" href="classOptimizeDialog.html#a85635ca0b101ca17ca8e9797bb48cdc0" title="OptimizeDialog::slotOK" alt="" coords="307,851,464,880"/><area shape="rect" id="node39" href="classOptimizeDialog.html#afae4d0d2363f40a9fa958d67ff000c9b" title="OptimizeDialog::slotApply" alt="" coords="576,807,749,836"/><area shape="rect" id="node41" href="classOptimizeDialog.html#a3a6a86c40c2e2f714627316dad9284c1" title="OptimizeDialog::slotCancel" alt="" coords="572,884,753,913"/></map>
+<area shape="rect" id="node3" href="classOptimizeDialog.html#a91d0e7276f1cd2d47e90e1f52ae2f68b" title="OptimizeDialog::slotSetPrecision" alt="" coords="279,5,492,35"/><area shape="rect" id="node5" href="classOptimizeDialog.html#abd31c9a1d6b30e4146ac510b1b16b54b" title="OptimizeDialog::slotEditVariable" alt="" coords="557,456,768,485"/><area shape="rect" id="node7" href="classOptimizeDialog.html#a45e66387b026bcde559b74e1f402e6d8" title="OptimizeDialog::slotChangeVarName" alt="" coords="265,109,505,139"/><area shape="rect" id="node9" href="classOptimizeDialog.html#a982fa93eaa9086a4e3229977af70ac39" title="OptimizeDialog::slotChangeVarActive" alt="" coords="264,163,507,192"/><area shape="rect" id="node11" href="classOptimizeDialog.html#abfb3a56c79b175cd4227fcf4afe9631f" title="OptimizeDialog::slotChangeVarInit" alt="" coords="275,216,496,245"/><area shape="rect" id="node13" href="classOptimizeDialog.html#afd0e821706c47f976a1718d928868575" title="OptimizeDialog::slotChangeVarMin" alt="" coords="272,269,499,299"/><area shape="rect" id="node15" href="classOptimizeDialog.html#afd7dc5cc796a970ee1cf234a0b66e657" title="OptimizeDialog::slotChangeVarMax" alt="" coords="271,323,500,352"/><area shape="rect" id="node17" href="classOptimizeDialog.html#adcceec00752ea2db7fd84cc0d492e519" title="OptimizeDialog::slotChangeVarType" alt="" coords="268,376,503,405"/><area shape="rect" id="node19" href="classOptimizeDialog.html#aa108b1aaba9236163c4ee27fd7503255" title="OptimizeDialog::slotAddVariable" alt="" coords="280,429,491,459"/><area shape="rect" id="node22" href="classOptimizeDialog.html#af01726b21846ecbbe109fc7e5d1191c6" title="OptimizeDialog::slotDeleteVariable" alt="" coords="273,483,497,512"/><area shape="rect" id="node25" href="classOptimizeDialog.html#aed3ed3be079fc4f5448210e8198c890b" title="OptimizeDialog::slotCreateEqn" alt="" coords="284,536,487,565"/><area shape="rect" id="node27" href="classOptimizeDialog.html#a339cec51de269a0f91319dffb8a835f7" title="OptimizeDialog::slotEditGoal" alt="" coords="568,848,757,877"/><area shape="rect" id="node29" href="classOptimizeDialog.html#ac71a126a5d48974e0612221ff2dd27ae" title="OptimizeDialog::slotChangeGoalName" alt="" coords="263,643,508,672"/><area shape="rect" id="node31" href="classOptimizeDialog.html#a49a33bc5d97a27cfd106c20208e2ac06" title="OptimizeDialog::slotChangeGoalNum" alt="" coords="265,696,505,725"/><area shape="rect" id="node33" href="classOptimizeDialog.html#a4c02fb4bf8e42e35a1889c70ce88ebbe" title="OptimizeDialog::slotChangeGoalType" alt="" coords="265,749,505,779"/><area shape="rect" id="node35" href="classOptimizeDialog.html#ae71f7ce1115d58c0769067716aed2603" title="OptimizeDialog::slotAddGoal" alt="" coords="291,803,480,832"/><area shape="rect" id="node38" href="classOptimizeDialog.html#a4403c32862a37576a6c092b6278c3448" title="OptimizeDialog::slotDeleteGoal" alt="" coords="283,589,488,619"/><area shape="rect" id="node41" href="classOptimizeDialog.html#a85635ca0b101ca17ca8e9797bb48cdc0" title="OptimizeDialog::slotOK" alt="" coords="307,957,464,987"/><area shape="rect" id="node43" href="classOptimizeDialog.html#afae4d0d2363f40a9fa958d67ff000c9b" title="OptimizeDialog::slotApply" alt="" coords="576,913,749,943"/><area shape="rect" id="node45" href="classOptimizeDialog.html#a3a6a86c40c2e2f714627316dad9284c1" title="OptimizeDialog::slotCancel" alt="" coords="572,991,753,1020"/></map>
 </div>
 </p>
 
@@ -215,7 +218,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00409">409</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00448">448</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +253,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00579">579</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00618">618</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -286,7 +289,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00446">446</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00485">485</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -322,7 +325,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00658">658</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00697">697</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -349,7 +352,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00787">787</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00826">826</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -377,7 +380,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00625">625</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00664">664</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -405,7 +408,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00641">641</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00680">680</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -433,7 +436,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00631">631</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00670">670</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -461,7 +464,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00502">502</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00541">541</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -489,7 +492,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00518">518</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00557">557</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -517,7 +520,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00538">538</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00577">577</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -545,7 +548,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00528">528</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00567">567</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -573,7 +576,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00512">512</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00551">551</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -601,7 +604,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00548">548</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00587">587</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -609,6 +612,33 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classOptimizeDialog_adcceec00752ea2db7fd84cc0d492e519_icgraph.png" border="0" usemap="#classOptimizeDialog_adcceec00752ea2db7fd84cc0d492e519_icgraph" alt=""/></div>
 <map name="classOptimizeDialog_adcceec00752ea2db7fd84cc0d492e519_icgraph" id="classOptimizeDialog_adcceec00752ea2db7fd84cc0d492e519_icgraph">
 <area shape="rect" id="node3" href="classOptimizeDialog.html#a8bc6ed2334cafdd3adb0053b9201a3df" title="OptimizeDialog::OptimizeDialog" alt="" coords="288,5,496,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aed3ed3be079fc4f5448210e8198c890b"></a><!-- doxytag: member="OptimizeDialog::slotCreateEqn" ref="aed3ed3be079fc4f5448210e8198c890b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classOptimizeDialog.html#aed3ed3be079fc4f5448210e8198c890b">OptimizeDialog::slotCreateEqn</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private, slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00833">833</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOptimizeDialog_aed3ed3be079fc4f5448210e8198c890b_icgraph.png" border="0" usemap="#classOptimizeDialog_aed3ed3be079fc4f5448210e8198c890b_icgraph" alt=""/></div>
+<map name="classOptimizeDialog_aed3ed3be079fc4f5448210e8198c890b_icgraph" id="classOptimizeDialog_aed3ed3be079fc4f5448210e8198c890b_icgraph">
+<area shape="rect" id="node3" href="classOptimizeDialog.html#a8bc6ed2334cafdd3adb0053b9201a3df" title="OptimizeDialog::OptimizeDialog" alt="" coords="256,5,464,35"/></map>
 </div>
 </p>
 
@@ -628,7 +658,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00615">615</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00654">654</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -664,7 +694,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00492">492</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00531">531</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -700,7 +730,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00558">558</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00597">597</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -727,7 +757,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00418">418</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00457">457</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -754,7 +784,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00651">651</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00690">690</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -776,6 +806,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a91d0e7276f1cd2d47e90e1f52ae2f68b"></a><!-- doxytag: member="OptimizeDialog::slotSetPrecision" ref="a91d0e7276f1cd2d47e90e1f52ae2f68b" args="(const QPoint &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classOptimizeDialog.html#a91d0e7276f1cd2d47e90e1f52ae2f68b">OptimizeDialog::slotSetPrecision</a> </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td><code> [private, slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="optimizedialog_8cpp_source.html#l00864">864</a> of file <a class="el" href="optimizedialog_8cpp_source.html">optimizedialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classOptimizeDialog_a91d0e7276f1cd2d47e90e1f52ae2f68b_icgraph.png" border="0" usemap="#classOptimizeDialog_a91d0e7276f1cd2d47e90e1f52ae2f68b_icgraph" alt=""/></div>
+<map name="classOptimizeDialog_a91d0e7276f1cd2d47e90e1f52ae2f68b_icgraph" id="classOptimizeDialog_a91d0e7276f1cd2d47e90e1f52ae2f68b_icgraph">
+<area shape="rect" id="node3" href="classOptimizeDialog.html#a8bc6ed2334cafdd3adb0053b9201a3df" title="OptimizeDialog::OptimizeDialog" alt="" coords="269,5,477,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/><h2>Field Documentation</h2>
 <a class="anchor" id="a0a5a67ba37d395734dab0ad0f5173c92"></a><!-- doxytag: member="OptimizeDialog::all" ref="a0a5a67ba37d395734dab0ad0f5173c92" args="" -->
 <div class="memitem">
@@ -788,7 +846,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00070">70</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00073">73</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +861,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00068">68</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00070">70</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +876,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00066">66</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00068">68</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +891,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +906,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +921,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +936,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -893,7 +951,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -908,7 +966,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00067">67</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00069">69</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +981,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00080">80</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00083">83</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +996,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1011,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1026,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00078">78</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00081">81</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1041,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00077">77</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00080">80</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1056,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00083">83</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00086">86</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1071,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1086,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00077">77</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00080">80</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1038,6 +1096,21 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">QLineEdit* <a class="el" href="classOptimizeDialog.html#a89f4d2b90594948939423f04550651f2">OptimizeDialog::NameEdit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3eb9092b5210c616c06b40c3a5ebca6e"></a><!-- doxytag: member="OptimizeDialog::numPrec" ref="a3eb9092b5210c616c06b40c3a5ebca6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e">OptimizeDialog::numPrec</a></td>
         </tr>
       </table>
 </div>
@@ -1058,7 +1131,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00082">82</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00085">85</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1146,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1161,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1176,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1191,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00077">77</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00080">80</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1206,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00081">81</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00084">84</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1221,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00076">76</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00079">79</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1236,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1251,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1266,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1208,7 +1281,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00071">71</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00074">74</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1296,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00078">78</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00081">81</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1311,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00077">77</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
+<p>Definition at line <a class="el" href="optimizedialog_8h_source.html#l00080">80</a> of file <a class="el" href="optimizedialog_8h_source.html">optimizedialog.h</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1337,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 23 2015 20:38:11 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2015 22:17:54 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

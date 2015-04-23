@@ -10,14 +10,14 @@
 <area shape="rect" id="node19" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1373,244,1531,273"/>
 <area shape="rect" id="node26" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="1175,376,1287,405"/>
 <area shape="rect" id="node35" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="697,112,812,141"/>
-<area shape="rect" id="node37" href="$classSchematic.html#a7953e0fa01e98342403b18f3f6452803" title="Schematic::throughAllComps" alt="" coords="659,216,851,245"/>
+<area shape="rect" id="node37" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="659,216,851,245"/>
 <area shape="rect" id="node21" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1823,252,2004,281"/>
 <area shape="rect" id="node23" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1579,225,1773,255"/>
 <area shape="rect" id="node28" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1415,323,1489,352"/>
 <area shape="rect" id="node32" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="1421,376,1483,405"/>
 <area shape="rect" id="node30" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1651,343,1701,372"/>
-<area shape="rect" id="node39" href="$classSchematic.html#a5457dbdf5248abf3f099ccb9c988ab4d" title="Schematic::giveNodeNames" alt="" coords="899,269,1088,299"/>
-<area shape="rect" id="node41" href="$classSchematic.html#ad473dfe8903e0c5c6395de1925f4a541" title="Schematic::createLibNetlist" alt="" coords="1140,269,1321,299"/>
-<area shape="rect" id="node44" href="$classSchematic.html#a928a69d7ae4e95945b6be93728d82dbd" title="Schematic::createSubNetlist" alt="" coords="1136,216,1325,245"/>
-<area shape="rect" id="node47" href="$classSchematic.html#ab6e3d115def1254b5af41ad96091a258" title="Schematic::prepareNetlist" alt="" coords="1144,323,1317,352"/>
+<area shape="rect" id="node39" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="899,269,1088,299"/>
+<area shape="rect" id="node41" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1140,269,1321,299"/>
+<area shape="rect" id="node44" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1136,216,1325,245"/>
+<area shape="rect" id="node47" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1144,323,1317,352"/>
 </map>

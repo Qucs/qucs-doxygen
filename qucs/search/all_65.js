@@ -62,7 +62,7 @@ var searchData=
   ['equation_2eh',['equation.h',['../equation_8h.html',1,'']]],
   ['eraserect',['eraseRect',['../classViewPainter.html#a57873ea0bbbcffc5f2ecd067e5b2420d',1,'ViewPainter']]],
   ['error',['Error',['../classSpiceDialog.html#a086a375e8222aea6cdb5dd4f67fe567d',1,'SpiceDialog']]],
-  ['errtext',['ErrText',['../classSpiceFile.html#a48c56c4b0de9de0d772507f57068ad0a',1,'SpiceFile::ErrText()'],['../classVerilog__File.html#a35399a6c516dc206afdbc758789db956',1,'Verilog_File::ErrText()'],['../classVHDL__File.html#a3e51a5dd1056563ea696f105a1de2db4',1,'VHDL_File::ErrText()'],['../classLibraryDialog.html#a041b0050c76cc195c32e0f2bd508c762',1,'LibraryDialog::ErrText()'],['../classSimMessage.html#a9b43426ec3da1c0e8db2aa41474d3bd4',1,'SimMessage::ErrText()']]],
+  ['errtext',['ErrText',['../classSpiceFile.html#a48c56c4b0de9de0d772507f57068ad0a',1,'SpiceFile::ErrText()'],['../classVerilog__File.html#a35399a6c516dc206afdbc758789db956',1,'Verilog_File::ErrText()'],['../classVHDL__File.html#a3e51a5dd1056563ea696f105a1de2db4',1,'VHDL_File::ErrText()'],['../classLibraryDialog.html#a8c560b08cc186c2b099c94da6512041a',1,'LibraryDialog::ErrText()'],['../classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e',1,'SimMessage::ErrText()']]],
   ['etr_5fsim',['ETR_Sim',['../classETR__Sim.html',1,'ETR_Sim'],['../classETR__Sim.html#a4ee4243b33627a384e488aec05564aa4',1,'ETR_Sim::ETR_Sim()']]],
   ['etr_5fsim_2ecpp',['etr_sim.cpp',['../etr__sim_8cpp.html',1,'']]],
   ['etr_5fsim_2eh',['etr_sim.h',['../etr__sim_8h.html',1,'']]],
