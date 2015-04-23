@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
@@ -141,6 +142,9 @@ Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QFile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#ae5e9dfcb99c4b5c0b5c5e948ae9b1cc1">NetlistFile</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QTextStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#a98b4ebced38e4ab6b72c06b482751c7a">Stream</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#a0835bb798a04ccd38c459d586a91245d">all</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3">slotDisplayMsg</a> ()</td></tr>
@@ -148,6 +152,8 @@ Private Slots</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff">slotDisplayErr</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert process stderr output in the Error Message output window.  <a href="#a6982297ad5046ddc32baafb32d1cf9ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0">slotCloseStdin</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c">slotStateChanged</a> (QProcess::ProcessState newState)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The process state changes.  <a href="#a87cabc2ddda12951cc07f333734bf87c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f">slotSimEnded</a> (int exitCode, QProcess::ExitStatus exitStatus)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the simulation process exit status.  <a href="#aa5ef05dd7ea2d48761f41c5c7d32728f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimMessage.html#ac4a9bb7bb739d6d08d08990ce3727dce">slotDisplayButton</a> ()</td></tr>
@@ -245,7 +251,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00803">803</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00837">837</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -309,7 +315,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00622">622</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00608">608</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -346,7 +352,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00731">731</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00765">765</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -362,7 +368,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_ac16bba8d930ee89b989380429d532e2b_icgraph.png" border="0" usemap="#classSimMessage_ac16bba8d930ee89b989380429d532e2b_icgraph" alt=""/></div>
 <map name="classSimMessage_ac16bba8d930ee89b989380429d532e2b_icgraph" id="classSimMessage_ac16bba8d930ee89b989380429d532e2b_icgraph">
-<area shape="rect" id="node3" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1231,41,1409,71"/><area shape="rect" id="node14" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="727,68,897,97"/><area shape="rect" id="node20" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="491,93,677,123"/><area shape="rect" id="node23" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="256,144,443,173"/><area shape="rect" id="node5" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1460,41,1615,71"/><area shape="rect" id="node7" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1664,15,1813,44"/><area shape="rect" id="node9" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1863,41,2007,71"/><area shape="rect" id="node11" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2056,41,2195,71"/><area shape="rect" id="node17" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="948,93,1180,123"/></map>
+<area shape="rect" id="node3" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1255,41,1433,71"/><area shape="rect" id="node14" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="751,68,921,97"/><area shape="rect" id="node20" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="515,119,701,148"/><area shape="rect" id="node23" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="256,144,467,173"/><area shape="rect" id="node26" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="268,197,455,227"/><area shape="rect" id="node5" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1484,41,1639,71"/><area shape="rect" id="node7" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1688,15,1837,44"/><area shape="rect" id="node9" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1887,41,2031,71"/><area shape="rect" id="node11" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2080,41,2219,71"/><area shape="rect" id="node17" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="972,93,1204,123"/></map>
 </div>
 </p>
 
@@ -391,7 +397,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_a8ea885811fc6b487d04bb4804aef24a2_cgraph.png" border="0" usemap="#classSimMessage_a8ea885811fc6b487d04bb4804aef24a2_cgraph" alt=""/></div>
 <map name="classSimMessage_a8ea885811fc6b487d04bb4804aef24a2_cgraph" id="classSimMessage_a8ea885811fc6b487d04bb4804aef24a2_cgraph">
-<area shape="rect" id="node3" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="229,163,416,192"/><area shape="rect" id="node7" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="715,269,917,299"/><area shape="rect" id="node21" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="259,373,387,403"/><area shape="rect" id="node23" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="228,427,417,456"/><area shape="rect" id="node5" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="525,5,608,35"/><area shape="rect" id="node11" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="467,109,667,139"/><area shape="rect" id="node13" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="473,163,660,192"/><area shape="rect" id="node15" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="469,216,664,245"/><area shape="rect" id="node17" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="473,269,660,299"/><area shape="rect" id="node9" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="967,269,1169,299"/></map>
+<area shape="rect" id="node3" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="229,189,416,219"/><area shape="rect" id="node7" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="725,296,928,325"/><area shape="rect" id="node24" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="259,427,387,456"/><area shape="rect" id="node26" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="228,480,417,509"/><area shape="rect" id="node5" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="531,5,613,35"/><area shape="rect" id="node11" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="472,109,672,139"/><area shape="rect" id="node13" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="479,163,665,192"/><area shape="rect" id="node15" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="475,216,669,245"/><area shape="rect" id="node17" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="479,269,665,299"/><area shape="rect" id="node20" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="467,323,677,352"/><area shape="rect" id="node9" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="977,296,1180,325"/></map>
 </div>
 </p>
 
@@ -436,7 +442,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_a7e70969b2ea47a87147848651abe0500_icgraph.png" border="0" usemap="#classSimMessage_a7e70969b2ea47a87147848651abe0500_icgraph" alt=""/></div>
 <map name="classSimMessage_a7e70969b2ea47a87147848651abe0500_icgraph" id="classSimMessage_a7e70969b2ea47a87147848651abe0500_icgraph">
-<area shape="rect" id="node3" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="259,67,461,96"/><area shape="rect" id="node5" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1484,41,1663,71"/><area shape="rect" id="node16" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="980,68,1151,97"/><area shape="rect" id="node22" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="744,93,931,123"/><area shape="rect" id="node25" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="509,144,696,173"/><area shape="rect" id="node7" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1713,41,1868,71"/><area shape="rect" id="node9" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1917,15,2067,44"/><area shape="rect" id="node11" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2116,41,2260,71"/><area shape="rect" id="node13" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2309,41,2448,71"/><area shape="rect" id="node19" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="1201,93,1433,123"/></map>
+<area shape="rect" id="node3" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="259,92,461,121"/><area shape="rect" id="node5" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1508,41,1687,71"/><area shape="rect" id="node16" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="1004,68,1175,97"/><area shape="rect" id="node22" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="768,119,955,148"/><area shape="rect" id="node25" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="509,144,720,173"/><area shape="rect" id="node28" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="521,197,708,227"/><area shape="rect" id="node7" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1737,41,1892,71"/><area shape="rect" id="node9" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1941,15,2091,44"/><area shape="rect" id="node11" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2140,41,2284,71"/><area shape="rect" id="node13" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2333,41,2472,71"/><area shape="rect" id="node19" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="1225,93,1457,123"/></map>
 </div>
 </p>
 
@@ -459,7 +465,7 @@ Here is the caller graph for this function:</div>
 <p>Close and delete simulation dialog. </p>
 <p>To call accept(), which is protected, from the outside. Called from the main GUI. </p>
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00791">791</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00825">825</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -513,7 +519,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00797">797</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00831">831</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -552,7 +558,7 @@ Here is the caller graph for this function:</div>
 <p>Insert process stderr output in the Error Message output window. </p>
 <p>Called when the process sends an output to stderr. </p>
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00690">690</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00676">676</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -581,7 +587,7 @@ Here is the caller graph for this function:</div>
 
 <p>called when the process sends an output to stdout. </p>
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00635">635</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00621">621</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -616,7 +622,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_a7a4b77f970162c6b5cb12153e2f9ecb7_cgraph.png" border="0" usemap="#classSimMessage_a7a4b77f970162c6b5cb12153e2f9ecb7_cgraph" alt=""/></div>
 <map name="classSimMessage_a7a4b77f970162c6b5cb12153e2f9ecb7_cgraph" id="classSimMessage_a7a4b77f970162c6b5cb12153e2f9ecb7_cgraph">
-<area shape="rect" id="node3" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="289,348,460,377"/><area shape="rect" id="node5" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="512,163,699,192"/><area shape="rect" id="node9" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="997,269,1200,299"/><area shape="rect" id="node23" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="541,373,669,403"/><area shape="rect" id="node25" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="511,427,700,456"/><area shape="rect" id="node7" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="808,5,891,35"/><area shape="rect" id="node13" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="749,109,949,139"/><area shape="rect" id="node15" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="756,163,943,192"/><area shape="rect" id="node17" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="752,216,947,245"/><area shape="rect" id="node19" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="756,269,943,299"/><area shape="rect" id="node11" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1249,269,1452,299"/></map>
+<area shape="rect" id="node3" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="289,401,460,431"/><area shape="rect" id="node5" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="512,189,699,219"/><area shape="rect" id="node9" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1008,296,1211,325"/><area shape="rect" id="node26" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="541,427,669,456"/><area shape="rect" id="node28" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="511,480,700,509"/><area shape="rect" id="node7" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="813,5,896,35"/><area shape="rect" id="node13" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="755,109,955,139"/><area shape="rect" id="node15" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="761,163,948,192"/><area shape="rect" id="node17" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="757,216,952,245"/><area shape="rect" id="node19" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="761,269,948,299"/><area shape="rect" id="node22" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="749,323,960,352"/><area shape="rect" id="node11" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1260,296,1463,325"/></map>
 </div>
 </p>
 
@@ -694,7 +700,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>use a macro for the bugs report email (needs to define it for CMake) </dd></dl>
 
-<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00707">707</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00741">741</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -711,6 +717,52 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classSimMessage_aa5ef05dd7ea2d48761f41c5c7d32728f_icgraph.png" border="0" usemap="#classSimMessage_aa5ef05dd7ea2d48761f41c5c7d32728f_icgraph" alt=""/></div>
 <map name="classSimMessage_aa5ef05dd7ea2d48761f41c5c7d32728f_icgraph" id="classSimMessage_aa5ef05dd7ea2d48761f41c5c7d32728f_icgraph">
 <area shape="rect" id="node3" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="240,32,427,61"/><area shape="rect" id="node5" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="476,32,647,61"/><area shape="rect" id="node7" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="980,32,1159,61"/><area shape="rect" id="node18" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="697,57,929,87"/><area shape="rect" id="node9" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1209,32,1364,61"/><area shape="rect" id="node11" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1413,5,1563,35"/><area shape="rect" id="node13" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1612,32,1756,61"/><area shape="rect" id="node15" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1805,32,1944,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a87cabc2ddda12951cc07f333734bf87c"></a><!-- doxytag: member="SimMessage::slotStateChanged" ref="a87cabc2ddda12951cc07f333734bf87c" args="(QProcess::ProcessState newState)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c">SimMessage::slotStateChanged</a> </td>
+          <td>(</td>
+          <td class="paramtype">QProcess::ProcessState&#160;</td>
+          <td class="paramname"><em>newState</em></td><td>)</td>
+          <td><code> [private, slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The process state changes. </p>
+<p>Called when the process changes state; </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newState</td><td>new status of the process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="simmessage_8cpp_source.html#l00689">689</a> of file <a class="el" href="simmessage_8cpp_source.html">simmessage.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_cgraph.png" border="0" usemap="#classSimMessage_a87cabc2ddda12951cc07f333734bf87c_cgraph" alt=""/></div>
+<map name="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_cgraph" id="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_cgraph">
+<area shape="rect" id="node3" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="264,5,467,35"/><area shape="rect" id="node5" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="516,5,719,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_icgraph.png" border="0" usemap="#classSimMessage_a87cabc2ddda12951cc07f333734bf87c_icgraph" alt=""/></div>
+<map name="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_icgraph" id="classSimMessage_a87cabc2ddda12951cc07f333734bf87c_icgraph">
+<area shape="rect" id="node3" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="264,32,451,61"/><area shape="rect" id="node5" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="500,32,671,61"/><area shape="rect" id="node7" href="classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1004,32,1183,61"/><area shape="rect" id="node18" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="721,57,953,87"/><area shape="rect" id="node9" href="classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1233,32,1388,61"/><area shape="rect" id="node11" href="classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1437,5,1587,35"/><area shape="rect" id="node13" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1636,32,1780,61"/><area shape="rect" id="node15" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1829,32,1968,61"/></map>
 </div>
 </p>
 
@@ -737,7 +789,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_ab89cfc80180d3f63df993a5b0efff3e3_cgraph.png" border="0" usemap="#classSimMessage_ab89cfc80180d3f63df993a5b0efff3e3_cgraph" alt=""/></div>
 <map name="classSimMessage_ab89cfc80180d3f63df993a5b0efff3e3_cgraph" id="classSimMessage_ab89cfc80180d3f63df993a5b0efff3e3_cgraph">
-<area shape="rect" id="node3" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1227,67,1429,96"/><area shape="rect" id="node7" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="985,357,1172,387"/><area shape="rect" id="node9" href="classSimMessage.html#a77fdce549e16372342dcf227a40c0921" title="SimMessage::slotReadSpiceNetlist" alt="" coords="237,408,467,437"/><area shape="rect" id="node11" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="236,303,468,332"/><area shape="rect" id="node13" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="519,251,689,280"/><area shape="rect" id="node5" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1479,67,1681,96"/><area shape="rect" id="node15" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="741,197,928,227"/><area shape="rect" id="node29" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="771,251,899,280"/><area shape="rect" id="node31" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="740,304,929,333"/><area shape="rect" id="node17" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1037,197,1120,227"/><area shape="rect" id="node20" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="979,251,1179,280"/><area shape="rect" id="node23" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="981,304,1176,333"/><area shape="rect" id="node25" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="985,144,1172,173"/></map>
+<area shape="rect" id="node3" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="1237,92,1440,121"/><area shape="rect" id="node7" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="991,411,1177,440"/><area shape="rect" id="node9" href="classSimMessage.html#a77fdce549e16372342dcf227a40c0921" title="SimMessage::slotReadSpiceNetlist" alt="" coords="237,435,467,464"/><area shape="rect" id="node11" href="classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="236,329,468,359"/><area shape="rect" id="node13" href="classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="519,277,689,307"/><area shape="rect" id="node5" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="1489,92,1692,121"/><area shape="rect" id="node15" href="classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="741,224,928,253"/><area shape="rect" id="node32" href="namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="771,277,899,307"/><area shape="rect" id="node34" href="classSimMessage.html#a33fcf8c63621f503965cf6a69b2fa7a0" title="SimMessage::slotCloseStdin" alt="" coords="740,331,929,360"/><area shape="rect" id="node17" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="1043,251,1125,280"/><area shape="rect" id="node20" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="984,304,1184,333"/><area shape="rect" id="node23" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="987,357,1181,387"/><area shape="rect" id="node25" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="991,144,1177,173"/><area shape="rect" id="node28" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="979,197,1189,227"/></map>
 </div>
 </p>
 
@@ -783,7 +835,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimMessage_a75d23cd6dd22f533f6530c7e774d5645_cgraph.png" border="0" usemap="#classSimMessage_a75d23cd6dd22f533f6530c7e774d5645_cgraph" alt=""/></div>
 <map name="classSimMessage_a75d23cd6dd22f533f6530c7e774d5645_cgraph" id="classSimMessage_a75d23cd6dd22f533f6530c7e774d5645_cgraph">
-<area shape="rect" id="node3" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="299,5,381,35"/><area shape="rect" id="node5" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="488,164,691,193"/><area shape="rect" id="node9" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="240,109,440,139"/><area shape="rect" id="node11" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="247,163,433,192"/><area shape="rect" id="node13" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="243,216,437,245"/><area shape="rect" id="node15" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="247,269,433,299"/><area shape="rect" id="node7" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="740,164,943,193"/></map>
+<area shape="rect" id="node3" href="simmessage_8cpp.html#a8b63824ef8ba3ffe46c56ed6aa56dd3c" title="pathName" alt="" coords="304,5,387,35"/><area shape="rect" id="node5" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="499,269,701,299"/><area shape="rect" id="node9" href="classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755" title="SimMessage::findOptimization" alt="" coords="245,109,445,139"/><area shape="rect" id="node11" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window." alt="" coords="252,163,439,192"/><area shape="rect" id="node13" href="classSimMessage.html#abdda616c535d84cf9a81242e617dcba3" title="called when the process sends an output to stdout." alt="" coords="248,216,443,245"/><area shape="rect" id="node15" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="252,269,439,299"/><area shape="rect" id="node18" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="240,323,451,352"/><area shape="rect" id="node7" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500" title="SimMessage::SimulationEnded" alt="" coords="751,269,953,299"/></map>
 </div>
 </p>
 
@@ -810,7 +862,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00091">91</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00092">92</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +877,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00102">102</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00103">103</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +892,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00098">98</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00099">99</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +907,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00086">86</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00087">87</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +922,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00086">86</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00087">87</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +937,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00091">91</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00092">92</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +952,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00086">86</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00087">87</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +967,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00082">82</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00083">83</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -930,7 +982,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00089">89</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00090">90</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +997,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00097">97</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00098">98</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -960,7 +1012,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00097">97</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00098">98</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -975,7 +1027,22 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00099">99</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00100">100</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abac6ec52b4c2a2cfc5c39e9513d45c61"></a><!-- doxytag: member="SimMessage::Program" ref="abac6ec52b4c2a2cfc5c39e9513d45c61" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString <a class="el" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">SimMessage::Program</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00105">105</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1057,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00093">93</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00094">94</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1072,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00089">89</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00090">90</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1087,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00086">86</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00087">87</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1102,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00083">83</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00084">84</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1117,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00084">84</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00085">85</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1132,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00095">95</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00096">96</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1147,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00096">96</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00097">97</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1162,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00088">88</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00089">89</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1177,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00092">92</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00093">93</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1192,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00085">85</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00086">86</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1207,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00100">100</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00101">101</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1222,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00090">90</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
+<p>Definition at line <a class="el" href="simmessage_8h_source.html#l00091">91</a> of file <a class="el" href="simmessage_8h_source.html">simmessage.h</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1248,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 22 2015 19:22:04 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 23 2015 20:38:12 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -415,6 +415,7 @@ var searchData=
   ['slotskiperr',['slotSkipErr',['../classSpiceDialog.html#ab36d576e3eea7cd4fa50a0a5d8301993',1,'SpiceDialog::slotSkipErr()'],['../classSpiceFile.html#a26f84a7268c1ecc941d24858b2c2ea2f',1,'SpiceFile::slotSkipErr()']]],
   ['slotskipout',['slotSkipOut',['../classSpiceDialog.html#ac8ac1bc7e0d3da2ef5d41d4a421f21f9',1,'SpiceDialog::slotSkipOut()'],['../classSpiceFile.html#a5645a7188b3ef3fddfbb0c2e76303807',1,'SpiceFile::slotSkipOut()']]],
   ['slotstartentered',['slotStartEntered',['../classComponentDialog.html#aff84a6edbf0bc493ded988f2209f3f17',1,'ComponentDialog']]],
+  ['slotstatechanged',['slotStateChanged',['../classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c',1,'SimMessage']]],
   ['slotstepchanged',['slotStepChanged',['../classComponentDialog.html#af603393ad950e2adc3c99be750101239',1,'ComponentDialog']]],
   ['slotstepentered',['slotStepEntered',['../classComponentDialog.html#a7927392d0c213012f80a348566cf69ca',1,'ComponentDialog']]],
   ['slotstopentered',['slotStopEntered',['../classComponentDialog.html#ab61c05b2181f14d37c69ead322066297',1,'ComponentDialog']]],

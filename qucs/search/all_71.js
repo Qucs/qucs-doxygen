@@ -12,6 +12,7 @@ var searchData=
   ['qucs_5factions_2ecpp',['qucs_actions.cpp',['../qucs__actions_8cpp.html',1,'']]],
   ['qucs_5finit_2ecpp',['qucs_init.cpp',['../qucs__init_8cpp.html',1,'']]],
   ['qucsapp',['QucsApp',['../classQucsApp.html',1,'QucsApp'],['../classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22',1,'QucsApp::QucsApp()']]],
+  ['qucsator',['Qucsator',['../structtQucsSettings.html#a21ed29c4b7d9829ffaffddc7c829043f',1,'tQucsSettings']]],
   ['qucsconv',['QucsConv',['../classSpiceDialog.html#a125b4b15ba0e70e5222372652a5f4f04',1,'SpiceDialog::QucsConv()'],['../classSpiceFile.html#a79bd17801331efb3718bb8598896789e',1,'SpiceFile::QucsConv()']]],
   ['qucsdoc',['QucsDoc',['../classQucsDoc.html',1,'QucsDoc'],['../classQucsDoc.html#a0f09ab4d61dccf8616c36f0db9244aca',1,'QucsDoc::QucsDoc()']]],
   ['qucsdoc_2ecpp',['qucsdoc.cpp',['../qucsdoc_8cpp.html',1,'']]],

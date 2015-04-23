@@ -68,7 +68,7 @@ var searchData=
   ['etr_5fsim_2eh',['etr_sim.h',['../etr__sim_8h.html',1,'']]],
   ['eventfilter',['eventFilter',['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
   ['examplesdir',['ExamplesDir',['../structtQucsSettings.html#a2d1cb813e10dc15b84c224f52ff61167',1,'tQucsSettings']]],
-  ['executablesuffix',['executableSuffix',['../simmessage_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;simmessage.cpp'],['../octave__window_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;octave_window.cpp']]],
+  ['executablesuffix',['executableSuffix',['../simmessage_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;simmessage.cpp'],['../main_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;main.cpp'],['../octave__window_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;octave_window.cpp']]],
   ['exportasimage',['exportAsImage',['../classQucsApp.html#ac46bcb3fd090de847c1596dff63031bd',1,'QucsApp']]],
   ['exportbutt',['ExportButt',['../classExportDialog.html#a815b0ee0b08ba45e85d0a14ffbc28d5f',1,'ExportDialog']]],
   ['exportdialog',['ExportDialog',['../classExportDialog.html',1,'ExportDialog'],['../classExportDialog.html#a81ba8755340787fd8f278d01e01ee8da',1,'ExportDialog::ExportDialog()']]],

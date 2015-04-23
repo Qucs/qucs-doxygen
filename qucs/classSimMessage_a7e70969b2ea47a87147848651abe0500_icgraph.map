@@ -1,12 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="259,67,461,96"/>
-<area shape="rect" id="node5" href="$classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1484,41,1663,71"/>
-<area shape="rect" id="node16" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="980,68,1151,97"/>
-<area shape="rect" id="node22" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="744,93,931,123"/>
-<area shape="rect" id="node25" href="$classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="509,144,696,173"/>
-<area shape="rect" id="node7" href="$classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1713,41,1868,71"/>
-<area shape="rect" id="node9" href="$classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1917,15,2067,44"/>
-<area shape="rect" id="node11" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2116,41,2260,71"/>
-<area shape="rect" id="node13" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2309,41,2448,71"/>
-<area shape="rect" id="node19" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="1201,93,1433,123"/>
+<area shape="rect" id="node3" href="$classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end&#45;of&#45;simulation messages and save the relevant data." alt="" coords="259,92,461,121"/>
+<area shape="rect" id="node5" href="$classSimMessage.html#ab89cfc80180d3f63df993a5b0efff3e3" title="SimMessage::startProcess" alt="" coords="1508,41,1687,71"/>
+<area shape="rect" id="node16" href="$classSimMessage.html#a8ea885811fc6b487d04bb4804aef24a2" title="Converts a spice netlist into Qucs format and outputs it." alt="" coords="1004,68,1175,97"/>
+<area shape="rect" id="node22" href="$classSimMessage.html#a75d23cd6dd22f533f6530c7e774d5645" title="SimMessage::startSimulator simulates the document in view." alt="" coords="768,119,955,148"/>
+<area shape="rect" id="node25" href="$classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes." alt="" coords="509,144,720,173"/>
+<area shape="rect" id="node28" href="$classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status." alt="" coords="521,197,708,227"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a3410fb2573a3801b533f6532183e3f8e" title="QucsApp::slotSimulate is called when the simulate toolbar button is pressed." alt="" coords="1737,41,1892,71"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a4bd65d00af7f27b778ae0a3595fd96c8" title="QucsApp::slotDCbias" alt="" coords="1941,15,2091,44"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2140,41,2284,71"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2333,41,2472,71"/>
+<area shape="rect" id="node19" href="$classSimMessage.html#a7a4b77f970162c6b5cb12153e2f9ecb7" title="SimMessage::slotFinishSpiceNetlist" alt="" coords="1225,93,1457,123"/>
 </map>
