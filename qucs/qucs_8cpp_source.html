@@ -1034,8 +1034,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00956"></a>00956     }
 <a name="l00957"></a>00957   }
 <a name="l00958"></a>00958 
-<a name="l00959"></a>00959   QString suffix = fileinfo.completeSuffix();
-<a name="l00960"></a>00960   QString base = fileinfo.baseName();
+<a name="l00959"></a>00959   QString suffix = fileinfo.suffix();
+<a name="l00960"></a>00960   QString base = fileinfo.completeBaseName();
 <a name="l00961"></a>00961   <span class="keywordflow">if</span>(base.isEmpty()) {
 <a name="l00962"></a>00962     base = filename;
 <a name="l00963"></a>00963   }
@@ -1093,8 +1093,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01015"></a>01015     <span class="keywordflow">return</span>;
 <a name="l01016"></a>01016   }
 <a name="l01017"></a>01017 
-<a name="l01018"></a>01018   QString suffix = fileinfo.completeSuffix();
-<a name="l01019"></a>01019   QString base = fileinfo.baseName();
+<a name="l01018"></a>01018   QString suffix = fileinfo.suffix();
+<a name="l01019"></a>01019   QString base = fileinfo.completeBaseName();
 <a name="l01020"></a>01020   <span class="keywordflow">if</span>(base.isEmpty()) {
 <a name="l01021"></a>01021     base = filename;
 <a name="l01022"></a>01022   }
@@ -2268,7 +2268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l02194"></a>02194   QString filename = idx.sibling(idx.row(), 0).data().toString();
 <a name="l02195"></a>02195   QString note = idx.sibling(idx.row(), 1).data().toString();
 <a name="l02196"></a>02196   QFileInfo Info(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#ac416ec4c4a8bfc243ea836dbf334ccae">QucsWorkDir</a>.filePath(filename));
-<a name="l02197"></a>02197   QString extName = Info.completeSuffix();
+<a name="l02197"></a>02197   QString extName = Info.suffix();
 <a name="l02198"></a>02198 
 <a name="l02199"></a>02199   <span class="keywordflow">if</span> (extName == <span class="stringliteral">&quot;sch&quot;</span> || extName == <span class="stringliteral">&quot;dpl&quot;</span> || extName == <span class="stringliteral">&quot;vhdl&quot;</span> ||
 <a name="l02200"></a>02200       extName == <span class="stringliteral">&quot;vhd&quot;</span> || extName == <span class="stringliteral">&quot;v&quot;</span> || extName == <span class="stringliteral">&quot;va&quot;</span> ||
@@ -2881,7 +2881,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 28 2015 19:54:30 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 1 2015 08:53:05 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
