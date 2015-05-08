@@ -450,7 +450,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00387"></a>00387           scene-&gt;addLine(l-&gt;<a class="code" href="structLine.html#a1c37aeef714f6c96454c2a9a2dadb69a">x1</a>, l-&gt;<a class="code" href="structLine.html#a850c96af61bd595a68b5e867540204f1">y1</a>, l-&gt;<a class="code" href="structLine.html#a4f08d1038eba337d6f0fb32713e528f1">x2</a>, l-&gt;<a class="code" href="structLine.html#ae31c92ab0df730a2fdd34201ce6feb9d">y2</a>, l-&gt;<a class="code" href="structLine.html#a2145e442e559b7732b1be8c944f60354">style</a>);
 <a name="l00388"></a>00388         }
 <a name="l00389"></a>00389 
-<a name="l00390"></a>00390         <span class="keywordflow">foreach</span>(<a class="code" href="structArc.html">Arc</a> *a, Arcs) {
+<a name="l00390"></a>00390         <span class="keywordflow">foreach</span>(<span class="keyword">struct</span> <a class="code" href="structArc.html">Arc</a> *a, Arcs) {
 <a name="l00391"></a>00391           <span class="comment">// we need an open item here; QGraphisEllipseItem draws a filled ellipse and doesn&#39;t do the job here...</span>
 <a name="l00392"></a>00392           QPainterPath *path = <span class="keyword">new</span> QPainterPath();
 <a name="l00393"></a>00393           <span class="comment">// the components do not contain the angles in degrees but in 1/16th degrees -&gt; conversion needed</span>
@@ -955,7 +955,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 6 2015 21:03:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 8 2015 15:23:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
