@@ -5,7 +5,7 @@ var searchData=
   ['waslf',['wasLF',['../classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8',1,'SimMessage']]],
   ['widget3d_5fsize',['WIDGET3D_SIZE',['../diagramdialog_8cpp.html#a604664bffa154f251f812950266504a4',1,'diagramdialog.cpp']]],
   ['width',['Width',['../classArrow.html#a2accf8d9b158f5dfcb8588d42257a9ad',1,'Arrow']]],
-  ['wire',['Wire',['../classWire.html',1,'Wire'],['../classWire.html#a1f18307f8d96e95cfd91b8c7a9c64005',1,'Wire::Wire()'],['../classQucsApp.html#a9121ebb52a36c30479dc73d9d7d398bc',1,'QucsApp::wire()']]],
+  ['wire',['Wire',['../classWire.html',1,'Wire'],['../classQucsApp.html#a9121ebb52a36c30479dc73d9d7d398bc',1,'QucsApp::wire()'],['../classWire.html#a1f18307f8d96e95cfd91b8c7a9c64005',1,'Wire::Wire()']]],
   ['wire_2ecpp',['wire.cpp',['../wire_8cpp.html',1,'']]],
   ['wire_2eh',['wire.h',['../wire_8h.html',1,'']]],
   ['wirelabel',['WireLabel',['../classWireLabel.html',1,'WireLabel'],['../classWireLabel.html#a5e4a4da5d458bd528d57179cc0cd4398',1,'WireLabel::WireLabel()']]],
@@ -14,5 +14,6 @@ var searchData=
   ['wires',['Wires',['../classSchematic.html#a78a01374ea81df71fc5cdf39d8425bd3',1,'Schematic']]],
   ['withsim',['withSim',['../classSpiceFile.html#af046f9e9e29ed5959670eb260ea8d2d1',1,'SpiceFile']]],
   ['wordbox',['WordBox',['../classUi__SearchDialog.html#a356003dff3625951c7f7ae7df827b809',1,'Ui_SearchDialog']]],
+  ['workdir',['workdir',['../classAbstractSpiceKernel.html#ad31a37164fca2dc94da6f3e49906f5d0',1,'AbstractSpiceKernel::workdir()'],['../classExternSimDialog.html#a7d7882aaa536de8d32cf5f34990d65ee',1,'ExternSimDialog::workdir()']]],
   ['worktoolbar',['workToolbar',['../classQucsApp.html#a1263421c10f4fb170ecf8b080134819b',1,'QucsApp']]]
 ];

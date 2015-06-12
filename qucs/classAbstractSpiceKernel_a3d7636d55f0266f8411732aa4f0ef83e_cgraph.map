@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="1959,159,2108,188"/>
+<area shape="rect" id="node5" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="1969,212,2097,241"/>
+<area shape="rect" id="node7" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="303,96,564,125"/>
+<area shape="rect" id="node112" href="$classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist..." alt="" coords="327,263,540,292"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="641,43,815,72"/>
+<area shape="rect" id="node110" href="$classSchematic.html#acff87102c62c039c55a14d25393dda99" title="Schematic::clearSignalsAndFileList" alt="" coords="615,96,841,125"/>
+<area shape="rect" id="node11" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="891,584,1080,613"/>
+<area shape="rect" id="node13" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="1137,584,1329,613"/>
+<area shape="rect" id="node99" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="1140,869,1327,899"/>
+<area shape="rect" id="node108" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="1128,923,1339,952"/>
+<area shape="rect" id="node15" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="2199,552,2375,581"/>
+<area shape="rect" id="node17" href="$classComponent.html#ab9215e47cb5acea835a44302fd488c8c" title="Component::getSubcircuitFile" alt="" coords="1387,697,1581,727"/>
+<area shape="rect" id="node19" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="1407,777,1561,807"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="1396,644,1572,673"/>
+<area shape="rect" id="node58" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="1389,159,1579,188"/>
+<area shape="rect" id="node68" href="$classSpiceFile.html#af8223fc8e276d180bf0954743fb81e55" title="SpiceFile::createSpiceSubckt" alt="" coords="1387,367,1581,396"/>
+<area shape="rect" id="node73" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="1393,313,1575,343"/>
+<area shape="rect" id="node83" href="$classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90" title="SpiceFile::getErrorText" alt="" coords="1407,831,1561,860"/>
+<area shape="rect" id="node85" href="$classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c" title="VHDL_File::createSubNetlist" alt="" coords="1389,420,1579,449"/>
+<area shape="rect" id="node90" href="$classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4" title="VHDL_File::getErrorText" alt="" coords="1401,884,1567,913"/>
+<area shape="rect" id="node92" href="$classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48" title="Verilog_File::createSubNetlist" alt="" coords="1387,473,1581,503"/>
+<area shape="rect" id="node97" href="$classVerilog__File.html#a0945cf70d92970b0607197362fdd29e0" title="Verilog_File::getErrorText" alt="" coords="1399,937,1569,967"/>
+<area shape="rect" id="node21" href="$classSchematic.html#ac1d3660eba3f679706386522be12d07c" title="Schematic::signalCursorPosChanged" alt="" coords="1629,897,1869,927"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1656,951,1843,980"/>
+<area shape="rect" id="node25" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1656,1004,1843,1033"/>
+<area shape="rect" id="node27" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1651,1057,1848,1087"/>
+<area shape="rect" id="node31" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="1681,631,1817,660"/>
+<area shape="rect" id="node33" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="1664,684,1835,713"/>
+<area shape="rect" id="node37" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="1663,737,1836,767"/>
+<area shape="rect" id="node41" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="1655,577,1844,607"/>
+<area shape="rect" id="node48" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="1675,791,1824,820"/>
+<area shape="rect" id="node54" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="1664,844,1835,873"/>
+<area shape="rect" id="node35" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="1983,684,2084,713"/>
+<area shape="rect" id="node39" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="1956,737,2111,767"/>
+<area shape="rect" id="node43" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="1948,577,2119,607"/>
+<area shape="rect" id="node46" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="1919,631,2148,660"/>
+<area shape="rect" id="node50" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="1993,791,2073,820"/>
+<area shape="rect" id="node52" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="1939,844,2128,873"/>
+<area shape="rect" id="node56" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="1983,897,2084,927"/>
+<area shape="rect" id="node61" href="$classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b" title="Schematic::createSubNetlistPlain" alt="" coords="1640,159,1859,188"/>
+<area shape="rect" id="node63" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="1947,393,2120,423"/>
+<area shape="rect" id="node70" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="1659,367,1840,396"/>
+<area shape="rect" id="node75" href="$classSpiceFile.html#ad97ed53982f088887195c1791766d373" title="SpiceFile::SpiceFile" alt="" coords="1964,291,2103,320"/>
+<area shape="rect" id="node78" href="$classSpiceFile.html#a11272d700d7e466c7af9e41e47c435ba" title="SpiceFile::recreateSubNetlist" alt="" coords="1653,263,1845,292"/>
+<area shape="rect" id="node87" href="$classVHDL__File.html#aebea8efe023a3e7d842bd2e9568b31a2" title="VHDL_File::getSubcircuitFile" alt="" coords="1655,420,1844,449"/>
+<area shape="rect" id="node94" href="$classVerilog__File.html#aee772de812175299a79b7571669cbc71" title="Verilog_File::getSubcircuitFile" alt="" coords="1652,473,1847,503"/>
+<area shape="rect" id="node101" href="$classSchematic.html#a114ed12b567c86c854bb4a3976bd7a44" title="Schematic::createNodeSet" alt="" coords="1660,1111,1839,1140"/>
+<area shape="rect" id="node103" href="$classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04" title="Schematic::propagateNode" alt="" coords="1395,1111,1573,1140"/>
+<area shape="rect" id="node105" href="$classSchematic.html#add574acfc8788133e7d28385819c6eac" title="Schematic::setName" alt="" coords="1677,1164,1821,1193"/>
+</map>

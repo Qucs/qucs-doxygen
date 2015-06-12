@@ -12,17 +12,21 @@ var searchData=
   ['encode_5fstring',['encode_String',['../mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb',1,'encode_String(const QString &amp;Input, QString &amp;Output):&#160;mnemo.cpp'],['../mnemo_8h.html#a710596b4cf74c0fc2b90e3694473bd8c',1,'encode_String(const QString &amp;, QString &amp;):&#160;mnemo.cpp']]],
   ['endelementmoving',['endElementMoving',['../classMouseActions.html#a4bc0f036799361576eba251978c41a73',1,'MouseActions']]],
   ['endnetlistdigital',['endNetlistDigital',['../classSchematic.html#af893d90555f7295e7bf11acf9fa13f73',1,'Schematic']]],
+  ['enl',['eNL',['../classeNL.html#aa8549a081895cfd2b9d4914ffbec6a39',1,'eNL']]],
   ['enlargememoryblock',['enlargeMemoryBlock',['../classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526',1,'Rect3DDiagram']]],
   ['enlargeview',['enlargeView',['../classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d',1,'Schematic']]],
   ['entirebounds',['entireBounds',['../classComponent.html#a100def1c162f5945bcb149e039ca1f82',1,'Component']]],
   ['eqndefined',['EqnDefined',['../classEqnDefined.html#a7dfdbca68cbae47f4bf22634e0484089',1,'EqnDefined']]],
   ['equation',['Equation',['../classEquation.html#a68511fc719250ed80f86c50de9136733',1,'Equation']]],
   ['eraserect',['eraseRect',['../classViewPainter.html#a57873ea0bbbcffc5f2ecd067e5b2420d',1,'ViewPainter']]],
+  ['errors',['errors',['../classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30',1,'AbstractSpiceKernel']]],
   ['etr_5fsim',['ETR_Sim',['../classETR__Sim.html#a4ee4243b33627a384e488aec05564aa4',1,'ETR_Sim']]],
   ['eventfilter',['eventFilter',['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
   ['exportdialog',['ExportDialog',['../classExportDialog.html#a81ba8755340787fd8f278d01e01ee8da',1,'ExportDialog']]],
+  ['externsimdialog',['ExternSimDialog',['../classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621',1,'ExternSimDialog']]],
   ['extractdirectory',['extractDirectory',['../classPackageDialog.html#a0c24f59c23aa94f037b2491bb12ad0e1',1,'PackageDialog']]],
   ['extractfile',['extractFile',['../classPackageDialog.html#ad0cad61f409a227dd5eae41a492baabb',1,'PackageDialog']]],
   ['extractlibrary',['extractLibrary',['../classPackageDialog.html#ac003eccbfb5ded4c10a5b55501e6fd02',1,'PackageDialog']]],
-  ['extractpackage',['extractPackage',['../classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c',1,'PackageDialog']]]
+  ['extractpackage',['extractPackage',['../classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c',1,'PackageDialog']]],
+  ['extractvarsandvalues',['ExtractVarsAndValues',['../namespacequcs2spice.html#a390e66d732834912d5a555096651c185',1,'qucs2spice']]]
 ];

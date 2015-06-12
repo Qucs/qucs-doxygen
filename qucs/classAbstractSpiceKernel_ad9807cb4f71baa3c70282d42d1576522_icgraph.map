@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classAbstractSpiceKernel.html#a1bda07b80e00d3f413c5b831f941d140" title="AbstractSpiceKernel::slotFinished Simulation process normal finish handler." alt="" coords="253,5,472,35"/>
+<area shape="rect" id="node7" href="$classNgspice.html#a19bee451c86956eba6866d2032ec879d" title="Ngspice::slotProcessOutput Process Ngspice output and report completetion percentage." alt="" coords="269,59,456,88"/>
+<area shape="rect" id="node9" href="$classXyce.html#a81c1091a7b8b9b7a6c2c33842af480de" title="Xyce::slotFinished Simualtor finished handler." alt="" coords="297,112,428,141"/>
+<area shape="rect" id="node11" href="$classXyce.html#a94707ec1e0263b2eb64cddbe40e1cf62" title="Xyce::slotProcessOutput Process Xyce output and report progress." alt="" coords="279,165,447,195"/>
+<area shape="rect" id="node5" href="$classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor." alt="" coords="521,5,788,35"/>
+</map>

@@ -8,5 +8,6 @@ var searchData=
   ['wires',['Wires',['../classSchematic.html#a78a01374ea81df71fc5cdf39d8425bd3',1,'Schematic']]],
   ['withsim',['withSim',['../classSpiceFile.html#af046f9e9e29ed5959670eb260ea8d2d1',1,'SpiceFile']]],
   ['wordbox',['WordBox',['../classUi__SearchDialog.html#a356003dff3625951c7f7ae7df827b809',1,'Ui_SearchDialog']]],
+  ['workdir',['workdir',['../classAbstractSpiceKernel.html#ad31a37164fca2dc94da6f3e49906f5d0',1,'AbstractSpiceKernel::workdir()'],['../classExternSimDialog.html#a7d7882aaa536de8d32cf5f34990d65ee',1,'ExternSimDialog::workdir()']]],
   ['worktoolbar',['workToolbar',['../classQucsApp.html#a1263421c10f4fb170ecf8b080134819b',1,'QucsApp']]]
 ];

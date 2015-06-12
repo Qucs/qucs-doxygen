@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['l_5fspice_2ecpp',['L_SPICE.cpp',['../L__SPICE_8cpp.html',1,'']]],
+  ['l_5fspice_2eh',['L_SPICE.h',['../L__SPICE_8h.html',1,'']]],
   ['labeldialog_2ecpp',['labeldialog.cpp',['../labeldialog_8cpp.html',1,'']]],
   ['labeldialog_2eh',['labeldialog.h',['../labeldialog_8h.html',1,'']]],
   ['libcomp_2ecpp',['libcomp.cpp',['../libcomp_8cpp.html',1,'']]],
@@ -29,5 +31,9 @@ var searchData=
   ['logical_5fxnor_2ecpp',['logical_xnor.cpp',['../logical__xnor_8cpp.html',1,'']]],
   ['logical_5fxnor_2eh',['logical_xnor.h',['../logical__xnor_8h.html',1,'']]],
   ['logical_5fxor_2ecpp',['logical_xor.cpp',['../logical__xor_8cpp.html',1,'']]],
-  ['logical_5fxor_2eh',['logical_xor.h',['../logical__xor_8h.html',1,'']]]
+  ['logical_5fxor_2eh',['logical_xor.h',['../logical__xor_8h.html',1,'']]],
+  ['ltl_5fspice_2ecpp',['LTL_SPICE.cpp',['../LTL__SPICE_8cpp.html',1,'']]],
+  ['ltl_5fspice_2eh',['LTL_SPICE.h',['../LTL__SPICE_8h.html',1,'']]],
+  ['ltra_5fspice_2ecpp',['LTRA_SPICE.cpp',['../LTRA__SPICE_8cpp.html',1,'']]],
+  ['ltra_5fspice_2eh',['LTRA_SPICE.h',['../LTRA__SPICE_8h.html',1,'']]]
 ];

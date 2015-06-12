@@ -32,9 +32,9 @@
 <area shape="rect" id="node43" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="2328,59,2437,88"/>
 <area shape="rect" id="node49" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="2079,112,2180,141"/>
 <area shape="rect" id="node51" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="2336,112,2429,141"/>
-<area shape="rect" id="node55" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="1039,351,1228,380"/>
-<area shape="rect" id="node65" href="$classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6" title="Schematic::createSubNetlistPlain" alt="" coords="1024,564,1243,593"/>
-<area shape="rect" id="node57" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="1300,324,1492,353"/>
+<area shape="rect" id="node55" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1039,351,1228,380"/>
+<area shape="rect" id="node65" href="$classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b" title="Schematic::createSubNetlistPlain" alt="" coords="1024,564,1243,593"/>
+<area shape="rect" id="node57" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="1300,324,1492,353"/>
 <area shape="rect" id="node61" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="1303,377,1489,407"/>
 <area shape="rect" id="node63" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="1291,271,1501,300"/>
 <area shape="rect" id="node67" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="1309,431,1483,460"/>

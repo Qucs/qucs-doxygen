@@ -2,6 +2,7 @@ var searchData=
 [
   ['gatecomponent',['GateComponent',['../classGateComponent.html',1,'']]],
   ['gateddlatch',['gatedDlatch',['../classgatedDlatch.html',1,'']]],
+  ['gnl',['gNL',['../classgNL.html',1,'']]],
   ['graph',['Graph',['../classGraph.html',1,'']]],
   ['graphicline',['GraphicLine',['../classGraphicLine.html',1,'']]],
   ['graphictext',['GraphicText',['../classGraphicText.html',1,'']]],

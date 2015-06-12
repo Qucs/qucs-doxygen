@@ -99,59 +99,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="hb__sim_8h.html">hb_sim.h</a>&quot;</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="main_8h.html" title="Definitions and declarations for the main application.">main.h</a>&quot;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">00021</a> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim::HB_Sim</a>()
-<a name="l00022"></a>00022 {
-<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;Harmonic balance simulation&quot;</span>);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   QString  s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
-<a name="l00026"></a>00026   <span class="keywordtype">int</span> a = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
-<a name="l00027"></a>00027   <span class="keywordflow">if</span> (a != -1) s[a] = <span class="charliteral">&#39;\n&#39;</span>;    <span class="comment">// break line before the word &quot;simulation&quot;</span>
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(a), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
-<a name="l00030"></a>00030   <span class="keywordflow">if</span> (a != -1)
-<a name="l00031"></a>00031     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(a+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
-<a name="l00034"></a>00034   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+163; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+59;
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
-<a name="l00037"></a>00037   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
-<a name="l00038"></a>00038   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.HB&quot;</span>;
-<a name="l00039"></a>00039   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;HB&quot;</span>;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;f&quot;</span>, <span class="stringliteral">&quot;1 GHz&quot;</span>, <span class="keyword">false</span>,
-<a name="l00042"></a>00042     QObject::tr(<span class="stringliteral">&quot;frequency in Hertz&quot;</span>)));
-<a name="l00043"></a>00043   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;n&quot;</span>, <span class="stringliteral">&quot;4&quot;</span>, <span class="keyword">true</span>,
-<a name="l00044"></a>00044     QObject::tr(<span class="stringliteral">&quot;number of harmonics&quot;</span>)));
-<a name="l00045"></a>00045   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;iabstol&quot;</span>, <span class="stringliteral">&quot;1 pA&quot;</span>, <span class="keyword">false</span>,
-<a name="l00046"></a>00046     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for currents&quot;</span>)));
-<a name="l00047"></a>00047   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;vabstol&quot;</span>, <span class="stringliteral">&quot;1 uV&quot;</span>, <span class="keyword">false</span>,
-<a name="l00048"></a>00048     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for voltages&quot;</span>)));
-<a name="l00049"></a>00049   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;reltol&quot;</span>, <span class="stringliteral">&quot;0.001&quot;</span>, <span class="keyword">false</span>,
-<a name="l00050"></a>00050     QObject::tr(<span class="stringliteral">&quot;relative tolerance for convergence&quot;</span>)));
-<a name="l00051"></a>00051   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;MaxIter&quot;</span>, <span class="stringliteral">&quot;150&quot;</span>, <span class="keyword">false</span>,
-<a name="l00052"></a>00052     QObject::tr(<span class="stringliteral">&quot;maximum number of iterations until error&quot;</span>)));
-<a name="l00053"></a>00053 }
-<a name="l00054"></a>00054 
-<a name="l00055"></a><a class="code" href="classHB__Sim.html#a5086f1dcab74d598106ef4ad9e8686dc">00055</a> <a class="code" href="classHB__Sim.html#a5086f1dcab74d598106ef4ad9e8686dc">HB_Sim::~HB_Sim</a>()
-<a name="l00056"></a>00056 {
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="misc_8h.html" title="of some miscellaneous function">misc.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="spicecompat_8h.html">extsimkernels/spicecompat.h</a>&quot;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">00023</a> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim::HB_Sim</a>()
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;Harmonic balance simulation&quot;</span>);
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   QString  s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
+<a name="l00028"></a>00028   <span class="keywordtype">int</span> a = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
+<a name="l00029"></a>00029   <span class="keywordflow">if</span> (a != -1) s[a] = <span class="charliteral">&#39;\n&#39;</span>;    <span class="comment">// break line before the word &quot;simulation&quot;</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(a), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00032"></a>00032   <span class="keywordflow">if</span> (a != -1)
+<a name="l00033"></a>00033     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(a+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
+<a name="l00036"></a>00036   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+163; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+59;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
+<a name="l00039"></a>00039   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
+<a name="l00040"></a>00040   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.HB&quot;</span>;
+<a name="l00041"></a>00041   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;HB&quot;</span>;
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a> = <span class="stringliteral">&quot;.HB&quot;</span>;
+<a name="l00043"></a>00043   <a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">isSimulation</a> = <span class="keyword">true</span>;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;f&quot;</span>, <span class="stringliteral">&quot;1 GHz&quot;</span>, <span class="keyword">false</span>,
+<a name="l00046"></a>00046     QObject::tr(<span class="stringliteral">&quot;frequency in Hertz&quot;</span>)));
+<a name="l00047"></a>00047   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;n&quot;</span>, <span class="stringliteral">&quot;4&quot;</span>, <span class="keyword">true</span>,
+<a name="l00048"></a>00048     QObject::tr(<span class="stringliteral">&quot;number of harmonics&quot;</span>)));
+<a name="l00049"></a>00049   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;iabstol&quot;</span>, <span class="stringliteral">&quot;1 pA&quot;</span>, <span class="keyword">false</span>,
+<a name="l00050"></a>00050     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for currents&quot;</span>)));
+<a name="l00051"></a>00051   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;vabstol&quot;</span>, <span class="stringliteral">&quot;1 uV&quot;</span>, <span class="keyword">false</span>,
+<a name="l00052"></a>00052     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for voltages&quot;</span>)));
+<a name="l00053"></a>00053   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;reltol&quot;</span>, <span class="stringliteral">&quot;0.001&quot;</span>, <span class="keyword">false</span>,
+<a name="l00054"></a>00054     QObject::tr(<span class="stringliteral">&quot;relative tolerance for convergence&quot;</span>)));
+<a name="l00055"></a>00055   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;MaxIter&quot;</span>, <span class="stringliteral">&quot;150&quot;</span>, <span class="keyword">false</span>,
+<a name="l00056"></a>00056     QObject::tr(<span class="stringliteral">&quot;maximum number of iterations until error&quot;</span>)));
 <a name="l00057"></a>00057 }
 <a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="classHB__Sim.html#a36ec770b360527638718c3099a2d38ed">00059</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classHB__Sim.html#a36ec770b360527638718c3099a2d38ed">HB_Sim::newOne</a>()
+<a name="l00059"></a><a class="code" href="classHB__Sim.html#a5086f1dcab74d598106ef4ad9e8686dc">00059</a> <a class="code" href="classHB__Sim.html#a5086f1dcab74d598106ef4ad9e8686dc">HB_Sim::~HB_Sim</a>()
 <a name="l00060"></a>00060 {
-<a name="l00061"></a>00061   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim</a>();
-<a name="l00062"></a>00062 }
-<a name="l00063"></a>00063 
-<a name="l00064"></a><a class="code" href="classHB__Sim.html#ac745497ca076f6fb786a7ebd9167a0ed">00064</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classHB__Sim.html#ac745497ca076f6fb786a7ebd9167a0ed">HB_Sim::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00065"></a>00065 {
-<a name="l00066"></a>00066   Name = QObject::tr(<span class="stringliteral">&quot;Harmonic balance&quot;</span>);
-<a name="l00067"></a>00067   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;hb&quot;</span>;
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim</a>();
-<a name="l00070"></a>00070   <span class="keywordflow">return</span> 0;
-<a name="l00071"></a>00071 }
+<a name="l00061"></a>00061 }
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="classHB__Sim.html#a36ec770b360527638718c3099a2d38ed">00063</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classHB__Sim.html#a36ec770b360527638718c3099a2d38ed">HB_Sim::newOne</a>()
+<a name="l00064"></a>00064 {
+<a name="l00065"></a>00065   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim</a>();
+<a name="l00066"></a>00066 }
+<a name="l00067"></a>00067 
+<a name="l00068"></a><a class="code" href="classHB__Sim.html#ac745497ca076f6fb786a7ebd9167a0ed">00068</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classHB__Sim.html#ac745497ca076f6fb786a7ebd9167a0ed">HB_Sim::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00069"></a>00069 {
+<a name="l00070"></a>00070   Name = QObject::tr(<span class="stringliteral">&quot;Harmonic balance&quot;</span>);
+<a name="l00071"></a>00071   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;hb&quot;</span>;
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classHB__Sim.html#a8ca362e43f0223a71992a774d4d249a0">HB_Sim</a>();
+<a name="l00074"></a>00074   <span class="keywordflow">return</span> 0;
+<a name="l00075"></a>00075 }
+<a name="l00076"></a>00076 
+<a name="l00077"></a><a class="code" href="classHB__Sim.html#a527f25ea4f805d5a616e3da1db366276">00077</a> QString <a class="code" href="classHB__Sim.html#a527f25ea4f805d5a616e3da1db366276">HB_Sim::spice_netlist</a>(<span class="keywordtype">bool</span> isXyce)
+<a name="l00078"></a>00078 {
+<a name="l00079"></a>00079     QString s=<span class="stringliteral">&quot;&quot;</span>;
+<a name="l00080"></a>00080     <span class="keywordflow">if</span> (isXyce) {  <span class="comment">// Only in Xyce</span>
+<a name="l00081"></a>00081         s += QString(<span class="stringliteral">&quot;.options hbint numfreq=%1 STARTUPPERIODS=2\n&quot;</span>).arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value);
+<a name="l00082"></a>00082         s += QString(<span class="stringliteral">&quot;.HB %1\n&quot;</span>).arg(<a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value));
+<a name="l00083"></a>00083     }
+<a name="l00084"></a>00084     <span class="keywordflow">return</span> s;
+<a name="l00085"></a>00085 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -170,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 30 2015 23:43:04 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2015 10:04:55 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
