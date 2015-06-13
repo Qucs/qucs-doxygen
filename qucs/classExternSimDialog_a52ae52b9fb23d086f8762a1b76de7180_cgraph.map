@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classXyce.html#a3a690d4bfe799ae65b979c84964ecd73" title="Xyce::setParallel" alt="" coords="360,59,480,88"/>
-<area shape="rect" id="node5" href="$classExternSimDialog.html#ab32eda4503ac9f72a54a4c528709f4aa" title="ExternSimDialog::slotNgspiceStarted" alt="" coords="301,112,539,141"/>
-<area shape="rect" id="node7" href="$classExternSimDialog.html#afb56c9a5befdb88ff64975a1d8cf9500" title="ExternSimDialog::slotProcessXyceOutput" alt="" coords="287,219,553,248"/>
-<area shape="rect" id="node31" href="$classExternSimDialog.html#a64f0071bb3c1719337f4ca523049b35d" title="ExternSimDialog::slotNgspiceStartError" alt="" coords="293,272,547,301"/>
-<area shape="rect" id="node33" href="$classExternSimDialog.html#aa502e85a3b95e6de812ea881f20103b1" title="ExternSimDialog::slotProcessNgspiceOutput" alt="" coords="279,165,561,195"/>
+<area shape="rect" id="node3" href="$classXyce.html#a3a690d4bfe799ae65b979c84964ecd73" title="Xyce::setParallel" alt="" coords="360,85,480,115"/>
+<area shape="rect" id="node5" href="$classExternSimDialog.html#ab32eda4503ac9f72a54a4c528709f4aa" title="ExternSimDialog::slotNgspiceStarted" alt="" coords="301,139,539,168"/>
+<area shape="rect" id="node7" href="$classExternSimDialog.html#afb56c9a5befdb88ff64975a1d8cf9500" title="ExternSimDialog::slotProcessXyceOutput" alt="" coords="287,245,553,275"/>
+<area shape="rect" id="node33" href="$classExternSimDialog.html#a7dc16768eed0da50c4d1d339d7509822" title="ExternSimDialog::slotNgspiceStartError" alt="" coords="293,299,547,328"/>
+<area shape="rect" id="node35" href="$classExternSimDialog.html#aa502e85a3b95e6de812ea881f20103b1" title="ExternSimDialog::slotProcessNgspiceOutput" alt="" coords="279,192,561,221"/>
 <area shape="rect" id="node9" href="$classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process." alt="" coords="641,165,847,195"/>
 <area shape="rect" id="node11" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="611,219,877,248"/>
+<area shape="rect" id="node31" href="$classExternSimDialog.html#a83dfe0ca100f0bff305c9d66be953355" title="ExternSimDialog::simulated" alt="" coords="652,272,836,301"/>
 <area shape="rect" id="node13" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="953,5,1191,35"/>
 <area shape="rect" id="node15" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="943,59,1201,88"/>
 <area shape="rect" id="node17" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="945,112,1199,141"/>

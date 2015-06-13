@@ -89,7 +89,7 @@ var searchData=
   ['viewpainter_2ecpp',['viewpainter.cpp',['../viewpainter_8cpp.html',1,'']]],
   ['viewpainter_2eh',['viewpainter.h',['../viewpainter_8h.html',1,'']]],
   ['viewstatusbar',['viewStatusBar',['../classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4',1,'QucsApp']]],
-  ['viewtoolbar',['viewToolBar',['../classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a',1,'QucsApp::viewToolBar()'],['../classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c',1,'QucsApp::viewToolbar()']]],
+  ['viewtoolbar',['viewToolbar',['../classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c',1,'QucsApp::viewToolbar()'],['../classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a',1,'QucsApp::viewToolBar()']]],
   ['viewx1',['ViewX1',['../classSchematic.html#a482005952d9a752deaef6af973082d9c',1,'Schematic']]],
   ['viewx2',['ViewX2',['../classSchematic.html#ac62cd8241503adeb137026fa7d4d003c',1,'Schematic']]],
   ['viewy1',['ViewY1',['../classSchematic.html#a299a9758d3782d83c939c5ccb7a627c9',1,'Schematic']]],

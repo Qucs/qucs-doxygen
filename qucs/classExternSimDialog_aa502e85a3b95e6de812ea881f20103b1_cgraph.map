@@ -1,6 +1,7 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process." alt="" coords="369,165,575,195"/>
 <area shape="rect" id="node5" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="339,219,605,248"/>
+<area shape="rect" id="node25" href="$classExternSimDialog.html#a83dfe0ca100f0bff305c9d66be953355" title="ExternSimDialog::simulated" alt="" coords="380,272,564,301"/>
 <area shape="rect" id="node7" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="681,5,919,35"/>
 <area shape="rect" id="node9" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="671,59,929,88"/>
 <area shape="rect" id="node11" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="673,112,927,141"/>
