@@ -2,14 +2,8 @@ var searchData=
 [
   ['newprojdialog_2ecpp',['newprojdialog.cpp',['../newprojdialog_8cpp.html',1,'']]],
   ['newprojdialog_2eh',['newprojdialog.h',['../newprojdialog_8h.html',1,'']]],
-  ['ngspice_2ecpp',['ngspice.cpp',['../ngspice_8cpp.html',1,'']]],
-  ['ngspice_2eh',['ngspice.h',['../ngspice_8h.html',1,'']]],
   ['nigbt_2ecpp',['nigbt.cpp',['../nigbt_8cpp.html',1,'']]],
   ['nigbt_2eh',['nigbt.h',['../nigbt_8h.html',1,'']]],
-  ['njf_5fspice_2ecpp',['NJF_SPICE.cpp',['../NJF__SPICE_8cpp.html',1,'']]],
-  ['njf_5fspice_2eh',['NJF_SPICE.h',['../NJF__SPICE_8h.html',1,'']]],
-  ['nmos_5fspice_2ecpp',['NMOS_SPICE.cpp',['../NMOS__SPICE_8cpp.html',1,'']]],
-  ['nmos_5fspice_2eh',['NMOS_SPICE.h',['../NMOS__SPICE_8h.html',1,'']]],
   ['node_2ecpp',['node.cpp',['../node_8cpp.html',1,'']]],
   ['node_2eh',['node.h',['../node_8h.html',1,'']]],
   ['noise_5fii_2ecpp',['noise_ii.cpp',['../noise__ii_8cpp.html',1,'']]],
@@ -17,7 +11,5 @@ var searchData=
   ['noise_5fiv_2ecpp',['noise_iv.cpp',['../noise__iv_8cpp.html',1,'']]],
   ['noise_5fiv_2eh',['noise_iv.h',['../noise__iv_8h.html',1,'']]],
   ['noise_5fvv_2ecpp',['noise_vv.cpp',['../noise__vv_8cpp.html',1,'']]],
-  ['noise_5fvv_2eh',['noise_vv.h',['../noise__vv_8h.html',1,'']]],
-  ['npn_5fspice_2ecpp',['NPN_SPICE.cpp',['../NPN__SPICE_8cpp.html',1,'']]],
-  ['npn_5fspice_2eh',['NPN_SPICE.h',['../NPN__SPICE_8h.html',1,'']]]
+  ['noise_5fvv_2eh',['noise_vv.h',['../noise__vv_8h.html',1,'']]]
 ];
