@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['abstractspicekernel',['AbstractSpiceKernel',['../classAbstractSpiceKernel.html',1,'']]],
   ['ac_5fsim',['AC_Sim',['../classAC__Sim.html',1,'']]],
   ['am_5fmodulator',['AM_Modulator',['../classAM__Modulator.html',1,'']]],
   ['ampere_5fac',['Ampere_ac',['../classAmpere__ac.html',1,'']]],

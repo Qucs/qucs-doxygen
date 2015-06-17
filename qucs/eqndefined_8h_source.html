@@ -105,18 +105,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022 
 <a name="l00023"></a>00023 
 <a name="l00024"></a><a class="code" href="classEqnDefined.html">00024</a> <span class="keyword">class </span><a class="code" href="classEqnDefined.html">EqnDefined</a> : <span class="keyword">public</span> <a class="code" href="classMultiViewComponent.html">MultiViewComponent</a>  {
-<a name="l00025"></a>00025 <span class="keyword">public</span>:
-<a name="l00026"></a>00026   <a class="code" href="classEqnDefined.html#a7dfdbca68cbae47f4bf22634e0484089">EqnDefined</a>();
-<a name="l00027"></a><a class="code" href="classEqnDefined.html#a184d88876a1770af9d0e83b95534ac92">00027</a>  <a class="code" href="classEqnDefined.html#a184d88876a1770af9d0e83b95534ac92">~EqnDefined</a>() {};
-<a name="l00028"></a>00028   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classEqnDefined.html#a15af9c7acf8d1984a2614bbab300867c">newOne</a>();
-<a name="l00029"></a>00029   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classEqnDefined.html#aea8201f4ac07619c96eb6ea15f22de5b">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 <span class="keyword">protected</span>:
-<a name="l00032"></a>00032   QString <a class="code" href="classEqnDefined.html#aeb59c192a7c4f99e4755c563d0a78185">netlist</a>();
-<a name="l00033"></a>00033   <span class="keywordtype">void</span> <a class="code" href="classEqnDefined.html#a8be19656d284d7de4af049ecd46402d7">createSymbol</a>();
-<a name="l00034"></a>00034 };
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="preprocessor">#endif</span>
+<a name="l00025"></a>00025 <span class="keyword">private</span>:
+<a name="l00026"></a>00026   <span class="keywordtype">void</span> <a class="code" href="classEqnDefined.html#a5502b1042a47e7385b0a1db80923e4cf" title="EqnDefined::subsVoltages Substitute volatges in spice Notation in token list.">subsVoltages</a>(QStringList &amp;tokens, <span class="keywordtype">int</span> Nbranch);
+<a name="l00027"></a>00027 <span class="keyword">public</span>:
+<a name="l00028"></a>00028   <a class="code" href="classEqnDefined.html#a7dfdbca68cbae47f4bf22634e0484089">EqnDefined</a>();
+<a name="l00029"></a><a class="code" href="classEqnDefined.html#a184d88876a1770af9d0e83b95534ac92">00029</a>  <a class="code" href="classEqnDefined.html#a184d88876a1770af9d0e83b95534ac92">~EqnDefined</a>() {};
+<a name="l00030"></a>00030   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classEqnDefined.html#a15af9c7acf8d1984a2614bbab300867c">newOne</a>();
+<a name="l00031"></a>00031   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classEqnDefined.html#aea8201f4ac07619c96eb6ea15f22de5b">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keyword">protected</span>:
+<a name="l00034"></a>00034   QString <a class="code" href="classEqnDefined.html#aeb59c192a7c4f99e4755c563d0a78185">netlist</a>();
+<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="classEqnDefined.html#a8be19656d284d7de4af049ecd46402d7">createSymbol</a>();
+<a name="l00036"></a>00036   QString <a class="code" href="classEqnDefined.html#aab7829e502264bc9f15b18fbe779f643">spice_netlist</a>(<span class="keywordtype">bool</span> isXyce);
+<a name="l00037"></a>00037 };
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -135,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 16 2015 20:11:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 17 2015 13:09:57 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
