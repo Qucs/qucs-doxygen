@@ -25,9 +25,9 @@
 <area shape="rect" id="node64" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="517,884,725,913"/>
 <area shape="rect" id="node68" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="517,1004,725,1033"/>
 <area shape="rect" id="node72" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="528,1057,715,1087"/>
-<area shape="rect" id="node79" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="553,1268,689,1297"/>
-<area shape="rect" id="node93" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="520,1361,723,1391"/>
-<area shape="rect" id="node97" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="527,1495,716,1524"/>
+<area shape="rect" id="node79" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="553,1268,689,1297"/>
+<area shape="rect" id="node93" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="520,1361,723,1391"/>
+<area shape="rect" id="node97" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="527,1495,716,1524"/>
 <area shape="rect" id="node101" href="$classSchematic.html#a55896058a21663750b788cbb68b010da" title="Schematic::setCompPorts" alt="" coords="533,951,709,980"/>
 <area shape="rect" id="node52" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="813,583,979,612"/>
 <area shape="rect" id="node54" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="809,636,983,665"/>

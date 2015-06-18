@@ -1,8 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="257,427,412,456"/>
 <area shape="rect" id="node9" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="253,928,416,957"/>
-<area shape="rect" id="node5" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="500,5,692,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="779,5,968,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="500,5,692,35"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="779,5,968,35"/>
 <area shape="rect" id="node11" href="$classSettingsDialog.html#afd32d97f1c09c536f39513701b5de500" title="SettingsDialog::slotApply" alt="" coords="512,219,680,248"/>
 <area shape="rect" id="node18" href="$classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="513,272,679,301"/>
 <area shape="rect" id="node20" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="783,323,964,352"/>
@@ -33,8 +33,8 @@
 <area shape="rect" id="node102" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="504,1061,688,1091"/>
 <area shape="rect" id="node106" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="505,1168,687,1197"/>
 <area shape="rect" id="node110" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="505,1752,687,1781"/>
-<area shape="rect" id="node112" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="528,1805,664,1835"/>
-<area shape="rect" id="node114" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="495,1859,697,1888"/>
+<area shape="rect" id="node112" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="528,1805,664,1835"/>
+<area shape="rect" id="node114" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="495,1859,697,1888"/>
 <area shape="rect" id="node116" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="473,59,719,88"/>
 <area shape="rect" id="node118" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="467,112,725,141"/>
 <area shape="rect" id="node120" href="$classSchematic.html#a21a32952eeac7109af7cd3549b6376a5" title="Schematic::activateSelectedComponents" alt="" coords="465,165,727,195"/>

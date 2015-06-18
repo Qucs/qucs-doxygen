@@ -4,10 +4,10 @@
 <area shape="rect" id="node89" href="$classMouseActions.html#abe15706070965ffbd636dfd39028420f" title="MouseActions::MMoveMirrorX Paints &quot;rotate&quot; mouse cursor." alt="" coords="227,652,421,681"/>
 <area shape="rect" id="node93" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="225,901,423,931"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="507,5,661,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#aa7ba277228d22e9fbd889fc1e0c88ce0" title="Schematic::copyLabels" alt="" coords="505,483,663,512"/>
-<area shape="rect" id="node11" href="$classSchematic.html#a964e380df7a3fabee10dc63762699d1a" title="Schematic::copyComponents" alt="" coords="487,59,681,88"/>
-<area shape="rect" id="node17" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="783,351,937,380"/>
-<area shape="rect" id="node21" href="$classSchematic.html#acb69bfcbde5f5f8da62023f92609567f" title="Schematic::copyPaintings" alt="" coords="497,112,671,141"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2" title="Schematic::copyLabels" alt="" coords="505,483,663,512"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a61373de75e5a958d8f97209d697e6bfd" title="Schematic::copyComponents" alt="" coords="487,59,681,88"/>
+<area shape="rect" id="node17" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="783,351,937,380"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f" title="Schematic::copyPaintings" alt="" coords="497,112,671,141"/>
 <area shape="rect" id="node25" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="519,165,649,195"/>
 <area shape="rect" id="node27" href="$classComponent.html#a64aa83093a32137a7ff57c817fce21f0" title="Component::setCenter" alt="" coords="507,219,661,248"/>
 <area shape="rect" id="node29" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="475,587,693,616"/>

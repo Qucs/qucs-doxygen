@@ -11,9 +11,9 @@
 <area shape="rect" id="node73" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="516,724,724,753"/>
 <area shape="rect" id="node78" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="516,777,724,807"/>
 <area shape="rect" id="node83" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="527,831,713,860"/>
-<area shape="rect" id="node91" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="836,884,972,913"/>
-<area shape="rect" id="node111" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="519,935,721,964"/>
-<area shape="rect" id="node116" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="525,989,715,1019"/>
+<area shape="rect" id="node91" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="836,884,972,913"/>
+<area shape="rect" id="node111" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="519,935,721,964"/>
+<area shape="rect" id="node116" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="525,989,715,1019"/>
 <area shape="rect" id="node7" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1085,175,1299,204"/>
 <area shape="rect" id="node35" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1109,304,1275,333"/>
 <area shape="rect" id="node39" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1105,357,1279,387"/>

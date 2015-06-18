@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#aa7ba277228d22e9fbd889fc1e0c88ce0" title="Schematic::copyLabels" alt="" coords="265,143,423,172"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a964e380df7a3fabee10dc63762699d1a" title="Schematic::copyComponents" alt="" coords="247,299,441,328"/>
-<area shape="rect" id="node15" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="543,455,697,484"/>
-<area shape="rect" id="node20" href="$classSchematic.html#acb69bfcbde5f5f8da62023f92609567f" title="Schematic::copyPaintings" alt="" coords="257,560,431,589"/>
+<area shape="rect" id="node3" href="$classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2" title="Schematic::copyLabels" alt="" coords="265,143,423,172"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a61373de75e5a958d8f97209d697e6bfd" title="Schematic::copyComponents" alt="" coords="247,299,441,328"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="543,455,697,484"/>
+<area shape="rect" id="node20" href="$classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f" title="Schematic::copyPaintings" alt="" coords="257,560,431,589"/>
 <area shape="rect" id="node24" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="279,613,409,643"/>
 <area shape="rect" id="node26" href="$classComponent.html#a64aa83093a32137a7ff57c817fce21f0" title="Component::setCenter" alt="" coords="267,667,421,696"/>
 <area shape="rect" id="node28" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="235,403,453,432"/>

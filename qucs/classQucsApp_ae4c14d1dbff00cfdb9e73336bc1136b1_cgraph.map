@@ -4,7 +4,7 @@
 <area shape="rect" id="node103" href="$classMouseActions.html#a9019488114639789e5f8dc2463dbd49c" title="MouseActions::MMoveMirrorX Paints rounded &quot;mirror about y axis&quot; mouse cursor." alt="" coords="229,668,427,697"/>
 <area shape="rect" id="node107" href="$classMouseActions.html#a58f69a3444f8b8de1e4d5dcca4969564" title="MouseActions::MPressMirrorY" alt="" coords="228,219,428,248"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="523,5,677,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a546595fa07625b986b652a93b4079baf" title="Schematic::copyComps2WiresPaints" alt="" coords="480,696,720,725"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5" title="Schematic::copyComps2WiresPaints" alt="" coords="480,696,720,725"/>
 <area shape="rect" id="node30" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="525,429,675,459"/>
 <area shape="rect" id="node32" href="$classComponent.html#a5582128782a575a1ded9ac158e4688da" title="Component::mirrorY" alt="" coords="531,219,669,248"/>
 <area shape="rect" id="node34" href="$classComponent.html#a64aa83093a32137a7ff57c817fce21f0" title="Component::setCenter" alt="" coords="523,536,677,565"/>
@@ -15,10 +15,10 @@
 <area shape="rect" id="node87" href="$classPainting.html#a193710f96372f83967f856d15c35ffee" title="Painting::mirrorY" alt="" coords="541,272,659,301"/>
 <area shape="rect" id="node89" href="$classElement.html#a89220202f70fedb96d17373c42ce8d74" title="Element::setCenter" alt="" coords="533,643,667,672"/>
 <area shape="rect" id="node91" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="519,376,681,405"/>
-<area shape="rect" id="node11" href="$classSchematic.html#aa7ba277228d22e9fbd889fc1e0c88ce0" title="Schematic::copyLabels" alt="" coords="808,589,965,619"/>
-<area shape="rect" id="node13" href="$classSchematic.html#adbaa9260d4946e33e72e5bc0f78df3c0" title="Schematic::copyComponents2" alt="" coords="787,749,987,779"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="809,643,964,672"/>
-<area shape="rect" id="node26" href="$classSchematic.html#acb69bfcbde5f5f8da62023f92609567f" title="Schematic::copyPaintings" alt="" coords="800,696,973,725"/>
+<area shape="rect" id="node11" href="$classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2" title="Schematic::copyLabels" alt="" coords="808,589,965,619"/>
+<area shape="rect" id="node13" href="$classSchematic.html#aee7f5608b6f974ee053cc847dd38af38" title="Schematic::copyComponents2" alt="" coords="787,749,987,779"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="809,643,964,672"/>
+<area shape="rect" id="node26" href="$classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f" title="Schematic::copyPaintings" alt="" coords="800,696,973,725"/>
 <area shape="rect" id="node15" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="1065,748,1228,777"/>
 <area shape="rect" id="node17" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1297,536,1468,565"/>
 <area shape="rect" id="node19" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1535,749,1660,779"/>

@@ -9,9 +9,9 @@
 <area shape="rect" id="node71" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="760,441,968,471"/>
 <area shape="rect" id="node75" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="760,321,968,351"/>
 <area shape="rect" id="node79" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="771,851,957,880"/>
-<area shape="rect" id="node81" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="796,904,932,933"/>
-<area shape="rect" id="node83" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="763,957,965,987"/>
-<area shape="rect" id="node85" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="769,628,959,657"/>
+<area shape="rect" id="node81" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="796,904,932,933"/>
+<area shape="rect" id="node83" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="763,957,965,987"/>
+<area shape="rect" id="node85" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="769,628,959,657"/>
 <area shape="rect" id="node9" href="$classBJT.html#aaca781e10e4befab05f9da3180dd15d4" title="BJT::newOne" alt="" coords="1059,539,1160,568"/>
 <area shape="rect" id="node11" href="$classBJT.html#ab960fbf3a0023bba201e3ee801cb467f" title="BJT::info_pnp" alt="" coords="1059,592,1160,621"/>
 <area shape="rect" id="node13" href="$classBJTsub.html#ababf326aafb8e5b272637fe5dfadba16" title="BJTsub::newOne" alt="" coords="1048,645,1171,675"/>

@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="212,475,356,504"/>
-<area shape="rect" id="node98" href="$classSchematic.html#acb69bfcbde5f5f8da62023f92609567f" title="Schematic::copyPaintings" alt="" coords="448,947,621,976"/>
+<area shape="rect" id="node98" href="$classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f" title="Schematic::copyPaintings" alt="" coords="448,947,621,976"/>
 <area shape="rect" id="node117" href="$classSchematic.html#a6c9218e79b816c77becf6c6d6a381105" title="Schematic::saveSymbolCpp" alt="" coords="191,972,377,1001"/>
 <area shape="rect" id="node122" href="$classSchematic.html#a8603353c813f36569123b41cb361ed5d" title="Schematic::saveSymbolJSON" alt="" coords="184,1025,384,1055"/>
 <area shape="rect" id="node5" href="$classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="452,291,617,320"/>
@@ -41,7 +41,7 @@
 <area shape="rect" id="node89" href="$classQucsApp.html#a1e46d8ab69669763f6cb298034759aad" title="QucsApp::slotEditRedo" alt="" coords="1011,816,1168,845"/>
 <area shape="rect" id="node96" href="$classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="751,501,860,531"/>
 <area shape="rect" id="node100" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="716,1027,895,1056"/>
-<area shape="rect" id="node105" href="$classSchematic.html#a546595fa07625b986b652a93b4079baf" title="Schematic::copyComps2WiresPaints" alt="" coords="685,973,925,1003"/>
+<area shape="rect" id="node105" href="$classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5" title="Schematic::copyComps2WiresPaints" alt="" coords="685,973,925,1003"/>
 <area shape="rect" id="node102" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="1007,1027,1172,1056"/>
 <area shape="rect" id="node107" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="985,973,1193,1003"/>
 <area shape="rect" id="node112" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="985,920,1193,949"/>

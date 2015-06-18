@@ -1108,11 +1108,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01026"></a>01026 
 <a name="l01027"></a>01027   <span class="keywordtype">int</span> x1=INT_MAX, y1=INT_MAX;
 <a name="l01028"></a>01028   <span class="keywordtype">int</span> x2=INT_MIN, y2=INT_MIN;
-<a name="l01029"></a>01029   Q3PtrList&lt;Element&gt; ElementCache;
-<a name="l01030"></a>01030   <a class="code" href="classSchematic.html#aa7ba277228d22e9fbd889fc1e0c88ce0">copyLabels</a>(x1, y1, x2, y2, &amp;ElementCache);   <span class="comment">// must be first of all !</span>
-<a name="l01031"></a>01031   <a class="code" href="classSchematic.html#a964e380df7a3fabee10dc63762699d1a">copyComponents</a>(x1, y1, x2, y2, &amp;ElementCache);
-<a name="l01032"></a>01032   <a class="code" href="classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12">copyWires</a>(x1, y1, x2, y2, &amp;ElementCache);
-<a name="l01033"></a>01033   <a class="code" href="classSchematic.html#acb69bfcbde5f5f8da62023f92609567f">copyPaintings</a>(x1, y1, x2, y2, &amp;ElementCache);
+<a name="l01029"></a>01029   QList&lt;Element *&gt; ElementCache;
+<a name="l01030"></a>01030   <a class="code" href="classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2">copyLabels</a>(x1, y1, x2, y2, &amp;ElementCache);   <span class="comment">// must be first of all !</span>
+<a name="l01031"></a>01031   <a class="code" href="classSchematic.html#a61373de75e5a958d8f97209d697e6bfd">copyComponents</a>(x1, y1, x2, y2, &amp;ElementCache);
+<a name="l01032"></a>01032   <a class="code" href="classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2">copyWires</a>(x1, y1, x2, y2, &amp;ElementCache);
+<a name="l01033"></a>01033   <a class="code" href="classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f">copyPaintings</a>(x1, y1, x2, y2, &amp;ElementCache);
 <a name="l01034"></a>01034   <span class="keywordflow">if</span>(y1 == INT_MAX) <span class="keywordflow">return</span> <span class="keyword">false</span>;   <span class="comment">// no element selected</span>
 <a name="l01035"></a>01035 
 <a name="l01036"></a>01036   <a class="code" href="classSchematic.html#a78a01374ea81df71fc5cdf39d8425bd3">Wires</a>-&gt;setAutoDelete(<span class="keyword">true</span>);
@@ -1128,8 +1128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01046"></a>01046   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc;
 <a name="l01047"></a>01047   <a class="code" href="classWireLabel.html">WireLabel</a> *pl;
 <a name="l01048"></a>01048   <span class="comment">// re-insert elements</span>
-<a name="l01049"></a>01049   <span class="keywordflow">for</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe = ElementCache.first(); pe != 0; pe = ElementCache.next())
-<a name="l01050"></a>01050     <span class="keywordflow">switch</span>(pe-&gt;Type) {
+<a name="l01049"></a>01049   <span class="keywordflow">foreach</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe, ElementCache)
+<a name="l01050"></a>01050     <span class="keywordflow">switch</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a>) {
 <a name="l01051"></a>01051       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>:
 <a name="l01052"></a>01052       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>:
 <a name="l01053"></a>01053       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>:
@@ -1206,8 +1206,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01124"></a>01124   <a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;setAutoDelete(<span class="keyword">false</span>);
 <a name="l01125"></a>01125 
 <a name="l01126"></a>01126   <span class="keywordtype">int</span> x1, y1, x2, y2;
-<a name="l01127"></a>01127   Q3PtrList&lt;Element&gt; ElementCache;
-<a name="l01128"></a>01128   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a546595fa07625b986b652a93b4079baf">copyComps2WiresPaints</a>(x1, y1, x2, y2, &amp;ElementCache))
+<a name="l01127"></a>01127   QList&lt;Element *&gt; ElementCache;
+<a name="l01128"></a>01128   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5">copyComps2WiresPaints</a>(x1, y1, x2, y2, &amp;ElementCache))
 <a name="l01129"></a>01129     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01130"></a>01130   <a class="code" href="classSchematic.html#a78a01374ea81df71fc5cdf39d8425bd3">Wires</a>-&gt;setAutoDelete(<span class="keyword">true</span>);
 <a name="l01131"></a>01131   <a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;setAutoDelete(<span class="keyword">true</span>);
@@ -1222,8 +1222,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01140"></a>01140   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc;
 <a name="l01141"></a>01141   <a class="code" href="classWireLabel.html">WireLabel</a> *pl;
 <a name="l01142"></a>01142   <span class="comment">// re-insert elements</span>
-<a name="l01143"></a>01143   <span class="keywordflow">for</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe = ElementCache.first(); pe != 0; pe = ElementCache.next())
-<a name="l01144"></a>01144     <span class="keywordflow">switch</span>(pe-&gt;Type) {
+<a name="l01143"></a>01143   <span class="keywordflow">foreach</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe, ElementCache)
+<a name="l01144"></a>01144     <span class="keywordflow">switch</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a>) {
 <a name="l01145"></a>01145       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>:
 <a name="l01146"></a>01146       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>:
 <a name="l01147"></a>01147       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>:
@@ -1275,8 +1275,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01193"></a>01193   <a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;setAutoDelete(<span class="keyword">false</span>);
 <a name="l01194"></a>01194 
 <a name="l01195"></a>01195   <span class="keywordtype">int</span> x1, y1, x2, y2;
-<a name="l01196"></a>01196   Q3PtrList&lt;Element&gt; ElementCache;
-<a name="l01197"></a>01197   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a546595fa07625b986b652a93b4079baf">copyComps2WiresPaints</a>(x1, y1, x2, y2, &amp;ElementCache))
+<a name="l01196"></a>01196   QList&lt;Element *&gt; ElementCache;
+<a name="l01197"></a>01197   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5">copyComps2WiresPaints</a>(x1, y1, x2, y2, &amp;ElementCache))
 <a name="l01198"></a>01198     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l01199"></a>01199   <a class="code" href="classSchematic.html#a78a01374ea81df71fc5cdf39d8425bd3">Wires</a>-&gt;setAutoDelete(<span class="keyword">true</span>);
 <a name="l01200"></a>01200   <a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;setAutoDelete(<span class="keyword">true</span>);
@@ -1290,8 +1290,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01208"></a>01208   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc;
 <a name="l01209"></a>01209   <a class="code" href="classWireLabel.html">WireLabel</a> *pl;
 <a name="l01210"></a>01210   <span class="comment">// re-insert elements</span>
-<a name="l01211"></a>01211   <span class="keywordflow">for</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe = ElementCache.first(); pe != 0; pe = ElementCache.next())
-<a name="l01212"></a>01212     <span class="keywordflow">switch</span>(pe-&gt;Type) {
+<a name="l01211"></a>01211   <span class="keywordflow">foreach</span>(<a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe, ElementCache)
+<a name="l01212"></a>01212     <span class="keywordflow">switch</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a>) {
 <a name="l01213"></a>01213       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>:
 <a name="l01214"></a>01214       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>:
 <a name="l01215"></a>01215       <span class="keywordflow">case</span> <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>:
@@ -2417,7 +2417,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 15:11:08 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 16:19:20 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

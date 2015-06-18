@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#adefd7850a16ca283e9666ac42f0e4099" title="Schematic::copyElements" alt="" coords="281,208,455,237"/>
+<area shape="rect" id="node3" href="$classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994" title="Schematic::copyElements" alt="" coords="281,208,455,237"/>
 <area shape="rect" id="node13" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1273,300,1399,329"/>
 <area shape="rect" id="node20" href="$classElement.html#abc63f3849b3fc9b4d05e9517f5fcd1f0" title="Element::getCenter" alt="" coords="301,484,435,513"/>
 <area shape="rect" id="node22" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="259,377,477,406"/>
@@ -8,8 +8,8 @@
 <area shape="rect" id="node61" href="$classComponent.html#a64aa83093a32137a7ff57c817fce21f0" title="Component::setCenter" alt="" coords="291,590,445,620"/>
 <area shape="rect" id="node63" href="$classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc" title="Schematic::insertNodeLabel" alt="" coords="275,430,461,460"/>
 <area shape="rect" id="node76" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="287,721,449,750"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a964e380df7a3fabee10dc63762699d1a" title="Schematic::copyComponents" alt="" coords="547,141,741,170"/>
-<area shape="rect" id="node15" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="567,208,721,237"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a61373de75e5a958d8f97209d697e6bfd" title="Schematic::copyComponents" alt="" coords="547,141,741,170"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="567,208,721,237"/>
 <area shape="rect" id="node7" href="$classComponent.html#a409d103ae23e5299fd4e7ddd1c1648ea" title="Component::Bounding" alt="" coords="820,88,969,117"/>
 <area shape="rect" id="node9" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="813,141,976,170"/>
 <area shape="rect" id="node11" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1036,62,1207,92"/>

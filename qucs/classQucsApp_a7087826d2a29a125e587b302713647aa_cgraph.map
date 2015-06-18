@@ -1,15 +1,15 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="239,403,393,432"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="221,456,411,485"/>
-<area shape="rect" id="node7" href="$classSchematic.html#adefd7850a16ca283e9666ac42f0e4099" title="Schematic::copyElements" alt="" coords="481,219,655,248"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="221,456,411,485"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994" title="Schematic::copyElements" alt="" coords="481,219,655,248"/>
 <area shape="rect" id="node17" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1465,244,1591,273"/>
 <area shape="rect" id="node24" href="$classElement.html#abc63f3849b3fc9b4d05e9517f5fcd1f0" title="Element::getCenter" alt="" coords="501,563,635,592"/>
 <area shape="rect" id="node26" href="$classSchematic.html#ab9e5bd7127a58359c0098d9f8044448d" title="Schematic::insertRawComponent" alt="" coords="459,456,677,485"/>
 <area shape="rect" id="node38" href="$classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69" title="Schematic::insertWire" alt="" coords="1012,324,1161,353"/>
 <area shape="rect" id="node63" href="$classElement.html#a89220202f70fedb96d17373c42ce8d74" title="Element::setCenter" alt="" coords="501,616,635,645"/>
 <area shape="rect" id="node65" href="$classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc" title="Schematic::insertNodeLabel" alt="" coords="475,509,661,539"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a964e380df7a3fabee10dc63762699d1a" title="Schematic::copyComponents" alt="" coords="743,139,937,168"/>
-<area shape="rect" id="node19" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="763,219,917,248"/>
+<area shape="rect" id="node9" href="$classSchematic.html#a61373de75e5a958d8f97209d697e6bfd" title="Schematic::copyComponents" alt="" coords="743,139,937,168"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="763,219,917,248"/>
 <area shape="rect" id="node11" href="$classComponent.html#a409d103ae23e5299fd4e7ddd1c1648ea" title="Component::Bounding" alt="" coords="1012,85,1161,115"/>
 <area shape="rect" id="node13" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="1005,139,1168,168"/>
 <area shape="rect" id="node15" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="1228,60,1399,89"/>

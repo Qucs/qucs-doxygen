@@ -24,9 +24,9 @@
 <area shape="rect" id="node84" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="1233,955,1441,984"/>
 <area shape="rect" id="node89" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="1233,1286,1441,1315"/>
 <area shape="rect" id="node94" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="1244,847,1431,876"/>
-<area shape="rect" id="node102" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="1537,1062,1673,1091"/>
-<area shape="rect" id="node122" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="1236,1114,1439,1143"/>
-<area shape="rect" id="node127" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="1243,1363,1432,1392"/>
+<area shape="rect" id="node102" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1537,1062,1673,1091"/>
+<area shape="rect" id="node122" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="1236,1114,1439,1143"/>
+<area shape="rect" id="node127" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="1243,1363,1432,1392"/>
 <area shape="rect" id="node132" href="$classSchematic.html#a55896058a21663750b788cbb68b010da" title="Schematic::setCompPorts" alt="" coords="1249,1167,1425,1196"/>
 <area shape="rect" id="node67" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1815,635,1980,664"/>
 <area shape="rect" id="node70" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1811,688,1984,718"/>

@@ -5,7 +5,7 @@
 <area shape="rect" id="node109" href="$classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09" title="Schematic::deleteComp" alt="" coords="463,476,625,505"/>
 <area shape="rect" id="node5" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="995,188,1192,217"/>
 <area shape="rect" id="node11" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="1000,241,1187,271"/>
-<area shape="rect" id="node19" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="739,608,893,637"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="739,608,893,637"/>
 <area shape="rect" id="node28" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="725,397,907,427"/>
 <area shape="rect" id="node38" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="429,345,659,375"/>
 <area shape="rect" id="node7" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="1292,200,1457,229"/>
@@ -13,8 +13,8 @@
 <area shape="rect" id="node13" href="$classMouseActions.html#ab741637d83bbd87b5a9d9c44a14fb6ef" title="MouseActions::MPressOnGrid" alt="" coords="1276,147,1473,176"/>
 <area shape="rect" id="node15" href="$classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="1563,147,1709,176"/>
 <area shape="rect" id="node21" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="1004,476,1183,505"/>
-<area shape="rect" id="node24" href="$classSchematic.html#a546595fa07625b986b652a93b4079baf" title="Schematic::copyComps2WiresPaints" alt="" coords="973,661,1213,691"/>
-<area shape="rect" id="node26" href="$classSchematic.html#adefd7850a16ca283e9666ac42f0e4099" title="Schematic::copyElements" alt="" coords="1007,608,1180,637"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5" title="Schematic::copyComps2WiresPaints" alt="" coords="973,661,1213,691"/>
+<area shape="rect" id="node26" href="$classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994" title="Schematic::copyElements" alt="" coords="1007,608,1180,637"/>
 <area shape="rect" id="node30" href="$classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="996,399,1191,428"/>
 <area shape="rect" id="node32" href="$classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1292,253,1457,283"/>
 <area shape="rect" id="node36" href="$classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1039,295,1148,324"/>
@@ -46,6 +46,6 @@
 <area shape="rect" id="node103" href="$classMouseActions.html#a58f69a3444f8b8de1e4d5dcca4969564" title="MouseActions::MPressMirrorY" alt="" coords="993,85,1193,115"/>
 <area shape="rect" id="node100" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="1551,5,1721,35"/>
 <area shape="rect" id="node105" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="1551,71,1721,100"/>
-<area shape="rect" id="node114" href="$classSchematic.html#a964e380df7a3fabee10dc63762699d1a" title="Schematic::copyComponents" alt="" coords="719,555,913,584"/>
-<area shape="rect" id="node118" href="$classSchematic.html#adbaa9260d4946e33e72e5bc0f78df3c0" title="Schematic::copyComponents2" alt="" coords="716,661,916,691"/>
+<area shape="rect" id="node114" href="$classSchematic.html#a61373de75e5a958d8f97209d697e6bfd" title="Schematic::copyComponents" alt="" coords="719,555,913,584"/>
+<area shape="rect" id="node118" href="$classSchematic.html#aee7f5608b6f974ee053cc847dd38af38" title="Schematic::copyComponents2" alt="" coords="716,661,916,691"/>
 </map>

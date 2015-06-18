@@ -2,8 +2,8 @@
 <area shape="rect" id="node3" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="223,5,401,35"/>
 <area shape="rect" id="node11" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="208,59,416,88"/>
 <area shape="rect" id="node16" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="208,112,416,141"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="244,272,380,301"/>
-<area shape="rect" id="node41" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="211,405,413,435"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="244,272,380,301"/>
+<area shape="rect" id="node41" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="211,405,413,435"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="483,5,648,35"/>
 <area shape="rect" id="node7" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="716,245,860,275"/>
 <area shape="rect" id="node9" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="909,245,1048,275"/>

@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$schematic_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/schematic.h" alt="" coords="8140,83,8471,112"/>
-<area shape="rect" id="node69" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="12459,392,12771,421"/>
-<area shape="rect" id="node99" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="13577,83,13876,112"/>
-<area shape="rect" id="node126" href="$wirelabel_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/wirelabel.cpp" alt="" coords="17947,160,18283,189"/>
-<area shape="rect" id="node129" href="$wire_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/wire.cpp" alt="" coords="18357,83,18667,112"/>
-<area shape="rect" id="node5" href="$component_8cpp.html" title="Implementation of the Component class." alt="" coords="11235,160,11659,189"/>
-<area shape="rect" id="node7" href="$componentdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/componentdialog.cpp" alt="" coords="11683,160,12141,189"/>
-<area shape="rect" id="node9" href="$ecvs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ecvs.cpp" alt="" coords="2429,160,2816,189"/>
-<area shape="rect" id="node11" href="$eqndefined_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/eqndefined.cpp" alt="" coords="12165,160,12587,189"/>
-<area shape="rect" id="node13" href="$ifile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ifile.cpp" alt="" coords="2840,160,3219,189"/>
-<area shape="rect" id="node15" href="$libcomp_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/libcomp.cpp" alt="" coords="12611,160,13016,189"/>
-<area shape="rect" id="node17" href="$logical__buf_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/logical_buf.cpp" alt="" coords="3243,160,3664,189"/>
-<area shape="rect" id="node19" href="$logical__inv_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/logical_inv.cpp" alt="" coords="3688,160,4109,189"/>
-<area shape="rect" id="node21" href="$optimizedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/optimizedialog.cpp" alt="" coords="13040,160,13483,189"/>
-<area shape="rect" id="node23" href="$param__sweep_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/param_sweep.cpp" alt="" coords="13507,160,13947,189"/>
-<area shape="rect" id="node25" href="$rfedd_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/rfedd.cpp" alt="" coords="13971,160,14360,189"/>
-<area shape="rect" id="node27" href="$rfedd2p_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/rfedd2p.cpp" alt="" coords="14384,160,14787,189"/>
-<area shape="rect" id="node29" href="$sparamfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/sparamfile.cpp" alt="" coords="14811,160,15229,189"/>
-<area shape="rect" id="node31" href="$spicedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/spicedialog.cpp" alt="" coords="15253,160,15677,189"/>
-<area shape="rect" id="node33" href="$spicefile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/spicefile.cpp" alt="" coords="15701,160,16109,189"/>
-<area shape="rect" id="node35" href="$subcircuit_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/subcircuit.cpp" alt="" coords="16133,160,16549,189"/>
-<area shape="rect" id="node37" href="$subcirport_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/subcirport.cpp" alt="" coords="4133,160,4549,189"/>
-<area shape="rect" id="node39" href="$switch_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/switch.cpp" alt="" coords="4573,160,4971,189"/>
-<area shape="rect" id="node41" href="$verilogfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/verilogfile.cpp" alt="" coords="16573,160,16987,189"/>
-<area shape="rect" id="node43" href="$vfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/vfile.cpp" alt="" coords="4995,160,5379,189"/>
-<area shape="rect" id="node45" href="$vhdlfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/vhdlfile.cpp" alt="" coords="17011,160,17411,189"/>
-<area shape="rect" id="node47" href="$diagram_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/diagrams/diagram.cpp" alt="" coords="17435,160,17821,189"/>
-<area shape="rect" id="node49" href="$diagramdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/diagrams/diagramdialog.cpp" alt="" coords="5403,160,5824,189"/>
-<area shape="rect" id="node51" href="$changedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/changedialog.cpp" alt="" coords="5848,160,6253,189"/>
-<area shape="rect" id="node53" href="$librarydialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/librarydialog.cpp" alt="" coords="7885,160,8283,189"/>
-<area shape="rect" id="node55" href="$qucssettingsdialog_8cpp.html" title="Implementation of the Application Settings dialog." alt="" coords="8307,160,8744,189"/>
-<area shape="rect" id="node57" href="$settingsdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/settingsdialog.cpp" alt="" coords="6277,160,6688,189"/>
-<area shape="rect" id="node59" href="$simmessage_8cpp.html" title="Simulation dialog implementation." alt="" coords="8768,160,9171,189"/>
-<area shape="rect" id="node61" href="$sweepdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/sweepdialog.cpp" alt="" coords="9195,160,9597,189"/>
-<area shape="rect" id="node63" href="$abstractspicekernel_8h.html" title="Implementation of the AbstractSpiceKernel class." alt="" coords="6763,160,7232,189"/>
-<area shape="rect" id="node65" href="$ngspice_8h.html" title="Declaration of the Ngspice class." alt="" coords="6797,237,7197,267"/>
-<area shape="rect" id="node67" href="$externsimdialog_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/extsimkernels/externsimdialog.h" alt="" coords="6837,315,7283,344"/>
-<area shape="rect" id="node71" href="$customsimdialog_8h.html" title="Implementation of the CustomSimDialog class." alt="" coords="7357,160,7811,189"/>
-<area shape="rect" id="node73" href="$mouseactions_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/mouseactions.cpp" alt="" coords="7665,237,8031,267"/>
-<area shape="rect" id="node77" href="$imagewriter_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/imagewriter.cpp" alt="" coords="5,160,357,189"/>
-<area shape="rect" id="node79" href="$main_8cpp.html" title="Implementation of the main application." alt="" coords="9621,160,9933,189"/>
-<area shape="rect" id="node82" href="$arrow_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/arrow.cpp" alt="" coords="381,160,755,189"/>
-<area shape="rect" id="node84" href="$ellipse_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/ellipse.cpp" alt="" coords="779,160,1157,189"/>
-<area shape="rect" id="node86" href="$ellipsearc_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/ellipsearc.cpp" alt="" coords="9957,160,10352,189"/>
-<area shape="rect" id="node88" href="$graphicline_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/graphicline.cpp" alt="" coords="1181,160,1584,189"/>
-<area shape="rect" id="node90" href="$graphictext_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/graphictext.cpp" alt="" coords="10376,160,10781,189"/>
-<area shape="rect" id="node92" href="$id__text_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/id_text.cpp" alt="" coords="1608,160,1987,189"/>
-<area shape="rect" id="node94" href="$portsymbol_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/portsymbol.cpp" alt="" coords="10805,160,11211,189"/>
-<area shape="rect" id="node96" href="$rectangle_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/rectangle.cpp" alt="" coords="2011,160,2405,189"/>
+<area shape="rect" id="node3" href="$schematic_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/schematic.h" alt="" coords="9369,83,9700,112"/>
+<area shape="rect" id="node89" href="$qucs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/qucs.cpp" alt="" coords="18531,160,18843,189"/>
+<area shape="rect" id="node95" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="13707,83,14005,112"/>
+<area shape="rect" id="node123" href="$wirelabel_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/wirelabel.cpp" alt="" coords="18867,160,19203,189"/>
+<area shape="rect" id="node126" href="$wire_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/wire.cpp" alt="" coords="16564,83,16873,112"/>
+<area shape="rect" id="node5" href="$component_8cpp.html" title="Implementation of the Component class." alt="" coords="10312,160,10736,189"/>
+<area shape="rect" id="node7" href="$componentdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/componentdialog.cpp" alt="" coords="10760,160,11219,189"/>
+<area shape="rect" id="node9" href="$ecvs_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ecvs.cpp" alt="" coords="5760,160,6147,189"/>
+<area shape="rect" id="node11" href="$eqndefined_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/eqndefined.cpp" alt="" coords="11243,160,11664,189"/>
+<area shape="rect" id="node13" href="$ifile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/ifile.cpp" alt="" coords="6171,160,6549,189"/>
+<area shape="rect" id="node15" href="$libcomp_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/libcomp.cpp" alt="" coords="11688,160,12093,189"/>
+<area shape="rect" id="node17" href="$logical__buf_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/logical_buf.cpp" alt="" coords="6573,160,6995,189"/>
+<area shape="rect" id="node19" href="$logical__inv_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/logical_inv.cpp" alt="" coords="7019,160,7440,189"/>
+<area shape="rect" id="node21" href="$optimizedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/optimizedialog.cpp" alt="" coords="12117,160,12560,189"/>
+<area shape="rect" id="node23" href="$resistor_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/resistor.cpp" alt="" coords="7464,160,7867,189"/>
+<area shape="rect" id="node25" href="$rfedd_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/rfedd.cpp" alt="" coords="12584,160,12973,189"/>
+<area shape="rect" id="node27" href="$rfedd2p_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/rfedd2p.cpp" alt="" coords="12997,160,13400,189"/>
+<area shape="rect" id="node29" href="$sparamfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/sparamfile.cpp" alt="" coords="13424,160,13843,189"/>
+<area shape="rect" id="node31" href="$spicedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/spicedialog.cpp" alt="" coords="13867,160,14291,189"/>
+<area shape="rect" id="node33" href="$spicefile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/spicefile.cpp" alt="" coords="14315,160,14723,189"/>
+<area shape="rect" id="node35" href="$subcircuit_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/subcircuit.cpp" alt="" coords="14747,160,15163,189"/>
+<area shape="rect" id="node37" href="$subcirport_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/subcirport.cpp" alt="" coords="5,160,421,189"/>
+<area shape="rect" id="node39" href="$switch_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/switch.cpp" alt="" coords="445,160,843,189"/>
+<area shape="rect" id="node41" href="$verilogfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/verilogfile.cpp" alt="" coords="15187,160,15600,189"/>
+<area shape="rect" id="node43" href="$vfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/vfile.cpp" alt="" coords="867,160,1251,189"/>
+<area shape="rect" id="node45" href="$vhdlfile_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/vhdlfile.cpp" alt="" coords="15624,160,16024,189"/>
+<area shape="rect" id="node47" href="$diagram_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/diagrams/diagram.cpp" alt="" coords="16048,160,16435,189"/>
+<area shape="rect" id="node49" href="$diagramdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/diagrams/diagramdialog.cpp" alt="" coords="1275,160,1696,189"/>
+<area shape="rect" id="node51" href="$changedialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/changedialog.cpp" alt="" coords="1720,160,2125,189"/>
+<area shape="rect" id="node53" href="$librarydialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/librarydialog.cpp" alt="" coords="16459,160,16856,189"/>
+<area shape="rect" id="node55" href="$qucssettingsdialog_8cpp.html" title="Implementation of the Application Settings dialog." alt="" coords="16880,160,17317,189"/>
+<area shape="rect" id="node57" href="$settingsdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/settingsdialog.cpp" alt="" coords="2149,160,2560,189"/>
+<area shape="rect" id="node59" href="$simmessage_8cpp.html" title="Simulation dialog implementation." alt="" coords="17341,160,17744,189"/>
+<area shape="rect" id="node61" href="$sweepdialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/sweepdialog.cpp" alt="" coords="17768,160,18171,189"/>
+<area shape="rect" id="node63" href="$imagewriter_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/imagewriter.cpp" alt="" coords="2584,160,2936,189"/>
+<area shape="rect" id="node65" href="$main_8cpp.html" title="Implementation of the main application." alt="" coords="18195,160,18507,189"/>
+<area shape="rect" id="node67" href="$mouseactions_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/mouseactions.cpp" alt="" coords="7891,160,8256,189"/>
+<area shape="rect" id="node69" href="$arrow_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/arrow.cpp" alt="" coords="2960,160,3333,189"/>
+<area shape="rect" id="node71" href="$ellipse_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/ellipse.cpp" alt="" coords="3357,160,3736,189"/>
+<area shape="rect" id="node73" href="$ellipsearc_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/ellipsearc.cpp" alt="" coords="8280,160,8675,189"/>
+<area shape="rect" id="node75" href="$graphicline_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/graphicline.cpp" alt="" coords="3760,160,4163,189"/>
+<area shape="rect" id="node77" href="$graphictext_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/graphictext.cpp" alt="" coords="8699,160,9104,189"/>
+<area shape="rect" id="node79" href="$id__text_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/id_text.cpp" alt="" coords="4187,160,4565,189"/>
+<area shape="rect" id="node81" href="$portsymbol_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/portsymbol.cpp" alt="" coords="9128,160,9533,189"/>
+<area shape="rect" id="node83" href="$rectangle_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/paintings/rectangle.cpp" alt="" coords="4589,160,4984,189"/>
+<area shape="rect" id="node85" href="$printerwriter_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/printerwriter.cpp" alt="" coords="5008,160,5360,189"/>
+<area shape="rect" id="node87" href="$projectView_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/projectView.cpp" alt="" coords="5384,160,5736,189"/>
+<area shape="rect" id="node91" href="$qucs__actions_8cpp.html" title="Actions implementation for the GUI menu items." alt="" coords="9557,160,9920,189"/>
+<area shape="rect" id="node93" href="$schematic_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/schematic.cpp" alt="" coords="9944,160,10288,189"/>
 </map>

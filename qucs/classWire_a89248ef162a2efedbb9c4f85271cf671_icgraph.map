@@ -20,9 +20,9 @@
 <area shape="rect" id="node61" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="925,620,1133,649"/>
 <area shape="rect" id="node66" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="649,829,857,858"/>
 <area shape="rect" id="node71" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="660,882,847,912"/>
-<area shape="rect" id="node79" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="961,993,1097,1022"/>
-<area shape="rect" id="node99" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="652,986,855,1016"/>
-<area shape="rect" id="node104" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="659,1040,848,1069"/>
+<area shape="rect" id="node79" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="961,993,1097,1022"/>
+<area shape="rect" id="node99" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="652,986,855,1016"/>
+<area shape="rect" id="node104" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="659,1040,848,1069"/>
 <area shape="rect" id="node109" href="$classSchematic.html#a55896058a21663750b788cbb68b010da" title="Schematic::setCompPorts" alt="" coords="665,752,841,781"/>
 <area shape="rect" id="node44" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1239,566,1404,596"/>
 <area shape="rect" id="node47" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1235,620,1408,649"/>

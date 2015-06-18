@@ -99,177 +99,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="param__sweep_8h.html">param_sweep.h</a>&quot;</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="main_8h.html" title="Definitions and declarations for the main application.">main.h</a>&quot;</span>
-<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="qucs_8h.html">qucs.h</a>&quot;</span>
-<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="schematic_8h.html">schematic.h</a>&quot;</span>
-<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="misc_8h.html" title="of some miscellaneous function">misc.h</a>&quot;</span>
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">00024</a> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep::Param_Sweep</a>()
-<a name="l00025"></a>00025 {
-<a name="l00026"></a>00026   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;Parameter sweep&quot;</span>);
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028   QString  s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
-<a name="l00029"></a>00029   <span class="keywordtype">int</span> a = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
-<a name="l00030"></a>00030   <span class="keywordflow">if</span> (a != -1) s[a] = <span class="charliteral">&#39;\n&#39;</span>;    <span class="comment">// break line</span>
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(a), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
-<a name="l00033"></a>00033   <span class="keywordflow">if</span> (a != -1)
-<a name="l00034"></a>00034     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(a+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">00021</a> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep::Param_Sweep</a>()
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;Parameter sweep&quot;</span>);
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025   QString  s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
+<a name="l00026"></a>00026   <span class="keywordtype">int</span> a = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
+<a name="l00027"></a>00027   <span class="keywordflow">if</span> (a != -1) s[a] = <span class="charliteral">&#39;\n&#39;</span>;    <span class="comment">// break line</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(a), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00030"></a>00030   <span class="keywordflow">if</span> (a != -1)
+<a name="l00031"></a>00031     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(a+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
+<a name="l00034"></a>00034   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+104; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+59;
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
-<a name="l00037"></a>00037   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+104; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+59;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
-<a name="l00040"></a>00040   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
-<a name="l00041"></a>00041   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.SW&quot;</span>;
-<a name="l00042"></a>00042   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;SW&quot;</span>;
-<a name="l00043"></a>00043   <a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">isSimulation</a> = <span class="keyword">true</span>;
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045   <span class="comment">// The index of the first 6 properties must not changed. Used in recreate().</span>
-<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Sim&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">true</span>,
-<a name="l00047"></a>00047     QObject::tr(<span class="stringliteral">&quot;simulation to perform parameter sweep on&quot;</span>)));
-<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;lin&quot;</span>, <span class="keyword">true</span>,
-<a name="l00049"></a>00049     QObject::tr(<span class="stringliteral">&quot;sweep type&quot;</span>)+<span class="stringliteral">&quot; [lin, log, list, const]&quot;</span>));
-<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Param&quot;</span>, <span class="stringliteral">&quot;R1&quot;</span>, <span class="keyword">true</span>,
-<a name="l00051"></a>00051     QObject::tr(<span class="stringliteral">&quot;parameter to sweep&quot;</span>)));
-<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Start&quot;</span>, <span class="stringliteral">&quot;5 Ohm&quot;</span>, <span class="keyword">true</span>,
-<a name="l00053"></a>00053     QObject::tr(<span class="stringliteral">&quot;start value for sweep&quot;</span>)));
-<a name="l00054"></a>00054   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Stop&quot;</span>, <span class="stringliteral">&quot;50 Ohm&quot;</span>, <span class="keyword">true</span>,
-<a name="l00055"></a>00055     QObject::tr(<span class="stringliteral">&quot;stop value for sweep&quot;</span>)));
-<a name="l00056"></a>00056   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Points&quot;</span>, <span class="stringliteral">&quot;20&quot;</span>, <span class="keyword">true</span>,
-<a name="l00057"></a>00057     QObject::tr(<span class="stringliteral">&quot;number of simulation steps&quot;</span>)));
+<a name="l00036"></a>00036   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
+<a name="l00037"></a>00037   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
+<a name="l00038"></a>00038   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.SW&quot;</span>;
+<a name="l00039"></a>00039   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;SW&quot;</span>;
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041   <span class="comment">// The index of the first 6 properties must not changed. Used in recreate().</span>
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Sim&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">true</span>,
+<a name="l00043"></a>00043     QObject::tr(<span class="stringliteral">&quot;simulation to perform parameter sweep on&quot;</span>)));
+<a name="l00044"></a>00044   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;lin&quot;</span>, <span class="keyword">true</span>,
+<a name="l00045"></a>00045     QObject::tr(<span class="stringliteral">&quot;sweep type&quot;</span>)+<span class="stringliteral">&quot; [lin, log, list, const]&quot;</span>));
+<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Param&quot;</span>, <span class="stringliteral">&quot;R1&quot;</span>, <span class="keyword">true</span>,
+<a name="l00047"></a>00047     QObject::tr(<span class="stringliteral">&quot;parameter to sweep&quot;</span>)));
+<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Start&quot;</span>, <span class="stringliteral">&quot;5 Ohm&quot;</span>, <span class="keyword">true</span>,
+<a name="l00049"></a>00049     QObject::tr(<span class="stringliteral">&quot;start value for sweep&quot;</span>)));
+<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Stop&quot;</span>, <span class="stringliteral">&quot;50 Ohm&quot;</span>, <span class="keyword">true</span>,
+<a name="l00051"></a>00051     QObject::tr(<span class="stringliteral">&quot;stop value for sweep&quot;</span>)));
+<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Points&quot;</span>, <span class="stringliteral">&quot;20&quot;</span>, <span class="keyword">true</span>,
+<a name="l00053"></a>00053     QObject::tr(<span class="stringliteral">&quot;number of simulation steps&quot;</span>)));
+<a name="l00054"></a>00054 }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="classParam__Sweep.html#a4bbcbafeb8f854ea71554944f7d7ce1e">00056</a> <a class="code" href="classParam__Sweep.html#a4bbcbafeb8f854ea71554944f7d7ce1e">Param_Sweep::~Param_Sweep</a>()
+<a name="l00057"></a>00057 {
 <a name="l00058"></a>00058 }
 <a name="l00059"></a>00059 
-<a name="l00060"></a><a class="code" href="classParam__Sweep.html#a4bbcbafeb8f854ea71554944f7d7ce1e">00060</a> <a class="code" href="classParam__Sweep.html#a4bbcbafeb8f854ea71554944f7d7ce1e">Param_Sweep::~Param_Sweep</a>()
+<a name="l00060"></a><a class="code" href="classParam__Sweep.html#adda437d12587ca9587dce6e29279b273">00060</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classParam__Sweep.html#adda437d12587ca9587dce6e29279b273">Param_Sweep::newOne</a>()
 <a name="l00061"></a>00061 {
-<a name="l00062"></a>00062 }
-<a name="l00063"></a>00063 
-<a name="l00064"></a><a class="code" href="classParam__Sweep.html#adda437d12587ca9587dce6e29279b273">00064</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classParam__Sweep.html#adda437d12587ca9587dce6e29279b273">Param_Sweep::newOne</a>()
-<a name="l00065"></a>00065 {
-<a name="l00066"></a>00066   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep</a>();
-<a name="l00067"></a>00067 }
-<a name="l00068"></a>00068 
-<a name="l00069"></a><a class="code" href="classParam__Sweep.html#a2d29d3232a06df2918787d3becdacc08">00069</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classParam__Sweep.html#a2d29d3232a06df2918787d3becdacc08">Param_Sweep::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00070"></a>00070 {
-<a name="l00071"></a>00071   Name = QObject::tr(<span class="stringliteral">&quot;Parameter sweep&quot;</span>);
-<a name="l00072"></a>00072   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;sweep&quot;</span>;
+<a name="l00062"></a>00062   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep</a>();
+<a name="l00063"></a>00063 }
+<a name="l00064"></a>00064 
+<a name="l00065"></a><a class="code" href="classParam__Sweep.html#a2d29d3232a06df2918787d3becdacc08">00065</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classParam__Sweep.html#a2d29d3232a06df2918787d3becdacc08">Param_Sweep::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00066"></a>00066 {
+<a name="l00067"></a>00067   Name = QObject::tr(<span class="stringliteral">&quot;Parameter sweep&quot;</span>);
+<a name="l00068"></a>00068   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;sweep&quot;</span>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep</a>();
+<a name="l00071"></a>00071   <span class="keywordflow">return</span> 0;
+<a name="l00072"></a>00072 }
 <a name="l00073"></a>00073 
-<a name="l00074"></a>00074   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classParam__Sweep.html#ad81af4095aee7912a3fa1fa2162dbcdb">Param_Sweep</a>();
-<a name="l00075"></a>00075   <span class="keywordflow">return</span> 0;
-<a name="l00076"></a>00076 }
-<a name="l00077"></a>00077 
-<a name="l00078"></a><a class="code" href="classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c">00078</a> <span class="keywordtype">void</span> <a class="code" href="classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c">Param_Sweep::recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*)
-<a name="l00079"></a>00079 {
-<a name="l00080"></a>00080   <a class="code" href="structProperty.html">Property</a> *pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1);
-<a name="l00081"></a>00081   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
-<a name="l00082"></a>00082   <span class="keywordflow">if</span>((pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> == <span class="stringliteral">&quot;list&quot;</span>) || (pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> == <span class="stringliteral">&quot;const&quot;</span>)) {
-<a name="l00083"></a>00083     <span class="comment">// Call them &quot;Symbol&quot; to omit them in the netlist.</span>
-<a name="l00084"></a>00084     pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
-<a name="l00085"></a>00085     pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a> = <span class="stringliteral">&quot;Symbol&quot;</span>;
-<a name="l00086"></a>00086     pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a> = <span class="keyword">false</span>;
-<a name="l00087"></a>00087     pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
-<a name="l00088"></a>00088     pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a> = <span class="stringliteral">&quot;Symbol&quot;</span>;
-<a name="l00089"></a>00089     pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a> = <span class="keyword">false</span>;
-<a name="l00090"></a>00090     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Values&quot;</span>;
-<a name="l00091"></a>00091   }
-<a name="l00092"></a>00092   <span class="keywordflow">else</span> {
-<a name="l00093"></a>00093     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Start&quot;</span>;
-<a name="l00094"></a>00094     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Stop&quot;</span>;
-<a name="l00095"></a>00095     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Points&quot;</span>;
-<a name="l00096"></a>00096   }
-<a name="l00097"></a>00097 }
-<a name="l00098"></a>00098 
-<a name="l00099"></a><a class="code" href="classParam__Sweep.html#a7aa1d0b6092dadb14456196170072f05">00099</a> QString <a class="code" href="classParam__Sweep.html#a7aa1d0b6092dadb14456196170072f05">Param_Sweep::getNgspiceBeforeSim</a>(QString sim, <span class="keywordtype">int</span> lvl)
-<a name="l00100"></a>00100 {
-<a name="l00101"></a>00101     <span class="keywordflow">if</span> (<a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">isActive</a> != <a class="code" href="component_8h.html#a11ba97e9a69050b88b560548b6045af2">COMP_IS_ACTIVE</a>) <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103     QString s,unit;
-<a name="l00104"></a>00104     QString par = <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Param&quot;</span>)-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l00105"></a>00105     QString step_var = par;
-<a name="l00106"></a>00106     step_var.remove(<span class="charliteral">&#39;.&#39;</span>);
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108     <span class="keywordtype">double</span> start,stop,step,fac,points;
-<a name="l00109"></a>00109     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Start&quot;</span>)-&gt;Value,start,unit,fac);
-<a name="l00110"></a>00110     start *= fac;
-<a name="l00111"></a>00111     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Stop&quot;</span>)-&gt;Value,stop,unit,fac);
-<a name="l00112"></a>00112     stop *= fac;
-<a name="l00113"></a>00113     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Points&quot;</span>)-&gt;Value,points,unit,fac);
-<a name="l00114"></a>00114     points *= fac;
-<a name="l00115"></a>00115     step = (stop-start)/points;
-<a name="l00116"></a>00116     s = QString(<span class="stringliteral">&quot;let start_%1 = %2\n&quot;</span>).arg(step_var).arg(start);
-<a name="l00117"></a>00117     s += QString(<span class="stringliteral">&quot;let stop_%1 = %2\n&quot;</span>).arg(step_var).arg(stop);
-<a name="l00118"></a>00118     s += QString(<span class="stringliteral">&quot;let %1_act=start_%1\n&quot;</span>).arg(step_var);
-<a name="l00119"></a>00119     s += QString(<span class="stringliteral">&quot;let delta_%1 = %2\n&quot;</span>).arg(step_var).arg(step);
-<a name="l00120"></a>00120     s += QString(<span class="stringliteral">&quot;let number_%1 = 0\n&quot;</span>).arg(step_var);
-<a name="l00121"></a>00121     <span class="keywordflow">if</span> (lvl==0) s += QString(<span class="stringliteral">&quot;echo \&quot;STEP %1.%2\&quot; &gt; spice4qucs.%3.cir.res\n&quot;</span>).arg(sim).arg(step_var).arg(sim);
-<a name="l00122"></a>00122     <span class="keywordflow">else</span> s += QString(<span class="stringliteral">&quot;echo \&quot;STEP %1.%2\&quot; &gt; spice4qucs.%3.cir.res%4\n&quot;</span>).arg(sim).arg(step_var).arg(sim).arg(lvl);
-<a name="l00123"></a>00123     s += QString(<span class="stringliteral">&quot;while %1_act le stop_%1\n&quot;</span>).arg(step_var);
-<a name="l00124"></a>00124 
-<a name="l00125"></a>00125     <span class="keywordtype">bool</span> modelsweep = <span class="keyword">false</span>; <span class="comment">// Find component and its modelstring</span>
-<a name="l00126"></a>00126     QStringList par_lst = par.split(<span class="charliteral">&#39;.&#39;</span>,QString::SkipEmptyParts);
-<a name="l00127"></a>00127     QString mod,mod_par;
-<a name="l00128"></a>00128     <span class="keywordflow">if</span> (par_lst.count()&gt;1) {
-<a name="l00129"></a>00129         mod_par = par_lst.at(1);
-<a name="l00130"></a>00130         <a class="code" href="classSchematic.html">Schematic</a> *sch = (<a class="code" href="classSchematic.html">Schematic</a> *) <a class="code" href="main_8cpp.html#acd1e1fca11584d479cbeb2e72c9e151f">QucsMain</a>-&gt;<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l00131"></a>00131         <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = sch-&gt;<a class="code" href="classSchematic.html#ab184225de2556bd849e621e489c9c60d">getComponentByName</a>(par_lst.at(0));
-<a name="l00132"></a>00132         <span class="keywordflow">if</span> (pc != NULL) {
-<a name="l00133"></a>00133             mod = pc-&gt;<a class="code" href="classComponent.html#a515f345bedacd8202df7987c243ba0dd">getSpiceNetlist</a>().section(<span class="charliteral">&#39;\n&#39;</span>,1,1,QString::SectionSkipEmpty)
-<a name="l00134"></a>00134                                        .section(<span class="charliteral">&#39; &#39;</span>,1,1,QString::SectionSkipEmpty);
-<a name="l00135"></a>00135             modelsweep = <span class="keyword">true</span>;
-<a name="l00136"></a>00136         }
-<a name="l00137"></a>00137     }
-<a name="l00138"></a>00138 
-<a name="l00139"></a>00139 
-<a name="l00140"></a>00140     <span class="keywordflow">if</span> (modelsweep) { <span class="comment">// Model parameter sweep</span>
-<a name="l00141"></a>00141         s += QString(<span class="stringliteral">&quot;altermod %1 %2 = %3_act\n&quot;</span>).arg(mod).arg(mod_par).arg(step_var);
-<a name="l00142"></a>00142     } <span class="keywordflow">else</span> {
-<a name="l00143"></a>00143         s += QString(<span class="stringliteral">&quot;alter %1 = %2_act\n&quot;</span>).arg(par).arg(step_var);
-<a name="l00144"></a>00144     }
-<a name="l00145"></a>00145     <span class="keywordflow">return</span> s;
-<a name="l00146"></a>00146 }
-<a name="l00147"></a>00147 
-<a name="l00148"></a><a class="code" href="classParam__Sweep.html#a9deebd496d41bff7cb3d0924807f619f">00148</a> QString <a class="code" href="classParam__Sweep.html#a9deebd496d41bff7cb3d0924807f619f">Param_Sweep::getNgspiceAfterSim</a>(QString sim, <span class="keywordtype">int</span> lvl)
-<a name="l00149"></a>00149 {
-<a name="l00150"></a>00150     <span class="keywordflow">if</span> (<a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">isActive</a> != <a class="code" href="component_8h.html#a11ba97e9a69050b88b560548b6045af2">COMP_IS_ACTIVE</a>) <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152     QString s;
-<a name="l00153"></a>00153     QString par = <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Param&quot;</span>)-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l00154"></a>00154     par.remove(<span class="charliteral">&#39;.&#39;</span>);
-<a name="l00155"></a>00155     s = <span class="stringliteral">&quot;set appendwrite\n&quot;</span>;
-<a name="l00156"></a>00156     <span class="keywordflow">if</span> (lvl==0) s += QString(<span class="stringliteral">&quot;echo \&quot;$&amp;number_%1\&quot; \&quot;$&amp;%1_act\&quot; &gt;&gt; spice4qucs.%2.cir.res\n&quot;</span>).arg(par).arg(sim);
-<a name="l00157"></a>00157     <span class="keywordflow">else</span> s += QString(<span class="stringliteral">&quot;echo \&quot;$&amp;number_%1\&quot; \&quot;$&amp;%1_act\&quot; &gt;&gt; spice4qucs.%2.cir.res%3\n&quot;</span>).arg(par).arg(sim).arg(lvl);
-<a name="l00158"></a>00158     s += QString(<span class="stringliteral">&quot;let %1_act = %1_act + delta_%1\n&quot;</span>).arg(par);
-<a name="l00159"></a>00159     s += QString(<span class="stringliteral">&quot;let number_%1 = number_%1 +1\n&quot;</span>).arg(par);
-<a name="l00160"></a>00160     s += <span class="stringliteral">&quot;end\n&quot;</span>;
-<a name="l00161"></a>00161     s += <span class="stringliteral">&quot;unset appendwrite\n&quot;</span>;
-<a name="l00162"></a>00162     <span class="keywordflow">return</span> s;
-<a name="l00163"></a>00163 }
-<a name="l00164"></a>00164 
-<a name="l00165"></a><a class="code" href="classParam__Sweep.html#a35c86547d738510ec7ebb724799b43ca">00165</a> QString <a class="code" href="classParam__Sweep.html#a35c86547d738510ec7ebb724799b43ca">Param_Sweep::spice_netlist</a>(<span class="keywordtype">bool</span> isXyce)
-<a name="l00166"></a>00166 {
-<a name="l00167"></a>00167     <span class="keywordtype">double</span> start,stop,step,fac,points;
-<a name="l00168"></a>00168     QString unit;
-<a name="l00169"></a>00169     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Start&quot;</span>)-&gt;Value,start,unit,fac);
-<a name="l00170"></a>00170     start *= fac;
-<a name="l00171"></a>00171     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Stop&quot;</span>)-&gt;Value,stop,unit,fac);
-<a name="l00172"></a>00172     stop *= fac;
-<a name="l00173"></a>00173     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Points&quot;</span>)-&gt;Value,points,unit,fac);
-<a name="l00174"></a>00174     points *= fac;
-<a name="l00175"></a>00175     step = (stop-start)/points;
-<a name="l00176"></a>00176 
-<a name="l00177"></a>00177     QString s;
-<a name="l00178"></a>00178     <span class="keywordflow">if</span> (<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value.startsWith(<span class="stringliteral">&quot;DC&quot;</span>)) {
-<a name="l00179"></a>00179         QString src = <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Param&quot;</span>)-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l00180"></a>00180         s = QString(<span class="stringliteral">&quot;DC %1 %2 %3 %4\n&quot;</span>).arg(src).arg(start).arg(stop).arg(step);
-<a name="l00181"></a>00181         <span class="keywordflow">if</span> (isXyce) s.prepend(<span class="charliteral">&#39;.&#39;</span>);
-<a name="l00182"></a>00182     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (isXyce) {
-<a name="l00183"></a>00183         QString var = <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Param&quot;</span>)-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l00184"></a>00184         s = QString(<span class="stringliteral">&quot;.STEP %1 %2 %3 %4\n&quot;</span>).arg(var).arg(start).arg(stop).arg(step);
-<a name="l00185"></a>00185     } <span class="keywordflow">else</span> {
-<a name="l00186"></a>00186         s = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00187"></a>00187     }
-<a name="l00188"></a>00188     <span class="keywordflow">return</span> s;
-<a name="l00189"></a>00189 }
+<a name="l00074"></a><a class="code" href="classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c">00074</a> <span class="keywordtype">void</span> <a class="code" href="classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c">Param_Sweep::recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*)
+<a name="l00075"></a>00075 {
+<a name="l00076"></a>00076   <a class="code" href="structProperty.html">Property</a> *pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1);
+<a name="l00077"></a>00077   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
+<a name="l00078"></a>00078   <span class="keywordflow">if</span>((pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> == <span class="stringliteral">&quot;list&quot;</span>) || (pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> == <span class="stringliteral">&quot;const&quot;</span>)) {
+<a name="l00079"></a>00079     <span class="comment">// Call them &quot;Symbol&quot; to omit them in the netlist.</span>
+<a name="l00080"></a>00080     pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
+<a name="l00081"></a>00081     pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a> = <span class="stringliteral">&quot;Symbol&quot;</span>;
+<a name="l00082"></a>00082     pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a> = <span class="keyword">false</span>;
+<a name="l00083"></a>00083     pp = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
+<a name="l00084"></a>00084     pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a> = <span class="stringliteral">&quot;Symbol&quot;</span>;
+<a name="l00085"></a>00085     pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a> = <span class="keyword">false</span>;
+<a name="l00086"></a>00086     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Values&quot;</span>;
+<a name="l00087"></a>00087   }
+<a name="l00088"></a>00088   <span class="keywordflow">else</span> {
+<a name="l00089"></a>00089     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Start&quot;</span>;
+<a name="l00090"></a>00090     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Stop&quot;</span>;
+<a name="l00091"></a>00091     <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next()-&gt;Name = <span class="stringliteral">&quot;Points&quot;</span>;
+<a name="l00092"></a>00092   }
+<a name="l00093"></a>00093 }
+<a name="l00094"></a>00094 
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -288,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 15:11:06 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 16:19:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

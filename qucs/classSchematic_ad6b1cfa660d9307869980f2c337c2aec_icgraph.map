@@ -8,9 +8,9 @@
 <area shape="rect" id="node95" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="443,1362,651,1391"/>
 <area shape="rect" id="node100" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="1008,1414,1216,1443"/>
 <area shape="rect" id="node105" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="453,1466,640,1495"/>
-<area shape="rect" id="node113" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="1803,995,1939,1025"/>
-<area shape="rect" id="node133" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="1011,1099,1213,1129"/>
-<area shape="rect" id="node138" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="1280,1230,1469,1259"/>
+<area shape="rect" id="node113" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1803,995,1939,1025"/>
+<area shape="rect" id="node133" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="1011,1099,1213,1129"/>
+<area shape="rect" id="node138" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="1280,1230,1469,1259"/>
 <area shape="rect" id="node7" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1005,487,1219,517"/>
 <area shape="rect" id="node46" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1537,790,1703,819"/>
 <area shape="rect" id="node49" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1784,153,1957,182"/>

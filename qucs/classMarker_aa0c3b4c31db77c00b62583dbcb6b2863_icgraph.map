@@ -36,8 +36,8 @@
 <area shape="rect" id="node97" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="952,772,1136,802"/>
 <area shape="rect" id="node101" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="953,879,1135,908"/>
 <area shape="rect" id="node105" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="953,196,1135,226"/>
-<area shape="rect" id="node108" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="976,1783,1112,1812"/>
-<area shape="rect" id="node110" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="943,1836,1145,1866"/>
+<area shape="rect" id="node108" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="976,1783,1112,1812"/>
+<area shape="rect" id="node110" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="943,1836,1145,1866"/>
 <area shape="rect" id="node112" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="921,36,1167,66"/>
 <area shape="rect" id="node114" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="915,90,1173,119"/>
 <area shape="rect" id="node116" href="$classSchematic.html#a21a32952eeac7109af7cd3549b6376a5" title="Schematic::activateSelectedComponents" alt="" coords="913,143,1175,172"/>

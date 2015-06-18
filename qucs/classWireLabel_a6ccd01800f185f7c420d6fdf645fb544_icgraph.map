@@ -24,9 +24,9 @@
 <area shape="rect" id="node69" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="873,851,1081,880"/>
 <area shape="rect" id="node74" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="873,661,1081,691"/>
 <area shape="rect" id="node79" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="884,715,1071,744"/>
-<area shape="rect" id="node87" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="1185,1029,1321,1059"/>
-<area shape="rect" id="node107" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="876,1131,1079,1160"/>
-<area shape="rect" id="node112" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="883,555,1072,584"/>
+<area shape="rect" id="node87" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1185,1029,1321,1059"/>
+<area shape="rect" id="node107" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="876,1131,1079,1160"/>
+<area shape="rect" id="node112" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="883,555,1072,584"/>
 <area shape="rect" id="node117" href="$classSchematic.html#a55896058a21663750b788cbb68b010da" title="Schematic::setCompPorts" alt="" coords="889,768,1065,797"/>
 <area shape="rect" id="node52" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1463,501,1628,531"/>
 <area shape="rect" id="node55" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1459,555,1632,584"/>

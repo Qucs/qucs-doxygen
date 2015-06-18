@@ -1,7 +1,7 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="224,161,421,191"/>
 <area shape="rect" id="node11" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="779,57,965,87"/>
-<area shape="rect" id="node19" href="$classSchematic.html#a88e6760fb2c268cf1b637ec3e685cd12" title="Schematic::copyWires" alt="" coords="517,265,672,295"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2" title="Schematic::copyWires" alt="" coords="517,265,672,295"/>
 <area shape="rect" id="node68" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="232,1008,413,1037"/>
 <area shape="rect" id="node78" href="$classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04" title="Schematic::insertComponentNodes" alt="" coords="208,368,437,397"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="1061,109,1227,139"/>
@@ -10,15 +10,15 @@
 <area shape="rect" id="node13" href="$classMouseActions.html#ab741637d83bbd87b5a9d9c44a14fb6ef" title="MouseActions::MPressOnGrid" alt="" coords="1045,5,1243,35"/>
 <area shape="rect" id="node15" href="$classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="1324,56,1471,85"/>
 <area shape="rect" id="node21" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="783,161,961,191"/>
-<area shape="rect" id="node24" href="$classSchematic.html#a546595fa07625b986b652a93b4079baf" title="Schematic::copyComps2WiresPaints" alt="" coords="752,265,992,295"/>
-<area shape="rect" id="node36" href="$classSchematic.html#adefd7850a16ca283e9666ac42f0e4099" title="Schematic::copyElements" alt="" coords="785,420,959,449"/>
+<area shape="rect" id="node24" href="$classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5" title="Schematic::copyComps2WiresPaints" alt="" coords="752,265,992,295"/>
+<area shape="rect" id="node36" href="$classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994" title="Schematic::copyElements" alt="" coords="785,420,959,449"/>
 <area shape="rect" id="node26" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="1040,212,1248,241"/>
 <area shape="rect" id="node31" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="1040,265,1248,295"/>
 <area shape="rect" id="node28" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="1312,160,1483,189"/>
 <area shape="rect" id="node33" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="1312,213,1483,243"/>
-<area shape="rect" id="node38" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning" alt="" coords="1076,371,1212,400"/>
-<area shape="rect" id="node58" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal" alt="" coords="1043,424,1245,453"/>
-<area shape="rect" id="node63" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical" alt="" coords="1049,477,1239,507"/>
+<area shape="rect" id="node38" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1076,371,1212,400"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="1043,424,1245,453"/>
+<area shape="rect" id="node63" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="1049,477,1239,507"/>
 <area shape="rect" id="node40" href="$classQucsApp.html#aa20c3af4a63baf794a51cde2d6cdb2a3" title="QucsApp::slotAlignTop" alt="" coords="1320,320,1475,349"/>
 <area shape="rect" id="node43" href="$classQucsApp.html#ade9de8a5c8507c64f8da4b5b458ada8b" title="QucsApp::slotAlignBottom" alt="" coords="1309,373,1485,403"/>
 <area shape="rect" id="node46" href="$classQucsApp.html#a7293c7b5cfc59b75afef8903a4c5ede9" title="QucsApp::slotAlignLeft" alt="" coords="1320,427,1475,456"/>
