@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['udrctl_5fspice',['UDRCTL_SPICE',['../classUDRCTL__SPICE.html#ac89e4410b4baf6d34172abf871007a98',1,'UDRCTL_SPICE']]],
   ['undo',['undo',['../classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8',1,'Schematic']]],
   ['unregistermodules',['unregisterModules',['../classModule.html#a0065ce6daf91894854e982db384d6d92',1,'Module']]],
   ['updatecomppropslist',['updateCompPropsList',['../classComponentDialog.html#ac42ec294e5b01f63b1cc76ba7bb8436e',1,'ComponentDialog']]],

@@ -112,68 +112,72 @@
 <a name="l00052"></a>00052   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tf = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Tf&quot;</span>);
 <a name="l00053"></a>00053   <span class="keywordflow">if</span> (tr &gt; th) tr = th;
 <a name="l00054"></a>00054   <span class="keywordflow">if</span> (tf &gt; tl) tf = tl;
-<a name="l00055"></a>00055   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a  = (th + (tf - tr) / 2) / (th + tl);
-<a name="l00056"></a>00056   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u  = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>) * a;
-<a name="l00057"></a>00057   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
-<a name="l00058"></a>00058   <a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">voltageSource</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, u);
-<a name="l00059"></a>00059 }
-<a name="l00060"></a>00060 
-<a name="l00061"></a><a class="code" href="structvrect.html#a13fac2294d8ec850b2c63e91de7edee8">00061</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#a13fac2294d8ec850b2c63e91de7edee8">vrect::initAC</a> (<span class="keywordtype">void</span>) {
-<a name="l00062"></a>00062   <a class="code" href="structvrect.html#a418c84c6b56394e51715d3f5542cb42c">initDC</a> ();
-<a name="l00063"></a>00063   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, 0);
-<a name="l00064"></a>00064 }
-<a name="l00065"></a>00065 
-<a name="l00066"></a><a class="code" href="structvrect.html#a7737ef17f86c03aaeb07b83f4fcccbab">00066</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#a7737ef17f86c03aaeb07b83f4fcccbab">vrect::initTR</a> (<span class="keywordtype">void</span>) {
-<a name="l00067"></a>00067   <a class="code" href="structvrect.html#a418c84c6b56394e51715d3f5542cb42c">initDC</a> ();
+<a name="l00055"></a>00055   <span class="comment">// DC value defined as 0.0 instead of</span>
+<a name="l00056"></a>00056   <span class="comment">// (th + (tf - tr) / 2) / (th + tl) previously used</span>
+<a name="l00057"></a>00057   <span class="comment">// so that the transient starting value will also be 0, </span>
+<a name="l00058"></a>00058   <span class="comment">// otherwise a discontinuity occurs</span>
+<a name="l00059"></a>00059   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a  = 0.0;
+<a name="l00060"></a>00060   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u  = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>) * a;
+<a name="l00061"></a>00061   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
+<a name="l00062"></a>00062   <a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">voltageSource</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, u);
+<a name="l00063"></a>00063 }
+<a name="l00064"></a>00064 
+<a name="l00065"></a><a class="code" href="structvrect.html#a13fac2294d8ec850b2c63e91de7edee8">00065</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#a13fac2294d8ec850b2c63e91de7edee8">vrect::initAC</a> (<span class="keywordtype">void</span>) {
+<a name="l00066"></a>00066   <a class="code" href="structvrect.html#a418c84c6b56394e51715d3f5542cb42c">initDC</a> ();
+<a name="l00067"></a>00067   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, 0);
 <a name="l00068"></a>00068 }
 <a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="structvrect.html#ab7376a1b0169f02f474680394f5cd6e0">00070</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#ab7376a1b0169f02f474680394f5cd6e0">vrect::calcTR</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) {
-<a name="l00071"></a>00071   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u  = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>);
-<a name="l00072"></a>00072   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> th = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;TH&quot;</span>);
-<a name="l00073"></a>00073   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tl = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;TL&quot;</span>);
-<a name="l00074"></a>00074   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tr = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Tr&quot;</span>);
-<a name="l00075"></a>00075   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tf = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Tf&quot;</span>);
-<a name="l00076"></a>00076   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> td = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Td&quot;</span>);
-<a name="l00077"></a>00077   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ut = 0;
-<a name="l00078"></a>00078   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s  = <a class="code" href="classqucs_1_1circuit.html#a1fd37ca5a3d4dc9c490ec6e091782cfb">getNet</a>()-&gt;<a class="code" href="classqucs_1_1net.html#af04b8f9339fcd07b6b20749e04ab5cbd">getSrcFactor</a> ();
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080   <span class="keywordflow">if</span> (tr &gt; th) tr = th;
-<a name="l00081"></a>00081   <span class="keywordflow">if</span> (tf &gt; tl) tf = tl;
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083   <span class="keywordflow">if</span> (t &gt; td) { <span class="comment">// after delay</span>
-<a name="l00084"></a>00084     t = t - td;
-<a name="l00085"></a>00085     t = t - (th + tl) * <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">qucs::floor</a> (t / (th + tl));
-<a name="l00086"></a>00086     <span class="keywordflow">if</span> (t &lt; tr) { <span class="comment">// rising edge</span>
-<a name="l00087"></a>00087       ut = + u / tr * <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>;
-<a name="l00088"></a>00088     }
-<a name="l00089"></a>00089     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; th) { <span class="comment">// high pulse</span>
-<a name="l00090"></a>00090       ut = u;
-<a name="l00091"></a>00091     }
-<a name="l00092"></a>00092     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; th + tf) { <span class="comment">// falling edge</span>
-<a name="l00093"></a>00093       ut = - u / tf * (t - (th + tf));
-<a name="l00094"></a>00094     }
-<a name="l00095"></a>00095   }
-<a name="l00096"></a>00096   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, ut * s);
-<a name="l00097"></a>00097 }
-<a name="l00098"></a>00098 
-<a name="l00099"></a>00099 <span class="comment">// properties</span>
-<a name="l00100"></a><a class="code" href="vrect_8cpp.html#a81b4394386247bd0004693ae261471f2">00100</a> <a class="code" href="netdefs_8h.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a> [] = {
-<a name="l00101"></a>00101   { <span class="stringliteral">&quot;U&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
-<a name="l00102"></a>00102   { <span class="stringliteral">&quot;TH&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00103"></a>00103   { <span class="stringliteral">&quot;TL&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00104"></a>00104   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
-<a name="l00105"></a><a class="code" href="vrect_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00105</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
-<a name="l00106"></a>00106   { <span class="stringliteral">&quot;Tr&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-9, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00107"></a>00107   { <span class="stringliteral">&quot;Tf&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-9, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00108"></a>00108   { <span class="stringliteral">&quot;Td&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 0, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
-<a name="l00109"></a>00109   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
-<a name="l00110"></a><a class="code" href="structvrect.html">00110</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structvrect.html">vrect</a>::cirdef =
-<a name="l00111"></a><a class="code" href="structvrect.html#a067ad123111da83bf1dba6ff3447fbab">00111</a>   { <span class="stringliteral">&quot;Vrect&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="netdefs_8h.html#a1bccc85ea1eada75219823bb543d134f">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
+<a name="l00070"></a><a class="code" href="structvrect.html#a7737ef17f86c03aaeb07b83f4fcccbab">00070</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#a7737ef17f86c03aaeb07b83f4fcccbab">vrect::initTR</a> (<span class="keywordtype">void</span>) {
+<a name="l00071"></a>00071   <a class="code" href="structvrect.html#a418c84c6b56394e51715d3f5542cb42c">initDC</a> ();
+<a name="l00072"></a>00072 }
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="structvrect.html#ab7376a1b0169f02f474680394f5cd6e0">00074</a> <span class="keywordtype">void</span> <a class="code" href="structvrect.html#ab7376a1b0169f02f474680394f5cd6e0">vrect::calcTR</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) {
+<a name="l00075"></a>00075   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u  = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;U&quot;</span>);
+<a name="l00076"></a>00076   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> th = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;TH&quot;</span>);
+<a name="l00077"></a>00077   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tl = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;TL&quot;</span>);
+<a name="l00078"></a>00078   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tr = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Tr&quot;</span>);
+<a name="l00079"></a>00079   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> tf = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Tf&quot;</span>);
+<a name="l00080"></a>00080   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> td = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Td&quot;</span>);
+<a name="l00081"></a>00081   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ut = 0;
+<a name="l00082"></a>00082   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s  = <a class="code" href="classqucs_1_1circuit.html#a1fd37ca5a3d4dc9c490ec6e091782cfb">getNet</a>()-&gt;<a class="code" href="classqucs_1_1net.html#af04b8f9339fcd07b6b20749e04ab5cbd">getSrcFactor</a> ();
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084   <span class="keywordflow">if</span> (tr &gt; th) tr = th;
+<a name="l00085"></a>00085   <span class="keywordflow">if</span> (tf &gt; tl) tf = tl;
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087   <span class="keywordflow">if</span> (t &gt; td) { <span class="comment">// after delay</span>
+<a name="l00088"></a>00088     t = t - td;
+<a name="l00089"></a>00089     t = t - (th + tl) * <a class="code" href="namespacequcs.html#a7cb50b09c64e6e071004a114896c3ee7" title="Complex floor.">qucs::floor</a> (t / (th + tl));
+<a name="l00090"></a>00090     <span class="keywordflow">if</span> (t &lt; tr) { <span class="comment">// rising edge</span>
+<a name="l00091"></a>00091       ut = + u / tr * <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>;
+<a name="l00092"></a>00092     }
+<a name="l00093"></a>00093     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; th) { <span class="comment">// high pulse</span>
+<a name="l00094"></a>00094       ut = u;
+<a name="l00095"></a>00095     }
+<a name="l00096"></a>00096     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; th + tf) { <span class="comment">// falling edge</span>
+<a name="l00097"></a>00097       ut = - u / tf * (t - (th + tf));
+<a name="l00098"></a>00098     }
+<a name="l00099"></a>00099   }
+<a name="l00100"></a>00100   <a class="code" href="classqucs_1_1circuit.html#a1c7f432e2f53edc50d0fc7b0fc989bc3">setE</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, ut * s);
+<a name="l00101"></a>00101 }
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <span class="comment">// properties</span>
+<a name="l00104"></a><a class="code" href="vrect_8cpp.html#a81b4394386247bd0004693ae261471f2">00104</a> <a class="code" href="netdefs_8h.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a> [] = {
+<a name="l00105"></a>00105   { <span class="stringliteral">&quot;U&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
+<a name="l00106"></a>00106   { <span class="stringliteral">&quot;TH&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00107"></a>00107   { <span class="stringliteral">&quot;TL&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00108"></a>00108   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
+<a name="l00109"></a><a class="code" href="vrect_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00109</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
+<a name="l00110"></a>00110   { <span class="stringliteral">&quot;Tr&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-9, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00111"></a>00111   { <span class="stringliteral">&quot;Tf&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-9, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00112"></a>00112   { <span class="stringliteral">&quot;Td&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 0, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
+<a name="l00113"></a>00113   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
+<a name="l00114"></a><a class="code" href="structvrect.html">00114</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structvrect.html">vrect</a>::cirdef =
+<a name="l00115"></a><a class="code" href="structvrect.html#a067ad123111da83bf1dba6ff3447fbab">00115</a>   { <span class="stringliteral">&quot;Vrect&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="netdefs_8h.html#a1bccc85ea1eada75219823bb543d134f">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 17 2015 13:11:03 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 15:04:41 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

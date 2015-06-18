@@ -22,9 +22,6 @@ var searchData=
   ['register_5fprobe_5f1',['REGISTER_PROBE_1',['../module_8cpp.html#a770244db385567445a7b6d6f116ac404',1,'module.cpp']]],
   ['register_5fsimulation_5f1',['REGISTER_SIMULATION_1',['../module_8cpp.html#ad47906308ea790639a262a6cbc1c05ce',1,'module.cpp']]],
   ['register_5fsource_5f1',['REGISTER_SOURCE_1',['../module_8cpp.html#a9cf0391250adb5d78bf2cc38bf6ca5b4',1,'module.cpp']]],
-  ['register_5fspice_5f1',['REGISTER_SPICE_1',['../module_8cpp.html#a2073a4bb87d23d9622c7fa2a701a830b',1,'module.cpp']]],
-  ['register_5fspice_5fsec_5f1',['REGISTER_SPICE_SEC_1',['../module_8cpp.html#a0339be1c874a4e54a959d1de0bfd59e7',1,'module.cpp']]],
-  ['register_5fspice_5fsim_5f1',['REGISTER_SPICE_SIM_1',['../module_8cpp.html#a45e13d61a28eb715c70e9a71ebe64fea',1,'module.cpp']]],
   ['register_5ftrans_5f1',['REGISTER_TRANS_1',['../module_8cpp.html#a68b3ab3fa24a3646793a662d11a8a943',1,'module.cpp']]],
   ['register_5fveriloga_5f1',['REGISTER_VERILOGA_1',['../module_8cpp.html#abd99a837e1af56511ba4d2e90e43cdce',1,'module.cpp']]],
   ['register_5fveriloga_5f2',['REGISTER_VERILOGA_2',['../module_8cpp.html#a8929a8d9b75ce5baab21fb8c52245878',1,'module.cpp']]]

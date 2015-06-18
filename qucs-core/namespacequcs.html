@@ -681,7 +681,7 @@ Functions</h2></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>It is prefered to add all used funcions into the qucs namespace. Doing so one is forced do think about compatibility instead of using std directly. Inline is optional at this moment </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo:</a></b></dt><dd>test if inline indeed performace improves (optimization flags should inline them anyway) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo:</a></b></dt><dd>test if inline indeed performace improves (optimization flags should inline them anyway) </dd></dl>
 </div><hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a0177d37ccfff86a105d615e8624e6d82"></a><!-- doxytag: member="qucs::abs" ref="a0177d37ccfff86a105d615e8624e6d82" args="(vector v)" -->
 <div class="memitem">
@@ -771,7 +771,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd><p class="startdd">add abs in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000055">Todo:</a></b></dt><dd><p class="startdd">add abs in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -1046,7 +1046,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo:</a></b></dt><dd><p class="startdd">add adjoint in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000054">Todo:</a></b></dt><dd><p class="startdd">add adjoint in place </p>
 <p>Do not lazy and avoid conj and transpose copy </p>
 <p class="enddd">a is const </p>
 </dd></dl>
@@ -1134,7 +1134,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000055">Todo:</a></b></dt><dd><p class="startdd">add arg in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000056">Todo:</a></b></dt><dd><p class="startdd">add arg in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -1165,7 +1165,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>argument hyperbolic secant of z </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>for symetry reason implement sech </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>for symetry reason implement sech </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00354">354</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -1705,7 +1705,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scattering matrix </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000019">Bug:</a></b></dt><dd>Do not use fabs </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>a, z1, z2 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd>a, z1, z2 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01222">1222</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -1938,7 +1938,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Not really adapted to high order therefore we do not check overflow for n &gt;&gt; 1</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Not really adapted to high order therefore we do not check overflow for n &gt;&gt; 1</dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>order </td></tr>
@@ -2072,7 +2072,7 @@ Functions</h2></td></tr>
 <p>Computes the complex cofactor of the given determinant. </p>
 <p>The cofactor is the determinant obtained by deleting the row and column of a given element of a matrix or determinant. The cofactor is preceded by a + or - sign depending of the sign of <img class="formulaInl" alt="$(-1)^(u+v)$" src="form_70.png"/></p>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000010">Bug:</a></b></dt><dd>This algortihm is recursive! Stack overfull! </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd><p class="startdd">((u + v) &amp; 1) is cryptic use (u + v)% 2 </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd><p class="startdd">((u + v) &amp; 1) is cryptic use (u + v)% 2 </p>
 <p>#ifdef 0 </p>
 <p class="enddd">static? </p>
 </dd></dl>
@@ -2185,7 +2185,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000052">Todo:</a></b></dt><dd><p class="startdd">add conj in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000053">Todo:</a></b></dt><dd><p class="startdd">add conj in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -2628,7 +2628,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>admittance noise correlation matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>cs, y const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>cs, y const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01430">1430</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -2674,7 +2674,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Impedance noise correlation matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>cs, z const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>cs, z const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01483">1483</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -2799,7 +2799,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>S-parameter noise correlation matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Assert compatiblity of matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000092">Todo:</a></b></dt><dd>cy s const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>cy s const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01404">1404</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -2845,7 +2845,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Impedance noise correlation matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>cs, z const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo:</a></b></dt><dd>cs, z const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01531">1531</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -2892,7 +2892,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>S-parameter noise correlation matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Assert compatiblity of matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>cz, s const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>cz, s const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01457">1457</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -2938,7 +2938,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>admittance noise correlation matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>cs, y const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>cs, y const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01507">1507</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -3238,7 +3238,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Complex determinant </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd>a const? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000065">Todo:</a></b></dt><dd>a const? </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00762">762</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -3268,7 +3268,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert square matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd><p class="startdd">static ? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd><p class="startdd">static ? </p>
 <p class="enddd">a const? </p>
 </dd></dl>
 
@@ -3302,7 +3302,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000011">Bug:</a></b></dt><dd>This algortihm is recursive! Stack overfull! </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert square matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd><p class="startdd">#ifdef 0 </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd><p class="startdd">#ifdef 0 </p>
 <p class="enddd">static ? </p>
 </dd></dl>
 
@@ -3349,7 +3349,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000060">Todo:</a></b></dt><dd>diag is const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd>diag is const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00624">624</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -3736,7 +3736,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000058">Todo:</a></b></dt><dd><p class="startdd">Avoid res.get* </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000059">Todo:</a></b></dt><dd><p class="startdd">Avoid res.get* </p>
 <p>Use memset </p>
 <p class="enddd">rs, cs are const </p>
 </dd></dl>
@@ -3767,7 +3767,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000059">Todo:</a></b></dt><dd><p class="startdd">Do not by lazy and implement it </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000060">Todo:</a></b></dt><dd><p class="startdd">Do not by lazy and implement it </p>
 <p class="enddd">s is const </p>
 </dd></dl>
 
@@ -3823,7 +3823,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>fixed complex number </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo:</a></b></dt><dd>Why not inline? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>Why not inline? </dd></dl>
 
 <p>Definition at line <a class="el" href="real_8cpp_source.html#l00416">416</a> of file <a class="el" href="real_8cpp_source.html">real.cpp</a>.</p>
 
@@ -3853,7 +3853,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>fixed complex number </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>why not using real fix </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>why not using real fix </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00645">645</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -3998,7 +3998,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>return <img class="formulaInl" alt="$x - n * y$" src="form_68.png"/> where n is the quotient of <img class="formulaInl" alt="$x / y$" src="form_69.png"/>, rounded towards zero to an integer.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>add fmod to manual </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>add fmod to manual </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00662">662</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -4132,7 +4132,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>scattering matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Assert 2 by 2 matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000090">Todo:</a></b></dt><dd>Why not h,z1,z2 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000091">Todo:</a></b></dt><dd>Why not h,z1,z2 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01307">1307</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -4274,7 +4274,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo:</a></b></dt><dd><p class="startdd">add imag in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000058">Todo:</a></b></dt><dd><p class="startdd">add imag in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -4450,7 +4450,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000068">Todo:</a></b></dt><dd>a is const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd>a is const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00847">847</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -4473,7 +4473,7 @@ template&lt;class nr_type_t &gt; </div>
 
 <p>Compute inverse matrix using Gauss-Jordan elimination. </p>
 <p>Compute inverse matrix of the given matrix by Gauss-Jordan elimination. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000067">Todo:</a></b></dt><dd><p class="startdd">a const? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000068">Todo:</a></b></dt><dd><p class="startdd">a const? </p>
 <p class="enddd">static? </p>
 </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert non singulat matix </dd></dl>
@@ -4511,11 +4511,11 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000065">Todo:</a></b></dt><dd><p class="startdd">Static? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd><p class="startdd">Static? </p>
 <p class="enddd">#ifdef 0 </p>
 </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000012">Bug:</a></b></dt><dd>recursive! Stack overflow </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>a const? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000067">Todo:</a></b></dt><dd>a const? </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00779">779</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -4639,7 +4639,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>limited exponential of r </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd><p class="startdd">Change limexp(real) limexp(complex) file order </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd><p class="startdd">Change limexp(real) limexp(complex) file order </p>
 <p class="enddd">Document <a class="el" href="group__qucsMathConstants.html#gab158f1454a4e58dd567d0baa75c6db23" title="Limiting exponetial factor.">limitexp</a> </p>
 </dd></dl>
 
@@ -4689,7 +4689,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>limited exponential of z </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Change limexp(real) limexp(complex) file order </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>Change limexp(real) limexp(complex) file order </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00539">539</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -5089,7 +5089,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Inequality of two complex. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Like inequality of double this test is meaningless in finite precision Use instead fabs(x-x0) &gt; tol </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00865">865</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
@@ -5122,7 +5122,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Modulo. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00826">826</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -5154,7 +5154,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Modulo. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00834">834</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -5186,7 +5186,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Modulo. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00842">842</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -5526,7 +5526,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>Why not a and z const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>Why not a and z const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00298">298</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -5597,7 +5597,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd><p class="startdd">Why not a and z const </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd><p class="startdd">Why not a and z const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
 
@@ -5639,7 +5639,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>Why not d and a const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>Why not d and a const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00323">323</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -5679,7 +5679,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd><p class="startdd">Why not inline? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd><p class="startdd">Why not inline? </p>
 <p class="enddd">Why not d and a const </p>
 </dd></dl>
 
@@ -5721,7 +5721,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert compatibility </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>a and b are const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000043">Todo:</a></b></dt><dd>a and b are const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00378">378</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -6198,7 +6198,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert same size </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>a and b are const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>a and b are const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00228">228</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -6560,7 +6560,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000043">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000044">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p class="enddd">a and z are const </p>
 </dd></dl>
 
@@ -6601,7 +6601,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000044">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and z are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -6643,7 +6643,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000046">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p class="enddd">a and d are const </p>
 </dd></dl>
 
@@ -6684,7 +6684,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000046">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000047">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and d are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -6924,7 +6924,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>assert same size </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>a and b are const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>a and b are const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00259">259</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -7224,7 +7224,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000047">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000048">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and z are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -7266,7 +7266,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000048">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000049">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and z are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -7308,7 +7308,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000049">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000050">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and z are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -7350,7 +7350,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000050">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo:</a></b></dt><dd><p class="startdd">Move near other + </p>
 <p>a and z are const </p>
 <p class="enddd">Why not inline </p>
 </dd></dl>
@@ -7538,7 +7538,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>Why not a and z const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>Why not a and z const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00348">348</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -7578,7 +7578,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scaled matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>Why not a and d const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>Why not a and d const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00362">362</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -7873,7 +7873,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Inferior. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00897">897</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -7905,7 +7905,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Inferior of equal. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00881">881</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -7937,7 +7937,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Equality of two complex. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Like equality of double this test is meaningless in finite precision Use instead fabs(x-x0) &lt; tol </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00854">854</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
@@ -8001,7 +8001,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Superior. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00889">889</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -8033,7 +8033,7 @@ template&lt;class nr_type_t &gt; </div>
 <div class="memdoc">
 
 <p>Superior of equal. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00873">873</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -8857,7 +8857,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000056">Todo:</a></b></dt><dd><p class="startdd">add real in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo:</a></b></dt><dd><p class="startdd">add real in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -9331,7 +9331,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>sign of d </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>Move near complex sign </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>Move near complex sign </dd></dl>
 
 <p>Definition at line <a class="el" href="real_8cpp_source.html#l00386">386</a> of file <a class="el" href="real_8cpp_source.html">real.cpp</a>.</p>
 
@@ -9364,7 +9364,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>sign of z </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Better implementation z/abs(z) is not really stable </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Better implementation z/abs(z) is not really stable </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00435">435</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -9416,7 +9416,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>signum of d </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>Move near complex signum </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>Move near complex signum </dd></dl>
 
 <p>Definition at line <a class="el" href="real_8cpp_source.html#l00368">368</a> of file <a class="el" href="real_8cpp_source.html">real.cpp</a>.</p>
 
@@ -9449,7 +9449,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>signum of z </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Better implementation z/abs(z) is not really stable </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Better implementation z/abs(z) is not really stable </dd></dl>
 
 <p>Definition at line <a class="el" href="complex_8cpp_source.html#l00416">416</a> of file <a class="el" href="complex_8cpp_source.html">complex.cpp</a>.</p>
 
@@ -9573,7 +9573,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>cardianal sinus of s </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 
 <p>Definition at line <a class="el" href="real_8cpp_source.html#l00397">397</a> of file <a class="el" href="real_8cpp_source.html">real.cpp</a>.</p>
 
@@ -9933,7 +9933,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Heaviside step </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>Create Heaviside alias </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo:</a></b></dt><dd>Create Heaviside alias </dd></dl>
 
 <p>Definition at line <a class="el" href="real_8cpp_source.html#l00429">429</a> of file <a class="el" href="real_8cpp_source.html">real.cpp</a>.</p>
 
@@ -9963,7 +9963,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Heaviside step </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd><p class="startdd">Create Heaviside alias </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd><p class="startdd">Create Heaviside alias </p>
 <p class="enddd">Why not using real heaviside </p>
 </dd></dl>
 
@@ -10041,7 +10041,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Chain matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Assert 2 by 2 matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd>Why not s,z1,z2 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>Why not s,z1,z2 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01181">1181</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10133,7 +10133,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>hybrid matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Assert 2 by 2 matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd>Why not s,z1,z2 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000090">Todo:</a></b></dt><dd>Why not s,z1,z2 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01269">1269</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10567,11 +10567,11 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000013">Bug:</a></b></dt><dd>This formula is valid only for real z! </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000069">Todo:</a></b></dt><dd><p class="startdd">Correct documentation about standing waves [1-4] </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000070">Todo:</a></b></dt><dd><p class="startdd">Correct documentation about standing waves [1-4] </p>
 <p class="enddd">Implement Speciale implementation [2-3] if applicable </p>
 </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Renormalized scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000070">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000071">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00890">890</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10617,9 +10617,9 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000071">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000072">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Renormalized scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000072">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000073">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00910">910</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10665,9 +10665,9 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000073">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000074">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Renormalized scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000074">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000075">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00923">923</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10713,9 +10713,9 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000075">Todo:</a></b></dt><dd>Why not inline </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000076">Todo:</a></b></dt><dd>Why not inline </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Renormalized scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000076">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo:</a></b></dt><dd>s, zref and z0 const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00935">935</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -10761,7 +10761,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000077">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p class="enddd">s, zref and z0 const </p>
 </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Renormalized scattering matrix </dd></dl>
@@ -10929,7 +10929,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>We could safely drop the <img class="formulaInl" alt="$1/2$" src="form_86.png"/> in <img class="formulaInl" alt="$F$" src="form_87.png"/> because we compute <img class="formulaInl" alt="$FXF^{-1}$" src="form_88.png"/> and therefore <img class="formulaInl" alt="$1/2$" src="form_86.png"/> will simplify. </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000016">Bug:</a></b></dt><dd>not correct if zref is complex </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo:</a></b></dt><dd>s and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo:</a></b></dt><dd>s and z0 const </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Admittance matrix </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01082">1082</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
@@ -10970,7 +10970,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Admittance matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p class="enddd">s and z0 const </p>
 </dd></dl>
 
@@ -11133,7 +11133,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>We could safely drop the <img class="formulaInl" alt="$1/2$" src="form_86.png"/> in <img class="formulaInl" alt="$F$" src="form_87.png"/> because we compute <img class="formulaInl" alt="$FXF^{-1}$" src="form_88.png"/> and therefore <img class="formulaInl" alt="$1/2$" src="form_86.png"/> will simplify. </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000014">Bug:</a></b></dt><dd>not correct if zref is complex </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo:</a></b></dt><dd>s, z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo:</a></b></dt><dd>s, z0 const </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Impedance matrix </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l00973">973</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
@@ -11174,7 +11174,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Impedance matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo:</a></b></dt><dd><p class="startdd">Why not inline? </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo:</a></b></dt><dd><p class="startdd">Why not inline? </p>
 <p class="enddd">s and z0 const? </p>
 </dd></dl>
 
@@ -11415,7 +11415,7 @@ template&lt;class nr_type_t &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo:</a></b></dt><dd><p class="startdd">add transpose in place </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000052">Todo:</a></b></dt><dd><p class="startdd">add transpose in place </p>
 <p class="enddd">a is const </p>
 </dd></dl>
 
@@ -11568,7 +11568,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>matrix given by format out </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo:</a></b></dt><dd>m, in, out const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>m, in, out const </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01594">1594</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -12211,7 +12211,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>We could safely drop the <img class="formulaInl" alt="$1/2$" src="form_86.png"/> in <img class="formulaInl" alt="$F$" src="form_87.png"/> because we compute <img class="formulaInl" alt="$FXF^{-1}$" src="form_88.png"/> and therefore <img class="formulaInl" alt="$1/2$" src="form_86.png"/> will simplify. </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000017">Bug:</a></b></dt><dd>not correct if zref is complex </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd>why not y and z0 const </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>why not y and z0 const </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scattering matrix </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01133">1133</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
@@ -12252,7 +12252,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p class="enddd">y and z0 const </p>
 </dd></dl>
 
@@ -12304,7 +12304,7 @@ template&lt;class nr_type_t &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Impedance matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Check if y matrix is a square matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000091">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000092">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p>y const </p>
 <p class="enddd">move near <a class="el" href="namespacequcs.html#a8c4e2e005a049f0c319b681bac0b9c4c" title="impedance matrix to admittance matrix.">ztoy()</a> </p>
 </dd></dl>
@@ -12537,7 +12537,7 @@ template&lt;class nr_type_t &gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scattering matrix </dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>We could safely drop the <img class="formulaInl" alt="$1/2$" src="form_86.png"/> in <img class="formulaInl" alt="$F$" src="form_87.png"/> because we compute <img class="formulaInl" alt="$FXF^{-1}$" src="form_88.png"/> and therefore <img class="formulaInl" alt="$1/2$" src="form_86.png"/> will simplify. </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000015">Bug:</a></b></dt><dd>not correct if zref is complex </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo:</a></b></dt><dd>z and z0 const? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo:</a></b></dt><dd>z and z0 const? </dd></dl>
 
 <p>Definition at line <a class="el" href="matrix_8cpp_source.html#l01018">1018</a> of file <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a>.</p>
 
@@ -12577,7 +12577,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Scattering matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p class="enddd">z and z0 const </p>
 </dd></dl>
 
@@ -12628,7 +12628,7 @@ template&lt;class nr_type_t &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Admittance matrix </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo:</a></b></dt><dd><p class="startdd">Why not inline </p>
 <p class="enddd">z const </p>
 </dd></dl>
 
@@ -12640,7 +12640,7 @@ template&lt;class nr_type_t &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 17 2015 13:11:06 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 15:04:44 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

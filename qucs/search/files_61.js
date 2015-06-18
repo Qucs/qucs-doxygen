@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['abstractspicekernel_2ecpp',['abstractspicekernel.cpp',['../abstractspicekernel_8cpp.html',1,'']]],
-  ['abstractspicekernel_2eh',['abstractspicekernel.h',['../abstractspicekernel_8h.html',1,'']]],
   ['ac_5fsim_2ecpp',['ac_sim.cpp',['../ac__sim_8cpp.html',1,'']]],
   ['ac_5fsim_2eh',['ac_sim.h',['../ac__sim_8h.html',1,'']]],
   ['am_5fmodulator_2ecpp',['am_modulator.cpp',['../am__modulator_8cpp.html',1,'']]],

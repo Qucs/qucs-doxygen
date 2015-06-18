@@ -10,8 +10,6 @@ var searchData=
   ['ellipse_2eh',['ellipse.h',['../ellipse_8h.html',1,'']]],
   ['ellipsearc_2ecpp',['ellipsearc.cpp',['../ellipsearc_8cpp.html',1,'']]],
   ['ellipsearc_2eh',['ellipsearc.h',['../ellipsearc_8h.html',1,'']]],
-  ['enl_2ecpp',['eNL.cpp',['../eNL_8cpp.html',1,'']]],
-  ['enl_2eh',['eNL.h',['../eNL_8h.html',1,'']]],
   ['eqndefined_2ecpp',['eqndefined.cpp',['../eqndefined_8cpp.html',1,'']]],
   ['eqndefined_2eh',['eqndefined.h',['../eqndefined_8h.html',1,'']]],
   ['equation_2ecpp',['equation.cpp',['../equation_8cpp.html',1,'']]],
@@ -19,7 +17,5 @@ var searchData=
   ['etr_5fsim_2ecpp',['etr_sim.cpp',['../etr__sim_8cpp.html',1,'']]],
   ['etr_5fsim_2eh',['etr_sim.h',['../etr__sim_8h.html',1,'']]],
   ['exportdialog_2ecpp',['exportdialog.cpp',['../exportdialog_8cpp.html',1,'']]],
-  ['exportdialog_2eh',['exportdialog.h',['../exportdialog_8h.html',1,'']]],
-  ['externsimdialog_2ecpp',['externsimdialog.cpp',['../externsimdialog_8cpp.html',1,'']]],
-  ['externsimdialog_2eh',['externsimdialog.h',['../externsimdialog_8h.html',1,'']]]
+  ['exportdialog_2eh',['exportdialog.h',['../exportdialog_8h.html',1,'']]]
 ];
