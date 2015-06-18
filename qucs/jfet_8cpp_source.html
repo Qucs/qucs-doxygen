@@ -99,131 +99,171 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 
 <a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="jfet_8h.html">jfet.h</a>&quot;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">00021</a> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET::JFET</a>()
-<a name="l00022"></a>00022 {
-<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;junction field-effect transistor&quot;</span>);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <span class="comment">// this must be the first property in the list !!!</span>
-<a name="l00026"></a>00026   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;nfet&quot;</span>, <span class="keyword">true</span>,
-<a name="l00027"></a>00027   QObject::tr(<span class="stringliteral">&quot;polarity&quot;</span>)+<span class="stringliteral">&quot; [nfet, pfet]&quot;</span>));
-<a name="l00028"></a>00028   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Vt0&quot;</span>, <span class="stringliteral">&quot;-2.0 V&quot;</span>, <span class="keyword">true</span>,
-<a name="l00029"></a>00029   QObject::tr(<span class="stringliteral">&quot;threshold voltage&quot;</span>)));
-<a name="l00030"></a>00030   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Beta&quot;</span>, <span class="stringliteral">&quot;1e-4&quot;</span>, <span class="keyword">true</span>,
-<a name="l00031"></a>00031   QObject::tr(<span class="stringliteral">&quot;transconductance parameter&quot;</span>)));
-<a name="l00032"></a>00032   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Lambda&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">true</span>,
-<a name="l00033"></a>00033   QObject::tr(<span class="stringliteral">&quot;channel-length modulation parameter&quot;</span>)));
-<a name="l00034"></a>00034   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Rd&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00035"></a>00035   QObject::tr(<span class="stringliteral">&quot;parasitic drain resistance&quot;</span>)));
-<a name="l00036"></a>00036   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Rs&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00037"></a>00037   QObject::tr(<span class="stringliteral">&quot;parasitic source resistance&quot;</span>)));
-<a name="l00038"></a>00038   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Is&quot;</span>, <span class="stringliteral">&quot;1e-14&quot;</span>, <span class="keyword">false</span>,
-<a name="l00039"></a>00039   QObject::tr(<span class="stringliteral">&quot;gate-junction saturation current&quot;</span>)));
-<a name="l00040"></a>00040   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;N&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00041"></a>00041   QObject::tr(<span class="stringliteral">&quot;gate-junction emission coefficient&quot;</span>)));
-<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Isr&quot;</span>, <span class="stringliteral">&quot;1e-14&quot;</span>, <span class="keyword">false</span>,
-<a name="l00043"></a>00043   QObject::tr(<span class="stringliteral">&quot;gate-junction recombination current parameter&quot;</span>)));
-<a name="l00044"></a>00044   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Nr&quot;</span>, <span class="stringliteral">&quot;2.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00045"></a>00045   QObject::tr(<span class="stringliteral">&quot;Isr emission coefficient&quot;</span>)));
-<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Cgs&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00047"></a>00047   QObject::tr(<span class="stringliteral">&quot;zero-bias gate-source junction capacitance&quot;</span>)));
-<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Cgd&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00049"></a>00049   QObject::tr(<span class="stringliteral">&quot;zero-bias gate-drain junction capacitance&quot;</span>)));
-<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Pb&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00051"></a>00051   QObject::tr(<span class="stringliteral">&quot;gate-junction potential&quot;</span>)));
-<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Fc&quot;</span>, <span class="stringliteral">&quot;0.5&quot;</span>, <span class="keyword">false</span>,
-<a name="l00053"></a>00053   QObject::tr(<span class="stringliteral">&quot;forward-bias junction capacitance coefficient&quot;</span>)));
-<a name="l00054"></a>00054   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;M&quot;</span>, <span class="stringliteral">&quot;0.5&quot;</span>, <span class="keyword">false</span>,
-<a name="l00055"></a>00055   QObject::tr(<span class="stringliteral">&quot;gate P-N grading coefficient&quot;</span>)));
-<a name="l00056"></a>00056   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Kf&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00057"></a>00057   QObject::tr(<span class="stringliteral">&quot;flicker noise coefficient&quot;</span>)));
-<a name="l00058"></a>00058   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Af&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00059"></a>00059   QObject::tr(<span class="stringliteral">&quot;flicker noise exponent&quot;</span>)));
-<a name="l00060"></a>00060   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Ffe&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00061"></a>00061   QObject::tr(<span class="stringliteral">&quot;flicker noise frequency exponent&quot;</span>)));
-<a name="l00062"></a>00062   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Temp&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
-<a name="l00063"></a>00063   QObject::tr(<span class="stringliteral">&quot;simulation temperature in degree Celsius&quot;</span>)));
-<a name="l00064"></a>00064   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Xti&quot;</span>, <span class="stringliteral">&quot;3.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00065"></a>00065   QObject::tr(<span class="stringliteral">&quot;saturation current temperature exponent&quot;</span>)));
-<a name="l00066"></a>00066   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Vt0tc&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00067"></a>00067   QObject::tr(<span class="stringliteral">&quot;Vt0 temperature coefficient&quot;</span>)));
-<a name="l00068"></a>00068   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Betatce&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00069"></a>00069   QObject::tr(<span class="stringliteral">&quot;Beta exponential temperature coefficient&quot;</span>)));
-<a name="l00070"></a>00070   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tnom&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
-<a name="l00071"></a>00071   QObject::tr(<span class="stringliteral">&quot;temperature at which parameters were extracted&quot;</span>)));
-<a name="l00072"></a>00072   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Area&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
-<a name="l00073"></a>00073   QObject::tr(<span class="stringliteral">&quot;default area for JFET&quot;</span>)));
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075   <a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">createSymbol</a>();
-<a name="l00076"></a>00076   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>+4;
-<a name="l00077"></a>00077   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+4;
-<a name="l00078"></a>00078   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;JFET&quot;</span>;
-<a name="l00079"></a>00079   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;T&quot;</span>;
-<a name="l00080"></a>00080 }
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082 <span class="comment">// -------------------------------------------------------</span>
-<a name="l00083"></a><a class="code" href="classJFET.html#aaf2e48de158c443dd07c045f03e671e4">00083</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classJFET.html#aaf2e48de158c443dd07c045f03e671e4">JFET::newOne</a>()
-<a name="l00084"></a>00084 {
-<a name="l00085"></a>00085   <a class="code" href="classJFET.html">JFET</a>* p = <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
-<a name="l00086"></a>00086   p-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value;
-<a name="l00087"></a>00087   p-&gt;<a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(0);
-<a name="l00088"></a>00088   <span class="keywordflow">return</span> p;
-<a name="l00089"></a>00089 }
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091 <span class="comment">// -------------------------------------------------------</span>
-<a name="l00092"></a><a class="code" href="classJFET.html#a4d5502f3629f829eeee67fb973fa8ca4">00092</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classJFET.html#a4d5502f3629f829eeee67fb973fa8ca4">JFET::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00093"></a>00093 {
-<a name="l00094"></a>00094   Name = QObject::tr(<span class="stringliteral">&quot;n-JFET&quot;</span>);
-<a name="l00095"></a>00095   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;nfet&quot;</span>;
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
-<a name="l00098"></a>00098   <span class="keywordflow">return</span> 0;
-<a name="l00099"></a>00099 }
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="comment">// -------------------------------------------------------</span>
-<a name="l00102"></a><a class="code" href="classJFET.html#a4a74ab4f459a49ead2495cc7c6e97990">00102</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classJFET.html#a4a74ab4f459a49ead2495cc7c6e97990">JFET::info_p</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00103"></a>00103 {
-<a name="l00104"></a>00104   Name = QObject::tr(<span class="stringliteral">&quot;p-JFET&quot;</span>);
-<a name="l00105"></a>00105   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;pfet&quot;</span>;
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="spicecompat_8h.html">extsimkernels/spicecompat.h</a>&quot;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">00023</a> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET::JFET</a>()
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;junction field-effect transistor&quot;</span>);
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   <span class="comment">// this must be the first property in the list !!!</span>
+<a name="l00028"></a>00028   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;nfet&quot;</span>, <span class="keyword">true</span>,
+<a name="l00029"></a>00029   QObject::tr(<span class="stringliteral">&quot;polarity&quot;</span>)+<span class="stringliteral">&quot; [nfet, pfet]&quot;</span>));
+<a name="l00030"></a>00030   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Vt0&quot;</span>, <span class="stringliteral">&quot;-2.0 V&quot;</span>, <span class="keyword">true</span>,
+<a name="l00031"></a>00031   QObject::tr(<span class="stringliteral">&quot;threshold voltage&quot;</span>)));
+<a name="l00032"></a>00032   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Beta&quot;</span>, <span class="stringliteral">&quot;1e-4&quot;</span>, <span class="keyword">true</span>,
+<a name="l00033"></a>00033   QObject::tr(<span class="stringliteral">&quot;transconductance parameter&quot;</span>)));
+<a name="l00034"></a>00034   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Lambda&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">true</span>,
+<a name="l00035"></a>00035   QObject::tr(<span class="stringliteral">&quot;channel-length modulation parameter&quot;</span>)));
+<a name="l00036"></a>00036   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Rd&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00037"></a>00037   QObject::tr(<span class="stringliteral">&quot;parasitic drain resistance&quot;</span>)));
+<a name="l00038"></a>00038   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Rs&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00039"></a>00039   QObject::tr(<span class="stringliteral">&quot;parasitic source resistance&quot;</span>)));
+<a name="l00040"></a>00040   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Is&quot;</span>, <span class="stringliteral">&quot;1e-14&quot;</span>, <span class="keyword">false</span>,
+<a name="l00041"></a>00041   QObject::tr(<span class="stringliteral">&quot;gate-junction saturation current&quot;</span>)));
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;N&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00043"></a>00043   QObject::tr(<span class="stringliteral">&quot;gate-junction emission coefficient&quot;</span>)));
+<a name="l00044"></a>00044   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Isr&quot;</span>, <span class="stringliteral">&quot;1e-14&quot;</span>, <span class="keyword">false</span>,
+<a name="l00045"></a>00045   QObject::tr(<span class="stringliteral">&quot;gate-junction recombination current parameter&quot;</span>)));
+<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Nr&quot;</span>, <span class="stringliteral">&quot;2.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00047"></a>00047   QObject::tr(<span class="stringliteral">&quot;Isr emission coefficient&quot;</span>)));
+<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Cgs&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00049"></a>00049   QObject::tr(<span class="stringliteral">&quot;zero-bias gate-source junction capacitance&quot;</span>)));
+<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Cgd&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00051"></a>00051   QObject::tr(<span class="stringliteral">&quot;zero-bias gate-drain junction capacitance&quot;</span>)));
+<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Pb&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00053"></a>00053   QObject::tr(<span class="stringliteral">&quot;gate-junction potential&quot;</span>)));
+<a name="l00054"></a>00054   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Fc&quot;</span>, <span class="stringliteral">&quot;0.5&quot;</span>, <span class="keyword">false</span>,
+<a name="l00055"></a>00055   QObject::tr(<span class="stringliteral">&quot;forward-bias junction capacitance coefficient&quot;</span>)));
+<a name="l00056"></a>00056   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;M&quot;</span>, <span class="stringliteral">&quot;0.5&quot;</span>, <span class="keyword">false</span>,
+<a name="l00057"></a>00057   QObject::tr(<span class="stringliteral">&quot;gate P-N grading coefficient&quot;</span>)));
+<a name="l00058"></a>00058   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Kf&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00059"></a>00059   QObject::tr(<span class="stringliteral">&quot;flicker noise coefficient&quot;</span>)));
+<a name="l00060"></a>00060   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Af&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00061"></a>00061   QObject::tr(<span class="stringliteral">&quot;flicker noise exponent&quot;</span>)));
+<a name="l00062"></a>00062   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Ffe&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00063"></a>00063   QObject::tr(<span class="stringliteral">&quot;flicker noise frequency exponent&quot;</span>)));
+<a name="l00064"></a>00064   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Temp&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
+<a name="l00065"></a>00065   QObject::tr(<span class="stringliteral">&quot;simulation temperature in degree Celsius&quot;</span>)));
+<a name="l00066"></a>00066   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Xti&quot;</span>, <span class="stringliteral">&quot;3.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00067"></a>00067   QObject::tr(<span class="stringliteral">&quot;saturation current temperature exponent&quot;</span>)));
+<a name="l00068"></a>00068   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Vt0tc&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00069"></a>00069   QObject::tr(<span class="stringliteral">&quot;Vt0 temperature coefficient&quot;</span>)));
+<a name="l00070"></a>00070   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Betatce&quot;</span>, <span class="stringliteral">&quot;0.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00071"></a>00071   QObject::tr(<span class="stringliteral">&quot;Beta exponential temperature coefficient&quot;</span>)));
+<a name="l00072"></a>00072   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tnom&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
+<a name="l00073"></a>00073   QObject::tr(<span class="stringliteral">&quot;temperature at which parameters were extracted&quot;</span>)));
+<a name="l00074"></a>00074   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Area&quot;</span>, <span class="stringliteral">&quot;1.0&quot;</span>, <span class="keyword">false</span>,
+<a name="l00075"></a>00075   QObject::tr(<span class="stringliteral">&quot;default area for JFET&quot;</span>)));
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077   <a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">createSymbol</a>();
+<a name="l00078"></a>00078   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>+4;
+<a name="l00079"></a>00079   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+4;
+<a name="l00080"></a>00080   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;JFET&quot;</span>;
+<a name="l00081"></a>00081   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;T&quot;</span>;
+<a name="l00082"></a>00082   <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a> = <span class="stringliteral">&quot;J&quot;</span>;
+<a name="l00083"></a>00083 }
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00086"></a><a class="code" href="classJFET.html#aaf2e48de158c443dd07c045f03e671e4">00086</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classJFET.html#aaf2e48de158c443dd07c045f03e671e4">JFET::newOne</a>()
+<a name="l00087"></a>00087 {
+<a name="l00088"></a>00088   <a class="code" href="classJFET.html">JFET</a>* p = <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
+<a name="l00089"></a>00089   p-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value;
+<a name="l00090"></a>00090   p-&gt;<a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(0);
+<a name="l00091"></a>00091   <span class="keywordflow">return</span> p;
+<a name="l00092"></a>00092 }
+<a name="l00093"></a>00093 
+<a name="l00094"></a><a class="code" href="classJFET.html#ad23c5db6f6572efff9d58ead71550e35">00094</a> QString <a class="code" href="classJFET.html#ad23c5db6f6572efff9d58ead71550e35">JFET::spice_netlist</a>(<span class="keywordtype">bool</span> isXyce)
+<a name="l00095"></a>00095 {
+<a name="l00096"></a>00096     QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
+<a name="l00097"></a>00097     QList&lt;int&gt; pin_seq;
+<a name="l00098"></a>00098     pin_seq&lt;&lt;1&lt;&lt;0&lt;&lt;2; <span class="comment">// Pin sequence: DGS</span>
+<a name="l00099"></a>00099     <span class="comment">// output all node names</span>
+<a name="l00100"></a>00100     <span class="keywordflow">foreach</span>(<span class="keywordtype">int</span> pin, pin_seq) {
+<a name="l00101"></a>00101         QString nam = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(pin)-&gt;Connection-&gt;Name;
+<a name="l00102"></a>00102         <span class="keywordflow">if</span> (nam==<span class="stringliteral">&quot;gnd&quot;</span>) nam = <span class="stringliteral">&quot;0&quot;</span>;
+<a name="l00103"></a>00103         s += <span class="stringliteral">&quot; &quot;</span>+ nam;   <span class="comment">// node names</span>
+<a name="l00104"></a>00104     }
+<a name="l00105"></a>00105 
 <a name="l00106"></a>00106 
-<a name="l00107"></a>00107   <span class="keywordflow">if</span>(getNewOne) {
-<a name="l00108"></a>00108     <a class="code" href="classJFET.html">JFET</a>* p = <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
-<a name="l00109"></a>00109     p-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value = <span class="stringliteral">&quot;pfet&quot;</span>;
-<a name="l00110"></a>00110     p-&gt;<a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(0);
-<a name="l00111"></a>00111     <span class="keywordflow">return</span> p;
-<a name="l00112"></a>00112   }
-<a name="l00113"></a>00113   <span class="keywordflow">return</span> 0;
-<a name="l00114"></a>00114 }
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116 <span class="comment">// -------------------------------------------------------</span>
-<a name="l00117"></a><a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">00117</a> <span class="keywordtype">void</span> <a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">JFET::createSymbol</a>()
-<a name="l00118"></a>00118 {
-<a name="l00119"></a>00119   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10,-15,-10, 15,QPen(Qt::darkBlue,3)));
-<a name="l00120"></a>00120   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-10,  0,QPen(Qt::darkBlue,2)));
-<a name="l00121"></a>00121   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10,-10,  0,-10,QPen(Qt::darkBlue,2)));
-<a name="l00122"></a>00122   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  0,-10,  0,-30,QPen(Qt::darkBlue,2)));
-<a name="l00123"></a>00123   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10, 10,  0, 10,QPen(Qt::darkBlue,2)));
-<a name="l00124"></a>00124   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  0, 10,  0, 30,QPen(Qt::darkBlue,2)));
-<a name="l00125"></a>00125 
-<a name="l00126"></a>00126   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( -4, 24,  4, 20,QPen(Qt::darkBlue,2)));
+<a name="l00107"></a>00107     QStringList spice_incompat,spice_tr;
+<a name="l00108"></a>00108     <span class="keywordflow">if</span> (isXyce) {
+<a name="l00109"></a>00109         spice_incompat&lt;&lt;<span class="stringliteral">&quot;Type&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Area&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Temp&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Ffe&quot;</span>&lt;&lt;<span class="stringliteral">&quot;N&quot;</span>
+<a name="l00110"></a>00110                      &lt;&lt;<span class="stringliteral">&quot;Isr&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Nr&quot;</span>&lt;&lt;<span class="stringliteral">&quot;M&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Xti&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Betatce&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Vt0tc&quot;</span>;
+<a name="l00111"></a>00111                                   <span class="comment">// spice-incompatible parameters</span>
+<a name="l00112"></a>00112         spice_tr&lt;&lt;<span class="stringliteral">&quot;Vt0&quot;</span>&lt;&lt;<span class="stringliteral">&quot;VtO&quot;</span>; <span class="comment">// parameters that need convertion of names</span>
+<a name="l00113"></a>00113     } <span class="keywordflow">else</span> {
+<a name="l00114"></a>00114         spice_incompat&lt;&lt;<span class="stringliteral">&quot;Type&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Area&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Temp&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Ffe&quot;</span>&lt;&lt;<span class="stringliteral">&quot;N&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Isr&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Nr&quot;</span>&lt;&lt;<span class="stringliteral">&quot;M&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Xti&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Betatce&quot;</span>;
+<a name="l00115"></a>00115                                   <span class="comment">// spice-incompatible parameters</span>
+<a name="l00116"></a>00116         spice_tr&lt;&lt;<span class="stringliteral">&quot;Vt0tc&quot;</span>&lt;&lt;<span class="stringliteral">&quot;Tcv&quot;</span>; <span class="comment">// parameters that need convertion of names</span>
+<a name="l00117"></a>00117     }
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120     QString par_str = <a class="code" href="classComponent.html#a3738758d3c8b78e1f5ca1b5e9bcc4324">form_spice_param_list</a>(spice_incompat,spice_tr);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122     QString jfet_type = <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Type&quot;</span>)-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>.at(0).toUpper();
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124     s += QString(<span class="stringliteral">&quot; JMOD_%1 %2 TEMP=%3\n&quot;</span>).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>).arg(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Area&quot;</span>)-&gt;Value)
+<a name="l00125"></a>00125             .arg(<a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="stringliteral">&quot;Temp&quot;</span>)-&gt;Value);
+<a name="l00126"></a>00126     s += QString(<span class="stringliteral">&quot;.MODEL JMOD_%1 %2JF (%3)\n&quot;</span>).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>).arg(jfet_type).arg(par_str);
 <a name="l00127"></a>00127 
-<a name="l00128"></a>00128   <span class="keywordflow">if</span>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value == <span class="stringliteral">&quot;nfet&quot;</span>) {
-<a name="l00129"></a>00129     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16, -5,-11,  0,QPen(Qt::darkBlue,2)));
-<a name="l00130"></a>00130     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,  5,-11,  0,QPen(Qt::darkBlue,2)));
-<a name="l00131"></a>00131   }
-<a name="l00132"></a>00132   <span class="keywordflow">else</span> {
-<a name="l00133"></a>00133     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-18,  0,-13, -5,QPen(Qt::darkBlue,2)));
-<a name="l00134"></a>00134     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-18,  0,-13,  5,QPen(Qt::darkBlue,2)));
-<a name="l00135"></a>00135   }
+<a name="l00128"></a>00128     <span class="keywordflow">return</span> s;
+<a name="l00129"></a>00129 }
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00132"></a><a class="code" href="classJFET.html#a4d5502f3629f829eeee67fb973fa8ca4">00132</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classJFET.html#a4d5502f3629f829eeee67fb973fa8ca4">JFET::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00133"></a>00133 {
+<a name="l00134"></a>00134   Name = QObject::tr(<span class="stringliteral">&quot;n-JFET&quot;</span>);
+<a name="l00135"></a>00135   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;nfet&quot;</span>;
 <a name="l00136"></a>00136 
-<a name="l00137"></a>00137   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
-<a name="l00138"></a>00138   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(  0,-30));
-<a name="l00139"></a>00139   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(  0, 30));
+<a name="l00137"></a>00137   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
+<a name="l00138"></a>00138   <span class="keywordflow">return</span> 0;
+<a name="l00139"></a>00139 }
 <a name="l00140"></a>00140 
-<a name="l00141"></a>00141   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -30;
-<a name="l00142"></a>00142   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =   4; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =  30;
-<a name="l00143"></a>00143 }
+<a name="l00141"></a>00141 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00142"></a><a class="code" href="classJFET.html#a4a74ab4f459a49ead2495cc7c6e97990">00142</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classJFET.html#a4a74ab4f459a49ead2495cc7c6e97990">JFET::info_p</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00143"></a>00143 {
+<a name="l00144"></a>00144   Name = QObject::tr(<span class="stringliteral">&quot;p-JFET&quot;</span>);
+<a name="l00145"></a>00145   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;pfet&quot;</span>;
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147   <span class="keywordflow">if</span>(getNewOne) {
+<a name="l00148"></a>00148     <a class="code" href="classJFET.html">JFET</a>* p = <span class="keyword">new</span> <a class="code" href="classJFET.html#a17582d29bde2d36f32a662fffb1a4437">JFET</a>();
+<a name="l00149"></a>00149     p-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value = <span class="stringliteral">&quot;pfet&quot;</span>;
+<a name="l00150"></a>00150     p-&gt;<a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(0);
+<a name="l00151"></a>00151     <span class="keywordflow">return</span> p;
+<a name="l00152"></a>00152   }
+<a name="l00153"></a>00153   <span class="keywordflow">return</span> 0;
+<a name="l00154"></a>00154 }
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00157"></a><a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">00157</a> <span class="keywordtype">void</span> <a class="code" href="classJFET.html#a641ece6404a0f9494b14ebe688f3f4ee">JFET::createSymbol</a>()
+<a name="l00158"></a>00158 {
+<a name="l00159"></a>00159   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10,-15,-10, 15,QPen(Qt::darkBlue,3)));
+<a name="l00160"></a>00160   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-10,  0,QPen(Qt::darkBlue,2)));
+<a name="l00161"></a>00161   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10,-10,  0,-10,QPen(Qt::darkBlue,2)));
+<a name="l00162"></a>00162   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  0,-10,  0,-30,QPen(Qt::darkBlue,2)));
+<a name="l00163"></a>00163   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-10, 10,  0, 10,QPen(Qt::darkBlue,2)));
+<a name="l00164"></a>00164   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  0, 10,  0, 30,QPen(Qt::darkBlue,2)));
+<a name="l00165"></a>00165 
+<a name="l00166"></a>00166   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( -4, 24,  4, 20,QPen(Qt::darkBlue,2)));
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168   <span class="keywordflow">if</span>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.getFirst()-&gt;Value == <span class="stringliteral">&quot;nfet&quot;</span>) {
+<a name="l00169"></a>00169     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16, -5,-11,  0,QPen(Qt::darkBlue,2)));
+<a name="l00170"></a>00170     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,  5,-11,  0,QPen(Qt::darkBlue,2)));
+<a name="l00171"></a>00171   }
+<a name="l00172"></a>00172   <span class="keywordflow">else</span> {
+<a name="l00173"></a>00173     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-18,  0,-13, -5,QPen(Qt::darkBlue,2)));
+<a name="l00174"></a>00174     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-18,  0,-13,  5,QPen(Qt::darkBlue,2)));
+<a name="l00175"></a>00175   }
+<a name="l00176"></a>00176 
+<a name="l00177"></a>00177   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
+<a name="l00178"></a>00178   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(  0,-30));
+<a name="l00179"></a>00179   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(  0, 30));
+<a name="l00180"></a>00180 
+<a name="l00181"></a>00181   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -30;
+<a name="l00182"></a>00182   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =   4; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =  30;
+<a name="l00183"></a>00183 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -242,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 15:03:31 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 15:11:06 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

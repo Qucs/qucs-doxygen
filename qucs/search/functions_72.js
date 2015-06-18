@@ -1,6 +1,7 @@
 var searchData=
 [
   ['r2z',['r2z',['../classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625',1,'MatchDialog']]],
+  ['r_5fspice',['R_SPICE',['../classR__SPICE.html#a4f65756faea83ce26547f46ee6c52820',1,'R_SPICE']]],
   ['readprojects',['readProjects',['../classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2',1,'QucsApp']]],
   ['rebuild',['rebuild',['../classSchematic.html#a6feff77e818324694af2f744920906d2',1,'Schematic']]],
   ['rebuildsymbol',['rebuildSymbol',['../classSchematic.html#aaa49d02698deb50ce7b8c00c5e830acd',1,'Schematic']]],

@@ -9,5 +9,10 @@ var searchData=
   ['xorig',['xorig',['../classRect3DDiagram.html#aac8b9ad7c79744c66ffbdde4d16e4ad8',1,'Rect3DDiagram']]],
   ['xp1',['xp1',['../classArrow.html#abbb4394d8060193913090a3da26ca139',1,'Arrow']]],
   ['xp2',['xp2',['../classArrow.html#a39bca32f22626a39839e45684940510b',1,'Arrow']]],
-  ['xpixels',['Xpixels',['../classExportDialog.html#af1835b40273821a7852bfbc898c0ae5f',1,'ExportDialog']]]
+  ['xpixels',['Xpixels',['../classExportDialog.html#af1835b40273821a7852bfbc898c0ae5f',1,'ExportDialog']]],
+  ['xyce',['Xyce',['../classXyce.html',1,'Xyce'],['../classExternSimDialog.html#a94cf4659dd1c46d8e51155ce7e43d93c',1,'ExternSimDialog::xyce()'],['../classXyce.html#a0593cffea856d67d1a42626b79920f62',1,'Xyce::Xyce()']]],
+  ['xyce_2ecpp',['xyce.cpp',['../xyce_8cpp.html',1,'']]],
+  ['xyce_2eh',['xyce.h',['../xyce_8h.html',1,'']]],
+  ['xyceexecutable',['XyceExecutable',['../structtQucsSettings.html#a8c5449d69c43ceb3a4e54ff87f211b37',1,'tQucsSettings']]],
+  ['xyceparexecutable',['XyceParExecutable',['../structtQucsSettings.html#a70bb75531c2fc8d019ed89abedfa0604',1,'tQucsSettings']]]
 ];

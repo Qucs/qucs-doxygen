@@ -25,6 +25,8 @@ var searchData=
   ['digisettingsdialog_2eh',['digisettingsdialog.h',['../digisettingsdialog_8h.html',1,'']]],
   ['diode_2ecpp',['diode.cpp',['../diode_8cpp.html',1,'']]],
   ['diode_2eh',['diode.h',['../diode_8h.html',1,'']]],
+  ['diode_5fspice_2ecpp',['DIODE_SPICE.cpp',['../DIODE__SPICE_8cpp.html',1,'']]],
+  ['diode_5fspice_2eh',['DIODE_SPICE.h',['../DIODE__SPICE_8h.html',1,'']]],
   ['dls_5f1ton_2ecpp',['DLS_1ton.cpp',['../DLS__1ton_8cpp.html',1,'']]],
   ['dls_5f1ton_2eh',['DLS_1ton.h',['../DLS__1ton_8h.html',1,'']]],
   ['dls_5fnto1_2ecpp',['DLS_nto1.cpp',['../DLS__nto1_8cpp.html',1,'']]],

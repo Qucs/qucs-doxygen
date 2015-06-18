@@ -4,6 +4,8 @@ var searchData=
   ['vacomponent_2eh',['vacomponent.h',['../vacomponent_8h.html',1,'']]],
   ['vafile_2ecpp',['vafile.cpp',['../vafile_8cpp.html',1,'']]],
   ['vafile_2eh',['vafile.h',['../vafile_8h.html',1,'']]],
+  ['vampmod_2ecpp',['vAmpMod.cpp',['../vAmpMod_8cpp.html',1,'']]],
+  ['vampmod_2eh',['vAmpMod.h',['../vAmpMod_8h.html',1,'']]],
   ['vasettingsdialog_2ecpp',['vasettingsdialog.cpp',['../vasettingsdialog_8cpp.html',1,'']]],
   ['vasettingsdialog_2eh',['vasettingsdialog.h',['../vasettingsdialog_8h.html',1,'']]],
   ['vccs_2ecpp',['vccs.cpp',['../vccs_8cpp.html',1,'']]],
@@ -24,6 +26,8 @@ var searchData=
   ['viewpainter_2eh',['viewpainter.h',['../viewpainter_8h.html',1,'']]],
   ['volt_5fac_2ecpp',['volt_ac.cpp',['../volt__ac_8cpp.html',1,'']]],
   ['volt_5fac_2eh',['volt_ac.h',['../volt__ac_8h.html',1,'']]],
+  ['volt_5fac_5fspice_2ecpp',['volt_ac_SPICE.cpp',['../volt__ac__SPICE_8cpp.html',1,'']]],
+  ['volt_5fac_5fspice_2eh',['volt_ac_SPICE.h',['../volt__ac__SPICE_8h.html',1,'']]],
   ['volt_5fdc_2ecpp',['volt_dc.cpp',['../volt__dc_8cpp.html',1,'']]],
   ['volt_5fdc_2eh',['volt_dc.h',['../volt__dc_8h.html',1,'']]],
   ['volt_5fnoise_2ecpp',['volt_noise.cpp',['../volt__noise_8cpp.html',1,'']]],
@@ -32,6 +36,14 @@ var searchData=
   ['vprobe_2eh',['vprobe.h',['../vprobe_8h.html',1,'']]],
   ['vpulse_2ecpp',['vpulse.cpp',['../vpulse_8cpp.html',1,'']]],
   ['vpulse_2eh',['vpulse.h',['../vpulse_8h.html',1,'']]],
+  ['vpwl_2ecpp',['vPWL.cpp',['../vPWL_8cpp.html',1,'']]],
+  ['vpwl_2eh',['vPWL.h',['../vPWL_8h.html',1,'']]],
   ['vrect_2ecpp',['vrect.cpp',['../vrect_8cpp.html',1,'']]],
-  ['vrect_2eh',['vrect.h',['../vrect_8h.html',1,'']]]
+  ['vrect_2eh',['vrect.h',['../vrect_8h.html',1,'']]],
+  ['vsffm_2ecpp',['vsffm.cpp',['../vsffm_8cpp.html',1,'']]],
+  ['vsffm_2eh',['vsffm.h',['../vsffm_8h.html',1,'']]],
+  ['vtrnoise_2ecpp',['vTRNOISE.cpp',['../vTRNOISE_8cpp.html',1,'']]],
+  ['vtrnoise_2eh',['vTRNOISE.h',['../vTRNOISE_8h.html',1,'']]],
+  ['vtrrandom_2ecpp',['vTRRANDOM.cpp',['../vTRRANDOM_8cpp.html',1,'']]],
+  ['vtrrandom_2eh',['vTRRANDOM.h',['../vTRRANDOM_8h.html',1,'']]]
 ];

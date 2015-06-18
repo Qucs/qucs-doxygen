@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['r_5fspice',['R_SPICE',['../classR__SPICE.html',1,'']]],
   ['rect3ddiagram',['Rect3DDiagram',['../classRect3DDiagram.html',1,'']]],
   ['rectangle',['Rectangle',['../classRectangle.html',1,'']]],
   ['rectdiagram',['RectDiagram',['../classRectDiagram.html',1,'']]],

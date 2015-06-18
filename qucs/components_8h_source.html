@@ -283,7 +283,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00200"></a>00200 <span class="comment">// Verilog-A dynamicaly loaded component</span>
 <a name="l00201"></a>00201 <span class="preprocessor">#include &quot;<a class="code" href="vacomponent_8h.html" title="Definition of the vacomponent class.">vacomponent.h</a>&quot;</span>
 <a name="l00202"></a>00202 
-<a name="l00203"></a>00203 <span class="preprocessor">#endif</span>
+<a name="l00203"></a>00203 <span class="comment">// Spice-specific components</span>
+<a name="l00204"></a>00204 <span class="preprocessor">#include &quot;<a class="code" href="src__eqndef_8h.html">src_eqndef.h</a>&quot;</span>
+<a name="l00205"></a>00205 <span class="preprocessor">#include &quot;<a class="code" href="vsffm_8h.html">vsffm.h</a>&quot;</span>
+<a name="l00206"></a>00206 <span class="preprocessor">#include &quot;<a class="code" href="isffm_8h.html">isffm.h</a>&quot;</span>
+<a name="l00207"></a>00207 <span class="preprocessor">#include &quot;<a class="code" href="vAmpMod_8h.html">vAmpMod.h</a>&quot;</span>
+<a name="l00208"></a>00208 <span class="preprocessor">#include &quot;<a class="code" href="iAmpMod_8h.html">iAmpMod.h</a>&quot;</span>
+<a name="l00209"></a>00209 <span class="preprocessor">#include &quot;<a class="code" href="vPWL_8h.html">vPWL.h</a>&quot;</span>
+<a name="l00210"></a>00210 <span class="preprocessor">#include &quot;<a class="code" href="iPWL_8h.html">iPWL.h</a>&quot;</span>
+<a name="l00211"></a>00211 <span class="preprocessor">#include &quot;<a class="code" href="eNL_8h.html">eNL.h</a>&quot;</span>
+<a name="l00212"></a>00212 <span class="preprocessor">#include &quot;<a class="code" href="gNL_8h.html">gNL.h</a>&quot;</span>
+<a name="l00213"></a>00213 <span class="preprocessor">#include &quot;<a class="code" href="vTRNOISE_8h.html">vTRNOISE.h</a>&quot;</span>
+<a name="l00214"></a>00214 <span class="preprocessor">#include &quot;<a class="code" href="iTRNOISE_8h.html">iTRNOISE.h</a>&quot;</span>
+<a name="l00215"></a>00215 <span class="preprocessor">#include &quot;<a class="code" href="vTRRANDOM_8h.html">vTRRANDOM.h</a>&quot;</span>
+<a name="l00216"></a>00216 <span class="preprocessor">#include &quot;<a class="code" href="C__SPICE_8h.html">C_SPICE.h</a>&quot;</span>
+<a name="l00217"></a>00217 <span class="preprocessor">#include &quot;<a class="code" href="L__SPICE_8h.html">L_SPICE.h</a>&quot;</span>
+<a name="l00218"></a>00218 <span class="preprocessor">#include &quot;<a class="code" href="R__SPICE_8h.html">R_SPICE.h</a>&quot;</span>
+<a name="l00219"></a>00219 <span class="preprocessor">#include &quot;<a class="code" href="K__SPICE_8h.html">K_SPICE.h</a>&quot;</span>
+<a name="l00220"></a>00220 <span class="preprocessor">#include &quot;<a class="code" href="LTL__SPICE_8h.html">LTL_SPICE.h</a>&quot;</span>
+<a name="l00221"></a>00221 <span class="preprocessor">#include &quot;<a class="code" href="UDRCTL__SPICE_8h.html">UDRCTL_SPICE.h</a>&quot;</span>
+<a name="l00222"></a>00222 <span class="preprocessor">#include &quot;<a class="code" href="LTRA__SPICE_8h.html">LTRA_SPICE.h</a>&quot;</span>
+<a name="l00223"></a>00223 <span class="preprocessor">#include &quot;<a class="code" href="volt__ac__SPICE_8h.html">volt_ac_SPICE.h</a>&quot;</span>
+<a name="l00224"></a>00224 <span class="preprocessor">#include &quot;<a class="code" href="DIODE__SPICE_8h.html">DIODE_SPICE.h</a>&quot;</span>
+<a name="l00225"></a>00225 <span class="preprocessor">#include &quot;<a class="code" href="NPN__SPICE_8h.html">NPN_SPICE.h</a>&quot;</span>
+<a name="l00226"></a>00226 <span class="preprocessor">#include &quot;<a class="code" href="PNP__SPICE_8h.html">PNP_SPICE.h</a>&quot;</span>
+<a name="l00227"></a>00227 <span class="preprocessor">#include &quot;<a class="code" href="NJF__SPICE_8h.html">NJF_SPICE.h</a>&quot;</span>
+<a name="l00228"></a>00228 <span class="preprocessor">#include &quot;<a class="code" href="PJF__SPICE_8h.html">PJF_SPICE.h</a>&quot;</span>
+<a name="l00229"></a>00229 <span class="preprocessor">#include &quot;<a class="code" href="NMOS__SPICE_8h.html">NMOS_SPICE.h</a>&quot;</span>
+<a name="l00230"></a>00230 <span class="preprocessor">#include &quot;<a class="code" href="PMOS__SPICE_8h.html">PMOS_SPICE.h</a>&quot;</span>
+<a name="l00231"></a>00231 <span class="preprocessor">#include &quot;<a class="code" href="MESFET__SPICE_8h.html">MESFET_SPICE.h</a>&quot;</span>
+<a name="l00232"></a>00232 <span class="preprocessor">#include &quot;<a class="code" href="PMF__MESFET__SPICE_8h.html">PMF_MESFET_SPICE.h</a>&quot;</span>
+<a name="l00233"></a>00233 <span class="preprocessor">#include &quot;<a class="code" href="Cmeter__SPICE_8h.html">Cmeter_SPICE.h</a>&quot;</span>
+<a name="l00234"></a>00234 
+<a name="l00235"></a>00235 <span class="comment">// Spice netlist sections</span>
+<a name="l00236"></a>00236 <span class="preprocessor">#include &quot;<a class="code" href="sp__parameter_8h.html">sp_parameter.h</a>&quot;</span>
+<a name="l00237"></a>00237 <span class="preprocessor">#include &quot;<a class="code" href="sp__globalpar_8h.html">sp_globalpar.h</a>&quot;</span>
+<a name="l00238"></a>00238 <span class="preprocessor">#include &quot;<a class="code" href="sp__options_8h.html">sp_options.h</a>&quot;</span>
+<a name="l00239"></a>00239 <span class="preprocessor">#include &quot;<a class="code" href="sp__nutmeg_8h.html">sp_nutmeg.h</a>&quot;</span>
+<a name="l00240"></a>00240 <span class="preprocessor">#include &quot;<a class="code" href="sp__nodeset_8h.html">sp_nodeset.h</a>&quot;</span>
+<a name="l00241"></a>00241 <span class="preprocessor">#include &quot;<a class="code" href="sp__ic_8h.html">sp_ic.h</a>&quot;</span>
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243 <span class="comment">// Spice simulations</span>
+<a name="l00244"></a>00244 <span class="preprocessor">#include &quot;<a class="code" href="sp__fourier_8h.html">sp_fourier.h</a>&quot;</span>
+<a name="l00245"></a>00245 <span class="preprocessor">#include &quot;<a class="code" href="sp__disto_8h.html">sp_disto.h</a>&quot;</span>
+<a name="l00246"></a>00246 <span class="preprocessor">#include &quot;<a class="code" href="sp__customsim_8h.html">sp_customsim.h</a>&quot;</span>
+<a name="l00247"></a>00247 <span class="preprocessor">#include &quot;<a class="code" href="sp__noise_8h.html">sp_noise.h</a>&quot;</span>
+<a name="l00248"></a>00248 
+<a name="l00249"></a>00249 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -302,7 +348,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 15:03:30 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 15:11:05 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

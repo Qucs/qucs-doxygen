@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classExternSimDialog.html#ac697d7412e3de5ecb7e0abcd550ffc9c" title="ExternSimDialog::slotStart" alt="" coords="304,240,480,269"/>
+<area shape="rect" id="node5" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="284,293,500,323"/>
+<area shape="rect" id="node65" href="$classExternSimDialog.html#ad0375ff37599a3e2f238275e1160ae38" title="ExternSimDialog::slotSimSettings" alt="" coords="283,347,501,376"/>
+<area shape="rect" id="node69" href="$classExternSimDialog.html#a52ae52b9fb23d086f8762a1b76de7180" title="ExternSimDialog::slotSetSimulator" alt="" coords="280,533,504,563"/>
+<area shape="rect" id="node7" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="621,227,768,256"/>
+<area shape="rect" id="node57" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="631,293,759,323"/>
+<area shape="rect" id="node9" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="943,213,1095,243"/>
+<area shape="rect" id="node11" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="1216,320,1477,349"/>
+<area shape="rect" id="node33" href="$classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist..." alt="" coords="1240,267,1453,296"/>
+<area shape="rect" id="node35" href="$classEquation.html#a5b9d5839c425f0a501ba133327641949" title="Equation::getNgspiceScript Duplicate variables from .PARAM section in .control .endc section of Ngspi..." alt="" coords="1256,213,1437,243"/>
+<area shape="rect" id="node51" href="$classNgspice.html#a4fff1ff92c3c231313ab5896515f2783" title="Ngspice::getParentSWPscript." alt="" coords="1248,59,1445,88"/>
+<area shape="rect" id="node13" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1569,320,1743,349"/>
+<area shape="rect" id="node31" href="$classSchematic.html#acff87102c62c039c55a14d25393dda99" title="Schematic::clearSignalsAndFileList" alt="" coords="1543,373,1769,403"/>
+<area shape="rect" id="node15" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1835,321,2024,351"/>
+<area shape="rect" id="node17" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="2097,268,2289,297"/>
+<area shape="rect" id="node27" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="2100,321,2287,351"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="2088,375,2299,404"/>
+<area shape="rect" id="node19" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="2356,188,2532,217"/>
+<area shape="rect" id="node21" href="$classComponent.html#ab9215e47cb5acea835a44302fd488c8c" title="Component::getSubcircuitFile" alt="" coords="2347,241,2541,271"/>
+<area shape="rect" id="node23" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="2367,295,2521,324"/>
+<area shape="rect" id="node25" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="2356,348,2532,377"/>
+<area shape="rect" id="node37" href="$classEquation.html#ab5bdc897689cabc6f0babc259fb4b887" title="Equation::getNgnutmegVars Extract variables and simulations that are used in Ngnutneg script in neste..." alt="" coords="1563,213,1749,243"/>
+<area shape="rect" id="node39" href="$namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens." alt="" coords="1855,108,2004,137"/>
+<area shape="rect" id="node41" href="$namespacespicecompat.html#aaa1412844c15bb39369f182d006a62f4" title="spicecompat::containNodes Determine are there in equaton node voltages and/or current porbes..." alt="" coords="1837,161,2021,191"/>
+<area shape="rect" id="node48" href="$namespacespicecompat.html#a0a95a3eb3313386fc443853134c9ad79" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="1553,267,1759,296"/>
+<area shape="rect" id="node43" href="$namespacespicecompat.html#a966b3f1c17b11b7ab65940c785184462" title="spicecompat::convertNodeNames convert node names form Qucs&#45;notation to Spice&#45;notation (i..." alt="" coords="1820,268,2039,297"/>
+<area shape="rect" id="node45" href="$classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa" title="Component::getProperty" alt="" coords="1848,215,2011,244"/>
+<area shape="rect" id="node53" href="$classComponent.html#a648411cb53c94bcd8a6257c47ae85a5b" title="Component::getNgspiceBeforeSim" alt="" coords="1544,5,1768,35"/>
+<area shape="rect" id="node55" href="$classComponent.html#a997d2e3f1abd6838e28fcdfd085e88a6" title="Component::getNgspiceAfterSim" alt="" coords="1549,59,1763,88"/>
+<area shape="rect" id="node59" href="$classXyce.html#a037f074a75004956594fb27277bcf5a8" title="Xyce::determineUsedSimulations Determine simulation used in schematic and add them into simulationsQu..." alt="" coords="911,267,1127,296"/>
+<area shape="rect" id="node61" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="952,320,1085,349"/>
+<area shape="rect" id="node67" href="$classAbstractSpiceKernel.html#a9d158010b4efb3c46ad23807bf17aaf4" title="AbstractSpiceKernel::setSimulatorCmd Set simualtor executable location." alt="" coords="569,347,820,376"/>
+<area shape="rect" id="node71" href="$classXyce.html#a3a690d4bfe799ae65b979c84964ecd73" title="Xyce::setParallel" alt="" coords="635,667,755,696"/>
+<area shape="rect" id="node73" href="$classExternSimDialog.html#ab32eda4503ac9f72a54a4c528709f4aa" title="ExternSimDialog::slotNgspiceStarted" alt="" coords="576,453,813,483"/>
+<area shape="rect" id="node75" href="$classExternSimDialog.html#afb56c9a5befdb88ff64975a1d8cf9500" title="ExternSimDialog::slotProcessXyceOutput" alt="" coords="561,507,828,536"/>
+<area shape="rect" id="node101" href="$classExternSimDialog.html#a7dc16768eed0da50c4d1d339d7509822" title="ExternSimDialog::slotNgspiceStartError" alt="" coords="568,613,821,643"/>
+<area shape="rect" id="node103" href="$classExternSimDialog.html#aa502e85a3b95e6de812ea881f20103b1" title="ExternSimDialog::slotProcessNgspiceOutput" alt="" coords="553,560,836,589"/>
+<area shape="rect" id="node77" href="$classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process." alt="" coords="916,507,1121,536"/>
+<area shape="rect" id="node79" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="885,560,1152,589"/>
+<area shape="rect" id="node99" href="$classExternSimDialog.html#a83dfe0ca100f0bff305c9d66be953355" title="ExternSimDialog::simulated" alt="" coords="927,613,1111,643"/>
+<area shape="rect" id="node81" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="1228,533,1465,563"/>
+<area shape="rect" id="node83" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="1217,587,1476,616"/>
+<area shape="rect" id="node85" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="1220,640,1473,669"/>
+<area shape="rect" id="node87" href="$classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="1233,693,1460,723"/>
+<area shape="rect" id="node89" href="$classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="1209,747,1484,776"/>
+<area shape="rect" id="node91" href="$classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="1220,800,1473,829"/>
+<area shape="rect" id="node93" href="$classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="1221,373,1472,403"/>
+<area shape="rect" id="node95" href="$classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="1200,427,1493,456"/>
+<area shape="rect" id="node97" href="$classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f" title="AbstractSpiceKernel::normalizeVarsNames Convert spice&#45;style variable names to Qucs style and add simu..." alt="" coords="1209,480,1484,509"/>
+</map>
