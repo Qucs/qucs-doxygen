@@ -99,52 +99,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 
 <a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="inductor_8h.html">inductor.h</a>&quot;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">00021</a> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor::Inductor</a>()
-<a name="l00022"></a>00022 {
-<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;inductor&quot;</span>);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(-18, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,2)));
-<a name="l00026"></a>00026   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>( -6, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,2)));
-<a name="l00027"></a>00027   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(  6, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,2)));
-<a name="l00028"></a>00028   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-18,  0,QPen(Qt::darkBlue,2)));
-<a name="l00029"></a>00029   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 18,  0, 30,  0,QPen(Qt::darkBlue,2)));
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
-<a name="l00032"></a>00032   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>( 30,  0));
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="misc_8h.html" title="of some miscellaneous function">misc.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="spicecompat_8h.html">extsimkernels/spicecompat.h</a>&quot;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">00024</a> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor::Inductor</a>()
+<a name="l00025"></a>00025 {
+<a name="l00026"></a>00026   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;inductor&quot;</span>);
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(-18, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,4)));
+<a name="l00029"></a>00029   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>( -6, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,4)));
+<a name="l00030"></a>00030   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(  6, -6, 12, 12,  0, 16*180,QPen(Qt::darkBlue,4)));
+<a name="l00031"></a>00031   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-18,  0,QPen(Qt::darkBlue,2)));
+<a name="l00032"></a>00032   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 18,  0, 30,  0,QPen(Qt::darkBlue,2)));
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -10;
-<a name="l00035"></a>00035   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =  30; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =   6;
+<a name="l00034"></a>00034   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
+<a name="l00035"></a>00035   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>( 30,  0));
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+4;
-<a name="l00038"></a>00038   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+4;
-<a name="l00039"></a>00039   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;L&quot;</span>;
-<a name="l00040"></a>00040   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;L&quot;</span>;
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;L&quot;</span>, <span class="stringliteral">&quot;1 nH&quot;</span>, <span class="keyword">true</span>,
-<a name="l00043"></a>00043     QObject::tr(<span class="stringliteral">&quot;inductance in Henry&quot;</span>)));
-<a name="l00044"></a>00044   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;I&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>,
-<a name="l00045"></a>00045     QObject::tr(<span class="stringliteral">&quot;initial current for transient simulation&quot;</span>)));
-<a name="l00046"></a>00046 }
-<a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="classInductor.html#a9d6619eb044d61b05a2e0dea5af33e8d">00048</a> <a class="code" href="classInductor.html#a9d6619eb044d61b05a2e0dea5af33e8d">Inductor::~Inductor</a>()
-<a name="l00049"></a>00049 {
+<a name="l00037"></a>00037   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -10;
+<a name="l00038"></a>00038   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =  30; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =   6;
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+4;
+<a name="l00041"></a>00041   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+4;
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;L&quot;</span>;
+<a name="l00043"></a>00043   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;L&quot;</span>;
+<a name="l00044"></a>00044   <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a> = <span class="stringliteral">&quot;L&quot;</span>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;L&quot;</span>, <span class="stringliteral">&quot;1 nH&quot;</span>, <span class="keyword">true</span>,
+<a name="l00047"></a>00047     QObject::tr(<span class="stringliteral">&quot;inductance in Henry&quot;</span>)));
+<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;I&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>,
+<a name="l00049"></a>00049     QObject::tr(<span class="stringliteral">&quot;initial current for transient simulation&quot;</span>)));
 <a name="l00050"></a>00050 }
 <a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="classInductor.html#aede2df698f9e68fdea54e57ad71827ce">00052</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classInductor.html#aede2df698f9e68fdea54e57ad71827ce">Inductor::newOne</a>()
+<a name="l00052"></a><a class="code" href="classInductor.html#a9d6619eb044d61b05a2e0dea5af33e8d">00052</a> <a class="code" href="classInductor.html#a9d6619eb044d61b05a2e0dea5af33e8d">Inductor::~Inductor</a>()
 <a name="l00053"></a>00053 {
-<a name="l00054"></a>00054   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
-<a name="l00055"></a>00055 }
-<a name="l00056"></a>00056 
-<a name="l00057"></a><a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">00057</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">Inductor::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00058"></a>00058 {
-<a name="l00059"></a>00059   Name = QObject::tr(<span class="stringliteral">&quot;Inductor&quot;</span>);
-<a name="l00060"></a>00060   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;inductor&quot;</span>;  <span class="comment">// bitmap file name without suffix</span>
+<a name="l00054"></a>00054 }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="classInductor.html#aede2df698f9e68fdea54e57ad71827ce">00056</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classInductor.html#aede2df698f9e68fdea54e57ad71827ce">Inductor::newOne</a>()
+<a name="l00057"></a>00057 {
+<a name="l00058"></a>00058   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
+<a name="l00059"></a>00059 }
+<a name="l00060"></a>00060 
 <a name="l00061"></a>00061 
-<a name="l00062"></a>00062   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
-<a name="l00063"></a>00063   <span class="keywordflow">return</span> 0;
-<a name="l00064"></a>00064 }
+<a name="l00062"></a><a class="code" href="classInductor.html#a6af1941deda809fec0913a52084a8a53">00062</a> QString <a class="code" href="classInductor.html#a6af1941deda809fec0913a52084a8a53">Inductor::spice_netlist</a>(<span class="keywordtype">bool</span>)
+<a name="l00063"></a>00063 {
+<a name="l00064"></a>00064     QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066     s += QString(<span class="stringliteral">&quot; %1 %2 &quot;</span>).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name)
+<a name="l00067"></a>00067             .arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name); <span class="comment">// output source nodes</span>
+<a name="l00068"></a>00068     s.replace(<span class="stringliteral">&quot; gnd &quot;</span>, <span class="stringliteral">&quot; 0 &quot;</span>);
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070     s += <span class="stringliteral">&quot; &quot;</span>+<a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value) + <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00071"></a>00071     QString val = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value; <span class="comment">// add inial voltage if presents</span>
+<a name="l00072"></a>00072     val = val.remove(<span class="charliteral">&#39; &#39;</span>).toUpper();
+<a name="l00073"></a>00073     <span class="keywordflow">if</span> (!val.isEmpty()) {
+<a name="l00074"></a>00074         s += <span class="stringliteral">&quot; IC=&quot;</span> + val;
+<a name="l00075"></a>00075     }
+<a name="l00076"></a>00076     s += <span class="charliteral">&#39;\n&#39;</span>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078     <span class="keywordflow">return</span> s;
+<a name="l00079"></a>00079 }
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">00081</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">Inductor::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00082"></a>00082 {
+<a name="l00083"></a>00083   Name = QObject::tr(<span class="stringliteral">&quot;Inductor&quot;</span>);
+<a name="l00084"></a>00084   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;inductor&quot;</span>;  <span class="comment">// bitmap file name without suffix</span>
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
+<a name="l00087"></a>00087   <span class="keywordflow">return</span> 0;
+<a name="l00088"></a>00088 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -163,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 16:19:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 12:20:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

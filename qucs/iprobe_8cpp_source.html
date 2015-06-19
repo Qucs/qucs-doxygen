@@ -99,60 +99,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> ***************************************************************************/</span>
 <a name="l00017"></a>00017 
 <a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="iprobe_8h.html">iprobe.h</a>&quot;</span>
-<a name="l00019"></a>00019 
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span>
 <a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">00021</a> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe::iProbe</a>()
-<a name="l00022"></a>00022 {
-<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;current probe&quot;</span>);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-20,  0,QPen(Qt::darkBlue,2)));
-<a name="l00026"></a>00026   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 30,  0, 20,  0,QPen(Qt::darkBlue,2)));
-<a name="l00027"></a>00027   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,  0, 20,  0,QPen(Qt::darkBlue,3)));
-<a name="l00028"></a>00028   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  4,  0, -4, -4,QPen(Qt::darkBlue,3)));
-<a name="l00029"></a>00029   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  4,  0, -4,  4,QPen(Qt::darkBlue,3)));
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,-31, 20,-31,QPen(Qt::darkBlue,2)));
-<a name="l00032"></a>00032   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,  9, 20,  9,QPen(Qt::darkBlue,2)));
-<a name="l00033"></a>00033   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,-31,-20,  9,QPen(Qt::darkBlue,2)));
-<a name="l00034"></a>00034   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 20,-31, 20,  9,QPen(Qt::darkBlue,2)));
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,-27, 16,-27,QPen(Qt::darkBlue,2)));
-<a name="l00037"></a>00037   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16, -9, 16, -9,QPen(Qt::darkBlue,2)));
-<a name="l00038"></a>00038   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,-27,-16, -9,QPen(Qt::darkBlue,2)));
-<a name="l00039"></a>00039   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 16,-27, 16, -9,QPen(Qt::darkBlue,2)));
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(-20,-23, 39, 39, 16*50, 16*80,QPen(Qt::darkBlue,2)));
-<a name="l00042"></a>00042   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-11,-24, -2, -9,QPen(Qt::darkBlue,2)));
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
-<a name="l00045"></a>00045   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>( 30,  0));
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -34;
-<a name="l00048"></a>00048   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =  30; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =  12;
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+4;
-<a name="l00051"></a>00051   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+4;
-<a name="l00052"></a>00052   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;IProbe&quot;</span>;
-<a name="l00053"></a>00053   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;Pr&quot;</span>;
-<a name="l00054"></a>00054 }
-<a name="l00055"></a>00055 
-<a name="l00056"></a><a class="code" href="classiProbe.html#a5d6320d9b65231249ffcc253361912f5">00056</a> <a class="code" href="classiProbe.html#a5d6320d9b65231249ffcc253361912f5">iProbe::~iProbe</a>()
-<a name="l00057"></a>00057 {
-<a name="l00058"></a>00058 }
-<a name="l00059"></a>00059 
-<a name="l00060"></a><a class="code" href="classiProbe.html#af1e34318c336c226cafb0aa3c1aaa8af">00060</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classiProbe.html#af1e34318c336c226cafb0aa3c1aaa8af">iProbe::newOne</a>()
-<a name="l00061"></a>00061 {
-<a name="l00062"></a>00062   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe</a>();
-<a name="l00063"></a>00063 }
-<a name="l00064"></a>00064 
-<a name="l00065"></a><a class="code" href="classiProbe.html#aad83223c3f10baddb06e360fe09c3f27">00065</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classiProbe.html#aad83223c3f10baddb06e360fe09c3f27">iProbe::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00066"></a>00066 {
-<a name="l00067"></a>00067   Name = QObject::tr(<span class="stringliteral">&quot;Current Probe&quot;</span>);
-<a name="l00068"></a>00068   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;iprobe&quot;</span>;
-<a name="l00069"></a>00069 
-<a name="l00070"></a>00070   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe</a>();
-<a name="l00071"></a>00071   <span class="keywordflow">return</span> 0;
-<a name="l00072"></a>00072 }
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">00022</a> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe::iProbe</a>()
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;current probe&quot;</span>);
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-30,  0,-20,  0,QPen(Qt::darkBlue,2)));
+<a name="l00027"></a>00027   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 30,  0, 20,  0,QPen(Qt::darkBlue,2)));
+<a name="l00028"></a>00028   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,  0, 20,  0,QPen(Qt::darkBlue,3)));
+<a name="l00029"></a>00029   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  4,  0, -4, -4,QPen(Qt::darkBlue,3)));
+<a name="l00030"></a>00030   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(  4,  0, -4,  4,QPen(Qt::darkBlue,3)));
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,-31, 20,-31,QPen(Qt::darkBlue,2)));
+<a name="l00033"></a>00033   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,  9, 20,  9,QPen(Qt::darkBlue,2)));
+<a name="l00034"></a>00034   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-20,-31,-20,  9,QPen(Qt::darkBlue,2)));
+<a name="l00035"></a>00035   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 20,-31, 20,  9,QPen(Qt::darkBlue,2)));
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,-27, 16,-27,QPen(Qt::darkBlue,2)));
+<a name="l00038"></a>00038   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16, -9, 16, -9,QPen(Qt::darkBlue,2)));
+<a name="l00039"></a>00039   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-16,-27,-16, -9,QPen(Qt::darkBlue,2)));
+<a name="l00040"></a>00040   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>( 16,-27, 16, -9,QPen(Qt::darkBlue,2)));
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>.append(<span class="keyword">new</span> <a class="code" href="structArc.html">Arc</a>(-20,-23, 39, 39, 16*50, 16*80,QPen(Qt::darkBlue,2)));
+<a name="l00043"></a>00043   <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>.append(<span class="keyword">new</span> <a class="code" href="structLine.html">Line</a>(-11,-24, -2, -9,QPen(Qt::darkBlue,2)));
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>(-30,  0));
+<a name="l00046"></a>00046   <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.append(<span class="keyword">new</span> <a class="code" href="structPort.html">Port</a>( 30,  0));
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -30; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -34;
+<a name="l00049"></a>00049   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> =  30; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> =  12;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+4;
+<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+4;
+<a name="l00053"></a>00053   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;IProbe&quot;</span>;
+<a name="l00054"></a>00054   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;Pr&quot;</span>;
+<a name="l00055"></a>00055   <a class="code" href="classComponent.html#ac17b7793fbd28e460ae0282acabe5572">isProbe</a> = <span class="keyword">true</span>;
+<a name="l00056"></a>00056 }
+<a name="l00057"></a>00057 
+<a name="l00058"></a><a class="code" href="classiProbe.html#a5d6320d9b65231249ffcc253361912f5">00058</a> <a class="code" href="classiProbe.html#a5d6320d9b65231249ffcc253361912f5">iProbe::~iProbe</a>()
+<a name="l00059"></a>00059 {
+<a name="l00060"></a>00060 }
+<a name="l00061"></a>00061 
+<a name="l00062"></a><a class="code" href="classiProbe.html#af1e34318c336c226cafb0aa3c1aaa8af">00062</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classiProbe.html#af1e34318c336c226cafb0aa3c1aaa8af">iProbe::newOne</a>()
+<a name="l00063"></a>00063 {
+<a name="l00064"></a>00064   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe</a>();
+<a name="l00065"></a>00065 }
+<a name="l00066"></a>00066 
+<a name="l00067"></a><a class="code" href="classiProbe.html#aad83223c3f10baddb06e360fe09c3f27">00067</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classiProbe.html#aad83223c3f10baddb06e360fe09c3f27">iProbe::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00068"></a>00068 {
+<a name="l00069"></a>00069   Name = QObject::tr(<span class="stringliteral">&quot;Current Probe&quot;</span>);
+<a name="l00070"></a>00070   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;iprobe&quot;</span>;
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca">iProbe</a>();
+<a name="l00073"></a>00073   <span class="keywordflow">return</span> 0;
+<a name="l00074"></a>00074 }
+<a name="l00075"></a>00075 
+<a name="l00076"></a><a class="code" href="classiProbe.html#ad58de865ebaac7a78e48b3fd9194f526">00076</a> QString <a class="code" href="classiProbe.html#ad58de865ebaac7a78e48b3fd9194f526">iProbe::spice_netlist</a>(<span class="keywordtype">bool</span>)
+<a name="l00077"></a>00077 {
+<a name="l00078"></a>00078     QString s = QString(<span class="stringliteral">&quot;V%1 %2 %3 DC 0 AC 0\n&quot;</span>).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name)
+<a name="l00079"></a>00079             .arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name);
+<a name="l00080"></a>00080     <span class="keywordflow">return</span> s;
+<a name="l00081"></a>00081 }
+<a name="l00082"></a>00082 
+<a name="l00088"></a><a class="code" href="classiProbe.html#a3bfad69049147f182e390318b5ea50b4">00088</a> QString <a class="code" href="classiProbe.html#a3bfad69049147f182e390318b5ea50b4" title="iProbe::getProbeVariable Get current probe variable">iProbe::getProbeVariable</a>(<span class="keywordtype">bool</span> isXyce)
+<a name="l00089"></a>00089 {
+<a name="l00090"></a>00090     QString s;
+<a name="l00091"></a>00091     <span class="keywordflow">if</span> (isXyce) {
+<a name="l00092"></a>00092         s = QString(<span class="stringliteral">&quot;I(V%1)&quot;</span>).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
+<a name="l00093"></a>00093     } <span class="keywordflow">else</span> {
+<a name="l00094"></a>00094         s = QString(<span class="stringliteral">&quot;V%1#branch&quot;</span>).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
+<a name="l00095"></a>00095     }
+<a name="l00096"></a>00096     <span class="keywordflow">return</span> s;
+<a name="l00097"></a>00097 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -171,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 16:19:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 12:20:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

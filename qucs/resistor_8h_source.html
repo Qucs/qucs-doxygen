@@ -112,11 +112,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classResistor.html#aa01e07b9f9f3cf7c9f546f9ffa55ce91">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
 <a name="l00030"></a>00030   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classResistor.html#a59f4a4c64b8d64f9c6253fbba429909f">info_us</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="keyword">protected</span>:
-<a name="l00033"></a>00033   <span class="keywordtype">void</span> <a class="code" href="classResistor.html#a326cda5ff237f3f39d5de27d42447fe8">createSymbol</a>();
-<a name="l00034"></a>00034 };
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="preprocessor">#endif</span>
+<a name="l00032"></a>00032   QString <a class="code" href="classResistor.html#abf53336545b89be8298633d02c74d216">spice_netlist</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keyword">protected</span>:
+<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="classResistor.html#a326cda5ff237f3f39d5de27d42447fe8">createSymbol</a>();
+<a name="l00036"></a>00036 };
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -135,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 16:19:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 12:20:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

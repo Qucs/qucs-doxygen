@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classBasic__BJT.html" title="{Basic_BJT\n||+ Basic_BJT()\l+ ~Basic_BJT()\l}" alt="" coords="63,1153,177,1255"/>
-<area shape="rect" id="node4" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="33,966,207,1103"/>
-<area shape="rect" id="node6" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="5,347,235,917"/>
+<area shape="rect" id="node2" href="$classBasic__BJT.html" title="{Basic_BJT\n||+ Basic_BJT()\l+ ~Basic_BJT()\l}" alt="" coords="63,1187,177,1290"/>
+<area shape="rect" id="node4" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="33,1001,207,1138"/>
+<area shape="rect" id="node6" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="5,347,235,952"/>
 <area shape="rect" id="node8" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="61,5,179,299"/>
 </map>
