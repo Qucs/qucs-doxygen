@@ -4,7 +4,6 @@ var searchData=
   ['markerdialog',['MarkerDialog',['../classMarkerDialog.html',1,'']]],
   ['matchdialog',['MatchDialog',['../classMatchDialog.html',1,'']]],
   ['mesfet',['MESFET',['../classMESFET.html',1,'']]],
-  ['mesfet_5fspice',['MESFET_SPICE',['../classMESFET__SPICE.html',1,'']]],
   ['messagedock',['MessageDock',['../classMessageDock.html',1,'']]],
   ['mod_5famp',['mod_amp',['../classmod__amp.html',1,'']]],
   ['module',['Module',['../classModule.html',1,'']]],

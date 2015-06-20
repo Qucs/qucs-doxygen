@@ -119,107 +119,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00036"></a>00036   <span class="keyword">virtual</span> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classComponent.html#acac3c01cafba8659753304a89611560d">newOne</a>();
 <a name="l00037"></a><a class="code" href="classComponent.html#a922de1326d4214d885f5dc05287a75a0">00037</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classComponent.html#a922de1326d4214d885f5dc05287a75a0">recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*) {};
 <a name="l00038"></a>00038   QString <a class="code" href="classComponent.html#a8cc8c065a46079b390ac5218f99153be">getNetlist</a>();
-<a name="l00039"></a>00039   QString <a class="code" href="classComponent.html#a515f345bedacd8202df7987c243ba0dd">getSpiceNetlist</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
-<a name="l00040"></a>00040   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#a7b518f511530d44a4f09da5c78573cc1">getExpression</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
-<a name="l00041"></a>00041   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#aa7c099bf954d0cdfc4f88168ee7463d0">getEquations</a>(QString sim, QStringList &amp;dep_vars);
-<a name="l00042"></a>00042   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ab87d73cd48a44f141f4df21ad9fd8980">getProbeVariable</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
-<a name="l00043"></a>00043   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ac6d130d526f1a811785d0a995a42a39b">getNgspiceBeforeSim</a>(QString sim, <span class="keywordtype">int</span> lvl=0);
-<a name="l00044"></a>00044   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ad279994292a2e912055b7e3a8cac8098">getNgspiceAfterSim</a>(QString sim, <span class="keywordtype">int</span> lvl=0);
-<a name="l00045"></a>00045   QString <a class="code" href="classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7">get_VHDL_Code</a>(<span class="keywordtype">int</span>);
-<a name="l00046"></a>00046   QString <a class="code" href="classComponent.html#aca662dcb71726b77eb5db6af76c63624">get_Verilog_Code</a>(<span class="keywordtype">int</span>);
-<a name="l00047"></a>00047   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#ad8bfe87292099d127c5bd9cc49873135">paint</a>(<a class="code" href="classViewPainter.html">ViewPainter</a>*);
-<a name="l00048"></a>00048   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a6f8673fab9762c1b41472ddc5675a2f3">paintScheme</a>(<a class="code" href="classSchematic.html">Schematic</a>*);
-<a name="l00049"></a>00049   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a4991c546c812d3d1ed87d0286e80b3c2">print</a>(<a class="code" href="classViewPainter.html">ViewPainter</a>*, <span class="keywordtype">float</span>);
-<a name="l00050"></a>00050   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a64aa83093a32137a7ff57c817fce21f0">setCenter</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span> relative=<span class="keyword">false</span>);
-<a name="l00051"></a>00051   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a98fc61dbc1d4959849b6501239959bc9">getCenter</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
-<a name="l00052"></a>00052   <span class="keywordtype">int</span>     <a class="code" href="classComponent.html#a439c7a506532e1005a785d33916510c0">textSize</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
-<a name="l00053"></a>00053   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a409d103ae23e5299fd4e7ddd1c1648ea">Bounding</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
-<a name="l00054"></a>00054   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a100def1c162f5945bcb149e039ca1f82">entireBounds</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">float</span>);
-<a name="l00055"></a>00055   <span class="keywordtype">bool</span>    <a class="code" href="classComponent.html#ae46a3fc76de3169fa9790c365ed20f5a">getSelected</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);
-<a name="l00056"></a>00056   <span class="keywordtype">int</span>     <a class="code" href="classComponent.html#a03cfb5bd7f6885b4d719357079478fa3">getTextSelected</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">float</span>);
-<a name="l00057"></a>00057   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a371f348f5919cb271a1450b6c868a12f">rotate</a>();
-<a name="l00058"></a>00058   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a15e4a1628267eece269646ff50a4d073">mirrorX</a>();  <span class="comment">// mirror about X axis</span>
-<a name="l00059"></a>00059   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a5582128782a575a1ded9ac158e4688da">mirrorY</a>();  <span class="comment">// mirror about Y axis</span>
-<a name="l00060"></a>00060   QString <a class="code" href="classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2">save</a>();
-<a name="l00061"></a>00061   <span class="keywordtype">bool</span>    <a class="code" href="classComponent.html#a2868dd4e0b61596134dd736cc2a7424f">load</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063   <span class="comment">// to hold track of the component appearance for saving and copying</span>
-<a name="l00064"></a><a class="code" href="classComponent.html#ae38bd64ea792153ffafc1988d54c0841">00064</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ae38bd64ea792153ffafc1988d54c0841">mirroredX</a>;   <span class="comment">// is it mirrored about X axis or not</span>
-<a name="l00065"></a><a class="code" href="classComponent.html#a7d4f06246e887235f2e54ec29b69ba5b">00065</a>   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#a7d4f06246e887235f2e54ec29b69ba5b">rotated</a>;     <span class="comment">// rotation angle divided by 90 degrees</span>
-<a name="l00066"></a>00066 
-<a name="l00067"></a><a class="code" href="classComponent.html#ab9215e47cb5acea835a44302fd488c8c">00067</a>   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ab9215e47cb5acea835a44302fd488c8c">getSubcircuitFile</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; }
-<a name="l00068"></a>00068   <span class="comment">// set the pointer scematic associated with the component</span>
-<a name="l00069"></a><a class="code" href="classComponent.html#ad7047dd13d9f3da38d4053f868411d09">00069</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classComponent.html#ad7047dd13d9f3da38d4053f868411d09">setSchematic</a> (<a class="code" href="classSchematic.html">Schematic</a>* p) { <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a> = p; }
-<a name="l00070"></a><a class="code" href="classComponent.html#a1c0331977b51957d17be76f92034f8ca">00070</a>   <span class="keyword">virtual</span> <a class="code" href="classSchematic.html">Schematic</a>* <a class="code" href="classComponent.html#a1c0331977b51957d17be76f92034f8ca">getSchematic</a> () {<span class="keywordflow">return</span> <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a>; }
-<a name="l00071"></a>00071 
-<a name="l00072"></a><a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">00072</a>   QList&lt;Line *&gt;     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>;
-<a name="l00073"></a><a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">00073</a>   QList&lt;struct Arc *&gt;      <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>;
-<a name="l00074"></a><a class="code" href="classComponent.html#a3e45c8d69f34d8dac9eaeb0aeec65c58">00074</a>   QList&lt;Area *&gt;     <a class="code" href="classComponent.html#a3e45c8d69f34d8dac9eaeb0aeec65c58">Rects</a>;
-<a name="l00075"></a><a class="code" href="classComponent.html#a78ed6bd111759b743518d0395918e9b9">00075</a>   QList&lt;Area *&gt;     <a class="code" href="classComponent.html#a78ed6bd111759b743518d0395918e9b9">Ellips</a>;
-<a name="l00076"></a><a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">00076</a>   QList&lt;Port *&gt;     <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>;
-<a name="l00077"></a><a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">00077</a>   QList&lt;Text *&gt;     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>;
-<a name="l00078"></a><a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">00078</a>   Q3PtrList&lt;Property&gt; <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>;
-<a name="l00079"></a>00079 
-<a name="l00080"></a><a class="code" href="component_8h.html#a6d7ac9c263980164b9394c0457911bbf">00080</a> <span class="preprocessor">  #define COMP_IS_OPEN    0</span>
-<a name="l00081"></a><a class="code" href="component_8h.html#a11ba97e9a69050b88b560548b6045af2">00081</a> <span class="preprocessor"></span><span class="preprocessor">  #define COMP_IS_ACTIVE  1</span>
-<a name="l00082"></a><a class="code" href="component_8h.html#ab26d138a77deed97ebb663141345b99f">00082</a> <span class="preprocessor"></span><span class="preprocessor">  #define COMP_IS_SHORTEN 2</span>
-<a name="l00083"></a><a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">00083</a> <span class="preprocessor"></span>  <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">isActive</a>; <span class="comment">// should it be used in simulation or not ?</span>
-<a name="l00084"></a><a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">00084</a>   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a>, <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a>;   <span class="comment">// upper left corner of text (position)</span>
-<a name="l00085"></a><a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">00085</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">showName</a>;
-<a name="l00086"></a><a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">00086</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">isSimulation</a>; <span class="comment">// is it AC,DC,TR or other spice-compatible simulation?</span>
-<a name="l00087"></a><a class="code" href="classComponent.html#ac17b7793fbd28e460ae0282acabe5572">00087</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ac17b7793fbd28e460ae0282acabe5572">isProbe</a>; <span class="comment">// is it Voltage/Current spice-compatible probe?</span>
-<a name="l00088"></a><a class="code" href="classComponent.html#aeb66ccc3e6ecf2e1a644fbc7be19d0d9">00088</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#aeb66ccc3e6ecf2e1a644fbc7be19d0d9">isEquation</a>;
-<a name="l00089"></a><a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">00089</a>   QString  <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a>, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>;
-<a name="l00090"></a><a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">00090</a>   QString  <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
-<a name="l00091"></a><a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">00091</a>   QString  <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>;
-<a name="l00092"></a>00092 
-<a name="l00093"></a>00093 <span class="keyword">protected</span>:
-<a name="l00094"></a>00094   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#aa89e8cc6b51376898fd7e15f40dce73f">netlist</a>();
-<a name="l00095"></a>00095   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#aa9ccf58d9e2b03583ca6758d991e8c36">spice_netlist</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
-<a name="l00096"></a>00096   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#a894fe2c1c359db3a457603fcef222113">vhdlCode</a>(<span class="keywordtype">int</span>);
-<a name="l00097"></a>00097   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ac6d3f09f5fdae0d59a953e2b12ccfd33">verilogCode</a>(<span class="keywordtype">int</span>);
-<a name="l00098"></a>00098   QString <a class="code" href="classComponent.html#a3738758d3c8b78e1f5ca1b5e9bcc4324">form_spice_param_list</a>(QStringList&amp; ignore_list, QStringList&amp; convert_list);
+<a name="l00039"></a>00039   QString <a class="code" href="classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7">get_VHDL_Code</a>(<span class="keywordtype">int</span>);
+<a name="l00040"></a>00040   QString <a class="code" href="classComponent.html#aca662dcb71726b77eb5db6af76c63624">get_Verilog_Code</a>(<span class="keywordtype">int</span>);
+<a name="l00041"></a>00041   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#ad8bfe87292099d127c5bd9cc49873135">paint</a>(<a class="code" href="classViewPainter.html">ViewPainter</a>*);
+<a name="l00042"></a>00042   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a6f8673fab9762c1b41472ddc5675a2f3">paintScheme</a>(<a class="code" href="classSchematic.html">Schematic</a>*);
+<a name="l00043"></a>00043   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a4991c546c812d3d1ed87d0286e80b3c2">print</a>(<a class="code" href="classViewPainter.html">ViewPainter</a>*, <span class="keywordtype">float</span>);
+<a name="l00044"></a>00044   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a64aa83093a32137a7ff57c817fce21f0">setCenter</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span> relative=<span class="keyword">false</span>);
+<a name="l00045"></a>00045   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a98fc61dbc1d4959849b6501239959bc9">getCenter</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
+<a name="l00046"></a>00046   <span class="keywordtype">int</span>     <a class="code" href="classComponent.html#a439c7a506532e1005a785d33916510c0">textSize</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
+<a name="l00047"></a>00047   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a409d103ae23e5299fd4e7ddd1c1648ea">Bounding</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;);
+<a name="l00048"></a>00048   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a100def1c162f5945bcb149e039ca1f82">entireBounds</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">float</span>);
+<a name="l00049"></a>00049   <span class="keywordtype">bool</span>    <a class="code" href="classComponent.html#ae46a3fc76de3169fa9790c365ed20f5a">getSelected</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);
+<a name="l00050"></a>00050   <span class="keywordtype">int</span>     <a class="code" href="classComponent.html#a03cfb5bd7f6885b4d719357079478fa3">getTextSelected</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">float</span>);
+<a name="l00051"></a>00051   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a371f348f5919cb271a1450b6c868a12f">rotate</a>();
+<a name="l00052"></a>00052   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a15e4a1628267eece269646ff50a4d073">mirrorX</a>();  <span class="comment">// mirror about X axis</span>
+<a name="l00053"></a>00053   <span class="keywordtype">void</span>    <a class="code" href="classComponent.html#a5582128782a575a1ded9ac158e4688da">mirrorY</a>();  <span class="comment">// mirror about Y axis</span>
+<a name="l00054"></a>00054   QString <a class="code" href="classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2">save</a>();
+<a name="l00055"></a>00055   <span class="keywordtype">bool</span>    <a class="code" href="classComponent.html#a2868dd4e0b61596134dd736cc2a7424f">load</a>(<span class="keyword">const</span> QString&amp;);
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057   <span class="comment">// to hold track of the component appearance for saving and copying</span>
+<a name="l00058"></a><a class="code" href="classComponent.html#ae38bd64ea792153ffafc1988d54c0841">00058</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ae38bd64ea792153ffafc1988d54c0841">mirroredX</a>;   <span class="comment">// is it mirrored about X axis or not</span>
+<a name="l00059"></a><a class="code" href="classComponent.html#a7d4f06246e887235f2e54ec29b69ba5b">00059</a>   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#a7d4f06246e887235f2e54ec29b69ba5b">rotated</a>;     <span class="comment">// rotation angle divided by 90 degrees</span>
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="classComponent.html#ab9215e47cb5acea835a44302fd488c8c">00061</a>   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ab9215e47cb5acea835a44302fd488c8c">getSubcircuitFile</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; }
+<a name="l00062"></a>00062   <span class="comment">// set the pointer scematic associated with the component</span>
+<a name="l00063"></a><a class="code" href="classComponent.html#ad7047dd13d9f3da38d4053f868411d09">00063</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classComponent.html#ad7047dd13d9f3da38d4053f868411d09">setSchematic</a> (<a class="code" href="classSchematic.html">Schematic</a>* p) { <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a> = p; }
+<a name="l00064"></a><a class="code" href="classComponent.html#a1c0331977b51957d17be76f92034f8ca">00064</a>   <span class="keyword">virtual</span> <a class="code" href="classSchematic.html">Schematic</a>* <a class="code" href="classComponent.html#a1c0331977b51957d17be76f92034f8ca">getSchematic</a> () {<span class="keywordflow">return</span> <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a>; }
+<a name="l00065"></a>00065 
+<a name="l00066"></a><a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">00066</a>   QList&lt;Line *&gt;     <a class="code" href="classComponent.html#a74a934a292a121505d4cee12a24519cc">Lines</a>;
+<a name="l00067"></a><a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">00067</a>   QList&lt;struct Arc *&gt;      <a class="code" href="classComponent.html#aee71432f47a1474d7f924ac58d420d6d">Arcs</a>;
+<a name="l00068"></a><a class="code" href="classComponent.html#a3e45c8d69f34d8dac9eaeb0aeec65c58">00068</a>   QList&lt;Area *&gt;     <a class="code" href="classComponent.html#a3e45c8d69f34d8dac9eaeb0aeec65c58">Rects</a>;
+<a name="l00069"></a><a class="code" href="classComponent.html#a78ed6bd111759b743518d0395918e9b9">00069</a>   QList&lt;Area *&gt;     <a class="code" href="classComponent.html#a78ed6bd111759b743518d0395918e9b9">Ellips</a>;
+<a name="l00070"></a><a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">00070</a>   QList&lt;Port *&gt;     <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>;
+<a name="l00071"></a><a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">00071</a>   QList&lt;Text *&gt;     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>;
+<a name="l00072"></a><a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">00072</a>   Q3PtrList&lt;Property&gt; <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>;
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="component_8h.html#a6d7ac9c263980164b9394c0457911bbf">00074</a> <span class="preprocessor">  #define COMP_IS_OPEN    0</span>
+<a name="l00075"></a><a class="code" href="component_8h.html#a11ba97e9a69050b88b560548b6045af2">00075</a> <span class="preprocessor"></span><span class="preprocessor">  #define COMP_IS_ACTIVE  1</span>
+<a name="l00076"></a><a class="code" href="component_8h.html#ab26d138a77deed97ebb663141345b99f">00076</a> <span class="preprocessor"></span><span class="preprocessor">  #define COMP_IS_SHORTEN 2</span>
+<a name="l00077"></a><a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">00077</a> <span class="preprocessor"></span>  <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09">isActive</a>; <span class="comment">// should it be used in simulation or not ?</span>
+<a name="l00078"></a><a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">00078</a>   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a>, <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a>;   <span class="comment">// upper left corner of text (position)</span>
+<a name="l00079"></a><a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">00079</a>   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">showName</a>;
+<a name="l00080"></a><a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">00080</a>   QString  <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a>, <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>;
+<a name="l00081"></a><a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">00081</a>   QString  <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 <span class="keyword">protected</span>:
+<a name="l00084"></a>00084   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#aa89e8cc6b51376898fd7e15f40dce73f">netlist</a>();
+<a name="l00085"></a>00085   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#a894fe2c1c359db3a457603fcef222113">vhdlCode</a>(<span class="keywordtype">int</span>);
+<a name="l00086"></a>00086   <span class="keyword">virtual</span> QString <a class="code" href="classComponent.html#ac6d3f09f5fdae0d59a953e2b12ccfd33">verilogCode</a>(<span class="keywordtype">int</span>);
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#abab565a9bb19bb4a0909761be8ff7636">analyseLine</a>(<span class="keyword">const</span> QString&amp;, <span class="keywordtype">int</span>);
+<a name="l00089"></a>00089   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#a53665f0f2ff5aeb70454dde3e60af458">getIntegers</a>(<span class="keyword">const</span> QString&amp;, <span class="keywordtype">int</span> *i1=0, <span class="keywordtype">int</span> *i2=0, <span class="keywordtype">int</span> *i3=0,
+<a name="l00090"></a>00090                    <span class="keywordtype">int</span> *i4=0, <span class="keywordtype">int</span> *i5=0, <span class="keywordtype">int</span> *i6=0);
+<a name="l00091"></a>00091   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ad566497fe43ddfc1ce8d171af56d3e09">getPen</a>(<span class="keyword">const</span> QString&amp;, QPen&amp;, <span class="keywordtype">int</span>);
+<a name="l00092"></a>00092   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#a57ba9d4bd50f1a87a3469b8a83397a4b">getBrush</a>(<span class="keyword">const</span> QString&amp;, QBrush&amp;, <span class="keywordtype">int</span>);
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094   <span class="keywordtype">void</span> <a class="code" href="classComponent.html#a6be39b767c8cf5c0477f8edfc5c99e27">copyComponent</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*);
+<a name="l00095"></a>00095   <a class="code" href="structProperty.html">Property</a> * <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="keyword">const</span> QString&amp;);
+<a name="l00096"></a><a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">00096</a>   <a class="code" href="classSchematic.html">Schematic</a>* <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a>;
+<a name="l00097"></a>00097 };
+<a name="l00098"></a>00098 
 <a name="l00099"></a>00099 
-<a name="l00100"></a>00100   <span class="keywordtype">int</span>  <a class="code" href="classComponent.html#abab565a9bb19bb4a0909761be8ff7636">analyseLine</a>(<span class="keyword">const</span> QString&amp;, <span class="keywordtype">int</span>);
-<a name="l00101"></a>00101   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#a53665f0f2ff5aeb70454dde3e60af458">getIntegers</a>(<span class="keyword">const</span> QString&amp;, <span class="keywordtype">int</span> *i1=0, <span class="keywordtype">int</span> *i2=0, <span class="keywordtype">int</span> *i3=0,
-<a name="l00102"></a>00102                    <span class="keywordtype">int</span> *i4=0, <span class="keywordtype">int</span> *i5=0, <span class="keywordtype">int</span> *i6=0);
-<a name="l00103"></a>00103   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#ad566497fe43ddfc1ce8d171af56d3e09">getPen</a>(<span class="keyword">const</span> QString&amp;, QPen&amp;, <span class="keywordtype">int</span>);
-<a name="l00104"></a>00104   <span class="keywordtype">bool</span> <a class="code" href="classComponent.html#a57ba9d4bd50f1a87a3469b8a83397a4b">getBrush</a>(<span class="keyword">const</span> QString&amp;, QBrush&amp;, <span class="keywordtype">int</span>);
-<a name="l00105"></a>00105 
-<a name="l00106"></a>00106   <span class="keywordtype">void</span> <a class="code" href="classComponent.html#a6be39b767c8cf5c0477f8edfc5c99e27">copyComponent</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*);
-<a name="l00107"></a>00107   <a class="code" href="structProperty.html">Property</a> * <a class="code" href="classComponent.html#a4110e2a02b18ab41ed8a6f07f5029afa">getProperty</a>(<span class="keyword">const</span> QString&amp;);
-<a name="l00108"></a><a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">00108</a>   <a class="code" href="classSchematic.html">Schematic</a>* <a class="code" href="classComponent.html#a96ae19a9ade637556c113bc35996ee65">containingSchematic</a>;
+<a name="l00100"></a><a class="code" href="classMultiViewComponent.html">00100</a> <span class="keyword">class </span><a class="code" href="classMultiViewComponent.html">MultiViewComponent</a> : <span class="keyword">public</span> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> {
+<a name="l00101"></a>00101 <span class="keyword">public</span>:
+<a name="l00102"></a><a class="code" href="classMultiViewComponent.html#a1f60559533273289a79f01cecca81adf">00102</a>   <a class="code" href="classMultiViewComponent.html#a1f60559533273289a79f01cecca81adf">MultiViewComponent</a>() {};
+<a name="l00103"></a><a class="code" href="classMultiViewComponent.html#a870ef4576100cfe5ffd92b6a00801545">00103</a>   <span class="keyword">virtual</span> <a class="code" href="classMultiViewComponent.html#a870ef4576100cfe5ffd92b6a00801545">~MultiViewComponent</a>() {};
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105   <span class="keywordtype">void</span> <a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*);
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="keyword">protected</span>:
+<a name="l00108"></a><a class="code" href="classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26">00108</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26">createSymbol</a>() {};
 <a name="l00109"></a>00109 };
 <a name="l00110"></a>00110 
 <a name="l00111"></a>00111 
-<a name="l00112"></a><a class="code" href="classMultiViewComponent.html">00112</a> <span class="keyword">class </span><a class="code" href="classMultiViewComponent.html">MultiViewComponent</a> : <span class="keyword">public</span> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> {
+<a name="l00112"></a><a class="code" href="classGateComponent.html">00112</a> <span class="keyword">class </span><a class="code" href="classGateComponent.html">GateComponent</a> : <span class="keyword">public</span> <a class="code" href="classMultiViewComponent.html">MultiViewComponent</a> {
 <a name="l00113"></a>00113 <span class="keyword">public</span>:
-<a name="l00114"></a><a class="code" href="classMultiViewComponent.html#a1f60559533273289a79f01cecca81adf">00114</a>   <a class="code" href="classMultiViewComponent.html#a1f60559533273289a79f01cecca81adf">MultiViewComponent</a>() {};
-<a name="l00115"></a><a class="code" href="classMultiViewComponent.html#a870ef4576100cfe5ffd92b6a00801545">00115</a>   <span class="keyword">virtual</span> <a class="code" href="classMultiViewComponent.html#a870ef4576100cfe5ffd92b6a00801545">~MultiViewComponent</a>() {};
-<a name="l00116"></a>00116 
-<a name="l00117"></a>00117   <span class="keywordtype">void</span> <a class="code" href="classMultiViewComponent.html#a76a1dbeeb01dc82d7587d0584f24d911">recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*);
+<a name="l00114"></a>00114   <a class="code" href="classGateComponent.html#a17f10ae8bd9edfead7c2ff67d99912cc">GateComponent</a>();
+<a name="l00115"></a>00115   QString <a class="code" href="classGateComponent.html#ab9e52df386cbbb8f9d98dbd664a81fd3">netlist</a>();
+<a name="l00116"></a>00116   QString <a class="code" href="classGateComponent.html#a1ae78d3d0d2d9dd2832b011838eaad13">vhdlCode</a>(<span class="keywordtype">int</span>);
+<a name="l00117"></a>00117   QString <a class="code" href="classGateComponent.html#a42773b8ddad1cda42cbf56a7378dce63">verilogCode</a>(<span class="keywordtype">int</span>);
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119 <span class="keyword">protected</span>:
-<a name="l00120"></a><a class="code" href="classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26">00120</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classMultiViewComponent.html#ac5d22a79be3665cab34dd93db5a96c26">createSymbol</a>() {};
+<a name="l00120"></a>00120   <span class="keywordtype">void</span> <a class="code" href="classGateComponent.html#ab713640345556f1e4b2264ea6e5875f3">createSymbol</a>();
 <a name="l00121"></a>00121 };
 <a name="l00122"></a>00122 
-<a name="l00123"></a>00123 
-<a name="l00124"></a><a class="code" href="classGateComponent.html">00124</a> <span class="keyword">class </span><a class="code" href="classGateComponent.html">GateComponent</a> : <span class="keyword">public</span> <a class="code" href="classMultiViewComponent.html">MultiViewComponent</a> {
-<a name="l00125"></a>00125 <span class="keyword">public</span>:
-<a name="l00126"></a>00126   <a class="code" href="classGateComponent.html#a17f10ae8bd9edfead7c2ff67d99912cc">GateComponent</a>();
-<a name="l00127"></a>00127   QString <a class="code" href="classGateComponent.html#ab9e52df386cbbb8f9d98dbd664a81fd3">netlist</a>();
-<a name="l00128"></a>00128   QString <a class="code" href="classGateComponent.html#ad0b2cdb88d07490a1a2e7fecd81ef045">spice_netlist</a>(<span class="keywordtype">bool</span>);
-<a name="l00129"></a>00129   QString <a class="code" href="classGateComponent.html#a1ae78d3d0d2d9dd2832b011838eaad13">vhdlCode</a>(<span class="keywordtype">int</span>);
-<a name="l00130"></a>00130   QString <a class="code" href="classGateComponent.html#a42773b8ddad1cda42cbf56a7378dce63">verilogCode</a>(<span class="keywordtype">int</span>);
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="keyword">protected</span>:
-<a name="l00133"></a>00133   <span class="keywordtype">void</span> <a class="code" href="classGateComponent.html#ab713640345556f1e4b2264ea6e5875f3">createSymbol</a>();
-<a name="l00134"></a>00134 };
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136 <span class="comment">// prototype of independent function</span>
-<a name="l00137"></a>00137 <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="component_8cpp.html#aa057fe262034cae6951442febc40ef78">getComponentFromName</a>(QString&amp; <a class="code" href="structLine.html">Line</a>, <a class="code" href="classSchematic.html">Schematic</a>* p=NULL);
-<a name="l00138"></a>00138 
-<a name="l00139"></a>00139 <span class="preprocessor">#endif</span>
+<a name="l00123"></a>00123 <span class="comment">// prototype of independent function</span>
+<a name="l00124"></a>00124 <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="component_8cpp.html#aa057fe262034cae6951442febc40ef78">getComponentFromName</a>(QString&amp; <a class="code" href="structLine.html">Line</a>, <a class="code" href="classSchematic.html">Schematic</a>* p=NULL);
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -238,7 +225,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 19 2015 12:20:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 15:51:02 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -10,8 +10,6 @@ var searchData=
   ['matchdialog_2eh',['matchdialog.h',['../matchdialog_8h.html',1,'']]],
   ['mesfet_2ecpp',['MESFET.cpp',['../MESFET_8cpp.html',1,'']]],
   ['mesfet_2eh',['MESFET.h',['../MESFET_8h.html',1,'']]],
-  ['mesfet_5fspice_2ecpp',['MESFET_SPICE.cpp',['../MESFET__SPICE_8cpp.html',1,'']]],
-  ['mesfet_5fspice_2eh',['MESFET_SPICE.h',['../MESFET__SPICE_8h.html',1,'']]],
   ['messagedock_2ecpp',['messagedock.cpp',['../messagedock_8cpp.html',1,'']]],
   ['messagedock_2eh',['messagedock.h',['../messagedock_8h.html',1,'']]],
   ['misc_2ecpp',['misc.cpp',['../misc_8cpp.html',1,'']]],

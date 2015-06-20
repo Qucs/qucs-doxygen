@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node9" href="$classMOSFET.html" title="{MOSFET\n||+ MOSFET()\l+ ~MOSFET()\l+ newOne()\l+ info()\l+ info_p()\l+ info_depl()\l# createSymbol()\l# netlist()\l# spice_netlist()\l}" alt="" coords="5,1339,125,1563"/>
-<area shape="rect" id="node11" href="$classMOSFET__sub.html" title="{MOSFET_sub\n||+ MOSFET_sub()\l+ ~MOSFET_sub()\l+ newOne()\l+ info()\l+ info_p()\l+ info_depl()\l# createSymbol()\l# spice_netlist()\l}" alt="" coords="149,1347,283,1554"/>
-<area shape="rect" id="node2" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="53,1001,227,1138"/>
-<area shape="rect" id="node4" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="25,347,255,952"/>
+<area shape="rect" id="node9" href="$classMOSFET.html" title="{MOSFET\n||+ MOSFET()\l+ ~MOSFET()\l+ newOne()\l+ info()\l+ info_p()\l+ info_depl()\l# createSymbol()\l# netlist()\l}" alt="" coords="5,1305,125,1511"/>
+<area shape="rect" id="node11" href="$classMOSFET__sub.html" title="{MOSFET_sub\n||+ MOSFET_sub()\l+ ~MOSFET_sub()\l+ newOne()\l+ info()\l+ info_p()\l+ info_depl()\l# createSymbol()\l}" alt="" coords="149,1313,283,1503"/>
+<area shape="rect" id="node2" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="53,966,227,1103"/>
+<area shape="rect" id="node4" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="25,347,255,917"/>
 <area shape="rect" id="node6" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="81,5,199,299"/>
 </map>
