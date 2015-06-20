@@ -549,21 +549,21 @@
 <a name="l00489"></a>00489 
 <a name="l00490"></a>00490 <span class="comment">// Destroys an element structure.</span>
 <a name="l00491"></a><a class="code" href="check__mdl_8cpp.html#a6e838db9b21a4e851abb250e7d94554a">00491</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#a6e838db9b21a4e851abb250e7d94554a">mdl_free_element</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__element__t.html">mdl_element_t</a> * e) {
-<a name="l00492"></a>00492   <span class="keywordflow">if</span> (e-&gt;<a class="code" href="structmdl__element__t.html#a2382fb7c3a2166a5ce1c79b6c397b72e">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#a2382fb7c3a2166a5ce1c79b6c397b72e">name</a>);
-<a name="l00493"></a>00493   <span class="keywordflow">if</span> (e-&gt;<a class="code" href="structmdl__element__t.html#a3dac3ff5f6e965e81fbe3f5bb017c291">value</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#a3dac3ff5f6e965e81fbe3f5bb017c291">value</a>);
-<a name="l00494"></a>00494   <span class="keywordflow">if</span> (e-&gt;<a class="code" href="structmdl__element__t.html#aadd33c8fc5f2e8f278a394eef8280236">attr</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#aadd33c8fc5f2e8f278a394eef8280236">attr</a>);
+<a name="l00492"></a>00492   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#a2382fb7c3a2166a5ce1c79b6c397b72e">name</a>);
+<a name="l00493"></a>00493   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#a3dac3ff5f6e965e81fbe3f5bb017c291">value</a>);
+<a name="l00494"></a>00494   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e-&gt;<a class="code" href="structmdl__element__t.html#aadd33c8fc5f2e8f278a394eef8280236">attr</a>);
 <a name="l00495"></a>00495   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (e);
 <a name="l00496"></a>00496 }
 <a name="l00497"></a>00497 
 <a name="l00498"></a>00498 <span class="comment">// Destroys a datasize structure.</span>
 <a name="l00499"></a><a class="code" href="check__mdl_8cpp.html#abe06fc085fd657c981d87557ce81e797">00499</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#abe06fc085fd657c981d87557ce81e797">mdl_free_datasize</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__datasize__t.html">mdl_datasize_t</a> * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
-<a name="l00500"></a>00500   <span class="keywordflow">if</span> (d-&gt;<a class="code" href="structmdl__datasize__t.html#abcb586db2a0f63ed1e8975bdc9323512">type</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__datasize__t.html#abcb586db2a0f63ed1e8975bdc9323512">type</a>);
+<a name="l00500"></a>00500   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__datasize__t.html#abcb586db2a0f63ed1e8975bdc9323512">type</a>);
 <a name="l00501"></a>00501   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d);
 <a name="l00502"></a>00502 }
 <a name="l00503"></a>00503 
 <a name="l00504"></a>00504 <span class="comment">// Destroys a hypertable structure.</span>
 <a name="l00505"></a><a class="code" href="check__mdl_8cpp.html#a0d6bf3c7c5185896406dc4d4959ef78b">00505</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#a0d6bf3c7c5185896406dc4d4959ef78b">mdl_free_hyptable</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__hyptable__t.html">mdl_hyptable_t</a> * <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>) {
-<a name="l00506"></a>00506   <span class="keywordflow">if</span> (h-&gt;<a class="code" href="structmdl__hyptable__t.html#ac34442c25e933e65b9a261d3b775f0c9">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structmdl__hyptable__t.html#ac34442c25e933e65b9a261d3b775f0c9">name</a>);
+<a name="l00506"></a>00506   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structmdl__hyptable__t.html#ac34442c25e933e65b9a261d3b775f0c9">name</a>);
 <a name="l00507"></a>00507   <span class="keyword">struct </span><a class="code" href="structmdl__element__t.html">mdl_element_t</a> * e, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00508"></a>00508   <span class="keywordflow">for</span> (e = h-&gt;<a class="code" href="structmdl__hyptable__t.html#a5033f001af97a39b2150d3ab9c15dfc8">data</a>; e != NULL; e = next) {
 <a name="l00509"></a>00509     next = e-&gt;<a class="code" href="structmdl__element__t.html#a16996084e55aeedc2336f51f9cc24d01">next</a>;
@@ -574,7 +574,7 @@
 <a name="l00514"></a>00514 
 <a name="l00515"></a>00515 <span class="comment">// Destroys a table structure.</span>
 <a name="l00516"></a><a class="code" href="check__mdl_8cpp.html#aaeb8fb9270599cfa38b319ee561a4ef8">00516</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#aaeb8fb9270599cfa38b319ee561a4ef8">mdl_free_table</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__table__t.html">mdl_table_t</a> * <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>) {
-<a name="l00517"></a>00517   <span class="keywordflow">if</span> (t-&gt;<a class="code" href="structmdl__table__t.html#a3e9a7027d4d37f1eb8b19e05f2721a03">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (t-&gt;<a class="code" href="structmdl__table__t.html#a3e9a7027d4d37f1eb8b19e05f2721a03">name</a>);
+<a name="l00517"></a>00517   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (t-&gt;<a class="code" href="structmdl__table__t.html#a3e9a7027d4d37f1eb8b19e05f2721a03">name</a>);
 <a name="l00518"></a>00518   <span class="keyword">struct </span><a class="code" href="structmdl__element__t.html">mdl_element_t</a> * e, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00519"></a>00519   <span class="keywordflow">for</span> (e = t-&gt;<a class="code" href="structmdl__table__t.html#a22d169a938b445affb001a4c2d30107b">data</a>; e != NULL; e = next) {
 <a name="l00520"></a>00520     next = e-&gt;<a class="code" href="structmdl__element__t.html#a16996084e55aeedc2336f51f9cc24d01">next</a>;
@@ -585,13 +585,13 @@
 <a name="l00525"></a>00525 
 <a name="l00526"></a>00526 <span class="comment">// Destroys a dataset structure.</span>
 <a name="l00527"></a><a class="code" href="check__mdl_8cpp.html#abc58b56df8815def8ae01d60ed964795">00527</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#abc58b56df8815def8ae01d60ed964795">mdl_free_dataset</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__dataset__t.html">mdl_dataset_t</a> * <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>) {
-<a name="l00528"></a>00528   <span class="keywordflow">if</span> (d-&gt;<a class="code" href="structmdl__dataset__t.html#a695865d7280651c6ea7f6a16892c9a89">type1</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__dataset__t.html#a695865d7280651c6ea7f6a16892c9a89">type1</a>);
+<a name="l00528"></a>00528   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__dataset__t.html#a695865d7280651c6ea7f6a16892c9a89">type1</a>);
 <a name="l00529"></a>00529   <span class="keyword">struct </span><a class="code" href="structmdl__point__t.html">mdl_point_t</a> * p, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00530"></a>00530   <span class="keywordflow">for</span> (p = d-&gt;<a class="code" href="structmdl__dataset__t.html#ae5fd0a05cb662fad611009e755cb50d7">data1</a>; p != NULL; p = next) {
 <a name="l00531"></a>00531     next = p-&gt;<a class="code" href="structmdl__point__t.html#af7778be62b2bc0b98e7cbc750e2f0538">next</a>;
 <a name="l00532"></a>00532     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (p);
 <a name="l00533"></a>00533   }
-<a name="l00534"></a>00534   <span class="keywordflow">if</span> (d-&gt;<a class="code" href="structmdl__dataset__t.html#adbf92d47ff21bbbfff1a9a131873e8e5">type2</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__dataset__t.html#adbf92d47ff21bbbfff1a9a131873e8e5">type2</a>);
+<a name="l00534"></a>00534   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (d-&gt;<a class="code" href="structmdl__dataset__t.html#adbf92d47ff21bbbfff1a9a131873e8e5">type2</a>);
 <a name="l00535"></a>00535   <span class="keywordflow">for</span> (p = d-&gt;<a class="code" href="structmdl__dataset__t.html#a55ed3b184bb063317b1c094c4fec940d">data2</a>; p != NULL; p = next) {
 <a name="l00536"></a>00536     next = p-&gt;<a class="code" href="structmdl__point__t.html#af7778be62b2bc0b98e7cbc750e2f0538">next</a>;
 <a name="l00537"></a>00537     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (p);
@@ -631,8 +631,8 @@
 <a name="l00571"></a>00571 
 <a name="l00572"></a>00572 <span class="comment">// Destroys a link structure.</span>
 <a name="l00573"></a><a class="code" href="check__mdl_8cpp.html#a0617e80199a39521e054cf602d2d2ca2">00573</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__mdl_8cpp.html#a0617e80199a39521e054cf602d2d2ca2">mdl_free_link</a> (<span class="keyword">struct</span> <a class="code" href="structmdl__link__t.html">mdl_link_t</a> * l) {
-<a name="l00574"></a>00574   <span class="keywordflow">if</span> (l-&gt;<a class="code" href="structmdl__link__t.html#a6b6ea6a7e5eec0bbacfde9ed18ec1130">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (l-&gt;<a class="code" href="structmdl__link__t.html#a6b6ea6a7e5eec0bbacfde9ed18ec1130">name</a>);
-<a name="l00575"></a>00575   <span class="keywordflow">if</span> (l-&gt;<a class="code" href="structmdl__link__t.html#a226cbdf42db945471e753d027da1456f">type</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (l-&gt;<a class="code" href="structmdl__link__t.html#a226cbdf42db945471e753d027da1456f">type</a>);
+<a name="l00574"></a>00574   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (l-&gt;<a class="code" href="structmdl__link__t.html#a6b6ea6a7e5eec0bbacfde9ed18ec1130">name</a>);
+<a name="l00575"></a>00575   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (l-&gt;<a class="code" href="structmdl__link__t.html#a226cbdf42db945471e753d027da1456f">type</a>);
 <a name="l00576"></a>00576   <span class="keyword">struct </span><a class="code" href="structmdl__lcontent__t.html">mdl_lcontent_t</a> * <a class="code" href="parse__netlist_8y.html#a519cf159c27abd2374c9f649b9e9946d">c</a>, * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00577"></a>00577   <span class="keywordflow">for</span> (c = l-&gt;<a class="code" href="structmdl__link__t.html#a27761c877436994942e5004a7b2104bc">content</a>; c != NULL; c = next) {
 <a name="l00578"></a>00578     next = c-&gt;<a class="code" href="structmdl__lcontent__t.html#a177b5878f5245bdbbb034dbded1f4bf4">next</a>;
@@ -645,8 +645,8 @@
 <a name="l00585"></a>00585   <span class="keyword">struct </span><a class="code" href="structmdl__sync__t.html">mdl_sync_t</a> * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00586"></a>00586   <span class="keywordflow">for</span> (; s != NULL; s = <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>) {
 <a name="l00587"></a>00587     next = s-&gt;<a class="code" href="structmdl__sync__t.html#aea98c8b7beb9ef9e67a9f70ee37e0adf">next</a>;
-<a name="l00588"></a>00588     <span class="keywordflow">if</span> (s-&gt;<a class="code" href="structmdl__sync__t.html#ac5ac24eab428e2cb72c439b8855bca5f">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (s-&gt;<a class="code" href="structmdl__sync__t.html#ac5ac24eab428e2cb72c439b8855bca5f">name</a>);
-<a name="l00589"></a>00589     <span class="keywordflow">if</span> (s-&gt;<a class="code" href="structmdl__sync__t.html#aa2e41010a336b1c65ecc0db32c4b4b58">master</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (s-&gt;<a class="code" href="structmdl__sync__t.html#aa2e41010a336b1c65ecc0db32c4b4b58">master</a>);
+<a name="l00588"></a>00588     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (s-&gt;<a class="code" href="structmdl__sync__t.html#ac5ac24eab428e2cb72c439b8855bca5f">name</a>);
+<a name="l00589"></a>00589     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (s-&gt;<a class="code" href="structmdl__sync__t.html#aa2e41010a336b1c65ecc0db32c4b4b58">master</a>);
 <a name="l00590"></a>00590     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (s);
 <a name="l00591"></a>00591   }
 <a name="l00592"></a>00592 }
@@ -763,7 +763,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:39 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

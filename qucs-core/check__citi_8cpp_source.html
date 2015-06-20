@@ -212,9 +212,9 @@
 <a name="l00152"></a>00152     <span class="keyword">struct </span><a class="code" href="structciti__header__t.html">citi_header_t</a> * <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>, * hn;
 <a name="l00153"></a>00153     <span class="comment">/* go through each header */</span>
 <a name="l00154"></a>00154     <span class="keywordflow">for</span> (h = p-&gt;<a class="code" href="structciti__package__t.html#a44b164bcc1bdce41889252feb1bf1077">head</a>; h != NULL; h = hn) {
-<a name="l00155"></a>00155       <span class="keywordflow">if</span> (h-&gt;<a class="code" href="structciti__header__t.html#a1e1d2cb9186c0c314af82ac832cdc8e5">package</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a1e1d2cb9186c0c314af82ac832cdc8e5">package</a>);
-<a name="l00156"></a>00156       <span class="keywordflow">if</span> (h-&gt;<a class="code" href="structciti__header__t.html#a5d210838ad4f01335e4962403dcf6c55">var</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a5d210838ad4f01335e4962403dcf6c55">var</a>);
-<a name="l00157"></a>00157       <span class="keywordflow">if</span> (h-&gt;<a class="code" href="structciti__header__t.html#a5742a253503d6efc503e1febf35e88e6">type</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a5742a253503d6efc503e1febf35e88e6">type</a>);
+<a name="l00155"></a>00155       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a1e1d2cb9186c0c314af82ac832cdc8e5">package</a>);
+<a name="l00156"></a>00156       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a5d210838ad4f01335e4962403dcf6c55">var</a>);
+<a name="l00157"></a>00157       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h-&gt;<a class="code" href="structciti__header__t.html#a5742a253503d6efc503e1febf35e88e6">type</a>);
 <a name="l00158"></a>00158       hn = h-&gt;<a class="code" href="structciti__header__t.html#a9d495f64a6fefcab8626180ca099916a">next</a>;
 <a name="l00159"></a>00159       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (h);
 <a name="l00160"></a>00160     }
@@ -349,7 +349,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:39 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

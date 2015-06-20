@@ -600,7 +600,7 @@
 <a name="l00540"></a>00540       vnext = vv-&gt;<a class="code" href="structvcd__vardef.html#a9818f32952133f7568922bae4363ec74">next</a>;
 <a name="l00541"></a>00541       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vv-&gt;<a class="code" href="structvcd__vardef.html#afff27b365785c26c6c301da130960562">code</a>);
 <a name="l00542"></a>00542       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vv-&gt;<a class="code" href="structvcd__vardef.html#a17949db6b0b7fd97b0af4609746d6639">ident</a>);
-<a name="l00543"></a>00543       <span class="keywordflow">if</span> (vv-&gt;<a class="code" href="structvcd__vardef.html#a2b71c64787b35eacd82c9a0f12e5ac87">range</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vv-&gt;<a class="code" href="structvcd__vardef.html#a2b71c64787b35eacd82c9a0f12e5ac87">range</a>);
+<a name="l00543"></a>00543       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vv-&gt;<a class="code" href="structvcd__vardef.html#a2b71c64787b35eacd82c9a0f12e5ac87">range</a>);
 <a name="l00544"></a>00544       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vv);
 <a name="l00545"></a>00545     }
 <a name="l00546"></a>00546     <a class="code" href="check__vcd_8cpp.html#a9c112daaf57a70f923ba7e2b962e5a79">vcd_free_scope</a> (vs-&gt;<a class="code" href="structvcd__scope.html#a09f642ddc382c788ec6b7d77f482c30f">scopes</a>);
@@ -639,7 +639,7 @@
 <a name="l00579"></a>00579   <span class="keywordflow">for</span> (ds = root; ds; ds = snext) {
 <a name="l00580"></a>00580     snext = ds-&gt;<a class="code" href="structdataset__variable.html#adeee07541471425f53b62ebed31614cc">next</a>;
 <a name="l00581"></a>00581     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (ds-&gt;<a class="code" href="structdataset__variable.html#a0d6ce50f21ad626c8d39335284f13067">ident</a>);
-<a name="l00582"></a>00582     <span class="keywordflow">if</span> (ds-&gt;<a class="code" href="structdataset__variable.html#a48a34f14ee60670200bfb79d20c14636">dependencies</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (ds-&gt;<a class="code" href="structdataset__variable.html#a48a34f14ee60670200bfb79d20c14636">dependencies</a>);
+<a name="l00582"></a>00582     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (ds-&gt;<a class="code" href="structdataset__variable.html#a48a34f14ee60670200bfb79d20c14636">dependencies</a>);
 <a name="l00583"></a>00583     <span class="keyword">struct </span><a class="code" href="structdataset__value.html">dataset_value</a> * dv, * dnext;
 <a name="l00584"></a>00584     <span class="keywordflow">for</span> (dv = ds-&gt;<a class="code" href="structdataset__variable.html#a24d8faf0f587d6acb613bd72df3bf6f1">values</a>; dv; dv = dnext) {
 <a name="l00585"></a>00585       dnext = dv-&gt;<a class="code" href="structdataset__value.html#a2f3ee3b389145aada214e4e5861506e6">next</a>;
@@ -669,7 +669,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -1458,7 +1458,7 @@
 <a name="l01398"></a>01398 {
 <a name="l01399"></a>01399     <span class="keywordflow">for</span> (<span class="keyword">struct</span> <a class="code" href="structnode__t.html">node_t</a> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = sub-&gt;<a class="code" href="structdefinition__t.html#a2e38921eeafd06f6329859b847db874c">nodes</a>; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> != NULL; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;next)
 <a name="l01400"></a>01400     {
-<a name="l01401"></a>01401         <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;xlate) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;xlate);
+<a name="l01401"></a>01401         <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;xlate);
 <a name="l01402"></a>01402         <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;xlate = NULL;
 <a name="l01403"></a>01403         <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>-&gt;xlatenr = 0;
 <a name="l01404"></a>01404     }
@@ -1962,9 +1962,9 @@
 <a name="l01902"></a>01902 <span class="comment">/* The following function free()&#39;s the given value. */</span>
 <a name="l01903"></a><a class="code" href="check__netlist_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">01903</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__netlist_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">netlist_free_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>)
 <a name="l01904"></a>01904 {
-<a name="l01905"></a>01905     <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
+<a name="l01905"></a>01905     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
 <a name="l01906"></a>01906     <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>)  <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>);
-<a name="l01907"></a>01907     <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>);
+<a name="l01907"></a>01907     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>);
 <a name="l01908"></a>01908     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value);
 <a name="l01909"></a>01909 }
 <a name="l01910"></a>01910 
@@ -1991,7 +1991,7 @@
 <a name="l01931"></a>01931 {
 <a name="l01932"></a>01932     <a class="code" href="check__netlist_8cpp.html#ac6b5829570a8c862ff68dba60ec6dedb">netlist_free_nodes</a> (def-&gt;<a class="code" href="structdefinition__t.html#a2e38921eeafd06f6329859b847db874c">nodes</a>);
 <a name="l01933"></a>01933     <span class="keywordflow">if</span> (!def-&gt;<a class="code" href="structdefinition__t.html#aa915ae9e6589a8da6ddbee95cc7306bb">copy</a>) <a class="code" href="check__netlist_8cpp.html#a88e9bcdb94ab2a4b32aa97ae29c0bcc3">netlist_free_pairs</a> (def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>);
-<a name="l01934"></a>01934     <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>);
+<a name="l01934"></a>01934     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>);
 <a name="l01935"></a>01935     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>);
 <a name="l01936"></a>01936     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a594dd31d0446b3364e5875eaced950eb">instance</a>);
 <a name="l01937"></a>01937     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def);
@@ -2413,7 +2413,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:39 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

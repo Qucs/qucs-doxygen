@@ -155,7 +155,7 @@
 <a name="l00095"></a>00095 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
 <a name="l00096"></a><a class="code" href="classqucs_1_1hash.html#ae5ae7e8674182b778ef62e76145bc6c1">00096</a> qucs::hash&lt;type_t&gt;::~hash () {
 <a name="l00097"></a>00097   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> &lt; buckets; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>++) {
-<a name="l00098"></a>00098     <span class="keywordflow">if</span> (table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>]) <span class="keyword">delete</span> table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>];
+<a name="l00098"></a>00098     <span class="keyword">delete</span> table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>];
 <a name="l00099"></a>00099   }
 <a name="l00100"></a>00100   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (table);
 <a name="l00101"></a>00101 }
@@ -165,7 +165,7 @@
 <a name="l00105"></a>00105 <span class="keyword">template</span> &lt;<span class="keyword">class</span> type_t&gt;
 <a name="l00106"></a><a class="code" href="classqucs_1_1hash.html#aa8931a154454e01b80da100909f75533">00106</a> <span class="keywordtype">void</span> qucs::hash&lt;type_t&gt;::clear (<span class="keywordtype">void</span>) {
 <a name="l00107"></a>00107   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 0; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> &lt; buckets; <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>++) {
-<a name="l00108"></a>00108     <span class="keywordflow">if</span> (table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>]) <span class="keyword">delete</span> table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>];
+<a name="l00108"></a>00108     <span class="keyword">delete</span> table[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>];
 <a name="l00109"></a>00109   }
 <a name="l00110"></a>00110   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (table);
 <a name="l00111"></a>00111 
@@ -474,7 +474,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:46 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

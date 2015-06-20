@@ -144,41 +144,41 @@
 <a name="l00084"></a>00084 <span class="comment">// Destructor deletes the hbsolver class object.</span>
 <a name="l00085"></a><a class="code" href="structqucs_1_1hbsolver.html#a1971804d7dea0056d274363ad6cdad06">00085</a> hbsolver::~hbsolver () {
 <a name="l00086"></a>00086   <span class="comment">// delete nodelists</span>
-<a name="l00087"></a>00087   <span class="keywordflow">if</span> (nlnodes) <span class="keyword">delete</span> nlnodes;
-<a name="l00088"></a>00088   <span class="keywordflow">if</span> (lnnodes) <span class="keyword">delete</span> lnnodes;
-<a name="l00089"></a>00089   <span class="keywordflow">if</span> (banodes) <span class="keyword">delete</span> banodes;
-<a name="l00090"></a>00090   <span class="keywordflow">if</span> (nanodes) <span class="keyword">delete</span> nanodes;
+<a name="l00087"></a>00087   <span class="keyword">delete</span> nlnodes;
+<a name="l00088"></a>00088   <span class="keyword">delete</span> lnnodes;
+<a name="l00089"></a>00089   <span class="keyword">delete</span> banodes;
+<a name="l00090"></a>00090   <span class="keyword">delete</span> nanodes;
 <a name="l00091"></a>00091 
 <a name="l00092"></a>00092   <span class="comment">// delete temporary matrices</span>
-<a name="l00093"></a>00093   <span class="keywordflow">if</span> (<a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a>) <span class="keyword">delete</span> <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a>;
-<a name="l00094"></a>00094   <span class="keywordflow">if</span> (Z) <span class="keyword">delete</span> Z;
-<a name="l00095"></a>00095   <span class="keywordflow">if</span> (Y) <span class="keyword">delete</span> Y;
+<a name="l00093"></a>00093   <span class="keyword">delete</span> <a class="code" href="eqndefined_8cpp.html#a70993d52766e31cb0157958a18aa499a">A</a>;
+<a name="l00094"></a>00094   <span class="keyword">delete</span> Z;
+<a name="l00095"></a>00095   <span class="keyword">delete</span> Y;
 <a name="l00096"></a>00096 
 <a name="l00097"></a>00097   <span class="comment">// delete matrices</span>
-<a name="l00098"></a>00098   <span class="keywordflow">if</span> (NA) <span class="keyword">delete</span> NA;
-<a name="l00099"></a>00099   <span class="keywordflow">if</span> (YV) <span class="keyword">delete</span> YV;
-<a name="l00100"></a>00100   <span class="keywordflow">if</span> (JQ) <span class="keyword">delete</span> JQ;
-<a name="l00101"></a>00101   <span class="keywordflow">if</span> (JG) <span class="keyword">delete</span> JG;
-<a name="l00102"></a>00102   <span class="keywordflow">if</span> (JF) <span class="keyword">delete</span> JF;
+<a name="l00098"></a>00098   <span class="keyword">delete</span> NA;
+<a name="l00099"></a>00099   <span class="keyword">delete</span> YV;
+<a name="l00100"></a>00100   <span class="keyword">delete</span> JQ;
+<a name="l00101"></a>00101   <span class="keyword">delete</span> JG;
+<a name="l00102"></a>00102   <span class="keyword">delete</span> JF;
 <a name="l00103"></a>00103 
 <a name="l00104"></a>00104   <span class="comment">// delete vectors</span>
-<a name="l00105"></a>00105   <span class="keywordflow">if</span> (IC) <span class="keyword">delete</span> IC;
-<a name="l00106"></a>00106   <span class="keywordflow">if</span> (IS) <span class="keyword">delete</span> IS;
-<a name="l00107"></a>00107   <span class="keywordflow">if</span> (FV) <span class="keyword">delete</span> FV;
-<a name="l00108"></a>00108   <span class="keywordflow">if</span> (IL) <span class="keyword">delete</span> IL;
-<a name="l00109"></a>00109   <span class="keywordflow">if</span> (IN) <span class="keyword">delete</span> IN;
-<a name="l00110"></a>00110   <span class="keywordflow">if</span> (IG) <span class="keyword">delete</span> IG;
-<a name="l00111"></a>00111   <span class="keywordflow">if</span> (FQ) <span class="keyword">delete</span> FQ;
-<a name="l00112"></a>00112   <span class="keywordflow">if</span> (VS) <span class="keyword">delete</span> VS;
-<a name="l00113"></a>00113   <span class="keywordflow">if</span> (VP) <span class="keyword">delete</span> VP;
-<a name="l00114"></a>00114   <span class="keywordflow">if</span> (vs) <span class="keyword">delete</span> vs;
-<a name="l00115"></a>00115   <span class="keywordflow">if</span> (OM) <span class="keyword">delete</span> OM;
-<a name="l00116"></a>00116   <span class="keywordflow">if</span> (IR) <span class="keyword">delete</span> IR;
-<a name="l00117"></a>00117   <span class="keywordflow">if</span> (QR) <span class="keyword">delete</span> QR;
-<a name="l00118"></a>00118   <span class="keywordflow">if</span> (RH) <span class="keyword">delete</span> RH;
+<a name="l00105"></a>00105   <span class="keyword">delete</span> IC;
+<a name="l00106"></a>00106   <span class="keyword">delete</span> IS;
+<a name="l00107"></a>00107   <span class="keyword">delete</span> FV;
+<a name="l00108"></a>00108   <span class="keyword">delete</span> IL;
+<a name="l00109"></a>00109   <span class="keyword">delete</span> IN;
+<a name="l00110"></a>00110   <span class="keyword">delete</span> IG;
+<a name="l00111"></a>00111   <span class="keyword">delete</span> FQ;
+<a name="l00112"></a>00112   <span class="keyword">delete</span> VS;
+<a name="l00113"></a>00113   <span class="keyword">delete</span> VP;
+<a name="l00114"></a>00114   <span class="keyword">delete</span> vs;
+<a name="l00115"></a>00115   <span class="keyword">delete</span> OM;
+<a name="l00116"></a>00116   <span class="keyword">delete</span> IR;
+<a name="l00117"></a>00117   <span class="keyword">delete</span> QR;
+<a name="l00118"></a>00118   <span class="keyword">delete</span> RH;
 <a name="l00119"></a>00119 
-<a name="l00120"></a>00120   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) <span class="keyword">delete</span> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;
-<a name="l00121"></a>00121   <span class="keywordflow">if</span> (ndfreqs) <span class="keyword">delete</span>[] ndfreqs;
+<a name="l00120"></a>00120   <span class="keyword">delete</span> <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;
+<a name="l00121"></a>00121   <span class="keyword">delete</span>[] ndfreqs;
 <a name="l00122"></a>00122 }
 <a name="l00123"></a>00123 
 <a name="l00124"></a>00124 <span class="comment">/* The copy constructor creates a new instance of the hbsolver class</span>
@@ -440,7 +440,7 @@
 <a name="l00380"></a>00380   posfreqs.clear ();
 <a name="l00381"></a>00381   rfreqs.clear ();
 <a name="l00382"></a>00382   dfreqs.clear ();
-<a name="l00383"></a>00383   <span class="keywordflow">if</span> (ndfreqs) <span class="keyword">delete</span>[] ndfreqs;
+<a name="l00383"></a>00383   <span class="keyword">delete</span>[] ndfreqs;
 <a name="l00384"></a>00384 
 <a name="l00385"></a>00385   <span class="comment">// obtain order</span>
 <a name="l00386"></a>00386   <span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = calcOrder (getPropertyInteger (<span class="stringliteral">&quot;n&quot;</span>));
@@ -1506,7 +1506,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:46 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

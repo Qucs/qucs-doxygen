@@ -163,17 +163,17 @@
 <a name="l00103"></a>00103     }
 <a name="l00104"></a>00104     <span class="comment">// free header</span>
 <a name="l00105"></a>00105     <span class="keywordflow">if</span> (hdr) {
-<a name="l00106"></a>00106       <span class="keywordflow">if</span> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a6bc4dc15ce26af53bf5ba8e15f322956">funit</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a6bc4dc15ce26af53bf5ba8e15f322956">funit</a>);
-<a name="l00107"></a>00107       <span class="keywordflow">if</span> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a5a8aa298af4c144e32d3ad38faa44e97">d_UNT</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a5a8aa298af4c144e32d3ad38faa44e97">d_UNT</a>);
-<a name="l00108"></a>00108       <span class="keywordflow">if</span> (hdr-&gt;<a class="code" href="structzvr__header__t.html#ad201361ca5c1460302cfe523eea25413">d_FMT</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#ad201361ca5c1460302cfe523eea25413">d_FMT</a>);
-<a name="l00109"></a>00109       <span class="keywordflow">if</span> (hdr-&gt;<a class="code" href="structzvr__header__t.html#aaf17577b32b26cb3ec92c02e0277877e">d_TYP</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#aaf17577b32b26cb3ec92c02e0277877e">d_TYP</a>);
+<a name="l00106"></a>00106       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a6bc4dc15ce26af53bf5ba8e15f322956">funit</a>);
+<a name="l00107"></a>00107       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#a5a8aa298af4c144e32d3ad38faa44e97">d_UNT</a>);
+<a name="l00108"></a>00108       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#ad201361ca5c1460302cfe523eea25413">d_FMT</a>);
+<a name="l00109"></a>00109       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr-&gt;<a class="code" href="structzvr__header__t.html#aaf17577b32b26cb3ec92c02e0277877e">d_TYP</a>);
 <a name="l00110"></a>00110       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (hdr);
 <a name="l00111"></a>00111     }
 <a name="l00112"></a>00112     <span class="comment">// free data vector</span>
 <a name="l00113"></a>00113     <span class="keywordflow">if</span> (vec) {
-<a name="l00114"></a>00114       <span class="keywordflow">if</span> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a0cd0eb422380df48bfc4b569a22b9b82">nf</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a0cd0eb422380df48bfc4b569a22b9b82">nf</a>);
-<a name="l00115"></a>00115       <span class="keywordflow">if</span> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a1cb1391b44ba60f643c5f53d3d7c0c7e">n1</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a1cb1391b44ba60f643c5f53d3d7c0c7e">n1</a>);
-<a name="l00116"></a>00116       <span class="keywordflow">if</span> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a38d15f3a1cd5ab84d9d6e0a98c149ec8">n2</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a38d15f3a1cd5ab84d9d6e0a98c149ec8">n2</a>);
+<a name="l00114"></a>00114       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a0cd0eb422380df48bfc4b569a22b9b82">nf</a>);
+<a name="l00115"></a>00115       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a1cb1391b44ba60f643c5f53d3d7c0c7e">n1</a>);
+<a name="l00116"></a>00116       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec-&gt;<a class="code" href="structzvr__vector__t.html#a38d15f3a1cd5ab84d9d6e0a98c149ec8">n2</a>);
 <a name="l00117"></a>00117       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (vec);
 <a name="l00118"></a>00118     }
 <a name="l00119"></a>00119   }
@@ -333,7 +333,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:41 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

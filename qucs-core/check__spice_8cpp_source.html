@@ -600,7 +600,7 @@
 <a name="l00540"></a>00540                            <span class="keyword">const</span> <span class="keywordtype">char</span> * val) {
 <a name="l00541"></a>00541   <span class="keyword">struct </span><a class="code" href="structpair__t.html">pair_t</a> * prop = <a class="code" href="check__spice_8cpp.html#ac9a1f30780cb2ee6fd15d3f002a54ff1">spice_find_property</a> (def, key);
 <a name="l00542"></a>00542   <span class="keywordflow">if</span> (prop != NULL) {
-<a name="l00543"></a>00543     <span class="keywordflow">if</span> (prop-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (prop-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
+<a name="l00543"></a>00543     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (prop-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
 <a name="l00544"></a>00544     prop-&gt;<a class="code" href="structpair__t.html#a4971c332851244bac4916d04e6db3b7c">value</a>-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a> = strdup (val);
 <a name="l00545"></a>00545   }
 <a name="l00546"></a>00546   <span class="keywordflow">else</span> {
@@ -634,9 +634,9 @@
 <a name="l00574"></a>00574 
 <a name="l00575"></a>00575 <span class="comment">/* The following function free()&#39;s the given value. */</span>
 <a name="l00576"></a><a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">00576</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="check__spice_8cpp.html#a4a06b7d0f587ac3c728d0389e53d7513">netlist_free_value</a> (<span class="keyword">struct</span> <a class="code" href="structvalue__t.html">value_t</a> * <a class="code" href="parse__spice_8y.html#a3ee038386001fa5178eacfd04dcdb7a0">value</a>) {
-<a name="l00577"></a>00577   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
+<a name="l00577"></a>00577   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#ad442091764df35b6ff5dbfd7f5bd965b">ident</a>);
 <a name="l00578"></a>00578   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>)  <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a65816b15264dd82405c127899810d3d3">unit</a>);
-<a name="l00579"></a>00579   <span class="keywordflow">if</span> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>);
+<a name="l00579"></a>00579   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value-&gt;<a class="code" href="structvalue__t.html#a461a42371c5d4bfffbbddcbcaa1dace9">scale</a>);
 <a name="l00580"></a>00580   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (value);
 <a name="l00581"></a>00581 }
 <a name="l00582"></a>00582 
@@ -700,7 +700,7 @@
 <a name="l00640"></a>00640       p = <a class="code" href="check__spice_8cpp.html#ac293602936bc6688cec5a540330ad544">spice_generate_Model_pairs</a> (start-&gt;<a class="code" href="structvalue__t.html#a51b2a2d3d5919849306c784f6271492c">next</a>);
 <a name="l00641"></a>00641       def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a> = <a class="code" href="check__spice_8cpp.html#a69226c6b8479394bbe4b4be3733a383a">netlist_append_pairs</a> (def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>, p);
 <a name="l00642"></a>00642       <span class="comment">// adjust type of device</span>
-<a name="l00643"></a>00643       <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>);
+<a name="l00643"></a>00643       <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>);
 <a name="l00644"></a>00644 
 <a name="l00645"></a>00645       <span class="keywordtype">bool</span> hic = <span class="keyword">false</span>;
 <a name="l00646"></a>00646       <span class="comment">// check for HICUM transistors</span>
@@ -1233,8 +1233,8 @@
 <a name="l01173"></a>01173   <a class="code" href="check__spice_8cpp.html#ac6b5829570a8c862ff68dba60ec6dedb">netlist_free_nodes</a> (def-&gt;<a class="code" href="structdefinition__t.html#a2e38921eeafd06f6329859b847db874c">nodes</a>);
 <a name="l01174"></a>01174   <a class="code" href="check__spice_8cpp.html#a7fbc7848401b45077febc4c7b44d6c45">netlist_free_pairs</a> (def-&gt;<a class="code" href="structdefinition__t.html#af1c52c3c0e0d2e5764a992e28084ed99">pairs</a>);
 <a name="l01175"></a>01175   <a class="code" href="check__spice_8cpp.html#a0ff368d4dd6d78acf5b823567b37ae95">netlist_free_values</a> (def-&gt;<a class="code" href="structdefinition__t.html#a5c9c84c3b0e95cbce8dc1ca966dbdbd9">values</a>);
-<a name="l01176"></a>01176   <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>);
-<a name="l01177"></a>01177   <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#a9196c1f8601eaff93da260ebe04c8c3e">text</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a9196c1f8601eaff93da260ebe04c8c3e">text</a>);
+<a name="l01176"></a>01176   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a07921c58da758f35353821f646c9ebe4">subcircuit</a>);
+<a name="l01177"></a>01177   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a9196c1f8601eaff93da260ebe04c8c3e">text</a>);
 <a name="l01178"></a>01178   <span class="keywordflow">if</span> (def-&gt;<a class="code" href="structdefinition__t.html#adbac069b30fc5f0544f09e77e56fa26c">sub</a>) <a class="code" href="check__spice_8cpp.html#a1bb911b5da65658363873ec95b59a3e0">netlist_destroy_intern</a> (def-&gt;<a class="code" href="structdefinition__t.html#adbac069b30fc5f0544f09e77e56fa26c">sub</a>);
 <a name="l01179"></a>01179   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#adbc03f56abf1631614d1cc4946961300">type</a>);
 <a name="l01180"></a>01180   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (def-&gt;<a class="code" href="structdefinition__t.html#a594dd31d0446b3364e5875eaced950eb">instance</a>);
@@ -1261,7 +1261,7 @@
 <a name="l01201"></a>01201   definition_root = subcircuit_root = device_root = NULL;
 <a name="l01202"></a>01202   <a class="code" href="check__spice_8cpp.html#ac6b5829570a8c862ff68dba60ec6dedb">netlist_free_nodes</a> (<a class="code" href="check__spice_8cpp.html#a75a841802db182ef4a1443e1f566fc39">spice_nodes</a>);
 <a name="l01203"></a>01203   <a class="code" href="check__spice_8cpp.html#a75a841802db182ef4a1443e1f566fc39">spice_nodes</a> = NULL;
-<a name="l01204"></a>01204   <span class="keywordflow">if</span> (<a class="code" href="check__spice_8cpp.html#a9c7f54083834708c615650b57c9b7bb2">spice_title</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="check__spice_8cpp.html#a9c7f54083834708c615650b57c9b7bb2">spice_title</a>);
+<a name="l01204"></a>01204   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="check__spice_8cpp.html#a9c7f54083834708c615650b57c9b7bb2">spice_title</a>);
 <a name="l01205"></a>01205   <a class="code" href="check__spice_8cpp.html#a9c7f54083834708c615650b57c9b7bb2">spice_title</a> = NULL;
 <a name="l01206"></a>01206 }
 <a name="l01207"></a>01207 
@@ -3137,7 +3137,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

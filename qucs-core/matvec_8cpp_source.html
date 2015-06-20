@@ -147,13 +147,13 @@
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 <span class="comment">// Destructor deletes a matvec object.</span>
 <a name="l00089"></a><a class="code" href="classqucs_1_1matvec.html#ac028c1aafd8ce50d33cf013af25c8629">00089</a> matvec::~matvec () {
-<a name="l00090"></a>00090   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
-<a name="l00091"></a>00091   <span class="keywordflow">if</span> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>) <span class="keyword">delete</span>[] <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>;
+<a name="l00090"></a>00090   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
+<a name="l00091"></a>00091   <span class="keyword">delete</span>[] <a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>;
 <a name="l00092"></a>00092 }
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094 <span class="comment">// Sets the name of the matvec object.</span>
 <a name="l00095"></a><a class="code" href="classqucs_1_1matvec.html#ab933cf5e13092f81ad16a9ccae65e4b7">00095</a> <span class="keywordtype">void</span> matvec::setName (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l00096"></a>00096   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
+<a name="l00096"></a>00096   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
 <a name="l00097"></a>00097   <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = n ? strdup (n) : NULL;
 <a name="l00098"></a>00098 }
 <a name="l00099"></a>00099 
@@ -761,7 +761,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:46 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

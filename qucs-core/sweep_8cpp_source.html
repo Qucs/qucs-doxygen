@@ -119,8 +119,8 @@
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="comment">// Destructor deletes the sweep class object.</span>
 <a name="l00061"></a><a class="code" href="classqucs_1_1sweep.html#a2758cdcb9b7ab9bf85b5e2a6d304f9ea">00061</a> sweep::~sweep () {
-<a name="l00062"></a>00062   <span class="keywordflow">if</span> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>);
-<a name="l00063"></a>00063   <span class="keywordflow">if</span> (txt) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
+<a name="l00062"></a>00062   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>);
+<a name="l00063"></a>00063   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
 <a name="l00064"></a>00064 }
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066 <span class="comment">/* The copy constructor creates a new instance of the sweep class</span>
@@ -168,7 +168,7 @@
 <a name="l00108"></a>00108 
 <a name="l00109"></a>00109 <span class="comment">// The function creates a string representation of the sweep definition.</span>
 <a name="l00110"></a><a class="code" href="classqucs_1_1sweep.html#aca5c1b170053562a0610b83e8c93f0af">00110</a> <span class="keywordtype">char</span> * sweep::toString (<span class="keywordtype">void</span>) {
-<a name="l00111"></a>00111   <span class="keywordflow">if</span> (txt) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
+<a name="l00111"></a>00111   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
 <a name="l00112"></a>00112   <span class="keywordflow">if</span> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a> == NULL || <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> == 0) <span class="keywordflow">return</span> (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00113"></a>00113   <span class="keywordtype">int</span> len = 3 + <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> - 1;
 <a name="l00114"></a>00114   txt = (<span class="keywordtype">char</span> *) malloc (len);
@@ -306,7 +306,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

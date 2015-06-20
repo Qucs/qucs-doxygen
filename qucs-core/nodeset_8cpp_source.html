@@ -129,12 +129,12 @@
 <a name="l00069"></a>00069 
 <a name="l00070"></a>00070 <span class="comment">// Destructor deletes the node set object.</span>
 <a name="l00071"></a><a class="code" href="structqucs_1_1nodeset.html#a443eca3d89ebc73ee08ad36ca226a920">00071</a> nodeset::~nodeset () {
-<a name="l00072"></a>00072   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
+<a name="l00072"></a>00072   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
 <a name="l00073"></a>00073 }
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075 <span class="comment">// Sets the name of the node set.</span>
 <a name="l00076"></a><a class="code" href="structqucs_1_1nodeset.html#a66b36f329b4a73ae3a1200bb1e511f3d">00076</a> <span class="keywordtype">void</span> nodeset::setName (<span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l00077"></a>00077   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
+<a name="l00077"></a>00077   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a>);
 <a name="l00078"></a>00078   <a class="code" href="parse__mdl_8y.html#a9936388dcd0f5b4388f9863ec29f17e4">name</a> = n ? strdup (n) : NULL;
 <a name="l00079"></a>00079 }
 <a name="l00080"></a>00080 
@@ -166,7 +166,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

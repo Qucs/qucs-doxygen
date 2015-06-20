@@ -110,7 +110,7 @@
 <a name="l00050"></a>00050 
 <a name="l00051"></a>00051 <span class="comment">// Destructor for device state class instance.</span>
 <a name="l00052"></a><a class="code" href="classqucs_1_1devstates.html#a4ce2e458aea4656a00fb34df71a510a3">00052</a> devstates::~devstates () {
-<a name="l00053"></a>00053   <span class="keywordflow">if</span> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>);
+<a name="l00053"></a>00053   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>);
 <a name="l00054"></a>00054 }
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056 <span class="comment">/* Initializes the device state class instance containing the</span>
@@ -118,7 +118,7 @@
 <a name="l00058"></a><a class="code" href="classqucs_1_1devstates.html#ab32bb374db7ae5bcde1664b37072f2cd">00058</a> <span class="keywordtype">void</span> devstates::deviceStates (<span class="keywordtype">int</span> vars, <span class="keywordtype">int</span> stats) {
 <a name="l00059"></a>00059   nvars = vars;
 <a name="l00060"></a>00060   nstates = stats;
-<a name="l00061"></a>00061   <span class="keywordflow">if</span> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>);
+<a name="l00061"></a>00061   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>);
 <a name="l00062"></a>00062   <a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a> = (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> *) malloc (<span class="keyword">sizeof</span> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) * nvars * nstates);
 <a name="l00063"></a>00063   nstate = 0;
 <a name="l00064"></a>00064   pstate = <a class="code" href="classqucs_1_1states.html" title="template class for storing state variables.">states</a>;
@@ -165,7 +165,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:41 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -108,8 +108,8 @@
 <a name="l00048"></a>00048 
 <a name="l00049"></a>00049 <span class="comment">// Destructor deletes vfile object from memory.</span>
 <a name="l00050"></a><a class="code" href="structvfile.html#a074a35518f35aa64044e4a071120d0da">00050</a> <a class="code" href="structvfile.html#a074a35518f35aa64044e4a071120d0da">vfile::~vfile</a> () {
-<a name="l00051"></a>00051   <span class="keywordflow">if</span> (<a class="code" href="structvfile.html#a1a0e8e7387a1c7e7f691cb2d69f2a16f">data</a>) <span class="keyword">delete</span> <a class="code" href="structvfile.html#a1a0e8e7387a1c7e7f691cb2d69f2a16f">data</a>;
-<a name="l00052"></a>00052   <span class="keywordflow">if</span> (<a class="code" href="structvfile.html#a181a35127963c94fd7e50db448ff42a6">inter</a>) <span class="keyword">delete</span> <a class="code" href="structvfile.html#a181a35127963c94fd7e50db448ff42a6">inter</a>;
+<a name="l00051"></a>00051   <span class="keyword">delete</span> <a class="code" href="structvfile.html#a1a0e8e7387a1c7e7f691cb2d69f2a16f">data</a>;
+<a name="l00052"></a>00052   <span class="keyword">delete</span> <a class="code" href="structvfile.html#a181a35127963c94fd7e50db448ff42a6">inter</a>;
 <a name="l00053"></a>00053 }
 <a name="l00054"></a>00054 
 <a name="l00055"></a><a class="code" href="structvfile.html#a7b25013b1152071723d343ec05b0de4c">00055</a> <span class="keywordtype">void</span> <a class="code" href="structvfile.html#a7b25013b1152071723d343ec05b0de4c">vfile::prepare</a> (<span class="keywordtype">void</span>) {
@@ -206,7 +206,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

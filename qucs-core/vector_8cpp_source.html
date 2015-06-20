@@ -198,9 +198,9 @@
 <a name="l00138"></a>00138 
 <a name="l00139"></a>00139 <span class="comment">// Destructor deletes a vector object.</span>
 <a name="l00140"></a><a class="code" href="classqucs_1_1vector.html#aa7f9011ffa8679f30992392e8c2ef386">00140</a> vector::~vector () {
-<a name="l00141"></a>00141   <span class="keywordflow">if</span> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>);
-<a name="l00142"></a>00142   <span class="keywordflow">if</span> (dependencies) <span class="keyword">delete</span> dependencies;
-<a name="l00143"></a>00143   <span class="keywordflow">if</span> (origin) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (origin);
+<a name="l00141"></a>00141   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (<a class="code" href="parse__citi_8y.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">data</a>);
+<a name="l00142"></a>00142   <span class="keyword">delete</span> dependencies;
+<a name="l00143"></a>00143   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (origin);
 <a name="l00144"></a>00144 }
 <a name="l00145"></a>00145 
 <a name="l00146"></a>00146 <span class="comment">// Returns data dependencies.</span>
@@ -210,7 +210,7 @@
 <a name="l00150"></a>00150 
 <a name="l00151"></a>00151 <span class="comment">// Sets the data dependencies.</span>
 <a name="l00152"></a><a class="code" href="classqucs_1_1vector.html#a36536126e5e09e6821500ce437eca89e">00152</a> <span class="keywordtype">void</span> <a class="code" href="parse__dataset_8y.html#a507d4d9896bb97fb93033ba5d77f6c0f">vector::setDependencies</a> (<a class="code" href="classqucs_1_1strlist.html">strlist</a> * s) {
-<a name="l00153"></a>00153   <span class="keywordflow">if</span> (dependencies) <span class="keyword">delete</span> dependencies;
+<a name="l00153"></a>00153   <span class="keyword">delete</span> dependencies;
 <a name="l00154"></a>00154   dependencies = s;
 <a name="l00155"></a>00155 }
 <a name="l00156"></a>00156 
@@ -980,7 +980,7 @@
 <a name="l00920"></a>00920 
 <a name="l00921"></a>00921 <span class="comment">// Sets the origin (the analysis) of the vector.</span>
 <a name="l00922"></a><a class="code" href="classqucs_1_1vector.html#a1ab0bde9171fe955a882248bb83b3de7">00922</a> <span class="keywordtype">void</span> vector::setOrigin (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>) {
-<a name="l00923"></a>00923   <span class="keywordflow">if</span> (origin) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (origin);
+<a name="l00923"></a>00923   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (origin);
 <a name="l00924"></a>00924   origin = n ? strdup (n) : NULL;
 <a name="l00925"></a>00925 }
 <a name="l00926"></a>00926 
@@ -1335,7 +1335,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -107,7 +107,7 @@
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048 <span class="comment">// Destructor for S-parameter file vector.</span>
 <a name="l00049"></a><a class="code" href="classspfile__vector.html#af1187ccdde327934fcaf7bccc642fa54">00049</a> <a class="code" href="classspfile__vector.html#af1187ccdde327934fcaf7bccc642fa54">spfile_vector::~spfile_vector</a> () {
-<a name="l00050"></a>00050   <span class="keywordflow">if</span> (inter) <span class="keyword">delete</span> inter;
+<a name="l00050"></a>00050   <span class="keyword">delete</span> inter;
 <a name="l00051"></a>00051 }
 <a name="l00052"></a>00052 
 <a name="l00053"></a>00053 <span class="comment">// Passes vectors and their data types to the S-parameter file vector.</span>
@@ -147,17 +147,17 @@
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 <span class="comment">// Destructor deletes spfile object from memory.</span>
 <a name="l00089"></a><a class="code" href="structspfile.html#a379bd63f583657719b2eeac45bb5ec50">00089</a> <a class="code" href="structspfile.html#a379bd63f583657719b2eeac45bb5ec50">spfile::~spfile</a> () {
-<a name="l00090"></a>00090   <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#aeeb74885e212e2876e9f229a299a5297">spara</a>) <span class="keyword">delete</span>[] <a class="code" href="structspfile.html#aeeb74885e212e2876e9f229a299a5297">spara</a>;
-<a name="l00091"></a>00091   <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#aaec560517e87ce7572d28b0589159646">RN</a>) <span class="keyword">delete</span> <a class="code" href="structspfile.html#aaec560517e87ce7572d28b0589159646">RN</a>;
-<a name="l00092"></a>00092   <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#a5e91e0903cbc23536df98b24b2d9e911">FMIN</a>) <span class="keyword">delete</span> <a class="code" href="structspfile.html#a5e91e0903cbc23536df98b24b2d9e911">FMIN</a>;
-<a name="l00093"></a>00093   <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#a43f102ab8bf4ee83c00d03b1f983434c">SOPT</a>) <span class="keyword">delete</span> <a class="code" href="structspfile.html#a43f102ab8bf4ee83c00d03b1f983434c">SOPT</a>;
+<a name="l00090"></a>00090   <span class="keyword">delete</span>[] <a class="code" href="structspfile.html#aeeb74885e212e2876e9f229a299a5297">spara</a>;
+<a name="l00091"></a>00091   <span class="keyword">delete</span> <a class="code" href="structspfile.html#aaec560517e87ce7572d28b0589159646">RN</a>;
+<a name="l00092"></a>00092   <span class="keyword">delete</span> <a class="code" href="structspfile.html#a5e91e0903cbc23536df98b24b2d9e911">FMIN</a>;
+<a name="l00093"></a>00093   <span class="keyword">delete</span> <a class="code" href="structspfile.html#a43f102ab8bf4ee83c00d03b1f983434c">SOPT</a>;
 <a name="l00094"></a>00094 <span class="preprocessor">#if DEBUG &amp;&amp; 0</span>
 <a name="l00095"></a>00095 <span class="preprocessor"></span>  <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>) {
 <a name="l00096"></a>00096     <a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>-&gt;setFile (<span class="stringliteral">&quot;spfile.dat&quot;</span>);
 <a name="l00097"></a>00097     <a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>-&gt;print ();
 <a name="l00098"></a>00098   }
 <a name="l00099"></a>00099 <span class="preprocessor">#endif</span>
-<a name="l00100"></a>00100 <span class="preprocessor"></span>  <span class="keywordflow">if</span> (<a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>) <span class="keyword">delete</span> <a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>;
+<a name="l00100"></a>00100 <span class="preprocessor"></span>  <span class="keyword">delete</span> <a class="code" href="structspfile.html#a3fa359fe44accef5004360f34b0f816f">data</a>;
 <a name="l00101"></a>00101 }
 <a name="l00102"></a>00102 
 <a name="l00103"></a><a class="code" href="structspfile.html#a6e80b2ddad0feb103de647960a92ee20">00103</a> <span class="keywordtype">void</span> <a class="code" href="structspfile.html#a6e80b2ddad0feb103de647960a92ee20">spfile::calcSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
@@ -596,7 +596,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

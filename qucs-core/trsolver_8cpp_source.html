@@ -149,7 +149,7 @@
 <a name="l00089"></a>00089 <span class="comment">// Destructor deletes the trsolver class object.</span>
 <a name="l00090"></a><a class="code" href="structqucs_1_1trsolver.html#aed4af337f6293ee160f9c211ba2b5768">00090</a> trsolver::~trsolver ()
 <a name="l00091"></a>00091 {
-<a name="l00092"></a>00092     <span class="keywordflow">if</span> (swp) <span class="keyword">delete</span> swp;
+<a name="l00092"></a>00092     <span class="keyword">delete</span> swp;
 <a name="l00093"></a>00093     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> = 0; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; 8; <a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>++)
 <a name="l00094"></a>00094     {
 <a name="l00095"></a>00095         <span class="keywordflow">if</span> (solution[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>] != NULL)
@@ -157,7 +157,7 @@
 <a name="l00097"></a>00097             <span class="keyword">delete</span> solution[<a class="code" href="parse__mdl_8y.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>];
 <a name="l00098"></a>00098         }
 <a name="l00099"></a>00099     }
-<a name="l00100"></a>00100     <span class="keywordflow">if</span> (tHistory) <span class="keyword">delete</span> tHistory;
+<a name="l00100"></a>00100     <span class="keyword">delete</span> tHistory;
 <a name="l00101"></a>00101 }
 <a name="l00102"></a>00102 
 <a name="l00103"></a>00103 <span class="comment">/* The copy constructor creates a new instance of the trsolver class</span>
@@ -175,7 +175,7 @@
 <a name="l00115"></a>00115 <span class="comment">// This function creates the time sweep if necessary.</span>
 <a name="l00116"></a><a class="code" href="structqucs_1_1trsolver.html#ac64ec40080fd775bfb6f3b25bb214e25">00116</a> <span class="keywordtype">void</span> trsolver::initSteps (<span class="keywordtype">void</span>)
 <a name="l00117"></a>00117 {
-<a name="l00118"></a>00118     <span class="keywordflow">if</span> (swp != NULL) <span class="keyword">delete</span> swp;
+<a name="l00118"></a>00118     <span class="keyword">delete</span> swp;
 <a name="l00119"></a>00119     swp = createSweep (<span class="stringliteral">&quot;time&quot;</span>);
 <a name="l00120"></a>00120 }
 <a name="l00121"></a>00121 
@@ -1027,7 +1027,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

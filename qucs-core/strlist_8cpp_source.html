@@ -114,11 +114,11 @@
 <a name="l00054"></a>00054   <span class="keyword">struct </span><a class="code" href="structqucs_1_1strlist__t.html">strlist_t</a> * <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00055"></a>00055   <span class="keywordflow">while</span> (root) {
 <a name="l00056"></a>00056     next = root-&gt;<a class="code" href="structqucs_1_1strlist__t.html#a4e7bf5178fc716c5acbc3b1865d83c2a">next</a>;
-<a name="l00057"></a>00057     <span class="keywordflow">if</span> (root-&gt;str) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root-&gt;str);
+<a name="l00057"></a>00057     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root-&gt;str);
 <a name="l00058"></a>00058     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root);
 <a name="l00059"></a>00059     root = <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00060"></a>00060   }
-<a name="l00061"></a>00061   <span class="keywordflow">if</span> (txt) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
+<a name="l00061"></a>00061   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (txt);
 <a name="l00062"></a>00062 }
 <a name="l00063"></a>00063 
 <a name="l00064"></a>00064 <span class="comment">// This function adds a string to the list.</span>
@@ -219,7 +219,7 @@
 <a name="l00159"></a>00159   <span class="keywordflow">while</span> (root) {
 <a name="l00160"></a>00160     next = root-&gt;<a class="code" href="structqucs_1_1strlist__t.html#a4e7bf5178fc716c5acbc3b1865d83c2a">next</a>;
 <a name="l00161"></a>00161     <span class="keywordflow">if</span> (cand-&gt;<a class="code" href="classqucs_1_1strlist.html#a8e657e494a9b9dd2b9d61133b341c615">contains</a> (root-&gt;str) == 0) res-&gt;<a class="code" href="classqucs_1_1strlist.html#af15a0c9e189fec852666a2a45dc830f1">append</a> (root-&gt;str);
-<a name="l00162"></a>00162     <span class="keywordflow">if</span> (root-&gt;str) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root-&gt;str);
+<a name="l00162"></a>00162     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root-&gt;str);
 <a name="l00163"></a>00163     <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (root);
 <a name="l00164"></a>00164     root = <a class="code" href="parse__spice_8y.html#acde7555eca71d1f823fbaf6f6a1f4670">next</a>;
 <a name="l00165"></a>00165   }
@@ -320,7 +320,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

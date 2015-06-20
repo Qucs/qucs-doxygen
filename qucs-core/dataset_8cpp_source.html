@@ -148,7 +148,7 @@
 <a name="l00088"></a>00088     n = (<a class="code" href="classqucs_1_1vector.html">vector</a> *) v-&gt;<a class="code" href="classqucs_1_1vector.html#afc20bfbdf24e88096add4c5535d24fb7">getNext</a> ();
 <a name="l00089"></a>00089     <span class="keyword">delete</span> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a>;
 <a name="l00090"></a>00090   }
-<a name="l00091"></a>00091   <span class="keywordflow">if</span> (file) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (file);
+<a name="l00091"></a>00091   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (file);
 <a name="l00092"></a>00092 }
 <a name="l00093"></a>00093 
 <a name="l00094"></a>00094 <span class="comment">// This function adds a dependency vector to the current dataset.</span>
@@ -381,7 +381,7 @@
 <a name="l00321"></a>00321 <span class="comment">/* Sets the current output file name.  The file name is used during</span>
 <a name="l00322"></a>00322 <span class="comment">   the print functionality of the dataset class. */</span>
 <a name="l00323"></a><a class="code" href="classqucs_1_1dataset.html#a6708a60b63f34f8c8c3e49c747c4a9c2">00323</a> <span class="keywordtype">void</span> dataset::setFile (<span class="keyword">const</span> <span class="keywordtype">char</span> * f) {
-<a name="l00324"></a>00324   <span class="keywordflow">if</span> (file) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (file);
+<a name="l00324"></a>00324   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (file);
 <a name="l00325"></a>00325   file = f ? strdup (f) : NULL;
 <a name="l00326"></a>00326 }
 <a name="l00327"></a>00327 
@@ -624,7 +624,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:41 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

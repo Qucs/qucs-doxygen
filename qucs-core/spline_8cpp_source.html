@@ -204,14 +204,14 @@
 <a name="l00144"></a><a class="code" href="classqucs_1_1spline.html#a2c884adc61d9e10b3aff613573e2f855">00144</a> <span class="keywordtype">void</span> spline::realloc (<span class="keywordtype">int</span> <a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a>) {
 <a name="l00145"></a>00145   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> != size - 1) {
 <a name="l00146"></a>00146     <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = size - 1;
-<a name="l00147"></a>00147     <span class="keywordflow">if</span> (f0) <span class="keyword">delete</span>[] f0;
+<a name="l00147"></a>00147     <span class="keyword">delete</span>[] f0;
 <a name="l00148"></a>00148     f0 = <span class="keyword">new</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>+1];
-<a name="l00149"></a>00149     <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) <span class="keyword">delete</span>[] <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;
+<a name="l00149"></a>00149     <span class="keyword">delete</span>[] <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;
 <a name="l00150"></a>00150     <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>  = <span class="keyword">new</span> <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>[<a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>+1];
 <a name="l00151"></a>00151   }
-<a name="l00152"></a>00152   <span class="keywordflow">if</span> (f1) { <span class="keyword">delete</span>[] f1; f1 = NULL; }
-<a name="l00153"></a>00153   <span class="keywordflow">if</span> (f2) { <span class="keyword">delete</span>[] f2; f2 = NULL; }
-<a name="l00154"></a>00154   <span class="keywordflow">if</span> (f3) { <span class="keyword">delete</span>[] f3; f3 = NULL; }
+<a name="l00152"></a>00152   <span class="keyword">delete</span>[] f1;
+<a name="l00153"></a>00153   <span class="keyword">delete</span>[] f2;
+<a name="l00154"></a>00154   <span class="keyword">delete</span>[] f3;
 <a name="l00155"></a>00155 }
 <a name="l00156"></a>00156 
 <a name="l00157"></a>00157 <span class="comment">// Construct cubic spline interpolation coefficients.</span>
@@ -402,10 +402,10 @@
 <a name="l00342"></a>00342 <span class="comment">// Destructor deletes an instance of the spline class.</span>
 <a name="l00343"></a><a class="code" href="classqucs_1_1spline.html#a94480378ab14b88315ec721527faf553">00343</a> spline::~spline () {
 <a name="l00344"></a>00344   <span class="keywordflow">if</span> (<a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)  <span class="keyword">delete</span>[] <a class="code" href="parse__mdl_8y.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>;
-<a name="l00345"></a>00345   <span class="keywordflow">if</span> (f0) <span class="keyword">delete</span>[] f0;
-<a name="l00346"></a>00346   <span class="keywordflow">if</span> (f1) <span class="keyword">delete</span>[] f1;
-<a name="l00347"></a>00347   <span class="keywordflow">if</span> (f2) <span class="keyword">delete</span>[] f2;
-<a name="l00348"></a>00348   <span class="keywordflow">if</span> (f3) <span class="keyword">delete</span>[] f3;
+<a name="l00345"></a>00345   <span class="keyword">delete</span>[] f0;
+<a name="l00346"></a>00346   <span class="keyword">delete</span>[] f1;
+<a name="l00347"></a>00347   <span class="keyword">delete</span>[] f2;
+<a name="l00348"></a>00348   <span class="keyword">delete</span>[] f3;
 <a name="l00349"></a>00349 }
 <a name="l00350"></a>00350 
 <a name="l00351"></a>00351 } <span class="comment">// namespace qucs</span>
@@ -413,7 +413,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:48 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

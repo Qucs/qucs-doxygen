@@ -111,11 +111,11 @@
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="comment">// Destructor deletes an instance of the interpolator class.</span>
 <a name="l00053"></a><a class="code" href="classqucs_1_1interpolator.html#a6a818b22801c4066d328a2cf4c1a5eae">00053</a> interpolator::~interpolator () {
-<a name="l00054"></a>00054   <span class="keywordflow">if</span> (rsp) <span class="keyword">delete</span> rsp;
-<a name="l00055"></a>00055   <span class="keywordflow">if</span> (isp) <span class="keyword">delete</span> isp;
-<a name="l00056"></a>00056   <span class="keywordflow">if</span> (rx) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (rx);
-<a name="l00057"></a>00057   <span class="keywordflow">if</span> (ry) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (ry);
-<a name="l00058"></a>00058   <span class="keywordflow">if</span> (cy) <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (cy);
+<a name="l00054"></a>00054   <span class="keyword">delete</span> rsp;
+<a name="l00055"></a>00055   <span class="keyword">delete</span> isp;
+<a name="l00056"></a>00056   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (rx);
+<a name="l00057"></a>00057   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (ry);
+<a name="l00058"></a>00058   <a class="code" href="parse__dataset_8y.html#aca85a6c1a76f5805917a20a5efec7664">free</a> (cy);
 <a name="l00059"></a>00059 }
 <a name="l00060"></a>00060 
 <a name="l00061"></a>00061 <span class="comment">// Cleans up vector storage.</span>
@@ -230,8 +230,8 @@
 <a name="l00170"></a>00170     <span class="comment">// prepare complex vector interpolation using splines</span>
 <a name="l00171"></a>00171     <span class="keywordflow">if</span> (cy != NULL) {
 <a name="l00172"></a>00172       <span class="comment">// create splines if necessary</span>
-<a name="l00173"></a>00173       <span class="keywordflow">if</span> (rsp) <span class="keyword">delete</span> rsp;
-<a name="l00174"></a>00174       <span class="keywordflow">if</span> (isp) <span class="keyword">delete</span> isp;
+<a name="l00173"></a>00173       <span class="keyword">delete</span> rsp;
+<a name="l00174"></a>00174       <span class="keyword">delete</span> isp;
 <a name="l00175"></a>00175       rsp = <span class="keyword">new</span> <a class="code" href="classqucs_1_1spline.html">spline</a> (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>);
 <a name="l00176"></a>00176       isp = <span class="keyword">new</span> <a class="code" href="classqucs_1_1spline.html">spline</a> (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>);
 <a name="l00177"></a>00177       <span class="keywordflow">if</span> (repeat &amp; REPEAT_YES) {
@@ -256,7 +256,7 @@
 <a name="l00196"></a>00196 
 <a name="l00197"></a>00197     <span class="comment">// prepare real vector interpolation using spline</span>
 <a name="l00198"></a>00198     <span class="keywordflow">else</span> {
-<a name="l00199"></a>00199       <span class="keywordflow">if</span> (rsp) <span class="keyword">delete</span> rsp;
+<a name="l00199"></a>00199       <span class="keyword">delete</span> rsp;
 <a name="l00200"></a>00200       rsp = <span class="keyword">new</span> <a class="code" href="classqucs_1_1spline.html">spline</a> (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2dab4ed2a404aedd84596c16ee7b8df13b1">SPLINE_BC_NATURAL</a>);
 <a name="l00201"></a>00201       <span class="keywordflow">if</span> (repeat &amp; REPEAT_YES) rsp-&gt;setBoundary (<a class="code" href="structqucs.html#a182c6b2423e97a3418be2cd0b891cf2da86bb1bef3cea3480390b55e0322bd61c">SPLINE_BC_PERIODIC</a>);
 <a name="l00202"></a>00202       rsp-&gt;vectors (ry, rx, length);
@@ -425,7 +425,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:46 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:47 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

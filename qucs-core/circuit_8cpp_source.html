@@ -243,8 +243,8 @@
 <a name="l00183"></a>00183 <span class="comment">// Destructor deletes a circuit object.</span>
 <a name="l00184"></a><a class="code" href="classqucs_1_1circuit.html#a3f7c5f7d4076eb49d82a4e2d97a6469c">00184</a> circuit::~circuit () {
 <a name="l00185"></a>00185   <span class="keywordflow">if</span> (<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> &gt; 0) {
-<a name="l00186"></a>00186     <span class="keywordflow">if</span> (MatrixS) <span class="keyword">delete</span>[] MatrixS;
-<a name="l00187"></a>00187     <span class="keywordflow">if</span> (MatrixN) <span class="keyword">delete</span>[] MatrixN;
+<a name="l00186"></a>00186     <span class="keyword">delete</span>[] MatrixS;
+<a name="l00187"></a>00187     <span class="keyword">delete</span>[] MatrixN;
 <a name="l00188"></a>00188     freeMatrixMNA ();
 <a name="l00189"></a>00189     freeMatrixHB ();
 <a name="l00190"></a>00190     <span class="keyword">delete</span>[] <a class="code" href="parse__netlist_8y.html#a6da5270e48c8b5c2f0dbaa008af4df76">nodes</a>;
@@ -262,8 +262,8 @@
 <a name="l00202"></a>00202 
 <a name="l00203"></a>00203   <span class="keywordflow">if</span> (<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> &gt; 0) {
 <a name="l00204"></a>00204     <span class="comment">// destroy any matrix and node information</span>
-<a name="l00205"></a>00205     <span class="keywordflow">if</span> (MatrixS) <span class="keyword">delete</span>[] MatrixS;
-<a name="l00206"></a>00206     <span class="keywordflow">if</span> (MatrixN) <span class="keyword">delete</span>[] MatrixN;
+<a name="l00205"></a>00205     <span class="keyword">delete</span>[] MatrixS;
+<a name="l00206"></a>00206     <span class="keyword">delete</span>[] MatrixN;
 <a name="l00207"></a>00207     MatrixS = MatrixN = NULL;
 <a name="l00208"></a>00208     freeMatrixMNA ();
 <a name="l00209"></a>00209     <span class="keyword">delete</span>[] <a class="code" href="parse__netlist_8y.html#a6da5270e48c8b5c2f0dbaa008af4df76">nodes</a>; <a class="code" href="parse__netlist_8y.html#a6da5270e48c8b5c2f0dbaa008af4df76">nodes</a> = NULL;
@@ -322,7 +322,7 @@
 <a name="l00262"></a>00262 <span class="comment">/* Allocates the noise correlation matrix memory. */</span>
 <a name="l00263"></a><a class="code" href="classqucs_1_1circuit.html#a22f175bb56816adf4df37474d3491fd4">00263</a> <span class="keywordtype">void</span> circuit::allocMatrixN (<span class="keywordtype">int</span> sources) {
 <a name="l00264"></a>00264   nsources = sources;
-<a name="l00265"></a>00265   <span class="keywordflow">if</span> (MatrixN) <span class="keyword">delete</span>[] MatrixN;
+<a name="l00265"></a>00265   <span class="keyword">delete</span>[] MatrixN;
 <a name="l00266"></a>00266   MatrixN = <span class="keyword">new</span> <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a>[(<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> + sources) * (<a class="code" href="parse__vcd_8y.html#aa3d6656320f1a7278c0c2c7fdf07617c">size</a> + sources)];
 <a name="l00267"></a>00267 }
 <a name="l00268"></a>00268 
@@ -1015,7 +1015,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 15:51:41 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 18:53:40 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
