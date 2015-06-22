@@ -907,564 +907,567 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00828"></a>00828         <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
 <a name="l00829"></a>00829         <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(selectedColor);
 <a name="l00830"></a>00830         <span class="keywordflow">if</span>(g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>.right(3) == <span class="stringliteral">&quot;.Vb&quot;</span>)   <span class="comment">// harmonic balance output ?</span>
-<a name="l00831"></a>00831           <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;count() &gt;= <a class="code" href="graph_8h.html#af3e0f8b3ea1247e5bfe7cc6154d10c34">GRAPHSTYLE_ARROW</a>)
-<a name="l00832"></a>00832             <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(<a class="code" href="graph_8h.html#af3e0f8b3ea1247e5bfe7cc6154d10c34">GRAPHSTYLE_ARROW</a>);
-<a name="l00833"></a>00833         g-&gt;<a class="code" href="classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4">Style</a>   = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
-<a name="l00834"></a>00834         <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
-<a name="l00835"></a>00835           g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;currentItem();
-<a name="l00836"></a>00836           <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00837"></a>00837           <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00838"></a>00838         }
-<a name="l00839"></a>00839         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Rect3D&quot;</span>) g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 1;
-<a name="l00840"></a>00840 
-<a name="l00841"></a>00841         <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00842"></a>00842         <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00843"></a>00843       }
-<a name="l00844"></a>00844     }
-<a name="l00845"></a>00845     <span class="keywordflow">else</span> {
-<a name="l00846"></a>00846       g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
-<a name="l00847"></a>00847       g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
-<a name="l00848"></a>00848     }
-<a name="l00849"></a>00849 
-<a name="l00850"></a>00850     <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(g);
-<a name="l00851"></a>00851     <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l00852"></a>00852     <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">true</span>;
-<a name="l00853"></a>00853   <span class="comment">//}</span>
-<a name="l00854"></a>00854 
-<a name="l00855"></a>00855   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">false</span>);
-<a name="l00856"></a>00856 
-<a name="l00857"></a>00857   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
-<a name="l00858"></a>00858     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00859"></a>00859     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00860"></a>00860     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00861"></a>00861     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00862"></a>00862   }
-<a name="l00863"></a>00863 }
-<a name="l00864"></a>00864 
-<a name="l00868"></a><a class="code" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48">00868</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox.">DiagramDialog::slotSelectGraph</a>(QListWidgetItem *item)
-<a name="l00869"></a>00869 {
-<a name="l00870"></a>00870   <span class="keywordflow">if</span>(item == 0) {
-<a name="l00871"></a>00871     <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;clearSelection();
-<a name="l00872"></a>00872     <span class="keywordflow">return</span>;
-<a name="l00873"></a>00873   }
-<a name="l00874"></a>00874 
-<a name="l00875"></a>00875   <a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit.">SelectGraph</a> (<a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at (<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow()));
-<a name="l00876"></a>00876 }
-<a name="l00877"></a>00877 
-<a name="l00881"></a><a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2">00881</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit.">DiagramDialog::SelectGraph</a>(<a class="code" href="classGraph.html">Graph</a> *g)
-<a name="l00882"></a>00882 {
-<a name="l00883"></a>00883   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">true</span>);
-<a name="l00884"></a>00884   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>);
-<a name="l00885"></a>00885   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">false</span>);
-<a name="l00886"></a>00886 
-<a name="l00887"></a>00887   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
-<a name="l00888"></a>00888     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
-<a name="l00889"></a>00889       <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(QString::number(g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>));
-<a name="l00890"></a>00890       QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.name());
-<a name="l00891"></a>00891       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
-<a name="l00892"></a>00892       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>);
-<a name="l00893"></a>00893       <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4">Style</a>);
-<a name="l00894"></a>00894       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
-<a name="l00895"></a>00895         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>);
-<a name="l00896"></a>00896         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00897"></a>00897         <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00898"></a>00898       }
-<a name="l00899"></a>00899 
-<a name="l00900"></a>00900       <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00901"></a>00901       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00902"></a>00902     }
-<a name="l00903"></a>00903   }
-<a name="l00904"></a>00904   <span class="keywordflow">else</span> {
-<a name="l00905"></a>00905     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(QString::number(g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>));
-<a name="l00906"></a>00906     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>);
-<a name="l00907"></a>00907   }
-<a name="l00908"></a>00908   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a> = <span class="keyword">false</span>;
-<a name="l00909"></a>00909 
-<a name="l00910"></a>00910   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
-<a name="l00911"></a>00911     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00912"></a>00912     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00913"></a>00913     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00914"></a>00914     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l00915"></a>00915   }
-<a name="l00916"></a>00916 }
-<a name="l00917"></a>00917 
-<a name="l00921"></a><a class="code" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441">00921</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed.">DiagramDialog::slotDeleteGraph</a>()
-<a name="l00922"></a>00922 {
-<a name="l00923"></a>00923   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l00924"></a>00924   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l00925"></a>00925 
-<a name="l00926"></a>00926   <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;takeItem(i);
-<a name="l00927"></a>00927   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.remove(i);
-<a name="l00928"></a>00928 
-<a name="l00929"></a>00929   <span class="keywordtype">int</span> k=0;
-<a name="l00930"></a>00930   <span class="keywordflow">if</span> (<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()!=0) {
-<a name="l00931"></a>00931       <span class="keywordflow">if</span> (i&gt;(<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()-1)) {
-<a name="l00932"></a>00932           k = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()-1;
-<a name="l00933"></a>00933       } <span class="keywordflow">else</span> {
-<a name="l00934"></a>00934           k=i;
-<a name="l00935"></a>00935       }
-<a name="l00936"></a>00936       <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;item(k)-&gt;text());
-<a name="l00937"></a>00937   } <span class="keywordflow">else</span> {
-<a name="l00938"></a>00938       <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);  <span class="comment">// erase input line and back to default values</span>
-<a name="l00939"></a>00939   }
-<a name="l00940"></a>00940 
-<a name="l00941"></a>00941   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
-<a name="l00942"></a>00942     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
-<a name="l00943"></a>00943       QColor selectedColor(<a class="code" href="diagramdialog_8cpp.html#aa26d96ba187bf1f4d6b14f71b960871a">DefaultColors</a>[<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()%<a class="code" href="diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb">NumDefaultColors</a>]);
-<a name="l00944"></a>00944       QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(selectedColor.name());
-<a name="l00945"></a>00945       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
-<a name="l00946"></a>00946       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(selectedColor);
-<a name="l00947"></a>00947       <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(<span class="stringliteral">&quot;0&quot;</span>);
-<a name="l00948"></a>00948       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
-<a name="l00949"></a>00949         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setCurrentItem(0);
-<a name="l00950"></a>00950         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00951"></a>00951         <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00952"></a>00952       }
-<a name="l00953"></a>00953 
-<a name="l00954"></a>00954       <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00955"></a>00955       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00956"></a>00956     }
-<a name="l00957"></a>00957   }
-<a name="l00958"></a>00958   <span class="keywordflow">else</span>  <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(<span class="stringliteral">&quot;3&quot;</span>);
-<a name="l00959"></a>00959   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l00960"></a>00960   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l00961"></a>00961 
-<a name="l00962"></a>00962   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
-<a name="l00963"></a>00963     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(0);
-<a name="l00964"></a>00964 
-<a name="l00965"></a>00965     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00966"></a>00966     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00967"></a>00967     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00968"></a>00968     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l00969"></a>00969   }
-<a name="l00970"></a>00970 }
-<a name="l00971"></a>00971 
-<a name="l00972"></a>00972 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l00973"></a><a class="code" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec">00973</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec">DiagramDialog::slotNewGraph</a>()
-<a name="l00974"></a>00974 {
-<a name="l00975"></a>00975   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text().isEmpty()) <span class="keywordflow">return</span>;
-<a name="l00976"></a>00976 
-<a name="l00977"></a>00977   <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;addItem(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text());
-<a name="l00978"></a>00978 
-<a name="l00979"></a>00979   <a class="code" href="classGraph.html">Graph</a> *g = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text());   <span class="comment">// create a new graph</span>
-<a name="l00980"></a>00980   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
-<a name="l00981"></a>00981     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
-<a name="l00982"></a>00982       g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;paletteBackgroundColor();
-<a name="l00983"></a>00983       g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
-<a name="l00984"></a>00984       g-&gt;<a class="code" href="classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4">Style</a> = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
-<a name="l00985"></a>00985       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>)  g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;currentItem();
-<a name="l00986"></a>00986       <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Rect3D&quot;</span>)  g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 1;
-<a name="l00987"></a>00987     }
-<a name="l00988"></a>00988   }
-<a name="l00989"></a>00989   <span class="keywordflow">else</span> {
-<a name="l00990"></a>00990     g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
-<a name="l00991"></a>00991     g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
-<a name="l00992"></a>00992   }
-<a name="l00993"></a>00993   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(g);
-<a name="l00994"></a>00994   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l00995"></a>00995   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l00996"></a>00996 }
-<a name="l00997"></a>00997 
-<a name="l01001"></a><a class="code" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b">01001</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed.">DiagramDialog::slotOK</a>()
-<a name="l01002"></a>01002 {
-<a name="l01003"></a>01003   <a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed.">slotApply</a>();
-<a name="l01004"></a>01004   <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">slotCancel</a>();
-<a name="l01005"></a>01005 }
-<a name="l01006"></a>01006 
-<a name="l01010"></a><a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6">01010</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed.">DiagramDialog::slotApply</a>()
-<a name="l01011"></a>01011 {
-<a name="l01012"></a>01012   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.at(0) != <span class="charliteral">&#39;T&#39;</span>) {  <span class="comment">// not tabular or timing</span>
-<a name="l01013"></a>01013     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
-<a name="l01014"></a>01014       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
-<a name="l01015"></a>01015     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l01016"></a>01016     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text()) {
-<a name="l01017"></a>01017       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text();
-<a name="l01018"></a>01018       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01019"></a>01019     }
-<a name="l01020"></a>01020     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
-<a name="l01021"></a>01021       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
-<a name="l01022"></a>01022     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l01023"></a>01023     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text()) {
-<a name="l01024"></a>01024       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text();
-<a name="l01025"></a>01025       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01026"></a>01026     }
-<a name="l01027"></a>01027     
-<a name="l01028"></a>01028     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> != <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked()) {
-<a name="l01029"></a>01029       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> = <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked();
-<a name="l01030"></a>01030       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> = <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked();
-<a name="l01031"></a>01031       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01032"></a>01032     }
-<a name="l01033"></a>01033     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>)
-<a name="l01034"></a>01034       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.color() != <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor()) {
-<a name="l01035"></a>01035       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.setColor(<a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor());
-<a name="l01036"></a>01036       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01037"></a>01037     }
-<a name="l01038"></a>01038     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>)
-<a name="l01039"></a>01039       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.style()!=(Qt::PenStyle)(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;currentItem()+1)) {
-<a name="l01040"></a>01040       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.setStyle((Qt::PenStyle)(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;currentItem()+1));
-<a name="l01041"></a>01041       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01042"></a>01042     }
-<a name="l01043"></a>01043     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Smith&quot;</span>) &amp;&amp; (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Polar&quot;</span>)) {
-<a name="l01044"></a>01044       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
-<a name="l01045"></a>01045         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
-<a name="l01046"></a>01046       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l01047"></a>01047       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text()) {
-<a name="l01048"></a>01048         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text();
-<a name="l01049"></a>01049         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01050"></a>01050       }
-<a name="l01051"></a>01051     }
-<a name="l01052"></a>01052 
-<a name="l01053"></a>01053     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) {
-<a name="l01054"></a>01054       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked()) {
-<a name="l01055"></a>01055         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked();
-<a name="l01056"></a>01056         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01057"></a>01057       }
-<a name="l01058"></a>01058       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked()) {
-<a name="l01059"></a>01059         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked();
-<a name="l01060"></a>01060         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01061"></a>01061       }
-<a name="l01062"></a>01062       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked()) {
-<a name="l01063"></a>01063         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked();
-<a name="l01064"></a>01064         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01065"></a>01065       }
-<a name="l01066"></a>01066     }
-<a name="l01067"></a>01067 
-<a name="l01068"></a>01068     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Smith&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;ySmith&quot;</span>) ||
-<a name="l01069"></a>01069           (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;PS&quot;</span>))
-<a name="l01070"></a>01070       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text().toDouble() &lt; 1.0)
-<a name="l01071"></a>01071         <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setText(<span class="stringliteral">&quot;1&quot;</span>);
-<a name="l01072"></a>01072 
-<a name="l01073"></a>01073     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;SP&quot;</span>)
-<a name="l01074"></a>01074       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text().toDouble() &lt; 1.0)
-<a name="l01075"></a>01075         <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setText(<span class="stringliteral">&quot;1&quot;</span>);
-<a name="l01076"></a>01076 
-<a name="l01077"></a>01077     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked()) {
-<a name="l01078"></a>01078       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked());
-<a name="l01079"></a>01079       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01080"></a>01080     }
-<a name="l01081"></a>01081 
-<a name="l01082"></a>01082     <span class="comment">// Use string compares for all floating point numbers, in</span>
-<a name="l01083"></a>01083     <span class="comment">// order to avoid rounding problems.</span>
-<a name="l01084"></a>01084     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;text()) {
-<a name="l01085"></a>01085       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;text().toDouble();
-<a name="l01086"></a>01086       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01087"></a>01087     }
-<a name="l01088"></a>01088     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;text()) {
-<a name="l01089"></a>01089       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;text().toDouble();
-<a name="l01090"></a>01090       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01091"></a>01091     }
-<a name="l01092"></a>01092     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;text()) {
-<a name="l01093"></a>01093       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;text().toDouble();
-<a name="l01094"></a>01094       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01095"></a>01095     }
-<a name="l01096"></a>01096     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked()) {
-<a name="l01097"></a>01097       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked());
-<a name="l01098"></a>01098       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01099"></a>01099     }
-<a name="l01100"></a>01100     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;text()) {
-<a name="l01101"></a>01101       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;text().toDouble();
-<a name="l01102"></a>01102       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01103"></a>01103     }
-<a name="l01104"></a>01104     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;text()) {
-<a name="l01105"></a>01105       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;text().toDouble();
-<a name="l01106"></a>01106       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01107"></a>01107     }
-<a name="l01108"></a>01108     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text()) {
-<a name="l01109"></a>01109       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text().toDouble();
-<a name="l01110"></a>01110       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01111"></a>01111     }
-<a name="l01112"></a>01112     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked()) {
-<a name="l01113"></a>01113       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked());
-<a name="l01114"></a>01114       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01115"></a>01115     }
-<a name="l01116"></a>01116     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;text()) {
-<a name="l01117"></a>01117       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;text().toDouble();
-<a name="l01118"></a>01118       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01119"></a>01119     }
-<a name="l01120"></a>01120     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;text()) {
-<a name="l01121"></a>01121       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;text().toDouble();
-<a name="l01122"></a>01122       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01123"></a>01123     }
-<a name="l01124"></a>01124     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text()) {
-<a name="l01125"></a>01125       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text().toDouble();
-<a name="l01126"></a>01126       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01127"></a>01127     }
-<a name="l01128"></a>01128 
-<a name="l01129"></a>01129     <span class="comment">// for &quot;rect3D&quot;</span>
-<a name="l01130"></a>01130     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>)
-<a name="l01131"></a>01131       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>)-&gt;hideLines != <a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>-&gt;isChecked()) {
-<a name="l01132"></a>01132         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;hideLines = <a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>-&gt;isChecked();
-<a name="l01133"></a>01133         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01134"></a>01134       }
-<a name="l01135"></a>01135 
-<a name="l01136"></a>01136     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>)
-<a name="l01137"></a>01137       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotX != <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;text().toInt()) {
-<a name="l01138"></a>01138         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotX = <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;text().toInt();
-<a name="l01139"></a>01139         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01140"></a>01140       }
-<a name="l01141"></a>01141 
-<a name="l01142"></a>01142     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>)
-<a name="l01143"></a>01143       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotY != <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;text().toInt()) {
-<a name="l01144"></a>01144         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotY = <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;text().toInt();
-<a name="l01145"></a>01145         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01146"></a>01146       }
-<a name="l01147"></a>01147 
-<a name="l01148"></a>01148     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>)
-<a name="l01149"></a>01149       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotZ != <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;text().toInt()) {
-<a name="l01150"></a>01150         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotZ = <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;text().toInt();
-<a name="l01151"></a>01151         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01152"></a>01152       }
-<a name="l01153"></a>01153 
-<a name="l01154"></a>01154   }   <span class="comment">// of &quot;if(Diag-&gt;Name != &quot;Tab&quot;)&quot;</span>
+<a name="l00831"></a>00831           <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;count() &gt;= <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480aad9199fb74e78e9d31bbb40a6ba259dd">GRAPHSTYLE_ARROW</a>)
+<a name="l00832"></a>00832             <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480aad9199fb74e78e9d31bbb40a6ba259dd">GRAPHSTYLE_ARROW</a>);
+<a name="l00833"></a>00833         g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f">toGraphStyle</a>(<a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem());
+<a name="l00834"></a>00834         assert(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>!=<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480ac0f47e71848fa4c0f4f83dfc88309354">GRAPHSTYLE_INVALID</a>);
+<a name="l00835"></a>00835         <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
+<a name="l00836"></a>00836           g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;currentItem();
+<a name="l00837"></a>00837           <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00838"></a>00838           <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00839"></a>00839         }
+<a name="l00840"></a>00840         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Rect3D&quot;</span>) g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 1;
+<a name="l00841"></a>00841 
+<a name="l00842"></a>00842         <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00843"></a>00843         <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00844"></a>00844       }
+<a name="l00845"></a>00845     }
+<a name="l00846"></a>00846     <span class="keywordflow">else</span> {
+<a name="l00847"></a>00847       g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
+<a name="l00848"></a>00848       g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
+<a name="l00849"></a>00849     }
+<a name="l00850"></a>00850 
+<a name="l00851"></a>00851     <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(g);
+<a name="l00852"></a>00852     <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l00853"></a>00853     <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">true</span>;
+<a name="l00854"></a>00854   <span class="comment">//}</span>
+<a name="l00855"></a>00855 
+<a name="l00856"></a>00856   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">false</span>);
+<a name="l00857"></a>00857 
+<a name="l00858"></a>00858   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
+<a name="l00859"></a>00859     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00860"></a>00860     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00861"></a>00861     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00862"></a>00862     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00863"></a>00863   }
+<a name="l00864"></a>00864 }
+<a name="l00865"></a>00865 
+<a name="l00869"></a><a class="code" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48">00869</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox.">DiagramDialog::slotSelectGraph</a>(QListWidgetItem *item)
+<a name="l00870"></a>00870 {
+<a name="l00871"></a>00871   <span class="keywordflow">if</span>(item == 0) {
+<a name="l00872"></a>00872     <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;clearSelection();
+<a name="l00873"></a>00873     <span class="keywordflow">return</span>;
+<a name="l00874"></a>00874   }
+<a name="l00875"></a>00875 
+<a name="l00876"></a>00876   <a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit.">SelectGraph</a> (<a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at (<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow()));
+<a name="l00877"></a>00877 }
+<a name="l00878"></a>00878 
+<a name="l00882"></a><a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2">00882</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit.">DiagramDialog::SelectGraph</a>(<a class="code" href="classGraph.html">Graph</a> *g)
+<a name="l00883"></a>00883 {
+<a name="l00884"></a>00884   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">true</span>);
+<a name="l00885"></a>00885   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>);
+<a name="l00886"></a>00886   <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;blockSignals(<span class="keyword">false</span>);
+<a name="l00887"></a>00887 
+<a name="l00888"></a>00888   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
+<a name="l00889"></a>00889     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
+<a name="l00890"></a>00890       <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(QString::number(g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>));
+<a name="l00891"></a>00891       QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.name());
+<a name="l00892"></a>00892       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
+<a name="l00893"></a>00893       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>);
+<a name="l00894"></a>00894       <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>);
+<a name="l00895"></a>00895       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
+<a name="l00896"></a>00896         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>);
+<a name="l00897"></a>00897         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00898"></a>00898         <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00899"></a>00899       }
+<a name="l00900"></a>00900 
+<a name="l00901"></a>00901       <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00902"></a>00902       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00903"></a>00903     }
+<a name="l00904"></a>00904   }
+<a name="l00905"></a>00905   <span class="keywordflow">else</span> {
+<a name="l00906"></a>00906     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(QString::number(g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>));
+<a name="l00907"></a>00907     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>);
+<a name="l00908"></a>00908   }
+<a name="l00909"></a>00909   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a> = <span class="keyword">false</span>;
+<a name="l00910"></a>00910 
+<a name="l00911"></a>00911   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
+<a name="l00912"></a>00912     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00913"></a>00913     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00914"></a>00914     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00915"></a>00915     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l00916"></a>00916   }
+<a name="l00917"></a>00917 }
+<a name="l00918"></a>00918 
+<a name="l00922"></a><a class="code" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441">00922</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed.">DiagramDialog::slotDeleteGraph</a>()
+<a name="l00923"></a>00923 {
+<a name="l00924"></a>00924   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l00925"></a>00925   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l00926"></a>00926 
+<a name="l00927"></a>00927   <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;takeItem(i);
+<a name="l00928"></a>00928   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.remove(i);
+<a name="l00929"></a>00929 
+<a name="l00930"></a>00930   <span class="keywordtype">int</span> k=0;
+<a name="l00931"></a>00931   <span class="keywordflow">if</span> (<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()!=0) {
+<a name="l00932"></a>00932       <span class="keywordflow">if</span> (i&gt;(<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()-1)) {
+<a name="l00933"></a>00933           k = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()-1;
+<a name="l00934"></a>00934       } <span class="keywordflow">else</span> {
+<a name="l00935"></a>00935           k=i;
+<a name="l00936"></a>00936       }
+<a name="l00937"></a>00937       <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;item(k)-&gt;text());
+<a name="l00938"></a>00938   } <span class="keywordflow">else</span> {
+<a name="l00939"></a>00939       <a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);  <span class="comment">// erase input line and back to default values</span>
+<a name="l00940"></a>00940   }
+<a name="l00941"></a>00941 
+<a name="l00942"></a>00942   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
+<a name="l00943"></a>00943     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
+<a name="l00944"></a>00944       QColor selectedColor(<a class="code" href="diagramdialog_8cpp.html#aa26d96ba187bf1f4d6b14f71b960871a">DefaultColors</a>[<a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;count()%<a class="code" href="diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb">NumDefaultColors</a>]);
+<a name="l00945"></a>00945       QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(selectedColor.name());
+<a name="l00946"></a>00946       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
+<a name="l00947"></a>00947       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(selectedColor);
+<a name="l00948"></a>00948       <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(<span class="stringliteral">&quot;0&quot;</span>);
+<a name="l00949"></a>00949       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>) {
+<a name="l00950"></a>00950         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setCurrentItem(0);
+<a name="l00951"></a>00951         <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00952"></a>00952         <a class="code" href="classDiagramDialog.html#a014011532c95067f856f46cb0343aa42">Label4</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00953"></a>00953       }
+<a name="l00954"></a>00954 
+<a name="l00955"></a>00955       <a class="code" href="classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91">Label3</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00956"></a>00956       <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00957"></a>00957     }
+<a name="l00958"></a>00958   }
+<a name="l00959"></a>00959   <span class="keywordflow">else</span>  <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setText(<span class="stringliteral">&quot;3&quot;</span>);
+<a name="l00960"></a>00960   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l00961"></a>00961   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l00962"></a>00962 
+<a name="l00963"></a>00963   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>) {
+<a name="l00964"></a>00964     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setCurrentItem(0);
+<a name="l00965"></a>00965 
+<a name="l00966"></a>00966     <a class="code" href="classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10">Label1</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00967"></a>00967     <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00968"></a>00968     <a class="code" href="classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a">Label2</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00969"></a>00969     <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l00970"></a>00970   }
+<a name="l00971"></a>00971 }
+<a name="l00972"></a>00972 
+<a name="l00973"></a>00973 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l00974"></a><a class="code" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec">00974</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec">DiagramDialog::slotNewGraph</a>()
+<a name="l00975"></a>00975 {
+<a name="l00976"></a>00976   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text().isEmpty()) <span class="keywordflow">return</span>;
+<a name="l00977"></a>00977 
+<a name="l00978"></a>00978   <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;addItem(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text());
+<a name="l00979"></a>00979 
+<a name="l00980"></a>00980   <a class="code" href="classGraph.html">Graph</a> *g = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<a class="code" href="classDiagramDialog.html#a95f5892887dae8fad94db6283cca78de">GraphInput</a>-&gt;text());   <span class="comment">// create a new graph</span>
+<a name="l00981"></a>00981   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Tab&quot;</span>) {
+<a name="l00982"></a>00982     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Truth&quot;</span>) {
+<a name="l00983"></a>00983       g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;paletteBackgroundColor();
+<a name="l00984"></a>00984       g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
+<a name="l00985"></a>00985       g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f">toGraphStyle</a>(<a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem());
+<a name="l00986"></a>00986       assert(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>!=<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480ac0f47e71848fa4c0f4f83dfc88309354">GRAPHSTYLE_INVALID</a>);
+<a name="l00987"></a>00987       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>)  g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = <a class="code" href="classDiagramDialog.html#abd22f6479868e611e3dc47068f1fea3f">yAxisBox</a>-&gt;currentItem();
+<a name="l00988"></a>00988       <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Rect3D&quot;</span>)  g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 1;
+<a name="l00989"></a>00989     }
+<a name="l00990"></a>00990   }
+<a name="l00991"></a>00991   <span class="keywordflow">else</span> {
+<a name="l00992"></a>00992     g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classDiagramDialog.html#a774a982b42e7de77d69d0a9b18622f5d">Property2</a>-&gt;text().toInt();
+<a name="l00993"></a>00993     g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classDiagramDialog.html#a93186037fe008ae629ac528f0cbb48ac">PropertyBox</a>-&gt;currentItem();
+<a name="l00994"></a>00994   }
+<a name="l00995"></a>00995   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(g);
+<a name="l00996"></a>00996   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l00997"></a>00997   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l00998"></a>00998 }
+<a name="l00999"></a>00999 
+<a name="l01003"></a><a class="code" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b">01003</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed.">DiagramDialog::slotOK</a>()
+<a name="l01004"></a>01004 {
+<a name="l01005"></a>01005   <a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed.">slotApply</a>();
+<a name="l01006"></a>01006   <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">slotCancel</a>();
+<a name="l01007"></a>01007 }
+<a name="l01008"></a>01008 
+<a name="l01012"></a><a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6">01012</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed.">DiagramDialog::slotApply</a>()
+<a name="l01013"></a>01013 {
+<a name="l01014"></a>01014   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.at(0) != <span class="charliteral">&#39;T&#39;</span>) {  <span class="comment">// not tabular or timing</span>
+<a name="l01015"></a>01015     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
+<a name="l01016"></a>01016       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
+<a name="l01017"></a>01017     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l01018"></a>01018     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text()) {
+<a name="l01019"></a>01019       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#ac537dbd9e95567c353574e2db009915d">xLabel</a>-&gt;text();
+<a name="l01020"></a>01020       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01021"></a>01021     }
+<a name="l01022"></a>01022     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
+<a name="l01023"></a>01023       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
+<a name="l01024"></a>01024     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l01025"></a>01025     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text()) {
+<a name="l01026"></a>01026       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#a9014b4bfae7033c04236d7d569f77001">ylLabel</a>-&gt;text();
+<a name="l01027"></a>01027       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01028"></a>01028     }
+<a name="l01029"></a>01029     
+<a name="l01030"></a>01030     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> != <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked()) {
+<a name="l01031"></a>01031       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> = <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked();
+<a name="l01032"></a>01032       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ac937186ea0fa68307ea32cf4554b5b90">GridOn</a> = <a class="code" href="classDiagramDialog.html#a9e467adbe1b67817fe7c6fad025ac558">GridOn</a>-&gt;isChecked();
+<a name="l01033"></a>01033       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01034"></a>01034     }
+<a name="l01035"></a>01035     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>)
+<a name="l01036"></a>01036       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.color() != <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor()) {
+<a name="l01037"></a>01037       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.setColor(<a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor());
+<a name="l01038"></a>01038       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01039"></a>01039     }
+<a name="l01040"></a>01040     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>)
+<a name="l01041"></a>01041       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.style()!=(Qt::PenStyle)(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;currentItem()+1)) {
+<a name="l01042"></a>01042       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a757119ef6f253ac616b6cfba3687ba37">GridPen</a>.setStyle((Qt::PenStyle)(<a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;currentItem()+1));
+<a name="l01043"></a>01043       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01044"></a>01044     }
+<a name="l01045"></a>01045     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Smith&quot;</span>) &amp;&amp; (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> != <span class="stringliteral">&quot;Polar&quot;</span>)) {
+<a name="l01046"></a>01046       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a>.isEmpty())
+<a name="l01047"></a>01047         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// can be not 0 and empty!</span>
+<a name="l01048"></a>01048       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text().isEmpty()) <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l01049"></a>01049       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> != <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text()) {
+<a name="l01050"></a>01050         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab">Label</a> = <a class="code" href="classDiagramDialog.html#a1c4041dcc0868b983cde5774b31ae198">yrLabel</a>-&gt;text();
+<a name="l01051"></a>01051         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01052"></a>01052       }
+<a name="l01053"></a>01053     }
+<a name="l01054"></a>01054 
+<a name="l01055"></a>01055     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) {
+<a name="l01056"></a>01056       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked()) {
+<a name="l01057"></a>01057         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked();
+<a name="l01058"></a>01058         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01059"></a>01059       }
+<a name="l01060"></a>01060       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked()) {
+<a name="l01061"></a>01061         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked();
+<a name="l01062"></a>01062         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01063"></a>01063       }
+<a name="l01064"></a>01064       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> != <a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked()) {
+<a name="l01065"></a>01065         <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a3c31dcab7a355abdf7b15ca697e78a39">log</a> = <a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked();
+<a name="l01066"></a>01066         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01067"></a>01067       }
+<a name="l01068"></a>01068     }
+<a name="l01069"></a>01069 
+<a name="l01070"></a>01070     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Smith&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;ySmith&quot;</span>) ||
+<a name="l01071"></a>01071           (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;PS&quot;</span>))
+<a name="l01072"></a>01072       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text().toDouble() &lt; 1.0)
+<a name="l01073"></a>01073         <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setText(<span class="stringliteral">&quot;1&quot;</span>);
+<a name="l01074"></a>01074 
+<a name="l01075"></a>01075     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;SP&quot;</span>)
+<a name="l01076"></a>01076       <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text().toDouble() &lt; 1.0)
+<a name="l01077"></a>01077         <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setText(<span class="stringliteral">&quot;1&quot;</span>);
+<a name="l01078"></a>01078 
+<a name="l01079"></a>01079     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked()) {
+<a name="l01080"></a>01080       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked());
+<a name="l01081"></a>01081       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01082"></a>01082     }
+<a name="l01083"></a>01083 
+<a name="l01084"></a>01084     <span class="comment">// Use string compares for all floating point numbers, in</span>
+<a name="l01085"></a>01085     <span class="comment">// order to avoid rounding problems.</span>
+<a name="l01086"></a>01086     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;text()) {
+<a name="l01087"></a>01087       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;text().toDouble();
+<a name="l01088"></a>01088       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01089"></a>01089     }
+<a name="l01090"></a>01090     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;text()) {
+<a name="l01091"></a>01091       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;text().toDouble();
+<a name="l01092"></a>01092       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01093"></a>01093     }
+<a name="l01094"></a>01094     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;text()) {
+<a name="l01095"></a>01095       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;text().toDouble();
+<a name="l01096"></a>01096       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01097"></a>01097     }
+<a name="l01098"></a>01098     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked()) {
+<a name="l01099"></a>01099       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked());
+<a name="l01100"></a>01100       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01101"></a>01101     }
+<a name="l01102"></a>01102     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;text()) {
+<a name="l01103"></a>01103       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;text().toDouble();
+<a name="l01104"></a>01104       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01105"></a>01105     }
+<a name="l01106"></a>01106     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;text()) {
+<a name="l01107"></a>01107       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;text().toDouble();
+<a name="l01108"></a>01108       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01109"></a>01109     }
+<a name="l01110"></a>01110     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text()) {
+<a name="l01111"></a>01111       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;text().toDouble();
+<a name="l01112"></a>01112       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01113"></a>01113     }
+<a name="l01114"></a>01114     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> == <a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked()) {
+<a name="l01115"></a>01115       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998">autoScale</a> = !(<a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked());
+<a name="l01116"></a>01116       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01117"></a>01117     }
+<a name="l01118"></a>01118     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a>) != <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;text()) {
+<a name="l01119"></a>01119       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;text().toDouble();
+<a name="l01120"></a>01120       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01121"></a>01121     }
+<a name="l01122"></a>01122     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a>) != <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;text()) {
+<a name="l01123"></a>01123       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#a5b85c48caae19eecd9d6757c01863b60">step</a> = <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;text().toDouble();
+<a name="l01124"></a>01124       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01125"></a>01125     }
+<a name="l01126"></a>01126     <span class="keywordflow">if</span>(QString::number(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a>) != <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text()) {
+<a name="l01127"></a>01127       <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a85ec3de120c1cc8ae2481fa5f6dc9a6a">zAxis</a>.<a class="code" href="structAxis.html#ae202c8a4383c8f30c48234ce9909dba7">limit_max</a> = <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;text().toDouble();
+<a name="l01128"></a>01128       <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01129"></a>01129     }
+<a name="l01130"></a>01130 
+<a name="l01131"></a>01131     <span class="comment">// for &quot;rect3D&quot;</span>
+<a name="l01132"></a>01132     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>)
+<a name="l01133"></a>01133       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>)-&gt;hideLines != <a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>-&gt;isChecked()) {
+<a name="l01134"></a>01134         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;hideLines = <a class="code" href="classDiagramDialog.html#acfc29c8106e4b93d1d36aa0ce4af70f2">hideInvisible</a>-&gt;isChecked();
+<a name="l01135"></a>01135         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01136"></a>01136       }
+<a name="l01137"></a>01137 
+<a name="l01138"></a>01138     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>)
+<a name="l01139"></a>01139       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotX != <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;text().toInt()) {
+<a name="l01140"></a>01140         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotX = <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;text().toInt();
+<a name="l01141"></a>01141         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01142"></a>01142       }
+<a name="l01143"></a>01143 
+<a name="l01144"></a>01144     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>)
+<a name="l01145"></a>01145       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotY != <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;text().toInt()) {
+<a name="l01146"></a>01146         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotY = <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;text().toInt();
+<a name="l01147"></a>01147         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01148"></a>01148       }
+<a name="l01149"></a>01149 
+<a name="l01150"></a>01150     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>)
+<a name="l01151"></a>01151       <span class="keywordflow">if</span>(((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotZ != <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;text().toInt()) {
+<a name="l01152"></a>01152         ((<a class="code" href="classRect3DDiagram.html" title="The Rect3DDiagram class implements the 3D-Cartesian diagram.">Rect3DDiagram</a>*)Diag)-&gt;rotZ = <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;text().toInt();
+<a name="l01153"></a>01153         <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01154"></a>01154       }
 <a name="l01155"></a>01155 
-<a name="l01156"></a>01156   <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.clear();   <span class="comment">// delete the graphs</span>
-<a name="l01157"></a>01157   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.setAutoDelete(<span class="keyword">false</span>);
-<a name="l01158"></a>01158   <span class="keywordflow">for</span>(<a class="code" href="classGraph.html">Graph</a> *pg = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.first(); pg != 0; pg = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.next())
-<a name="l01159"></a>01159     <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);  <span class="comment">// transfer the new graphs to diagram</span>
-<a name="l01160"></a>01160   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.clear();
-<a name="l01161"></a>01161   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.setAutoDelete(<span class="keyword">true</span>);
-<a name="l01162"></a>01162 
-<a name="l01163"></a>01163   <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa">loadGraphData</a>(<a class="code" href="classDiagramDialog.html#a527d4adc3a73c517ba5b651adb1a7ea6">defaultDataSet</a>);
-<a name="l01164"></a>01164   ((<a class="code" href="classSchematic.html">Schematic</a>*)parent())-&gt;viewport()-&gt;repaint();
-<a name="l01165"></a>01165   <a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram.">copyDiagramGraphs</a>();
-<a name="l01166"></a>01166   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a>) <a class="code" href="classDiagramDialog.html#a8e350c68592ed92150321d306e9957c2">transfer</a> = <span class="keyword">true</span>;   <span class="comment">// changes have been applied ?</span>
-<a name="l01167"></a>01167 }
-<a name="l01168"></a>01168 
-<a name="l01169"></a>01169 
-<a name="l01170"></a>01170 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01171"></a>01171 <span class="comment">// Is called if &quot;Cancel&quot; button is pressed.</span>
-<a name="l01172"></a><a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">01172</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">DiagramDialog::slotCancel</a>()
-<a name="l01173"></a>01173 {
-<a name="l01174"></a>01174 <span class="comment">//  Diag-&gt;loadGraphData(defaultDataSet);</span>
-<a name="l01175"></a>01175 <span class="comment">//  ((QucsView*)parent())-&gt;viewport()-&gt;repaint();</span>
-<a name="l01176"></a>01176   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a8e350c68592ed92150321d306e9957c2">transfer</a>) done(QDialog::Accepted);
-<a name="l01177"></a>01177   <span class="keywordflow">else</span> done(QDialog::Rejected);
-<a name="l01178"></a>01178 }
-<a name="l01179"></a>01179 
-<a name="l01180"></a>01180 <span class="comment">//-----------------------------------------------------------------</span>
-<a name="l01181"></a>01181 <span class="comment">// To get really all close events (even &lt;Escape&gt; key).</span>
-<a name="l01182"></a><a class="code" href="classDiagramDialog.html#a9e9f34d2d01d42be05b510e4bdae09f2">01182</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a9e9f34d2d01d42be05b510e4bdae09f2">DiagramDialog::reject</a>()
-<a name="l01183"></a>01183 {
-<a name="l01184"></a>01184   <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">slotCancel</a>();
-<a name="l01185"></a>01185 }
-<a name="l01186"></a>01186 
-<a name="l01187"></a>01187 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01188"></a><a class="code" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23">01188</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23">DiagramDialog::slotSetColor</a>()
-<a name="l01189"></a>01189 {
-<a name="l01190"></a>01190   QColor c = QColorDialog::getColor(<a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;paletteBackgroundColor(),<span class="keyword">this</span>);
-<a name="l01191"></a>01191   <span class="keywordflow">if</span>(!c.isValid()) <span class="keywordflow">return</span>;
-<a name="l01192"></a>01192   QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(c.name());
-<a name="l01193"></a>01193   <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
-<a name="l01194"></a>01194   <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(c);
-<a name="l01195"></a>01195 
-<a name="l01196"></a>01196   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01197"></a>01197   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01198"></a>01198 
-<a name="l01199"></a>01199   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01200"></a>01200   g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = c;
-<a name="l01201"></a>01201   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01202"></a>01202   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01203"></a>01203 }
-<a name="l01204"></a>01204 
-<a name="l01205"></a>01205 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01206"></a><a class="code" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f">01206</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f">DiagramDialog::slotSetGridColor</a>()
-<a name="l01207"></a>01207 {
-<a name="l01208"></a>01208   QColor c = QColorDialog::getColor(
-<a name="l01209"></a>01209       <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor(),<span class="keyword">this</span>);
-<a name="l01210"></a>01210   <span class="keywordflow">if</span>(!c.isValid()) <span class="keywordflow">return</span>;
-<a name="l01211"></a>01211   <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setPaletteBackgroundColor(c);
-<a name="l01212"></a>01212   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01213"></a>01213 }
-<a name="l01214"></a>01214 
-<a name="l01218"></a><a class="code" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151">01218</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes.">DiagramDialog::slotResetToTake</a>(<span class="keyword">const</span> QString&amp; s)
-<a name="l01219"></a>01219 {
-<a name="l01220"></a>01220   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01221"></a>01221   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01222"></a>01222 
-<a name="l01223"></a>01223   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01224"></a>01224   g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = s;
-<a name="l01225"></a>01225   <span class="comment">// \todo GraphList-&gt;changeItem(s, i);   // must done after the graph settings !!!</span>
-<a name="l01226"></a>01226   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01227"></a>01227   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01228"></a>01228 }
-<a name="l01229"></a>01229 
-<a name="l01233"></a><a class="code" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7">01233</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision.">DiagramDialog::slotSetProp2</a>(<span class="keyword">const</span> QString&amp; s)
-<a name="l01234"></a>01234 {
-<a name="l01235"></a>01235   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01236"></a>01236   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01237"></a>01237 
-<a name="l01238"></a>01238   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01239"></a>01239   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Tab&quot;</span>) g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = s.toInt();
-<a name="l01240"></a>01240   <span class="keywordflow">else</span>  g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = s.toInt();
-<a name="l01241"></a>01241   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01242"></a>01242   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01243"></a>01243 }
-<a name="l01244"></a>01244 
-<a name="l01248"></a><a class="code" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a">01248</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode.">DiagramDialog::slotSetNumMode</a>(<span class="keywordtype">int</span> Mode)
-<a name="l01249"></a>01249 {
-<a name="l01250"></a>01250   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01251"></a>01251   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01252"></a>01252 
-<a name="l01253"></a>01253   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01254"></a>01254   g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = Mode;
-<a name="l01255"></a>01255   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01256"></a>01256   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01257"></a>01257 }
-<a name="l01258"></a>01258 
-<a name="l01262"></a><a class="code" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76">01262</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed.">DiagramDialog::slotSetGridBox</a>(<span class="keywordtype">int</span> state)
-<a name="l01263"></a>01263 {
-<a name="l01264"></a>01264   <span class="keywordflow">if</span>(state == 2) {
-<a name="l01265"></a>01265     <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01266"></a>01266     <a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01267"></a>01267     <a class="code" href="classDiagramDialog.html#a4ba964429f0e17d344f6987e6cbd29a4">GridLabel1</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01268"></a>01268     <a class="code" href="classDiagramDialog.html#af79c536d7169d63e39d62bc3158f8c6c">GridLabel2</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01269"></a>01269   }
-<a name="l01270"></a>01270   <span class="keywordflow">else</span> {
-<a name="l01271"></a>01271     <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01272"></a>01272     <a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01273"></a>01273     <a class="code" href="classDiagramDialog.html#a4ba964429f0e17d344f6987e6cbd29a4">GridLabel1</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01274"></a>01274     <a class="code" href="classDiagramDialog.html#af79c536d7169d63e39d62bc3158f8c6c">GridLabel2</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01275"></a>01275   }
-<a name="l01276"></a>01276 }
-<a name="l01277"></a>01277 
-<a name="l01281"></a><a class="code" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c">01281</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox).">DiagramDialog::slotSetGraphStyle</a>(<span class="keywordtype">int</span> style)
-<a name="l01282"></a>01282 {
-<a name="l01283"></a>01283   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01284"></a>01284   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01285"></a>01285 
-<a name="l01286"></a>01286   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01287"></a>01287   g-&gt;<a class="code" href="classGraph.html#a5dd38a0c0a9ffc826032ca70cb9a5df4">Style</a> = style;
-<a name="l01288"></a>01288   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01289"></a>01289   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01290"></a>01290 }
-<a name="l01291"></a>01291 
-<a name="l01295"></a><a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85">01295</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram.">DiagramDialog::copyDiagramGraphs</a>()
-<a name="l01296"></a>01296 {
-<a name="l01297"></a>01297   <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>)
-<a name="l01298"></a>01298     <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(pg-&gt;<a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">sameNewOne</a>());
-<a name="l01299"></a>01299 }
-<a name="l01300"></a>01300 
-<a name="l01304"></a><a class="code" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506">01304</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph.">DiagramDialog::slotSetYAxis</a>(<span class="keywordtype">int</span> axis)
-<a name="l01305"></a>01305 {
-<a name="l01306"></a>01306   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
-<a name="l01307"></a>01307   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
-<a name="l01308"></a>01308 
-<a name="l01309"></a>01309   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
-<a name="l01310"></a>01310   g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = axis;
-<a name="l01311"></a>01311   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
-<a name="l01312"></a>01312   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
-<a name="l01313"></a>01313 }
-<a name="l01314"></a>01314 
-<a name="l01315"></a>01315 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01316"></a><a class="code" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b">01316</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b">DiagramDialog::slotManualX</a>(<span class="keywordtype">int</span> state)
-<a name="l01317"></a>01317 {
-<a name="l01318"></a>01318   <span class="keywordflow">if</span>(state == 2) {
-<a name="l01319"></a>01319     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
-<a name="l01320"></a>01320       <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01321"></a>01321     <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01322"></a>01322     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
-<a name="l01323"></a>01323     <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01324"></a>01324   }
-<a name="l01325"></a>01325   <span class="keywordflow">else</span> {
-<a name="l01326"></a>01326     <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01327"></a>01327     <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01328"></a>01328     <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01329"></a>01329   }
-<a name="l01330"></a>01330 }
-<a name="l01331"></a>01331 
-<a name="l01332"></a>01332 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01333"></a><a class="code" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd">01333</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd">DiagramDialog::slotManualY</a>(<span class="keywordtype">int</span> state)
-<a name="l01334"></a>01334 {
-<a name="l01335"></a>01335   <span class="keywordflow">if</span>(state == 2) {
-<a name="l01336"></a>01336     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
-<a name="l01337"></a>01337       <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01338"></a>01338     <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01339"></a>01339     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
-<a name="l01340"></a>01340     <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01341"></a>01341   }
-<a name="l01342"></a>01342   <span class="keywordflow">else</span> {
-<a name="l01343"></a>01343     <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01344"></a>01344     <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01345"></a>01345     <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01346"></a>01346   }
-<a name="l01347"></a>01347 }
-<a name="l01348"></a>01348 
-<a name="l01349"></a>01349 <span class="comment">// --------------------------------------------------------------------------</span>
-<a name="l01350"></a><a class="code" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633">01350</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633">DiagramDialog::slotManualZ</a>(<span class="keywordtype">int</span> state)
-<a name="l01351"></a>01351 {
-<a name="l01352"></a>01352   <span class="keywordflow">if</span>(state == 2) {
-<a name="l01353"></a>01353     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
-<a name="l01354"></a>01354       <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01355"></a>01355     <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01356"></a>01356     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
-<a name="l01357"></a>01357     <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01358"></a>01358   }
-<a name="l01359"></a>01359   <span class="keywordflow">else</span> {
-<a name="l01360"></a>01360     <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01361"></a>01361     <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01362"></a>01362     <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01363"></a>01363   }
-<a name="l01364"></a>01364 }
-<a name="l01365"></a>01365 
-<a name="l01369"></a><a class="code" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695">01369</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes.">DiagramDialog::slotChangeTab</a>(QWidget*)
-<a name="l01370"></a>01370 {
-<a name="l01371"></a>01371   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a> == 0) <span class="keywordflow">return</span>;   <span class="comment">// defined ?</span>
-<a name="l01372"></a>01372   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>) {
-<a name="l01373"></a>01373     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01374"></a>01374     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01375"></a>01375   }
-<a name="l01376"></a>01376   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>) {
-<a name="l01377"></a>01377     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01378"></a>01378     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01379"></a>01379   }
-<a name="l01380"></a>01380   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>) {
-<a name="l01381"></a>01381     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
-<a name="l01382"></a>01382     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
-<a name="l01383"></a>01383   }
-<a name="l01384"></a>01384 }
-<a name="l01385"></a>01385 
-<a name="l01386"></a>01386 
-<a name="l01390"></a><a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b">01390</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotX</a>(<span class="keywordtype">int</span> Value)
-<a name="l01391"></a>01391 {
-<a name="l01392"></a>01392   <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;setText(QString::number(Value));
-<a name="l01393"></a>01393   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01394"></a>01394   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01395"></a>01395 }
-<a name="l01396"></a>01396 
-<a name="l01400"></a><a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0">01400</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotY</a>(<span class="keywordtype">int</span> Value)
-<a name="l01401"></a>01401 {
-<a name="l01402"></a>01402   <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;setText(QString::number(Value));
-<a name="l01403"></a>01403   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01404"></a>01404   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01405"></a>01405 }
-<a name="l01406"></a>01406 
-<a name="l01410"></a><a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4">01410</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotZ</a>(<span class="keywordtype">int</span> Value)
-<a name="l01411"></a>01411 {
-<a name="l01412"></a>01412   <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;setText(QString::number(Value));
-<a name="l01413"></a>01413   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01414"></a>01414   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01415"></a>01415 }
-<a name="l01416"></a>01416 
-<a name="l01420"></a><a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50">01420</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotX</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
-<a name="l01421"></a>01421 {
-<a name="l01422"></a>01422   <a class="code" href="classDiagramDialog.html#a486293259bf9c41859f48f7f8d4fd138">SliderRotX</a>-&gt;setValue(Text.toInt());
-<a name="l01423"></a>01423   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01424"></a>01424   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01425"></a>01425 }
-<a name="l01426"></a>01426 
-<a name="l01430"></a><a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445">01430</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotY</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
-<a name="l01431"></a>01431 {
-<a name="l01432"></a>01432   <a class="code" href="classDiagramDialog.html#a846437469dc961c15a0d526dcf34382c">SliderRotY</a>-&gt;setValue(Text.toInt());
-<a name="l01433"></a>01433   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01434"></a>01434   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01435"></a>01435 }
-<a name="l01436"></a>01436 
-<a name="l01440"></a><a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518">01440</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotZ</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
-<a name="l01441"></a>01441 {
-<a name="l01442"></a>01442   <a class="code" href="classDiagramDialog.html#a281689e1cf5662c633d5f6a01f044c19">SliderRotZ</a>-&gt;setValue(Text.toInt());
-<a name="l01443"></a>01443   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
-<a name="l01444"></a>01444   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
-<a name="l01445"></a>01445 }
+<a name="l01156"></a>01156   }   <span class="comment">// of &quot;if(Diag-&gt;Name != &quot;Tab&quot;)&quot;</span>
+<a name="l01157"></a>01157 
+<a name="l01158"></a>01158   <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.clear();   <span class="comment">// delete the graphs</span>
+<a name="l01159"></a>01159   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.setAutoDelete(<span class="keyword">false</span>);
+<a name="l01160"></a>01160   <span class="keywordflow">for</span>(<a class="code" href="classGraph.html">Graph</a> *pg = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.first(); pg != 0; pg = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.next())
+<a name="l01161"></a>01161     <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);  <span class="comment">// transfer the new graphs to diagram</span>
+<a name="l01162"></a>01162   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.clear();
+<a name="l01163"></a>01163   <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.setAutoDelete(<span class="keyword">true</span>);
+<a name="l01164"></a>01164 
+<a name="l01165"></a>01165   <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa">loadGraphData</a>(<a class="code" href="classDiagramDialog.html#a527d4adc3a73c517ba5b651adb1a7ea6">defaultDataSet</a>);
+<a name="l01166"></a>01166   ((<a class="code" href="classSchematic.html">Schematic</a>*)parent())-&gt;viewport()-&gt;repaint();
+<a name="l01167"></a>01167   <a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram.">copyDiagramGraphs</a>();
+<a name="l01168"></a>01168   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a>) <a class="code" href="classDiagramDialog.html#a8e350c68592ed92150321d306e9957c2">transfer</a> = <span class="keyword">true</span>;   <span class="comment">// changes have been applied ?</span>
+<a name="l01169"></a>01169 }
+<a name="l01170"></a>01170 
+<a name="l01171"></a>01171 
+<a name="l01172"></a>01172 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01173"></a>01173 <span class="comment">// Is called if &quot;Cancel&quot; button is pressed.</span>
+<a name="l01174"></a><a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">01174</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">DiagramDialog::slotCancel</a>()
+<a name="l01175"></a>01175 {
+<a name="l01176"></a>01176 <span class="comment">//  Diag-&gt;loadGraphData(defaultDataSet);</span>
+<a name="l01177"></a>01177 <span class="comment">//  ((QucsView*)parent())-&gt;viewport()-&gt;repaint();</span>
+<a name="l01178"></a>01178   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a8e350c68592ed92150321d306e9957c2">transfer</a>) done(QDialog::Accepted);
+<a name="l01179"></a>01179   <span class="keywordflow">else</span> done(QDialog::Rejected);
+<a name="l01180"></a>01180 }
+<a name="l01181"></a>01181 
+<a name="l01182"></a>01182 <span class="comment">//-----------------------------------------------------------------</span>
+<a name="l01183"></a>01183 <span class="comment">// To get really all close events (even &lt;Escape&gt; key).</span>
+<a name="l01184"></a><a class="code" href="classDiagramDialog.html#a9e9f34d2d01d42be05b510e4bdae09f2">01184</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a9e9f34d2d01d42be05b510e4bdae09f2">DiagramDialog::reject</a>()
+<a name="l01185"></a>01185 {
+<a name="l01186"></a>01186   <a class="code" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44">slotCancel</a>();
+<a name="l01187"></a>01187 }
+<a name="l01188"></a>01188 
+<a name="l01189"></a>01189 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01190"></a><a class="code" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23">01190</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23">DiagramDialog::slotSetColor</a>()
+<a name="l01191"></a>01191 {
+<a name="l01192"></a>01192   QColor c = QColorDialog::getColor(<a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;paletteBackgroundColor(),<span class="keyword">this</span>);
+<a name="l01193"></a>01193   <span class="keywordflow">if</span>(!c.isValid()) <span class="keywordflow">return</span>;
+<a name="l01194"></a>01194   QString stylesheet = QString(<span class="stringliteral">&quot;QPushButton {background-color: %1};&quot;</span>).arg(c.name());
+<a name="l01195"></a>01195   <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setStyleSheet(stylesheet);
+<a name="l01196"></a>01196   <a class="code" href="classDiagramDialog.html#a9452d2f9ec7190113bc9478df2fe24d9">ColorButt</a>-&gt;setPaletteBackgroundColor(c);
+<a name="l01197"></a>01197 
+<a name="l01198"></a>01198   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01199"></a>01199   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01200"></a>01200 
+<a name="l01201"></a>01201   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01202"></a>01202   g-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = c;
+<a name="l01203"></a>01203   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01204"></a>01204   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01205"></a>01205 }
+<a name="l01206"></a>01206 
+<a name="l01207"></a>01207 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01208"></a><a class="code" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f">01208</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f">DiagramDialog::slotSetGridColor</a>()
+<a name="l01209"></a>01209 {
+<a name="l01210"></a>01210   QColor c = QColorDialog::getColor(
+<a name="l01211"></a>01211       <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;paletteBackgroundColor(),<span class="keyword">this</span>);
+<a name="l01212"></a>01212   <span class="keywordflow">if</span>(!c.isValid()) <span class="keywordflow">return</span>;
+<a name="l01213"></a>01213   <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setPaletteBackgroundColor(c);
+<a name="l01214"></a>01214   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01215"></a>01215 }
+<a name="l01216"></a>01216 
+<a name="l01220"></a><a class="code" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151">01220</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes.">DiagramDialog::slotResetToTake</a>(<span class="keyword">const</span> QString&amp; s)
+<a name="l01221"></a>01221 {
+<a name="l01222"></a>01222   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01223"></a>01223   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01224"></a>01224 
+<a name="l01225"></a>01225   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01226"></a>01226   g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = s;
+<a name="l01227"></a>01227   <span class="comment">// \todo GraphList-&gt;changeItem(s, i);   // must done after the graph settings !!!</span>
+<a name="l01228"></a>01228   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01229"></a>01229   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01230"></a>01230 }
+<a name="l01231"></a>01231 
+<a name="l01235"></a><a class="code" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7">01235</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision.">DiagramDialog::slotSetProp2</a>(<span class="keyword">const</span> QString&amp; s)
+<a name="l01236"></a>01236 {
+<a name="l01237"></a>01237   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01238"></a>01238   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01239"></a>01239 
+<a name="l01240"></a>01240   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01241"></a>01241   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Tab&quot;</span>) g-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = s.toInt();
+<a name="l01242"></a>01242   <span class="keywordflow">else</span>  g-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = s.toInt();
+<a name="l01243"></a>01243   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01244"></a>01244   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01245"></a>01245 }
+<a name="l01246"></a>01246 
+<a name="l01250"></a><a class="code" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a">01250</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode.">DiagramDialog::slotSetNumMode</a>(<span class="keywordtype">int</span> Mode)
+<a name="l01251"></a>01251 {
+<a name="l01252"></a>01252   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01253"></a>01253   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01254"></a>01254 
+<a name="l01255"></a>01255   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01256"></a>01256   g-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = Mode;
+<a name="l01257"></a>01257   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01258"></a>01258   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01259"></a>01259 }
+<a name="l01260"></a>01260 
+<a name="l01264"></a><a class="code" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76">01264</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed.">DiagramDialog::slotSetGridBox</a>(<span class="keywordtype">int</span> state)
+<a name="l01265"></a>01265 {
+<a name="l01266"></a>01266   <span class="keywordflow">if</span>(state == 2) {
+<a name="l01267"></a>01267     <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01268"></a>01268     <a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01269"></a>01269     <a class="code" href="classDiagramDialog.html#a4ba964429f0e17d344f6987e6cbd29a4">GridLabel1</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01270"></a>01270     <a class="code" href="classDiagramDialog.html#af79c536d7169d63e39d62bc3158f8c6c">GridLabel2</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01271"></a>01271   }
+<a name="l01272"></a>01272   <span class="keywordflow">else</span> {
+<a name="l01273"></a>01273     <a class="code" href="classDiagramDialog.html#a33c9fa3e48e91d729694bb99ed3e54d7">GridColorButt</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01274"></a>01274     <a class="code" href="classDiagramDialog.html#ae464ac0ec03352a2e910c1289656a905">GridStyleBox</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01275"></a>01275     <a class="code" href="classDiagramDialog.html#a4ba964429f0e17d344f6987e6cbd29a4">GridLabel1</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01276"></a>01276     <a class="code" href="classDiagramDialog.html#af79c536d7169d63e39d62bc3158f8c6c">GridLabel2</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01277"></a>01277   }
+<a name="l01278"></a>01278 }
+<a name="l01279"></a>01279 
+<a name="l01283"></a><a class="code" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c">01283</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox).">DiagramDialog::slotSetGraphStyle</a>(<span class="keywordtype">int</span> style)
+<a name="l01284"></a>01284 {
+<a name="l01285"></a>01285   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01286"></a>01286   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01287"></a>01287 
+<a name="l01288"></a>01288   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01289"></a>01289   g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f">toGraphStyle</a>(style);
+<a name="l01290"></a>01290   assert(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>!=<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480ac0f47e71848fa4c0f4f83dfc88309354">GRAPHSTYLE_INVALID</a>);
+<a name="l01291"></a>01291   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01292"></a>01292   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01293"></a>01293 }
+<a name="l01294"></a>01294 
+<a name="l01298"></a><a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85">01298</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram.">DiagramDialog::copyDiagramGraphs</a>()
+<a name="l01299"></a>01299 {
+<a name="l01300"></a>01300   <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, <a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>)
+<a name="l01301"></a>01301     <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.append(pg-&gt;<a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">sameNewOne</a>());
+<a name="l01302"></a>01302 }
+<a name="l01303"></a>01303 
+<a name="l01307"></a><a class="code" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506">01307</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph.">DiagramDialog::slotSetYAxis</a>(<span class="keywordtype">int</span> axis)
+<a name="l01308"></a>01308 {
+<a name="l01309"></a>01309   <span class="keywordtype">int</span> i = <a class="code" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a>-&gt;currentRow();
+<a name="l01310"></a>01310   <span class="keywordflow">if</span>(i &lt; 0) <span class="keywordflow">return</span>;   <span class="comment">// return, if no item selected</span>
+<a name="l01311"></a>01311 
+<a name="l01312"></a>01312   <a class="code" href="classGraph.html">Graph</a> *g = <a class="code" href="classDiagramDialog.html#a3d7fdb5375efc1ed60dd322cef3df4fc">Graphs</a>.at(i);
+<a name="l01313"></a>01313   g-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = axis;
+<a name="l01314"></a>01314   <a class="code" href="classDiagramDialog.html#ab8d465659caf357364f24063767b146f">changed</a> = <span class="keyword">true</span>;
+<a name="l01315"></a>01315   <a class="code" href="classDiagramDialog.html#ad1dc82a1dcb6214d273d8a13ca76edda">toTake</a>  = <span class="keyword">false</span>;
+<a name="l01316"></a>01316 }
+<a name="l01317"></a>01317 
+<a name="l01318"></a>01318 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01319"></a><a class="code" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b">01319</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b">DiagramDialog::slotManualX</a>(<span class="keywordtype">int</span> state)
+<a name="l01320"></a>01320 {
+<a name="l01321"></a>01321   <span class="keywordflow">if</span>(state == 2) {
+<a name="l01322"></a>01322     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
+<a name="l01323"></a>01323       <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01324"></a>01324     <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01325"></a>01325     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
+<a name="l01326"></a>01326     <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01327"></a>01327   }
+<a name="l01328"></a>01328   <span class="keywordflow">else</span> {
+<a name="l01329"></a>01329     <a class="code" href="classDiagramDialog.html#ab6948cee087a164b144efec016f5f83b">startX</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01330"></a>01330     <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01331"></a>01331     <a class="code" href="classDiagramDialog.html#a08f3ce14fdbc80c688cdb30403214e7b">stopX</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01332"></a>01332   }
+<a name="l01333"></a>01333 }
+<a name="l01334"></a>01334 
+<a name="l01335"></a>01335 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01336"></a><a class="code" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd">01336</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd">DiagramDialog::slotManualY</a>(<span class="keywordtype">int</span> state)
+<a name="l01337"></a>01337 {
+<a name="l01338"></a>01338   <span class="keywordflow">if</span>(state == 2) {
+<a name="l01339"></a>01339     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
+<a name="l01340"></a>01340       <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01341"></a>01341     <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01342"></a>01342     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
+<a name="l01343"></a>01343     <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01344"></a>01344   }
+<a name="l01345"></a>01345   <span class="keywordflow">else</span> {
+<a name="l01346"></a>01346     <a class="code" href="classDiagramDialog.html#afaf466be32df2d541f4b78a04501a770">startY</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01347"></a>01347     <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01348"></a>01348     <a class="code" href="classDiagramDialog.html#a7a7f767d5854b1a2cd893ffa6bbc0dcf">stopY</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01349"></a>01349   }
+<a name="l01350"></a>01350 }
+<a name="l01351"></a>01351 
+<a name="l01352"></a>01352 <span class="comment">// --------------------------------------------------------------------------</span>
+<a name="l01353"></a><a class="code" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633">01353</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633">DiagramDialog::slotManualZ</a>(<span class="keywordtype">int</span> state)
+<a name="l01354"></a>01354 {
+<a name="l01355"></a>01355   <span class="keywordflow">if</span>(state == 2) {
+<a name="l01356"></a>01356     <span class="keywordflow">if</span>((<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a>.left(4) == <span class="stringliteral">&quot;Rect&quot;</span>) || (<a class="code" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a>-&gt;<a class="code" href="classDiagram.html#a632e0c58b7c319ee6c41a1d1e9e9cbb9">Name</a> == <span class="stringliteral">&quot;Curve&quot;</span>))
+<a name="l01357"></a>01357       <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01358"></a>01358     <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01359"></a>01359     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>) <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked())  <span class="keywordflow">return</span>;
+<a name="l01360"></a>01360     <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01361"></a>01361   }
+<a name="l01362"></a>01362   <span class="keywordflow">else</span> {
+<a name="l01363"></a>01363     <a class="code" href="classDiagramDialog.html#a0864ceda3c784f656d32ab10a89d20ee">startZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01364"></a>01364     <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01365"></a>01365     <a class="code" href="classDiagramDialog.html#a84dad634b6fbcb57531e565dd95c1238">stopZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01366"></a>01366   }
+<a name="l01367"></a>01367 }
+<a name="l01368"></a>01368 
+<a name="l01372"></a><a class="code" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695">01372</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes.">DiagramDialog::slotChangeTab</a>(QWidget*)
+<a name="l01373"></a>01373 {
+<a name="l01374"></a>01374   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a> == 0) <span class="keywordflow">return</span>;   <span class="comment">// defined ?</span>
+<a name="l01375"></a>01375   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>) {
+<a name="l01376"></a>01376     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a62d037b54bd28d09f8ca59fd6f47b088">GridLogX</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01377"></a>01377     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a17d09509ad9a0ba95692d57cbbabc6ae">manualX</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a270bf0dee586458e84f422bdbe387859">stepX</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01378"></a>01378   }
+<a name="l01379"></a>01379   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>) {
+<a name="l01380"></a>01380     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a64735737326be2adcc80109c8b6fcc43">GridLogY</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01381"></a>01381     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8">manualY</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#a24ab04c6cd64cc6d1c542013ca7dcba5">stepY</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01382"></a>01382   }
+<a name="l01383"></a>01383   <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>) {
+<a name="l01384"></a>01384     <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#a149cce4fd2adf463af638755cf87afd8">GridLogZ</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">false</span>);
+<a name="l01385"></a>01385     <span class="keywordflow">else</span>  <span class="keywordflow">if</span>(<a class="code" href="classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9">manualZ</a>-&gt;isChecked())  <a class="code" href="classDiagramDialog.html#ad04732ccfa006733335338a48621d0d9">stepZ</a>-&gt;setEnabled(<span class="keyword">true</span>);
+<a name="l01386"></a>01386   }
+<a name="l01387"></a>01387 }
+<a name="l01388"></a>01388 
+<a name="l01389"></a>01389 
+<a name="l01393"></a><a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b">01393</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotX</a>(<span class="keywordtype">int</span> Value)
+<a name="l01394"></a>01394 {
+<a name="l01395"></a>01395   <a class="code" href="classDiagramDialog.html#a066036051206bcfac16f70a7dbb64990">rotationX</a>-&gt;setText(QString::number(Value));
+<a name="l01396"></a>01396   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01397"></a>01397   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01398"></a>01398 }
+<a name="l01399"></a>01399 
+<a name="l01403"></a><a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0">01403</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotY</a>(<span class="keywordtype">int</span> Value)
+<a name="l01404"></a>01404 {
+<a name="l01405"></a>01405   <a class="code" href="classDiagramDialog.html#a365b0f27913ef7fa5793b991adcf736b">rotationY</a>-&gt;setText(QString::number(Value));
+<a name="l01406"></a>01406   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01407"></a>01407   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01408"></a>01408 }
+<a name="l01409"></a>01409 
+<a name="l01413"></a><a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4">01413</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed.">DiagramDialog::slotNewRotZ</a>(<span class="keywordtype">int</span> Value)
+<a name="l01414"></a>01414 {
+<a name="l01415"></a>01415   <a class="code" href="classDiagramDialog.html#a098374dc14497cd45acc94adad570a5e">rotationZ</a>-&gt;setText(QString::number(Value));
+<a name="l01416"></a>01416   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = float(Value) * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01417"></a>01417   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01418"></a>01418 }
+<a name="l01419"></a>01419 
+<a name="l01423"></a><a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50">01423</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotX</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
+<a name="l01424"></a>01424 {
+<a name="l01425"></a>01425   <a class="code" href="classDiagramDialog.html#a486293259bf9c41859f48f7f8d4fd138">SliderRotX</a>-&gt;setValue(Text.toInt());
+<a name="l01426"></a>01426   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#a4194e93b114ef970544d75da8f0ef5bf">rotX</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01427"></a>01427   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01428"></a>01428 }
+<a name="l01429"></a>01429 
+<a name="l01433"></a><a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445">01433</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotY</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
+<a name="l01434"></a>01434 {
+<a name="l01435"></a>01435   <a class="code" href="classDiagramDialog.html#a846437469dc961c15a0d526dcf34382c">SliderRotY</a>-&gt;setValue(Text.toInt());
+<a name="l01436"></a>01436   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#af4df8a5584561c5e18472c9abc8fcaa4">rotY</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01437"></a>01437   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01438"></a>01438 }
+<a name="l01439"></a>01439 
+<a name="l01443"></a><a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518">01443</a> <span class="keywordtype">void</span> <a class="code" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed.">DiagramDialog::slotEditRotZ</a>(<span class="keyword">const</span> QString&amp; <a class="code" href="structText.html">Text</a>)
+<a name="l01444"></a>01444 {
+<a name="l01445"></a>01445   <a class="code" href="classDiagramDialog.html#a281689e1cf5662c633d5f6a01f044c19">SliderRotZ</a>-&gt;setValue(Text.toInt());
+<a name="l01446"></a>01446   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;<a class="code" href="classCross3D.html#aa627eed994760f99c8baebb895f5b312">rotZ</a> = Text.toFloat() * <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>/180.0;
+<a name="l01447"></a>01447   <a class="code" href="classDiagramDialog.html#a868599365e90f38eb8049e96bb88b1bf">DiagCross</a>-&gt;update();
+<a name="l01448"></a>01448 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1483,7 +1486,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:46 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

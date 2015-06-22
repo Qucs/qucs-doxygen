@@ -4,6 +4,7 @@ var searchData=
   ['basic_5fbjt',['Basic_BJT',['../classBasic__BJT.html#a010a693143a350287056cca06f89e674',1,'Basic_BJT']]],
   ['basic_5fmosfet',['Basic_MOSFET',['../classBasic__MOSFET.html#ac1f9da2ad857115a1f9840c03cace693',1,'Basic_MOSFET']]],
   ['becomecurrent',['becomeCurrent',['../classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7',1,'QucsDoc::becomeCurrent()'],['../classSchematic.html#a0571a69ffa10a244468a37cab8213c0e',1,'Schematic::becomeCurrent()'],['../classTextDoc.html#a595fa965253c831abf6caa3e66564e71',1,'TextDoc::becomeCurrent()']]],
+  ['begin',['begin',['../classGraph.html#a59082951988ebe52d725bd25f44726e1',1,'Graph::begin()'],['../classGraph.html#a3a4c24167412528ab8dc27b3ea2cfb1e',1,'Graph::begin() const ']]],
   ['beginnetlistdigital',['beginNetlistDigital',['../classSchematic.html#a78cbb7cbfec9141455286609f4ba2831',1,'Schematic']]],
   ['biast',['BiasT',['../classBiasT.html#ad2849e5277565a613f8c3ec293af1025',1,'BiasT']]],
   ['binarytogrey4bit',['binarytogrey4bit',['../classbinarytogrey4bit.html#ab721b46d8c0d74ab8882ba3835d51934',1,'binarytogrey4bit']]],

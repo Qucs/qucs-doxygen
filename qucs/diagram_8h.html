@@ -96,7 +96,7 @@ Include dependency graph for diagram.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="diagram_8h__incl.png" border="0" usemap="#_2home_2travis_2build_2Qucs_2qucs_2qucs_2qucs_2diagrams_2diagram_8h" alt=""/></div>
 <map name="_2home_2travis_2build_2Qucs_2qucs_2qucs_2qucs_2diagrams_2diagram_8h" id="_2home_2travis_2build_2Qucs_2qucs_2qucs_2qucs_2diagrams_2diagram_8h">
-<area shape="rect" id="node3" href="graph_8h.html" title="graph.h" alt="" coords="268,83,332,112"/><area shape="rect" id="node5" href="marker_8h.html" title="marker.h" alt="" coords="409,160,481,189"/><area shape="rect" id="node7" href="element_8h.html" title="Defines drawing elements for schematics." alt="" coords="35,237,112,267"/><area shape="rect" id="node13" href="viewpainter_8h.html" title="viewpainter.h" alt="" coords="432,237,531,267"/></map>
+<area shape="rect" id="node3" href="graph_8h.html" title="graph.h" alt="" coords="282,83,346,112"/><area shape="rect" id="node5" href="marker_8h.html" title="marker.h" alt="" coords="470,160,542,189"/><area shape="rect" id="node7" href="element_8h.html" title="Defines drawing elements for schematics." alt="" coords="207,237,285,267"/><area shape="rect" id="node13" href="viewpainter_8h.html" title="viewpainter.h" alt="" coords="493,237,591,267"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -131,12 +131,13 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">if</span>(p &gt;= p_end) {     \
+    int pos = p - g-&gt;begin(); \
+    assert(pos&lt;Size); \
     Size += 256;        \
-    tmp = p - g-&gt;ScrPoints; \
-    p = p_end = g-&gt;ScrPoints = (<span class="keywordtype">float</span>*)realloc(g-&gt;ScrPoints, Size*<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)); \
-    p += tmp; \
-    p_end += Size - 9; \
-  } \
+    g-&gt;resizeScrPoints(Size); \
+    p = g-&gt;begin() + pos; \
+    p_end = g-&gt;begin() + (Size - 9); \
+  }
 </pre></div>
 <p>Definition at line <a class="el" href="diagram_8h_source.html#l00036">36</a> of file <a class="el" href="diagram_8h_source.html">diagram.h</a>.</p>
 
@@ -190,7 +191,7 @@ Defines</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:47 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

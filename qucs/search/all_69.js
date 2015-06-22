@@ -81,7 +81,7 @@ var searchData=
   ['insertwirenode1',['insertWireNode1',['../classSchematic.html#a8f5c4764dbb9f7928cb0eb9846b14fc0',1,'Schematic']]],
   ['insertwirenode2',['insertWireNode2',['../classSchematic.html#ad6b1cfa660d9307869980f2c337c2aec',1,'Schematic']]],
   ['insground',['insGround',['../classQucsApp.html#a728a29024c654ffe10256a611fd9d231',1,'QucsApp']]],
-  ['insidediagram',['insideDiagram',['../classCurveDiagram.html#a4ae7969a1f3a5d37341380fc35396ffc',1,'CurveDiagram::insideDiagram()'],['../classDiagram.html#ae04914b55dadc283ce02f97f0de5857c',1,'Diagram::insideDiagram()'],['../classRect3DDiagram.html#a6d4589c3de7bdb5f1c6dc176b900fac2',1,'Rect3DDiagram::insideDiagram()'],['../classRectDiagram.html#a6ff3b5f4af2c218dcb72736027f51483',1,'RectDiagram::insideDiagram()']]],
+  ['insidediagram',['insideDiagram',['../classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6',1,'CurveDiagram::insideDiagram()'],['../classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c',1,'Diagram::insideDiagram()'],['../classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574',1,'Rect3DDiagram::insideDiagram()'],['../classRectDiagram.html#a8b97fbb19478506da91aaaca65860975',1,'RectDiagram::insideDiagram()']]],
   ['inslabel',['insLabel',['../classQucsApp.html#a0a7bb083b067f8d1b3c117a9cc2c4069',1,'QucsApp']]],
   ['insmenu',['insMenu',['../classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec',1,'QucsApp']]],
   ['insport',['insPort',['../classQucsApp.html#a0da454185017324cc636606b416224fe',1,'QucsApp']]],
@@ -145,5 +145,6 @@ var searchData=
   ['isvmovinglabel',['isVMovingLabel',['../element_8h.html#a278fc541cace09ee0de7d5c5133fbb7b',1,'element.h']]],
   ['isvwirelabel',['isVWireLabel',['../element_8h.html#af71483bf4fc7385a4397a188f1608a51',1,'element.h']]],
   ['iswire',['isWire',['../element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14',1,'element.h']]],
+  ['iterator',['iterator',['../classGraph.html#af93d0e09b517d23562c76dfc65983cc2',1,'Graph']]],
   ['iteredit',['IterEdit',['../classOptimizeDialog.html#abefaac466cb5eb43895c389ca07eb809',1,'OptimizeDialog']]]
 ];

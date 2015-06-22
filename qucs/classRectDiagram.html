@@ -115,14 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#adb87dad29a7de59c1bb057ec87a16963">calcDiagram</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a17bce366ff9696fb2396572514709a83">calcLimits</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a16d8c58fd608e1f3a4d972118596ff7a">calcCoordinate</a> (double *&amp;, double *&amp;, double *&amp;, float *, float *, <a class="el" href="structAxis.html">Axis</a> *)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a6ff3b5f4af2c218dcb72736027f51483">insideDiagram</a> (float, float)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a98be66931826443e189440369e631fd5">finishMarkerCoordinates</a> (float &amp;, float &amp;) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a8b97fbb19478506da91aaaca65860975">insideDiagram</a> (float, float) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a5f18ab84d70c48c17090d4e73b42284f">info</a> (QString &amp;, char *&amp;, bool getNewOne=false)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a8ff6811111b9911c14ced52ea5c7613d">clip</a> (float *&amp;)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipping for round diagrams (smith, polar, ...)  <a href="#a8ff6811111b9911c14ced52ea5c7613d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a3964d62ce268b9a64014c74646a7f821">clip</a> (<a class="el" href="classGraph.html#af93d0e09b517d23562c76dfc65983cc2">Graph::iterator</a> &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipping for round diagrams (smith, polar, ...)  <a href="#a3964d62ce268b9a64014c74646a7f821"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classRectDiagram.html" title="The RectDiagram class implements the Cartesian diagram.">RectDiagram</a> class implements the Cartesian diagram. </p>
@@ -266,7 +267,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00123">123</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00131">131</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -304,7 +305,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a0e0a9af9ed985597a036805cff016b6b">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00086">86</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00094">94</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -317,16 +318,16 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a8ff6811111b9911c14ced52ea5c7613d"></a><!-- doxytag: member="RectDiagram::clip" ref="a8ff6811111b9911c14ced52ea5c7613d" args="(float *&amp;)" -->
+<a class="anchor" id="a3964d62ce268b9a64014c74646a7f821"></a><!-- doxytag: member="RectDiagram::clip" ref="a3964d62ce268b9a64014c74646a7f821" args="(Graph::iterator &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classRectDiagram.html#a8ff6811111b9911c14ced52ea5c7613d">RectDiagram::clip</a> </td>
+          <td class="memname">void <a class="el" href="classRectDiagram.html#a3964d62ce268b9a64014c74646a7f821">RectDiagram::clip</a> </td>
           <td>(</td>
-          <td class="paramtype">float *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classGraph.html#af93d0e09b517d23562c76dfc65983cc2">Graph::iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
-          <td><code> [protected, virtual]</code></td>
+          <td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -334,16 +335,56 @@ Here is the call graph for this function:</div>
 
 <p>Clipping for round diagrams (smith, polar, ...) </p>
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#aa1ce2a4545ebaec03958fe644e220f25">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#a0c9dc6ef923fd366b04417194d14101d">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00234">234</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00242">242</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRectDiagram_a8ff6811111b9911c14ced52ea5c7613d_cgraph.png" border="0" usemap="#classRectDiagram_a8ff6811111b9911c14ced52ea5c7613d_cgraph" alt=""/></div>
-<map name="classRectDiagram_a8ff6811111b9911c14ced52ea5c7613d_cgraph" id="classRectDiagram_a8ff6811111b9911c14ced52ea5c7613d_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#af81bcc3bb240e74bca498e6c646bba54" title="Cohen&#45;Sutherland clipping algorithm." alt="" coords="183,5,305,35"/><area shape="rect" id="node5" href="classDiagram.html#a991ee788df0c085bbb74869876a36557" title="Diagram::regionCode" alt="" coords="356,5,500,35"/></map>
+<div class="center"><img src="classRectDiagram_a3964d62ce268b9a64014c74646a7f821_cgraph.png" border="0" usemap="#classRectDiagram_a3964d62ce268b9a64014c74646a7f821_cgraph" alt=""/></div>
+<map name="classRectDiagram_a3964d62ce268b9a64014c74646a7f821_cgraph" id="classRectDiagram_a3964d62ce268b9a64014c74646a7f821_cgraph">
+<area shape="rect" id="node3" href="classDiagram.html#ab9de6d810b578836e82f174ed4e50738" title="Cohen&#45;Sutherland clipping algorithm." alt="" coords="183,5,305,35"/><area shape="rect" id="node5" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="356,5,500,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a98be66931826443e189440369e631fd5"></a><!-- doxytag: member="RectDiagram::finishMarkerCoordinates" ref="a98be66931826443e189440369e631fd5" args="(float &amp;, float &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classRectDiagram.html#a98be66931826443e189440369e631fd5">RectDiagram::finishMarkerCoordinates</a> </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>fCX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>fCY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1">Diagram</a>.</p>
+
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00086">86</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRectDiagram_a98be66931826443e189440369e631fd5_cgraph.png" border="0" usemap="#classRectDiagram_a98be66931826443e189440369e631fd5_cgraph" alt=""/></div>
+<map name="classRectDiagram_a98be66931826443e189440369e631fd5_cgraph" id="classRectDiagram_a98be66931826443e189440369e631fd5_cgraph">
+<area shape="rect" id="node3" href="classRectDiagram.html#a8b97fbb19478506da91aaaca65860975" title="RectDiagram::insideDiagram" alt="" coords="303,5,492,35"/><area shape="rect" id="node5" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="543,5,687,35"/></map>
 </div>
 </p>
 
@@ -380,7 +421,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00246">246</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00254">254</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -393,12 +434,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6ff3b5f4af2c218dcb72736027f51483"></a><!-- doxytag: member="RectDiagram::insideDiagram" ref="a6ff3b5f4af2c218dcb72736027f51483" args="(float, float)" -->
+<a class="anchor" id="a8b97fbb19478506da91aaaca65860975"></a><!-- doxytag: member="RectDiagram::insideDiagram" ref="a8b97fbb19478506da91aaaca65860975" args="(float, float) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classRectDiagram.html#a6ff3b5f4af2c218dcb72736027f51483">RectDiagram::insideDiagram</a> </td>
+          <td class="memname">bool <a class="el" href="classRectDiagram.html#a8b97fbb19478506da91aaaca65860975">RectDiagram::insideDiagram</a> </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -412,22 +453,31 @@ Here is the call graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#ae04914b55dadc283ce02f97f0de5857c">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00228">228</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00236">236</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRectDiagram_a6ff3b5f4af2c218dcb72736027f51483_cgraph.png" border="0" usemap="#classRectDiagram_a6ff3b5f4af2c218dcb72736027f51483_cgraph" alt=""/></div>
-<map name="classRectDiagram_a6ff3b5f4af2c218dcb72736027f51483_cgraph" id="classRectDiagram_a6ff3b5f4af2c218dcb72736027f51483_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#a991ee788df0c085bbb74869876a36557" title="Diagram::regionCode" alt="" coords="247,5,391,35"/></map>
+<div class="center"><img src="classRectDiagram_a8b97fbb19478506da91aaaca65860975_cgraph.png" border="0" usemap="#classRectDiagram_a8b97fbb19478506da91aaaca65860975_cgraph" alt=""/></div>
+<map name="classRectDiagram_a8b97fbb19478506da91aaaca65860975_cgraph" id="classRectDiagram_a8b97fbb19478506da91aaaca65860975_cgraph">
+<area shape="rect" id="node3" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="247,5,391,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRectDiagram_a8b97fbb19478506da91aaaca65860975_icgraph.png" border="0" usemap="#classRectDiagram_a8b97fbb19478506da91aaaca65860975_icgraph" alt=""/></div>
+<map name="classRectDiagram_a8b97fbb19478506da91aaaca65860975_icgraph" id="classRectDiagram_a8b97fbb19478506da91aaaca65860975_icgraph">
+<area shape="rect" id="node3" href="classRectDiagram.html#a98be66931826443e189440369e631fd5" title="RectDiagram::finishMarkerCoordinates" alt="" coords="245,5,493,35"/></map>
 </div>
 </p>
 
@@ -449,7 +499,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a5495c159279f502a7be9e4c7310ce3ad">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00240">240</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00248">248</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -484,7 +534,7 @@ Here is the call graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:49 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:23 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -115,13 +115,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a>00032   <span class="keywordtype">int</span>  <a class="code" href="classCurveDiagram.html#ab6662d812b480ab1fa5f5f688d93714d">calcDiagram</a>();
 <a name="l00033"></a>00033   <span class="keywordtype">void</span> <a class="code" href="classCurveDiagram.html#a0926bf3706df7ebc20bafe3cd924f838">calcLimits</a>();
 <a name="l00034"></a>00034   <span class="keywordtype">void</span> <a class="code" href="classCurveDiagram.html#a3a079925b9f1959f79a1d6f4a0698600">calcCoordinate</a>(<span class="keywordtype">double</span>* &amp;, <span class="keywordtype">double</span>* &amp;, <span class="keywordtype">double</span>* &amp;, <span class="keywordtype">float</span>*, <span class="keywordtype">float</span>*, <a class="code" href="structAxis.html">Axis</a>*);
-<a name="l00035"></a>00035   <span class="keywordtype">bool</span> <a class="code" href="classCurveDiagram.html#a4ae7969a1f3a5d37341380fc35396ffc">insideDiagram</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">protected</span>:
-<a name="l00038"></a>00038   <span class="keywordtype">void</span> <a class="code" href="classCurveDiagram.html#ae2c54dfdaf6ba64e08b4bbf0103a9c89" title="Clipping for round diagrams (smith, polar, ...)">clip</a>(<span class="keywordtype">float</span>* &amp;);
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="preprocessor">#endif</span>
+<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="classCurveDiagram.html#a7f2e053e02837c7da1578d8577bd84e0">finishMarkerCoordinates</a>(<span class="keywordtype">float</span>&amp;, <span class="keywordtype">float</span>&amp;) <span class="keyword">const</span>;
+<a name="l00036"></a>00036   <span class="keywordtype">bool</span> <a class="code" href="classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6">insideDiagram</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>) <span class="keyword">const</span>;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keyword">protected</span>:
+<a name="l00039"></a>00039   <span class="keywordtype">void</span> <a class="code" href="classCurveDiagram.html#a934adc6775042c7df34dd29e25efb465" title="Clipping for round diagrams (smith, polar, ...)">clip</a>(<a class="code" href="classGraph.html#af93d0e09b517d23562c76dfc65983cc2">Graph::iterator</a>&amp;) <span class="keyword">const</span>;
+<a name="l00040"></a>00040 };
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -140,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:46 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

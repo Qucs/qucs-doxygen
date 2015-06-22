@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="129,237,212,267"/>
-<area shape="rect" id="node11" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="200,392,298,421"/>
-<area shape="rect" id="node16" href="$wire_8h.html" title="wire.h" alt="" coords="262,160,318,189"/>
-<area shape="rect" id="node26" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="736,83,797,112"/>
-<area shape="rect" id="node5" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="514,392,592,421"/>
-<area shape="rect" id="node20" href="$component_8h.html" title="components/component.h" alt="" coords="337,237,508,267"/>
-<area shape="rect" id="node37" href="$node_8h.html" title="node.h" alt="" coords="532,237,593,267"/>
-<area shape="rect" id="node41" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="698,160,834,189"/>
-<area shape="rect" id="node43" href="$graph_8h.html" title="graph.h" alt="" coords="769,237,833,267"/>
-<area shape="rect" id="node45" href="$marker_8h.html" title="marker.h" alt="" coords="641,315,713,344"/>
+<area shape="rect" id="node3" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="67,237,149,267"/>
+<area shape="rect" id="node11" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="188,392,287,421"/>
+<area shape="rect" id="node16" href="$wire_8h.html" title="wire.h" alt="" coords="248,160,304,189"/>
+<area shape="rect" id="node26" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="459,83,520,112"/>
+<area shape="rect" id="node5" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="557,392,635,421"/>
+<area shape="rect" id="node20" href="$component_8h.html" title="components/component.h" alt="" coords="325,237,496,267"/>
+<area shape="rect" id="node37" href="$node_8h.html" title="node.h" alt="" coords="520,237,581,267"/>
+<area shape="rect" id="node41" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="671,160,807,189"/>
+<area shape="rect" id="node43" href="$graph_8h.html" title="graph.h" alt="" coords="707,237,771,267"/>
+<area shape="rect" id="node45" href="$marker_8h.html" title="marker.h" alt="" coords="633,315,705,344"/>
 </map>

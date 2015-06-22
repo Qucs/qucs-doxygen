@@ -128,23 +128,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00045"></a>00045   <span class="keywordtype">bool</span>    <a class="code" href="classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb">getSelected</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);
 <a name="l00046"></a>00046   <a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a>* <a class="code" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09">sameNewOne</a>(<a class="code" href="classGraph.html">Graph</a>*);
 <a name="l00047"></a>00047   <span class="keywordtype">void</span>    <a class="code" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93">getTextSize</a>();
-<a name="l00048"></a>00048 
-<a name="l00049"></a><a class="code" href="classMarker.html#a11619d04839139e1f7aa475774f17797">00049</a>   <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *<a class="code" href="classMarker.html#a11619d04839139e1f7aa475774f17797">Diag</a>;     <span class="comment">// the corresponding diagram</span>
-<a name="l00050"></a><a class="code" href="classMarker.html#a0e96a41f2f6c427a6fd3efc6abeed175">00050</a>   <a class="code" href="classGraph.html">Graph</a>   *<a class="code" href="classMarker.html#a0e96a41f2f6c427a6fd3efc6abeed175">pGraph</a>;   <span class="comment">// the corresponding graph</span>
-<a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">00052</a>   <span class="keywordtype">int</span>    <a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">nVarPos</a>;   <span class="comment">// number of values in &quot;VarPos&quot;</span>
-<a name="l00053"></a><a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">00053</a>   <span class="keywordtype">double</span> *<a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a>;   <span class="comment">// values the marker is pointing to</span>
-<a name="l00054"></a><a class="code" href="classMarker.html#aef276f5e01d535c70882e09b1ea4bc84">00054</a>   <span class="keywordtype">float</span>  <a class="code" href="classMarker.html#a98a5a01f6cce80d9419d21d22f3661f3">fCX</a>, <a class="code" href="classMarker.html#aef276f5e01d535c70882e09b1ea4bc84">fCY</a>;  <span class="comment">// coordinates for the line from graph to marker body</span>
+<a name="l00048"></a>00048 <span class="keyword">public</span>: <span class="comment">// power matching stuff. some sort of VarPos (ab?)use</span>
+<a name="l00049"></a><a class="code" href="classMarker.html#a8683011b90f8560ece2526ec42140a58">00049</a>   <span class="keywordtype">double</span>  <a class="code" href="classMarker.html#a8683011b90f8560ece2526ec42140a58">powFreq</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a>[0];}
+<a name="l00050"></a><a class="code" href="classMarker.html#a9bbd3f0bd40a05deca0f542e351d8b68">00050</a>   <span class="keywordtype">double</span>  <a class="code" href="classMarker.html#a9bbd3f0bd40a05deca0f542e351d8b68">powReal</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a>[<a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">nVarPos</a>];}
+<a name="l00051"></a><a class="code" href="classMarker.html#a7afbcdee29443013516c148c96ca2913">00051</a>   <span class="keywordtype">double</span>  <a class="code" href="classMarker.html#a7afbcdee29443013516c148c96ca2913">powImag</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a>[<a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">nVarPos</a>+1];}
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="classMarker.html#a11619d04839139e1f7aa475774f17797">00053</a>   <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *<a class="code" href="classMarker.html#a11619d04839139e1f7aa475774f17797">Diag</a>;     <span class="comment">// the corresponding diagram</span>
+<a name="l00054"></a><a class="code" href="classMarker.html#a0e96a41f2f6c427a6fd3efc6abeed175">00054</a>   <a class="code" href="classGraph.html">Graph</a>   *<a class="code" href="classMarker.html#a0e96a41f2f6c427a6fd3efc6abeed175">pGraph</a>;   <span class="comment">// the corresponding graph</span>
 <a name="l00055"></a>00055 
-<a name="l00056"></a><a class="code" href="classMarker.html#a4a616636ac9801ca4830151c2c9e6506">00056</a>   QString <a class="code" href="classMarker.html#a4a616636ac9801ca4830151c2c9e6506">Text</a>;     <span class="comment">// the string to be displayed in the marker text</span>
-<a name="l00057"></a><a class="code" href="classMarker.html#a8813f9d66064a67dfe480ea322608638">00057</a>   <span class="keywordtype">bool</span> <a class="code" href="classMarker.html#a8813f9d66064a67dfe480ea322608638">transparent</a>; <span class="comment">// background shines through marker body</span>
-<a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="classMarker.html#aabb579ae5a2d4c05b2a32725341ebd8f">00059</a>   <span class="keywordtype">int</span> <a class="code" href="classMarker.html#aabb579ae5a2d4c05b2a32725341ebd8f">Precision</a>; <span class="comment">// number of digits to show</span>
-<a name="l00060"></a><a class="code" href="classMarker.html#a10113d655ed0f6e76c105b949b707522">00060</a>   <span class="keywordtype">int</span> <a class="code" href="classMarker.html#a10113d655ed0f6e76c105b949b707522">numMode</a>;   <span class="comment">// real/imag or polar (deg/rad)</span>
-<a name="l00061"></a><a class="code" href="classMarker.html#a1b8e67f33dcfd28d504f471dc13b2c05">00061</a>   <span class="keywordtype">double</span> <a class="code" href="classMarker.html#a1b8e67f33dcfd28d504f471dc13b2c05">Z0</a>;    <span class="comment">//Only used in smith chart marker, to convert S to Z</span>
-<a name="l00062"></a>00062 };
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="preprocessor">#endif</span>
+<a name="l00056"></a>00056 <span class="keyword">private</span>:
+<a name="l00057"></a><a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">00057</a>   <span class="keywordtype">int</span>    <a class="code" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">nVarPos</a>;   <span class="comment">// number of values in &quot;VarPos&quot;</span>
+<a name="l00058"></a><a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">00058</a>   <span class="keywordtype">double</span> *<a class="code" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a>;   <span class="comment">// values the marker is pointing to</span>
+<a name="l00059"></a><a class="code" href="classMarker.html#aef276f5e01d535c70882e09b1ea4bc84">00059</a>   <span class="keywordtype">float</span>  <a class="code" href="classMarker.html#a98a5a01f6cce80d9419d21d22f3661f3">fCX</a>, <a class="code" href="classMarker.html#aef276f5e01d535c70882e09b1ea4bc84">fCY</a>;  <span class="comment">// coordinates for the line from graph to marker body</span>
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 <span class="keyword">public</span>:
+<a name="l00062"></a><a class="code" href="classMarker.html#a4a616636ac9801ca4830151c2c9e6506">00062</a>   QString <a class="code" href="classMarker.html#a4a616636ac9801ca4830151c2c9e6506">Text</a>;     <span class="comment">// the string to be displayed in the marker text</span>
+<a name="l00063"></a><a class="code" href="classMarker.html#a8813f9d66064a67dfe480ea322608638">00063</a>   <span class="keywordtype">bool</span> <a class="code" href="classMarker.html#a8813f9d66064a67dfe480ea322608638">transparent</a>; <span class="comment">// background shines through marker body</span>
+<a name="l00064"></a>00064 
+<a name="l00065"></a><a class="code" href="classMarker.html#aabb579ae5a2d4c05b2a32725341ebd8f">00065</a>   <span class="keywordtype">int</span> <a class="code" href="classMarker.html#aabb579ae5a2d4c05b2a32725341ebd8f">Precision</a>; <span class="comment">// number of digits to show</span>
+<a name="l00066"></a><a class="code" href="classMarker.html#a10113d655ed0f6e76c105b949b707522">00066</a>   <span class="keywordtype">int</span> <a class="code" href="classMarker.html#a10113d655ed0f6e76c105b949b707522">numMode</a>;   <span class="comment">// real/imag or polar (deg/rad)</span>
+<a name="l00067"></a><a class="code" href="classMarker.html#a1b8e67f33dcfd28d504f471dc13b2c05">00067</a>   <span class="keywordtype">double</span> <a class="code" href="classMarker.html#a1b8e67f33dcfd28d504f471dc13b2c05">Z0</a>;    <span class="comment">//Only used in smith chart marker, to convert S to Z</span>
+<a name="l00068"></a>00068 };
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -163,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:46 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

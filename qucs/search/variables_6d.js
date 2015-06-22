@@ -26,7 +26,7 @@ var searchData=
   ['min',['min',['../structAxis.html#a6c46967abde76b0d6508e65d6479a6bf',1,'Axis::min()'],['../structtBound.html#a4ad9df361c96b2ecef0916c2f6885ff3',1,'tBound::min()']]],
   ['mirroredx',['mirroredX',['../classComponent.html#ae38bd64ea792153ffafc1988d54c0841',1,'Component']]],
   ['mnemonic',['Mnemonic',['../structtSpecialChar.html#ad81d57741a94cd7c546981db11698e5e',1,'tSpecialChar']]],
-  ['model',['Model',['../classComponent.html#aa11361b5dd25aa533ce2458c951a98a2',1,'Component::Model()'],['../classQucsSettingsDialog.html#aac804e9169a8809cb9b35750aa636d30',1,'QucsSettingsDialog::model()']]],
+  ['model',['model',['../classQucsSettingsDialog.html#aac804e9169a8809cb9b35750aa636d30',1,'QucsSettingsDialog::model()'],['../classComponent.html#aa11361b5dd25aa533ce2458c951a98a2',1,'Component::Model()']]],
   ['modulename',['ModuleName',['../classVerilogA__File__Info.html#ad63745cf4eba507ccb33ca1bf548df92',1,'VerilogA_File_Info::ModuleName()'],['../classVerilog__File.html#a1fd66ce4b363d8481c3ecfabea0ae08b',1,'Verilog_File::ModuleName()'],['../classVerilog__File__Info.html#a7762a91f537a160c5c2aa0c7f11c2f47',1,'Verilog_File_Info::ModuleName()']]],
   ['modules',['Modules',['../classModule.html#ac0cf4fe34d2d16442d09e9cf608ea641',1,'Module']]],
   ['mousedoubleclickaction',['MouseDoubleClickAction',['../classQucsApp.html#a1fa601c2f555cb015aee8f828c4ed834',1,'QucsApp']]],

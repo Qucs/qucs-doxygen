@@ -115,14 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#ab6662d812b480ab1fa5f5f688d93714d">calcDiagram</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a0926bf3706df7ebc20bafe3cd924f838">calcLimits</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a3a079925b9f1959f79a1d6f4a0698600">calcCoordinate</a> (double *&amp;, double *&amp;, double *&amp;, float *, float *, <a class="el" href="structAxis.html">Axis</a> *)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a4ae7969a1f3a5d37341380fc35396ffc">insideDiagram</a> (float, float)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a7f2e053e02837c7da1578d8577bd84e0">finishMarkerCoordinates</a> (float &amp;, float &amp;) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6">insideDiagram</a> (float, float) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a248832b7fdfcc6a8a02e385018a134f5">info</a> (QString &amp;, char *&amp;, bool getNewOne=false)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#ae2c54dfdaf6ba64e08b4bbf0103a9c89">clip</a> (float *&amp;)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipping for round diagrams (smith, polar, ...)  <a href="#ae2c54dfdaf6ba64e08b4bbf0103a9c89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveDiagram.html#a934adc6775042c7df34dd29e25efb465">clip</a> (<a class="el" href="classGraph.html#af93d0e09b517d23562c76dfc65983cc2">Graph::iterator</a> &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipping for round diagrams (smith, polar, ...)  <a href="#a934adc6775042c7df34dd29e25efb465"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classCurveDiagram.html" title="The CurveDiagram class implements the Locus Curve diagram.">CurveDiagram</a> class implements the Locus Curve diagram. </p>
@@ -266,7 +267,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00114">114</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00122">122</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -304,7 +305,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a0e0a9af9ed985597a036805cff016b6b">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00077">77</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00085">85</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -317,16 +318,16 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae2c54dfdaf6ba64e08b4bbf0103a9c89"></a><!-- doxytag: member="CurveDiagram::clip" ref="ae2c54dfdaf6ba64e08b4bbf0103a9c89" args="(float *&amp;)" -->
+<a class="anchor" id="a934adc6775042c7df34dd29e25efb465"></a><!-- doxytag: member="CurveDiagram::clip" ref="a934adc6775042c7df34dd29e25efb465" args="(Graph::iterator &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCurveDiagram.html#ae2c54dfdaf6ba64e08b4bbf0103a9c89">CurveDiagram::clip</a> </td>
+          <td class="memname">void <a class="el" href="classCurveDiagram.html#a934adc6775042c7df34dd29e25efb465">CurveDiagram::clip</a> </td>
           <td>(</td>
-          <td class="paramtype">float *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classGraph.html#af93d0e09b517d23562c76dfc65983cc2">Graph::iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
-          <td><code> [protected, virtual]</code></td>
+          <td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -334,16 +335,56 @@ Here is the call graph for this function:</div>
 
 <p>Clipping for round diagrams (smith, polar, ...) </p>
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#aa1ce2a4545ebaec03958fe644e220f25">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#a0c9dc6ef923fd366b04417194d14101d">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00236">236</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00244">244</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCurveDiagram_ae2c54dfdaf6ba64e08b4bbf0103a9c89_cgraph.png" border="0" usemap="#classCurveDiagram_ae2c54dfdaf6ba64e08b4bbf0103a9c89_cgraph" alt=""/></div>
-<map name="classCurveDiagram_ae2c54dfdaf6ba64e08b4bbf0103a9c89_cgraph" id="classCurveDiagram_ae2c54dfdaf6ba64e08b4bbf0103a9c89_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#af81bcc3bb240e74bca498e6c646bba54" title="Cohen&#45;Sutherland clipping algorithm." alt="" coords="191,5,313,35"/><area shape="rect" id="node5" href="classDiagram.html#a991ee788df0c085bbb74869876a36557" title="Diagram::regionCode" alt="" coords="364,5,508,35"/></map>
+<div class="center"><img src="classCurveDiagram_a934adc6775042c7df34dd29e25efb465_cgraph.png" border="0" usemap="#classCurveDiagram_a934adc6775042c7df34dd29e25efb465_cgraph" alt=""/></div>
+<map name="classCurveDiagram_a934adc6775042c7df34dd29e25efb465_cgraph" id="classCurveDiagram_a934adc6775042c7df34dd29e25efb465_cgraph">
+<area shape="rect" id="node3" href="classDiagram.html#ab9de6d810b578836e82f174ed4e50738" title="Cohen&#45;Sutherland clipping algorithm." alt="" coords="191,5,313,35"/><area shape="rect" id="node5" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="364,5,508,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f2e053e02837c7da1578d8577bd84e0"></a><!-- doxytag: member="CurveDiagram::finishMarkerCoordinates" ref="a7f2e053e02837c7da1578d8577bd84e0" args="(float &amp;, float &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCurveDiagram.html#a7f2e053e02837c7da1578d8577bd84e0">CurveDiagram::finishMarkerCoordinates</a> </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>fCX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>fCY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1">Diagram</a>.</p>
+
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00077">77</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCurveDiagram_a7f2e053e02837c7da1578d8577bd84e0_cgraph.png" border="0" usemap="#classCurveDiagram_a7f2e053e02837c7da1578d8577bd84e0_cgraph" alt=""/></div>
+<map name="classCurveDiagram_a7f2e053e02837c7da1578d8577bd84e0_cgraph" id="classCurveDiagram_a7f2e053e02837c7da1578d8577bd84e0_cgraph">
+<area shape="rect" id="node3" href="classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6" title="CurveDiagram::insideDiagram" alt="" coords="309,5,507,35"/><area shape="rect" id="node5" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="556,5,700,35"/></map>
 </div>
 </p>
 
@@ -380,7 +421,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00248">248</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00256">256</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -393,12 +434,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4ae7969a1f3a5d37341380fc35396ffc"></a><!-- doxytag: member="CurveDiagram::insideDiagram" ref="a4ae7969a1f3a5d37341380fc35396ffc" args="(float, float)" -->
+<a class="anchor" id="a3e08130c532c216ff149a0ddaf92edb6"></a><!-- doxytag: member="CurveDiagram::insideDiagram" ref="a3e08130c532c216ff149a0ddaf92edb6" args="(float, float) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classCurveDiagram.html#a4ae7969a1f3a5d37341380fc35396ffc">CurveDiagram::insideDiagram</a> </td>
+          <td class="memname">bool <a class="el" href="classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6">CurveDiagram::insideDiagram</a> </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -412,22 +453,31 @@ Here is the call graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#ae04914b55dadc283ce02f97f0de5857c">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00230">230</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00238">238</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCurveDiagram_a4ae7969a1f3a5d37341380fc35396ffc_cgraph.png" border="0" usemap="#classCurveDiagram_a4ae7969a1f3a5d37341380fc35396ffc_cgraph" alt=""/></div>
-<map name="classCurveDiagram_a4ae7969a1f3a5d37341380fc35396ffc_cgraph" id="classCurveDiagram_a4ae7969a1f3a5d37341380fc35396ffc_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#a991ee788df0c085bbb74869876a36557" title="Diagram::regionCode" alt="" coords="252,5,396,35"/></map>
+<div class="center"><img src="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_cgraph.png" border="0" usemap="#classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_cgraph" alt=""/></div>
+<map name="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_cgraph" id="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_cgraph">
+<area shape="rect" id="node3" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34" title="Diagram::regionCode" alt="" coords="252,5,396,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_icgraph.png" border="0" usemap="#classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_icgraph" alt=""/></div>
+<map name="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_icgraph" id="classCurveDiagram_a3e08130c532c216ff149a0ddaf92edb6_icgraph">
+<area shape="rect" id="node3" href="classCurveDiagram.html#a7f2e053e02837c7da1578d8577bd84e0" title="CurveDiagram::finishMarkerCoordinates" alt="" coords="252,5,505,35"/></map>
 </div>
 </p>
 
@@ -449,7 +499,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a5495c159279f502a7be9e4c7310ce3ad">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00242">242</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="curvediagram_8cpp_source.html#l00250">250</a> of file <a class="el" href="curvediagram_8cpp_source.html">curvediagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -484,7 +534,7 @@ Here is the call graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 18:52:48 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 18:18:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

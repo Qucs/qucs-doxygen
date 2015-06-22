@@ -85,7 +85,7 @@ var searchData=
   ['mod_5famp',['mod_amp',['../classmod__amp.html',1,'mod_amp'],['../classmod__amp.html#acf068ca92c2542a420ccdf77b06be1f9',1,'mod_amp::mod_amp()']]],
   ['mod_5famp_2ecpp',['mod_amp.cpp',['../mod__amp_8cpp.html',1,'']]],
   ['mod_5famp_2eh',['mod_amp.h',['../mod__amp_8h.html',1,'']]],
-  ['model',['Model',['../classComponent.html#aa11361b5dd25aa533ce2458c951a98a2',1,'Component::Model()'],['../classQucsSettingsDialog.html#aac804e9169a8809cb9b35750aa636d30',1,'QucsSettingsDialog::model()']]],
+  ['model',['model',['../classQucsSettingsDialog.html#aac804e9169a8809cb9b35750aa636d30',1,'QucsSettingsDialog::model()'],['../classComponent.html#aa11361b5dd25aa533ce2458c951a98a2',1,'Component::Model()']]],
   ['module',['Module',['../classModule.html',1,'Module'],['../classModule.html#a5a240a8a9ab1813b17bcb810b24ceaea',1,'Module::Module()']]],
   ['module_2ecpp',['module.cpp',['../module_8cpp.html',1,'']]],
   ['module_2eh',['module.h',['../module_8h.html',1,'']]],

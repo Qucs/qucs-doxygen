@@ -39,7 +39,7 @@ var searchData=
   ['insertwire',['insertWire',['../classSchematic.html#a1d8faec4e77783a19a0bafc9d7c58f69',1,'Schematic']]],
   ['insertwirenode1',['insertWireNode1',['../classSchematic.html#a8f5c4764dbb9f7928cb0eb9846b14fc0',1,'Schematic']]],
   ['insertwirenode2',['insertWireNode2',['../classSchematic.html#ad6b1cfa660d9307869980f2c337c2aec',1,'Schematic']]],
-  ['insidediagram',['insideDiagram',['../classCurveDiagram.html#a4ae7969a1f3a5d37341380fc35396ffc',1,'CurveDiagram::insideDiagram()'],['../classDiagram.html#ae04914b55dadc283ce02f97f0de5857c',1,'Diagram::insideDiagram()'],['../classRect3DDiagram.html#a6d4589c3de7bdb5f1c6dc176b900fac2',1,'Rect3DDiagram::insideDiagram()'],['../classRectDiagram.html#a6ff3b5f4af2c218dcb72736027f51483',1,'RectDiagram::insideDiagram()']]],
+  ['insidediagram',['insideDiagram',['../classCurveDiagram.html#a3e08130c532c216ff149a0ddaf92edb6',1,'CurveDiagram::insideDiagram()'],['../classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c',1,'Diagram::insideDiagram()'],['../classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574',1,'Rect3DDiagram::insideDiagram()'],['../classRectDiagram.html#a8b97fbb19478506da91aaaca65860975',1,'RectDiagram::insideDiagram()']]],
   ['intocategory',['intoCategory',['../classModule.html#a886976ee4461bb0bbe10421d9b1de1f7',1,'Module']]],
   ['intofile',['intoFile',['../classLibraryDialog.html#a945f417cc7f5658c4b98e51299f358e5',1,'LibraryDialog']]],
   ['intostream',['intoStream',['../classLibraryDialog.html#ae389016d236ba76cb5ae9d609b8d0927',1,'LibraryDialog']]],

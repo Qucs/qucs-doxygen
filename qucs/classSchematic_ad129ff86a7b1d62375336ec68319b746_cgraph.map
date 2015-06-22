@@ -5,7 +5,7 @@
 <area shape="rect" id="node35" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="449,672,636,701"/>
 <area shape="rect" id="node37" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="192,708,355,737"/>
 <area shape="rect" id="node60" href="$classSchematic.html#a6feff77e818324694af2f744920906d2" title="Schematic::rebuild" alt="" coords="208,239,339,268"/>
-<area shape="rect" id="node101" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="189,761,357,791"/>
+<area shape="rect" id="node103" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="189,761,357,791"/>
 <area shape="rect" id="node5" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="457,119,628,148"/>
 <area shape="rect" id="node7" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="775,59,876,88"/>
 <area shape="rect" id="node11" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="471,459,615,488"/>
@@ -37,14 +37,15 @@
 <area shape="rect" id="node68" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="1020,165,1140,195"/>
 <area shape="rect" id="node74" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="992,5,1168,35"/>
 <area shape="rect" id="node76" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1008,59,1152,88"/>
-<area shape="rect" id="node70" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="1220,165,1359,195"/>
-<area shape="rect" id="node72" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="1224,112,1355,141"/>
+<area shape="rect" id="node70" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="1220,112,1359,141"/>
+<area shape="rect" id="node72" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="1224,165,1355,195"/>
 <area shape="rect" id="node82" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="785,219,865,248"/>
 <area shape="rect" id="node90" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="731,272,920,301"/>
 <area shape="rect" id="node84" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="1025,219,1135,248"/>
-<area shape="rect" id="node86" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1227,272,1352,301"/>
-<area shape="rect" id="node88" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="1219,219,1360,248"/>
+<area shape="rect" id="node86" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1227,219,1352,248"/>
+<area shape="rect" id="node88" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="1219,272,1360,301"/>
 <area shape="rect" id="node94" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="775,325,876,355"/>
 <area shape="rect" id="node96" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="1033,299,1127,328"/>
 <area shape="rect" id="node98" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="1036,352,1124,381"/>
+<area shape="rect" id="node100" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="1240,352,1339,381"/>
 </map>

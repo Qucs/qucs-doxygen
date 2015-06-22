@@ -15,6 +15,7 @@ var searchData=
   ['tline',['TLine',['../classTLine.html#a3847661a3edfc05bbcb3e2ef04569fac',1,'TLine']]],
   ['tline_5f4port',['TLine_4Port',['../classTLine__4Port.html#a860efb65f982b3657b89448c9aba0b9a',1,'TLine_4Port']]],
   ['tobrushstring',['toBrushString',['../classPainting.html#aad9dd5688550b6febc6f3cedcef87d33',1,'Painting']]],
+  ['tographstyle',['toGraphStyle',['../graph_8h.html#ae6bf94f560e194c623945d7e03cca30f',1,'graph.h']]],
   ['topenstring',['toPenString',['../classPainting.html#aa4f5310d972940be312ecbc9cff1c9c2',1,'Painting']]],
   ['tr_5fsim',['TR_Sim',['../classTR__Sim.html#a192d098404a2ab07df63f4b4232b9a54',1,'TR_Sim']]],
   ['transformer',['Transformer',['../classTransformer.html#a7d56456dadf3aa0bc60f59e7e7eda7a2',1,'Transformer']]],

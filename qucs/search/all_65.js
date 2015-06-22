@@ -48,6 +48,7 @@ var searchData=
   ['ellipsearc_2eh',['ellipsearc.h',['../ellipsearc_8h.html',1,'']]],
   ['empty_5fxpm',['empty_xpm',['../qucs_8cpp.html#a098a06ee0c473d9178da66df32798581',1,'qucs.cpp']]],
   ['encode_5fstring',['encode_String',['../mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb',1,'encode_String(const QString &amp;Input, QString &amp;Output):&#160;mnemo.cpp'],['../mnemo_8h.html#a710596b4cf74c0fc2b90e3694473bd8c',1,'encode_String(const QString &amp;, QString &amp;):&#160;mnemo.cpp']]],
+  ['end',['end',['../classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18',1,'Graph::end()'],['../classGraph.html#afd3b547cf6dfa6bb369f91891de1cb93',1,'Graph::end() const ']]],
   ['endelementmoving',['endElementMoving',['../classMouseActions.html#a4bc0f036799361576eba251978c41a73',1,'MouseActions']]],
   ['endnetlistdigital',['endNetlistDigital',['../classSchematic.html#af893d90555f7295e7bf11acf9fa13f73',1,'Schematic']]],
   ['enlargememoryblock',['enlargeMemoryBlock',['../classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526',1,'Rect3DDiagram']]],

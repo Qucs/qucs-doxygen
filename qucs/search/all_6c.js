@@ -14,7 +14,7 @@ var searchData=
   ['lang_5fveriloga',['LANG_VERILOGA',['../syntax_8h.html#a99b220f9f1fcbb52ad216790451ac396a80bcb469e60a8eb0f988db9bb9dc9415',1,'syntax.h']]],
   ['lang_5fvhdl',['LANG_VHDL',['../syntax_8h.html#a99b220f9f1fcbb52ad216790451ac396aef16c0ebce44b7cc7bfd4bdb9ddd277c',1,'syntax.h']]],
   ['langdir',['LangDir',['../structtQucsSettings.html#aa17136c482736527b696541fec796696',1,'tQucsSettings']]],
-  ['language',['language',['../classSyntaxHighlighter.html#ae35818eb1afa62920f0b80844b5287f3',1,'SyntaxHighlighter::language()'],['../classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47',1,'TextDoc::language()'],['../structtQucsSettings.html#a4a31355bf3b2275a5005ea88b1cdd789',1,'tQucsSettings::Language()']]],
+  ['language',['Language',['../structtQucsSettings.html#a4a31355bf3b2275a5005ea88b1cdd789',1,'tQucsSettings::Language()'],['../classSyntaxHighlighter.html#ae35818eb1afa62920f0b80844b5287f3',1,'SyntaxHighlighter::language()'],['../classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47',1,'TextDoc::language()']]],
   ['language_5ftype',['language_type',['../syntax_8h.html#a99b220f9f1fcbb52ad216790451ac396',1,'syntax.h']]],
   ['languagecombo',['LanguageCombo',['../classQucsSettingsDialog.html#a259b2ba883601c89406d97e1cb607f16',1,'QucsSettingsDialog']]],
   ['largefontsize',['largeFontSize',['../structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da',1,'tQucsSettings']]],

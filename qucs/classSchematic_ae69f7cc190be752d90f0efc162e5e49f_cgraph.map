@@ -12,14 +12,15 @@
 <area shape="rect" id="node17" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="987,59,1107,88"/>
 <area shape="rect" id="node23" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="959,112,1135,141"/>
 <area shape="rect" id="node25" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="975,165,1119,195"/>
-<area shape="rect" id="node19" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="1185,45,1324,75"/>
-<area shape="rect" id="node21" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="1189,99,1320,128"/>
+<area shape="rect" id="node19" href="$classComponent.html#a15e4a1628267eece269646ff50a4d073" title="Component::mirrorX" alt="" coords="1185,32,1324,61"/>
+<area shape="rect" id="node21" href="$classComponent.html#a371f348f5919cb271a1450b6c868a12f" title="Component::rotate" alt="" coords="1189,85,1320,115"/>
 <area shape="rect" id="node31" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="753,219,833,248"/>
 <area shape="rect" id="node39" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="699,272,888,301"/>
 <area shape="rect" id="node33" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="992,219,1101,248"/>
-<area shape="rect" id="node35" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1192,179,1317,208"/>
-<area shape="rect" id="node37" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="1184,232,1325,261"/>
+<area shape="rect" id="node35" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="1192,192,1317,221"/>
+<area shape="rect" id="node37" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="1184,245,1325,275"/>
 <area shape="rect" id="node43" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="743,325,844,355"/>
 <area shape="rect" id="node45" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="1000,299,1093,328"/>
 <area shape="rect" id="node47" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="1003,352,1091,381"/>
+<area shape="rect" id="node49" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="1205,352,1304,381"/>
 </map>

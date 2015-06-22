@@ -1,18 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$libcomp_8h.html" title="libcomp.h" alt="" coords="113,83,190,112"/>
-<area shape="rect" id="node15" href="$qucs_8h.html" title="qucs.h" alt="" coords="853,83,914,112"/>
-<area shape="rect" id="node25" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="1286,83,1348,112"/>
-<area shape="rect" id="node72" href="$schematic_8h.html" title="schematic.h" alt="" coords="382,83,476,112"/>
-<area shape="rect" id="node95" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="1594,83,1656,112"/>
-<area shape="rect" id="node5" href="$component_8h.html" title="component.h" alt="" coords="110,237,206,267"/>
-<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="560,392,637,421"/>
-<area shape="rect" id="node35" href="$wire_8h.html" title="wire.h" alt="" coords="541,160,597,189"/>
-<area shape="rect" id="node46" href="$node_8h.html" title="node.h" alt="" coords="332,237,393,267"/>
-<area shape="rect" id="node50" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1189,160,1325,189"/>
-<area shape="rect" id="node37" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="282,392,381,421"/>
-<area shape="rect" id="node41" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="504,237,586,267"/>
-<area shape="rect" id="node52" href="$graph_8h.html" title="graph.h" alt="" coords="882,237,946,267"/>
-<area shape="rect" id="node54" href="$marker_8h.html" title="marker.h" alt="" coords="914,315,986,344"/>
-<area shape="rect" id="node76" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="722,237,805,267"/>
-<area shape="rect" id="node82" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="22,315,156,344"/>
+<area shape="rect" id="node3" href="$libcomp_8h.html" title="libcomp.h" alt="" coords="669,83,747,112"/>
+<area shape="rect" id="node15" href="$qucs_8h.html" title="qucs.h" alt="" coords="873,83,935,112"/>
+<area shape="rect" id="node25" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="1307,83,1368,112"/>
+<area shape="rect" id="node74" href="$schematic_8h.html" title="schematic.h" alt="" coords="391,83,484,112"/>
+<area shape="rect" id="node97" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="1615,83,1676,112"/>
+<area shape="rect" id="node5" href="$component_8h.html" title="component.h" alt="" coords="464,237,560,267"/>
+<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="603,392,680,421"/>
+<area shape="rect" id="node35" href="$wire_8h.html" title="wire.h" alt="" coords="409,160,465,189"/>
+<area shape="rect" id="node46" href="$node_8h.html" title="node.h" alt="" coords="741,237,803,267"/>
+<area shape="rect" id="node50" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1209,160,1345,189"/>
+<area shape="rect" id="node37" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="173,392,272,421"/>
+<area shape="rect" id="node41" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="256,237,339,267"/>
+<area shape="rect" id="node52" href="$graph_8h.html" title="graph.h" alt="" coords="1036,237,1100,267"/>
+<area shape="rect" id="node54" href="$marker_8h.html" title="marker.h" alt="" coords="963,315,1035,344"/>
+<area shape="rect" id="node78" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="635,237,717,267"/>
+<area shape="rect" id="node84" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="104,315,237,344"/>
 </map>
