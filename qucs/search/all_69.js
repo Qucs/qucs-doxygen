@@ -113,7 +113,7 @@ var searchData=
   ['isdiagramvscroll',['isDiagramVScroll',['../element_8h.html#a56876e02ffd999b1bd7f94ae797c23e2',1,'element.h']]],
   ['isdigitalcomponent',['isDigitalComponent',['../element_8h.html#a84c5779a452fd49a7a095a67ca440509',1,'element.h']]],
   ['isdummyelement',['isDummyElement',['../element_8h.html#a28d085aaddf755f340e922f182af1d18',1,'element.h']]],
-  ['isempty',['isEmpty',['../classSaveDialog.html#a9dc946e03175251661053dfb68172035',1,'SaveDialog']]],
+  ['isempty',['isEmpty',['../classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb',1,'Graph::isEmpty()'],['../classSaveDialog.html#a9dc946e03175251661053dfb68172035',1,'SaveDialog::isEmpty()']]],
   ['iseps',['isEps',['../classExportDialog.html#a2b8258e752a59c7bcb332db6e3337a2d',1,'ExportDialog']]],
   ['isexportselected',['isExportSelected',['../classExportDialog.html#a9cab222025b50163a0870a034645863f',1,'ExportDialog']]],
   ['isgraph',['isGraph',['../element_8h.html#a48320a5a01ad8f1dc90c7575e8e30b2a',1,'element.h']]],

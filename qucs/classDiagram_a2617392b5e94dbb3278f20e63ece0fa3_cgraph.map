@@ -1,23 +1,25 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="244,137,401,167"/>
-<area shape="rect" id="node5" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="232,191,413,220"/>
-<area shape="rect" id="node7" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="475,84,627,113"/>
-<area shape="rect" id="node9" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="504,137,597,167"/>
-<area shape="rect" id="node11" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="485,191,616,220"/>
-<area shape="rect" id="node25" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="461,584,640,613"/>
-<area shape="rect" id="node29" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="485,425,616,455"/>
-<area shape="rect" id="node13" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="693,5,851,35"/>
-<area shape="rect" id="node15" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="724,59,820,88"/>
-<area shape="rect" id="node17" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="729,112,815,141"/>
-<area shape="rect" id="node19" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="689,269,855,299"/>
-<area shape="rect" id="node21" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="723,216,821,245"/>
-<area shape="rect" id="node23" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1173,243,1336,272"/>
-<area shape="rect" id="node27" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="720,691,824,720"/>
-<area shape="rect" id="node31" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="703,373,841,403"/>
-<area shape="rect" id="node33" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="905,321,1124,351"/>
-<area shape="rect" id="node36" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="945,400,1084,429"/>
-<area shape="rect" id="node38" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="705,477,839,507"/>
-<area shape="rect" id="node40" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="707,531,837,560"/>
-<area shape="rect" id="node42" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="707,584,837,613"/>
-<area shape="rect" id="node44" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="712,637,832,667"/>
+<area shape="rect" id="node3" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="244,493,401,523"/>
+<area shape="rect" id="node7" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="232,572,413,601"/>
+<area shape="rect" id="node5" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="728,480,816,509"/>
+<area shape="rect" id="node9" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="475,585,627,615"/>
+<area shape="rect" id="node11" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="504,639,597,668"/>
+<area shape="rect" id="node13" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="485,532,616,561"/>
+<area shape="rect" id="node30" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="461,692,640,721"/>
+<area shape="rect" id="node35" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="485,269,616,299"/>
+<area shape="rect" id="node15" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="712,373,832,403"/>
+<area shape="rect" id="node18" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="693,637,851,667"/>
+<area shape="rect" id="node20" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="724,691,820,720"/>
+<area shape="rect" id="node22" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="729,744,815,773"/>
+<area shape="rect" id="node24" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="689,427,855,456"/>
+<area shape="rect" id="node26" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="723,584,821,613"/>
+<area shape="rect" id="node28" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1173,427,1336,456"/>
+<area shape="rect" id="node33" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="720,797,824,827"/>
+<area shape="rect" id="node37" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="703,269,841,299"/>
+<area shape="rect" id="node39" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="905,321,1124,351"/>
+<area shape="rect" id="node42" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="945,243,1084,272"/>
+<area shape="rect" id="node46" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="705,5,839,35"/>
+<area shape="rect" id="node48" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="707,59,837,88"/>
+<area shape="rect" id="node50" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="707,112,837,141"/>
+<area shape="rect" id="node52" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="712,165,832,195"/>
 </map>

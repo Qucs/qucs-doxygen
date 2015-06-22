@@ -1381,17 +1381,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01309"></a>01309   <a class="code" href="structDataX.html">DataX</a> *pD;
 <a name="l01310"></a>01310   <a class="code" href="classGraph.html">Graph</a> *g = (<a class="code" href="classGraph.html">Graph</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
 <a name="l01311"></a>01311   <span class="comment">// First output the names of independent and dependent variables.</span>
-<a name="l01312"></a>01312   <span class="keywordflow">for</span>(pD = g-&gt;<a class="code" href="classGraph.html#aa3f0a76188a0267aea4564baad95a1bb">cPointsX</a>.first(); pD!=0; pD = g-&gt;<a class="code" href="classGraph.html#aa3f0a76188a0267aea4564baad95a1bb">cPointsX</a>.next())
+<a name="l01312"></a>01312   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(ii)); ++ii)
 <a name="l01313"></a>01313     Stream &lt;&lt; <span class="charliteral">&#39;\&quot;&#39;</span> &lt;&lt; pD-&gt;<a class="code" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;&quot;</span>;
 <a name="l01314"></a>01314   Stream &lt;&lt; <span class="stringliteral">&quot;\&quot;r &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;\&quot;i &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;
 <a name="l01315"></a>01315 
 <a name="l01316"></a>01316 
 <a name="l01317"></a>01317   <span class="keywordtype">int</span> n, m;
 <a name="l01318"></a>01318   <span class="keywordtype">double</span> *py = g-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>;
-<a name="l01319"></a>01319   <span class="keywordtype">int</span> Count = g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> * g-&gt;<a class="code" href="classGraph.html#aa3f0a76188a0267aea4564baad95a1bb">cPointsX</a>.getFirst()-&gt;count;
+<a name="l01319"></a>01319   <span class="keywordtype">int</span> Count = g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> * g-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
 <a name="l01320"></a>01320   <span class="keywordflow">for</span>(n = 0; n &lt; Count; n++) {
 <a name="l01321"></a>01321     m = n;
-<a name="l01322"></a>01322     <span class="keywordflow">for</span>(pD = g-&gt;<a class="code" href="classGraph.html#aa3f0a76188a0267aea4564baad95a1bb">cPointsX</a>.first(); pD!=0; pD = g-&gt;<a class="code" href="classGraph.html#aa3f0a76188a0267aea4564baad95a1bb">cPointsX</a>.next()) {
+<a name="l01322"></a>01322    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(ii)); ++ii) {
 <a name="l01323"></a>01323       Stream &lt;&lt; *(pD-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a> + m%pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>) &lt;&lt; <span class="charliteral">&#39;;&#39;</span>;
 <a name="l01324"></a>01324       m /= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
 <a name="l01325"></a>01325     }
@@ -1671,7 +1671,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 18:18:20 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 19:16:25 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

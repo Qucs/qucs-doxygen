@@ -1,13 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$wire_8h.html" title="wire.h" alt="" coords="400,83,456,112"/>
-<area shape="rect" id="node5" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1063,315,1161,344"/>
-<area shape="rect" id="node13" href="$component_8h.html" title="components/component.h" alt="" coords="91,160,261,189"/>
+<area shape="rect" id="node3" href="$wire_8h.html" title="wire.h" alt="" coords="451,83,507,112"/>
+<area shape="rect" id="node5" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1197,315,1296,344"/>
+<area shape="rect" id="node13" href="$component_8h.html" title="components/component.h" alt="" coords="141,160,312,189"/>
 <area shape="rect" id="node24" href="$node_8h.html" title="node.h" alt="" coords="5,160,67,189"/>
-<area shape="rect" id="node28" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="493,160,576,189"/>
-<area shape="rect" id="node34" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="804,83,940,112"/>
-<area shape="rect" id="node58" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="653,237,787,267"/>
-<area shape="rect" id="node7" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="425,315,503,344"/>
-<area shape="rect" id="node18" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="387,160,469,189"/>
-<area shape="rect" id="node36" href="$graph_8h.html" title="graph.h" alt="" coords="720,160,784,189"/>
-<area shape="rect" id="node38" href="$marker_8h.html" title="marker.h" alt="" coords="1040,237,1112,267"/>
+<area shape="rect" id="node28" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="596,160,679,189"/>
+<area shape="rect" id="node34" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="939,83,1075,112"/>
+<area shape="rect" id="node60" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="705,237,839,267"/>
+<area shape="rect" id="node7" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="351,315,428,344"/>
+<area shape="rect" id="node18" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="437,160,520,189"/>
+<area shape="rect" id="node36" href="$graph_8h.html" title="graph.h" alt="" coords="855,160,919,189"/>
+<area shape="rect" id="node38" href="$marker_8h.html" title="marker.h" alt="" coords="1175,237,1247,267"/>
 </map>

@@ -1,11 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" id="node11" href="$wire_8h.html" title="wire.h" alt="" coords="303,160,359,189"/>
-<area shape="rect" id="node32" href="$node_8h.html" title="node.h" alt="" coords="25,237,87,267"/>
-<area shape="rect" id="node36" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="577,83,713,112"/>
-<area shape="rect" id="node13" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="681,315,780,344"/>
-<area shape="rect" id="node15" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="331,315,408,344"/>
-<area shape="rect" id="node21" href="$component_8h.html" title="components/component.h" alt="" coords="111,237,281,267"/>
-<area shape="rect" id="node26" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="457,237,540,267"/>
-<area shape="rect" id="node38" href="$graph_8h.html" title="graph.h" alt="" coords="613,160,677,189"/>
-<area shape="rect" id="node40" href="$marker_8h.html" title="marker.h" alt="" coords="820,237,892,267"/>
+<area shape="rect" id="node11" href="$wire_8h.html" title="wire.h" alt="" coords="1008,160,1064,189"/>
+<area shape="rect" id="node32" href="$node_8h.html" title="node.h" alt="" coords="5,237,67,267"/>
+<area shape="rect" id="node36" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="673,83,809,112"/>
+<area shape="rect" id="node13" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="921,315,1020,344"/>
+<area shape="rect" id="node15" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="735,315,812,344"/>
+<area shape="rect" id="node21" href="$component_8h.html" title="components/component.h" alt="" coords="565,237,736,267"/>
+<area shape="rect" id="node26" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="1008,237,1091,267"/>
+<area shape="rect" id="node38" href="$graph_8h.html" title="graph.h" alt="" coords="403,160,467,189"/>
+<area shape="rect" id="node40" href="$marker_8h.html" title="marker.h" alt="" coords="811,237,883,267"/>
 </map>

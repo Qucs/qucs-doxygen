@@ -1,16 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$diagram_8h.html" title="diagram.h" alt="" coords="541,237,618,267"/>
-<area shape="rect" id="node35" href="$rectdiagram_8h.html" title="rectdiagram.h" alt="" coords="206,160,307,189"/>
-<area shape="rect" id="node38" href="$polardiagram_8h.html" title="polardiagram.h" alt="" coords="331,160,438,189"/>
-<area shape="rect" id="node41" href="$smithdiagram_8h.html" title="smithdiagram.h" alt="" coords="462,160,571,189"/>
-<area shape="rect" id="node44" href="$tabdiagram_8h.html" title="tabdiagram.h" alt="" coords="783,160,879,189"/>
-<area shape="rect" id="node47" href="$psdiagram_8h.html" title="psdiagram.h" alt="" coords="595,160,689,189"/>
-<area shape="rect" id="node50" href="$rect3ddiagram_8h.html" title="rect3ddiagram.h" alt="" coords="513,83,627,112"/>
-<area shape="rect" id="node53" href="$curvediagram_8h.html" title="curvediagram.h" alt="" coords="969,83,1078,112"/>
-<area shape="rect" id="node56" href="$timingdiagram_8h.html" title="timingdiagram.h" alt="" coords="651,83,766,112"/>
-<area shape="rect" id="node59" href="$truthdiagram_8h.html" title="truthdiagram.h" alt="" coords="790,83,894,112"/>
-<area shape="rect" id="node5" href="$graph_8h.html" title="graph.h" alt="" coords="282,315,346,344"/>
-<area shape="rect" id="node7" href="$marker_8h.html" title="marker.h" alt="" coords="470,392,542,421"/>
-<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="207,469,285,499"/>
-<area shape="rect" id="node15" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="493,469,591,499"/>
+<area shape="rect" id="node3" href="$diagram_8h.html" title="diagram.h" alt="" coords="656,237,733,267"/>
+<area shape="rect" id="node37" href="$rectdiagram_8h.html" title="rectdiagram.h" alt="" coords="321,160,423,189"/>
+<area shape="rect" id="node40" href="$polardiagram_8h.html" title="polardiagram.h" alt="" coords="447,160,553,189"/>
+<area shape="rect" id="node43" href="$smithdiagram_8h.html" title="smithdiagram.h" alt="" coords="577,160,687,189"/>
+<area shape="rect" id="node46" href="$tabdiagram_8h.html" title="tabdiagram.h" alt="" coords="711,160,807,189"/>
+<area shape="rect" id="node49" href="$psdiagram_8h.html" title="psdiagram.h" alt="" coords="831,160,924,189"/>
+<area shape="rect" id="node52" href="$rect3ddiagram_8h.html" title="rect3ddiagram.h" alt="" coords="912,83,1027,112"/>
+<area shape="rect" id="node55" href="$curvediagram_8h.html" title="curvediagram.h" alt="" coords="1051,83,1160,112"/>
+<area shape="rect" id="node58" href="$timingdiagram_8h.html" title="timingdiagram.h" alt="" coords="723,83,837,112"/>
+<area shape="rect" id="node61" href="$truthdiagram_8h.html" title="truthdiagram.h" alt="" coords="544,83,648,112"/>
+<area shape="rect" id="node5" href="$graph_8h.html" title="graph.h" alt="" coords="332,315,396,344"/>
+<area shape="rect" id="node7" href="$marker_8h.html" title="marker.h" alt="" coords="585,392,657,421"/>
+<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="35,469,112,499"/>
+<area shape="rect" id="node15" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="608,469,707,499"/>
 </map>

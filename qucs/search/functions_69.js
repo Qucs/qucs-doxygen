@@ -46,7 +46,7 @@ var searchData=
   ['iprobe',['iProbe',['../classiProbe.html#a03ffe573c9a8be63ce3db64b1331e4ca',1,'iProbe']]],
   ['ipulse',['iPulse',['../classiPulse.html#a019f54f591209999c0654348142246ae',1,'iPulse']]],
   ['irect',['iRect',['../classiRect.html#ab293612e34200f7bfd9f038f7945da1b',1,'iRect']]],
-  ['isempty',['isEmpty',['../classSaveDialog.html#a9dc946e03175251661053dfb68172035',1,'SaveDialog']]],
+  ['isempty',['isEmpty',['../classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb',1,'Graph::isEmpty()'],['../classSaveDialog.html#a9dc946e03175251661053dfb68172035',1,'SaveDialog::isEmpty()']]],
   ['iseps',['isEps',['../classExportDialog.html#a2b8258e752a59c7bcb332db6e3337a2d',1,'ExportDialog']]],
   ['isexportselected',['isExportSelected',['../classExportDialog.html#a9cab222025b50163a0870a034645863f',1,'ExportDialog']]],
   ['ishidden',['isHidden',['../classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a',1,'Rect3DDiagram']]],

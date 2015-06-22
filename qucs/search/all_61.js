@@ -84,5 +84,5 @@ var searchData=
   ['attribute',['Attribute',['../structtQucsSettings.html#a953a38fce701bdcf0e396c72beddf60d',1,'tQucsSettings']]],
   ['autoscale',['autoScale',['../structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998',1,'Axis']]],
   ['avail',['avail',['../structPort.html#acd1cd6f74aa4b423395096510635f43d',1,'Port']]],
-  ['axis',['Axis',['../structAxis.html',1,'']]]
+  ['axis',['Axis',['../structAxis.html',1,'Axis'],['../classGraph.html#ac40011f8360814a34ee99a232d399f1c',1,'Graph::axis()']]]
 ];

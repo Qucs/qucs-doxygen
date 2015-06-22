@@ -1,11 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="201,51,340,81"/>
-<area shape="rect" id="node5" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="404,13,623,42"/>
-<area shape="rect" id="node9" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="444,78,583,107"/>
-<area shape="rect" id="node11" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="204,155,337,185"/>
-<area shape="rect" id="node13" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="205,209,336,238"/>
-<area shape="rect" id="node15" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="205,262,336,291"/>
-<area shape="rect" id="node17" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="211,315,331,345"/>
-<area shape="rect" id="node19" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="188,369,353,398"/>
-<area shape="rect" id="node7" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="672,13,835,42"/>
+<area shape="rect" id="node3" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="201,55,340,85"/>
+<area shape="rect" id="node5" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="404,17,623,46"/>
+<area shape="rect" id="node9" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="444,82,583,111"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="211,159,331,189"/>
+<area shape="rect" id="node13" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="227,213,315,242"/>
+<area shape="rect" id="node15" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="204,266,337,295"/>
+<area shape="rect" id="node17" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="205,319,336,349"/>
+<area shape="rect" id="node19" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="205,373,336,402"/>
+<area shape="rect" id="node21" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="211,426,331,455"/>
+<area shape="rect" id="node23" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="188,479,353,509"/>
+<area shape="rect" id="node7" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="672,17,835,46"/>
 </map>

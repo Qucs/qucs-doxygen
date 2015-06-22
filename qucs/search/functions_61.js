@@ -22,5 +22,6 @@ var searchData=
   ['area',['Area',['../structArea.html#aaa326e52e4eb0d09f6e64a7b03f22105',1,'Area']]],
   ['arrow',['Arrow',['../classArrow.html#a34acd71904bf918ca11ebe9208739a4c',1,'Arrow']]],
   ['arrowdialog',['ArrowDialog',['../classArrowDialog.html#a71f57bdcd88bda37af0cb279eac0bf65',1,'ArrowDialog']]],
-  ['attenuator',['Attenuator',['../classAttenuator.html#a03e32d165cab907fbf8174185defba72',1,'Attenuator']]]
+  ['attenuator',['Attenuator',['../classAttenuator.html#a03e32d165cab907fbf8174185defba72',1,'Attenuator']]],
+  ['axis',['axis',['../classGraph.html#ac40011f8360814a34ee99a232d399f1c',1,'Graph']]]
 ];

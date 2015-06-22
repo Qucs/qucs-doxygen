@@ -81,7 +81,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">DataX Struct Reference</div>  </div>
 </div><!--header-->
@@ -93,15 +94,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#ae6f76935e0815f6a7b2330c6a480d14d">DataX</a> (const QString &amp;Var_, double *Points_=0, int count_=0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#ab3beb18423f6bc737e6c8ee465009ce3">~DataX</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a5a5beed55405b1900a51ef3d067475d0">min</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a34f8d1e8c1857a197791f0c717a504d3">max</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a03d72dbdb8651fe8eb549d9835bcbebc">min</a> (const double &amp;x)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a339e059608e5cf84060475104a208597">max</a> (const double &amp;x)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a310443779b9890de9b343449db841197">count</a></td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a154e52a389796d556d98cddad18147d4">Min</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDataX.html#a5dfb4caccf09ef63381d641a84f05a81">Max</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00062">62</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00063">63</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae6f76935e0815f6a7b2330c6a480d14d"></a><!-- doxytag: member="DataX::DataX" ref="ae6f76935e0815f6a7b2330c6a480d14d" args="(const QString &amp;Var_, double *Points_=0, int count_=0)" -->
 <div class="memitem">
@@ -134,7 +143,7 @@ Data Fields</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00063">63</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00064">64</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -152,7 +161,91 @@ Data Fields</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00065">65</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00066">66</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a34f8d1e8c1857a197791f0c717a504d3"></a><!-- doxytag: member="DataX::max" ref="a34f8d1e8c1857a197791f0c717a504d3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double&amp; <a class="el" href="structDataX.html#a34f8d1e8c1857a197791f0c717a504d3">DataX::max</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00073">73</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a339e059608e5cf84060475104a208597"></a><!-- doxytag: member="DataX::max" ref="a339e059608e5cf84060475104a208597" args="(const double &amp;x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double&amp; <a class="el" href="structDataX.html#a34f8d1e8c1857a197791f0c717a504d3">DataX::max</a> </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00076">76</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a5beed55405b1900a51ef3d067475d0"></a><!-- doxytag: member="DataX::min" ref="a5a5beed55405b1900a51ef3d067475d0" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double&amp; <a class="el" href="structDataX.html#a5a5beed55405b1900a51ef3d067475d0">DataX::min</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00072">72</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structDataX_a5a5beed55405b1900a51ef3d067475d0_icgraph.png" border="0" usemap="#structDataX_a5a5beed55405b1900a51ef3d067475d0_icgraph" alt=""/></div>
+<map name="structDataX_a5a5beed55405b1900a51ef3d067475d0_icgraph" id="structDataX_a5a5beed55405b1900a51ef3d067475d0_icgraph">
+<area shape="rect" id="node3" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="141,59,272,88"/><area shape="rect" id="node5" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="332,5,497,35"/><area shape="rect" id="node14" href="classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af" title="SweepDialog::setBiasPoints" alt="" coords="321,59,508,88"/><area shape="rect" id="node18" href="classQucsApp.html#acb4deaa2ad9fd99eb5049199622bbfaf" title="QucsApp::slot2PortMatching" alt="" coords="320,112,509,141"/><area shape="rect" id="node7" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="564,5,735,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="995,7,1197,36"/><area shape="rect" id="node11" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="791,32,945,61"/><area shape="rect" id="node16" href="classSweepDialog.html#a22fed04ffc0cd0338157407c79dfc084" title="SweepDialog::SweepDialog" alt="" coords="557,59,741,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03d72dbdb8651fe8eb549d9835bcbebc"></a><!-- doxytag: member="DataX::min" ref="a03d72dbdb8651fe8eb549d9835bcbebc" args="(const double &amp;x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double&amp; <a class="el" href="structDataX.html#a5a5beed55405b1900a51ef3d067475d0">DataX::min</a> </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00075">75</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -168,7 +261,37 @@ Data Fields</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00068">68</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00069">69</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5dfb4caccf09ef63381d641a84f05a81"></a><!-- doxytag: member="DataX::Max" ref="a5dfb4caccf09ef63381d641a84f05a81" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structDataX.html#a5dfb4caccf09ef63381d641a84f05a81">DataX::Max</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00079">79</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a154e52a389796d556d98cddad18147d4"></a><!-- doxytag: member="DataX::Min" ref="a154e52a389796d556d98cddad18147d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structDataX.html#a154e52a389796d556d98cddad18147d4">DataX::Min</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00078">78</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +306,7 @@ Data Fields</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00067">67</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00068">68</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +321,7 @@ Data Fields</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="graph_8h_source.html#l00065">65</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p>Definition at line <a class="el" href="graph_8h_source.html#l00066">66</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -223,7 +346,7 @@ Data Fields</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 18:18:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 22 2015 19:16:26 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

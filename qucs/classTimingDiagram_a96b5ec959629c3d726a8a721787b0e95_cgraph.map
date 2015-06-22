@@ -1,7 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classTimingDiagram.html#aa240a4b0f66dcbdc0c02f834ce74ae4c" title="TimingDiagram::TimingDiagram" alt="" coords="223,59,428,88"/>
-<area shape="rect" id="node5" href="$classTimingDiagram.html#a3890a12344a2d39badda444fddafbdf8" title="TimingDiagram::calcDiagram" alt="" coords="479,59,668,88"/>
+<area shape="rect" id="node3" href="$classTimingDiagram.html#aa240a4b0f66dcbdc0c02f834ce74ae4c" title="TimingDiagram::TimingDiagram" alt="" coords="223,139,428,168"/>
+<area shape="rect" id="node5" href="$classTimingDiagram.html#a3890a12344a2d39badda444fddafbdf8" title="TimingDiagram::calcDiagram" alt="" coords="479,139,668,168"/>
 <area shape="rect" id="node7" href="$classDiagram.html#aa85d506db3e26f6522e472d36c9e3ccb" title="Diagram::checkColumnWidth" alt="" coords="719,5,911,35"/>
-<area shape="rect" id="node9" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="763,59,867,88"/>
-<area shape="rect" id="node11" href="$classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables." alt="" coords="717,112,912,141"/>
+<area shape="rect" id="node9" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="759,59,871,88"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="755,112,875,141"/>
+<area shape="rect" id="node13" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="771,165,859,195"/>
+<area shape="rect" id="node15" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="763,219,867,248"/>
+<area shape="rect" id="node17" href="$classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables." alt="" coords="717,272,912,301"/>
+<area shape="rect" id="node19" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="960,272,1107,301"/>
 </map>

@@ -42,6 +42,7 @@ var searchData=
   ['noise_5fvv_2eh',['noise_vv.h',['../noise__vv_8h.html',1,'']]],
   ['noselected',['noselected',['../classExportDialog.html#ad01e2e39964f05490b6c76c13b4a40b8',1,'ExportDialog']]],
   ['num2str',['num2str',['../namespacemisc.html#af7e46432adfd60ad9f875172e5c95393',1,'misc']]],
+  ['numaxes',['numAxes',['../classGraph.html#a9e63e79dd2f776d602cc861693e4792b',1,'Graph']]],
   ['numberbox',['NumberBox',['../classMarkerDialog.html#a68e1266eb2ddd8f8acad27c77498a531',1,'MarkerDialog']]],
   ['numberstr',['numberStr',['../classPortSymbol.html#ad4fe8fce26f0aee2475d69ac62208ae1',1,'PortSymbol']]],
   ['numdefaultcolors',['NumDefaultColors',['../diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb',1,'diagramdialog.cpp']]],

@@ -14,7 +14,7 @@ var searchData=
   ['dff_5fsr',['dff_SR',['../classdff__SR.html#ab9c67d5a6f3593f8c3f09cc35f005588',1,'dff_SR']]],
   ['diac',['Diac',['../classDiac.html#aac3c1d99dada832927f8626a40ce86f4',1,'Diac']]],
   ['diagram',['Diagram',['../classDiagram.html#af0f60f8b0775a7521b73a3ff3200a5a8',1,'Diagram']]],
-  ['diagramdialog',['DiagramDialog',['../classDiagramDialog.html#a7e5c2fd49c83d46e16f1f6169577b4ba',1,'DiagramDialog']]],
+  ['diagramdialog',['DiagramDialog',['../classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e',1,'DiagramDialog']]],
   ['dialog',['Dialog',['../classArrow.html#a0fa2c7341afce6db717de6f2f50f199e',1,'Arrow::Dialog()'],['../classEllipse.html#aebc997a64c9ab01a1950b1b2e9ab47df',1,'Ellipse::Dialog()'],['../classEllipseArc.html#aad282242a792ca3ddfa460cbd2d33ce4',1,'EllipseArc::Dialog()'],['../classGraphicLine.html#ab70dc2a9fca29318230b8eaadc58668c',1,'GraphicLine::Dialog()'],['../classGraphicText.html#a5bafdb4d3945386095a8ae36b0de15f0',1,'GraphicText::Dialog()'],['../classID__Text.html#a10143be990661414fbc1cc0ba7c4731b',1,'ID_Text::Dialog()'],['../classPainting.html#aa305fdef81fac011b5ac35dbf4ae166b',1,'Painting::Dialog()'],['../classRectangle.html#ac8a00903ef420b2c2b604fecc41dd009',1,'Rectangle::Dialog()']]],
   ['digi_5fsim',['Digi_Sim',['../classDigi__Sim.html#ab2105ba8f498569d6fd7de99c5d03193',1,'Digi_Sim']]],
   ['digi_5fsource',['Digi_Source',['../classDigi__Source.html#a198d38b6191a53c9059d27adfef6113d',1,'Digi_Source']]],

@@ -1,5 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#adbeffe4fc78802acd2f3283568a433c2" title="Diagram::loadVarData" alt="" coords="244,5,393,35"/>
-<area shape="rect" id="node7" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="267,59,371,88"/>
-<area shape="rect" id="node5" href="$classDiagram.html#a076c09704475a8b23ecb464f2410b342" title="Reads the data of an independent variable." alt="" coords="444,5,625,35"/>
+<area shape="rect" id="node3" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="243,88,373,117"/>
+<area shape="rect" id="node16" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="256,141,360,170"/>
+<area shape="rect" id="node5" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="640,89,787,118"/>
+<area shape="rect" id="node7" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="463,34,551,64"/>
+<area shape="rect" id="node9" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="463,88,551,117"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="447,141,567,170"/>
+<area shape="rect" id="node13" href="$classGraph.html#a09882db7926c0ab1c8c900954fd24a0a" title="Reads the data of an independent variable." alt="" coords="423,194,591,224"/>
 </map>

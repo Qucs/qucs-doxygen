@@ -1,8 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="189,5,347,35"/>
-<area shape="rect" id="node5" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="220,59,316,88"/>
-<area shape="rect" id="node7" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="225,112,311,141"/>
-<area shape="rect" id="node9" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="185,165,351,195"/>
-<area shape="rect" id="node11" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="219,219,317,248"/>
-<area shape="rect" id="node13" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="187,272,349,301"/>
+<area shape="rect" id="node3" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="208,5,328,35"/>
+<area shape="rect" id="node5" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="224,59,312,88"/>
+<area shape="rect" id="node7" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="189,112,347,141"/>
+<area shape="rect" id="node9" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="220,165,316,195"/>
+<area shape="rect" id="node11" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="225,219,311,248"/>
+<area shape="rect" id="node13" href="$classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797" title="Diagram::calcCoordinate" alt="" coords="185,272,351,301"/>
+<area shape="rect" id="node15" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="219,325,317,355"/>
+<area shape="rect" id="node17" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="187,379,349,408"/>
 </map>
