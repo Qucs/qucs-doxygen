@@ -1805,8 +1805,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01813"></a>01813     xShift = scale * Event-&gt;pos().x();
 <a name="l01814"></a>01814     yShift = scale * Event-&gt;pos().y();
 <a name="l01815"></a>01815   } <span class="keywordflow">else</span> {
-<a name="l01816"></a>01816     <span class="keywordtype">float</span> xScale = float(Doc-&gt;visibleWidth())  / abs(DX);
-<a name="l01817"></a>01817     <span class="keywordtype">float</span> yScale = float(Doc-&gt;visibleHeight()) / abs(DY);
+<a name="l01816"></a>01816     <span class="keywordtype">float</span> xScale = float(Doc-&gt;visibleWidth())  / std::abs(DX);
+<a name="l01817"></a>01817     <span class="keywordtype">float</span> yScale = float(Doc-&gt;visibleHeight()) / std::abs(DY);
 <a name="l01818"></a>01818     scale = qMin(xScale, yScale)/initialScale;
 <a name="l01819"></a>01819     scale = Doc-&gt;<a class="code" href="classSchematic.html#a5a9bd92ab00320afbc1dd63cea4d1d87">zoom</a>(scale)/initialScale;
 <a name="l01820"></a>01820 
@@ -1989,7 +1989,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 19:16:25 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 23 2015 19:44:33 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
