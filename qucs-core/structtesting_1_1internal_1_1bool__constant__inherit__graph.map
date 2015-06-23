@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$structtesting_1_1internal_1_1is__pointer.html" title="{testing::internal::is_pointer\&lt; false \&gt;\n||}" alt="" coords="5,157,232,243"/>
+<area shape="rect" id="node6" href="$structtesting_1_1internal_1_1is__pointer_3_01T_01_5_01_4.html" title="{testing::internal::is_pointer\&lt; T * \&gt;\n||}" alt="" coords="256,157,472,243"/>
+<area shape="rect" id="node9" href="$structtesting_1_1internal_1_1bool__constant.html" title="{testing::internal::bool_constant\&lt; ImplicitlyConvertible\&lt; const T *, const ::ProtocolMessage * \&gt;::value\|\|ImplicitlyConvertible\&lt; const T *, const ::proto2::Message * \&gt;::value \&gt;\n|+ value\l|}" alt="" coords="496,157,1515,243"/>
+<area shape="rect" id="node11" href="$structtesting_1_1internal_1_1IsAProtocolMessage.html" title="{testing::internal::IsAProtocolMessage\&lt; T \&gt;\n||}" alt="" coords="869,293,1141,379"/>
+</map>

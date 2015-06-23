@@ -33,7 +33,7 @@ var searchData=
   ['bounding_5fy1',['Bounding_y1',['../classDiagram.html#a281a9e4ada0cd463f2e307cd94916264',1,'Diagram']]],
   ['bounding_5fy2',['Bounding_y2',['../classDiagram.html#a2e5270efbb9e73884da7b9f4b58d2913',1,'Diagram']]],
   ['boxlist',['BoxList',['../classLibraryDialog.html#a7c97655201bd5161de150b3fa0927ead',1,'LibraryDialog::BoxList()'],['../classPackageDialog.html#acc553b82b6a3284e5aaff9491baca541',1,'PackageDialog::BoxList()'],['../classSweepDialog.html#a404bae058efc70ecc9d638b44c9f1da8',1,'SweepDialog::BoxList()']]],
-  ['branchend',['BRANCHEND',['../graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d',1,'graph.cpp']]],
+  ['branchend',['BRANCHEND',['../graph_8h.html#ac55e1dc053f8f5ea089cbcf30586c25d',1,'graph.h']]],
   ['browsebutt',['BrowseButt',['../classComponentDialog.html#a76646b3a368d5133213c744dbbf47b03',1,'ComponentDialog::BrowseButt()'],['../classVASettingsDialog.html#a067a06dcc351b926bd1c0adb8b59ca25',1,'VASettingsDialog::BrowseButt()']]],
   ['brush',['Brush',['../structArea.html#ae2327c42ef5f0a47cff2b930f081b8ce',1,'Area::Brush()'],['../classEllipse.html#a5b56a2dfbbfaf2779d472108871143da',1,'Ellipse::Brush()'],['../classRectangle.html#af6b495763942967fb3b3d78ff51cc633',1,'Rectangle::Brush()']]],
   ['bsim3v34nmos',['bsim3v34nMOS',['../classbsim3v34nMOS.html',1,'bsim3v34nMOS'],['../classbsim3v34nMOS.html#afa0cfac591ee01de5ccb27ba6756aebd',1,'bsim3v34nMOS::bsim3v34nMOS()']]],

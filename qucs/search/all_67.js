@@ -50,7 +50,7 @@ var searchData=
   ['graph_2eh',['graph.h',['../graph_8h.html',1,'']]],
   ['graph2csv',['graph2csv',['../classQucsApp.html#a3e95cc5d57a1c48ea34402e752cd5b44',1,'QucsApp']]],
   ['graphantialiasing',['GraphAntiAliasing',['../structtQucsSettings.html#a027f698dcd213822a988618dbaa1a52a',1,'tQucsSettings']]],
-  ['graphend',['GRAPHEND',['../graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253',1,'graph.cpp']]],
+  ['graphend',['GRAPHEND',['../graph_8h.html#aa827b6f005895fdf7f95e78cad15f253',1,'graph.h']]],
   ['graphicline',['GraphicLine',['../classGraphicLine.html',1,'GraphicLine'],['../classGraphicLine.html#aa38a79650f4d96a2f3edecce40a36206',1,'GraphicLine::GraphicLine()']]],
   ['graphicline_2ecpp',['graphicline.cpp',['../graphicline_8cpp.html',1,'']]],
   ['graphicline_2eh',['graphicline.h',['../graphicline_8h.html',1,'']]],

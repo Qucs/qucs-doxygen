@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{qucs::interpolator\n|- dataType\l- interpolType\l- repeat\l- length\l- rx\l- ry\l- duration\l- rsp\l- isp\l- cy\l|+ interpolator()\l+ ~interpolator()\l+ vectors()\l+ vectors()\l+ rvectors()\l+ cvectors()\l+ prepare()\l+ rinterpolate()\l+ cinterpolate()\l- findIndex()\l- findIndex_old()\l- linear()\l- rlinear()\l- clinear()\l- cleanup()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" isp\nrsp" ,arrowhead="odiamond",fontname="Helvetica"];
-  Node2 [label="{qucs::spline\n|- x\l- f0\l- f1\l- f2\l- f3\l- d0\l- dn\l- n\l- boundary\l|+ spline()\l+ spline()\l+ spline()\l+ spline()\l+ spline()\l+ ~spline()\l+ vectors()\l+ vectors()\l+ vectors()\l+ vectors()\l+ construct()\l+ evaluate()\l+ setBoundary()\l+ setDerivatives()\l- upper_bound()\l- realloc()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1spline.html"];
-}
