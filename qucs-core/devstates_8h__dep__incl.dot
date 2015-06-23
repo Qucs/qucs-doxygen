@@ -1,0 +1,45 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="devstates.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="diode.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diode_8h.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="components.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$components_8h.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="input.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$input_8cpp.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="qucs_interface.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$qucs__interface_8cpp.html"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="module.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$module_8cpp.html"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ucs.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ucs_8cpp.html"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="test_libqucs.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__libqucs_8cpp.html"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="diode.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diode_8cpp.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="diac.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diac_8h.html"];
+  Node10 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="diac.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diac_8cpp.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="thyristor.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$thyristor_8h.html"];
+  Node12 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="thyristor.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$thyristor_8cpp.html"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="triac.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$triac_8h.html"];
+  Node14 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="triac.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$triac_8cpp.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="tunneldiode.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tunneldiode_8cpp.html"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="devstates.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$devstates_8cpp.html"];
+}

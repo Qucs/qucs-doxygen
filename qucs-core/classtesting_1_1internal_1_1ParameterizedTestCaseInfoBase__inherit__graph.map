@@ -1,3 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1ParameterizedTestCaseInfo.html" title="{testing::internal::ParameterizedTestCaseInfo\&lt; TestCase \&gt;\n|&#45; test_case_name_\l&#45; tests_\l&#45; instantiations_\l|+ ParamGenerator()\l+ ParameterizedTestCaseInfo()\l+ GetTestCaseName()\l+ GetTestCaseTypeId()\l+ AddTestPattern()\l+ AddTestCaseInstantiation()\l+ RegisterTests()\l&#45; GTEST_DISALLOW_COPY_AND_ASSIGN_()\l}" alt="" coords="5,227,368,469"/>
-</map>

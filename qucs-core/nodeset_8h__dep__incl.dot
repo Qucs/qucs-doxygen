@@ -1,0 +1,46 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="nodeset.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nasolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nasolver_8cpp.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nasolver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nasolver_8h.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="acsolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$acsolver_8cpp.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="acsolver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$acsolver_8h.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="analyses.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analyses_8h.html",tooltip="global analysis header file"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="module.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$module_8cpp.html"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="dcsolver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dcsolver_8h.html"];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="dcsolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dcsolver_8cpp.html"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="trsolver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trsolver_8h.html"];
+  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="e_trsolver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$e__trsolver_8h.html",tooltip="The externally controlled trsolver external class header file."];
+  Node11 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="e_trsolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$e__trsolver_8cpp.html"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="qucs_interface.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$qucs__interface_8cpp.html"];
+  Node10 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="trsolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trsolver_8cpp.html"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="input.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$input_8cpp.html"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="net.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$net_8cpp.html"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="nodeset.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nodeset_8cpp.html"];
+}

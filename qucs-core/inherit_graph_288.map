@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classtesting_1_1TestPartResultReporterInterface.html" title="testing::TestPartResultReporterInterface" alt="" coords="5,85,264,115"/>
-<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1DefaultGlobalTestPartResultReporter.html" title="testing::internal::DefaultGlobalTestPartResultReporter" alt="" coords="324,5,660,35"/>
-<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1DefaultPerThreadTestPartResultReporter.html" title="testing::internal::DefaultPerThreadTestPartResultReporter" alt="" coords="313,59,671,88"/>
-<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1HasNewFatalFailureHelper.html" title="testing::internal::HasNewFatalFailureHelper" alt="" coords="355,112,629,141"/>
-<area shape="rect" id="node9" href="$classtesting_1_1ScopedFakeTestPartResultReporter.html" title="testing::ScopedFakeTestPartResultReporter" alt="" coords="352,165,632,195"/>
-</map>

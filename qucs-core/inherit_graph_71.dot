@@ -1,0 +1,9 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="qucs::qucsint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1qucsint.html",tooltip="superclass for interfacing to the Qucs circuit solvers."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="qucs::trsolver_interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1trsolver__interface.html",tooltip="subclass for interfacing to the Qucs transient circuit solvers."];
+}

@@ -1,0 +1,7 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="qucs::matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1matrix.html",tooltip="Dense complex matrix class This class defines a matrix object with its methods, operators and operati..."];
+}

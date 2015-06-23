@@ -1,0 +1,31 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mdl_lcontent_t\n|+ type\l+ link\l+ data\l+ table\l+ @1\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" link" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{mdl_link_t\n|+ parent\l+ name\l+ type\l+ content\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__link__t.html"];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" next\nparent" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node1 -> Node2 [color="grey25",fontsize="10",style="solid",label=" content" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" table" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{mdl_table_t\n|+ name\l+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__table__t.html"];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{mdl_element_t\n|+ number\l+ name\l+ value\l+ attr\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__element__t.html"];
+  Node4 -> Node4 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{mdl_data_t\n|+ content\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__data__t.html"];
+  Node6 -> Node5 [color="grey25",fontsize="10",style="solid",label=" content" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{mdl_dcontent_t\n|+ type\l+ data\l+ hyptable\l+ @3\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__dcontent__t.html"];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{mdl_dataset_t\n|+ type1\l+ data1\l+ type2\l+ data2\l+ dsize\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__dataset__t.html"];
+  Node8 -> Node7 [color="grey25",fontsize="10",style="solid",label=" data1\ndata2" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{mdl_point_t\n|+ n\l+ x\l+ y\l+ r\l+ i\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__point__t.html"];
+  Node8 -> Node8 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 -> Node7 [color="grey25",fontsize="10",style="solid",label=" dsize" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{mdl_datasize_t\n|+ type\l+ size\l+ x\l+ y\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__datasize__t.html"];
+  Node10 -> Node6 [color="grey25",fontsize="10",style="solid",label=" hyptable" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{mdl_hyptable_t\n|+ name\l+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmdl__hyptable__t.html"];
+  Node4 -> Node10 [color="grey25",fontsize="10",style="solid",label=" data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 -> Node6 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

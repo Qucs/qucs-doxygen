@@ -128,11 +128,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00050"></a>00050 }
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="comment">// ------------------------------------------------------------</span>
-<a name="l00053"></a><a class="code" href="classPolarDiagram.html#a9182cde79aa3d60f21e5ddc763ebe267">00053</a> <span class="keywordtype">void</span> <a class="code" href="classPolarDiagram.html#a9182cde79aa3d60f21e5ddc763ebe267">PolarDiagram::calcCoordinate</a>(<span class="keywordtype">double</span>* &amp;, <span class="keywordtype">double</span>* &amp;yD, <span class="keywordtype">double</span>* &amp;,
-<a name="l00054"></a>00054           <span class="keywordtype">float</span> *px, <span class="keywordtype">float</span> *py, <a class="code" href="structAxis.html">Axis</a>*)
-<a name="l00055"></a>00055 {
-<a name="l00056"></a>00056   <span class="keywordtype">double</span> yr = *(yD++);
-<a name="l00057"></a>00057   <span class="keywordtype">double</span> yi = *(yD++);
+<a name="l00053"></a><a class="code" href="classPolarDiagram.html#ac7211dc41df7f0cbcf1a2456882d5458">00053</a> <span class="keywordtype">void</span> <a class="code" href="classPolarDiagram.html#ac7211dc41df7f0cbcf1a2456882d5458">PolarDiagram::calcCoordinate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>*, <span class="keyword">const</span> <span class="keywordtype">double</span>* yD, <span class="keyword">const</span> <span class="keywordtype">double</span>*,
+<a name="l00054"></a>00054           <span class="keywordtype">float</span> *px, <span class="keywordtype">float</span> *py, <a class="code" href="structAxis.html">Axis</a>*)<span class="keyword"> const</span>
+<a name="l00055"></a>00055 <span class="keyword"></span>{
+<a name="l00056"></a>00056   <span class="keywordtype">double</span> yr = yD[0];
+<a name="l00057"></a>00057   <span class="keywordtype">double</span> yi = yD[1];
 <a name="l00058"></a>00058   *px = float((yr/<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a> + 1.0)*<span class="keywordtype">double</span>(<a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a>)/2.0);
 <a name="l00059"></a>00059   *py = float((yi/<a class="code" href="classDiagram.html#a869122cfb8eef5242c5ed13c1a1b146a">yAxis</a>.<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a> + 1.0)*<span class="keywordtype">double</span>(<a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>)/2.0);
 <a name="l00060"></a>00060 
@@ -200,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 23 2015 19:44:32 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 23 2015 20:05:11 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

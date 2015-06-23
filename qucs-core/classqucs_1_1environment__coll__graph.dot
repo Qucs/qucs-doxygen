@@ -1,0 +1,37 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{qucs::environment\n|- name\l- root\l- checkee\l- solvee\l- children\l- iscopy\l- defs\l|+ environment()\l+ environment()\l+ environment()\l+ ~environment()\l+ copy()\l+ setName()\l+ print()\l+ setDefinitions()\l+ getDefinitions()\l+ copyVariables()\land 27 more...}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" defs" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{definition_t\n|+ type\l+ instance\l+ nodes\l+ pairs\l+ next\l+ sub\l+ env\l+ eqns\l+ duplicate\l+ action\land 9 more...|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdefinition__t.html"];
+  Node1 -> Node2 [color="grey25",fontsize="10",style="solid",label=" env" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" nodes" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{node_t\n|+ node\l+ xlate\l+ xlatenr\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnode__t.html"];
+  Node3 -> Node3 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" next\nsub" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" values" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{value_t\n|+ ident\l+ unit\l+ scale\l+ value\l+ var\l+ subst\l+ hint\l+ range\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvalue__t.html"];
+  Node4 -> Node4 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node2 [color="grey25",fontsize="10",style="solid",label=" pairs" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{pair_t\n|+ key\l+ value\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpair__t.html"];
+  Node4 -> Node5 [color="grey25",fontsize="10",style="solid",label=" value" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node5 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 -> Node2 [color="grey25",fontsize="10",style="solid",label=" define" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{define_t\n|+ type\l+ nodes\l+ action\l+ substrate\l+ nonlinear\l+ required\l+ optional\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdefine__t.html"];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" optional\nrequired" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{property_t\n|+ key\l+ type\l+ d\l+ s\l+ defaultval\l+ il\l+ l\l+ h\l+ ih\l+ str\l+ range\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structproperty__t.html"];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" root" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{qucs::variable\n|- name\l- pass\l- type\l- value\l- next\l|+ variable()\l+ variable()\l+ variable()\l+ ~variable()\l+ setName()\l+ getName()\l+ setNext()\l+ getNext()\l+ setType()\l+ getType()\land 12 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1variable.html"];
+  Node8 -> Node9 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 -> Node9 [color="grey25",fontsize="10",style="solid",label=" value" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{qucs::variable::value_t\n|+ c\l+ r\l+ s\l+ v\l+ a\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionqucs_1_1variable_1_1value__t.html"];
+  Node11 -> Node10 [color="grey25",fontsize="10",style="solid",label=" s" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{qucs::substrate\n||+ MCREATOR()\l+ substrate()\l+ ~substrate()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1substrate.html"];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{qucs::object\n|- name\l- props\l|+ object()\l+ object()\l+ setName()\l+ getName()\l+ addProperty()\l+ addProperty()\l+ addProperty()\l+ setProperty()\l+ setProperty()\l+ setScaledProperty()\land 10 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1object.html",tooltip="generic object class."];
+  Node8 -> Node12 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 -> Node9 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

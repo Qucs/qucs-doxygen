@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classtesting_1_1internal_1_1OsStackTraceGetterInterface.html" title="{testing::internal::OsStackTraceGetterInterface\n||+ OsStackTraceGetterInterface()\l+ ~OsStackTraceGetterInterface()\l+ CurrentStackTrace()\l+ UponLeavingGTest()\l&#45; GTEST_DISALLOW_COPY_AND_ASSIGN_()\l}" alt="" coords="5,32,309,187"/>
-<area shape="rect" id="node4" href="$classtesting_1_1internal_1_1Mutex.html" title="{testing::internal::Mutex\n||+ Mutex()\l+ Lock()\l+ Unlock()\l+ AssertHeld()\l+ Mutex()\l+ Lock()\l+ Unlock()\l+ AssertHeld()\l}" alt="" coords="333,6,488,213"/>
-</map>

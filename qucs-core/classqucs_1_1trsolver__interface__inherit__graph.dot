@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{qucs::trsolver_interface\n|- isInitialised\l- etr\l|+ trsolver_interface()\l+ trsolver_interface()\l+ getETR()\l+ init()\l+ getIsInitialised()\l+ stepsolve_sync()\l+ acceptstep_sync()\l+ stepsolve_async()\l+ acceptstep_async()\l+ rejectstep_async()\land 11 more...}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{qucs::qucsint\n|# subnet\l# in\l# gnd\l# out\l# root\l# err\l# ret\l|+ qucsint()\l+ qucsint()\l+ ~qucsint()\l+ prepare_netlist()\l+ evaluate()\l+ output()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1qucsint.html",tooltip="superclass for interfacing to the Qucs circuit solvers."];
+}

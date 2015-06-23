@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{qucs::eqn::reference\n|+ n\l+ ref\l|+ reference()\l+ reference()\l+ ~reference()\l+ print()\l+ addDependencies()\l+ findVariable()\l+ evalType()\l+ toString()\l+ evaluate()\l+ differentiate()\l+ recreate()\l+ replace()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{qucs::eqn::node\n|+ duplicate\l+ cycle\l+ evalPossible\l+ skip\l+ txt\l+ evaluated\l+ instance\l+ output\l+ dropdeps\l+ solvee\l+ checkee\l- type\l- tag\l- next\l- dependencies\l- res\l- dataDependencies\l- dropDependencies\l- prepDependencies\l|+ node()\l+ node()\l+ node()\l+ ~node()\l+ getNext()\l+ setNext()\l+ count()\l+ append()\l+ appendNodes()\l+ setDependencies()\land 34 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1eqn_1_1node.html"];
+}

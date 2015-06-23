@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a7fc75009c441a6abad06dcb3b96f4b72">newOne</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#adb87dad29a7de59c1bb057ec87a16963">calcDiagram</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a17bce366ff9696fb2396572514709a83">calcLimits</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a16d8c58fd608e1f3a4d972118596ff7a">calcCoordinate</a> (double *&amp;, double *&amp;, double *&amp;, float *, float *, <a class="el" href="structAxis.html">Axis</a> *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a3f52cbcfd1ef67b90948630bea41f75d">calcCoordinate</a> (const double *, const double *, const double *, float *, float *, <a class="el" href="structAxis.html">Axis</a> *) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a98be66931826443e189440369e631fd5">finishMarkerCoordinates</a> (float &amp;, float &amp;) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRectDiagram.html#a8b97fbb19478506da91aaaca65860975">insideDiagram</a> (float, float) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -196,26 +196,26 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a16d8c58fd608e1f3a4d972118596ff7a"></a><!-- doxytag: member="RectDiagram::calcCoordinate" ref="a16d8c58fd608e1f3a4d972118596ff7a" args="(double *&amp;, double *&amp;, double *&amp;, float *, float *, Axis *)" -->
+<a class="anchor" id="a3f52cbcfd1ef67b90948630bea41f75d"></a><!-- doxytag: member="RectDiagram::calcCoordinate" ref="a3f52cbcfd1ef67b90948630bea41f75d" args="(const double *, const double *, const double *, float *, float *, Axis *) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classRectDiagram.html#a16d8c58fd608e1f3a4d972118596ff7a">RectDiagram::calcCoordinate</a> </td>
+          <td class="memname">void <a class="el" href="classRectDiagram.html#a3f52cbcfd1ef67b90948630bea41f75d">RectDiagram::calcCoordinate</a> </td>
           <td>(</td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>xD</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>yD</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -239,13 +239,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101">Diagram</a>.</p>
 
 <p>Definition at line <a class="el" href="rectdiagram_8cpp_source.html#l00056">56</a> of file <a class="el" href="rectdiagram_8cpp_source.html">rectdiagram.cpp</a>.</p>
 
@@ -534,7 +534,7 @@ Here is the call graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 23 2015 19:44:35 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 23 2015 20:05:14 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

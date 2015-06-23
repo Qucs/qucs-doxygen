@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{qucs\n|+ PROP_REQ\l+ PROP_OPT\l+ estack\l+ netlist_check\l+ C0\l+ MU0\l+ E0\l+ Z0\l+ Hp\l+ K\l+ T0\l+ kB\l+ Q_e\l+ kBoverQ\land 29 more...|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" pconstants" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{qucs::pconstant\n|+ ident\l+ value\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structqucs_1_1pconstant.html"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" estack" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{qucs::exceptionstack\n||+ exceptionstack()\l+ exceptionstack()\l+ ~exceptionstack()\l+ push()\l+ pop()\l+ top()\l+ print()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1exceptionstack.html"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" integration_types" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{qucs::integration_types_t\n|+ Method\l+ integratorType\l+ corrErrorConstant\l+ predErrorConstant\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structqucs_1_1integration__types__t.html"];
+}

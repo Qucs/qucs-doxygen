@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a2342171988cad76d6f0bf3c29a11eac0">newOne</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b">calcDiagram</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a8d27c441468438831697e67c578675df">calcLimits</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#af5cbf53df1729e4a6b088029b1174f94">calcCoordinate</a> (double *&amp;, double *&amp;, double *&amp;, float *, float *, <a class="el" href="structAxis.html">Axis</a> *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#af53966a25d5b9041d66f186885bde1bc">calcCoordinate</a> (const double *, const double *, const double *, float *, float *, <a class="el" href="structAxis.html">Axis</a> *) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a18e8f0b612122c21317e51f4f7711ae2">finishMarkerCoordinates</a> (float &amp;, float &amp;) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255">createAxisLabels</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Put axis labels into the text list.  <a href="#a50a41d5f7ab4f6953adbff06be231255"></a><br/></td></tr>
@@ -139,9 +139,9 @@ Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a8d2b1114e4758944dd3f36b2d9f868e4">createAxis</a> (<a class="el" href="structAxis.html">Axis</a> *, bool, int, int, int, int)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#aaed5eab0dc83ed606000c3ba7f7f0185">calcCoefficients</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1">calcCross</a> (int *, int *)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37">calcX_2D</a> (double, double, double)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1">calcY_2D</a> (double, double, double)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081">calcZ_2D</a> (double, double, double)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55">calcX_2D</a> (double, double, double) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355">calcY_2D</a> (double, double, double) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79">calcZ_2D</a> (double, double, double) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a">isHidden</a> (int, int, <a class="el" href="structtBound.html">tBound</a> *, char *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526">enlargeMemoryBlock</a> (<a class="el" href="structtPoint3D.html">tPoint3D</a> *&amp;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf">calcLine</a> (<a class="el" href="structtPoint3D.html">tPoint3D</a> *&amp;, <a class="el" href="structtPoint3D.html">tPoint3D</a> *&amp;, <a class="el" href="structtBound.html">tBound</a> *, char *)</td></tr>
@@ -328,26 +328,26 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af5cbf53df1729e4a6b088029b1174f94"></a><!-- doxytag: member="Rect3DDiagram::calcCoordinate" ref="af5cbf53df1729e4a6b088029b1174f94" args="(double *&amp;, double *&amp;, double *&amp;, float *, float *, Axis *)" -->
+<a class="anchor" id="af53966a25d5b9041d66f186885bde1bc"></a><!-- doxytag: member="Rect3DDiagram::calcCoordinate" ref="af53966a25d5b9041d66f186885bde1bc" args="(const double *, const double *, const double *, float *, float *, Axis *) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classRect3DDiagram.html#af5cbf53df1729e4a6b088029b1174f94">Rect3DDiagram::calcCoordinate</a> </td>
+          <td class="memname">void <a class="el" href="classRect3DDiagram.html#af53966a25d5b9041d66f186885bde1bc">Rect3DDiagram::calcCoordinate</a> </td>
           <td>(</td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>xD</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>zD</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&amp;&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>yD</em>, </td>
         </tr>
         <tr>
@@ -371,22 +371,22 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#afbdbd1bfa5f530d73277e74b37b01797">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101">Diagram</a>.</p>
 
 <p>Definition at line <a class="el" href="rect3ddiagram_8cpp_source.html#l00139">139</a> of file <a class="el" href="rect3ddiagram_8cpp_source.html">rect3ddiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRect3DDiagram_af5cbf53df1729e4a6b088029b1174f94_cgraph.png" border="0" usemap="#classRect3DDiagram_af5cbf53df1729e4a6b088029b1174f94_cgraph" alt=""/></div>
-<map name="classRect3DDiagram_af5cbf53df1729e4a6b088029b1174f94_cgraph" id="classRect3DDiagram_af5cbf53df1729e4a6b088029b1174f94_cgraph">
-<area shape="rect" id="node3" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="264,5,445,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="264,59,445,88"/></map>
+<div class="center"><img src="classRect3DDiagram_af53966a25d5b9041d66f186885bde1bc_cgraph.png" border="0" usemap="#classRect3DDiagram_af53966a25d5b9041d66f186885bde1bc_cgraph" alt=""/></div>
+<map name="classRect3DDiagram_af53966a25d5b9041d66f186885bde1bc_cgraph" id="classRect3DDiagram_af53966a25d5b9041d66f186885bde1bc_cgraph">
+<area shape="rect" id="node3" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55" title="Rect3DDiagram::calcX_2D" alt="" coords="264,5,445,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355" title="Rect3DDiagram::calcY_2D" alt="" coords="264,59,445,88"/></map>
 </div>
 </p>
 
@@ -448,7 +448,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRect3DDiagram_a79120063c33eddd44b814c4fb86ea1e4_cgraph.png" border="0" usemap="#classRect3DDiagram_a79120063c33eddd44b814c4fb86ea1e4_cgraph" alt=""/></div>
 <map name="classRect3DDiagram_a79120063c33eddd44b814c4fb86ea1e4_cgraph" id="classRect3DDiagram_a79120063c33eddd44b814c4fb86ea1e4_cgraph">
-<area shape="rect" id="node3" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="283,5,464,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="283,59,464,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081" title="Rect3DDiagram::calcZ_2D" alt="" coords="284,112,463,141"/></map>
+<area shape="rect" id="node3" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55" title="Rect3DDiagram::calcX_2D" alt="" coords="283,5,464,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355" title="Rect3DDiagram::calcY_2D" alt="" coords="283,59,464,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79" title="Rect3DDiagram::calcZ_2D" alt="" coords="284,112,463,141"/></map>
 </div>
 </p>
 
@@ -495,7 +495,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRect3DDiagram_aee74be2c6a765d5dd6fc2ad3859416b1_cgraph.png" border="0" usemap="#classRect3DDiagram_aee74be2c6a765d5dd6fc2ad3859416b1_cgraph" alt=""/></div>
 <map name="classRect3DDiagram_aee74be2c6a765d5dd6fc2ad3859416b1_cgraph" id="classRect3DDiagram_aee74be2c6a765d5dd6fc2ad3859416b1_cgraph">
-<area shape="rect" id="node3" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="237,5,419,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="237,59,419,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081" title="Rect3DDiagram::calcZ_2D" alt="" coords="239,112,417,141"/></map>
+<area shape="rect" id="node3" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55" title="Rect3DDiagram::calcX_2D" alt="" coords="237,5,419,35"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355" title="Rect3DDiagram::calcY_2D" alt="" coords="237,59,419,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79" title="Rect3DDiagram::calcZ_2D" alt="" coords="239,112,417,141"/></map>
 </div>
 </p>
 
@@ -563,7 +563,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRect3DDiagram_a1a8d7b7a27a99c44b963b2bacf412a1b_cgraph.png" border="0" usemap="#classRect3DDiagram_a1a8d7b7a27a99c44b963b2bacf412a1b_cgraph" alt=""/></div>
 <map name="classRect3DDiagram_a1a8d7b7a27a99c44b963b2bacf412a1b_cgraph" id="classRect3DDiagram_a1a8d7b7a27a99c44b963b2bacf412a1b_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#aaa41e14e247b7403a3e40d287e6b6bba" title="Calculations for logarithmical Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="852,5,1033,35"/><area shape="rect" id="node5" href="classDiagram.html#a662e2496d527f79b9f29e19c58a783f3" title="Calculations for Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="861,59,1024,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#aaed5eab0dc83ed606000c3ba7f7f0185" title="Rect3DDiagram::calcCoefficients" alt="" coords="263,401,481,431"/><area shape="rect" id="node9" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="565,161,747,191"/><area shape="rect" id="node17" href="classRect3DDiagram.html#a8d2b1114e4758944dd3f36b2d9f868e4" title="Rect3DDiagram::createAxis" alt="" coords="279,215,465,244"/><area shape="rect" id="node27" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="253,295,491,324"/><area shape="rect" id="node47" href="classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156" title="Rect3DDiagram::removeHiddenCross" alt="" coords="251,348,493,377"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="852,183,1033,212"/><area shape="rect" id="node13" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="852,300,1033,329"/><area shape="rect" id="node15" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081" title="Rect3DDiagram::calcZ_2D" alt="" coords="853,385,1032,415"/><area shape="rect" id="node19" href="classRect3DDiagram.html#aae2cbb34de2aa99e5440bcb85b1f12d0" title="Rect3DDiagram::calcAxis" alt="" coords="569,108,743,137"/><area shape="rect" id="node25" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="612,215,700,244"/><area shape="rect" id="node22" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca" title="misc::StringNiceNum" alt="" coords="869,112,1016,141"/><area shape="rect" id="node30" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="596,375,716,404"/><area shape="rect" id="node32" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="543,428,769,457"/><area shape="rect" id="node37" href="classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7" title="Rect3DDiagram::comparePointZ" alt="" coords="551,268,761,297"/><area shape="rect" id="node39" href="classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf" title="Rect3DDiagram::calcLine" alt="" coords="571,481,741,511"/><area shape="rect" id="node45" href="classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f" title="Rect3DDiagram::comparePoint3D" alt="" coords="545,321,767,351"/><area shape="rect" id="node41" href="classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a" title="Rect3DDiagram::isHidden" alt="" coords="856,455,1029,484"/><area shape="rect" id="node43" href="classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526" title="Rect3DDiagram::enlargeMemoryBlock" alt="" coords="820,508,1065,537"/></map>
+<area shape="rect" id="node3" href="classDiagram.html#aaa41e14e247b7403a3e40d287e6b6bba" title="Calculations for logarithmical Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="852,5,1033,35"/><area shape="rect" id="node5" href="classDiagram.html#a662e2496d527f79b9f29e19c58a783f3" title="Calculations for Cartesian diagrams (RectDiagram and Rect3DDiagram)." alt="" coords="861,59,1024,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#aaed5eab0dc83ed606000c3ba7f7f0185" title="Rect3DDiagram::calcCoefficients" alt="" coords="263,401,481,431"/><area shape="rect" id="node9" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="565,161,747,191"/><area shape="rect" id="node17" href="classRect3DDiagram.html#a8d2b1114e4758944dd3f36b2d9f868e4" title="Rect3DDiagram::createAxis" alt="" coords="279,215,465,244"/><area shape="rect" id="node27" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="253,295,491,324"/><area shape="rect" id="node47" href="classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156" title="Rect3DDiagram::removeHiddenCross" alt="" coords="251,348,493,377"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55" title="Rect3DDiagram::calcX_2D" alt="" coords="852,183,1033,212"/><area shape="rect" id="node13" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355" title="Rect3DDiagram::calcY_2D" alt="" coords="852,300,1033,329"/><area shape="rect" id="node15" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79" title="Rect3DDiagram::calcZ_2D" alt="" coords="853,385,1032,415"/><area shape="rect" id="node19" href="classRect3DDiagram.html#aae2cbb34de2aa99e5440bcb85b1f12d0" title="Rect3DDiagram::calcAxis" alt="" coords="569,108,743,137"/><area shape="rect" id="node25" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="612,215,700,244"/><area shape="rect" id="node22" href="namespacemisc.html#ace8189430a9eb4a9856fc611b6436fca" title="misc::StringNiceNum" alt="" coords="869,112,1016,141"/><area shape="rect" id="node30" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="596,375,716,404"/><area shape="rect" id="node32" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="543,428,769,457"/><area shape="rect" id="node37" href="classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7" title="Rect3DDiagram::comparePointZ" alt="" coords="551,268,761,297"/><area shape="rect" id="node39" href="classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf" title="Rect3DDiagram::calcLine" alt="" coords="571,481,741,511"/><area shape="rect" id="node45" href="classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f" title="Rect3DDiagram::comparePoint3D" alt="" coords="545,321,767,351"/><area shape="rect" id="node41" href="classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a" title="Rect3DDiagram::isHidden" alt="" coords="856,455,1029,484"/><area shape="rect" id="node43" href="classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526" title="Rect3DDiagram::enlargeMemoryBlock" alt="" coords="820,508,1065,537"/></map>
 </div>
 </p>
 
@@ -657,12 +657,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a22225367ab414a550e2a9714e1444a37"></a><!-- doxytag: member="Rect3DDiagram::calcX_2D" ref="a22225367ab414a550e2a9714e1444a37" args="(double, double, double)" -->
+<a class="anchor" id="a904740f1e60a0c91dfabc2b7d9837a55"></a><!-- doxytag: member="Rect3DDiagram::calcX_2D" ref="a904740f1e60a0c91dfabc2b7d9837a55" args="(double, double, double) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37">Rect3DDiagram::calcX_2D</a> </td>
+          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55">Rect3DDiagram::calcX_2D</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -682,7 +682,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [private]</code></td>
+          <td></td><td> const<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -693,20 +693,20 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRect3DDiagram_a22225367ab414a550e2a9714e1444a37_icgraph.png" border="0" usemap="#classRect3DDiagram_a22225367ab414a550e2a9714e1444a37_icgraph" alt=""/></div>
-<map name="classRect3DDiagram_a22225367ab414a550e2a9714e1444a37_icgraph" id="classRect3DDiagram_a22225367ab414a550e2a9714e1444a37_icgraph">
-<area shape="rect" id="node3" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="541,5,723,35"/><area shape="rect" id="node7" href="classRect3DDiagram.html#af5cbf53df1729e4a6b088029b1174f94" title="Rect3DDiagram::calcCoordinate" alt="" coords="244,44,455,73"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="236,97,463,127"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="800,39,997,68"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="513,72,751,101"/></map>
+<div class="center"><img src="classRect3DDiagram_a904740f1e60a0c91dfabc2b7d9837a55_icgraph.png" border="0" usemap="#classRect3DDiagram_a904740f1e60a0c91dfabc2b7d9837a55_icgraph" alt=""/></div>
+<map name="classRect3DDiagram_a904740f1e60a0c91dfabc2b7d9837a55_icgraph" id="classRect3DDiagram_a904740f1e60a0c91dfabc2b7d9837a55_icgraph">
+<area shape="rect" id="node3" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="541,5,723,35"/><area shape="rect" id="node7" href="classRect3DDiagram.html#af53966a25d5b9041d66f186885bde1bc" title="Rect3DDiagram::calcCoordinate" alt="" coords="244,44,455,73"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="236,97,463,127"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="800,39,997,68"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="513,72,751,101"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a6e1373e219938016da2189674a81a7d1"></a><!-- doxytag: member="Rect3DDiagram::calcY_2D" ref="a6e1373e219938016da2189674a81a7d1" args="(double, double, double)" -->
+<a class="anchor" id="a4b268d3b6a5fb1afa97a86bfbcca8355"></a><!-- doxytag: member="Rect3DDiagram::calcY_2D" ref="a4b268d3b6a5fb1afa97a86bfbcca8355" args="(double, double, double) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1">Rect3DDiagram::calcY_2D</a> </td>
+          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355">Rect3DDiagram::calcY_2D</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -726,7 +726,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [private]</code></td>
+          <td></td><td> const<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -737,20 +737,20 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRect3DDiagram_a6e1373e219938016da2189674a81a7d1_icgraph.png" border="0" usemap="#classRect3DDiagram_a6e1373e219938016da2189674a81a7d1_icgraph" alt=""/></div>
-<map name="classRect3DDiagram_a6e1373e219938016da2189674a81a7d1_icgraph" id="classRect3DDiagram_a6e1373e219938016da2189674a81a7d1_icgraph">
-<area shape="rect" id="node3" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="541,5,723,35"/><area shape="rect" id="node7" href="classRect3DDiagram.html#af5cbf53df1729e4a6b088029b1174f94" title="Rect3DDiagram::calcCoordinate" alt="" coords="244,44,455,73"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="236,97,463,127"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="800,39,997,68"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="513,72,751,101"/></map>
+<div class="center"><img src="classRect3DDiagram_a4b268d3b6a5fb1afa97a86bfbcca8355_icgraph.png" border="0" usemap="#classRect3DDiagram_a4b268d3b6a5fb1afa97a86bfbcca8355_icgraph" alt=""/></div>
+<map name="classRect3DDiagram_a4b268d3b6a5fb1afa97a86bfbcca8355_icgraph" id="classRect3DDiagram_a4b268d3b6a5fb1afa97a86bfbcca8355_icgraph">
+<area shape="rect" id="node3" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="541,5,723,35"/><area shape="rect" id="node7" href="classRect3DDiagram.html#af53966a25d5b9041d66f186885bde1bc" title="Rect3DDiagram::calcCoordinate" alt="" coords="244,44,455,73"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="236,97,463,127"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="800,39,997,68"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="513,72,751,101"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a82734fb1696c77b81b176dfe82ece081"></a><!-- doxytag: member="Rect3DDiagram::calcZ_2D" ref="a82734fb1696c77b81b176dfe82ece081" args="(double, double, double)" -->
+<a class="anchor" id="a5b107547c602cf8b00828426e2a79e79"></a><!-- doxytag: member="Rect3DDiagram::calcZ_2D" ref="a5b107547c602cf8b00828426e2a79e79" args="(double, double, double) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081">Rect3DDiagram::calcZ_2D</a> </td>
+          <td class="memname">double <a class="el" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79">Rect3DDiagram::calcZ_2D</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -770,7 +770,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [private]</code></td>
+          <td></td><td> const<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -781,8 +781,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRect3DDiagram_a82734fb1696c77b81b176dfe82ece081_icgraph.png" border="0" usemap="#classRect3DDiagram_a82734fb1696c77b81b176dfe82ece081_icgraph" alt=""/></div>
-<map name="classRect3DDiagram_a82734fb1696c77b81b176dfe82ece081_icgraph" id="classRect3DDiagram_a82734fb1696c77b81b176dfe82ece081_icgraph">
+<div class="center"><img src="classRect3DDiagram_a5b107547c602cf8b00828426e2a79e79_icgraph.png" border="0" usemap="#classRect3DDiagram_a5b107547c602cf8b00828426e2a79e79_icgraph" alt=""/></div>
+<map name="classRect3DDiagram_a5b107547c602cf8b00828426e2a79e79_icgraph" id="classRect3DDiagram_a5b107547c602cf8b00828426e2a79e79_icgraph">
 <area shape="rect" id="node3" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1" title="Rect3DDiagram::calcCross" alt="" coords="541,5,723,35"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="236,59,463,88"/><area shape="rect" id="node5" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="800,32,997,61"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="513,59,751,88"/></map>
 </div>
 </p>
@@ -1301,7 +1301,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRect3DDiagram_a50641e924d2fa2e8f8684e8dac7ffec2_cgraph.png" border="0" usemap="#classRect3DDiagram_a50641e924d2fa2e8f8684e8dac7ffec2_cgraph" alt=""/></div>
 <map name="classRect3DDiagram_a50641e924d2fa2e8f8684e8dac7ffec2_cgraph" id="classRect3DDiagram_a50641e924d2fa2e8f8684e8dac7ffec2_cgraph">
-<area shape="rect" id="node3" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="364,5,452,35"/><area shape="rect" id="node5" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="348,59,468,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="295,112,521,141"/><area shape="rect" id="node15" href="classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7" title="Rect3DDiagram::comparePointZ" alt="" coords="303,165,513,195"/><area shape="rect" id="node17" href="classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf" title="Rect3DDiagram::calcLine" alt="" coords="323,219,493,248"/><area shape="rect" id="node23" href="classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f" title="Rect3DDiagram::comparePoint3D" alt="" coords="297,272,519,301"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37" title="Rect3DDiagram::calcX_2D" alt="" coords="604,59,785,88"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1" title="Rect3DDiagram::calcY_2D" alt="" coords="604,112,785,141"/><area shape="rect" id="node13" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081" title="Rect3DDiagram::calcZ_2D" alt="" coords="605,165,784,195"/><area shape="rect" id="node19" href="classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a" title="Rect3DDiagram::isHidden" alt="" coords="608,219,781,248"/><area shape="rect" id="node21" href="classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526" title="Rect3DDiagram::enlargeMemoryBlock" alt="" coords="572,272,817,301"/></map>
+<area shape="rect" id="node3" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="364,5,452,35"/><area shape="rect" id="node5" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="348,59,468,88"/><area shape="rect" id="node7" href="classRect3DDiagram.html#a79120063c33eddd44b814c4fb86ea1e4" title="Rect3DDiagram::calcCoordinate3D" alt="" coords="295,112,521,141"/><area shape="rect" id="node15" href="classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7" title="Rect3DDiagram::comparePointZ" alt="" coords="303,165,513,195"/><area shape="rect" id="node17" href="classRect3DDiagram.html#a24e870bd1a304a4367548e57522863bf" title="Rect3DDiagram::calcLine" alt="" coords="323,219,493,248"/><area shape="rect" id="node23" href="classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f" title="Rect3DDiagram::comparePoint3D" alt="" coords="297,272,519,301"/><area shape="rect" id="node9" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55" title="Rect3DDiagram::calcX_2D" alt="" coords="604,59,785,88"/><area shape="rect" id="node11" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355" title="Rect3DDiagram::calcY_2D" alt="" coords="604,112,785,141"/><area shape="rect" id="node13" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79" title="Rect3DDiagram::calcZ_2D" alt="" coords="605,165,784,195"/><area shape="rect" id="node19" href="classRect3DDiagram.html#affccccecdf2fadf3b080896eca376d4a" title="Rect3DDiagram::isHidden" alt="" coords="608,219,781,248"/><area shape="rect" id="node21" href="classRect3DDiagram.html#a6dd34778b6ee810c2b4790e7177d0526" title="Rect3DDiagram::enlargeMemoryBlock" alt="" coords="572,272,817,301"/></map>
 </div>
 </p>
 
@@ -1564,7 +1564,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 23 2015 19:44:35 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 23 2015 20:05:14 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

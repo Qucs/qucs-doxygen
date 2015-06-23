@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classtesting_1_1TestPartResultReporterInterface.html" title="{testing::TestPartResultReporterInterface\n||+ ~TestPartResultReporterInterface()\l+ ReportTestPartResult()\l+ ~TestPartResultReporterInterface()\l+ ReportTestPartResult()\l}" alt="" coords="5,58,264,195"/>
-<area shape="rect" id="node5" href="$classtesting_1_1TestPartResultArray.html" title="{testing::TestPartResultArray\n|&#45; array_\l|+ TestPartResultArray()\l+ Append()\l+ GetTestPartResult()\l+ size()\l+ TestPartResultArray()\l+ Append()\l+ GetTestPartResult()\l+ size()\l&#45; GTEST_DISALLOW_COPY_AND_ASSIGN_()\l&#45; GTEST_DISALLOW_COPY_AND_ASSIGN_()\l}" alt="" coords="288,6,592,247"/>
-</map>

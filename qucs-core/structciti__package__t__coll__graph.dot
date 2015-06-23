@@ -1,0 +1,22 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{citi_package_t\n|+ head\l+ data\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" head" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{citi_header_t\n|+ package\l+ var\l+ type\l+ i1\l+ i2\l+ n\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structciti__header__t.html"];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{qucs::vector\n|- next\l- prev\l- requested\l- size\l- capacity\l- dependencies\l- data\l- origin\l|+ getNext()\l+ setNext()\l+ getPrev()\l+ setPrev()\l+ vector()\l+ vector()\l+ vector()\l+ vector()\l+ vector()\l+ vector()\land 40 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1vector.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{qucs::object\n|- name\l- props\l|+ object()\l+ object()\l+ setName()\l+ getName()\l+ addProperty()\l+ addProperty()\l+ addProperty()\l+ setProperty()\l+ setProperty()\l+ setScaledProperty()\land 10 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1object.html",tooltip="generic object class."];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node3 [color="grey25",fontsize="10",style="solid",label=" dependencies" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{qucs::strlist\n|- root\l- txt\l|+ strlist()\l+ strlist()\l+ ~strlist()\l+ add()\l+ add()\l+ append()\l+ append()\l+ length()\l+ contains()\l+ get()\land 4 more...+ join()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1strlist.html"];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" root" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{qucs::strlist_t\n|+ str\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structqucs_1_1strlist__t.html"];
+  Node7 -> Node7 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node3 [color="grey25",fontsize="10",style="solid",label=" prev\nnext" ,arrowhead="odiamond",fontname="Helvetica"];
+}

@@ -1,0 +1,14 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ipulse\n|+ Ipulse\l+ PROP_COMPONENT\l+ PROP_NO_SUBSTRATE\l+ PROP_LINEAR\l|+ CREATOR()\l+ initSP()\l+ initDC()\l+ initAC()\l+ initTR()\l+ calcTR()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{qucs::circuit\n|+ z0\l# type\l# pol\l- next\l- prev\l- size\l- pacport\l- vsource\l- vsources\l- nsources\l- inserted\l- flag\l- MatrixS\land 22 more...|+ getNext()\l+ setNext()\l+ getPrev()\l+ setPrev()\l+ circuit()\l+ circuit()\l+ circuit()\l+ ~circuit()\l+ initSP()\l+ calcSP()\land 150 more...+ createInternal()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1circuit.html",tooltip="base class for qucs circuit elements."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{qucs::object\n|- name\l- props\l|+ object()\l+ object()\l+ setName()\l+ getName()\l+ addProperty()\l+ addProperty()\l+ addProperty()\l+ setProperty()\l+ setProperty()\l+ setScaledProperty()\land 10 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1object.html",tooltip="generic object class."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{qucs::integrator\n|- order\l- state\l- coefficients\l- integrate_func\l- conductor_func\l|+ integrator()\l+ integrator()\l+ ~integrator()\l+ setIntegration()\l+ setConductance()\l+ integrate()\l+ conductor()\l+ setOrder()\l+ getOrder()\l+ setMode()\l+ getMode()\l+ setCoefficients()\l+ getCoefficients()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1integrator.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{qucs::states\< nr_double_t \>\n|- stateval\l- nstates\l- currentstate\l|+ states()\l+ states()\l+ ~states()\l+ getState()\l+ setState()\l+ initStates()\l+ clearStates()\l+ getStates()\l+ setStates()\l+ nextState()\l+ prevState()\l+ fillState()\l+ saveState()\l+ inputState()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1states.html",tooltip="template class for storing state variables."];
+}

@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{qucs::property\n|- def\l- type\l- str\l- value\l- var\l|+ property()\l+ ~property()\l+ getVector()\l+ getDouble()\l+ getInteger()\l+ getString()\l+ getReference()\l+ set()\l+ set()\l+ set()\l+ set()\l+ toString()\l+ isDefault()\l+ setDefault()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" str" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" var" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{qucs::variable\n|- name\l- pass\l- type\l- value\l- next\l|+ variable()\l+ variable()\l+ variable()\l+ ~variable()\l+ setName()\l+ getName()\l+ setNext()\l+ getNext()\l+ setType()\l+ getType()\land 12 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1variable.html"];
+  Node2 -> Node3 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" value" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{qucs::variable::value_t\n|+ c\l+ r\l+ s\l+ v\l+ a\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionqucs_1_1variable_1_1value__t.html"];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" s" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{qucs::substrate\n||+ MCREATOR()\l+ substrate()\l+ ~substrate()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1substrate.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{qucs::object\n|- name\l- props\l|+ object()\l+ object()\l+ setName()\l+ getName()\l+ addProperty()\l+ addProperty()\l+ addProperty()\l+ setProperty()\l+ setProperty()\l+ setScaledProperty()\land 10 more...}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqucs_1_1object.html",tooltip="generic object class."];
+  Node2 -> Node6 [color="grey25",fontsize="10",style="solid",label=" name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node3 [color="grey25",fontsize="10",style="solid",label=" next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

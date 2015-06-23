@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00046"></a>00046   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classRect3DDiagram.html#abcd7476a7c0be27e73714d228b42db0f">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
 <a name="l00047"></a>00047   <span class="keywordtype">int</span>  <a class="code" href="classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b">calcDiagram</a>();
 <a name="l00048"></a>00048   <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#a8d27c441468438831697e67c578675df">calcLimits</a>();
-<a name="l00049"></a>00049   <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#af5cbf53df1729e4a6b088029b1174f94">calcCoordinate</a>(<span class="keywordtype">double</span>* &amp;, <span class="keywordtype">double</span>* &amp;, <span class="keywordtype">double</span>* &amp;, <span class="keywordtype">float</span>*, <span class="keywordtype">float</span>*, <a class="code" href="structAxis.html">Axis</a>*);
+<a name="l00049"></a>00049   <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#af53966a25d5b9041d66f186885bde1bc">calcCoordinate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>*, <span class="keyword">const</span> <span class="keywordtype">double</span>*, <span class="keyword">const</span> <span class="keywordtype">double</span>*, <span class="keywordtype">float</span>*, <span class="keywordtype">float</span>*, <a class="code" href="structAxis.html">Axis</a>*) <span class="keyword">const</span>;
 <a name="l00050"></a>00050   <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#a18e8f0b612122c21317e51f4f7711ae2">finishMarkerCoordinates</a>(<span class="keywordtype">float</span>&amp;, <span class="keywordtype">float</span>&amp;) <span class="keyword">const</span>;
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052   <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255" title="Put axis labels into the text list.">createAxisLabels</a>();
@@ -148,9 +148,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066   <span class="keywordtype">void</span>   <a class="code" href="classRect3DDiagram.html#aaed5eab0dc83ed606000c3ba7f7f0185">calcCoefficients</a>();
 <a name="l00067"></a>00067   <span class="keywordtype">int</span>    <a class="code" href="classRect3DDiagram.html#aee74be2c6a765d5dd6fc2ad3859416b1">calcCross</a>(<span class="keywordtype">int</span>*, <span class="keywordtype">int</span>*);
-<a name="l00068"></a>00068   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a22225367ab414a550e2a9714e1444a37">calcX_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);
-<a name="l00069"></a>00069   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a6e1373e219938016da2189674a81a7d1">calcY_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);
-<a name="l00070"></a>00070   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a82734fb1696c77b81b176dfe82ece081">calcZ_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);
+<a name="l00068"></a>00068   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a904740f1e60a0c91dfabc2b7d9837a55">calcX_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>) <span class="keyword">const</span>;
+<a name="l00069"></a>00069   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a4b268d3b6a5fb1afa97a86bfbcca8355">calcY_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>) <span class="keyword">const</span>;
+<a name="l00070"></a>00070   <span class="keywordtype">double</span> <a class="code" href="classRect3DDiagram.html#a5b107547c602cf8b00828426e2a79e79">calcZ_2D</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>) <span class="keyword">const</span>;
 <a name="l00071"></a>00071 
 <a name="l00072"></a>00072   <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classRect3DDiagram.html#a82975fa046e3074f9736a747aefb5b6f">comparePoint3D</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>*, <span class="keyword">const</span> <span class="keywordtype">void</span>*);
 <a name="l00073"></a>00073   <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classRect3DDiagram.html#ab700038ae6f73b7fce3660ec27d845d7">comparePointZ</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>*, <span class="keyword">const</span> <span class="keywordtype">void</span>*);
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 23 2015 19:44:32 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 23 2015 20:05:11 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
