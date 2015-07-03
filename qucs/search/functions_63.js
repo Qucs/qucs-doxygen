@@ -108,6 +108,7 @@ var searchData=
   ['createtype',['createType',['../classLibComp.html#a955f65553525a7356d7bf45b8cb4edcc',1,'LibComp']]],
   ['createundostring',['createUndoString',['../classSchematic.html#a5d7bc373c741575d8456508b0d846f59',1,'Schematic']]],
   ['cross3d',['Cross3D',['../classCross3D.html#aeaa57243c689684b77aae56985b45c44',1,'Cross3D']]],
+  ['currentchangedslot',['currentChangedSlot',['../classAboutDialog.html#ac15adc23b0426f866a45d4c33ab7de43',1,'AboutDialog']]],
   ['curvediagram',['CurveDiagram',['../classCurveDiagram.html#a7978892c60e0774443b453604b282f3b',1,'CurveDiagram']]],
   ['cut',['cut',['../classSchematic.html#a630d84fa227ff920ee7b436721f081ba',1,'Schematic']]]
 ];

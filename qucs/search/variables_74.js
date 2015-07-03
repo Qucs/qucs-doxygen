@@ -2,7 +2,7 @@ var searchData=
 [
   ['tabview',['TabView',['../classQucsApp.html#a7bb309c9a24921c091c005a7fee29644',1,'QucsApp']]],
   ['task',['Task',['../structtQucsSettings.html#adc343cde5d75b784c1b26de921b62cf9',1,'tQucsSettings']]],
-  ['text',['text',['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()'],['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()']]],
+  ['text',['Text',['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()'],['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()']]],
   ['textantialiasing',['TextAntiAliasing',['../structtQucsSettings.html#ace79b67d2c621be43c8bdc98e73c305f',1,'tQucsSettings']]],
   ['textdescr',['textDescr',['../classLibraryDialog.html#af551a33e9cd948c148fe810058a83109',1,'LibraryDialog']]],
   ['textfont',['TextFont',['../classTextDoc.html#a8695fc99721a6611c99b9d8d2a009ff1',1,'TextDoc']]],
@@ -41,6 +41,8 @@ var searchData=
   ['transbox',['TransBox',['../classMarkerDialog.html#a3fb89fd97c608c1c75ed79c9e46d0468',1,'MarkerDialog']]],
   ['transfer',['transfer',['../classDiagramDialog.html#a8e350c68592ed92150321d306e9957c2',1,'DiagramDialog']]],
   ['transparent',['transparent',['../classMarker.html#a8813f9d66064a67dfe480ea322608638',1,'Marker']]],
+  ['trauths',['trAuths',['../classAboutDialog.html#a92285d4a06e5000705b7734b63ebaf9c',1,'AboutDialog']]],
+  ['trbrowser',['trBrowser',['../classAboutDialog.html#a7e70cf0c57fe6470f9473872a4b5b422',1,'AboutDialog']]],
   ['twocheck',['TwoCheck',['../classMatchDialog.html#ace266fdee1838b86de026de3e0889c84',1,'MatchDialog']]],
   ['tx',['tx',['../classComponent.html#ab61b838a77623a85a507b09e8a20135f',1,'Component']]],
   ['tx_5fdist',['tx_Dist',['../classComponentDialog.html#a95566efa6da4546a88bd9598d501f2f3',1,'ComponentDialog']]],

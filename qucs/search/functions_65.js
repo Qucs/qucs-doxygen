@@ -20,7 +20,7 @@ var searchData=
   ['equation',['Equation',['../classEquation.html#a68511fc719250ed80f86c50de9136733',1,'Equation']]],
   ['eraserect',['eraseRect',['../classViewPainter.html#a57873ea0bbbcffc5f2ecd067e5b2420d',1,'ViewPainter']]],
   ['etr_5fsim',['ETR_Sim',['../classETR__Sim.html#a4ee4243b33627a384e488aec05564aa4',1,'ETR_Sim']]],
-  ['eventfilter',['eventFilter',['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
+  ['eventfilter',['eventFilter',['../classAboutDialog.html#a209ae6e95cca424101bb12d7ae906129',1,'AboutDialog::eventFilter()'],['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
   ['exportdialog',['ExportDialog',['../classExportDialog.html#a81ba8755340787fd8f278d01e01ee8da',1,'ExportDialog']]],
   ['extractdirectory',['extractDirectory',['../classPackageDialog.html#a0c24f59c23aa94f037b2491bb12ad0e1',1,'PackageDialog']]],
   ['extractfile',['extractFile',['../classPackageDialog.html#ad0cad61f409a227dd5eae41a492baabb',1,'PackageDialog']]],

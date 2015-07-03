@@ -103,6 +103,8 @@ var searchData=
   ['prepcombo',['PrepCombo',['../classSpiceDialog.html#a403f4fd75191f65278374dc22e28320b',1,'SpiceDialog']]],
   ['prestream',['prestream',['../classSpiceDialog.html#abbdc6cf6b7c22c98e20a4089b58a0580',1,'SpiceDialog::prestream()'],['../classSpiceFile.html#a23b412a3ae670cb56664f37db130c551',1,'SpiceFile::prestream()']]],
   ['prevbutt',['prevButt',['../classLibraryDialog.html#ae703c76a1149630e04af4e12a992ffe3',1,'LibraryDialog']]],
+  ['prevdevs',['prevDevs',['../classAboutDialog.html#adf3b936352f62fd7c9e2da515a4d2e69',1,'AboutDialog']]],
+  ['prevtab',['prevTab',['../classAboutDialog.html#aeb2b8b7184fe741cd600cb15cbbb7e05',1,'AboutDialog']]],
   ['print',['print',['../classComponent.html#a4991c546c812d3d1ed87d0286e80b3c2',1,'Component::print()'],['../classQucsDoc.html#a496f37761235d1e608d85c2cf7bf146e',1,'QucsDoc::print()'],['../classSchematic.html#a01c8c00f46a337d2b071be7f6b762dda',1,'Schematic::print()']]],
   ['printcurrentdocument',['printCurrentDocument',['../classQucsApp.html#a760ead47ff72ea5d9389411ba3392443',1,'QucsApp']]],
   ['printcursorposition',['printCursorPosition',['../classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75',1,'QucsApp']]],

@@ -34,6 +34,8 @@ var searchData=
   ['prepcombo',['PrepCombo',['../classSpiceDialog.html#a403f4fd75191f65278374dc22e28320b',1,'SpiceDialog']]],
   ['prestream',['prestream',['../classSpiceDialog.html#abbdc6cf6b7c22c98e20a4089b58a0580',1,'SpiceDialog::prestream()'],['../classSpiceFile.html#a23b412a3ae670cb56664f37db130c551',1,'SpiceFile::prestream()']]],
   ['prevbutt',['prevButt',['../classLibraryDialog.html#ae703c76a1149630e04af4e12a992ffe3',1,'LibraryDialog']]],
+  ['prevdevs',['prevDevs',['../classAboutDialog.html#adf3b936352f62fd7c9e2da515a4d2e69',1,'AboutDialog']]],
+  ['prevtab',['prevTab',['../classAboutDialog.html#aeb2b8b7184fe741cd600cb15cbbb7e05',1,'AboutDialog']]],
   ['printscale',['PrintScale',['../classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5',1,'ViewPainter']]],
   ['process',['Process',['../classImportDialog.html#a8c9c5f6105b62bf408dd641baeeb178f',1,'ImportDialog']]],
   ['program',['Program',['../classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61',1,'SimMessage']]],

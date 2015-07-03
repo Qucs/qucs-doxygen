@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abortsim',['AbortSim',['../classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba',1,'SimMessage']]],
+  ['aboutdialog',['AboutDialog',['../classAboutDialog.html#ad96fc2ce8de7568ace543b7c69c71c56',1,'AboutDialog']]],
   ['ac_5fsim',['AC_Sim',['../classAC__Sim.html#a568217514907312edf723b12f4fd23b0',1,'AC_Sim']]],
   ['activatecompswithinrect',['activateCompsWithinRect',['../classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214',1,'Schematic']]],
   ['activateselectedcomponents',['activateSelectedComponents',['../classSchematic.html#a21a32952eeac7109af7cd3549b6376a5',1,'Schematic']]],

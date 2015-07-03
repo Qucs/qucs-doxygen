@@ -91,6 +91,7 @@ var searchData=
   ['creatinglib',['creatingLib',['../classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a',1,'Schematic']]],
   ['crossedit',['CrossEdit',['../classOptimizeDialog.html#aa510934b0f071e842049ab87d4ff209e',1,'OptimizeDialog']]],
   ['curdescr',['curDescr',['../classLibraryDialog.html#a796f6e98984e3090e7633426f8188f72',1,'LibraryDialog']]],
+  ['currauths',['currAuths',['../classAboutDialog.html#a56a8a8c2437a29df09af47b278cfa5c4',1,'AboutDialog']]],
   ['currentpaths',['currentPaths',['../classQucsSettingsDialog.html#a4761af5b5b3d9c1bc1bf744940f22cbe',1,'QucsSettingsDialog']]],
   ['currentprep',['currentPrep',['../classSpiceDialog.html#a7ed11ed6201466c54a4e2651483fc1d8',1,'SpiceDialog']]],
   ['cursordown',['cursorDown',['../classQucsApp.html#a43632a59e992d9ce6b4bd3bf10d07e98',1,'QucsApp']]],

@@ -248,6 +248,8 @@ var searchData=
   ['ctline_2ecpp',['ctline.cpp',['../ctline_8cpp.html',1,'']]],
   ['ctline_2eh',['ctline.h',['../ctline_8h.html',1,'']]],
   ['curdescr',['curDescr',['../classLibraryDialog.html#a796f6e98984e3090e7633426f8188f72',1,'LibraryDialog']]],
+  ['currauths',['currAuths',['../classAboutDialog.html#a56a8a8c2437a29df09af47b278cfa5c4',1,'AboutDialog']]],
+  ['currentchangedslot',['currentChangedSlot',['../classAboutDialog.html#ac15adc23b0426f866a45d4c33ab7de43',1,'AboutDialog']]],
   ['currentpaths',['currentPaths',['../classQucsSettingsDialog.html#a4761af5b5b3d9c1bc1bf744940f22cbe',1,'QucsSettingsDialog']]],
   ['currentprep',['currentPrep',['../classSpiceDialog.html#a7ed11ed6201466c54a4e2651483fc1d8',1,'SpiceDialog']]],
   ['cursordown',['cursorDown',['../classQucsApp.html#a43632a59e992d9ce6b4bd3bf10d07e98',1,'QucsApp']]],

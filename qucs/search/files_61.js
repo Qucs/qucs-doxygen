@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['aboutdialog_2ecpp',['aboutdialog.cpp',['../aboutdialog_8cpp.html',1,'']]],
+  ['aboutdialog_2eh',['aboutdialog.h',['../aboutdialog_8h.html',1,'']]],
   ['ac_5fsim_2ecpp',['ac_sim.cpp',['../ac__sim_8cpp.html',1,'']]],
   ['ac_5fsim_2eh',['ac_sim.h',['../ac__sim_8h.html',1,'']]],
   ['am_5fmodulator_2ecpp',['am_modulator.cpp',['../am__modulator_8cpp.html',1,'']]],

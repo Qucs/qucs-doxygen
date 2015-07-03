@@ -1,27 +1,27 @@
 <map id="G" name="G">
-<area shape="rect" id="node33" href="$projectView_8h.html" title="projectView.h" alt="" coords="2105,83,2207,112"/>
-<area shape="rect" id="node39" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="1505,83,1567,112"/>
-<area shape="rect" id="node62" href="$qucs_8h.html" title="qucs.h" alt="" coords="2303,160,2364,189"/>
-<area shape="rect" id="node71" href="$schematic_8h.html" title="schematic.h" alt="" coords="1289,83,1383,112"/>
-<area shape="rect" id="node86" href="$textdoc_8h.html" title="Definition of the TextDoc class." alt="" coords="1407,83,1481,112"/>
-<area shape="rect" id="node90" href="$mouseactions_8h.html" title="mouseactions.h" alt="" coords="911,237,1025,267"/>
-<area shape="rect" id="node93" href="$messagedock_8h.html" title="The MessageDock class definiion." alt="" coords="2231,83,2345,112"/>
-<area shape="rect" id="node96" href="$ground_8h.html" title="components/ground.h" alt="" coords="407,160,553,189"/>
-<area shape="rect" id="node99" href="$subcirport_8h.html" title="components/subcirport.h" alt="" coords="577,160,743,189"/>
-<area shape="rect" id="node102" href="$equation_8h.html" title="components/equation.h" alt="" coords="767,160,924,189"/>
-<area shape="rect" id="node105" href="$matchdialog_8h.html" title="dialogs/matchdialog.h" alt="" coords="3665,83,3812,112"/>
-<area shape="rect" id="node107" href="$changedialog_8h.html" title="dialogs/changedialog.h" alt="" coords="3836,83,3991,112"/>
-<area shape="rect" id="node109" href="$searchdialog_8h.html" title="dialogs/searchdialog.h" alt="" coords="4015,83,4164,112"/>
-<area shape="rect" id="node111" href="$librarydialog_8h.html" title="dialogs/librarydialog.h" alt="" coords="1591,83,1737,112"/>
-<area shape="rect" id="node115" href="$loaddialog_8h.html" title="dialogs/loaddialog.h" alt="" coords="1945,83,2081,112"/>
-<area shape="rect" id="node118" href="$importdialog_8h.html" title="dialogs/importdialog.h" alt="" coords="269,83,416,112"/>
-<area shape="rect" id="node121" href="$packagedialog_8h.html" title="dialogs/packagedialog.h" alt="" coords="1761,83,1921,112"/>
-<area shape="rect" id="node125" href="$module_8h.html" title="module.h" alt="" coords="2392,160,2467,189"/>
-<area shape="rect" id="node49" href="$wire_8h.html" title="wire.h" alt="" coords="1257,160,1313,189"/>
-<area shape="rect" id="node56" href="$node_8h.html" title="node.h" alt="" coords="1655,160,1716,189"/>
-<area shape="rect" id="node59" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1495,160,1631,189"/>
-<area shape="rect" id="node51" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1268,237,1367,267"/>
-<area shape="rect" id="node53" href="$component_8h.html" title="components/component.h" alt="" coords="716,237,887,267"/>
-<area shape="rect" id="node75" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="1388,160,1471,189"/>
-<area shape="rect" id="node80" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="1100,160,1233,189"/>
+<area shape="rect" id="node33" href="$projectView_8h.html" title="projectView.h" alt="" coords="491,83,592,112"/>
+<area shape="rect" id="node39" href="$main_8h.html" title="Definitions and declarations for the main application." alt="" coords="1277,83,1339,112"/>
+<area shape="rect" id="node59" href="$qucs_8h.html" title="qucs.h" alt="" coords="507,160,568,189"/>
+<area shape="rect" id="node68" href="$schematic_8h.html" title="schematic.h" alt="" coords="1160,83,1253,112"/>
+<area shape="rect" id="node82" href="$textdoc_8h.html" title="Definition of the TextDoc class." alt="" coords="1061,83,1136,112"/>
+<area shape="rect" id="node86" href="$mouseactions_8h.html" title="mouseactions.h" alt="" coords="741,160,856,189"/>
+<area shape="rect" id="node89" href="$messagedock_8h.html" title="The MessageDock class definiion." alt="" coords="667,83,781,112"/>
+<area shape="rect" id="node92" href="$ground_8h.html" title="components/ground.h" alt="" coords="3072,83,3219,112"/>
+<area shape="rect" id="node94" href="$subcirport_8h.html" title="components/subcirport.h" alt="" coords="3243,83,3408,112"/>
+<area shape="rect" id="node96" href="$equation_8h.html" title="components/equation.h" alt="" coords="3432,83,3589,112"/>
+<area shape="rect" id="node98" href="$matchdialog_8h.html" title="dialogs/matchdialog.h" alt="" coords="3613,83,3760,112"/>
+<area shape="rect" id="node100" href="$changedialog_8h.html" title="dialogs/changedialog.h" alt="" coords="3784,83,3939,112"/>
+<area shape="rect" id="node102" href="$searchdialog_8h.html" title="dialogs/searchdialog.h" alt="" coords="3963,83,4112,112"/>
+<area shape="rect" id="node104" href="$librarydialog_8h.html" title="dialogs/librarydialog.h" alt="" coords="1547,83,1693,112"/>
+<area shape="rect" id="node108" href="$loaddialog_8h.html" title="dialogs/loaddialog.h" alt="" coords="1717,83,1853,112"/>
+<area shape="rect" id="node111" href="$importdialog_8h.html" title="dialogs/importdialog.h" alt="" coords="320,83,467,112"/>
+<area shape="rect" id="node114" href="$packagedialog_8h.html" title="dialogs/packagedialog.h" alt="" coords="1363,83,1523,112"/>
+<area shape="rect" id="node118" href="$aboutdialog_8h.html" title="dialogs/aboutdialog.h" alt="" coords="4136,83,4280,112"/>
+<area shape="rect" id="node120" href="$module_8h.html" title="module.h" alt="" coords="592,160,667,189"/>
+<area shape="rect" id="node49" href="$wire_8h.html" title="wire.h" alt="" coords="1573,160,1629,189"/>
+<area shape="rect" id="node53" href="$node_8h.html" title="node.h" alt="" coords="1277,160,1339,189"/>
+<area shape="rect" id="node56" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1413,160,1549,189"/>
+<area shape="rect" id="node51" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1379,237,1477,267"/>
+<area shape="rect" id="node72" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="880,160,963,189"/>
+<area shape="rect" id="node77" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="1037,160,1171,189"/>
 </map>

@@ -1134,49 +1134,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01054"></a>01054   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;blockSignals(<span class="keyword">false</span>);
 <a name="l01055"></a>01055 }
 <a name="l01056"></a>01056 
-<a name="l01057"></a>01057 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01058"></a><a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">01058</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">QucsApp::slotHelpAbout</a>()
-<a name="l01059"></a>01059 {
-<a name="l01060"></a>01060   QMessageBox::about(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;About...&quot;</span>),
-<a name="l01061"></a>01061     tr(<span class="stringliteral">&quot;Qucs Version&quot;</span>)+<span class="stringliteral">&quot; &quot;</span>+PACKAGE_VERSION+
-<a name="l01062"></a>01062 #ifdef GIT
-<a name="l01063"></a>01063     <span class="stringliteral">&quot; (&quot;</span>+GIT+<span class="stringliteral">&quot;) &quot;</span> +
-<a name="l01064"></a>01064 #endif
-<a name="l01065"></a>01065     <span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01066"></a>01066     tr(<span class="stringliteral">&quot;Quite Universal Circuit Simulator&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01067"></a>01067     tr(<span class="stringliteral">&quot;Copyright (C)&quot;</span>)+<span class="stringliteral">&quot; 2003-2009 &quot;</span>+
-<a name="l01068"></a>01068     tr(<span class="stringliteral">&quot;by Michael Margraf&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01069"></a>01069     tr(<span class="stringliteral">&quot;Copyright (C)&quot;</span>)+<span class="stringliteral">&quot; 2011-2015 &quot;</span>+
-<a name="l01070"></a>01070     tr(<span class="stringliteral">&quot;Qucs Team&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01071"></a>01071     <span class="stringliteral">&quot;\nThis is free software; see the source for copying conditions.&quot;</span>
-<a name="l01072"></a>01072     <span class="stringliteral">&quot;\nThere is NO warranty; not even for MERCHANTABILITY or &quot;</span>
-<a name="l01073"></a>01073     <span class="stringliteral">&quot;\nFITNESS FOR A PARTICULAR PURPOSE.\n\n&quot;</span>+
-<a name="l01074"></a>01074     tr(<span class="stringliteral">&quot;Simulator by Stefan Jahn&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01075"></a>01075     tr(<span class="stringliteral">&quot;VHDL simulator &#39;FreeHDL&#39; by Edwin Naroska and Marius Vollmer&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01076"></a>01076     tr(<span class="stringliteral">&quot;Special thanks to Jens Flucke and Raimund Jacob&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01077"></a>01077     tr(<span class="stringliteral">&quot;Many thanks to Mike Brinson for correcting the VHDL output&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01078"></a>01078     tr(<span class="stringliteral">&quot;GUI improvements by Gopala Krishna A&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01079"></a>01079     tr(<span class="stringliteral">&quot;Verilog-AMS interface by Helene Parruitte&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01080"></a>01080     tr(<span class="stringliteral">&quot;Verilog-AMS dynamic loader by Guilherme Brondani Torri&quot;</span>)+<span class="stringliteral">&quot;\n\n&quot;</span>+
-<a name="l01081"></a>01081     tr(<span class="stringliteral">&quot;Translations:&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01082"></a>01082     tr(<span class="stringliteral">&quot;German by Stefan Jahn&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01083"></a>01083     tr(<span class="stringliteral">&quot;Polish by Dariusz Pienkowski&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01084"></a>01084     tr(<span class="stringliteral">&quot;Romanian by Radu Circa&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01085"></a>01085     tr(<span class="stringliteral">&quot;French by Vincent Habchi, F5RCS&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01086"></a>01086     tr(<span class="stringliteral">&quot;Portuguese by Luciano Franca, Helio de Sousa, Guilherme Brondani Torri&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01087"></a>01087     tr(<span class="stringliteral">&quot;Spanish by Jose L. Redrejo Rodriguez&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01088"></a>01088     tr(<span class="stringliteral">&quot;Japanese by Toyoyuki Ishikawa&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01089"></a>01089     tr(<span class="stringliteral">&quot;Italian by Giorgio Luparia and Claudio Girardi&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01090"></a>01090     tr(<span class="stringliteral">&quot;Hebrew by Dotan Nahum&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01091"></a>01091     tr(<span class="stringliteral">&quot;Swedish by Peter Landgren&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01092"></a>01092     tr(<span class="stringliteral">&quot;Turkish by Onur and Ozgur Cobanoglu&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01093"></a>01093     tr(<span class="stringliteral">&quot;Hungarian by Jozsef Bus&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01094"></a>01094     tr(<span class="stringliteral">&quot;Russian by Igor Gorbounov&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01095"></a>01095     tr(<span class="stringliteral">&quot;Czech by Marek Straka&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01096"></a>01096     tr(<span class="stringliteral">&quot;Catalan by Antoni Subirats&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01097"></a>01097     tr(<span class="stringliteral">&quot;Arabic by Chabane Noureddine&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+
-<a name="l01098"></a>01098     tr(<span class="stringliteral">&quot;Kazakh by Erbol Keshubaev&quot;</span>));
-<a name="l01099"></a>01099 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1195,7 +1152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 14:51:26 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2015 15:27:09 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

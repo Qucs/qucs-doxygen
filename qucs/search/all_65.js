@@ -67,7 +67,7 @@ var searchData=
   ['etr_5fsim',['ETR_Sim',['../classETR__Sim.html',1,'ETR_Sim'],['../classETR__Sim.html#a4ee4243b33627a384e488aec05564aa4',1,'ETR_Sim::ETR_Sim()']]],
   ['etr_5fsim_2ecpp',['etr_sim.cpp',['../etr__sim_8cpp.html',1,'']]],
   ['etr_5fsim_2eh',['etr_sim.h',['../etr__sim_8h.html',1,'']]],
-  ['eventfilter',['eventFilter',['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
+  ['eventfilter',['eventFilter',['../classAboutDialog.html#a209ae6e95cca424101bb12d7ae906129',1,'AboutDialog::eventFilter()'],['../classLoadDialog.html#a208cc3adc18cc03d0a35bbb8ad01215f',1,'LoadDialog::eventFilter()'],['../classOctaveWindow.html#afbc68fe807e7216719595abbc1a2522b',1,'OctaveWindow::eventFilter()']]],
   ['examplesdir',['ExamplesDir',['../structtQucsSettings.html#a2d1cb813e10dc15b84c224f52ff61167',1,'tQucsSettings']]],
   ['executablesuffix',['executableSuffix',['../simmessage_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;simmessage.cpp'],['../main_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;main.cpp'],['../octave__window_8cpp.html#a2cf4c556f32bf2fdc38342715abfdcff',1,'executableSuffix():&#160;octave_window.cpp']]],
   ['exportasimage',['exportAsImage',['../classQucsApp.html#ac46bcb3fd090de847c1596dff63031bd',1,'QucsApp']]],
