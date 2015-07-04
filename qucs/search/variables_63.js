@@ -82,7 +82,7 @@ var searchData=
   ['costvaredit',['CostVarEdit',['../classOptimizeDialog.html#abffce2e7c7b78087b3ce558a790ab402',1,'OptimizeDialog']]],
   ['count',['count',['../structDataX.html#a310443779b9890de9b343449db841197',1,'DataX']]],
   ['county',['countY',['../classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da',1,'Graph']]],
-  ['cpointsx',['cPointsX',['../classGraph.html#aa3f0a76188a0267aea4564baad95a1bb',1,'Graph']]],
+  ['cpointsx',['cPointsX',['../classGraph.html#a3df10f65059b4b665f6f83740dbaeb14',1,'Graph']]],
   ['cpointsy',['cPointsY',['../classGraph.html#a208d1982aefe687655e06c97f21a3fec',1,'Graph']]],
   ['cppoutput',['cppOutput',['../classMessageDock.html#a4ee89eba9326775357e243c20c6403c6',1,'MessageDock']]],
   ['createbutt',['createButt',['../classLibraryDialog.html#a202c5d70da859d42800e08bfa855fbf8',1,'LibraryDialog']]],

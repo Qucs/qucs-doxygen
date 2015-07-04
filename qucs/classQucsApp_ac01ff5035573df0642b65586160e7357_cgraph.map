@@ -33,7 +33,7 @@
 <area shape="rect" id="node31" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="2540,1359,2679,1388"/>
 <area shape="rect" id="node33" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="1757,1332,1915,1361"/>
 <area shape="rect" id="node35" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="1767,1385,1905,1415"/>
-<area shape="rect" id="node37" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="1769,1279,1903,1308"/>
+<area shape="rect" id="node37" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="1769,1279,1903,1308"/>
 <area shape="rect" id="node46" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="2016,812,2195,841"/>
 <area shape="rect" id="node51" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="2284,1124,2465,1153"/>
 <area shape="rect" id="node62" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="2528,1215,2691,1244"/>

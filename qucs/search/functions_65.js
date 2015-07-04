@@ -25,5 +25,6 @@ var searchData=
   ['extractdirectory',['extractDirectory',['../classPackageDialog.html#a0c24f59c23aa94f037b2491bb12ad0e1',1,'PackageDialog']]],
   ['extractfile',['extractFile',['../classPackageDialog.html#ad0cad61f409a227dd5eae41a492baabb',1,'PackageDialog']]],
   ['extractlibrary',['extractLibrary',['../classPackageDialog.html#ac003eccbfb5ded4c10a5b55501e6fd02',1,'PackageDialog']]],
-  ['extractpackage',['extractPackage',['../classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c',1,'PackageDialog']]]
+  ['extractpackage',['extractPackage',['../classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c',1,'PackageDialog']]],
+  ['extramarkertext',['extraMarkerText',['../classDiagram.html#a541d5fdf270dea71646eb84af2669e78',1,'Diagram::extraMarkerText()'],['../classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff',1,'SmithDiagram::extraMarkerText()']]]
 ];

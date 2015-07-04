@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">Marker Class Reference</div>  </div>
@@ -97,22 +98,23 @@ Inheritance diagram for Marker:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker__inherit__graph.png" border="0" usemap="#Marker_inherit__map" alt="Inheritance graph"/></div>
 <map name="Marker_inherit__map" id="Marker_inherit__map">
-<area shape="rect" id="node2" href="classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="9,5,127,299"/></map>
+<area shape="rect" id="node2" href="classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="29,5,147,299"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Marker:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker__coll__graph.png" border="0" usemap="#Marker_coll__map" alt="Collaboration graph"/></div>
 <map name="Marker_coll__map" id="Marker_coll__map">
-<area shape="rect" id="node2" href="classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="300,5,417,299"/><area shape="rect" id="node4" href="classDiagram.html" title="The Diagram class is a superclass for diagrams." alt="" coords="5,400,248,1075"/><area shape="rect" id="node9" href="classGraph.html" title="{Graph\n|+ lastLoaded\l+ yAxisNo\l+ cPointsY\l+ countY\l+ Var\l+ Color\l+ Thick\l+ Style\l+ Markers\l+ Precision\l+ numMode\l&#45; cPointsX\l&#45; ScrPoints\l|+ Graph()\l+ ~Graph()\l+ loadDatFile()\l+ loadIndepVarData()\l+ paint()\l+ paintLines()\l+ save()\l+ load()\l+ getSelected()\l+ sameNewOne()\land 9 more...&#45; drawLines()\l&#45; drawStarSymbols()\l&#45; drawCircleSymbols()\l&#45; drawArrowSymbols()\l}" alt="" coords="272,478,445,997"/><area shape="rect" id="node7" href="structAxis.html" title="{Axis\n|+ min\l+ max\l+ low\l+ up\l+ log\l+ Label\l+ numGraphs\l+ GridOn\l+ autoScale\l+ limit_min\l+ limit_max\l+ step\l|}" alt="" coords="76,14,177,290"/></map>
+<area shape="rect" id="node2" href="classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="36,5,153,299"/><area shape="rect" id="node4" href="classGraph.html" title="prepare data for plotting purposes in Diagram." alt="" coords="81,1142,279,1695"/><area shape="rect" id="node7" href="classDiagram.html" title="The Diagram class is a superclass for diagrams." alt="" coords="132,400,375,1075"/><area shape="rect" id="node10" href="structAxis.html" title="{Axis\n|+ min\l+ max\l+ low\l+ up\l+ log\l+ Label\l+ numGraphs\l+ GridOn\l+ autoScale\l+ limit_min\l+ limit_max\l+ step\l|}" alt="" coords="203,14,304,290"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459">Marker</a> (<a class="el" href="classDiagram.html">Diagram</a> *Diag_, <a class="el" href="classGraph.html">Graph</a> *pg_=0, int _nn=0, int cx_=0, int cy_=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf">Marker</a> (<a class="el" href="classGraph.html">Graph</a> *pg_=0, int _nn=0, int cx_=0, int cy_=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">create a marker based on click position and the branch number.  <a href="#ab2f5ba534331891949a9728c1bb1f2bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#aed0a670782857dee1824a6eb9c2e1498">~Marker</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b">initText</a> (int)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1">createText</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">(should) create marker label <a class="el" href="structText.html">Text</a> the screen position cx and cy from VarPos.  <a href="#aa5ada7c4415098442f4378afec9172e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b">makeInvalid</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a6150328e5bf976d49753ba2764b27006">moveLeftRight</a> (bool)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710">moveUpDown</a> (bool)</td></tr>
@@ -125,43 +127,44 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb">getSelected</a> (int, int)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMarker.html">Marker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09">sameNewOne</a> (<a class="el" href="classGraph.html">Graph</a> *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93">getTextSize</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph.html">Graph</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a67723d08a0ec2f2f04241ca040fbac01">graph</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a192aeb8baf2530ca32de4183166deb48">precision</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a4fb36f399bda0415b3e4adf0a933a12e">varPos</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a513cf0e10664950b0679886467e2edd6">diag</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a8683011b90f8560ece2526ec42140a58">powFreq</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a9bbd3f0bd40a05deca0f542e351d8b68">powReal</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a7afbcdee29443013516c148c96ca2913">powImag</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a11619d04839139e1f7aa475774f17797">Diag</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a0e96a41f2f6c427a6fd3efc6abeed175">pGraph</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a4a616636ac9801ca4830151c2c9e6506">Text</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a8813f9d66064a67dfe480ea322608638">transparent</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#aabb579ae5a2d4c05b2a32725341ebd8f">Precision</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a10113d655ed0f6e76c105b949b707522">numMode</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a1b8e67f33dcfd28d504f471dc13b2c05">Z0</a></td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b">initText</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch samples and comparing against click  <a href="#a2263a30efd44f198955bf313b4b3549b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">nVarPos</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">VarPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#ac361fd5833361f41e138d8723b0e48ed">VarPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a2624b679b22e7222558c973e1b1c1b95">VarDep</a> [2]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#a98a5a01f6cce80d9419d21d22f3661f3">fCX</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMarker.html#aef276f5e01d535c70882e09b1ea4bc84">fCY</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> class implements the marker object used for all the diagram. </p>
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00029">29</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00035">35</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad2baf2e2ec35bfd614160e048544b459"></a><!-- doxytag: member="Marker::Marker" ref="ad2baf2e2ec35bfd614160e048544b459" args="(Diagram *Diag_, Graph *pg_=0, int _nn=0, int cx_=0, int cy_=0)" -->
+<a class="anchor" id="ab2f5ba534331891949a9728c1bb1f2bf"></a><!-- doxytag: member="Marker::Marker" ref="ab2f5ba534331891949a9728c1bb1f2bf" args="(Graph *pg_=0, int _nn=0, int cx_=0, int cy_=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459">Marker::Marker</a> </td>
+          <td class="memname"><a class="el" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf">Marker::Marker</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td>
-          <td class="paramname"><em>Diag_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="classGraph.html">Graph</a> *&#160;</td>
           <td class="paramname"><em>pg_</em> = <code>0</code>, </td>
         </tr>
@@ -169,7 +172,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_nn</em> = <code>0</code>, </td>
+          <td class="paramname"><em>branchNo</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -192,22 +195,25 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00040">40</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>create a marker based on click position and the branch number. </p>
+<p>the click position is used to compute the marker position. currently, the marker position is the sampling point closest to the click. </p>
+
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00047">47</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMarker_ad2baf2e2ec35bfd614160e048544b459_cgraph.png" border="0" usemap="#classMarker_ad2baf2e2ec35bfd614160e048544b459_cgraph" alt=""/></div>
-<map name="classMarker_ad2baf2e2ec35bfd614160e048544b459_cgraph" id="classMarker_ad2baf2e2ec35bfd614160e048544b459_cgraph">
-<area shape="rect" id="node3" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="524,5,663,35"/><area shape="rect" id="node11" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="167,213,279,243"/><area shape="rect" id="node5" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="727,32,945,61"/><area shape="rect" id="node9" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="767,136,905,165"/><area shape="rect" id="node7" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="995,32,1157,61"/><area shape="rect" id="node13" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="339,267,451,296"/><area shape="rect" id="node16" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="549,59,637,88"/><area shape="rect" id="node18" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="511,427,676,456"/><area shape="rect" id="node20" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="533,480,653,509"/><area shape="rect" id="node22" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="329,213,460,243"/><area shape="rect" id="node27" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="527,213,660,243"/><area shape="rect" id="node29" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="528,267,659,296"/><area shape="rect" id="node31" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="528,320,659,349"/><area shape="rect" id="node33" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="533,373,653,403"/></map>
+<div class="center"><img src="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_cgraph.png" border="0" usemap="#classMarker_ab2f5ba534331891949a9728c1bb1f2bf_cgraph" alt=""/></div>
+<map name="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_cgraph" id="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_cgraph">
+<area shape="rect" id="node3" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="365,109,504,139"/><area shape="rect" id="node15" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="176,161,288,191"/><area shape="rect" id="node27" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="167,421,297,451"/><area shape="rect" id="node5" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="635,109,728,139"/><area shape="rect" id="node9" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="572,267,791,296"/><area shape="rect" id="node13" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="612,424,751,453"/><area shape="rect" id="node7" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="847,109,996,139"/><area shape="rect" id="node11" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="840,267,1003,296"/><area shape="rect" id="node17" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="379,5,491,35"/><area shape="rect" id="node21" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="637,684,725,713"/><area shape="rect" id="node23" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="352,267,517,296"/><area shape="rect" id="node25" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="375,213,495,243"/><area shape="rect" id="node31" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="369,736,500,765"/><area shape="rect" id="node35" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="368,421,501,451"/><area shape="rect" id="node37" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="369,475,500,504"/><area shape="rect" id="node39" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="369,528,500,557"/><area shape="rect" id="node42" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="348,581,521,611"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMarker_ad2baf2e2ec35bfd614160e048544b459_icgraph.png" border="0" usemap="#classMarker_ad2baf2e2ec35bfd614160e048544b459_icgraph" alt=""/></div>
-<map name="classMarker_ad2baf2e2ec35bfd614160e048544b459_icgraph" id="classMarker_ad2baf2e2ec35bfd614160e048544b459_icgraph">
+<div class="center"><img src="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_icgraph.png" border="0" usemap="#classMarker_ab2f5ba534331891949a9728c1bb1f2bf_icgraph" alt=""/></div>
+<map name="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_icgraph" id="classMarker_ab2f5ba534331891949a9728c1bb1f2bf_icgraph">
 <area shape="rect" id="node3" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="167,5,319,35"/><area shape="rect" id="node5" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="369,5,516,35"/><area shape="rect" id="node7" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="565,5,800,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1272,29,1475,59"/><area shape="rect" id="node11" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="848,31,1019,60"/><area shape="rect" id="node14" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1068,81,1223,111"/></map>
 </div>
 </p>
@@ -228,7 +234,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00063">63</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00072">72</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +276,16 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00423">423</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00437">437</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a7b419171c998cb3d2f3cd4b6c255a4e6_cgraph.png" border="0" usemap="#classMarker_a7b419171c998cb3d2f3cd4b6c255a4e6_cgraph" alt=""/></div>
+<map name="classMarker_a7b419171c998cb3d2f3cd4b6c255a4e6_cgraph" id="classMarker_a7b419171c998cb3d2f3cd4b6c255a4e6_cgraph">
+<area shape="rect" id="node3" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="180,5,273,35"/><area shape="rect" id="node5" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="324,5,473,35"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -297,14 +312,17 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00147">147</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>(should) create marker label <a class="el" href="structText.html">Text</a> the screen position cx and cy from VarPos. </p>
+<p>does a lot of fancy stuff to be sorted out. </p>
+
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00166">166</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_aa5ada7c4415098442f4378afec9172e1_cgraph.png" border="0" usemap="#classMarker_aa5ada7c4415098442f4378afec9172e1_cgraph" alt=""/></div>
 <map name="classMarker_aa5ada7c4415098442f4378afec9172e1_cgraph" id="classMarker_aa5ada7c4415098442f4378afec9172e1_cgraph">
-<area shape="rect" id="node3" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="201,55,340,85"/><area shape="rect" id="node5" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="404,17,623,46"/><area shape="rect" id="node9" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="444,82,583,111"/><area shape="rect" id="node11" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="211,159,331,189"/><area shape="rect" id="node13" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="227,213,315,242"/><area shape="rect" id="node15" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="204,266,337,295"/><area shape="rect" id="node17" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="205,319,336,349"/><area shape="rect" id="node19" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="205,373,336,402"/><area shape="rect" id="node21" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="211,426,331,455"/><area shape="rect" id="node23" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="188,479,353,509"/><area shape="rect" id="node7" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="672,17,835,46"/></map>
+<area shape="rect" id="node3" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="205,61,344,91"/><area shape="rect" id="node5" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="475,16,568,45"/><area shape="rect" id="node9" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="412,81,631,111"/><area shape="rect" id="node13" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="452,159,591,188"/><area shape="rect" id="node15" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="215,216,335,245"/><area shape="rect" id="node17" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="209,320,340,349"/><area shape="rect" id="node19" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="477,295,565,324"/><area shape="rect" id="node22" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="208,373,341,403"/><area shape="rect" id="node24" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="209,427,340,456"/><area shape="rect" id="node26" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="209,480,340,509"/><area shape="rect" id="node29" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="188,533,361,563"/><area shape="rect" id="node31" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="192,587,357,616"/><area shape="rect" id="node7" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="687,16,836,45"/><area shape="rect" id="node11" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="680,81,843,111"/></map>
 </div>
 </p>
 
@@ -313,7 +331,43 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_aa5ada7c4415098442f4378afec9172e1_icgraph.png" border="0" usemap="#classMarker_aa5ada7c4415098442f4378afec9172e1_icgraph" alt=""/></div>
 <map name="classMarker_aa5ada7c4415098442f4378afec9172e1_icgraph" id="classMarker_aa5ada7c4415098442f4378afec9172e1_icgraph">
-<area shape="rect" id="node3" href="classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="201,221,383,251"/><area shape="rect" id="node96" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="236,117,348,147"/><area shape="rect" id="node108" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="215,11,369,40"/><area shape="rect" id="node118" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="216,64,368,93"/><area shape="rect" id="node128" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="188,527,396,556"/><area shape="rect" id="node5" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="772,195,937,224"/><area shape="rect" id="node14" href="classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="489,247,665,276"/><area shape="rect" id="node29" href="classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="447,728,708,757"/><area shape="rect" id="node7" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1583,168,1753,197"/><area shape="rect" id="node9" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="2052,219,2255,248"/><area shape="rect" id="node11" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1832,168,1987,197"/><area shape="rect" id="node16" href="classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="764,260,945,289"/><area shape="rect" id="node18" href="classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="1008,220,1203,249"/><area shape="rect" id="node20" href="classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1307,271,1472,300"/><area shape="rect" id="node27" href="classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1051,324,1160,353"/><area shape="rect" id="node22" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2332,321,2476,351"/><area shape="rect" id="node24" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="3000,791,3139,820"/><area shape="rect" id="node31" href="classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="757,728,952,757"/><area shape="rect" id="node33" href="classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1001,843,1209,872"/><area shape="rect" id="node35" href="classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1281,728,1497,757"/><area shape="rect" id="node38" href="classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1283,791,1496,820"/><area shape="rect" id="node44" href="classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1260,653,1519,683"/><area shape="rect" id="node47" href="classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="2313,844,2495,873"/><area shape="rect" id="node57" href="classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1285,895,1493,924"/><area shape="rect" id="node86" href="classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1319,539,1460,568"/><area shape="rect" id="node40" href="classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1569,664,1767,693"/><area shape="rect" id="node49" href="classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2576,791,2707,820"/><area shape="rect" id="node52" href="classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2552,844,2731,873"/><area shape="rect" id="node54" href="classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="2780,843,2951,872"/><area shape="rect" id="node60" href="classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1579,792,1757,821"/><area shape="rect" id="node63" href="classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="1840,585,1979,615"/><area shape="rect" id="node66" href="classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2075,480,2232,509"/><area shape="rect" id="node69" href="classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2063,373,2244,403"/><area shape="rect" id="node72" href="classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2061,533,2245,563"/><area shape="rect" id="node76" href="classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2091,691,2216,720"/><area shape="rect" id="node81" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da" title="QucsApp::slotOpenRecent" alt="" coords="2064,427,2243,456"/><area shape="rect" id="node84" href="classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="2052,637,2255,667"/><area shape="rect" id="node78" href="classComponentDialog.html#ad45267411ae461bd9e059f4edd068364" title="ComponentDialog::slotEditFile" alt="" coords="2305,691,2503,720"/><area shape="rect" id="node98" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="523,117,632,147"/><area shape="rect" id="node100" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="779,117,931,147"/><area shape="rect" id="node102" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1032,116,1179,145"/><area shape="rect" id="node104" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1272,116,1507,145"/><area shape="rect" id="node110" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="1817,11,2001,40"/><area shape="rect" id="node112" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="2071,5,2236,35"/><area shape="rect" id="node115" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="2067,59,2240,88"/><area shape="rect" id="node120" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="1819,64,2000,93"/><area shape="rect" id="node122" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="2073,165,2233,195"/><area shape="rect" id="node125" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="2064,112,2243,141"/><area shape="rect" id="node130" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="485,781,669,811"/></map>
+<area shape="rect" id="node3" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="237,32,347,61"/><area shape="rect" id="node19" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="215,112,369,141"/><area shape="rect" id="node32" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="216,165,368,195"/><area shape="rect" id="node42" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="188,219,396,248"/><area shape="rect" id="node5" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="463,32,615,61"/><area shape="rect" id="node7" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="696,5,843,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="907,5,1141,35"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1613,31,1816,60"/><area shape="rect" id="node13" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1189,32,1360,61"/><area shape="rect" id="node16" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1409,83,1564,112"/><area shape="rect" id="node21" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="447,112,631,141"/><area shape="rect" id="node23" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="687,59,852,88"/><area shape="rect" id="node29" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="683,112,856,141"/><area shape="rect" id="node25" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="952,139,1096,168"/><area shape="rect" id="node27" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1205,139,1344,168"/><area shape="rect" id="node34" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="448,165,629,195"/><area shape="rect" id="node36" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="689,165,849,195"/><area shape="rect" id="node39" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="680,219,859,248"/><area shape="rect" id="node44" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="447,219,631,248"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a513cf0e10664950b0679886467e2edd6"></a><!-- doxytag: member="Marker::diag" ref="a513cf0e10664950b0679886467e2edd6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classDiagram.html">Diagram</a> * <a class="el" href="classMarker.html#a513cf0e10664950b0679886467e2edd6">Marker::diag</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00538">538</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a513cf0e10664950b0679886467e2edd6_cgraph.png" border="0" usemap="#classMarker_a513cf0e10664950b0679886467e2edd6_cgraph" alt=""/></div>
+<map name="classMarker_a513cf0e10664950b0679886467e2edd6_cgraph" id="classMarker_a513cf0e10664950b0679886467e2edd6_cgraph">
+<area shape="rect" id="node3" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="151,5,300,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a513cf0e10664950b0679886467e2edd6_icgraph.png" border="0" usemap="#classMarker_a513cf0e10664950b0679886467e2edd6_icgraph" alt=""/></div>
+<map name="classMarker_a513cf0e10664950b0679886467e2edd6_icgraph" id="classMarker_a513cf0e10664950b0679886467e2edd6_icgraph">
+<area shape="rect" id="node3" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="433,8,545,37"/><area shape="rect" id="node13" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="424,112,555,141"/><area shape="rect" id="node39" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="633,163,841,192"/><area shape="rect" id="node41" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="917,212,1101,241"/><area shape="rect" id="node43" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="180,61,319,91"/><area shape="rect" id="node48" href="classMarker.html#a0fe55e266cd891600772ce26d1dafdf0" title="Marker::paintScheme" alt="" coords="176,267,323,296"/><area shape="rect" id="node50" href="classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="188,583,311,612"/><area shape="rect" id="node121" href="classMouseActions.html#ae10d00ced2a06d1eef702d722aaf1726" title="MouseActions::MPressMarker" alt="" coords="151,799,348,828"/><area shape="rect" id="node5" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="683,56,792,85"/><area shape="rect" id="node7" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="933,56,1085,85"/><area shape="rect" id="node9" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1208,56,1355,85"/><area shape="rect" id="node11" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1437,56,1672,85"/><area shape="rect" id="node16" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="660,109,815,139"/><area shape="rect" id="node29" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="661,371,813,400"/><area shape="rect" id="node18" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="917,159,1101,188"/><area shape="rect" id="node20" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1199,265,1364,295"/><area shape="rect" id="node26" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1195,212,1368,241"/><area shape="rect" id="node22" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1721,423,1865,452"/><area shape="rect" id="node24" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1915,423,2053,452"/><area shape="rect" id="node31" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="919,423,1100,452"/><area shape="rect" id="node33" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="1201,369,1361,399"/><area shape="rect" id="node36" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1192,423,1371,452"/><area shape="rect" id="node52" href="classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="417,583,561,612"/><area shape="rect" id="node111" href="classSchematic.html#ae70eb618f437d79d8200c38d78557f1a" title="Schematic::selectElements" alt="" coords="399,817,580,847"/><area shape="rect" id="node54" href="classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="655,424,820,453"/><area shape="rect" id="node58" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73" title="MouseActions::endElementMoving" alt="" coords="897,265,1121,295"/><area shape="rect" id="node66" href="classMouseActions.html#a39a47c7a3bf37e487ea135802a2c9cd1" title="MouseActions::MPressLabel" alt="" coords="643,317,832,347"/><area shape="rect" id="node72" href="classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="912,948,1107,977"/><area shape="rect" id="node77" href="classMouseActions.html#ab741637d83bbd87b5a9d9c44a14fb6ef" title="MouseActions::MPressOnGrid" alt="" coords="639,779,836,808"/><area shape="rect" id="node82" href="classSchematic.html#a0571a69ffa10a244468a37cab8213c0e" title="Schematic::becomeCurrent" alt="" coords="1191,476,1372,505"/><area shape="rect" id="node87" href="classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="1497,555,1612,584"/><area shape="rect" id="node89" href="classSchematic.html#a01c8c00f46a337d2b071be7f6b762dda" title="Schematic::print" alt="" coords="679,477,796,507"/><area shape="rect" id="node91" href="classSchematic.html#a68fa80515c2bfef74935805db4414bc3" title="Schematic::showAll" alt="" coords="668,531,807,560"/><area shape="rect" id="node94" href="classSchematic.html#ac8d34bec8334aa2e1f2d75a955559042" title="Schematic::adjustPortNumbers" alt="" coords="636,685,839,715"/><area shape="rect" id="node105" href="classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="647,857,828,887"/><area shape="rect" id="node56" href="classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="919,369,1100,399"/><area shape="rect" id="node60" href="classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1175,529,1388,559"/><area shape="rect" id="node69" href="classQucsApp.html#a52fe571991b5aa6261d91cda862b2bb3" title="QucsApp::slotInsertLabel" alt="" coords="1471,319,1639,348"/><area shape="rect" id="node74" href="classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1199,896,1364,925"/><area shape="rect" id="node79" href="classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="1481,713,1628,743"/><area shape="rect" id="node84" href="classQucsApp.html#a1e2e586adf725eb0d8c2723b495811de" title="QucsApp::slotSymbolEdit" alt="" coords="1469,475,1640,504"/><area shape="rect" id="node96" href="classSchematic.html#a04c4ea56f256ebdd55130baf12fa492d" title="Schematic::createSubcircuitSymbol" alt="" coords="895,529,1124,559"/><area shape="rect" id="node99" href="classSchematic.html#a469e42788ceccf0be64c29902325f88d" title="Schematic::save" alt="" coords="949,740,1069,769"/><area shape="rect" id="node101" href="classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8" title="Schematic::undo" alt="" coords="949,633,1069,663"/><area shape="rect" id="node103" href="classSchematic.html#ad129ff86a7b1d62375336ec68319b746" title="Schematic::redo" alt="" coords="951,687,1068,716"/><area shape="rect" id="node109" href="classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="955,844,1064,873"/><area shape="rect" id="node113" href="classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="629,1001,845,1031"/><area shape="rect" id="node115" href="classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="912,1001,1107,1031"/><area shape="rect" id="node123" href="classQucsApp.html#a529243fd463c5fd0f3906e92848f0070" title="QucsApp::slotSetMarker" alt="" coords="407,961,572,991"/></map>
 </div>
 </p>
 
@@ -344,7 +398,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00514">514</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00526">526</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -371,14 +425,41 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00241">241</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00254">254</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a25c7b5a70db369233dfcf18a1ec97d93_icgraph.png" border="0" usemap="#classMarker_a25c7b5a70db369233dfcf18a1ec97d93_icgraph" alt=""/></div>
 <map name="classMarker_a25c7b5a70db369233dfcf18a1ec97d93_icgraph" id="classMarker_a25c7b5a70db369233dfcf18a1ec97d93_icgraph">
-<area shape="rect" id="node3" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="385,529,516,559"/><area shape="rect" id="node130" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="196,581,335,611"/><area shape="rect" id="node5" href="classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="580,529,761,559"/><area shape="rect" id="node94" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="615,583,727,612"/><area shape="rect" id="node106" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="593,296,748,325"/><area shape="rect" id="node116" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="595,433,747,463"/><area shape="rect" id="node126" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="567,75,775,104"/><area shape="rect" id="node7" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="1151,715,1316,744"/><area shape="rect" id="node16" href="classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="868,389,1044,419"/><area shape="rect" id="node31" href="classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="825,563,1087,592"/><area shape="rect" id="node9" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1961,892,2132,921"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="2429,944,2632,973"/><area shape="rect" id="node13" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="2211,892,2365,921"/><area shape="rect" id="node18" href="classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="1143,296,1324,325"/><area shape="rect" id="node20" href="classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="1387,269,1581,299"/><area shape="rect" id="node22" href="classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1685,219,1851,248"/><area shape="rect" id="node29" href="classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1429,323,1539,352"/><area shape="rect" id="node24" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2700,268,2844,297"/><area shape="rect" id="node26" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="3360,584,3499,613"/><area shape="rect" id="node33" href="classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1136,563,1331,592"/><area shape="rect" id="node35" href="classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1380,627,1588,656"/><area shape="rect" id="node37" href="classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1660,563,1876,592"/><area shape="rect" id="node40" href="classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1661,427,1875,456"/><area shape="rect" id="node46" href="classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1639,488,1897,517"/><area shape="rect" id="node49" href="classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="2681,584,2863,613"/><area shape="rect" id="node59" href="classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1664,788,1872,817"/><area shape="rect" id="node84" href="classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1697,627,1839,656"/><area shape="rect" id="node42" href="classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1948,269,2145,299"/><area shape="rect" id="node51" href="classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2936,584,3067,613"/><area shape="rect" id="node54" href="classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2912,531,3091,560"/><area shape="rect" id="node56" href="classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="3140,531,3311,560"/><area shape="rect" id="node62" href="classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1957,788,2136,817"/><area shape="rect" id="node65" href="classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="2219,507,2357,536"/><area shape="rect" id="node68" href="classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2452,480,2609,509"/><area shape="rect" id="node71" href="classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2440,320,2621,349"/><area shape="rect" id="node74" href="classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2439,373,2623,403"/><area shape="rect" id="node78" href="classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2468,533,2593,563"/><area shape="rect" id="node81" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da" title="QucsApp::slotOpenRecent" alt="" coords="2441,427,2620,456"/><area shape="rect" id="node96" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="901,667,1011,696"/><area shape="rect" id="node98" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="1157,853,1309,883"/><area shape="rect" id="node100" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1411,892,1557,921"/><area shape="rect" id="node102" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1651,892,1885,921"/><area shape="rect" id="node108" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="2196,59,2380,88"/><area shape="rect" id="node110" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="2448,59,2613,88"/><area shape="rect" id="node113" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="2444,5,2617,35"/><area shape="rect" id="node118" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="2197,165,2379,195"/><area shape="rect" id="node120" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="2451,112,2611,141"/><area shape="rect" id="node123" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="2441,165,2620,195"/><area shape="rect" id="node128" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="864,64,1048,93"/></map>
+<area shape="rect" id="node3" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="385,125,516,155"/><area shape="rect" id="node48" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="196,73,335,103"/><area shape="rect" id="node5" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="616,33,725,63"/><area shape="rect" id="node21" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="593,112,748,141"/><area shape="rect" id="node34" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="595,165,747,195"/><area shape="rect" id="node44" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="567,219,775,248"/><area shape="rect" id="node7" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="841,33,993,63"/><area shape="rect" id="node9" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1075,5,1221,35"/><area shape="rect" id="node11" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1285,5,1520,35"/><area shape="rect" id="node13" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1992,31,2195,60"/><area shape="rect" id="node15" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1568,32,1739,61"/><area shape="rect" id="node18" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1788,83,1943,112"/><area shape="rect" id="node23" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="825,112,1009,141"/><area shape="rect" id="node25" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1065,59,1231,88"/><area shape="rect" id="node31" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1061,112,1235,141"/><area shape="rect" id="node27" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1331,139,1475,168"/><area shape="rect" id="node29" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1584,139,1723,168"/><area shape="rect" id="node36" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="827,165,1008,195"/><area shape="rect" id="node38" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="1068,165,1228,195"/><area shape="rect" id="node41" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1059,219,1237,248"/><area shape="rect" id="node46" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="825,219,1009,248"/><area shape="rect" id="node51" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="395,72,507,101"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a67723d08a0ec2f2f04241ca040fbac01"></a><!-- doxytag: member="Marker::graph" ref="a67723d08a0ec2f2f04241ca040fbac01" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGraph.html">Graph</a> const* <a class="el" href="classMarker.html#a67723d08a0ec2f2f04241ca040fbac01">Marker::graph</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00056">56</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a67723d08a0ec2f2f04241ca040fbac01_icgraph.png" border="0" usemap="#classMarker_a67723d08a0ec2f2f04241ca040fbac01_icgraph" alt=""/></div>
+<map name="classMarker_a67723d08a0ec2f2f04241ca040fbac01_icgraph" id="classMarker_a67723d08a0ec2f2f04241ca040fbac01_icgraph">
+<area shape="rect" id="node3" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff" title="SmithDiagram::extraMarkerText" alt="" coords="157,5,365,35"/></map>
 </div>
 </p>
 
@@ -393,20 +474,23 @@ Here is the caller graph for this function:</div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
+          <td><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00069">69</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch samples and comparing against click </p>
+<p>FIXME: should use ScrPoints instead. do not call calcCoordinate from here! </p>
+
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00083">83</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a2263a30efd44f198955bf313b4b3549b_cgraph.png" border="0" usemap="#classMarker_a2263a30efd44f198955bf313b4b3549b_cgraph" alt=""/></div>
 <map name="classMarker_a2263a30efd44f198955bf313b4b3549b_cgraph" id="classMarker_a2263a30efd44f198955bf313b4b3549b_cgraph">
-<area shape="rect" id="node3" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="179,88,291,117"/><area shape="rect" id="node5" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="364,59,503,88"/><area shape="rect" id="node13" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="389,5,477,35"/><area shape="rect" id="node15" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="351,427,516,456"/><area shape="rect" id="node17" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="373,480,493,509"/><area shape="rect" id="node19" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="169,243,300,272"/><area shape="rect" id="node7" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="567,217,785,247"/><area shape="rect" id="node11" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="607,85,745,115"/><area shape="rect" id="node9" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="835,217,997,247"/><area shape="rect" id="node24" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="367,216,500,245"/><area shape="rect" id="node26" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="368,269,499,299"/><area shape="rect" id="node28" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="368,373,499,403"/><area shape="rect" id="node30" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="373,163,493,192"/></map>
+<area shape="rect" id="node3" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="196,5,308,35"/><area shape="rect" id="node5" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="183,109,321,139"/><area shape="rect" id="node7" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="448,57,541,87"/><area shape="rect" id="node18" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="208,163,296,192"/><area shape="rect" id="node20" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="169,216,335,245"/><area shape="rect" id="node22" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="192,269,312,299"/><area shape="rect" id="node11" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="385,111,604,140"/><area shape="rect" id="node15" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="425,164,564,193"/><area shape="rect" id="node9" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="660,57,809,87"/><area shape="rect" id="node13" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="653,111,816,140"/></map>
 </div>
 </p>
 
@@ -415,7 +499,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a2263a30efd44f198955bf313b4b3549b_icgraph.png" border="0" usemap="#classMarker_a2263a30efd44f198955bf313b4b3549b_icgraph" alt=""/></div>
 <map name="classMarker_a2263a30efd44f198955bf313b4b3549b_icgraph" id="classMarker_a2263a30efd44f198955bf313b4b3549b_icgraph">
-<area shape="rect" id="node3" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="169,5,279,35"/><area shape="rect" id="node5" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="329,5,481,35"/><area shape="rect" id="node7" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="532,5,679,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="728,5,963,35"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1435,29,1637,59"/><area shape="rect" id="node13" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1011,31,1181,60"/><area shape="rect" id="node16" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1231,81,1385,111"/></map>
+<area shape="rect" id="node3" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="169,5,279,35"/><area shape="rect" id="node5" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="329,5,481,35"/><area shape="rect" id="node7" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="532,5,679,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="728,5,963,35"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1435,29,1637,59"/><area shape="rect" id="node13" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1011,31,1181,60"/><area shape="rect" id="node16" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1231,81,1385,111"/></map>
 </div>
 </p>
 
@@ -436,16 +520,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00459">459</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMarker_ae3517698696b07f5cfca4356344ea95d_icgraph.png" border="0" usemap="#classMarker_ae3517698696b07f5cfca4356344ea95d_icgraph" alt=""/></div>
-<map name="classMarker_ae3517698696b07f5cfca4356344ea95d_icgraph" id="classMarker_ae3517698696b07f5cfca4356344ea95d_icgraph">
-<area shape="rect" id="node3" href="classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="151,141,252,170"/><area shape="rect" id="node5" href="classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="303,141,473,170"/><area shape="rect" id="node7" href="classSchematic.html#a3027dd07fcd452dbd8057c424724e927" title="Schematic::pasteFromClipboard" alt="" coords="524,75,732,105"/><area shape="rect" id="node36" href="classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="540,325,716,354"/><area shape="rect" id="node69" href="classSchematic.html#a6feff77e818324694af2f744920906d2" title="Schematic::rebuild" alt="" coords="1308,141,1439,170"/><area shape="rect" id="node9" href="classSchematic.html#ae69f7cc190be752d90f0efc162e5e49f" title="Schematic::paste" alt="" coords="816,49,939,78"/><area shape="rect" id="node11" href="classMouseActions.html#a9dd9c4d4440c96b3904ece265eec090e" title="MouseActions::pasteElements" alt="" coords="1021,33,1221,62"/><area shape="rect" id="node13" href="classMouseActions.html#abebfe2ea6931da2987dcac5c3ef7eed0" title="MouseActions::MReleasePaste" alt="" coords="1271,33,1476,62"/><area shape="rect" id="node18" href="classQucsApp.html#a00d09cbe62124d2bef72e726f3e190da" title="QucsApp::slotEditPaste" alt="" coords="1840,33,2003,62"/><area shape="rect" id="node15" href="classMouseActions.html#a71851e20a1b1ce643c6bf7bd4fab87be" title="MouseActions::MMovePaste Moves components after paste from clipboard." alt="" coords="1556,33,1745,62"/><area shape="rect" id="node33" href="classSchematic.html#a9da597014d307f6e1186f116cad30918" title="Schematic::contentsMousePressEvent" alt="" coords="1527,86,1775,115"/><area shape="rect" id="node20" href="classMatchDialog.html#a483443856bdfafb9e51e510b2ec82621" title="MatchDialog::slotButtCreate" alt="" coords="2087,33,2273,62"/><area shape="rect" id="node24" href="classQucsApp.html#adca6dc371ca66a9d633d6ff2f6b42b4b" title="QucsApp::slotSelectLibComponent" alt="" coords="2067,86,2293,115"/><area shape="rect" id="node30" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2108,139,2252,169"/><area shape="rect" id="node22" href="classMatchDialog.html#ab97444ccb8028a6850745a2a6a1865e6" title="MatchDialog::MatchDialog" alt="" coords="2341,33,2517,62"/><area shape="rect" id="node26" href="classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2364,86,2495,115"/><area shape="rect" id="node28" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2565,113,2704,142"/><area shape="rect" id="node38" href="classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1572,246,1729,275"/><area shape="rect" id="node45" href="main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="1317,406,1429,435"/><area shape="rect" id="node54" href="classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="820,454,935,483"/><area shape="rect" id="node56" href="classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="781,325,973,354"/><area shape="rect" id="node40" href="classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="2089,270,2271,299"/><area shape="rect" id="node42" href="classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1824,297,2019,326"/><area shape="rect" id="node47" href="main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1613,353,1688,382"/><area shape="rect" id="node51" href="main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="1620,406,1681,435"/><area shape="rect" id="node49" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1896,379,1947,409"/><area shape="rect" id="node58" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="1027,299,1216,329"/><area shape="rect" id="node60" href="classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1283,246,1464,275"/><area shape="rect" id="node63" href="classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1279,353,1468,382"/><area shape="rect" id="node66" href="classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1287,299,1460,329"/><area shape="rect" id="node71" href="classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8" title="Schematic::undo" alt="" coords="1591,139,1711,169"/><area shape="rect" id="node76" href="classSchematic.html#ad129ff86a7b1d62375336ec68319b746" title="Schematic::redo" alt="" coords="1592,193,1709,222"/><area shape="rect" id="node73" href="classQucsApp.html#a3402c4b8427dd5e17d1c1dac2104b9dd" title="QucsApp::slotEditUndo" alt="" coords="1843,139,2000,169"/><area shape="rect" id="node78" href="classQucsApp.html#a1e46d8ab69669763f6cb298034759aad" title="QucsApp::slotEditRedo" alt="" coords="1843,193,2000,222"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00474">474</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 </div>
 </div>
@@ -463,14 +538,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00229">229</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00241">241</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_cgraph.png" border="0" usemap="#classMarker_a1e1641de9c3106318e8ab96d1bb9827b_cgraph" alt=""/></div>
 <map name="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_cgraph" id="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_cgraph">
-<area shape="rect" id="node3" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="196,5,415,35"/><area shape="rect" id="node7" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="236,59,375,88"/><area shape="rect" id="node5" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="464,5,627,35"/></map>
+<area shape="rect" id="node3" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="259,5,352,35"/><area shape="rect" id="node7" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="196,59,415,88"/><area shape="rect" id="node11" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="236,112,375,141"/><area shape="rect" id="node5" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="471,5,620,35"/><area shape="rect" id="node9" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="464,59,627,88"/></map>
 </div>
 </p>
 
@@ -479,7 +554,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_icgraph.png" border="0" usemap="#classMarker_a1e1641de9c3106318e8ab96d1bb9827b_icgraph" alt=""/></div>
 <map name="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_icgraph" id="classMarker_a1e1641de9c3106318e8ab96d1bb9827b_icgraph">
-<area shape="rect" id="node3" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="712,864,821,894"/><area shape="rect" id="node19" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="425,812,537,842"/><area shape="rect" id="node22" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="196,732,327,762"/><area shape="rect" id="node5" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="968,978,1120,1007"/><area shape="rect" id="node7" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1221,1023,1368,1052"/><area shape="rect" id="node9" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1461,1023,1696,1052"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="2241,972,2444,1002"/><area shape="rect" id="node13" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1772,971,1943,1000"/><area shape="rect" id="node16" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="2021,972,2176,1002"/><area shape="rect" id="node24" href="classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="391,706,572,735"/><area shape="rect" id="node110" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="404,254,559,283"/><area shape="rect" id="node120" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="405,474,557,503"/><area shape="rect" id="node130" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="377,759,585,788"/><area shape="rect" id="node26" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="961,832,1127,862"/><area shape="rect" id="node29" href="classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="679,499,855,528"/><area shape="rect" id="node44" href="classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="636,706,897,735"/><area shape="rect" id="node31" href="classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="953,215,1135,244"/><area shape="rect" id="node33" href="classMouseActions.html#aff7a89e7bb8ac00c53a0b35e72eb3c3d" title="MouseActions::MPressDelete" alt="" coords="1197,138,1392,167"/><area shape="rect" id="node35" href="classQucsApp.html#a5162ac9f0f565757a29292a1c5b7fb95" title="QucsApp::slotEditDelete" alt="" coords="1496,190,1661,219"/><area shape="rect" id="node42" href="classSchematic.html#a630d84fa227ff920ee7b436721f081ba" title="Schematic::cut" alt="" coords="1240,242,1349,271"/><area shape="rect" id="node37" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2513,346,2657,375"/><area shape="rect" id="node39" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="3173,611,3312,640"/><area shape="rect" id="node46" href="classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="947,732,1141,762"/><area shape="rect" id="node48" href="classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1191,668,1399,698"/><area shape="rect" id="node50" href="classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1471,858,1687,887"/><area shape="rect" id="node53" href="classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1472,795,1685,824"/><area shape="rect" id="node59" href="classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1449,736,1708,766"/><area shape="rect" id="node62" href="classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="2495,767,2676,796"/><area shape="rect" id="node72" href="classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1475,616,1683,646"/><area shape="rect" id="node99" href="classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1508,563,1649,592"/><area shape="rect" id="node55" href="classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1759,856,1956,886"/><area shape="rect" id="node64" href="classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2749,767,2880,796"/><area shape="rect" id="node67" href="classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2725,688,2904,718"/><area shape="rect" id="node69" href="classQucsApp.html#af6ba119183cfbf355a164e5890b2b89d" title="QucsApp::initCursorMenu" alt="" coords="2953,675,3124,704"/><area shape="rect" id="node75" href="classQucsApp.html#a3924e8c4441d1446641f930d7f407bef" title="QucsApp::slotChangeView" alt="" coords="1768,616,1947,646"/><area shape="rect" id="node78" href="classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636" title="QucsApp::gotoPage" alt="" coords="2029,611,2168,640"/><area shape="rect" id="node81" href="classQucsApp.html#a4638bd730cdb683a22bb1c09575ce116" title="QucsApp::slotFileOpen" alt="" coords="2264,399,2421,428"/><area shape="rect" id="node84" href="classQucsApp.html#aaa932be969df0dc6f0e60d7e192744fe" title="QucsApp::slotIntoHierarchy" alt="" coords="2252,452,2433,482"/><area shape="rect" id="node87" href="classQucsApp.html#a8d67b91c463a0cb89d93d39c90c8efff" title="QucsApp::slotPopHierarchy" alt="" coords="2251,506,2435,535"/><area shape="rect" id="node91" href="classQucsApp.html#aaf8acacb416542f58eff9aa1d6f8e398" title="QucsApp::editFile" alt="" coords="2280,767,2405,796"/><area shape="rect" id="node94" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da" title="QucsApp::slotOpenRecent" alt="" coords="2253,559,2432,588"/><area shape="rect" id="node97" href="classSchematic.html#a142ca9c584ca8627652640bfc7f50ff9" title="Schematic::contentsDropEvent" alt="" coords="2241,663,2444,692"/><area shape="rect" id="node112" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="2007,86,2191,115"/><area shape="rect" id="node114" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="2260,84,2425,114"/><area shape="rect" id="node117" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="2256,138,2429,167"/><area shape="rect" id="node122" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="2008,292,2189,322"/><area shape="rect" id="node124" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="2263,292,2423,322"/><area shape="rect" id="node127" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="2253,346,2432,375"/><area shape="rect" id="node132" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="675,810,859,839"/></map>
+<area shape="rect" id="node3" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="427,33,536,63"/><area shape="rect" id="node19" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="205,72,317,101"/><area shape="rect" id="node22" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="196,125,327,155"/><area shape="rect" id="node5" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="652,33,804,63"/><area shape="rect" id="node7" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="885,5,1032,35"/><area shape="rect" id="node9" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1096,5,1331,35"/><area shape="rect" id="node11" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1803,31,2005,60"/><area shape="rect" id="node13" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1379,32,1549,61"/><area shape="rect" id="node16" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1599,83,1753,112"/><area shape="rect" id="node25" href="classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="404,112,559,141"/><area shape="rect" id="node38" href="classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="405,165,557,195"/><area shape="rect" id="node48" href="classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="377,219,585,248"/><area shape="rect" id="node27" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="636,112,820,141"/><area shape="rect" id="node29" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="876,59,1041,88"/><area shape="rect" id="node35" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="872,112,1045,141"/><area shape="rect" id="node31" href="classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1141,139,1285,168"/><area shape="rect" id="node33" href="classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1395,139,1533,168"/><area shape="rect" id="node40" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="637,165,819,195"/><area shape="rect" id="node42" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="879,165,1039,195"/><area shape="rect" id="node45" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="869,219,1048,248"/><area shape="rect" id="node50" href="classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="636,219,820,248"/></map>
 </div>
 </p>
 
@@ -500,14 +575,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00251">251</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00264">264</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a6150328e5bf976d49753ba2764b27006_cgraph.png" border="0" usemap="#classMarker_a6150328e5bf976d49753ba2764b27006_cgraph" alt=""/></div>
 <map name="classMarker_a6150328e5bf976d49753ba2764b27006_cgraph" id="classMarker_a6150328e5bf976d49753ba2764b27006_cgraph">
-<area shape="rect" id="node3" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="429,5,517,35"/><area shape="rect" id="node5" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="209,213,340,243"/><area shape="rect" id="node7" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="404,109,543,139"/><area shape="rect" id="node9" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="607,71,825,100"/><area shape="rect" id="node13" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="647,136,785,165"/><area shape="rect" id="node15" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="413,213,533,243"/><area shape="rect" id="node18" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="407,267,540,296"/><area shape="rect" id="node20" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="408,320,539,349"/><area shape="rect" id="node22" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="408,373,539,403"/><area shape="rect" id="node24" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="413,427,533,456"/><area shape="rect" id="node26" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="391,480,556,509"/><area shape="rect" id="node11" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="875,71,1037,100"/></map>
+<area shape="rect" id="node3" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="680,27,768,56"/><area shape="rect" id="node5" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="209,289,340,319"/><area shape="rect" id="node7" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="408,392,547,421"/><area shape="rect" id="node9" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="677,296,771,325"/><area shape="rect" id="node13" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="615,373,833,403"/><area shape="rect" id="node17" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="655,439,793,468"/><area shape="rect" id="node19" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="417,496,537,525"/><area shape="rect" id="node21" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="412,27,543,56"/><area shape="rect" id="node25" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="411,549,544,579"/><area shape="rect" id="node27" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="412,603,543,632"/><area shape="rect" id="node29" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="412,80,543,109"/><area shape="rect" id="node32" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="391,133,564,163"/><area shape="rect" id="node34" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="395,187,560,216"/><area shape="rect" id="node11" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="889,296,1039,325"/><area shape="rect" id="node15" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="883,373,1045,403"/></map>
 </div>
 </p>
 
@@ -537,14 +612,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00280">280</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00293">293</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a770bc6407c6f19d4ea724e4b8168a710_cgraph.png" border="0" usemap="#classMarker_a770bc6407c6f19d4ea724e4b8168a710_cgraph" alt=""/></div>
 <map name="classMarker_a770bc6407c6f19d4ea724e4b8168a710_cgraph" id="classMarker_a770bc6407c6f19d4ea724e4b8168a710_cgraph">
-<area shape="rect" id="node3" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="429,5,517,35"/><area shape="rect" id="node5" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="209,213,340,243"/><area shape="rect" id="node7" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="404,109,543,139"/><area shape="rect" id="node9" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="607,71,825,100"/><area shape="rect" id="node13" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="647,136,785,165"/><area shape="rect" id="node15" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="413,213,533,243"/><area shape="rect" id="node18" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="407,267,540,296"/><area shape="rect" id="node20" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="408,320,539,349"/><area shape="rect" id="node22" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="408,373,539,403"/><area shape="rect" id="node24" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="413,427,533,456"/><area shape="rect" id="node26" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="391,480,556,509"/><area shape="rect" id="node11" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="875,71,1037,100"/></map>
+<area shape="rect" id="node3" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="680,27,768,56"/><area shape="rect" id="node5" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="209,289,340,319"/><area shape="rect" id="node7" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="408,392,547,421"/><area shape="rect" id="node9" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="677,296,771,325"/><area shape="rect" id="node13" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="615,373,833,403"/><area shape="rect" id="node17" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="655,439,793,468"/><area shape="rect" id="node19" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="417,496,537,525"/><area shape="rect" id="node21" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="412,27,543,56"/><area shape="rect" id="node25" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="411,549,544,579"/><area shape="rect" id="node27" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="412,603,543,632"/><area shape="rect" id="node29" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="412,80,543,109"/><area shape="rect" id="node32" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="391,133,564,163"/><area shape="rect" id="node34" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="395,187,560,216"/><area shape="rect" id="node11" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="889,296,1039,325"/><area shape="rect" id="node15" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="883,373,1045,403"/></map>
 </div>
 </p>
 
@@ -590,7 +665,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00334">334</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00347">347</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -629,7 +704,16 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classElement.html#a8389b3303cc1ec8f8dd93d5472b9f2e8">Element</a>.</p>
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00390">390</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00403">403</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a0fe55e266cd891600772ce26d1dafdf0_cgraph.png" border="0" usemap="#classMarker_a0fe55e266cd891600772ce26d1dafdf0_cgraph" alt=""/></div>
+<map name="classMarker_a0fe55e266cd891600772ce26d1dafdf0_cgraph" id="classMarker_a0fe55e266cd891600772ce26d1dafdf0_cgraph">
+<area shape="rect" id="node3" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="201,5,295,35"/><area shape="rect" id="node5" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="345,5,495,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -647,7 +731,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00049">49</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00061">61</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -674,14 +758,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00051">51</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00063">63</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a7afbcdee29443013516c148c96ca2913_icgraph.png" border="0" usemap="#classMarker_a7afbcdee29443013516c148c96ca2913_icgraph" alt=""/></div>
 <map name="classMarker_a7afbcdee29443013516c148c96ca2913_icgraph" id="classMarker_a7afbcdee29443013516c148c96ca2913_icgraph">
-<area shape="rect" id="node3" href="classQucsApp.html#a4e4db0782f2168e9b6c4a63f7b5d6b67" title="QucsApp::slotPowerMatching" alt="" coords="176,5,371,35"/></map>
+<area shape="rect" id="node3" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff" title="SmithDiagram::extraMarkerText" alt="" coords="176,5,384,35"/><area shape="rect" id="node5" href="classQucsApp.html#a4e4db0782f2168e9b6c4a63f7b5d6b67" title="QucsApp::slotPowerMatching" alt="" coords="183,59,377,88"/></map>
 </div>
 </p>
 
@@ -701,14 +785,41 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00050">50</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00062">62</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_a9bbd3f0bd40a05deca0f542e351d8b68_icgraph.png" border="0" usemap="#classMarker_a9bbd3f0bd40a05deca0f542e351d8b68_icgraph" alt=""/></div>
 <map name="classMarker_a9bbd3f0bd40a05deca0f542e351d8b68_icgraph" id="classMarker_a9bbd3f0bd40a05deca0f542e351d8b68_icgraph">
-<area shape="rect" id="node3" href="classQucsApp.html#a4e4db0782f2168e9b6c4a63f7b5d6b67" title="QucsApp::slotPowerMatching" alt="" coords="176,5,371,35"/></map>
+<area shape="rect" id="node3" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff" title="SmithDiagram::extraMarkerText" alt="" coords="176,5,384,35"/><area shape="rect" id="node5" href="classQucsApp.html#a4e4db0782f2168e9b6c4a63f7b5d6b67" title="QucsApp::slotPowerMatching" alt="" coords="183,59,377,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a192aeb8baf2530ca32de4183166deb48"></a><!-- doxytag: member="Marker::precision" ref="a192aeb8baf2530ca32de4183166deb48" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classMarker.html#a192aeb8baf2530ca32de4183166deb48">Marker::precision</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00057">57</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a192aeb8baf2530ca32de4183166deb48_icgraph.png" border="0" usemap="#classMarker_a192aeb8baf2530ca32de4183166deb48_icgraph" alt=""/></div>
+<map name="classMarker_a192aeb8baf2530ca32de4183166deb48_icgraph" id="classMarker_a192aeb8baf2530ca32de4183166deb48_icgraph">
+<area shape="rect" id="node3" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff" title="SmithDiagram::extraMarkerText" alt="" coords="176,5,384,35"/></map>
 </div>
 </p>
 
@@ -729,14 +840,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00523">523</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00545">545</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMarker_af53dc7a7a37c59945767fa9cc4a5be09_cgraph.png" border="0" usemap="#classMarker_af53dc7a7a37c59945767fa9cc4a5be09_cgraph" alt=""/></div>
 <map name="classMarker_af53dc7a7a37c59945767fa9cc4a5be09_cgraph" id="classMarker_af53dc7a7a37c59945767fa9cc4a5be09_cgraph">
-<area shape="rect" id="node3" href="classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="209,113,319,143"/><area shape="rect" id="node5" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="727,5,865,35"/><area shape="rect" id="node13" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="369,213,481,243"/><area shape="rect" id="node7" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="929,32,1148,61"/><area shape="rect" id="node11" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="969,136,1108,165"/><area shape="rect" id="node9" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1197,32,1360,61"/><area shape="rect" id="node15" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="541,267,653,296"/><area shape="rect" id="node18" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="752,59,840,88"/><area shape="rect" id="node20" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="713,427,879,456"/><area shape="rect" id="node22" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="736,480,856,509"/><area shape="rect" id="node24" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="532,213,663,243"/><area shape="rect" id="node29" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="729,213,863,243"/><area shape="rect" id="node31" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="731,267,861,296"/><area shape="rect" id="node33" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="731,320,861,349"/><area shape="rect" id="node35" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="736,373,856,403"/></map>
+<area shape="rect" id="node3" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="209,161,319,191"/><area shape="rect" id="node5" href="classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="568,109,707,139"/><area shape="rect" id="node17" href="classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="379,161,491,191"/><area shape="rect" id="node29" href="classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="369,421,500,451"/><area shape="rect" id="node7" href="classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="837,109,931,139"/><area shape="rect" id="node11" href="classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="775,267,993,296"/><area shape="rect" id="node15" href="classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="815,424,953,453"/><area shape="rect" id="node9" href="classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="1049,109,1199,139"/><area shape="rect" id="node13" href="classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1043,267,1205,296"/><area shape="rect" id="node19" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="581,5,693,35"/><area shape="rect" id="node23" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="840,684,928,713"/><area shape="rect" id="node25" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="555,267,720,296"/><area shape="rect" id="node27" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="577,213,697,243"/><area shape="rect" id="node33" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="572,736,703,765"/><area shape="rect" id="node37" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="571,421,704,451"/><area shape="rect" id="node39" href="namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="572,475,703,504"/><area shape="rect" id="node41" href="namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="572,528,703,557"/><area shape="rect" id="node44" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="551,581,724,611"/></map>
 </div>
 </p>
 
@@ -765,7 +876,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00440">440</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00454">454</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -811,26 +922,38 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classElement.html#a89220202f70fedb96d17373c42ce8d74">Element</a>.</p>
 
-<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00412">412</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="marker_8cpp_source.html#l00426">426</a> of file <a class="el" href="marker_8cpp_source.html">marker.cpp</a>.</p>
 
 </div>
 </div>
-<hr/><h2>Field Documentation</h2>
-<a class="anchor" id="a11619d04839139e1f7aa475774f17797"></a><!-- doxytag: member="Marker::Diag" ref="a11619d04839139e1f7aa475774f17797" args="" -->
+<a class="anchor" id="a4fb36f399bda0415b3e4adf0a933a12e"></a><!-- doxytag: member="Marker::varPos" ref="a4fb36f399bda0415b3e4adf0a933a12e" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDiagram.html">Diagram</a>* <a class="el" href="classMarker.html#a11619d04839139e1f7aa475774f17797">Marker::Diag</a></td>
+          <td class="memname">std::vector&lt;double&gt; const&amp; <a class="el" href="classMarker.html#a4fb36f399bda0415b3e4adf0a933a12e">Marker::varPos</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00053">53</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00058">58</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMarker_a4fb36f399bda0415b3e4adf0a933a12e_icgraph.png" border="0" usemap="#classMarker_a4fb36f399bda0415b3e4adf0a933a12e_icgraph" alt=""/></div>
+<map name="classMarker_a4fb36f399bda0415b3e4adf0a933a12e_icgraph" id="classMarker_a4fb36f399bda0415b3e4adf0a933a12e_icgraph">
+<area shape="rect" id="node3" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff" title="SmithDiagram::extraMarkerText" alt="" coords="165,5,373,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
+<hr/><h2>Field Documentation</h2>
 <a class="anchor" id="a98a5a01f6cce80d9419d21d22f3661f3"></a><!-- doxytag: member="Marker::fCX" ref="a98a5a01f6cce80d9419d21d22f3661f3" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -842,7 +965,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00059">59</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00071">71</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +980,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00059">59</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00071">71</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -872,22 +995,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00066">66</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aec1984afd1871bec0946fb45ed1c5297"></a><!-- doxytag: member="Marker::nVarPos" ref="aec1984afd1871bec0946fb45ed1c5297" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classMarker.html#aec1984afd1871bec0946fb45ed1c5297">Marker::nVarPos</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00057">57</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00079">79</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +1010,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00054">54</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00066">66</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -917,7 +1025,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00065">65</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00078">78</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +1040,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00062">62</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00074">74</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -947,22 +1055,37 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00063">63</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00075">75</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a46f25e89dac8ad0aca172146228c94b5"></a><!-- doxytag: member="Marker::VarPos" ref="a46f25e89dac8ad0aca172146228c94b5" args="" -->
+<a class="anchor" id="a2624b679b22e7222558c973e1b1c1b95"></a><!-- doxytag: member="Marker::VarDep" ref="a2624b679b22e7222558c973e1b1c1b95" args="[2]" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* <a class="el" href="classMarker.html#a46f25e89dac8ad0aca172146228c94b5">Marker::VarPos</a><code> [private]</code></td>
+          <td class="memname">double <a class="el" href="classMarker.html#a2624b679b22e7222558c973e1b1c1b95">Marker::VarDep</a>[2]<code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00058">58</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00070">70</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac361fd5833361f41e138d8723b0e48ed"></a><!-- doxytag: member="Marker::VarPos" ref="ac361fd5833361f41e138d8723b0e48ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; <a class="el" href="classMarker.html#ac361fd5833361f41e138d8723b0e48ed">Marker::VarPos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00069">69</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1100,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="marker_8h_source.html#l00067">67</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
+<p>Definition at line <a class="el" href="marker_8h_source.html#l00082">82</a> of file <a class="el" href="marker_8h_source.html">marker.h</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1126,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:43 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

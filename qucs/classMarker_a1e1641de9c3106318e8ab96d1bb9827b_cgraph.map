@@ -1,5 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="196,5,415,35"/>
-<area shape="rect" id="node7" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="236,59,375,88"/>
-<area shape="rect" id="node5" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="464,5,627,35"/>
+<area shape="rect" id="node3" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="259,5,352,35"/>
+<area shape="rect" id="node7" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="196,59,415,88"/>
+<area shape="rect" id="node11" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="236,112,375,141"/>
+<area shape="rect" id="node5" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="471,5,620,35"/>
+<area shape="rect" id="node9" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="464,59,627,88"/>
 </map>

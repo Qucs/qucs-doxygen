@@ -3,7 +3,8 @@
 <area shape="rect" id="node5" href="$classTruthDiagram.html#a05a92cb576acbfe2819cb57637336e9f" title="TruthDiagram::calcDiagram" alt="" coords="449,85,631,115"/>
 <area shape="rect" id="node7" href="$classDiagram.html#aa85d506db3e26f6522e472d36c9e3ccb" title="Diagram::checkColumnWidth" alt="" coords="681,5,873,35"/>
 <area shape="rect" id="node9" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="721,59,833,88"/>
-<area shape="rect" id="node11" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="733,112,821,141"/>
-<area shape="rect" id="node13" href="$classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables." alt="" coords="680,165,875,195"/>
-<area shape="rect" id="node15" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="923,165,1069,195"/>
+<area shape="rect" id="node11" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1097,164,1185,193"/>
+<area shape="rect" id="node13" href="$classDiagram.html#a7ea12d540afb7c9233bfeb7c4fcc76fe" title="Checks if the two graphs have the same independent variables." alt="" coords="680,163,875,192"/>
+<area shape="rect" id="node15" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="925,163,1045,192"/>
+<area shape="rect" id="node17" href="$classGraph.html#a869825b726f992c231c337386f95f435" title="Graph::axisName" alt="" coords="924,216,1047,245"/>
 </map>

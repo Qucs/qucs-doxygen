@@ -17,7 +17,7 @@
 <area shape="rect" id="node5" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1601,303,1740,332"/>
 <area shape="rect" id="node7" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="560,292,717,322"/>
 <area shape="rect" id="node9" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="569,346,708,375"/>
-<area shape="rect" id="node11" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="572,239,705,268"/>
+<area shape="rect" id="node11" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="572,239,705,268"/>
 <area shape="rect" id="node16" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="820,544,1028,574"/>
 <area shape="rect" id="node23" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="1077,467,1309,496"/>
 <area shape="rect" id="node20" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="1104,544,1283,574"/>

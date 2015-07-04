@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="127,3659,215,3688"/>
 <area shape="rect" id="node355" href="$classConductor.html" title="label for Node and Wire classes" alt="" coords="129,7365,212,7395"/>
 <area shape="rect" id="node361" href="$classDiagram.html" title="The Diagram class is a superclass for diagrams." alt="" coords="136,7579,205,7608"/>
-<area shape="rect" id="node381" href="$classGraph.html" title="Graph" alt="" coords="143,7632,199,7661"/>
+<area shape="rect" id="node381" href="$classGraph.html" title="prepare data for plotting purposes in Diagram." alt="" coords="143,7632,199,7661"/>
 <area shape="rect" id="node383" href="$classMarker.html" title="The Marker class implements the marker object used for all the diagram." alt="" coords="140,7685,201,7715"/>
 <area shape="rect" id="node385" href="$classPainting.html" title="Painting" alt="" coords="136,7925,205,7955"/>
 <area shape="rect" id="node403" href="$classWireLabel.html" title="WireLabel" alt="" coords="131,7979,211,8008"/>

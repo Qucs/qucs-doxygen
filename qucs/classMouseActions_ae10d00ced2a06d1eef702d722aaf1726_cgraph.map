@@ -1,6 +1,7 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSchematic.html#a2ef58bb2ee5e4fa2f05f819325758c79" title="Schematic::setMarker" alt="" coords="260,112,409,141"/>
-<area shape="rect" id="node30" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="253,165,416,195"/>
+<area shape="rect" id="node30" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="288,165,381,195"/>
+<area shape="rect" id="node34" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="253,219,416,248"/>
 <area shape="rect" id="node5" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="464,112,627,141"/>
 <area shape="rect" id="node7" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="695,5,892,35"/>
 <area shape="rect" id="node9" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="675,59,912,88"/>
@@ -13,4 +14,5 @@
 <area shape="rect" id="node23" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="969,272,1076,301"/>
 <area shape="rect" id="node25" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1133,272,1227,301"/>
 <area shape="rect" id="node27" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1275,272,1373,301"/>
+<area shape="rect" id="node32" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="471,165,620,195"/>
 </map>

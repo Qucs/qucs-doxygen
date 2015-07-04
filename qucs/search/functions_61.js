@@ -24,5 +24,6 @@ var searchData=
   ['arrow',['Arrow',['../classArrow.html#a34acd71904bf918ca11ebe9208739a4c',1,'Arrow']]],
   ['arrowdialog',['ArrowDialog',['../classArrowDialog.html#a71f57bdcd88bda37af0cb279eac0bf65',1,'ArrowDialog']]],
   ['attenuator',['Attenuator',['../classAttenuator.html#a03e32d165cab907fbf8174185defba72',1,'Attenuator']]],
-  ['axis',['axis',['../classGraph.html#ac40011f8360814a34ee99a232d399f1c',1,'Graph']]]
+  ['axis',['axis',['../classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f',1,'Graph']]],
+  ['axisname',['axisName',['../classGraph.html#a869825b726f992c231c337386f95f435',1,'Graph']]]
 ];

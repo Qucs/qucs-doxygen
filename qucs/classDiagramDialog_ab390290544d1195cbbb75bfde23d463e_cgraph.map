@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="765,107,1000,136"/>
-<area shape="rect" id="node15" href="$classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="260,313,476,343"/>
-<area shape="rect" id="node17" href="$classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode." alt="" coords="260,367,476,396"/>
-<area shape="rect" id="node19" href="$classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23" title="DiagramDialog::slotSetColor" alt="" coords="275,420,461,449"/>
-<area shape="rect" id="node21" href="$classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox)." alt="" coords="257,473,479,503"/>
-<area shape="rect" id="node25" href="$classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph." alt="" coords="272,633,464,663"/>
-<area shape="rect" id="node27" href="$classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision." alt="" coords="273,687,463,716"/>
-<area shape="rect" id="node29" href="$classDiagramDialog.html#ab7d75d8969ca88fe4e7c45b52be90ad6" title="DiagramDialog::slotReadVars" alt="" coords="271,740,465,769"/>
-<area shape="rect" id="node31" href="$classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="275,527,461,556"/>
-<area shape="rect" id="node34" href="$classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="264,793,472,823"/>
-<area shape="rect" id="node36" href="$classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="529,819,716,848"/>
-<area shape="rect" id="node38" href="$classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed." alt="" coords="263,897,473,927"/>
-<area shape="rect" id="node40" href="$classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec" title="DiagramDialog::slotNewGraph" alt="" coords="269,580,467,609"/>
-<area shape="rect" id="node43" href="$classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f" title="DiagramDialog::slotSetGridColor" alt="" coords="263,951,473,980"/>
-<area shape="rect" id="node45" href="$classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed." alt="" coords="267,1004,469,1033"/>
-<area shape="rect" id="node47" href="$classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed." alt="" coords="271,1057,465,1087"/>
-<area shape="rect" id="node49" href="$classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1111,463,1140"/>
-<area shape="rect" id="node51" href="$classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed." alt="" coords="271,1164,465,1193"/>
-<area shape="rect" id="node53" href="$classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1217,463,1247"/>
-<area shape="rect" id="node55" href="$classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed." alt="" coords="272,1271,464,1300"/>
-<area shape="rect" id="node57" href="$classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1324,463,1353"/>
-<area shape="rect" id="node59" href="$classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b" title="DiagramDialog::slotManualX" alt="" coords="275,1377,461,1407"/>
-<area shape="rect" id="node61" href="$classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd" title="DiagramDialog::slotManualY" alt="" coords="275,1431,461,1460"/>
-<area shape="rect" id="node63" href="$classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633" title="DiagramDialog::slotManualZ" alt="" coords="275,1484,461,1513"/>
-<area shape="rect" id="node65" href="$classDiagram.html#a0e0a9af9ed985597a036805cff016b6b" title="Diagram::calcLimits" alt="" coords="299,1537,437,1567"/>
-<area shape="rect" id="node67" href="$classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes." alt="" coords="267,1591,469,1620"/>
-<area shape="rect" id="node69" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="291,209,445,239"/>
-<area shape="rect" id="node71" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="537,159,708,188"/>
-<area shape="rect" id="node110" href="$classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44" title="DiagramDialog::slotCancel" alt="" coords="533,237,712,267"/>
-<area shape="rect" id="node5" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1065,59,1212,88"/>
-<area shape="rect" id="node7" href="$classGraph.html#a8c84da504b1de4f0e7adc5dd8b63affb" title="Graph::Graph" alt="" coords="1317,5,1416,35"/>
-<area shape="rect" id="node9" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="1291,59,1443,88"/>
-<area shape="rect" id="node11" href="$classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="1535,73,1644,103"/>
-<area shape="rect" id="node13" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="1727,107,1865,136"/>
-<area shape="rect" id="node23" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="573,527,672,556"/>
-<area shape="rect" id="node73" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="800,292,965,321"/>
-<area shape="rect" id="node75" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="1301,429,1432,459"/>
-<area shape="rect" id="node88" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="1060,339,1217,368"/>
-<area shape="rect" id="node91" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1048,245,1229,275"/>
-<area shape="rect" id="node77" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="1723,429,1869,459"/>
-<area shape="rect" id="node79" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="1545,324,1633,353"/>
-<area shape="rect" id="node81" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1545,431,1633,460"/>
-<area shape="rect" id="node83" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1529,219,1649,248"/>
-<area shape="rect" id="node85" href="$classGraph.html#a09882db7926c0ab1c8c900954fd24a0a" title="Reads the data of an independent variable." alt="" coords="1505,377,1673,407"/>
-<area shape="rect" id="node93" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1291,272,1443,301"/>
-<area shape="rect" id="node95" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1320,112,1413,141"/>
-<area shape="rect" id="node97" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1301,219,1432,248"/>
-<area shape="rect" id="node101" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="1277,325,1456,355"/>
-<area shape="rect" id="node104" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="1301,165,1432,195"/>
+<area shape="rect" id="node3" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="765,527,1000,556"/>
+<area shape="rect" id="node13" href="$classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="260,61,476,91"/>
+<area shape="rect" id="node15" href="$classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode." alt="" coords="260,115,476,144"/>
+<area shape="rect" id="node17" href="$classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23" title="DiagramDialog::slotSetColor" alt="" coords="275,168,461,197"/>
+<area shape="rect" id="node19" href="$classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox)." alt="" coords="257,221,479,251"/>
+<area shape="rect" id="node23" href="$classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph." alt="" coords="272,275,464,304"/>
+<area shape="rect" id="node25" href="$classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision." alt="" coords="273,328,463,357"/>
+<area shape="rect" id="node27" href="$classDiagramDialog.html#ab7d75d8969ca88fe4e7c45b52be90ad6" title="DiagramDialog::slotReadVars" alt="" coords="271,381,465,411"/>
+<area shape="rect" id="node29" href="$classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="275,435,461,464"/>
+<area shape="rect" id="node32" href="$classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="264,541,472,571"/>
+<area shape="rect" id="node34" href="$classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="529,593,716,623"/>
+<area shape="rect" id="node36" href="$classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed." alt="" coords="263,595,473,624"/>
+<area shape="rect" id="node38" href="$classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec" title="DiagramDialog::slotNewGraph" alt="" coords="269,488,467,517"/>
+<area shape="rect" id="node41" href="$classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f" title="DiagramDialog::slotSetGridColor" alt="" coords="263,699,473,728"/>
+<area shape="rect" id="node43" href="$classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed." alt="" coords="267,752,469,781"/>
+<area shape="rect" id="node45" href="$classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed." alt="" coords="271,805,465,835"/>
+<area shape="rect" id="node47" href="$classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,859,463,888"/>
+<area shape="rect" id="node49" href="$classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed." alt="" coords="271,912,465,941"/>
+<area shape="rect" id="node51" href="$classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,965,463,995"/>
+<area shape="rect" id="node53" href="$classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed." alt="" coords="272,1019,464,1048"/>
+<area shape="rect" id="node55" href="$classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1072,463,1101"/>
+<area shape="rect" id="node57" href="$classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b" title="DiagramDialog::slotManualX" alt="" coords="275,1125,461,1155"/>
+<area shape="rect" id="node59" href="$classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd" title="DiagramDialog::slotManualY" alt="" coords="275,1179,461,1208"/>
+<area shape="rect" id="node61" href="$classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633" title="DiagramDialog::slotManualZ" alt="" coords="275,1232,461,1261"/>
+<area shape="rect" id="node63" href="$classDiagram.html#a0e0a9af9ed985597a036805cff016b6b" title="Diagram::calcLimits" alt="" coords="299,1285,437,1315"/>
+<area shape="rect" id="node65" href="$classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes." alt="" coords="267,1339,469,1368"/>
+<area shape="rect" id="node67" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="291,1443,445,1472"/>
+<area shape="rect" id="node69" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="537,1391,708,1420"/>
+<area shape="rect" id="node106" href="$classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44" title="DiagramDialog::slotCancel" alt="" coords="533,1469,712,1499"/>
+<area shape="rect" id="node5" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1065,527,1212,556"/>
+<area shape="rect" id="node7" href="$classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e" title="Graph::Graph" alt="" coords="1317,553,1416,583"/>
+<area shape="rect" id="node9" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="1291,500,1443,529"/>
+<area shape="rect" id="node11" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="1535,500,1644,529"/>
+<area shape="rect" id="node21" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="573,435,672,464"/>
+<area shape="rect" id="node71" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="800,1391,965,1420"/>
+<area shape="rect" id="node73" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="1301,1231,1432,1260"/>
+<area shape="rect" id="node87" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="1060,1496,1217,1525"/>
+<area shape="rect" id="node90" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1048,1391,1229,1420"/>
+<area shape="rect" id="node75" href="$classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="1516,1257,1663,1287"/>
+<area shape="rect" id="node77" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1545,1404,1633,1433"/>
+<area shape="rect" id="node79" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1545,1097,1633,1127"/>
+<area shape="rect" id="node81" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1529,1311,1649,1340"/>
+<area shape="rect" id="node83" href="$classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="1505,1151,1673,1180"/>
+<area shape="rect" id="node85" href="$classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="1519,1204,1660,1233"/>
+<area shape="rect" id="node92" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1291,1337,1443,1367"/>
+<area shape="rect" id="node94" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1320,1391,1413,1420"/>
+<area shape="rect" id="node96" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1301,1284,1432,1313"/>
+<area shape="rect" id="node100" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="1277,1444,1456,1473"/>
+<area shape="rect" id="node103" href="$classGraph.html#a091ec6252a393994dc00fb221abe608e" title="Graph::createMarkerText" alt="" coords="1284,1497,1449,1527"/>
 </map>

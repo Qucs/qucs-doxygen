@@ -1,19 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classGraph.html#a8c84da504b1de4f0e7adc5dd8b63affb" title="Graph::Graph" alt="" coords="231,60,329,89"/>
-<area shape="rect" id="node5" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="204,113,356,143"/>
-<area shape="rect" id="node7" href="$classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="407,113,516,143"/>
-<area shape="rect" id="node9" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="924,5,1063,35"/>
-<area shape="rect" id="node17" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="567,213,679,243"/>
-<area shape="rect" id="node11" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="1127,32,1345,61"/>
-<area shape="rect" id="node15" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="1167,136,1305,165"/>
-<area shape="rect" id="node13" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1395,32,1557,61"/>
-<area shape="rect" id="node19" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="739,267,851,296"/>
-<area shape="rect" id="node22" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="949,59,1037,88"/>
-<area shape="rect" id="node24" href="$classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="911,427,1076,456"/>
-<area shape="rect" id="node26" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="933,480,1053,509"/>
-<area shape="rect" id="node28" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="729,213,860,243"/>
-<area shape="rect" id="node33" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="927,213,1060,243"/>
-<area shape="rect" id="node35" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="928,267,1059,296"/>
-<area shape="rect" id="node37" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="928,320,1059,349"/>
-<area shape="rect" id="node39" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="933,373,1053,403"/>
+<area shape="rect" id="node3" href="$classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e" title="Graph::Graph" alt="" coords="231,108,329,137"/>
+<area shape="rect" id="node5" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="204,161,356,191"/>
+<area shape="rect" id="node7" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="407,161,516,191"/>
+<area shape="rect" id="node9" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="765,109,904,139"/>
+<area shape="rect" id="node21" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="576,161,688,191"/>
+<area shape="rect" id="node33" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="567,421,697,451"/>
+<area shape="rect" id="node11" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="1035,109,1128,139"/>
+<area shape="rect" id="node15" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="972,267,1191,296"/>
+<area shape="rect" id="node19" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="1012,424,1151,453"/>
+<area shape="rect" id="node13" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="1247,109,1396,139"/>
+<area shape="rect" id="node17" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1240,267,1403,296"/>
+<area shape="rect" id="node23" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="779,5,891,35"/>
+<area shape="rect" id="node27" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1037,684,1125,713"/>
+<area shape="rect" id="node29" href="$classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="752,267,917,296"/>
+<area shape="rect" id="node31" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="775,213,895,243"/>
+<area shape="rect" id="node37" href="$classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="769,736,900,765"/>
+<area shape="rect" id="node41" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="768,421,901,451"/>
+<area shape="rect" id="node43" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="769,475,900,504"/>
+<area shape="rect" id="node45" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="769,528,900,557"/>
+<area shape="rect" id="node48" href="$classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="748,581,921,611"/>
 </map>

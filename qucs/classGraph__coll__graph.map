@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="33,5,151,299"/>
+<area shape="rect" id="node2" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="8,5,125,299"/>
+<area shape="rect" id="node4" href="$classDiagram.html" title="The Diagram class is a superclass for diagrams." alt="" coords="91,400,333,1075"/>
+<area shape="rect" id="node7" href="$structAxis.html" title="{Axis\n|+ min\l+ max\l+ low\l+ up\l+ log\l+ Label\l+ numGraphs\l+ GridOn\l+ autoScale\l+ limit_min\l+ limit_max\l+ step\l|}" alt="" coords="161,14,263,290"/>
 </map>

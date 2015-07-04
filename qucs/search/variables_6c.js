@@ -6,7 +6,7 @@ var searchData=
   ['label3',['Label3',['../classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91',1,'DiagramDialog']]],
   ['label4',['Label4',['../classDiagramDialog.html#a014011532c95067f856f46cb0343aa42',1,'DiagramDialog']]],
   ['langdir',['LangDir',['../structtQucsSettings.html#aa17136c482736527b696541fec796696',1,'tQucsSettings']]],
-  ['language',['language',['../classSyntaxHighlighter.html#ae35818eb1afa62920f0b80844b5287f3',1,'SyntaxHighlighter::language()'],['../classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47',1,'TextDoc::language()'],['../structtQucsSettings.html#a4a31355bf3b2275a5005ea88b1cdd789',1,'tQucsSettings::Language()']]],
+  ['language',['Language',['../structtQucsSettings.html#a4a31355bf3b2275a5005ea88b1cdd789',1,'tQucsSettings::Language()'],['../classSyntaxHighlighter.html#ae35818eb1afa62920f0b80844b5287f3',1,'SyntaxHighlighter::language()'],['../classTextDoc.html#a04400d3d2c27d17c1b0239acca0cee47',1,'TextDoc::language()']]],
   ['languagecombo',['LanguageCombo',['../classQucsSettingsDialog.html#a259b2ba883601c89406d97e1cb607f16',1,'QucsSettingsDialog']]],
   ['largefontsize',['largeFontSize',['../structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da',1,'tQucsSettings']]],
   ['largefontsizeedit',['LargeFontSizeEdit',['../classQucsSettingsDialog.html#a7202230ada34da42224b092a4de3daf6',1,'QucsSettingsDialog']]],

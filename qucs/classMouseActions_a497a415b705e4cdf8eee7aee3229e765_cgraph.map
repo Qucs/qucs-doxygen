@@ -10,7 +10,7 @@
 <area shape="rect" id="node72" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="257,797,420,827"/>
 <area shape="rect" id="node7" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="515,59,672,88"/>
 <area shape="rect" id="node9" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="524,112,663,141"/>
-<area shape="rect" id="node11" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="527,165,660,195"/>
+<area shape="rect" id="node11" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="527,165,660,195"/>
 <area shape="rect" id="node15" href="$classSchematic.html#aef44df3452adc6debb8d478254638332" title="Schematic::oneTwoWires" alt="" coords="508,536,679,565"/>
 <area shape="rect" id="node19" href="$classSchematic.html#abe642712ea21fd452ebad784ccedfa38" title="Schematic::insertNode" alt="" coords="516,272,671,301"/>
 <area shape="rect" id="node23" href="$classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc" title="Schematic::insertNodeLabel" alt="" coords="500,219,687,248"/>

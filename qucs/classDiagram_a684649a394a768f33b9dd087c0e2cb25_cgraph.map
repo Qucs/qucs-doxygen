@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#a75cdf020f8c54e3389744f1053883491" title="Diagram::getSelected" alt="" coords="193,5,340,35"/>
-<area shape="rect" id="node5" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="200,59,333,88"/>
+<area shape="rect" id="node3" href="$classDiagram.html#a75cdf020f8c54e3389744f1053883491" title="Diagram::getSelected" alt="" coords="195,5,341,35"/>
+<area shape="rect" id="node5" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="201,59,335,88"/>
+<area shape="rect" id="node7" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="193,112,343,141"/>
 </map>

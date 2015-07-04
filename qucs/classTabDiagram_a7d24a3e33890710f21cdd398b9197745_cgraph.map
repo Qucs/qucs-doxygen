@@ -1,12 +1,12 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classDiagram.html#aa85d506db3e26f6522e472d36c9e3ccb" title="Diagram::checkColumnWidth" alt="" coords="231,5,423,35"/>
 <area shape="rect" id="node5" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="271,59,383,88"/>
-<area shape="rect" id="node7" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="283,112,371,141"/>
-<area shape="rect" id="node9" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="267,165,387,195"/>
-<area shape="rect" id="node11" href="$namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e" title="misc::StringNum" alt="" coords="267,219,387,248"/>
-<area shape="rect" id="node13" href="$classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables." alt="" coords="229,272,424,301"/>
-<area shape="rect" id="node17" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="260,325,393,355"/>
-<area shape="rect" id="node19" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="261,379,392,408"/>
-<area shape="rect" id="node21" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="261,432,392,461"/>
-<area shape="rect" id="node15" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="472,272,619,301"/>
+<area shape="rect" id="node7" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="647,177,735,207"/>
+<area shape="rect" id="node9" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="475,176,595,205"/>
+<area shape="rect" id="node11" href="$namespacemisc.html#a840557d2ecb4785ad856564f2edf1d5e" title="misc::StringNum" alt="" coords="267,213,387,243"/>
+<area shape="rect" id="node13" href="$classDiagram.html#a7ea12d540afb7c9233bfeb7c4fcc76fe" title="Checks if the two graphs have the same independent variables." alt="" coords="229,267,424,296"/>
+<area shape="rect" id="node19" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="260,320,393,349"/>
+<area shape="rect" id="node21" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="261,373,392,403"/>
+<area shape="rect" id="node23" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="261,427,392,456"/>
+<area shape="rect" id="node16" href="$classGraph.html#a869825b726f992c231c337386f95f435" title="Graph::axisName" alt="" coords="473,255,596,284"/>
 </map>

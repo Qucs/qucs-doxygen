@@ -21,6 +21,9 @@ var searchData=
   ['nigbt',['nigbt',['../classnigbt.html',1,'nigbt'],['../classnigbt.html#af53e40b138466bf25bc7150d26ce259c',1,'nigbt::nigbt()']]],
   ['nigbt_2ecpp',['nigbt.cpp',['../nigbt_8cpp.html',1,'']]],
   ['nigbt_2eh',['nigbt.h',['../nigbt_8h.html',1,'']]],
+  ['nm_5fdeg',['nM_Deg',['../marker_8h.html#aede6c50e213791197cb5c72e6a646353a8f2b77ae5f8ae0b25d8f2796a7d02ba5',1,'marker.h']]],
+  ['nm_5frad',['nM_Rad',['../marker_8h.html#aede6c50e213791197cb5c72e6a646353a9786e80a93d3dc2869dfee04e6437d0d',1,'marker.h']]],
+  ['nm_5frect',['nM_Rect',['../marker_8h.html#aede6c50e213791197cb5c72e6a646353add13fc56d7e684d0003c59ef76337da0',1,'marker.h']]],
   ['no',['No',['../structtPoint3D.html#a00b84042b35c2d864280d0ea5cda3e3b',1,'tPoint3D::No()'],['../structtPointZ.html#ad187f94765fe36023bd01dbfffd22399',1,'tPointZ::No()']]],
   ['nocross',['NoCross',['../structtPointZ.html#aa6df43845236ababeb036171af709dad',1,'tPointZ']]],
   ['node',['Node',['../classNode.html',1,'Node'],['../classNode.html#a6c6394094966c834cdd4f45cfda2377c',1,'Node::Node()']]],
@@ -48,8 +51,8 @@ var searchData=
   ['numdefaultcolors',['NumDefaultColors',['../diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb',1,'diagramdialog.cpp']]],
   ['numgraphs',['numGraphs',['../structAxis.html#a1a4bf4ba9b5d3b555e59106c9d480d0f',1,'Axis']]],
   ['nummode',['numMode',['../classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc',1,'Graph::numMode()'],['../classMarker.html#a10113d655ed0f6e76c105b949b707522',1,'Marker::numMode()']]],
+  ['nummode_5ft',['numMode_t',['../marker_8h.html#aede6c50e213791197cb5c72e6a646353',1,'marker.h']]],
   ['numprec',['numPrec',['../classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e',1,'OptimizeDialog']]],
   ['numrecentdocs',['numRecentDocs',['../structtQucsSettings.html#a813d3f441cebca92e0bfc7e66fcd1c03',1,'tQucsSettings']]],
-  ['numval',['numVal',['../classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842',1,'OptimizeDialog']]],
-  ['nvarpos',['nVarPos',['../classMarker.html#aec1984afd1871bec0946fb45ed1c5297',1,'Marker']]]
+  ['numval',['numVal',['../classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842',1,'OptimizeDialog']]]
 ];

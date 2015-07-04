@@ -13,6 +13,7 @@ var searchData=
   ['deselectelements',['deselectElements',['../classSchematic.html#a630521cd7d7908223bafb322198f4d9c',1,'Schematic']]],
   ['dff_5fsr',['dff_SR',['../classdff__SR.html#ab9c67d5a6f3593f8c3f09cc35f005588',1,'dff_SR']]],
   ['diac',['Diac',['../classDiac.html#aac3c1d99dada832927f8626a40ce86f4',1,'Diac']]],
+  ['diag',['diag',['../classMarker.html#a513cf0e10664950b0679886467e2edd6',1,'Marker']]],
   ['diagram',['Diagram',['../classDiagram.html#af0f60f8b0775a7521b73a3ff3200a5a8',1,'Diagram']]],
   ['diagramdialog',['DiagramDialog',['../classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e',1,'DiagramDialog']]],
   ['dialog',['Dialog',['../classArrow.html#a0fa2c7341afce6db717de6f2f50f199e',1,'Arrow::Dialog()'],['../classEllipse.html#aebc997a64c9ab01a1950b1b2e9ab47df',1,'Ellipse::Dialog()'],['../classEllipseArc.html#aad282242a792ca3ddfa460cbd2d33ce4',1,'EllipseArc::Dialog()'],['../classGraphicLine.html#ab70dc2a9fca29318230b8eaadc58668c',1,'GraphicLine::Dialog()'],['../classGraphicText.html#a5bafdb4d3945386095a8ae36b0de15f0',1,'GraphicText::Dialog()'],['../classID__Text.html#a10143be990661414fbc1cc0ba7c4731b',1,'ID_Text::Dialog()'],['../classPainting.html#aa305fdef81fac011b5ac35dbf4ae166b',1,'Painting::Dialog()'],['../classRectangle.html#ac8a00903ef420b2c2b604fecc41dd009',1,'Rectangle::Dialog()']]],

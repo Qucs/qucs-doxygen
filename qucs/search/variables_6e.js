@@ -25,6 +25,5 @@ var searchData=
   ['nummode',['numMode',['../classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc',1,'Graph::numMode()'],['../classMarker.html#a10113d655ed0f6e76c105b949b707522',1,'Marker::numMode()']]],
   ['numprec',['numPrec',['../classOptimizeDialog.html#a3eb9092b5210c616c06b40c3a5ebca6e',1,'OptimizeDialog']]],
   ['numrecentdocs',['numRecentDocs',['../structtQucsSettings.html#a813d3f441cebca92e0bfc7e66fcd1c03',1,'tQucsSettings']]],
-  ['numval',['numVal',['../classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842',1,'OptimizeDialog']]],
-  ['nvarpos',['nVarPos',['../classMarker.html#aec1984afd1871bec0946fb45ed1c5297',1,'Marker']]]
+  ['numval',['numVal',['../classOptimizeDialog.html#afee80d1d72cd9097ad0cda9a7866a842',1,'OptimizeDialog']]]
 ];

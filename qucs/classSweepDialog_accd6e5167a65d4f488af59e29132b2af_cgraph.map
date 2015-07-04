@@ -1,9 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="243,88,373,117"/>
-<area shape="rect" id="node16" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="256,141,360,170"/>
-<area shape="rect" id="node5" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="640,89,787,118"/>
-<area shape="rect" id="node7" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="463,34,551,64"/>
-<area shape="rect" id="node9" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="463,88,551,117"/>
-<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="447,141,567,170"/>
-<area shape="rect" id="node13" href="$classGraph.html#a09882db7926c0ab1c8c900954fd24a0a" title="Reads the data of an independent variable." alt="" coords="423,194,591,224"/>
+<area shape="rect" id="node3" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="243,139,373,168"/>
+<area shape="rect" id="node17" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="256,192,360,221"/>
+<area shape="rect" id="node5" href="$classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="433,5,580,35"/>
+<area shape="rect" id="node7" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="463,59,551,88"/>
+<area shape="rect" id="node9" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="463,112,551,141"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="447,165,567,195"/>
+<area shape="rect" id="node13" href="$classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="423,219,591,248"/>
+<area shape="rect" id="node15" href="$classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="436,272,577,301"/>
 </map>

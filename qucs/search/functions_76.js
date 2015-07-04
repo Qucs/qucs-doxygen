@@ -3,6 +3,7 @@ var searchData=
   ['vacomponent',['vacomponent',['../classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d',1,'vacomponent']]],
   ['val_5fcompprop',['Val_CompProp',['../qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df',1,'qucs_actions.cpp']]],
   ['validate',['validate',['../classmySpinBox.html#a13c3f70f036223bb3f21ebe4b5187f0e',1,'mySpinBox']]],
+  ['varpos',['varPos',['../classMarker.html#a4fb36f399bda0415b3e4adf0a933a12e',1,'Marker']]],
   ['vasettingsdialog',['VASettingsDialog',['../classVASettingsDialog.html#ae6e19bf28b2dddea2f678521c1cdeefb',1,'VASettingsDialog']]],
   ['vccs',['VCCS',['../classVCCS.html#aea884b0fdb3828762d9a29b47474aa35',1,'VCCS']]],
   ['vcresistor',['vcresistor',['../classvcresistor.html#a3f73b5e3d2ed5d3bd148f1dcd86ae49a',1,'vcresistor']]],

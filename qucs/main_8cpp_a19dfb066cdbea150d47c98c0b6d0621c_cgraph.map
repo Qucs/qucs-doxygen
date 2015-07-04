@@ -22,7 +22,7 @@
 <area shape="rect" id="node39" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="1408,299,1597,328"/>
 <area shape="rect" id="node37" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="1701,351,1811,380"/>
 <area shape="rect" id="node43" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="1452,32,1553,61"/>
-<area shape="rect" id="node45" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="1709,59,1803,88"/>
+<area shape="rect" id="node45" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="1681,59,1831,88"/>
 <area shape="rect" id="node47" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="1712,5,1800,35"/>
 <area shape="rect" id="node51" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="355,643,544,672"/>
 <area shape="rect" id="node53" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="607,643,799,672"/>

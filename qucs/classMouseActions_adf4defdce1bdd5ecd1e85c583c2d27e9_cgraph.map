@@ -20,7 +20,7 @@
 <area shape="rect" id="node11" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1693,490,1832,519"/>
 <area shape="rect" id="node13" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="869,543,1027,572"/>
 <area shape="rect" id="node15" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="879,650,1017,679"/>
-<area shape="rect" id="node17" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="881,596,1015,626"/>
+<area shape="rect" id="node17" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="881,596,1015,626"/>
 <area shape="rect" id="node25" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1415,290,1596,319"/>
 <area shape="rect" id="node27" href="$classSchematic.html#ae64db01d913377d19bf221e82e2b1314" title="Schematic::setComponentNumber" alt="" coords="1652,263,1873,292"/>
 <area shape="rect" id="node41" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="1676,316,1849,346"/>

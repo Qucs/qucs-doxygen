@@ -2628,35 +2628,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l02554"></a>02554   <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *Diag = <span class="keyword">new</span> <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a>();
 <a name="l02555"></a>02555 
 <a name="l02556"></a>02556   <span class="comment">// FIXME: use normal Diagrams.</span>
-<a name="l02557"></a>02557   <a class="code" href="classGraph.html">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<span class="stringliteral">&quot;S[1,1]&quot;</span>);
+<a name="l02557"></a>02557   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>(Diag, <span class="stringliteral">&quot;S[1,1]&quot;</span>);
 <a name="l02558"></a>02558   Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);
-<a name="l02559"></a>02559   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet)) {
+<a name="l02559"></a>02559   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet)) {
 <a name="l02560"></a>02560     QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Could not load S[1,1].&quot;</span>));
 <a name="l02561"></a>02561     <span class="keywordflow">return</span>;
 <a name="l02562"></a>02562   }
 <a name="l02563"></a>02563 
-<a name="l02564"></a>02564   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<span class="stringliteral">&quot;S[1,2]&quot;</span>);
+<a name="l02564"></a>02564   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>(Diag, <span class="stringliteral">&quot;S[1,2]&quot;</span>);
 <a name="l02565"></a>02565   Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);
-<a name="l02566"></a>02566   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet)) {
+<a name="l02566"></a>02566   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet)) {
 <a name="l02567"></a>02567     QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Could not load S[1,2].&quot;</span>));
 <a name="l02568"></a>02568     <span class="keywordflow">return</span>;
 <a name="l02569"></a>02569   }
 <a name="l02570"></a>02570 
-<a name="l02571"></a>02571   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<span class="stringliteral">&quot;S[2,1]&quot;</span>);
+<a name="l02571"></a>02571   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>(Diag, <span class="stringliteral">&quot;S[2,1]&quot;</span>);
 <a name="l02572"></a>02572   Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);
-<a name="l02573"></a>02573   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet)) {
+<a name="l02573"></a>02573   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet)) {
 <a name="l02574"></a>02574     QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Could not load S[2,1].&quot;</span>));
 <a name="l02575"></a>02575     <span class="keywordflow">return</span>;
 <a name="l02576"></a>02576   }
 <a name="l02577"></a>02577 
-<a name="l02578"></a>02578   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<span class="stringliteral">&quot;S[2,2]&quot;</span>);
+<a name="l02578"></a>02578   pg = <span class="keyword">new</span> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>(Diag, <span class="stringliteral">&quot;S[2,2]&quot;</span>);
 <a name="l02579"></a>02579   Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.append(pg);
-<a name="l02580"></a>02580   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet)) {
+<a name="l02580"></a>02580   <span class="keywordflow">if</span>(!pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet)) {
 <a name="l02581"></a>02581     QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Could not load S[2,2].&quot;</span>));
 <a name="l02582"></a>02582     <span class="keywordflow">return</span>;
 <a name="l02583"></a>02583   }
 <a name="l02584"></a>02584 
-<a name="l02585"></a>02585   <a class="code" href="structDataX.html">DataX</a> *Data = Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.first()-&gt;axis(0);
+<a name="l02585"></a>02585   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span> *Data = Diag-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>.first()-&gt;axis(0);
 <a name="l02586"></a>02586   <span class="keywordflow">if</span>(Data-&gt;<a class="code" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a> != <span class="stringliteral">&quot;frequency&quot;</span>) {
 <a name="l02587"></a>02587     QMessageBox::critical(0, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Wrong dependency!&quot;</span>));
 <a name="l02588"></a>02588     <span class="keywordflow">return</span>;
@@ -2889,7 +2889,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:42 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -62,13 +62,13 @@ var searchData=
   ['andor4x4_2ecpp',['andor4x4.cpp',['../andor4x4_8cpp.html',1,'']]],
   ['andor4x4_2eh',['andor4x4.h',['../andor4x4_8h.html',1,'']]],
   ['angel',['Angel',['../classPortSymbol.html#a8e63311509e118ee045c95cd0363c0c6',1,'PortSymbol']]],
-  ['angle',['Angle',['../classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf',1,'EllipseArc::Angle()'],['../classGraphicText.html#ab528a4a16520d081ef15f44c4444e3e5',1,'GraphicText::Angle()'],['../classGraphicTextDialog.html#ad2ab7b946cda5a92d539edbb6311928d',1,'GraphicTextDialog::Angle()'],['../structArc.html#a633822c121cd65cb9dd9ee8d85326896',1,'Arc::angle()']]],
+  ['angle',['angle',['../structArc.html#a633822c121cd65cb9dd9ee8d85326896',1,'Arc::angle()'],['../classEllipseArc.html#a96381b63eeb965f4d249687e35cd0cbf',1,'EllipseArc::Angle()'],['../classGraphicText.html#ab528a4a16520d081ef15f44c4444e3e5',1,'GraphicText::Angle()'],['../classGraphicTextDialog.html#ad2ab7b946cda5a92d539edbb6311928d',1,'GraphicTextDialog::Angle()']]],
   ['app',['app',['../classLoadDialog.html#a9eab9ef798a8033798568499508640fb',1,'LoadDialog::app()'],['../classSaveDialog.html#ae191987c733de977ea61f24b894ae07d',1,'SaveDialog::app()'],['../classSpiceDialog.html#a34140a276580a5e5bc2e555e17b6019d',1,'SpiceDialog::App()'],['../classQucsSettingsDialog.html#abdea987208d862d290c924e710b289d9',1,'QucsSettingsDialog::App()'],['../classMouseActions.html#ab39af0b4b8579d77ec404db7228f74d7',1,'MouseActions::App()'],['../classQucsDoc.html#a6bf0b3e4824ace79ccf2b9a43932b379',1,'QucsDoc::App()']]],
   ['append_5fchild',['APPEND_CHILD',['../projectView_8cpp.html#a770cd6a7b127051b3fbccfa71bef6c09',1,'projectView.cpp']]],
   ['append_5fmenu',['APPEND_MENU',['../qucs_8cpp.html#a53e7fb776bdab8ec26bae31bd14e838f',1,'qucs.cpp']]],
   ['applsettings',['applSettings',['../classQucsApp.html#a5745f4f307583d96220d628110853ec4',1,'QucsApp']]],
   ['arc',['Arc',['../structArc.html',1,'Arc'],['../structArc.html#a3e439f80ed4089c5c0c62c199d4c8352',1,'Arc::Arc()']]],
-  ['arclen',['ArcLen',['../classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51',1,'EllipseArc::ArcLen()'],['../structArc.html#a66862fd184568cf561858686543b94e3',1,'Arc::arclen()']]],
+  ['arclen',['arclen',['../structArc.html#a66862fd184568cf561858686543b94e3',1,'Arc::arclen()'],['../classEllipseArc.html#ae29f6b56c4eb1970d78428f3ff668d51',1,'EllipseArc::ArcLen()']]],
   ['arcs',['Arcs',['../classComponent.html#aee71432f47a1474d7f924ac58d420d6d',1,'Component::Arcs()'],['../classDiagram.html#a8c8e3eb0db9ccdb4d5c68d80af374c41',1,'Diagram::Arcs()']]],
   ['area',['Area',['../structArea.html',1,'Area'],['../structArea.html#aaa326e52e4eb0d09f6e64a7b03f22105',1,'Area::Area()']]],
   ['arrow',['Arrow',['../classArrow.html',1,'Arrow'],['../classArrow.html#a34acd71904bf918ca11ebe9208739a4c',1,'Arrow::Arrow()']]],
@@ -88,5 +88,6 @@ var searchData=
   ['authorsbrowser',['authorsBrowser',['../classAboutDialog.html#a5276626869afd1c9f8babd9652f170ef',1,'AboutDialog']]],
   ['autoscale',['autoScale',['../structAxis.html#a5f7d923d06c766a27aef9f6ec2cea998',1,'Axis']]],
   ['avail',['avail',['../structPort.html#acd1cd6f74aa4b423395096510635f43d',1,'Port']]],
-  ['axis',['Axis',['../structAxis.html',1,'Axis'],['../classGraph.html#ac40011f8360814a34ee99a232d399f1c',1,'Graph::axis()']]]
+  ['axis',['Axis',['../structAxis.html',1,'Axis'],['../classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f',1,'Graph::axis()']]],
+  ['axisname',['axisName',['../classGraph.html#a869825b726f992c231c337386f95f435',1,'Graph']]]
 ];

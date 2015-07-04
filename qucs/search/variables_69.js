@@ -9,6 +9,7 @@ var searchData=
   ['importbutt',['ImportButt',['../classImportDialog.html#a8a0c779fa37d1b7d5d6539b6c699a310',1,'ImportDialog']]],
   ['importdata',['importData',['../classQucsApp.html#aa39aec9ae3fbf8927197bc447e2e0541',1,'QucsApp']]],
   ['importedit',['ImportEdit',['../classImportDialog.html#a8441a9ea13ae5ee210e2748eb30d336d',1,'ImportDialog']]],
+  ['indep',['indep',['../classGraph_1_1ScrPt.html#a45f3ce2bede8486570e44bcf6b2054a2',1,'Graph::ScrPt']]],
   ['info',['info',['../classModule.html#abac66acb1a2201908e49b49ab42c965f',1,'Module']]],
   ['infova',['infoVA',['../classModule.html#a61e2ae070477cafebf60be4f34729a5d',1,'Module']]],
   ['initvalue',['InitValue',['../classLabelDialog.html#a99bf125ba193fefd2c5e3f0ffc081469',1,'LabelDialog::InitValue()'],['../classWireLabel.html#ac0f5b52ad78d5fde550b00e232078590',1,'WireLabel::initValue()']]],

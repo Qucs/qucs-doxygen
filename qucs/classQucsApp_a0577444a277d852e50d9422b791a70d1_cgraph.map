@@ -42,7 +42,7 @@
 <area shape="rect" id="node94" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="747,744,885,773"/>
 <area shape="rect" id="node96" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="737,637,895,667"/>
 <area shape="rect" id="node98" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="747,691,885,720"/>
-<area shape="rect" id="node100" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="749,584,883,613"/>
+<area shape="rect" id="node100" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="749,584,883,613"/>
 <area shape="rect" id="node106" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="729,797,903,827"/>
 <area shape="rect" id="node108" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="749,851,883,880"/>
 <area shape="rect" id="node110" href="$classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="755,904,877,933"/>

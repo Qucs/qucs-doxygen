@@ -52,6 +52,7 @@ var searchData=
   ['filstream',['filstream',['../classSpiceFile.html#ae6700677c4fdbc8e1676a0d31d5b8153',1,'SpiceFile']]],
   ['finddoc',['findDoc',['../classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057',1,'QucsApp']]],
   ['findoptimization',['findOptimization',['../classSimMessage.html#a7c69a0fdce7f44478ec2226975ae0755',1,'SimMessage']]],
+  ['findsample',['findSample',['../classGraph.html#af806a66b949414a9965d32a9c3694ddb',1,'Graph']]],
   ['finishmarkercoordinates',['finishMarkerCoordinates',['../classCurveDiagram.html#a7f2e053e02837c7da1578d8577bd84e0',1,'CurveDiagram::finishMarkerCoordinates()'],['../classDiagram.html#a6189354837e601f3cfd0235c99b253b1',1,'Diagram::finishMarkerCoordinates()'],['../classRect3DDiagram.html#a18e8f0b612122c21317e51f4f7711ae2',1,'Rect3DDiagram::finishMarkerCoordinates()'],['../classRectDiagram.html#a98be66931826443e189440369e631fd5',1,'RectDiagram::finishMarkerCoordinates()']]],
   ['finishsimulation',['FinishSimulation',['../classSimMessage.html#ac16bba8d930ee89b989380429d532e2b',1,'SimMessage']]],
   ['fit_5fmemory_5fsize',['FIT_MEMORY_SIZE',['../diagram_8h.html#af01a04729419fe6896dec80fe6c46bcd',1,'diagram.h']]],

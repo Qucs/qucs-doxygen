@@ -1,11 +1,12 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classQucsApp.html#aa5b3bc6f84bd5ceaecc4935ef11763ee" title="QucsApp::performToggleAction" alt="" coords="220,5,423,35"/>
 <area shape="rect" id="node7" href="$classMouseActions.html#a6b41beee961fb66b7c315a85ba813cb0" title="MouseActions::MMoveMarker Paints a triangle above the mouse for &quot;set marker on graph&quot;." alt="" coords="224,59,419,88"/>
-<area shape="rect" id="node11" href="$classMouseActions.html#ae10d00ced2a06d1eef702d722aaf1726" title="MouseActions::MPressMarker" alt="" coords="223,112,420,141"/>
+<area shape="rect" id="node11" href="$classMouseActions.html#ae10d00ced2a06d1eef702d722aaf1726" title="MouseActions::MPressMarker" alt="" coords="223,139,420,168"/>
 <area shape="rect" id="node5" href="$classQucsApp.html#acf15a168d7497bc25103174b31019db7" title="QucsApp::slotHideEdit" alt="" coords="487,5,641,35"/>
 <area shape="rect" id="node9" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="473,59,655,88"/>
 <area shape="rect" id="node13" href="$classSchematic.html#a2ef58bb2ee5e4fa2f05f819325758c79" title="Schematic::setMarker" alt="" coords="489,112,639,141"/>
-<area shape="rect" id="node40" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="483,165,645,195"/>
+<area shape="rect" id="node40" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="517,165,611,195"/>
+<area shape="rect" id="node44" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="483,219,645,248"/>
 <area shape="rect" id="node15" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="704,112,867,141"/>
 <area shape="rect" id="node17" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="935,5,1132,35"/>
 <area shape="rect" id="node19" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="915,59,1152,88"/>
@@ -18,4 +19,5 @@
 <area shape="rect" id="node33" href="$classDiagram.html#a6020e853c5a25686c64b2c0a0fab76ab" title="Diagram::save" alt="" coords="1209,272,1316,301"/>
 <area shape="rect" id="node35" href="$classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9" title="Graph::save" alt="" coords="1373,272,1467,301"/>
 <area shape="rect" id="node37" href="$classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863" title="Marker::save" alt="" coords="1515,272,1613,301"/>
+<area shape="rect" id="node42" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="711,165,860,195"/>
 </map>

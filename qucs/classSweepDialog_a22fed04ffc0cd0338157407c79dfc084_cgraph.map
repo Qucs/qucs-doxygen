@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af" title="SweepDialog::setBiasPoints" alt="" coords="239,108,425,137"/>
-<area shape="rect" id="node9" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="695,163,783,192"/>
-<area shape="rect" id="node13" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="679,240,799,269"/>
-<area shape="rect" id="node22" href="$classSweepDialog.html#a54483039853416409a353c7c2255b464" title="SweepDialog::slotNewValue" alt="" coords="239,161,425,191"/>
-<area shape="rect" id="node5" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="475,57,605,87"/>
-<area shape="rect" id="node18" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="488,111,592,140"/>
-<area shape="rect" id="node7" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="872,32,1019,61"/>
-<area shape="rect" id="node11" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="695,109,783,139"/>
-<area shape="rect" id="node15" href="$classGraph.html#a09882db7926c0ab1c8c900954fd24a0a" title="Reads the data of an independent variable." alt="" coords="655,5,823,35"/>
+<area shape="rect" id="node3" href="$classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af" title="SweepDialog::setBiasPoints" alt="" coords="239,147,425,176"/>
+<area shape="rect" id="node9" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="695,5,783,35"/>
+<area shape="rect" id="node13" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="679,272,799,301"/>
+<area shape="rect" id="node23" href="$classSweepDialog.html#a54483039853416409a353c7c2255b464" title="SweepDialog::slotNewValue" alt="" coords="239,93,425,123"/>
+<area shape="rect" id="node5" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="475,161,605,191"/>
+<area shape="rect" id="node19" href="$namespacemisc.html#af7e46432adfd60ad9f875172e5c95393" title="misc::num2str" alt="" coords="488,108,592,137"/>
+<area shape="rect" id="node7" href="$classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="665,112,812,141"/>
+<area shape="rect" id="node11" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="695,165,783,195"/>
+<area shape="rect" id="node15" href="$classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="655,219,823,248"/>
+<area shape="rect" id="node17" href="$classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="668,59,809,88"/>
 </map>

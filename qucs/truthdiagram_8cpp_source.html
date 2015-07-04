@@ -155,10 +155,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00077"></a>00077   <span class="keywordflow">if</span>(<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> &lt; 0.0)
 <a name="l00078"></a>00078     <a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = 0.0;
 <a name="l00079"></a>00079 
-<a name="l00080"></a>00080   <a class="code" href="classGraph.html">Graph</a> *firstGraph;
+<a name="l00080"></a>00080   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *firstGraph;
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082   QListIterator&lt;Graph *&gt; ig(<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>);
-<a name="l00083"></a>00083   <a class="code" href="classGraph.html">Graph</a> *g = 0;
+<a name="l00083"></a>00083   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *g = 0;
 <a name="l00084"></a>00084   <span class="keywordflow">if</span> (ig.hasNext())
 <a name="l00085"></a>00085      g= ig.next();
 <a name="l00086"></a>00086 
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00107"></a>00107 
 <a name="l00108"></a>00108   <span class="keywordflow">if</span>(!g-&gt;<a class="code" href="classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb">isEmpty</a>()) { <span class="comment">// did we find a graph with data ?</span>
 <a name="l00109"></a>00109     <span class="comment">// ................................................</span>
-<a name="l00110"></a>00110     NumAll = g-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a> * g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a>;  <span class="comment">// number of values</span>
+<a name="l00110"></a>00110     NumAll = g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a> * g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a>;  <span class="comment">// number of values</span>
 <a name="l00111"></a>00111     
 <a name="l00112"></a>00112     invisibleCount = NumAll - y/tHeight;
 <a name="l00113"></a>00113     <span class="keywordflow">if</span>(invisibleCount &lt;= 0)  <a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> = 0.0;<span class="comment">// height bigger than needed</span>
@@ -232,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00154"></a>00154   firstGraph = g;
 <a name="l00155"></a>00155   <span class="comment">// ................................................</span>
 <a name="l00156"></a>00156   <span class="comment">// all dependent variables</span>
-<a name="l00157"></a>00157   <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *g ,<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>) {
+<a name="l00157"></a>00157   <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *g ,<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>) {
 <a name="l00158"></a>00158     y = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>-tHeight-5;
 <a name="l00159"></a>00159 
 <a name="l00160"></a>00160     Str = g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>;
@@ -242,9 +242,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00164"></a>00164 
 <a name="l00165"></a>00165 
 <a name="l00166"></a>00166     startWriting = int(<a class="code" href="classDiagram.html#afdc7b5c75398753f6c21dbbd3c8e4b30">xAxis</a>.<a class="code" href="structAxis.html#ad1511f42ccff752ad1133a64a4eb2490">limit_min</a> + 0.5);  <span class="comment">// when to reach visible area</span>
-<a name="l00167"></a>00167     <span class="keywordflow">if</span>(g-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(0)) {
+<a name="l00167"></a>00167     <span class="keywordflow">if</span>(g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)) {
 <a name="l00168"></a>00168 
-<a name="l00169"></a>00169       <span class="keywordflow">if</span>(<a class="code" href="classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables.">sameDependencies</a>(g, firstGraph)) {
+<a name="l00169"></a>00169       <span class="keywordflow">if</span>(<a class="code" href="classDiagram.html#a7ea12d540afb7c9233bfeb7c4fcc76fe" title="Checks if the two graphs have the same independent variables.">sameDependencies</a>(g, firstGraph)) {
 <a name="l00170"></a>00170 
 <a name="l00171"></a>00171         <span class="keywordflow">if</span>(g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>.right(2) != <span class="stringliteral">&quot;.X&quot;</span>) {  <span class="comment">// not a digital variable ?</span>
 <a name="l00172"></a>00172           <span class="keywordtype">double</span> *pdy = g-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> - 2;
@@ -373,7 +373,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:41 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:36 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

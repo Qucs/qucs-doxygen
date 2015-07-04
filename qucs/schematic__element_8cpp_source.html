@@ -1220,7 +1220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01137"></a>01137     <span class="keywordflow">for</span>(<a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;last(); pd != 0; pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;prev())
 <a name="l01138"></a>01138     {
 <a name="l01139"></a>01139 
-<a name="l01140"></a>01140         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;Graphs)
+<a name="l01140"></a>01140         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;Graphs)
 <a name="l01141"></a>01141         {
 <a name="l01142"></a>01142             <span class="comment">// test markers of graphs</span>
 <a name="l01143"></a>01143             <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, pg-&gt;<a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
@@ -1287,9 +1287,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01204"></a>01204             }
 <a name="l01205"></a>01205 
 <a name="l01206"></a>01206             <span class="comment">// test graphs of diagram</span>
-<a name="l01207"></a>01207             <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;Graphs)
+<a name="l01207"></a>01207             <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;Graphs)
 <a name="l01208"></a>01208             {
-<a name="l01209"></a>01209                 <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746">getSelected</a>(x-pd-&gt;cx, pd-&gt;cy-y) &gt;= 0)
+<a name="l01209"></a>01209                 <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph.">getSelected</a>(x-pd-&gt;cx, pd-&gt;cy-y) &gt;= 0)
 <a name="l01210"></a>01210                 {
 <a name="l01211"></a>01211                     <span class="keywordflow">if</span>(flag)
 <a name="l01212"></a>01212                     {
@@ -1445,7 +1445,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01362"></a>01362         <span class="keywordflow">if</span>(e != pd)  pd-&gt;isSelected = <span class="keyword">false</span>;
 <a name="l01363"></a>01363 
 <a name="l01364"></a>01364         <span class="comment">// test graphs of diagram</span>
-<a name="l01365"></a>01365         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;Graphs)
+<a name="l01365"></a>01365         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;Graphs)
 <a name="l01366"></a>01366         {
 <a name="l01367"></a>01367             <span class="keywordflow">if</span>(e != pg) pg-&gt;<a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a> = <span class="keyword">false</span>;
 <a name="l01368"></a>01368 
@@ -1546,7 +1546,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01463"></a>01463     <span class="keywordflow">for</span>(<a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;first(); pd != 0; pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;next())
 <a name="l01464"></a>01464     {
 <a name="l01465"></a>01465         <span class="comment">// test graphs of diagram</span>
-<a name="l01466"></a>01466         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;Graphs)
+<a name="l01466"></a>01466         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;Graphs)
 <a name="l01467"></a>01467         {
 <a name="l01468"></a>01468             <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a> &amp;= flag) z++;
 <a name="l01469"></a>01469 
@@ -1596,7 +1596,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01513"></a><a class="code" href="classSchematic.html#a65015fde8697fc49e94fe2e0e86835ce">01513</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a65015fde8697fc49e94fe2e0e86835ce">Schematic::selectMarkers</a>()
 <a name="l01514"></a>01514 {
 <a name="l01515"></a>01515     <span class="keywordflow">for</span>(<a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> *pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;first(); pd != 0; pd = <a class="code" href="classSchematic.html#aba21d6136087d147cc7141235e4e6654">Diagrams</a>-&gt;next())
-<a name="l01516"></a>01516         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;Graphs)
+<a name="l01516"></a>01516         <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;Graphs)
 <a name="l01517"></a>01517             <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, pg-&gt;<a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
 <a name="l01518"></a>01518                 pm-&gt;<a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a> = <span class="keyword">true</span>;
 <a name="l01519"></a>01519 }
@@ -1862,7 +1862,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01779"></a>01779         }
 <a name="l01780"></a>01780         <span class="keywordflow">else</span>
 <a name="l01781"></a>01781         {
-<a name="l01782"></a>01782             <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html">Graph</a> *pg, pd-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>)
+<a name="l01782"></a>01782             <span class="keywordflow">foreach</span>(<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg, pd-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>)
 <a name="l01783"></a>01783             {
 <a name="l01784"></a>01784                 QMutableListIterator&lt;Marker *&gt; im(pg-&gt;<a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>);
 <a name="l01785"></a>01785                 <a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm;
@@ -2009,7 +2009,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01926"></a>01926             <span class="comment">// all graphs of diagram</span>
 <a name="l01927"></a>01927 
 <a name="l01928"></a>01928             QMutableListIterator&lt;Graph *&gt; ig(pd-&gt;<a class="code" href="classDiagram.html#ad9e7b76d184cc5414e4e779c184698a9">Graphs</a>);
-<a name="l01929"></a>01929             <a class="code" href="classGraph.html">Graph</a> *pg;
+<a name="l01929"></a>01929             <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg;
 <a name="l01930"></a>01930 
 <a name="l01931"></a>01931             <span class="keywordflow">while</span> (ig.hasNext())
 <a name="l01932"></a>01932             {
@@ -3195,7 +3195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:42 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

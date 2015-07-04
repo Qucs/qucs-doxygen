@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="228,32,329,61"/>
-<area shape="rect" id="node5" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="380,5,473,35"/>
-<area shape="rect" id="node7" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="383,59,471,88"/>
-<area shape="rect" id="node9" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="523,59,621,88"/>
+<area shape="rect" id="node5" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="380,5,529,35"/>
+<area shape="rect" id="node7" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="411,59,499,88"/>
+<area shape="rect" id="node9" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="579,59,677,88"/>
 </map>

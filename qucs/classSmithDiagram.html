@@ -113,7 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#a78d4908d2eb77d821bab4cc754ca58b3">newOne</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#ae8444879c13fdcbd5f2d479dbe99aca7">calcDiagram</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#afd6c523f9edb64aa4fa25662b0768ff0">calcLimits</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#a26faecb9293dda6584e121aabcf01d90">calcCoordinate</a> (const double *, const double *, const double *, float *, float *, <a class="el" href="structAxis.html">Axis</a> *) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#a8aa7c4da1ba0241c620c57e7ace33ae4">calcCoordinate</a> (const double *, const double *, const double *, float *, float *, <a class="el" href="structAxis.html">Axis</a> const *) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff">extraMarkerText</a> (<a class="el" href="classMarker.html">Marker</a> const *) const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmithDiagram.html#ae49e43ab93fad3b137904e5f9f64d5b2">info</a> (QString &amp;, char *&amp;, bool getNewOne=false)</td></tr>
@@ -155,7 +156,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00035">35</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00037">37</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -182,17 +183,17 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00050">50</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00052">52</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a26faecb9293dda6584e121aabcf01d90"></a><!-- doxytag: member="SmithDiagram::calcCoordinate" ref="a26faecb9293dda6584e121aabcf01d90" args="(const double *, const double *, const double *, float *, float *, Axis *) const " -->
+<a class="anchor" id="a8aa7c4da1ba0241c620c57e7ace33ae4"></a><!-- doxytag: member="SmithDiagram::calcCoordinate" ref="a8aa7c4da1ba0241c620c57e7ace33ae4" args="(const double *, const double *, const double *, float *, float *, Axis const *) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classSmithDiagram.html#a26faecb9293dda6584e121aabcf01d90">SmithDiagram::calcCoordinate</a> </td>
+          <td class="memname">void <a class="el" href="classSmithDiagram.html#a8aa7c4da1ba0241c620c57e7ace33ae4">SmithDiagram::calcCoordinate</a> </td>
           <td>(</td>
           <td class="paramtype">const double *&#160;</td>
           <td class="paramname">, </td>
@@ -224,7 +225,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structAxis.html">Axis</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structAxis.html">Axis</a> const *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -236,9 +237,9 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classDiagram.html#a96d53b933311ca49f6d5827d00e7e101">Diagram</a>.</p>
+<p>Reimplemented from <a class="el" href="classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00056">56</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00058">58</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +259,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00083">83</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00085">85</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -287,7 +288,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a0e0a9af9ed985597a036805cff016b6b">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00072">72</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00074">74</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -295,6 +296,36 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classSmithDiagram_afd6c523f9edb64aa4fa25662b0768ff0_cgraph.png" border="0" usemap="#classSmithDiagram_afd6c523f9edb64aa4fa25662b0768ff0_cgraph" alt=""/></div>
 <map name="classSmithDiagram_afd6c523f9edb64aa4fa25662b0768ff0_cgraph" id="classSmithDiagram_afd6c523f9edb64aa4fa25662b0768ff0_cgraph">
 <area shape="rect" id="node3" href="classDiagram.html#a4279b584d01deba190b1d021394c260f" title="Diagram::calcSmithAxisScale" alt="" coords="228,5,423,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a454106c05070b32574bfe1b6d96da1ff"></a><!-- doxytag: member="SmithDiagram::extraMarkerText" ref="a454106c05070b32574bfe1b6d96da1ff" args="(Marker const *) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString <a class="el" href="classSmithDiagram.html#a454106c05070b32574bfe1b6d96da1ff">SmithDiagram::extraMarkerText</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMarker.html">Marker</a> const *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classDiagram.html#a541d5fdf270dea71646eb84af2669e78">Diagram</a>.</p>
+
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00130">130</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSmithDiagram_a454106c05070b32574bfe1b6d96da1ff_cgraph.png" border="0" usemap="#classSmithDiagram_a454106c05070b32574bfe1b6d96da1ff_cgraph" alt=""/></div>
+<map name="classSmithDiagram_a454106c05070b32574bfe1b6d96da1ff_cgraph" id="classSmithDiagram_a454106c05070b32574bfe1b6d96da1ff_cgraph">
+<area shape="rect" id="node3" href="classMarker.html#a67723d08a0ec2f2f04241ca040fbac01" title="Marker::graph" alt="" coords="279,5,380,35"/><area shape="rect" id="node5" href="classMarker.html#a4fb36f399bda0415b3e4adf0a933a12e" title="Marker::varPos" alt="" coords="275,59,384,88"/><area shape="rect" id="node7" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="269,112,389,141"/><area shape="rect" id="node9" href="classMarker.html#a192aeb8baf2530ca32de4183166deb48" title="Marker::precision" alt="" coords="268,165,391,195"/><area shape="rect" id="node11" href="classMarker.html#a9bbd3f0bd40a05deca0f542e351d8b68" title="Marker::powReal" alt="" coords="269,219,389,248"/><area shape="rect" id="node13" href="classMarker.html#a7afbcdee29443013516c148c96ca2913" title="Marker::powImag" alt="" coords="268,272,391,301"/><area shape="rect" id="node15" href="classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="269,325,389,355"/><area shape="rect" id="node17" href="namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="263,379,396,408"/></map>
 </div>
 </p>
 
@@ -331,7 +362,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00109">109</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00111">111</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -375,7 +406,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00119">119</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00121">121</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -404,7 +435,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classDiagram.html#a5495c159279f502a7be9e4c7310ce3ad">Diagram</a>.</p>
 
-<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00103">103</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smithdiagram_8cpp_source.html#l00105">105</a> of file <a class="el" href="smithdiagram_8cpp_source.html">smithdiagram.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -439,7 +470,7 @@ Here is the call graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:39 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

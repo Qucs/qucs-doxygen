@@ -19,7 +19,7 @@
 <area shape="rect" id="node7" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1952,1455,2091,1484"/>
 <area shape="rect" id="node9" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="869,1403,1027,1432"/>
 <area shape="rect" id="node11" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="879,1456,1017,1485"/>
-<area shape="rect" id="node13" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Graph::getSelected" alt="" coords="881,1349,1015,1379"/>
+<area shape="rect" id="node13" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="881,1349,1015,1379"/>
 <area shape="rect" id="node18" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="1148,363,1319,392"/>
 <area shape="rect" id="node20" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="2183,135,2364,164"/>
 <area shape="rect" id="node26" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1679,1123,1849,1152"/>

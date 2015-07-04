@@ -17,7 +17,7 @@
 <area shape="rect" id="node27" href="$classWire.html#ad2f084345276ca50450a163977f9030e" title="Wire::isHorizontal" alt="" coords="939,192,1064,221"/>
 <area shape="rect" id="node29" href="$classWireLabel.html#a6ccd01800f185f7c420d6fdf645fb544" title="WireLabel::setName" alt="" coords="931,245,1072,275"/>
 <area shape="rect" id="node35" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="489,325,591,355"/>
-<area shape="rect" id="node37" href="$classMarker.html#ae3517698696b07f5cfca4356344ea95d" title="Marker::load" alt="" coords="747,299,840,328"/>
+<area shape="rect" id="node37" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="719,299,868,328"/>
 <area shape="rect" id="node39" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="749,352,837,381"/>
 <area shape="rect" id="node41" href="$graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="952,352,1051,381"/>
 <area shape="rect" id="node45" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="489,379,591,408"/>

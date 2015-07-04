@@ -1,10 +1,12 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="193,112,337,141"/>
-<area shape="rect" id="node17" href="$classSchematic.html#a5a9bd92ab00320afbc1dd63cea4d1d87" title="Schematic::zoom" alt="" coords="204,165,327,195"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a5a9bd92ab00320afbc1dd63cea4d1d87" title="Schematic::zoom" alt="" coords="204,165,327,195"/>
 <area shape="rect" id="node5" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="404,5,543,35"/>
 <area shape="rect" id="node7" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="387,59,560,88"/>
 <area shape="rect" id="node11" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="407,112,540,141"/>
 <area shape="rect" id="node13" href="$classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="412,165,535,195"/>
-<area shape="rect" id="node15" href="$classPainting.html#ae250152f541f087fbe2f12aa4e17f424" title="Painting::Bounding" alt="" coords="408,219,539,248"/>
+<area shape="rect" id="node19" href="$classPainting.html#ae250152f541f087fbe2f12aa4e17f424" title="Painting::Bounding" alt="" coords="408,219,539,248"/>
 <area shape="rect" id="node9" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="609,59,753,88"/>
+<area shape="rect" id="node15" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="635,165,728,195"/>
+<area shape="rect" id="node17" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="804,165,953,195"/>
 </map>

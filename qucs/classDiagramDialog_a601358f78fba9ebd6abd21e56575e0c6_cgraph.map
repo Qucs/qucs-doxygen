@@ -1,37 +1,45 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="908,304,1073,333"/>
-<area shape="rect" id="node70" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="224,487,459,516"/>
-<area shape="rect" id="node5" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="Graph::loadDatFile" alt="" coords="1376,120,1507,149"/>
-<area shape="rect" id="node18" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="1135,237,1292,267"/>
-<area shape="rect" id="node21" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1123,369,1304,399"/>
-<area shape="rect" id="node7" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="1835,13,1981,43"/>
-<area shape="rect" id="node9" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="1620,199,1708,228"/>
-<area shape="rect" id="node11" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1620,92,1708,121"/>
-<area shape="rect" id="node13" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1604,516,1724,545"/>
-<area shape="rect" id="node15" href="$classGraph.html#a09882db7926c0ab1c8c900954fd24a0a" title="Reads the data of an independent variable." alt="" coords="1580,39,1748,68"/>
-<area shape="rect" id="node23" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1365,396,1517,425"/>
-<area shape="rect" id="node25" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1395,449,1488,479"/>
-<area shape="rect" id="node27" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1376,343,1507,372"/>
-<area shape="rect" id="node43" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="1352,251,1531,280"/>
-<area shape="rect" id="node48" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="1376,655,1507,684"/>
-<area shape="rect" id="node31" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="1585,303,1743,332"/>
-<area shape="rect" id="node33" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="1616,356,1712,385"/>
-<area shape="rect" id="node35" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="1621,409,1707,439"/>
-<area shape="rect" id="node37" href="$classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="1581,569,1747,599"/>
-<area shape="rect" id="node39" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="1615,463,1713,492"/>
-<area shape="rect" id="node41" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="2067,436,2229,465"/>
-<area shape="rect" id="node46" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="1612,145,1716,175"/>
-<area shape="rect" id="node50" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="1595,937,1733,967"/>
-<area shape="rect" id="node52" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="1799,621,2017,651"/>
-<area shape="rect" id="node55" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="1839,805,1977,835"/>
-<area shape="rect" id="node59" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="1597,724,1731,753"/>
-<area shape="rect" id="node61" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="1599,777,1729,807"/>
-<area shape="rect" id="node63" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="1599,831,1729,860"/>
-<area shape="rect" id="node65" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="1604,884,1724,913"/>
-<area shape="rect" id="node72" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="508,512,655,541"/>
-<area shape="rect" id="node74" href="$classGraph.html#a8c84da504b1de4f0e7adc5dd8b63affb" title="Graph::Graph" alt="" coords="732,565,831,595"/>
-<area shape="rect" id="node76" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="705,512,857,541"/>
-<area shape="rect" id="node78" href="$classMarker.html#ad2baf2e2ec35bfd614160e048544b459" title="Marker::Marker" alt="" coords="936,629,1045,659"/>
-<area shape="rect" id="node81" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="Marker::initText" alt="" coords="1157,629,1269,659"/>
-<area shape="rect" id="node83" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="1385,759,1497,788"/>
+<area shape="rect" id="node3" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="705,589,871,619"/>
+<area shape="rect" id="node58" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="224,755,459,784"/>
+<area shape="rect" id="node5" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="1173,667,1304,696"/>
+<area shape="rect" id="node19" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="932,563,1089,592"/>
+<area shape="rect" id="node22" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="920,379,1101,408"/>
+<area shape="rect" id="node7" href="$classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="1391,720,1537,749"/>
+<area shape="rect" id="node9" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1667,536,1755,565"/>
+<area shape="rect" id="node11" href="$structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1420,773,1508,803"/>
+<area shape="rect" id="node13" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1404,827,1524,856"/>
+<area shape="rect" id="node15" href="$classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="1380,613,1548,643"/>
+<area shape="rect" id="node17" href="$classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="1393,667,1535,696"/>
+<area shape="rect" id="node24" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1163,352,1315,381"/>
+<area shape="rect" id="node26" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1192,405,1285,435"/>
+<area shape="rect" id="node28" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1173,220,1304,249"/>
+<area shape="rect" id="node51" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="1149,299,1328,328"/>
+<area shape="rect" id="node56" href="$classGraph.html#a091ec6252a393994dc00fb221abe608e" title="Graph::createMarkerText" alt="" coords="1156,459,1321,488"/>
+<area shape="rect" id="node31" href="$classGraph.html#a12dbe8ffa481c1b992ea81c022e97af8" title="Graph::count" alt="" coords="1416,88,1512,117"/>
+<area shape="rect" id="node34" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="1385,141,1543,171"/>
+<area shape="rect" id="node36" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="1416,195,1512,224"/>
+<area shape="rect" id="node38" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="1421,248,1507,277"/>
+<area shape="rect" id="node41" href="$classDiagram.html#abeefcdf5595744849bd412c562f5c90e" title="Diagram::calcCoordinateP" alt="" coords="1377,355,1551,384"/>
+<area shape="rect" id="node45" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="1415,301,1513,331"/>
+<area shape="rect" id="node47" href="$classDiagram.html#a11565a84645ce33dfc2107ba2d6bb790" title="Diagram::insideDiagramP" alt="" coords="1625,221,1796,251"/>
+<area shape="rect" id="node43" href="$classDiagram.html#a5967e7599301bf5f5aa0386b0a4d5e36" title="Diagram::calcCoordinate" alt="" coords="1628,1089,1793,1119"/>
+<area shape="rect" id="node49" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1869,747,2032,776"/>
+<area shape="rect" id="node54" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="1412,459,1516,488"/>
+<area shape="rect" id="node60" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="508,792,655,821"/>
+<area shape="rect" id="node62" href="$classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e" title="Graph::Graph" alt="" coords="739,792,837,821"/>
+<area shape="rect" id="node64" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="712,1144,864,1173"/>
+<area shape="rect" id="node66" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="956,1295,1065,1324"/>
+<area shape="rect" id="node68" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="1395,1501,1533,1531"/>
+<area shape="rect" id="node79" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="1183,1449,1295,1479"/>
+<area shape="rect" id="node88" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="1173,1141,1304,1171"/>
+<area shape="rect" id="node70" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="1664,1501,1757,1531"/>
+<area shape="rect" id="node74" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="1601,1247,1820,1276"/>
+<area shape="rect" id="node77" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="1641,1399,1780,1428"/>
+<area shape="rect" id="node72" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="1876,1501,2025,1531"/>
+<area shape="rect" id="node81" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="1408,1605,1520,1635"/>
+<area shape="rect" id="node92" href="$classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="1399,880,1529,909"/>
+<area shape="rect" id="node96" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="1397,984,1531,1013"/>
+<area shape="rect" id="node98" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="1399,1037,1529,1067"/>
+<area shape="rect" id="node100" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="1399,1141,1529,1171"/>
+<area shape="rect" id="node103" href="$classDiagram.html#a541d5fdf270dea71646eb84af2669e78" title="Diagram::extraMarkerText" alt="" coords="1377,1195,1551,1224"/>
 </map>

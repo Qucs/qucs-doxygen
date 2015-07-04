@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="441,25,620,54"/>
+<area shape="rect" id="node17" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="465,102,596,131"/>
+<area shape="rect" id="node20" href="$classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="704,167,861,197"/>
+<area shape="rect" id="node24" href="$classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="199,326,329,355"/>
+<area shape="rect" id="node29" href="$classSweepDialog.html#a22fed04ffc0cd0338157407c79dfc084" title="SweepDialog::SweepDialog" alt="" coords="691,323,875,353"/>
+<area shape="rect" id="node33" href="$classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos" alt="" coords="199,534,329,563"/>
+<area shape="rect" id="node35" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="465,534,596,563"/>
+<area shape="rect" id="node41" href="$classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="705,635,860,665"/>
+<area shape="rect" id="node52" href="$classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="707,582,859,611"/>
+<area shape="rect" id="node66" href="$classGraph.html#a12dbe8ffa481c1b992ea81c022e97af8" title="Graph::count" alt="" coords="216,115,312,145"/>
+<area shape="rect" id="node69" href="$classGraph.html#a869825b726f992c231c337386f95f435" title="Graph::axisName" alt="" coords="203,790,325,819"/>
+<area shape="rect" id="node73" href="$classTabDiagram.html#a7d24a3e33890710f21cdd398b9197745" title="TabDiagram::calcDiagram" alt="" coords="696,790,869,819"/>
+<area shape="rect" id="node83" href="$classTimingDiagram.html#a3890a12344a2d39badda444fddafbdf8" title="TimingDiagram::calcDiagram" alt="" coords="688,871,877,901"/>
+<area shape="rect" id="node91" href="$classTruthDiagram.html#a05a92cb576acbfe2819cb57637336e9f" title="TruthDiagram::calcDiagram" alt="" coords="692,925,873,954"/>
+<area shape="rect" id="node95" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="475,481,587,510"/>
+<area shape="rect" id="node101" href="$classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2" title="Rect3DDiagram::removeHiddenLines" alt="" coords="145,945,383,974"/>
+<area shape="rect" id="node105" href="$classRect3DDiagram.html#a8d2b1114e4758944dd3f36b2d9f868e4" title="Rect3DDiagram::createAxis" alt="" coords="171,998,357,1027"/>
+<area shape="rect" id="node108" href="$classRect3DDiagram.html#ae516b5c87a4931ff4ab5ee7050286451" title="Rect3DDiagram::calcData" alt="" coords="176,1051,352,1081"/>
+<area shape="rect" id="node114" href="$classSweepDialog.html#a54483039853416409a353c7c2255b464" title="SweepDialog::slotNewValue" alt="" coords="437,427,624,457"/>
+<area shape="rect" id="node117" href="$classQucsApp.html#aeb21915c4b1e2f208cd988a8e2b1e0c8" title="QucsApp::slotExportGraphAsCsv" alt="" coords="1248,715,1467,745"/>
+<area shape="rect" id="node5" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="692,102,873,131"/>
+<area shape="rect" id="node7" href="$classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="985,209,1151,238"/>
+<area shape="rect" id="node11" href="$classDiagram.html#a2617392b5e94dbb3278f20e63ece0fa3" title="Calculate diagram again without reading dataset from file." alt="" coords="980,155,1156,185"/>
+<area shape="rect" id="node15" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="937,102,1199,131"/>
+<area shape="rect" id="node9" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1272,209,1443,238"/>
+<area shape="rect" id="node13" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="1267,155,1448,185"/>
+<area shape="rect" id="node27" href="$classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af" title="SweepDialog::setBiasPoints" alt="" coords="437,323,624,353"/>
+<area shape="rect" id="node31" href="$classQucsApp.html#acb4deaa2ad9fd99eb5049199622bbfaf" title="QucsApp::slot2PortMatching" alt="" coords="436,270,625,299"/>
+<area shape="rect" id="node37" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="728,475,837,505"/>
+<area shape="rect" id="node62" href="$classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="679,529,887,558"/>
+<area shape="rect" id="node39" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="992,475,1144,505"/>
+<area shape="rect" id="node43" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="976,635,1160,665"/>
+<area shape="rect" id="node45" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1275,609,1440,638"/>
+<area shape="rect" id="node49" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1271,662,1444,691"/>
+<area shape="rect" id="node47" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1516,609,1660,638"/>
+<area shape="rect" id="node54" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="977,582,1159,611"/>
+<area shape="rect" id="node56" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="1277,502,1437,531"/>
+<area shape="rect" id="node59" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1268,555,1447,585"/>
+<area shape="rect" id="node64" href="$classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="976,529,1160,558"/>
+<area shape="rect" id="node71" href="$classDiagram.html#a7ea12d540afb7c9233bfeb7c4fcc76fe" title="Checks if the two graphs have the same independent variables." alt="" coords="433,790,628,819"/>
+<area shape="rect" id="node75" href="$classTabDiagram.html#a60e9309369262e7a1da93fdff519756a" title="TabDiagram::TabDiagram" alt="" coords="983,739,1153,769"/>
+<area shape="rect" id="node79" href="$classTabDiagram.html#a2a955b29edad1f8df1a90677e076cab1" title="TabDiagram::scroll" alt="" coords="1003,793,1133,822"/>
+<area shape="rect" id="node81" href="$classTabDiagram.html#a8a9f265d87ebac6d7a684edd6aaf30ff" title="TabDiagram::scrollTo" alt="" coords="995,846,1141,875"/>
+<area shape="rect" id="node77" href="$classTabDiagram.html#a2d0f6dfac973d8fba312f54872575181" title="TabDiagram::newOne" alt="" coords="1283,769,1432,798"/>
+<area shape="rect" id="node85" href="$classTimingDiagram.html#aa240a4b0f66dcbdc0c02f834ce74ae4c" title="TimingDiagram::TimingDiagram" alt="" coords="965,899,1171,929"/>
+<area shape="rect" id="node87" href="$classTimingDiagram.html#a4459b704c44fe093dfb581239f25dc7b" title="TimingDiagram::scroll" alt="" coords="993,953,1143,982"/>
+<area shape="rect" id="node89" href="$classTimingDiagram.html#afa19ba9113617a9a8013f0998876485a" title="TimingDiagram::scrollTo" alt="" coords="987,1006,1149,1035"/>
+<area shape="rect" id="node93" href="$classTruthDiagram.html#a179d28721f7a0b686516ff1075938d9e" title="TruthDiagram::TruthDiagram" alt="" coords="975,1059,1161,1089"/>
+<area shape="rect" id="node103" href="$classRect3DDiagram.html#a1a8d7b7a27a99c44b963b2bacf412a1b" title="Rect3DDiagram::calcDiagram" alt="" coords="432,971,629,1001"/>
+</map>

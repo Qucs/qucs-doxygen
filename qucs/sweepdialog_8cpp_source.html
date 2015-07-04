@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00076"></a>00076     <span class="keywordflow">return</span>;
 <a name="l00077"></a>00077   }
 <a name="l00078"></a>00078   <span class="keywordflow">if</span>(<a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b">numAxes</a>() &lt;= 1)
-<a name="l00079"></a>00079     <span class="keywordflow">if</span>(<a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a> &lt;= 1) {
+<a name="l00079"></a>00079     <span class="keywordflow">if</span>(<a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a> &lt;= 1) {
 <a name="l00080"></a>00080       reject();
 <a name="l00081"></a>00081       <span class="keywordflow">return</span>;
 <a name="l00082"></a>00082     }
@@ -174,10 +174,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00091"></a>00091   all-&gt;setSpacing(5);
 <a name="l00092"></a>00092   all-&gt;setColStretch(1,5);
 <a name="l00093"></a>00093 
-<a name="l00094"></a>00094   <a class="code" href="structDataX.html">DataX</a> *pD;
+<a name="l00094"></a>00094   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span> *pD;
 <a name="l00095"></a>00095   <a class="code" href="classmySpinBox.html">mySpinBox</a> *Box;
 <a name="l00096"></a>00096   
-<a name="l00097"></a>00097   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=<a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(ii)); ++ii) {
+<a name="l00097"></a>00097   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=<a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii) {
 <a name="l00098"></a>00098     all-&gt;addWidget(<span class="keyword">new</span> QLabel(pD-&gt;<a class="code" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a>, <span class="keyword">this</span>), i,0);
 <a name="l00099"></a>00099     <span class="comment">//cout&lt;&lt;&quot;count: &quot;&lt;&lt;pD-&gt;count-1&lt;&lt;&quot;, points: &quot;&lt;&lt;*pD-&gt;Points&lt;&lt;endl;</span>
 <a name="l00100"></a>00100     <span class="comment">//works only for linear:</span>
@@ -213,139 +213,137 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00130"></a>00130 <span class="comment">// ---------------------------------------------------------------</span>
 <a name="l00131"></a><a class="code" href="classSweepDialog.html#a54483039853416409a353c7c2255b464">00131</a> <span class="keywordtype">void</span> <a class="code" href="classSweepDialog.html#a54483039853416409a353c7c2255b464">SweepDialog::slotNewValue</a>(<span class="keywordtype">int</span>)
 <a name="l00132"></a>00132 {
-<a name="l00133"></a>00133   <a class="code" href="structDataX.html">DataX</a> *pD = <a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#ac40011f8360814a34ee99a232d399f1c">axis</a>(0);
+<a name="l00133"></a>00133   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span>*pD = <a class="code" href="classSweepDialog.html#a15e99c3b079b2f46347f7db7850224a1">pGraph</a>-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0);
 <a name="l00134"></a>00134 
-<a name="l00135"></a>00135   qDebug() &lt;&lt; <span class="stringliteral">&quot;SweepDialog::slotNewValue:pD-&gt;count:&quot;</span> &lt;&lt; pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
-<a name="l00136"></a>00136 
-<a name="l00137"></a>00137   <span class="keywordtype">int</span> Factor = 1, Index = 0;
-<a name="l00138"></a>00138   QList&lt;mySpinBox *&gt;::const_iterator it;
-<a name="l00139"></a>00139   <span class="keywordflow">for</span>(it = <a class="code" href="classSweepDialog.html#a404bae058efc70ecc9d638b44c9f1da8">BoxList</a>.constBegin(); it != <a class="code" href="classSweepDialog.html#a404bae058efc70ecc9d638b44c9f1da8">BoxList</a>.constEnd(); it++) {
-<a name="l00140"></a>00140     Index  += (*it)-&gt;value() * Factor;
-<a name="l00141"></a>00141     Factor *= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
-<a name="l00142"></a>00142   }
-<a name="l00143"></a>00143   Index *= 2;  <span class="comment">// because of complex values</span>
-<a name="l00144"></a>00144 
-<a name="l00145"></a>00145   QList&lt;Node *&gt;::iterator node_it;
-<a name="l00146"></a>00146   QList&lt;double *&gt;::const_iterator value_it = <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.begin();
-<a name="l00147"></a>00147   <span class="keywordflow">for</span>(node_it = <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.begin(); node_it != <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.end(); node_it++) {
-<a name="l00148"></a>00148     qDebug() &lt;&lt; <span class="stringliteral">&quot;SweepDialog::slotNewValue:(*node_it)-&gt;Name:&quot;</span> &lt;&lt; (*node_it)-&gt;Name;
-<a name="l00149"></a>00149     (*node_it)-&gt;Name = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*((*value_it)+Index));
-<a name="l00150"></a>00150     (*node_it)-&gt;Name += ((*node_it)-&gt;x1 &amp; 0x10)? <span class="stringliteral">&quot;A&quot;</span> : <span class="stringliteral">&quot;V&quot;</span>;
-<a name="l00151"></a>00151     value_it++;
-<a name="l00152"></a>00152   }
-<a name="l00153"></a>00153 
-<a name="l00154"></a>00154   <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;viewport()-&gt;update();
-<a name="l00155"></a>00155 }
-<a name="l00156"></a>00156 
-<a name="l00157"></a>00157 <span class="comment">// ---------------------------------------------------</span>
-<a name="l00158"></a><a class="code" href="classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af">00158</a> <a class="code" href="classGraph.html">Graph</a>* <a class="code" href="classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af">SweepDialog::setBiasPoints</a>()
-<a name="l00159"></a>00159 {
-<a name="l00160"></a>00160   <span class="comment">// When this function is entered, a simulation was performed.</span>
-<a name="l00161"></a>00161   <span class="comment">// Thus, the node names are still in &quot;node-&gt;Name&quot;.</span>
+<a name="l00135"></a>00135   <span class="keywordtype">int</span> Factor = 1, Index = 0;
+<a name="l00136"></a>00136   QList&lt;mySpinBox *&gt;::const_iterator it;
+<a name="l00137"></a>00137   <span class="keywordflow">for</span>(it = <a class="code" href="classSweepDialog.html#a404bae058efc70ecc9d638b44c9f1da8">BoxList</a>.constBegin(); it != <a class="code" href="classSweepDialog.html#a404bae058efc70ecc9d638b44c9f1da8">BoxList</a>.constEnd(); it++) {
+<a name="l00138"></a>00138     Index  += (*it)-&gt;value() * Factor;
+<a name="l00139"></a>00139     Factor *= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
+<a name="l00140"></a>00140   }
+<a name="l00141"></a>00141   Index *= 2;  <span class="comment">// because of complex values</span>
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143   QList&lt;Node *&gt;::iterator node_it;
+<a name="l00144"></a>00144   QList&lt;double *&gt;::const_iterator value_it = <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.begin();
+<a name="l00145"></a>00145   <span class="keywordflow">for</span>(node_it = <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.begin(); node_it != <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.end(); node_it++) {
+<a name="l00146"></a>00146     qDebug() &lt;&lt; <span class="stringliteral">&quot;SweepDialog::slotNewValue:(*node_it)-&gt;Name:&quot;</span> &lt;&lt; (*node_it)-&gt;Name;
+<a name="l00147"></a>00147     (*node_it)-&gt;Name = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*((*value_it)+Index));
+<a name="l00148"></a>00148     (*node_it)-&gt;Name += ((*node_it)-&gt;x1 &amp; 0x10)? <span class="stringliteral">&quot;A&quot;</span> : <span class="stringliteral">&quot;V&quot;</span>;
+<a name="l00149"></a>00149     value_it++;
+<a name="l00150"></a>00150   }
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152   <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;viewport()-&gt;update();
+<a name="l00153"></a>00153 }
+<a name="l00154"></a>00154 
+<a name="l00155"></a>00155 <span class="comment">// ---------------------------------------------------</span>
+<a name="l00156"></a><a class="code" href="classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af">00156</a> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>* <a class="code" href="classSweepDialog.html#accd6e5167a65d4f488af59e29132b2af">SweepDialog::setBiasPoints</a>()
+<a name="l00157"></a>00157 {
+<a name="l00158"></a>00158   <span class="comment">// When this function is entered, a simulation was performed.</span>
+<a name="l00159"></a>00159   <span class="comment">// Thus, the node names are still in &quot;node-&gt;Name&quot;.</span>
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161   qDebug() &lt;&lt; <span class="stringliteral">&quot;SweepDialog::setBiasPoints()&quot;</span>;
 <a name="l00162"></a>00162 
-<a name="l00163"></a>00163   qDebug() &lt;&lt; <span class="stringliteral">&quot;SweepDialog::setBiasPoints()&quot;</span>;
-<a name="l00164"></a>00164 
-<a name="l00165"></a>00165   <span class="keywordtype">bool</span> hasNoComp;
-<a name="l00166"></a>00166   <a class="code" href="classGraph.html">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html">Graph</a>(<span class="stringliteral">&quot;&quot;</span>);
-<a name="l00167"></a>00167   QFileInfo Info(<a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
-<a name="l00168"></a>00168   QString DataSet = Info.dirPath() + QDir::separator() + <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">DataSet</a>;
-<a name="l00169"></a>00169 
-<a name="l00170"></a>00170   <a class="code" href="classNode.html">Node</a> *pn;
-<a name="l00171"></a>00171   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe;
-<a name="l00172"></a>00172 
-<a name="l00173"></a>00173   <span class="comment">// Note 1:</span>
-<a name="l00174"></a>00174   <span class="comment">// Invalidate it so that &quot;Graph::loadDatFile()&quot; does not check for the previously loaded time.</span>
-<a name="l00175"></a>00175   <span class="comment">// This is a current hack as &quot;Graph::loadDatFile()&quot; does not support multi-node data loading</span>
-<a name="l00176"></a>00176   <span class="comment">// from the simulation results without refreshing (changing) or invalidating the timestamp.</span>
-<a name="l00177"></a>00177 
-<a name="l00178"></a>00178   <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.clear();
-<a name="l00179"></a>00179   <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.clear();
-<a name="l00180"></a>00180 
-<a name="l00181"></a>00181   <span class="comment">// create DC voltage for all nodes</span>
-<a name="l00182"></a>00182   <span class="keywordflow">for</span>(pn = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#ae8a8db5dc3da0dbdc0f25f66ce64af07">Nodes</a>-&gt;first(); pn != 0; pn = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#ae8a8db5dc3da0dbdc0f25f66ce64af07">Nodes</a>-&gt;next()) {
-<a name="l00183"></a>00183     <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>.isEmpty()) <span class="keywordflow">continue</span>;
-<a name="l00184"></a>00184 
-<a name="l00185"></a>00185     pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = 0;
-<a name="l00186"></a>00186     <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.count() &lt; 2) {
-<a name="l00187"></a>00187       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// no text at open nodes</span>
-<a name="l00188"></a>00188       <span class="keywordflow">continue</span>;
-<a name="l00189"></a>00189     }
-<a name="l00190"></a>00190     <span class="keywordflow">else</span> {
-<a name="l00191"></a>00191       hasNoComp = <span class="keyword">true</span>;
-<a name="l00192"></a>00192       <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
-<a name="l00193"></a>00193         <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
-<a name="l00194"></a>00194           <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;isHorizontal() )  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 2;
-<a name="l00195"></a>00195         }
-<a name="l00196"></a>00196         <span class="keywordflow">else</span> {
-<a name="l00197"></a>00197           <span class="keywordflow">if</span>( ((<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)pe)-&gt;Model == <span class="stringliteral">&quot;GND&quot;</span> ) {
-<a name="l00198"></a>00198             hasNoComp = <span class="keyword">true</span>;   <span class="comment">// no text at ground symbol</span>
-<a name="l00199"></a>00199             <span class="keywordflow">break</span>;
-<a name="l00200"></a>00200           }
-<a name="l00201"></a>00201 
-<a name="l00202"></a>00202           <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> &lt; pe-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a>)  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 1;  <span class="comment">// to the right is no room</span>
-<a name="l00203"></a>00203           hasNoComp = <span class="keyword">false</span>;
-<a name="l00204"></a>00204         }
-<a name="l00205"></a>00205       <span class="keywordflow">if</span>(hasNoComp) {  <span class="comment">// text only were a component is connected</span>
-<a name="l00206"></a>00206         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00207"></a>00207         <span class="keywordflow">continue</span>;
-<a name="l00208"></a>00208       }
-<a name="l00209"></a>00209     }
-<a name="l00210"></a>00210 
-<a name="l00211"></a>00211     pg-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> + <span class="stringliteral">&quot;.V&quot;</span>;
-<a name="l00212"></a>00212     pg-&gt;<a class="code" href="classGraph.html#a5ff6450e0921c74c5182fd96ed377620">lastLoaded</a> = QDateTime(); <span class="comment">// Note 1 at the start of this function</span>
-<a name="l00213"></a>00213     <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet) == 2) {
-<a name="l00214"></a>00214       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>)) + <span class="stringliteral">&quot;V&quot;</span>;
-<a name="l00215"></a>00215       <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.append(pn);             <span class="comment">// remember node ...</span>
-<a name="l00216"></a>00216       <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.append(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>);  <span class="comment">// ... and all of its values</span>
-<a name="l00217"></a>00217       pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;   <span class="comment">// do not delete it next time !</span>
-<a name="l00218"></a>00218     }
-<a name="l00219"></a>00219     <span class="keywordflow">else</span>
-<a name="l00220"></a>00220       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;0V&quot;</span>;
-<a name="l00221"></a>00221 
-<a name="l00222"></a>00222 
-<a name="l00223"></a>00223     <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
-<a name="l00224"></a>00224       <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
-<a name="l00225"></a>00225         <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port1 != pn )  <span class="comment">// no text at next node</span>
-<a name="l00226"></a>00226           ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port1-&gt;Name = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00227"></a>00227         else  ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port2-&gt;Name = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00228"></a>00228       }
-<a name="l00229"></a>00229   }
-<a name="l00230"></a>00230 
-<a name="l00231"></a>00231 
-<a name="l00232"></a>00232   <span class="comment">// create DC current through each probe</span>
-<a name="l00233"></a>00233   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc;
-<a name="l00234"></a>00234   <span class="keywordflow">for</span>(pc = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;first(); pc != 0; pc = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;next())
-<a name="l00235"></a>00235     <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;IProbe&quot;</span>) {
-<a name="l00236"></a>00236       pn = pc-&gt;<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.first()-&gt;Connection;
-<a name="l00237"></a>00237       <span class="keywordflow">if</span>(!pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>.isEmpty())   <span class="comment">// preserve node voltage ?</span>
-<a name="l00238"></a>00238         pn = pc-&gt;<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection;
-<a name="l00239"></a>00239 
-<a name="l00240"></a>00240       pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = 0x10;   <span class="comment">// mark current</span>
-<a name="l00241"></a>00241       pg-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + <span class="stringliteral">&quot;.I&quot;</span>;
-<a name="l00242"></a>00242       pg-&gt;<a class="code" href="classGraph.html#a5ff6450e0921c74c5182fd96ed377620">lastLoaded</a> = QDateTime(); <span class="comment">// Note 1 at the start of this function</span>
-<a name="l00243"></a>00243       <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6">loadDatFile</a>(DataSet) == 2) {
-<a name="l00244"></a>00244         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>)) + <span class="stringliteral">&quot;A&quot;</span>;
-<a name="l00245"></a>00245         <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.append(pn);             <span class="comment">// remember node ...</span>
-<a name="l00246"></a>00246         <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.append(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>);  <span class="comment">// ... and all of its values</span>
-<a name="l00247"></a>00247         pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;   <span class="comment">// do not delete it next time !</span>
-<a name="l00248"></a>00248       }
-<a name="l00249"></a>00249       <span class="keywordflow">else</span>
-<a name="l00250"></a>00250         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;0A&quot;</span>;
-<a name="l00251"></a>00251 
-<a name="l00252"></a>00252       <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
-<a name="l00253"></a>00253         <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
-<a name="l00254"></a>00254           <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;isHorizontal() )  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 2;
-<a name="l00255"></a>00255         }
-<a name="l00256"></a>00256         <span class="keywordflow">else</span> {
-<a name="l00257"></a>00257           <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> &lt; pe-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a>)  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 1;  <span class="comment">// to the right is no room</span>
-<a name="l00258"></a>00258         }
-<a name="l00259"></a>00259     }
-<a name="l00260"></a>00260 
+<a name="l00163"></a>00163   <span class="keywordtype">bool</span> hasNoComp;
+<a name="l00164"></a>00164   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>(NULL, <span class="stringliteral">&quot;&quot;</span>); <span class="comment">// HACK!</span>
+<a name="l00165"></a>00165   QFileInfo Info(<a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
+<a name="l00166"></a>00166   QString DataSet = Info.dirPath() + QDir::separator() + <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38">DataSet</a>;
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168   <a class="code" href="classNode.html">Node</a> *pn;
+<a name="l00169"></a>00169   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> *pe;
+<a name="l00170"></a>00170 
+<a name="l00171"></a>00171   <span class="comment">// Note 1:</span>
+<a name="l00172"></a>00172   <span class="comment">// Invalidate it so that &quot;Graph::loadDatFile()&quot; does not check for the previously loaded time.</span>
+<a name="l00173"></a>00173   <span class="comment">// This is a current hack as &quot;Graph::loadDatFile()&quot; does not support multi-node data loading</span>
+<a name="l00174"></a>00174   <span class="comment">// from the simulation results without refreshing (changing) or invalidating the timestamp.</span>
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176   <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.clear();
+<a name="l00177"></a>00177   <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.clear();
+<a name="l00178"></a>00178 
+<a name="l00179"></a>00179   <span class="comment">// create DC voltage for all nodes</span>
+<a name="l00180"></a>00180   <span class="keywordflow">for</span>(pn = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#ae8a8db5dc3da0dbdc0f25f66ce64af07">Nodes</a>-&gt;first(); pn != 0; pn = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#ae8a8db5dc3da0dbdc0f25f66ce64af07">Nodes</a>-&gt;next()) {
+<a name="l00181"></a>00181     <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>.isEmpty()) <span class="keywordflow">continue</span>;
+<a name="l00182"></a>00182 
+<a name="l00183"></a>00183     pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = 0;
+<a name="l00184"></a>00184     <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.count() &lt; 2) {
+<a name="l00185"></a>00185       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;&quot;</span>;  <span class="comment">// no text at open nodes</span>
+<a name="l00186"></a>00186       <span class="keywordflow">continue</span>;
+<a name="l00187"></a>00187     }
+<a name="l00188"></a>00188     <span class="keywordflow">else</span> {
+<a name="l00189"></a>00189       hasNoComp = <span class="keyword">true</span>;
+<a name="l00190"></a>00190       <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
+<a name="l00191"></a>00191         <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
+<a name="l00192"></a>00192           <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;isHorizontal() )  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 2;
+<a name="l00193"></a>00193         }
+<a name="l00194"></a>00194         <span class="keywordflow">else</span> {
+<a name="l00195"></a>00195           <span class="keywordflow">if</span>( ((<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)pe)-&gt;Model == <span class="stringliteral">&quot;GND&quot;</span> ) {
+<a name="l00196"></a>00196             hasNoComp = <span class="keyword">true</span>;   <span class="comment">// no text at ground symbol</span>
+<a name="l00197"></a>00197             <span class="keywordflow">break</span>;
+<a name="l00198"></a>00198           }
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200           <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> &lt; pe-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a>)  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 1;  <span class="comment">// to the right is no room</span>
+<a name="l00201"></a>00201           hasNoComp = <span class="keyword">false</span>;
+<a name="l00202"></a>00202         }
+<a name="l00203"></a>00203       <span class="keywordflow">if</span>(hasNoComp) {  <span class="comment">// text only were a component is connected</span>
+<a name="l00204"></a>00204         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00205"></a>00205         <span class="keywordflow">continue</span>;
+<a name="l00206"></a>00206       }
+<a name="l00207"></a>00207     }
+<a name="l00208"></a>00208 
+<a name="l00209"></a>00209     pg-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> + <span class="stringliteral">&quot;.V&quot;</span>;
+<a name="l00210"></a>00210     pg-&gt;<a class="code" href="classGraph.html#a5ff6450e0921c74c5182fd96ed377620">lastLoaded</a> = QDateTime(); <span class="comment">// Note 1 at the start of this function</span>
+<a name="l00211"></a>00211     <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet) == 2) {
+<a name="l00212"></a>00212       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>)) + <span class="stringliteral">&quot;V&quot;</span>;
+<a name="l00213"></a>00213       <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.append(pn);             <span class="comment">// remember node ...</span>
+<a name="l00214"></a>00214       <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.append(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>);  <span class="comment">// ... and all of its values</span>
+<a name="l00215"></a>00215       pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;   <span class="comment">// do not delete it next time !</span>
+<a name="l00216"></a>00216     }
+<a name="l00217"></a>00217     <span class="keywordflow">else</span>
+<a name="l00218"></a>00218       pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;0V&quot;</span>;
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220 
+<a name="l00221"></a>00221     <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
+<a name="l00222"></a>00222       <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
+<a name="l00223"></a>00223         <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port1 != pn )  <span class="comment">// no text at next node</span>
+<a name="l00224"></a>00224           ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port1-&gt;Name = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00225"></a>00225         else  ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;Port2-&gt;Name = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00226"></a>00226       }
+<a name="l00227"></a>00227   }
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229 
+<a name="l00230"></a>00230   <span class="comment">// create DC current through each probe</span>
+<a name="l00231"></a>00231   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc;
+<a name="l00232"></a>00232   <span class="keywordflow">for</span>(pc = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;first(); pc != 0; pc = <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;next())
+<a name="l00233"></a>00233     <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> == <span class="stringliteral">&quot;IProbe&quot;</span>) {
+<a name="l00234"></a>00234       pn = pc-&gt;<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.first()-&gt;Connection;
+<a name="l00235"></a>00235       <span class="keywordflow">if</span>(!pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>.isEmpty())   <span class="comment">// preserve node voltage ?</span>
+<a name="l00236"></a>00236         pn = pc-&gt;<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection;
+<a name="l00237"></a>00237 
+<a name="l00238"></a>00238       pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = 0x10;   <span class="comment">// mark current</span>
+<a name="l00239"></a>00239       pg-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + <span class="stringliteral">&quot;.I&quot;</span>;
+<a name="l00240"></a>00240       pg-&gt;<a class="code" href="classGraph.html#a5ff6450e0921c74c5182fd96ed377620">lastLoaded</a> = QDateTime(); <span class="comment">// Note 1 at the start of this function</span>
+<a name="l00241"></a>00241       <span class="keywordflow">if</span>(pg-&gt;<a class="code" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file.">loadDatFile</a>(DataSet) == 2) {
+<a name="l00242"></a>00242         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <a class="code" href="namespacemisc.html#af7e46432adfd60ad9f875172e5c95393">misc::num2str</a>(*(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>)) + <span class="stringliteral">&quot;A&quot;</span>;
+<a name="l00243"></a>00243         <a class="code" href="classSweepDialog.html#acd8e0d926044bf3daf663d4ebe519fb6">NodeList</a>.append(pn);             <span class="comment">// remember node ...</span>
+<a name="l00244"></a>00244         <a class="code" href="classSweepDialog.html#a784a0cb922c4a1bdd40ad5758050d5ad">ValueList</a>.append(pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>);  <span class="comment">// ... and all of its values</span>
+<a name="l00245"></a>00245         pg-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;   <span class="comment">// do not delete it next time !</span>
+<a name="l00246"></a>00246       }
+<a name="l00247"></a>00247       <span class="keywordflow">else</span>
+<a name="l00248"></a>00248         pn-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a> = <span class="stringliteral">&quot;0A&quot;</span>;
+<a name="l00249"></a>00249 
+<a name="l00250"></a>00250       <span class="keywordflow">for</span>(pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.first(); pe!=0; pe = pn-&gt;<a class="code" href="classNode.html#ac6cc2a2b815b4d40356ed072e344801b">Connections</a>.next())
+<a name="l00251"></a>00251         <span class="keywordflow">if</span>(pe-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#ad58d6827bb5bd0fcc0f14ee2aea9cb14">isWire</a>) {
+<a name="l00252"></a>00252           <span class="keywordflow">if</span>( ((<a class="code" href="classWire.html">Wire</a>*)pe)-&gt;isHorizontal() )  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 2;
+<a name="l00253"></a>00253         }
+<a name="l00254"></a>00254         <span class="keywordflow">else</span> {
+<a name="l00255"></a>00255           <span class="keywordflow">if</span>(pn-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> &lt; pe-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a>)  pn-&gt;<a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> |= 1;  <span class="comment">// to the right is no room</span>
+<a name="l00256"></a>00256         }
+<a name="l00257"></a>00257     }
+<a name="l00258"></a>00258 
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260   <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> = 1;
 <a name="l00261"></a>00261 
-<a name="l00262"></a>00262   <a class="code" href="classSweepDialog.html#aab42e938af08462a52e3853fc53bd3ef">Doc</a>-&gt;<a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> = 1;
-<a name="l00263"></a>00263 
-<a name="l00264"></a>00264   <span class="keywordflow">return</span> pg;
-<a name="l00265"></a>00265 }
+<a name="l00262"></a>00262   <span class="keywordflow">return</span> pg;
+<a name="l00263"></a>00263 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -364,7 +362,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 16:35:41 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 16:37:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

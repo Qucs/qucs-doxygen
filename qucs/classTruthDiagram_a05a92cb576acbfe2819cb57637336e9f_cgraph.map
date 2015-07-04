@@ -1,7 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classDiagram.html#aa85d506db3e26f6522e472d36c9e3ccb" title="Diagram::checkColumnWidth" alt="" coords="239,5,431,35"/>
 <area shape="rect" id="node5" href="$classGraph.html#ab3d0a9b8a15458f9fd6fe2ad71debaeb" title="Graph::isEmpty" alt="" coords="279,59,391,88"/>
-<area shape="rect" id="node7" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="291,112,379,141"/>
-<area shape="rect" id="node9" href="$classDiagram.html#a3278bf526fac551891b29b601b0d6285" title="Checks if the two graphs have the same independent variables." alt="" coords="237,165,432,195"/>
-<area shape="rect" id="node11" href="$classGraph.html#a2ac43798ba41244271d91e15e61404ed" title="Graph::mutable_axes" alt="" coords="480,165,627,195"/>
+<area shape="rect" id="node7" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="655,164,743,193"/>
+<area shape="rect" id="node9" href="$classDiagram.html#a7ea12d540afb7c9233bfeb7c4fcc76fe" title="Checks if the two graphs have the same independent variables." alt="" coords="237,163,432,192"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="483,163,603,192"/>
+<area shape="rect" id="node13" href="$classGraph.html#a869825b726f992c231c337386f95f435" title="Graph::axisName" alt="" coords="481,216,604,245"/>
 </map>

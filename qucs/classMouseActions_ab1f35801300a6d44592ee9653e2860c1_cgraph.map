@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="324,291,505,320"/>
-<area shape="rect" id="node54" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="1681,857,1815,887"/>
-<area shape="rect" id="node56" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="1667,935,1829,964"/>
-<area shape="rect" id="node58" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="317,1329,512,1359"/>
-<area shape="rect" id="node67" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="871,1200,1079,1229"/>
-<area shape="rect" id="node74" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="1128,1148,1360,1177"/>
-<area shape="rect" id="node78" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="1667,1456,1829,1485"/>
-<area shape="rect" id="node5" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="615,157,767,187"/>
-<area shape="rect" id="node7" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="644,211,737,240"/>
-<area shape="rect" id="node9" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="625,264,756,293"/>
-<area shape="rect" id="node27" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="601,317,780,347"/>
-<area shape="rect" id="node32" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="Marker::createText" alt="" coords="625,531,756,560"/>
-<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="915,317,1035,347"/>
-<area shape="rect" id="node13" href="$classGraph.html#ac40011f8360814a34ee99a232d399f1c" title="Graph::axis" alt="" coords="931,371,1019,400"/>
-<area shape="rect" id="node15" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="896,51,1053,80"/>
-<area shape="rect" id="node17" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="927,104,1023,133"/>
-<area shape="rect" id="node19" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="932,157,1017,187"/>
-<area shape="rect" id="node21" href="$classDiagram.html#a96d53b933311ca49f6d5827d00e7e101" title="Diagram::calcCoordinate" alt="" coords="892,424,1057,453"/>
-<area shape="rect" id="node23" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="925,211,1024,240"/>
-<area shape="rect" id="node25" href="$classDiagram.html#aa24749ad47c7deeb888e44b1a36e134c" title="Diagram::insideDiagram" alt="" coords="1432,317,1595,347"/>
-<area shape="rect" id="node30" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="923,264,1027,293"/>
-<area shape="rect" id="node34" href="$classMarker.html#a1e1641de9c3106318e8ab96d1bb9827b" title="Marker::makeInvalid" alt="" coords="905,688,1044,717"/>
-<area shape="rect" id="node36" href="$classDiagram.html#a6189354837e601f3cfd0235c99b253b1" title="Diagram::finishMarkerCoordinates" alt="" coords="1135,636,1353,665"/>
-<area shape="rect" id="node39" href="$classMarker.html#a25c7b5a70db369233dfcf18a1ec97d93" title="Marker::getTextSize" alt="" coords="1175,715,1313,744"/>
-<area shape="rect" id="node43" href="$namespacemisc.html#a7024bd9b00bec9bbac80b6f0ce274f57" title="misc::complexRect" alt="" coords="908,792,1041,821"/>
-<area shape="rect" id="node45" href="$namespacemisc.html#a26406053525317ffcc71d322574c9b78" title="misc::complexDeg" alt="" coords="909,477,1040,507"/>
-<area shape="rect" id="node47" href="$namespacemisc.html#a5997d854401ebbf6a57963a349176828" title="misc::complexRad" alt="" coords="909,531,1040,560"/>
-<area shape="rect" id="node49" href="$classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625" title="MatchDialog::r2z" alt="" coords="915,584,1035,613"/>
-<area shape="rect" id="node60" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="1427,1000,1600,1029"/>
-<area shape="rect" id="node64" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="561,1277,820,1307"/>
-<area shape="rect" id="node69" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="1147,1277,1341,1307"/>
-<area shape="rect" id="node93" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="1141,1095,1347,1124"/>
-<area shape="rect" id="node97" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="569,1717,812,1747"/>
-<area shape="rect" id="node99" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="900,1717,1049,1747"/>
-<area shape="rect" id="node103" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="595,1664,787,1693"/>
-<area shape="rect" id="node106" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="1409,1456,1617,1485"/>
-<area shape="rect" id="node109" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="1415,1509,1612,1539"/>
-<area shape="rect" id="node112" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="596,1821,785,1851"/>
-<area shape="rect" id="node115" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="595,1557,787,1587"/>
-<area shape="rect" id="node119" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="583,1173,799,1203"/>
-<area shape="rect" id="node127" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="592,1611,789,1640"/>
-<area shape="rect" id="node62" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1679,995,1817,1024"/>
-<area shape="rect" id="node71" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="1155,1201,1333,1231"/>
-<area shape="rect" id="node76" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1423,947,1604,976"/>
-<area shape="rect" id="node80" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1897,1349,2095,1379"/>
-<area shape="rect" id="node82" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1877,1403,2115,1432"/>
-<area shape="rect" id="node84" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1903,1456,2089,1485"/>
-<area shape="rect" id="node86" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1903,1509,2089,1539"/>
-<area shape="rect" id="node88" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1900,1563,2092,1592"/>
+<area shape="rect" id="node3" href="$classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="324,344,505,373"/>
+<area shape="rect" id="node37" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="1681,616,1815,645"/>
+<area shape="rect" id="node39" href="$classSchematic.html#a79d58d2fe4c19dc5de04748719aebc2d" title="Schematic::enlargeView" alt="" coords="1667,731,1829,760"/>
+<area shape="rect" id="node41" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="317,1255,512,1284"/>
+<area shape="rect" id="node56" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="871,941,1079,971"/>
+<area shape="rect" id="node63" href="$classMouseActions.html#ae248e7625462accddd75a5cdbc1167a7" title="MouseActions::MDoubleClickSelect" alt="" coords="1128,761,1360,791"/>
+<area shape="rect" id="node67" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="1667,1355,1829,1384"/>
+<area shape="rect" id="node5" href="$classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="615,192,767,221"/>
+<area shape="rect" id="node7" href="$classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="644,245,737,275"/>
+<area shape="rect" id="node9" href="$classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="625,299,756,328"/>
+<area shape="rect" id="node30" href="$classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="601,435,780,464"/>
+<area shape="rect" id="node35" href="$classGraph.html#a091ec6252a393994dc00fb221abe608e" title="Graph::createMarkerText" alt="" coords="608,488,773,517"/>
+<area shape="rect" id="node11" href="$classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="915,379,1035,408"/>
+<area shape="rect" id="node13" href="$classGraph.html#a12dbe8ffa481c1b992ea81c022e97af8" title="Graph::count" alt="" coords="927,5,1023,35"/>
+<area shape="rect" id="node15" href="$classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1200,431,1288,460"/>
+<area shape="rect" id="node17" href="$classGraph.html#a9358e4fd331205a6e5ce86658cb9e980" title="Graph::resizeScrPoints" alt="" coords="896,59,1053,88"/>
+<area shape="rect" id="node19" href="$classGraph.html#a59082951988ebe52d725bd25f44726e1" title="Graph::begin" alt="" coords="927,112,1023,141"/>
+<area shape="rect" id="node21" href="$classGraph.html#a7642cba268ae1c107bdc87ac6cdc9e18" title="Graph::end" alt="" coords="932,165,1017,195"/>
+<area shape="rect" id="node24" href="$classDiagram.html#abeefcdf5595744849bd412c562f5c90e" title="Diagram::calcCoordinateP" alt="" coords="888,219,1061,248"/>
+<area shape="rect" id="node26" href="$classDiagram.html#a0c9dc6ef923fd366b04417194d14101d" title="Clipping for round diagrams (smith, polar, ...)" alt="" coords="925,272,1024,301"/>
+<area shape="rect" id="node28" href="$classDiagram.html#a11565a84645ce33dfc2107ba2d6bb790" title="Diagram::insideDiagramP" alt="" coords="889,325,1060,355"/>
+<area shape="rect" id="node33" href="$mnemo_8cpp.html#ac8700713be7c45b326e6fb24b57ae7cb" title="encode_String" alt="" coords="923,483,1027,512"/>
+<area shape="rect" id="node43" href="$classSchematic.html#a692509c6bbcfe8d1a7b162c1589c2654" title="Schematic::selectElement" alt="" coords="604,1152,777,1181"/>
+<area shape="rect" id="node53" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="561,993,820,1023"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a630521cd7d7908223bafb322198f4d9c" title="Schematic::deselectElements" alt="" coords="1147,1233,1341,1263"/>
+<area shape="rect" id="node82" href="$classSchematic.html#a1f3541babeef27f02189d4e51c16fda4" title="Schematic::highlightWireLabels" alt="" coords="1141,839,1347,868"/>
+<area shape="rect" id="node88" href="$classMouseActions.html#a8b1b6168d18ddf5baca14332a8f3c263" title="MouseActions::MMoveResizePainting" alt="" coords="569,1616,812,1645"/>
+<area shape="rect" id="node94" href="$classSchematic.html#a740fc7499c73d11b3ddaf68d08077725" title="Schematic::setOnGrid" alt="" coords="900,1567,1049,1596"/>
+<area shape="rect" id="node98" href="$classMouseActions.html#a7bd4cac30452ad354b42d14382c6af1c" title="MouseActions::MMoveSelect Paints a rectangle for select area." alt="" coords="595,1459,787,1488"/>
+<area shape="rect" id="node102" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="1409,1301,1617,1331"/>
+<area shape="rect" id="node105" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="1415,1355,1612,1384"/>
+<area shape="rect" id="node108" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="596,1512,785,1541"/>
+<area shape="rect" id="node112" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="595,1723,787,1752"/>
+<area shape="rect" id="node117" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="583,764,799,793"/>
+<area shape="rect" id="node125" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="592,1669,789,1699"/>
+<area shape="rect" id="node45" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="1679,908,1817,937"/>
+<area shape="rect" id="node47" href="$classWireLabel.html#ab337756cc60a5cb53a51ef478258e9f6" title="WireLabel::getSelected" alt="" coords="896,1045,1053,1075"/>
+<area shape="rect" id="node49" href="$classMarker.html#a6a6f97d929cc21b276f3974e28fa6adb" title="Marker::getSelected" alt="" coords="905,1099,1044,1128"/>
+<area shape="rect" id="node51" href="$classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph." alt="" coords="908,1152,1041,1181"/>
+<area shape="rect" id="node60" href="$classSchematic.html#ae47d290bed9d6067383d3e2feb511b45" title="Schematic::selectWireLine" alt="" coords="1155,941,1333,971"/>
+<area shape="rect" id="node65" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="1423,761,1604,791"/>
+<area shape="rect" id="node69" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1897,1248,2095,1277"/>
+<area shape="rect" id="node71" href="$classSchematic.html#a391e9064cc868480d2f8674628b81be1" title="Schematic::createSymbolUndoString" alt="" coords="1877,1301,2115,1331"/>
+<area shape="rect" id="node73" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1903,1355,2089,1384"/>
+<area shape="rect" id="node75" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1903,1408,2089,1437"/>
+<area shape="rect" id="node77" href="$classSchematic.html#a5d7bc373c741575d8456508b0d846f59" title="Schematic::createUndoString" alt="" coords="1900,1461,2092,1491"/>
+<area shape="rect" id="node84" href="$classWireLabel.html#a87681366214908f3354279a8eaf50e1b" title="WireLabel::setHighlighted" alt="" coords="1428,839,1599,868"/>
+<area shape="rect" id="node90" href="$classMouseActions.html#a54588badab17da0c73256bda84290f77" title="MouseActions::setPainter" alt="" coords="889,1620,1060,1649"/>
+<area shape="rect" id="node92" href="$classSchematic.html#a2be09396e97936a98c8d349cfe30deb0" title="Schematic::PostPaintEvent" alt="" coords="1153,1567,1335,1596"/>
 </map>
