@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens." alt="" coords="239,5,388,35"/>
+<area shape="rect" id="node5" href="$classEqnDefined.html#af416e30d4aff21253e4ba127c33c3f4c" title="EqnDefined::findCurrents Finds used currents (I1, I2, ...) in equation." alt="" coords="229,59,397,88"/>
+<area shape="rect" id="node7" href="$classEqnDefined.html#a5502b1042a47e7385b0a1db80923e4cf" title="EqnDefined::subsVoltages Substitute volatges in spice Notation in token list." alt="" coords="225,112,401,141"/>
+<area shape="rect" id="node9" href="$classEqnDefined.html#a23a7a981addbf9dad502a43b2f042ea5" title="EqnDefined::subsCurrents Substitute currents in spice Notation in token list." alt="" coords="225,165,401,195"/>
+</map>

@@ -111,9 +111,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a>00028   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classParam__Sweep.html#adda437d12587ca9587dce6e29279b273">newOne</a>();
 <a name="l00029"></a>00029   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classParam__Sweep.html#a2d29d3232a06df2918787d3becdacc08">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
 <a name="l00030"></a>00030   <span class="keywordtype">void</span> <a class="code" href="classParam__Sweep.html#a574eeff7ab834f8230defbd7ffde729c">recreate</a>(<a class="code" href="classSchematic.html">Schematic</a>*);
-<a name="l00031"></a>00031 };
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033 <span class="preprocessor">#endif</span>
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032   QString <a class="code" href="classParam__Sweep.html#a7aa1d0b6092dadb14456196170072f05">getNgspiceBeforeSim</a>(QString sim, <span class="keywordtype">int</span> lvl=0);
+<a name="l00033"></a>00033   QString <a class="code" href="classParam__Sweep.html#a9deebd496d41bff7cb3d0924807f619f">getNgspiceAfterSim</a>(QString sim, <span class="keywordtype">int</span> lvl=0);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">protected</span>:
+<a name="l00036"></a>00036   QString <a class="code" href="classParam__Sweep.html#a35c86547d738510ec7ebb724799b43ca">spice_netlist</a>(<span class="keywordtype">bool</span> isXyce);
+<a name="l00037"></a>00037 };
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -132,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 4 2015 20:16:17 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 5 2015 11:57:43 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

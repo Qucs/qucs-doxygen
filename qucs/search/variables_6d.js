@@ -11,7 +11,7 @@ var searchData=
   ['manualy',['manualY',['../classDiagramDialog.html#ab92ec39f8fb69869597ae5cc9a3fa3d8',1,'DiagramDialog']]],
   ['manualz',['manualZ',['../classDiagramDialog.html#af49519085a5e78148611e7307e7cd9c9',1,'DiagramDialog']]],
   ['markers',['Markers',['../classGraph.html#ad05337df3f4b112ca4626b93d5273b65',1,'Graph']]],
-  ['max',['Max',['../structDataX.html#a5dfb4caccf09ef63381d641a84f05a81',1,'DataX::Max()'],['../structAxis.html#aa408e1973b19160cd7f2e89af4511668',1,'Axis::max()'],['../structtBound.html#a62b1b3446c769db6f6388ce5d916e2e6',1,'tBound::max()']]],
+  ['max',['max',['../structAxis.html#aa408e1973b19160cd7f2e89af4511668',1,'Axis::max()'],['../structtBound.html#a62b1b3446c769db6f6388ce5d916e2e6',1,'tBound::max()'],['../structDataX.html#a5dfb4caccf09ef63381d641a84f05a81',1,'DataX::Max()']]],
   ['max1',['MAx1',['../classMouseActions.html#a7493ede770278fab2015cc47b4d97f13',1,'MouseActions']]],
   ['max2',['MAx2',['../classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9',1,'MouseActions']]],
   ['max3',['MAx3',['../classMouseActions.html#a0782c1437f91ee509e01acdfde94f487',1,'MouseActions']]],
