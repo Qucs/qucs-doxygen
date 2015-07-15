@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['Label',['../structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab',1,'Axis::Label()'],['../classConductor.html#ab4a26a4b903537282a91567740414fdd',1,'Conductor::Label()'],['../classLoadDialog.html#ab9fddb594b53919d7ea362f086036bb9',1,'LoadDialog::label()'],['../classSaveDialog.html#a2936adb123cc8183b3aae4f93cc47421',1,'SaveDialog::label()']]],
+  ['label',['label',['../classLoadDialog.html#ab9fddb594b53919d7ea362f086036bb9',1,'LoadDialog::label()'],['../classSaveDialog.html#a2936adb123cc8183b3aae4f93cc47421',1,'SaveDialog::label()'],['../structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab',1,'Axis::Label()'],['../classConductor.html#ab4a26a4b903537282a91567740414fdd',1,'Conductor::Label()']]],
   ['label1',['Label1',['../classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10',1,'DiagramDialog']]],
   ['label2',['Label2',['../classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a',1,'DiagramDialog::Label2()'],['../classLabelDialog.html#a17666709c68d5b7fc9f55cba0f7a2e84',1,'LabelDialog::Label2()']]],
   ['label3',['Label3',['../classDiagramDialog.html#a2ce23c6d85acebd43d43c311eb409e91',1,'DiagramDialog']]],
@@ -24,6 +24,7 @@ var searchData=
   ['lblresolutiony',['lblResolutionY',['../classExportDialog.html#ab2b00092ef41fef3300d3db29b535133',1,'ExportDialog']]],
   ['lblsim',['lblSim',['../classDiagramDialog.html#ad47a03f8a91688935a985815ad60d1ff',1,'DiagramDialog']]],
   ['lblsimulator',['lblSimulator',['../classExternSimDialog.html#ac117b03118d5b3db2f51e9d288f7660b',1,'ExternSimDialog']]],
+  ['lblworkdir',['lblWorkdir',['../classSimSettingsDialog.html#a776f4b93a0834d317a7459f3b4dffc2d',1,'SimSettingsDialog']]],
   ['lblxyce',['lblXyce',['../classSimSettingsDialog.html#a4995e3a64b158c248cb5fa35f7238fb8',1,'SimSettingsDialog']]],
   ['lblxycepar',['lblXycePar',['../classSimSettingsDialog.html#ae3d6edb5c4c4485582e903f00a344a3f',1,'SimSettingsDialog']]],
   ['length',['Length',['../classArrow.html#ad7f837efd6945b72d3adccb50bdef379',1,'Arrow']]],

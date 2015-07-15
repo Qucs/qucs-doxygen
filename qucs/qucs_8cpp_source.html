@@ -2883,19 +2883,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l02809"></a>02809 
 <a name="l02810"></a>02810         <a class="code" href="classExternSimDialog.html">ExternSimDialog</a> *SimDlg = <span class="keyword">new</span> <a class="code" href="classExternSimDialog.html">ExternSimDialog</a>(sch);
 <a name="l02811"></a>02811         connect(SimDlg,SIGNAL(simulated()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">slotAfterSpiceSimulation</a>()));
-<a name="l02812"></a>02812         SimDlg-&gt;exec();
-<a name="l02813"></a>02813         disconnect(SimDlg,SIGNAL(simulated()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">slotAfterSpiceSimulation</a>()));
-<a name="l02814"></a>02814         <span class="keywordflow">if</span> (SimDlg-&gt;<a class="code" href="classExternSimDialog.html#ac2e308b8d6f2dc436a2e69391ad1e41d">wasSimulated</a>) <a class="code" href="classQucsApp.html#a02a4d768683eb57a7f45d22e57478477">slotChangePage</a>(sch-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>,sch-&gt;<a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">DataDisplay</a>);
-<a name="l02815"></a>02815         <span class="keyword">delete</span> SimDlg;
-<a name="l02816"></a>02816     }
-<a name="l02817"></a>02817 }
-<a name="l02818"></a>02818 
-<a name="l02819"></a><a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">02819</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">QucsApp::slotAfterSpiceSimulation</a>()
-<a name="l02820"></a>02820 {
-<a name="l02821"></a>02821     <a class="code" href="classSchematic.html">Schematic</a> *sch = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l02822"></a>02822     sch-&gt;<a class="code" href="classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6">reloadGraphs</a>();
-<a name="l02823"></a>02823     sch-&gt;viewport()-&gt;update();
-<a name="l02824"></a>02824 }
+<a name="l02812"></a>02812         connect(SimDlg,SIGNAL(warnings()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">slotShowWarnings</a>()));
+<a name="l02813"></a>02813         connect(SimDlg,SIGNAL(success()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">slotResetWarnings</a>()));
+<a name="l02814"></a>02814         SimDlg-&gt;exec();
+<a name="l02815"></a>02815         disconnect(SimDlg,SIGNAL(simulated()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">slotAfterSpiceSimulation</a>()));
+<a name="l02816"></a>02816         disconnect(SimDlg,SIGNAL(warnings()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">slotShowWarnings</a>()));
+<a name="l02817"></a>02817         disconnect(SimDlg,SIGNAL(success()),<span class="keyword">this</span>,SLOT(<a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">slotResetWarnings</a>()));
+<a name="l02818"></a>02818         <span class="keywordflow">if</span> (SimDlg-&gt;<a class="code" href="classExternSimDialog.html#ac2e308b8d6f2dc436a2e69391ad1e41d">wasSimulated</a>) <a class="code" href="classQucsApp.html#a02a4d768683eb57a7f45d22e57478477">slotChangePage</a>(sch-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>,sch-&gt;<a class="code" href="classQucsDoc.html#aa478fdc99a03ad789a287aa62c114fd1">DataDisplay</a>);
+<a name="l02819"></a>02819         <span class="keyword">delete</span> SimDlg;
+<a name="l02820"></a>02820     }
+<a name="l02821"></a>02821 }
+<a name="l02822"></a>02822 
+<a name="l02823"></a><a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">02823</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd">QucsApp::slotAfterSpiceSimulation</a>()
+<a name="l02824"></a>02824 {
+<a name="l02825"></a>02825     <a class="code" href="classSchematic.html">Schematic</a> *sch = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
+<a name="l02826"></a>02826     sch-&gt;<a class="code" href="classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6">reloadGraphs</a>();
+<a name="l02827"></a>02827     sch-&gt;viewport()-&gt;update();
+<a name="l02828"></a>02828 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -2914,7 +2918,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 5 2015 11:57:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 15 2015 13:00:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

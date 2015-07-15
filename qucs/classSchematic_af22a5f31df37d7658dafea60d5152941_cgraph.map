@@ -3,13 +3,13 @@
 <area shape="rect" id="node5" href="$classComponent.html#ab9215e47cb5acea835a44302fd488c8c" title="Component::getSubcircuitFile" alt="" coords="245,457,440,486"/>
 <area shape="rect" id="node7" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="265,510,420,539"/>
 <area shape="rect" id="node17" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="255,217,431,246"/>
-<area shape="rect" id="node46" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="248,802,437,831"/>
-<area shape="rect" id="node79" href="$classSpiceFile.html#af8223fc8e276d180bf0954743fb81e55" title="SpiceFile::createSpiceSubckt" alt="" coords="245,749,440,778"/>
-<area shape="rect" id="node86" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="252,855,433,885"/>
+<area shape="rect" id="node46" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="248,855,437,885"/>
+<area shape="rect" id="node81" href="$classSpiceFile.html#af8223fc8e276d180bf0954743fb81e55" title="SpiceFile::createSpiceSubckt" alt="" coords="245,642,440,671"/>
+<area shape="rect" id="node86" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="252,802,433,831"/>
 <area shape="rect" id="node96" href="$classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90" title="SpiceFile::getErrorText" alt="" coords="265,909,420,938"/>
-<area shape="rect" id="node98" href="$classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c" title="VHDL_File::createSubNetlist" alt="" coords="248,642,437,671"/>
+<area shape="rect" id="node98" href="$classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c" title="VHDL_File::createSubNetlist" alt="" coords="248,695,437,725"/>
 <area shape="rect" id="node103" href="$classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4" title="VHDL_File::getErrorText" alt="" coords="260,962,425,991"/>
-<area shape="rect" id="node105" href="$classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48" title="Verilog_File::createSubNetlist" alt="" coords="245,695,440,725"/>
+<area shape="rect" id="node105" href="$classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48" title="Verilog_File::createSubNetlist" alt="" coords="245,749,440,778"/>
 <area shape="rect" id="node110" href="$classVerilog__File.html#a0945cf70d92970b0607197362fdd29e0" title="Verilog_File::getErrorText" alt="" coords="257,1015,428,1045"/>
 <area shape="rect" id="node9" href="$classSchematic.html#ac1d3660eba3f679706386522be12d07c" title="Schematic::signalCursorPosChanged" alt="" coords="492,377,732,406"/>
 <area shape="rect" id="node11" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="519,430,705,459"/>
@@ -30,22 +30,22 @@
 <area shape="rect" id="node44" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="865,377,967,406"/>
 <area shape="rect" id="node48" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="517,590,707,619"/>
 <area shape="rect" id="node55" href="$classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b" title="Schematic::createSubNetlistPlain" alt="" coords="503,830,721,859"/>
-<area shape="rect" id="node71" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="489,1070,735,1099"/>
+<area shape="rect" id="node71" href="$classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE&#45;compatibility of all components." alt="" coords="489,1070,735,1099"/>
+<area shape="rect" id="node73" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="489,1017,735,1046"/>
 <area shape="rect" id="node51" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="823,537,1009,566"/>
 <area shape="rect" id="node53" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="811,590,1021,619"/>
 <area shape="rect" id="node57" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="829,643,1003,673"/>
-<area shape="rect" id="node59" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="841,1017,991,1046"/>
-<area shape="rect" id="node61" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="852,1070,980,1099"/>
-<area shape="rect" id="node63" href="$classComponent.html#a8cc8c065a46079b390ac5218f99153be" title="Component::getNetlist" alt="" coords="840,750,992,779"/>
-<area shape="rect" id="node65" href="$namespacemisc.html#aed5619612e57189460795e5e6e834d41" title="misc::Verilog_Param" alt="" coords="845,803,987,833"/>
-<area shape="rect" id="node67" href="$classComponent.html#aca662dcb71726b77eb5db6af76c63624" title="Component::get_Verilog_Code" alt="" coords="816,857,1016,886"/>
-<area shape="rect" id="node69" href="$classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7" title="Component::get_VHDL_Code" alt="" coords="819,910,1013,939"/>
-<area shape="rect" id="node75" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="785,1123,1047,1153"/>
-<area shape="rect" id="node77" href="$classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist..." alt="" coords="809,1177,1023,1206"/>
-<area shape="rect" id="node81" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="521,750,703,779"/>
-<area shape="rect" id="node84" href="$classSchematic.html#aed58e5dacd756fceffb39c7581dcf3ff" title="Schematic::getFileInfo" alt="" coords="840,697,992,726"/>
-<area shape="rect" id="node88" href="$classSpiceFile.html#ad97ed53982f088887195c1791766d373" title="SpiceFile::SpiceFile" alt="" coords="847,963,985,993"/>
-<area shape="rect" id="node91" href="$classSpiceFile.html#a11272d700d7e466c7af9e41e47c435ba" title="SpiceFile::recreateSubNetlist" alt="" coords="516,1017,708,1046"/>
-<area shape="rect" id="node100" href="$classVHDL__File.html#aebea8efe023a3e7d842bd2e9568b31a2" title="VHDL_File::getSubcircuitFile" alt="" coords="517,643,707,673"/>
-<area shape="rect" id="node107" href="$classVerilog__File.html#aee772de812175299a79b7571669cbc71" title="Verilog_File::getSubcircuitFile" alt="" coords="515,697,709,726"/>
+<area shape="rect" id="node59" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="841,963,991,993"/>
+<area shape="rect" id="node61" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="852,1017,980,1046"/>
+<area shape="rect" id="node63" href="$classComponent.html#a8cc8c065a46079b390ac5218f99153be" title="Component::getNetlist" alt="" coords="840,697,992,726"/>
+<area shape="rect" id="node65" href="$namespacemisc.html#aed5619612e57189460795e5e6e834d41" title="misc::Verilog_Param" alt="" coords="845,750,987,779"/>
+<area shape="rect" id="node67" href="$classComponent.html#aca662dcb71726b77eb5db6af76c63624" title="Component::get_Verilog_Code" alt="" coords="816,803,1016,833"/>
+<area shape="rect" id="node69" href="$classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7" title="Component::get_VHDL_Code" alt="" coords="819,857,1013,886"/>
+<area shape="rect" id="node77" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="785,1070,1047,1099"/>
+<area shape="rect" id="node79" href="$classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4" title="AbstractSpiceKernel::finished" alt="" coords="819,1123,1013,1153"/>
+<area shape="rect" id="node83" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="521,643,703,673"/>
+<area shape="rect" id="node88" href="$classSpiceFile.html#ad97ed53982f088887195c1791766d373" title="SpiceFile::SpiceFile" alt="" coords="847,910,985,939"/>
+<area shape="rect" id="node91" href="$classSpiceFile.html#a11272d700d7e466c7af9e41e47c435ba" title="SpiceFile::recreateSubNetlist" alt="" coords="516,963,708,993"/>
+<area shape="rect" id="node100" href="$classVHDL__File.html#aebea8efe023a3e7d842bd2e9568b31a2" title="VHDL_File::getSubcircuitFile" alt="" coords="517,697,707,726"/>
+<area shape="rect" id="node107" href="$classVerilog__File.html#aee772de812175299a79b7571669cbc71" title="Verilog_File::getSubcircuitFile" alt="" coords="515,750,709,779"/>
 </map>

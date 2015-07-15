@@ -1,21 +1,23 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="996,39,1175,68"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd" title="QucsApp::slotAfterSpiceSimulation" alt="" coords="269,358,496,387"/>
-<area shape="rect" id="node9" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="293,224,472,254"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="560,464,728,494"/>
-<area shape="rect" id="node11" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="580,91,708,120"/>
-<area shape="rect" id="node16" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="576,144,712,174"/>
-<area shape="rect" id="node18" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="589,198,699,227"/>
-<area shape="rect" id="node20" href="$classQucsApp.html#abc9b64e52b905e3a287dc618d8507d2c" title="QucsApp::slotUpdateTreeview" alt="" coords="544,251,744,280"/>
-<area shape="rect" id="node22" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="557,304,731,334"/>
-<area shape="rect" id="node25" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="563,358,725,387"/>
-<area shape="rect" id="node27" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="549,411,739,440"/>
-<area shape="rect" id="node13" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="805,91,931,120"/>
-<area shape="rect" id="node29" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="793,384,943,414"/>
-<area shape="rect" id="node31" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="804,438,932,467"/>
-<area shape="rect" id="node33" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1472,384,1539,414"/>
-<area shape="rect" id="node35" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1468,491,1543,520"/>
-<area shape="rect" id="node37" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="992,438,1179,467"/>
-<area shape="rect" id="node41" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="1228,438,1415,467"/>
-<area shape="rect" id="node45" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1465,438,1545,467"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#aa699c68344d4bd4f53fe90f0ccd4b6ae" title="QucsApp::isTextDocument" alt="" coords="996,42,1175,71"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#a952c3ff67402eadc4bb2eb82b315d2dd" title="QucsApp::slotAfterSpiceSimulation" alt="" coords="269,280,496,310"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd" title="QucsApp::slotShowWarnings" alt="" coords="287,334,479,363"/>
+<area shape="rect" id="node11" href="$classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c" title="QucsApp::slotResetWarnings" alt="" coords="285,387,480,416"/>
+<area shape="rect" id="node13" href="$classQucsApp.html#a02a4d768683eb57a7f45d22e57478477" title="QucsApp::slotChangePage" alt="" coords="293,227,472,256"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="560,467,728,496"/>
+<area shape="rect" id="node15" href="$classQucsApp.html#aedb93e909d0b2cff6a8e4ccc82809057" title="QucsApp::findDoc" alt="" coords="580,94,708,123"/>
+<area shape="rect" id="node20" href="$classQucsDoc.html#ae790e44362d2df14fae98b09dbb78899" title="QucsDoc::fileSuffix" alt="" coords="576,147,712,176"/>
+<area shape="rect" id="node22" href="$classQucsDoc.html#abaac4e6662cca0c496bf665fd3d893e3" title="QucsDoc::load" alt="" coords="589,200,699,230"/>
+<area shape="rect" id="node24" href="$classQucsApp.html#abc9b64e52b905e3a287dc618d8507d2c" title="QucsApp::slotUpdateTreeview" alt="" coords="544,254,744,283"/>
+<area shape="rect" id="node26" href="$classQucsDoc.html#a855ac5692d3dceacf88e745cc65002b7" title="QucsDoc::becomeCurrent" alt="" coords="557,307,731,336"/>
+<area shape="rect" id="node29" href="$classCategory.html#a924b8aa1ee50ea205233be1b78a386d4" title="Category::getModulesNr" alt="" coords="563,360,725,390"/>
+<area shape="rect" id="node31" href="$classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d" title="QucsApp::slotSetCompView" alt="" coords="549,414,739,443"/>
+<area shape="rect" id="node17" href="$classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587" title="QucsApp::getDoc" alt="" coords="805,94,931,123"/>
+<area shape="rect" id="node33" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="793,387,943,416"/>
+<area shape="rect" id="node35" href="$classvacomponent.html#aef5cf006f1f20f54c12c4677a8497277" title="vacomponent::info is used to either get information or create objects." alt="" coords="804,440,932,470"/>
+<area shape="rect" id="node37" href="$vacomponent_8cpp.html#a8969ff23e60bbe312d822b5f52fa3911" title="getData Reads the JSON file" alt="" coords="1472,387,1539,416"/>
+<area shape="rect" id="node39" href="$vacomponent_8cpp.html#ada1ddfbe255b39ca15795a7300485785" title="getString Helper to get a property out of a JSON script" alt="" coords="1468,494,1543,523"/>
+<area shape="rect" id="node41" href="$classvacomponent.html#a4b8994a27bd0314cf713b454416a4a4d" title="vacomponent::vacomponent" alt="" coords="992,440,1179,470"/>
+<area shape="rect" id="node45" href="$classvacomponent.html#ae1df46c044af584b118e628ebda893bf" title="vacomponent::createSymbol Constructor call this to create the symbol." alt="" coords="1228,440,1415,470"/>
+<area shape="rect" id="node49" href="$vacomponent_8cpp.html#a3c4c04bee1c7a4fb6c524d68f2166d91" title="getDouble Helper to get a property out of a JSON script" alt="" coords="1465,440,1545,470"/>
 </map>

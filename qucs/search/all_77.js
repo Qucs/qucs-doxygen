@@ -2,6 +2,7 @@ var searchData=
 [
   ['w',['w',['../structArc.html#ac91fb7f3d275733c7da54c70e2657ab3',1,'Arc::w()'],['../structArea.html#abc4b3c3b7657edd3cbb80fbdc426ff83',1,'Area::w()']]],
   ['warninglabel',['WarningLabel',['../classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f',1,'QucsApp']]],
+  ['warnings',['warnings',['../classExternSimDialog.html#ab864d06630fc852aeb373bb58551f912',1,'ExternSimDialog']]],
   ['waslf',['wasLF',['../classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8',1,'SimMessage']]],
   ['wassimulated',['wasSimulated',['../classExternSimDialog.html#ac2e308b8d6f2dc436a2e69391ad1e41d',1,'ExternSimDialog']]],
   ['widget3d_5fsize',['WIDGET3D_SIZE',['../diagramdialog_8cpp.html#a604664bffa154f251f812950266504a4',1,'diagramdialog.cpp']]],

@@ -138,71 +138,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00055"></a>00055   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+4;
 <a name="l00056"></a>00056   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;Irect&quot;</span>;
 <a name="l00057"></a>00057   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;I&quot;</span>;
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;U&quot;</span>, <span class="stringliteral">&quot;1 mA&quot;</span>, <span class="keyword">true</span>,
-<a name="l00060"></a>00060     QObject::tr(<span class="stringliteral">&quot;current at high pulse&quot;</span>)));
-<a name="l00061"></a>00061   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;TH&quot;</span>, <span class="stringliteral">&quot;1 ms&quot;</span>, <span class="keyword">true</span>,
-<a name="l00062"></a>00062     QObject::tr(<span class="stringliteral">&quot;duration of high pulses&quot;</span>)));
-<a name="l00063"></a>00063   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;TL&quot;</span>, <span class="stringliteral">&quot;1 ms&quot;</span>, <span class="keyword">true</span>,
-<a name="l00064"></a>00064     QObject::tr(<span class="stringliteral">&quot;duration of low pulses&quot;</span>)));
-<a name="l00065"></a>00065   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tr&quot;</span>, <span class="stringliteral">&quot;1 ns&quot;</span>, <span class="keyword">false</span>,
-<a name="l00066"></a>00066     QObject::tr(<span class="stringliteral">&quot;rise time of the leading edge&quot;</span>)));
-<a name="l00067"></a>00067   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tf&quot;</span>, <span class="stringliteral">&quot;1 ns&quot;</span>, <span class="keyword">false</span>,
-<a name="l00068"></a>00068     QObject::tr(<span class="stringliteral">&quot;fall time of the trailing edge&quot;</span>)));
-<a name="l00069"></a>00069   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Td&quot;</span>, <span class="stringliteral">&quot;0 ns&quot;</span>, <span class="keyword">false</span>,
-<a name="l00070"></a>00070     QObject::tr(<span class="stringliteral">&quot;initial delay time&quot;</span>)));
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072   <a class="code" href="classComponent.html#a371f348f5919cb271a1450b6c868a12f">rotate</a>();  <span class="comment">// fix historical flaw</span>
-<a name="l00073"></a>00073 }
-<a name="l00074"></a>00074 
-<a name="l00075"></a><a class="code" href="classiRect.html#a17b7bd9244fe5a06dbbc749d0b11faf3">00075</a> <a class="code" href="classiRect.html#a17b7bd9244fe5a06dbbc749d0b11faf3">iRect::~iRect</a>()
-<a name="l00076"></a>00076 {
-<a name="l00077"></a>00077 }
-<a name="l00078"></a>00078 
-<a name="l00079"></a><a class="code" href="classiRect.html#a438de0c02792c90bdca924dbd8b43852">00079</a> QString <a class="code" href="classiRect.html#a438de0c02792c90bdca924dbd8b43852">iRect::spice_netlist</a>(<span class="keywordtype">bool</span>)
-<a name="l00080"></a>00080 {
-<a name="l00081"></a>00081     QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083     <span class="keywordflow">foreach</span>(<a class="code" href="structPort.html">Port</a> *p1, <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>) {
-<a name="l00084"></a>00084         QString nam = p1-&gt;<a class="code" href="structPort.html#ac7c48693de90c130eec700729e2496a1">Connection</a>-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>;
-<a name="l00085"></a>00085         <span class="keywordflow">if</span> (nam==<span class="stringliteral">&quot;gnd&quot;</span>) nam = <span class="stringliteral">&quot;0&quot;</span>;
-<a name="l00086"></a>00086         s += <span class="stringliteral">&quot; &quot;</span>+ nam;   <span class="comment">// node names</span>
-<a name="l00087"></a>00087     }   
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089     <span class="keywordtype">double</span> T, TL, TH, Trval, Tfval, fac;
-<a name="l00090"></a>00090     QString unit;
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092     QString U = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value); <span class="comment">//VH</span>
-<a name="l00093"></a>00093     QString Td = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(5)-&gt;Value); <span class="comment">// Td</span>
-<a name="l00094"></a>00094     QString Tr = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(3)-&gt;Value); <span class="comment">// Tr</span>
-<a name="l00095"></a>00095     QString Tf = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(4)-&gt;Value); <span class="comment">//Tf</span>
-<a name="l00096"></a>00096     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value,TH,unit,fac); <span class="comment">//TH</span>
-<a name="l00097"></a>00097     TH *= fac;    <span class="comment">// TH = pw</span>
-<a name="l00098"></a>00098     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(2)-&gt;Value,TL,unit,fac);
-<a name="l00099"></a>00099     T = TL*fac+TH;
-<a name="l00100"></a>00100    <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(3)-&gt;Value,Trval,unit,fac); 
-<a name="l00101"></a>00101      T = Trval*fac+T;    
-<a name="l00102"></a>00102    <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(4)-&gt;Value,Tfval,unit,fac); 
-<a name="l00103"></a>00103      T = Tfval*fac+T;    
-<a name="l00104"></a>00104      
-<a name="l00105"></a>00105     s += QString(<span class="stringliteral">&quot; DC 0 PULSE( 0  -%1 %2 %3 %4 %5 %6)  AC 0\n&quot;</span>).arg(U).arg(Td).arg(Tr).arg(Tf).arg(TH).arg(T);
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107     <span class="keywordflow">return</span> s;
-<a name="l00108"></a>00108 }
-<a name="l00109"></a>00109 
-<a name="l00110"></a><a class="code" href="classiRect.html#aafb9476eb47d2666f0b2a7b755a83fcf">00110</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classiRect.html#aafb9476eb47d2666f0b2a7b755a83fcf">iRect::newOne</a>()
-<a name="l00111"></a>00111 {
-<a name="l00112"></a>00112   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiRect.html#ab293612e34200f7bfd9f038f7945da1b">iRect</a>();
-<a name="l00113"></a>00113 }
-<a name="l00114"></a>00114 
-<a name="l00115"></a><a class="code" href="classiRect.html#a1fbd5eaa91c928f46d60f858fdb3c871">00115</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classiRect.html#a1fbd5eaa91c928f46d60f858fdb3c871">iRect::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00116"></a>00116 {
-<a name="l00117"></a>00117   Name = QObject::tr(<span class="stringliteral">&quot;Rectangle Current&quot;</span>);
-<a name="l00118"></a>00118   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;irect&quot;</span>;
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiRect.html#ab293612e34200f7bfd9f038f7945da1b">iRect</a>();
-<a name="l00121"></a>00121   <span class="keywordflow">return</span> 0;
-<a name="l00122"></a>00122 }
+<a name="l00058"></a>00058   <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a> = <span class="stringliteral">&quot;I&quot;</span>;
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;U&quot;</span>, <span class="stringliteral">&quot;1 mA&quot;</span>, <span class="keyword">true</span>,
+<a name="l00061"></a>00061     QObject::tr(<span class="stringliteral">&quot;current at high pulse&quot;</span>)));
+<a name="l00062"></a>00062   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;TH&quot;</span>, <span class="stringliteral">&quot;1 ms&quot;</span>, <span class="keyword">true</span>,
+<a name="l00063"></a>00063     QObject::tr(<span class="stringliteral">&quot;duration of high pulses&quot;</span>)));
+<a name="l00064"></a>00064   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;TL&quot;</span>, <span class="stringliteral">&quot;1 ms&quot;</span>, <span class="keyword">true</span>,
+<a name="l00065"></a>00065     QObject::tr(<span class="stringliteral">&quot;duration of low pulses&quot;</span>)));
+<a name="l00066"></a>00066   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tr&quot;</span>, <span class="stringliteral">&quot;1 ns&quot;</span>, <span class="keyword">false</span>,
+<a name="l00067"></a>00067     QObject::tr(<span class="stringliteral">&quot;rise time of the leading edge&quot;</span>)));
+<a name="l00068"></a>00068   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Tf&quot;</span>, <span class="stringliteral">&quot;1 ns&quot;</span>, <span class="keyword">false</span>,
+<a name="l00069"></a>00069     QObject::tr(<span class="stringliteral">&quot;fall time of the trailing edge&quot;</span>)));
+<a name="l00070"></a>00070   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Td&quot;</span>, <span class="stringliteral">&quot;0 ns&quot;</span>, <span class="keyword">false</span>,
+<a name="l00071"></a>00071     QObject::tr(<span class="stringliteral">&quot;initial delay time&quot;</span>)));
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073   <a class="code" href="classComponent.html#a371f348f5919cb271a1450b6c868a12f">rotate</a>();  <span class="comment">// fix historical flaw</span>
+<a name="l00074"></a>00074 }
+<a name="l00075"></a>00075 
+<a name="l00076"></a><a class="code" href="classiRect.html#a17b7bd9244fe5a06dbbc749d0b11faf3">00076</a> <a class="code" href="classiRect.html#a17b7bd9244fe5a06dbbc749d0b11faf3">iRect::~iRect</a>()
+<a name="l00077"></a>00077 {
+<a name="l00078"></a>00078 }
+<a name="l00079"></a>00079 
+<a name="l00080"></a><a class="code" href="classiRect.html#a438de0c02792c90bdca924dbd8b43852">00080</a> QString <a class="code" href="classiRect.html#a438de0c02792c90bdca924dbd8b43852">iRect::spice_netlist</a>(<span class="keywordtype">bool</span>)
+<a name="l00081"></a>00081 {
+<a name="l00082"></a>00082     QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084     <span class="keywordflow">foreach</span>(<a class="code" href="structPort.html">Port</a> *p1, <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>) {
+<a name="l00085"></a>00085         QString nam = p1-&gt;<a class="code" href="structPort.html#ac7c48693de90c130eec700729e2496a1">Connection</a>-&gt;<a class="code" href="classNode.html#a86cbac483bc96b0621fc394eee45ea58">Name</a>;
+<a name="l00086"></a>00086         <span class="keywordflow">if</span> (nam==<span class="stringliteral">&quot;gnd&quot;</span>) nam = <span class="stringliteral">&quot;0&quot;</span>;
+<a name="l00087"></a>00087         s += <span class="stringliteral">&quot; &quot;</span>+ nam;   <span class="comment">// node names</span>
+<a name="l00088"></a>00088     }   
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090     <span class="keywordtype">double</span> T, TL, TH, Trval, Tfval, fac;
+<a name="l00091"></a>00091     QString unit;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093     QString U = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value); <span class="comment">//VH</span>
+<a name="l00094"></a>00094     QString Td = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(5)-&gt;Value); <span class="comment">// Td</span>
+<a name="l00095"></a>00095     QString Tr = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(3)-&gt;Value); <span class="comment">// Tr</span>
+<a name="l00096"></a>00096     QString Tf = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(4)-&gt;Value); <span class="comment">//Tf</span>
+<a name="l00097"></a>00097     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value,TH,unit,fac); <span class="comment">//TH</span>
+<a name="l00098"></a>00098     TH *= fac;    <span class="comment">// TH = pw</span>
+<a name="l00099"></a>00099     <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(2)-&gt;Value,TL,unit,fac);
+<a name="l00100"></a>00100     T = TL*fac+TH;
+<a name="l00101"></a>00101    <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(3)-&gt;Value,Trval,unit,fac); 
+<a name="l00102"></a>00102      T = Trval*fac+T;    
+<a name="l00103"></a>00103    <a class="code" href="namespacemisc.html#a97e56bf4173a32864170888a32880dee">misc::str2num</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(4)-&gt;Value,Tfval,unit,fac); 
+<a name="l00104"></a>00104      T = Tfval*fac+T;    
+<a name="l00105"></a>00105      
+<a name="l00106"></a>00106     s += QString(<span class="stringliteral">&quot; DC 0 PULSE( 0  -%1 %2 %3 %4 %5 %6)  AC 0\n&quot;</span>).arg(U).arg(Td).arg(Tr).arg(Tf).arg(TH).arg(T);
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108     <span class="keywordflow">return</span> s;
+<a name="l00109"></a>00109 }
+<a name="l00110"></a>00110 
+<a name="l00111"></a><a class="code" href="classiRect.html#aafb9476eb47d2666f0b2a7b755a83fcf">00111</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classiRect.html#aafb9476eb47d2666f0b2a7b755a83fcf">iRect::newOne</a>()
+<a name="l00112"></a>00112 {
+<a name="l00113"></a>00113   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiRect.html#ab293612e34200f7bfd9f038f7945da1b">iRect</a>();
+<a name="l00114"></a>00114 }
+<a name="l00115"></a>00115 
+<a name="l00116"></a><a class="code" href="classiRect.html#a1fbd5eaa91c928f46d60f858fdb3c871">00116</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classiRect.html#a1fbd5eaa91c928f46d60f858fdb3c871">iRect::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00117"></a>00117 {
+<a name="l00118"></a>00118   Name = QObject::tr(<span class="stringliteral">&quot;Rectangle Current&quot;</span>);
+<a name="l00119"></a>00119   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;irect&quot;</span>;
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classiRect.html#ab293612e34200f7bfd9f038f7945da1b">iRect</a>();
+<a name="l00122"></a>00122   <span class="keywordflow">return</span> 0;
+<a name="l00123"></a>00123 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -221,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 5 2015 11:57:43 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 15 2015 13:00:36 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

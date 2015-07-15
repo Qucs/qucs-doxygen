@@ -31,6 +31,7 @@ var searchData=
   ['edtngspice',['edtNgspice',['../classSimSettingsDialog.html#a5a9e4577a9680c7e3e539d10b3afdcfb',1,'SimSettingsDialog']]],
   ['edtoutputs',['edtOutputs',['../classCustomSimDialog.html#adb9a13804568e65c3aae3adc66ec5953',1,'CustomSimDialog']]],
   ['edtvars',['edtVars',['../classCustomSimDialog.html#a8d5033e35de5a2479aa69feb915c662d',1,'CustomSimDialog']]],
+  ['edtworkdir',['edtWorkdir',['../classSimSettingsDialog.html#a0fcb5445b89ecfac994e62d04cedb2b3',1,'SimSettingsDialog']]],
   ['edtxyce',['edtXyce',['../classSimSettingsDialog.html#a0bdb7e3dc1c42c7d4f349a86a539de4e',1,'SimSettingsDialog']]],
   ['edtxycepar',['edtXycePar',['../classSimSettingsDialog.html#ab5e37c2bca1cd7f141c3fee1445d4034',1,'SimSettingsDialog']]],
   ['ellips',['Ellips',['../classComponent.html#a78ed6bd111759b743518d0395918e9b9',1,'Component']]],

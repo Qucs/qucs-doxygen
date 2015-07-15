@@ -1843,207 +1843,215 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01761"></a>01761    <a class="code" href="classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b">createSubNetlistPlain</a>(stream, ErrText, NumPorts,spice);
 <a name="l01762"></a>01762    <span class="keywordflow">if</span> (spice) {
 <a name="l01763"></a>01763       <a class="code" href="classAbstractSpiceKernel.html" title="AbstractSpiceKernel class contains common methods for Ngspice and Xyce simulation kernels...">AbstractSpiceKernel</a> *kern = <span class="keyword">new</span> <a class="code" href="classAbstractSpiceKernel.html" title="AbstractSpiceKernel class contains common methods for Ngspice and Xyce simulation kernels...">AbstractSpiceKernel</a>(<span class="keyword">this</span>);
-<a name="l01764"></a>01764       kern-&gt;<a class="code" href="classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT.">createSubNetlsit</a>(*stream,xyce);
-<a name="l01765"></a>01765       <span class="keyword">delete</span> kern;
-<a name="l01766"></a>01766   }
-<a name="l01767"></a>01767 
-<a name="l01768"></a>01768 
-<a name="l01769"></a>01769   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
-<a name="l01770"></a>01770   <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l01771"></a>01771 }
-<a name="l01772"></a>01772 
-<a name="l01773"></a>01773 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01774"></a>01774 <span class="comment">// Determines the node names and writes subcircuits into netlist file.</span>
-<a name="l01775"></a><a class="code" href="classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69">01775</a> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69">Schematic::prepareNetlist</a>(QTextStream&amp; stream, QStringList&amp; Collect,
-<a name="l01776"></a>01776                               QPlainTextEdit *ErrText,<span class="keywordtype">bool</span> spice,<span class="keywordtype">bool</span> xyce)
-<a name="l01777"></a>01777 {
-<a name="l01778"></a>01778   <span class="keywordflow">if</span>(<a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> &gt; 0) <a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> = -1;  <span class="comment">// do not show DC bias anymore</span>
-<a name="l01779"></a>01779 
-<a name="l01780"></a>01780   <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a> = <span class="keyword">false</span>;
-<a name="l01781"></a>01781   <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
-<a name="l01782"></a>01782   <span class="keywordtype">bool</span> isTruthTable = <span class="keyword">false</span>;
-<a name="l01783"></a>01783   <span class="keywordtype">int</span> allTypes = 0, NumPorts = 0;
-<a name="l01784"></a>01784 
-<a name="l01785"></a>01785   <span class="comment">// Detect simulation domain (analog/digital) by looking at component types.</span>
-<a name="l01786"></a>01786   <span class="keywordflow">for</span>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
-<a name="l01787"></a>01787     <span class="keywordflow">if</span>(pc-&gt;isActive == <a class="code" href="component_8h.html#a6d7ac9c263980164b9394c0457911bbf">COMP_IS_OPEN</a>) <span class="keywordflow">continue</span>;
-<a name="l01788"></a>01788     <span class="keywordflow">if</span>(pc-&gt;Model.at(0) == <span class="charliteral">&#39;.&#39;</span>) {
-<a name="l01789"></a>01789       <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;.Digi&quot;</span>) {
-<a name="l01790"></a>01790         <span class="keywordflow">if</span>(allTypes &amp; <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>) {
-<a name="l01791"></a>01791           ErrText-&gt;appendPlainText(
-<a name="l01792"></a>01792              QObject::tr(<span class="stringliteral">&quot;ERROR: Only one digital simulation allowed.&quot;</span>));
-<a name="l01793"></a>01793           <span class="keywordflow">return</span> -10;
-<a name="l01794"></a>01794         }
-<a name="l01795"></a>01795         <span class="keywordflow">if</span>(pc-&gt;Props.getFirst()-&gt;Value != <span class="stringliteral">&quot;TimeList&quot;</span>)
-<a name="l01796"></a>01796           isTruthTable = <span class="keyword">true</span>;
-<a name="l01797"></a>01797         <span class="keywordflow">if</span>(pc-&gt;Props.getLast()-&gt;Value != <span class="stringliteral">&quot;VHDL&quot;</span>)
-<a name="l01798"></a>01798           <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a> = <span class="keyword">true</span>;
-<a name="l01799"></a>01799         allTypes |= <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>;
-<a name="l01800"></a>01800         <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">false</span>;
-<a name="l01801"></a>01801       }
-<a name="l01802"></a>01802       <span class="keywordflow">else</span> allTypes |= <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>;
-<a name="l01803"></a>01803       <span class="keywordflow">if</span>((allTypes &amp; <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) == <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) {
-<a name="l01804"></a>01804         ErrText-&gt;appendPlainText(
-<a name="l01805"></a>01805            QObject::tr(<span class="stringliteral">&quot;ERROR: Analog and digital simulations cannot be mixed.&quot;</span>));
-<a name="l01806"></a>01806         <span class="keywordflow">return</span> -10;
-<a name="l01807"></a>01807       }
-<a name="l01808"></a>01808     }
-<a name="l01809"></a>01809     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;DigiSource&quot;</span>) NumPorts++;
-<a name="l01810"></a>01810   }
-<a name="l01811"></a>01811 
-<a name="l01812"></a>01812   <span class="keywordflow">if</span>((allTypes &amp; <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>) == 0) {
-<a name="l01813"></a>01813     <span class="keywordflow">if</span>(allTypes == 0) {
-<a name="l01814"></a>01814       <span class="comment">// If no simulation exists, assume analog simulation. There may</span>
-<a name="l01815"></a>01815       <span class="comment">// be a simulation within a SPICE file. Otherwise Qucsator will</span>
-<a name="l01816"></a>01816       <span class="comment">// output an error.</span>
-<a name="l01817"></a>01817       <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
-<a name="l01818"></a>01818       allTypes |= <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>;
-<a name="l01819"></a>01819       NumPorts = -1;
-<a name="l01820"></a>01820     }
-<a name="l01821"></a>01821     <span class="keywordflow">else</span> {
-<a name="l01822"></a>01822       <span class="keywordflow">if</span>(NumPorts &lt; 1 &amp;&amp; isTruthTable) {
-<a name="l01823"></a>01823         ErrText-&gt;appendPlainText(
-<a name="l01824"></a>01824            QObject::tr(<span class="stringliteral">&quot;ERROR: Digital simulation needs at least one digital source.&quot;</span>));
-<a name="l01825"></a>01825         <span class="keywordflow">return</span> -10;
-<a name="l01826"></a>01826       }
-<a name="l01827"></a>01827       <span class="keywordflow">if</span>(!isTruthTable) NumPorts = 0;
+<a name="l01764"></a>01764       QStringList err_lst;
+<a name="l01765"></a>01765       <span class="keywordflow">if</span> (!kern-&gt;<a class="code" href="classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE-compatibility of all components.">checkSchematic</a>(err_lst)) {
+<a name="l01766"></a>01766           QString s = QString(<span class="stringliteral">&quot;Subcircuit %1 conatins SPICE-incompatible components.\n&quot;</span>
+<a name="l01767"></a>01767                               <span class="stringliteral">&quot;Check these components: %2 \n&quot;</span>)
+<a name="l01768"></a>01768                   .arg(this-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>).arg(err_lst.join(<span class="stringliteral">&quot;; &quot;</span>));
+<a name="l01769"></a>01769           ErrText-&gt;insertPlainText(s);
+<a name="l01770"></a>01770           <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l01771"></a>01771       }
+<a name="l01772"></a>01772       kern-&gt;<a class="code" href="classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT.">createSubNetlsit</a>(*stream,xyce);
+<a name="l01773"></a>01773       <span class="keyword">delete</span> kern;
+<a name="l01774"></a>01774   }
+<a name="l01775"></a>01775 
+<a name="l01776"></a>01776 
+<a name="l01777"></a>01777   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
+<a name="l01778"></a>01778   <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l01779"></a>01779 }
+<a name="l01780"></a>01780 
+<a name="l01781"></a>01781 <span class="comment">// ---------------------------------------------------</span>
+<a name="l01782"></a>01782 <span class="comment">// Determines the node names and writes subcircuits into netlist file.</span>
+<a name="l01783"></a><a class="code" href="classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69">01783</a> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69">Schematic::prepareNetlist</a>(QTextStream&amp; stream, QStringList&amp; Collect,
+<a name="l01784"></a>01784                               QPlainTextEdit *ErrText,<span class="keywordtype">bool</span> spice,<span class="keywordtype">bool</span> xyce)
+<a name="l01785"></a>01785 {
+<a name="l01786"></a>01786   <span class="keywordflow">if</span>(<a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> &gt; 0) <a class="code" href="classQucsDoc.html#aa36dd8514ff65a493e5f66de46fa827a">showBias</a> = -1;  <span class="comment">// do not show DC bias anymore</span>
+<a name="l01787"></a>01787 
+<a name="l01788"></a>01788   <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a> = <span class="keyword">false</span>;
+<a name="l01789"></a>01789   <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
+<a name="l01790"></a>01790   <span class="keywordtype">bool</span> isTruthTable = <span class="keyword">false</span>;
+<a name="l01791"></a>01791   <span class="keywordtype">int</span> allTypes = 0, NumPorts = 0;
+<a name="l01792"></a>01792 
+<a name="l01793"></a>01793   <span class="comment">// Detect simulation domain (analog/digital) by looking at component types.</span>
+<a name="l01794"></a>01794   <span class="keywordflow">for</span>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
+<a name="l01795"></a>01795     <span class="keywordflow">if</span>(pc-&gt;isActive == <a class="code" href="component_8h.html#a6d7ac9c263980164b9394c0457911bbf">COMP_IS_OPEN</a>) <span class="keywordflow">continue</span>;
+<a name="l01796"></a>01796     <span class="keywordflow">if</span>(pc-&gt;Model.at(0) == <span class="charliteral">&#39;.&#39;</span>) {
+<a name="l01797"></a>01797       <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;.Digi&quot;</span>) {
+<a name="l01798"></a>01798         <span class="keywordflow">if</span>(allTypes &amp; <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>) {
+<a name="l01799"></a>01799           ErrText-&gt;appendPlainText(
+<a name="l01800"></a>01800              QObject::tr(<span class="stringliteral">&quot;ERROR: Only one digital simulation allowed.&quot;</span>));
+<a name="l01801"></a>01801           <span class="keywordflow">return</span> -10;
+<a name="l01802"></a>01802         }
+<a name="l01803"></a>01803         <span class="keywordflow">if</span>(pc-&gt;Props.getFirst()-&gt;Value != <span class="stringliteral">&quot;TimeList&quot;</span>)
+<a name="l01804"></a>01804           isTruthTable = <span class="keyword">true</span>;
+<a name="l01805"></a>01805         <span class="keywordflow">if</span>(pc-&gt;Props.getLast()-&gt;Value != <span class="stringliteral">&quot;VHDL&quot;</span>)
+<a name="l01806"></a>01806           <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a> = <span class="keyword">true</span>;
+<a name="l01807"></a>01807         allTypes |= <a class="code" href="element_8h.html#a84c5779a452fd49a7a095a67ca440509">isDigitalComponent</a>;
+<a name="l01808"></a>01808         <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">false</span>;
+<a name="l01809"></a>01809       }
+<a name="l01810"></a>01810       <span class="keywordflow">else</span> allTypes |= <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>;
+<a name="l01811"></a>01811       <span class="keywordflow">if</span>((allTypes &amp; <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) == <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>) {
+<a name="l01812"></a>01812         ErrText-&gt;appendPlainText(
+<a name="l01813"></a>01813            QObject::tr(<span class="stringliteral">&quot;ERROR: Analog and digital simulations cannot be mixed.&quot;</span>));
+<a name="l01814"></a>01814         <span class="keywordflow">return</span> -10;
+<a name="l01815"></a>01815       }
+<a name="l01816"></a>01816     }
+<a name="l01817"></a>01817     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;DigiSource&quot;</span>) NumPorts++;
+<a name="l01818"></a>01818   }
+<a name="l01819"></a>01819 
+<a name="l01820"></a>01820   <span class="keywordflow">if</span>((allTypes &amp; <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>) == 0) {
+<a name="l01821"></a>01821     <span class="keywordflow">if</span>(allTypes == 0) {
+<a name="l01822"></a>01822       <span class="comment">// If no simulation exists, assume analog simulation. There may</span>
+<a name="l01823"></a>01823       <span class="comment">// be a simulation within a SPICE file. Otherwise Qucsator will</span>
+<a name="l01824"></a>01824       <span class="comment">// output an error.</span>
+<a name="l01825"></a>01825       <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
+<a name="l01826"></a>01826       allTypes |= <a class="code" href="element_8h.html#ae7443313e0ecc6ea40df0481322c46ee">isAnalogComponent</a>;
+<a name="l01827"></a>01827       NumPorts = -1;
 <a name="l01828"></a>01828     }
-<a name="l01829"></a>01829   }
-<a name="l01830"></a>01830   <span class="keywordflow">else</span> {
-<a name="l01831"></a>01831     NumPorts = -1;
-<a name="l01832"></a>01832     <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
-<a name="l01833"></a>01833   }
-<a name="l01834"></a>01834 
-<a name="l01835"></a>01835   <span class="comment">// first line is documentation</span>
-<a name="l01836"></a>01836   <span class="keywordflow">if</span>(allTypes &amp; isAnalogComponent) {
-<a name="l01837"></a>01837     <span class="keywordflow">if</span> (spice) stream &lt;&lt; <span class="stringliteral">&quot;*&quot;</span>;
-<a name="l01838"></a>01838     <span class="keywordflow">else</span> stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;
-<a name="l01839"></a>01839   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>)
-<a name="l01840"></a>01840     stream &lt;&lt; <span class="stringliteral">&quot;//&quot;</span>;
-<a name="l01841"></a>01841   <span class="keywordflow">else</span>
-<a name="l01842"></a>01842     stream &lt;&lt; <span class="stringliteral">&quot;--&quot;</span>;
-<a name="l01843"></a>01843   stream &lt;&lt; <span class="stringliteral">&quot; Qucs &quot;</span> &lt;&lt; PACKAGE_VERSION &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; <a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l01844"></a>01844 
-<a name="l01845"></a>01845   <span class="comment">// set timescale property for verilog schematics</span>
-<a name="l01846"></a>01846   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01847"></a>01847     stream &lt;&lt; <span class="stringliteral">&quot;\n`timescale 1ps/100fs\n&quot;</span>;
-<a name="l01848"></a>01848   }
-<a name="l01849"></a>01849 
-<a name="l01850"></a>01850   <span class="keywordtype">int</span> countInit = 0;  <span class="comment">// counts the nodesets to give them unique names</span>
-<a name="l01851"></a>01851   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb">giveNodeNames</a>(&amp;stream, countInit, Collect, ErrText, NumPorts,spice,xyce))
-<a name="l01852"></a>01852     <span class="keywordflow">return</span> -10;
-<a name="l01853"></a>01853 
-<a name="l01854"></a>01854   <span class="keywordflow">if</span>(allTypes &amp; isAnalogComponent)
-<a name="l01855"></a>01855     <span class="keywordflow">return</span> NumPorts;
-<a name="l01856"></a>01856 
-<a name="l01857"></a>01857   <span class="keywordflow">if</span> (!<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01858"></a>01858     stream &lt;&lt; <a class="code" href="schematic__file_8cpp.html#ab483c95e1105c825907c7f4771d2824d">VHDL_LIBRARIES</a>;
-<a name="l01859"></a>01859     stream &lt;&lt; <span class="stringliteral">&quot;entity TestBench is\n&quot;</span>
-<a name="l01860"></a>01860      &lt;&lt; <span class="stringliteral">&quot;end entity;\n&quot;</span>
-<a name="l01861"></a>01861      &lt;&lt; <span class="stringliteral">&quot;use work.all;\n&quot;</span>;
-<a name="l01862"></a>01862   }
-<a name="l01863"></a>01863   <span class="keywordflow">return</span> NumPorts;
-<a name="l01864"></a>01864 }
-<a name="l01865"></a>01865 
-<a name="l01866"></a>01866 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01867"></a>01867 <span class="comment">// Write the beginning of digital netlist to the text stream &#39;stream&#39;.</span>
-<a name="l01868"></a><a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">01868</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">Schematic::beginNetlistDigital</a>(QTextStream&amp; stream)
-<a name="l01869"></a>01869 {
-<a name="l01870"></a>01870   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01871"></a>01871     stream &lt;&lt; <span class="stringliteral">&quot;module TestBench ();\n&quot;</span>;
-<a name="l01872"></a>01872     QList&lt;DigSignal&gt; values = <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.values();
-<a name="l01873"></a>01873     QList&lt;DigSignal&gt;::const_iterator it;
-<a name="l01874"></a>01874     <span class="keywordflow">for</span> (it = values.constBegin(); it != values.constEnd(); ++it) {
-<a name="l01875"></a>01875       stream &lt;&lt; <span class="stringliteral">&quot;  wire &quot;</span> &lt;&lt; (*it).Name &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span>;
-<a name="l01876"></a>01876     }
-<a name="l01877"></a>01877     stream &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l01878"></a>01878   } <span class="keywordflow">else</span> {
-<a name="l01879"></a>01879     stream &lt;&lt; <span class="stringliteral">&quot;architecture Arch_TestBench of TestBench is\n&quot;</span>;
+<a name="l01829"></a>01829     <span class="keywordflow">else</span> {
+<a name="l01830"></a>01830       <span class="keywordflow">if</span>(NumPorts &lt; 1 &amp;&amp; isTruthTable) {
+<a name="l01831"></a>01831         ErrText-&gt;appendPlainText(
+<a name="l01832"></a>01832            QObject::tr(<span class="stringliteral">&quot;ERROR: Digital simulation needs at least one digital source.&quot;</span>));
+<a name="l01833"></a>01833         <span class="keywordflow">return</span> -10;
+<a name="l01834"></a>01834       }
+<a name="l01835"></a>01835       <span class="keywordflow">if</span>(!isTruthTable) NumPorts = 0;
+<a name="l01836"></a>01836     }
+<a name="l01837"></a>01837   }
+<a name="l01838"></a>01838   <span class="keywordflow">else</span> {
+<a name="l01839"></a>01839     NumPorts = -1;
+<a name="l01840"></a>01840     <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a> = <span class="keyword">true</span>;
+<a name="l01841"></a>01841   }
+<a name="l01842"></a>01842 
+<a name="l01843"></a>01843   <span class="comment">// first line is documentation</span>
+<a name="l01844"></a>01844   <span class="keywordflow">if</span>(allTypes &amp; isAnalogComponent) {
+<a name="l01845"></a>01845     <span class="keywordflow">if</span> (spice) stream &lt;&lt; <span class="stringliteral">&quot;*&quot;</span>;
+<a name="l01846"></a>01846     <span class="keywordflow">else</span> stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;
+<a name="l01847"></a>01847   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>)
+<a name="l01848"></a>01848     stream &lt;&lt; <span class="stringliteral">&quot;//&quot;</span>;
+<a name="l01849"></a>01849   <span class="keywordflow">else</span>
+<a name="l01850"></a>01850     stream &lt;&lt; <span class="stringliteral">&quot;--&quot;</span>;
+<a name="l01851"></a>01851   stream &lt;&lt; <span class="stringliteral">&quot; Qucs &quot;</span> &lt;&lt; PACKAGE_VERSION &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; <a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l01852"></a>01852 
+<a name="l01853"></a>01853   <span class="comment">// set timescale property for verilog schematics</span>
+<a name="l01854"></a>01854   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01855"></a>01855     stream &lt;&lt; <span class="stringliteral">&quot;\n`timescale 1ps/100fs\n&quot;</span>;
+<a name="l01856"></a>01856   }
+<a name="l01857"></a>01857 
+<a name="l01858"></a>01858   <span class="keywordtype">int</span> countInit = 0;  <span class="comment">// counts the nodesets to give them unique names</span>
+<a name="l01859"></a>01859   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb">giveNodeNames</a>(&amp;stream, countInit, Collect, ErrText, NumPorts,spice,xyce))
+<a name="l01860"></a>01860     <span class="keywordflow">return</span> -10;
+<a name="l01861"></a>01861 
+<a name="l01862"></a>01862   <span class="keywordflow">if</span>(allTypes &amp; isAnalogComponent)
+<a name="l01863"></a>01863     <span class="keywordflow">return</span> NumPorts;
+<a name="l01864"></a>01864 
+<a name="l01865"></a>01865   <span class="keywordflow">if</span> (!<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01866"></a>01866     stream &lt;&lt; <a class="code" href="schematic__file_8cpp.html#ab483c95e1105c825907c7f4771d2824d">VHDL_LIBRARIES</a>;
+<a name="l01867"></a>01867     stream &lt;&lt; <span class="stringliteral">&quot;entity TestBench is\n&quot;</span>
+<a name="l01868"></a>01868      &lt;&lt; <span class="stringliteral">&quot;end entity;\n&quot;</span>
+<a name="l01869"></a>01869      &lt;&lt; <span class="stringliteral">&quot;use work.all;\n&quot;</span>;
+<a name="l01870"></a>01870   }
+<a name="l01871"></a>01871   <span class="keywordflow">return</span> NumPorts;
+<a name="l01872"></a>01872 }
+<a name="l01873"></a>01873 
+<a name="l01874"></a>01874 <span class="comment">// ---------------------------------------------------</span>
+<a name="l01875"></a>01875 <span class="comment">// Write the beginning of digital netlist to the text stream &#39;stream&#39;.</span>
+<a name="l01876"></a><a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">01876</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">Schematic::beginNetlistDigital</a>(QTextStream&amp; stream)
+<a name="l01877"></a>01877 {
+<a name="l01878"></a>01878   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01879"></a>01879     stream &lt;&lt; <span class="stringliteral">&quot;module TestBench ();\n&quot;</span>;
 <a name="l01880"></a>01880     QList&lt;DigSignal&gt; values = <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.values();
 <a name="l01881"></a>01881     QList&lt;DigSignal&gt;::const_iterator it;
 <a name="l01882"></a>01882     <span class="keywordflow">for</span> (it = values.constBegin(); it != values.constEnd(); ++it) {
-<a name="l01883"></a>01883       stream &lt;&lt; <span class="stringliteral">&quot;  signal &quot;</span> &lt;&lt; (*it).Name &lt;&lt; <span class="stringliteral">&quot; : &quot;</span>
-<a name="l01884"></a>01884        &lt;&lt; ((*it).Type.isEmpty() ?
-<a name="l01885"></a>01885      <a class="code" href="schematic__file_8cpp.html#afe0c66e603a0898a10ce570d5d88acf7">VHDL_SIGNAL_TYPE</a> : (*it).Type) &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span>;
-<a name="l01886"></a>01886     }
-<a name="l01887"></a>01887     stream &lt;&lt; <span class="stringliteral">&quot;begin\n&quot;</span>;
-<a name="l01888"></a>01888   }
-<a name="l01889"></a>01889 
-<a name="l01890"></a>01890   <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.find(<span class="stringliteral">&quot;gnd&quot;</span>) != <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.end()) {
-<a name="l01891"></a>01891     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01892"></a>01892       stream &lt;&lt; <span class="stringliteral">&quot;  assign gnd = 0;\n&quot;</span>;
-<a name="l01893"></a>01893     } <span class="keywordflow">else</span> {
-<a name="l01894"></a>01894       stream &lt;&lt; <span class="stringliteral">&quot;  gnd &lt;= &#39;0&#39;;\n&quot;</span>;  <span class="comment">// should appear only once</span>
-<a name="l01895"></a>01895     }
+<a name="l01883"></a>01883       stream &lt;&lt; <span class="stringliteral">&quot;  wire &quot;</span> &lt;&lt; (*it).Name &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span>;
+<a name="l01884"></a>01884     }
+<a name="l01885"></a>01885     stream &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l01886"></a>01886   } <span class="keywordflow">else</span> {
+<a name="l01887"></a>01887     stream &lt;&lt; <span class="stringliteral">&quot;architecture Arch_TestBench of TestBench is\n&quot;</span>;
+<a name="l01888"></a>01888     QList&lt;DigSignal&gt; values = <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.values();
+<a name="l01889"></a>01889     QList&lt;DigSignal&gt;::const_iterator it;
+<a name="l01890"></a>01890     <span class="keywordflow">for</span> (it = values.constBegin(); it != values.constEnd(); ++it) {
+<a name="l01891"></a>01891       stream &lt;&lt; <span class="stringliteral">&quot;  signal &quot;</span> &lt;&lt; (*it).Name &lt;&lt; <span class="stringliteral">&quot; : &quot;</span>
+<a name="l01892"></a>01892        &lt;&lt; ((*it).Type.isEmpty() ?
+<a name="l01893"></a>01893      <a class="code" href="schematic__file_8cpp.html#afe0c66e603a0898a10ce570d5d88acf7">VHDL_SIGNAL_TYPE</a> : (*it).Type) &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span>;
+<a name="l01894"></a>01894     }
+<a name="l01895"></a>01895     stream &lt;&lt; <span class="stringliteral">&quot;begin\n&quot;</span>;
 <a name="l01896"></a>01896   }
-<a name="l01897"></a>01897 }
-<a name="l01898"></a>01898 
-<a name="l01899"></a>01899 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01900"></a>01900 <span class="comment">// Write the end of digital netlist to the text stream &#39;stream&#39;.</span>
-<a name="l01901"></a><a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">01901</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">Schematic::endNetlistDigital</a>(QTextStream&amp; stream)
-<a name="l01902"></a>01902 {
-<a name="l01903"></a>01903   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01904"></a>01904   } <span class="keywordflow">else</span> {
-<a name="l01905"></a>01905     stream &lt;&lt; <span class="stringliteral">&quot;end architecture;\n&quot;</span>;
-<a name="l01906"></a>01906   }
-<a name="l01907"></a>01907 }
-<a name="l01908"></a>01908 
-<a name="l01909"></a>01909 <span class="comment">// ---------------------------------------------------</span>
-<a name="l01910"></a>01910 <span class="comment">// write all components with node names into the netlist file</span>
-<a name="l01911"></a><a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">01911</a> QString <a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">Schematic::createNetlist</a>(QTextStream&amp; stream, <span class="keywordtype">int</span> NumPorts)
-<a name="l01912"></a>01912 {
-<a name="l01913"></a>01913   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
-<a name="l01914"></a>01914     <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">beginNetlistDigital</a>(stream);
-<a name="l01915"></a>01915   }
+<a name="l01897"></a>01897 
+<a name="l01898"></a>01898   <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.find(<span class="stringliteral">&quot;gnd&quot;</span>) != <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.end()) {
+<a name="l01899"></a>01899     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01900"></a>01900       stream &lt;&lt; <span class="stringliteral">&quot;  assign gnd = 0;\n&quot;</span>;
+<a name="l01901"></a>01901     } <span class="keywordflow">else</span> {
+<a name="l01902"></a>01902       stream &lt;&lt; <span class="stringliteral">&quot;  gnd &lt;= &#39;0&#39;;\n&quot;</span>;  <span class="comment">// should appear only once</span>
+<a name="l01903"></a>01903     }
+<a name="l01904"></a>01904   }
+<a name="l01905"></a>01905 }
+<a name="l01906"></a>01906 
+<a name="l01907"></a>01907 <span class="comment">// ---------------------------------------------------</span>
+<a name="l01908"></a>01908 <span class="comment">// Write the end of digital netlist to the text stream &#39;stream&#39;.</span>
+<a name="l01909"></a><a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">01909</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">Schematic::endNetlistDigital</a>(QTextStream&amp; stream)
+<a name="l01910"></a>01910 {
+<a name="l01911"></a>01911   <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01912"></a>01912   } <span class="keywordflow">else</span> {
+<a name="l01913"></a>01913     stream &lt;&lt; <span class="stringliteral">&quot;end architecture;\n&quot;</span>;
+<a name="l01914"></a>01914   }
+<a name="l01915"></a>01915 }
 <a name="l01916"></a>01916 
-<a name="l01917"></a>01917   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
-<a name="l01918"></a>01918   <a class="code" href="librarydialog_8cpp.html#a56f16c9d93fe9b87fd895ccbed84ec69">FileList</a>.clear();
-<a name="l01919"></a>01919 
-<a name="l01920"></a>01920   QString s, Time;
-<a name="l01921"></a>01921   <span class="keywordflow">for</span>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
-<a name="l01922"></a>01922     <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
-<a name="l01923"></a>01923       s = pc-&gt;getNetlist();
-<a name="l01924"></a>01924     }
-<a name="l01925"></a>01925     <span class="keywordflow">else</span> {
-<a name="l01926"></a>01926       <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;.Digi&quot;</span> &amp;&amp; pc-&gt;isActive) {  <span class="comment">// simulation component ?</span>
-<a name="l01927"></a>01927         <span class="keywordflow">if</span>(NumPorts &gt; 0) { <span class="comment">// truth table simulation ?</span>
-<a name="l01928"></a>01928     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>)
-<a name="l01929"></a>01929       Time = QString::number((1 &lt;&lt; NumPorts));
-<a name="l01930"></a>01930     <span class="keywordflow">else</span>
-<a name="l01931"></a>01931       Time = QString::number((1 &lt;&lt; NumPorts) - 1) + <span class="stringliteral">&quot; ns&quot;</span>;
-<a name="l01932"></a>01932         } <span class="keywordflow">else</span> {
-<a name="l01933"></a>01933           Time = pc-&gt;Props.at(1)-&gt;Value;
-<a name="l01934"></a>01934     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01935"></a>01935       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;
-<a name="l01936"></a>01936     } <span class="keywordflow">else</span> {
-<a name="l01937"></a>01937       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">misc::VHDL_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;  <span class="comment">// wrong time format</span>
-<a name="l01938"></a>01938     }
-<a name="l01939"></a>01939         }
-<a name="l01940"></a>01940       }
-<a name="l01941"></a>01941       <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
-<a name="l01942"></a>01942   s = pc-&gt;get_Verilog_Code(NumPorts);
-<a name="l01943"></a>01943       } <span class="keywordflow">else</span> {
-<a name="l01944"></a>01944   s = pc-&gt;get_VHDL_Code(NumPorts);
-<a name="l01945"></a>01945       }
-<a name="l01946"></a>01946       <span class="keywordflow">if</span> (s.length()&gt;0 &amp;&amp; s.at(0) == <span class="stringliteral">&#39;\xA7&#39;</span>){
-<a name="l01947"></a>01947           <span class="keywordflow">return</span> s; <span class="comment">// return error</span>
+<a name="l01917"></a>01917 <span class="comment">// ---------------------------------------------------</span>
+<a name="l01918"></a>01918 <span class="comment">// write all components with node names into the netlist file</span>
+<a name="l01919"></a><a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">01919</a> QString <a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">Schematic::createNetlist</a>(QTextStream&amp; stream, <span class="keywordtype">int</span> NumPorts)
+<a name="l01920"></a>01920 {
+<a name="l01921"></a>01921   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
+<a name="l01922"></a>01922     <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">beginNetlistDigital</a>(stream);
+<a name="l01923"></a>01923   }
+<a name="l01924"></a>01924 
+<a name="l01925"></a>01925   <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
+<a name="l01926"></a>01926   <a class="code" href="librarydialog_8cpp.html#a56f16c9d93fe9b87fd895ccbed84ec69">FileList</a>.clear();
+<a name="l01927"></a>01927 
+<a name="l01928"></a>01928   QString s, Time;
+<a name="l01929"></a>01929   <span class="keywordflow">for</span>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
+<a name="l01930"></a>01930     <span class="keywordflow">if</span>(<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
+<a name="l01931"></a>01931       s = pc-&gt;getNetlist();
+<a name="l01932"></a>01932     }
+<a name="l01933"></a>01933     <span class="keywordflow">else</span> {
+<a name="l01934"></a>01934       <span class="keywordflow">if</span>(pc-&gt;Model == <span class="stringliteral">&quot;.Digi&quot;</span> &amp;&amp; pc-&gt;isActive) {  <span class="comment">// simulation component ?</span>
+<a name="l01935"></a>01935         <span class="keywordflow">if</span>(NumPorts &gt; 0) { <span class="comment">// truth table simulation ?</span>
+<a name="l01936"></a>01936     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>)
+<a name="l01937"></a>01937       Time = QString::number((1 &lt;&lt; NumPorts));
+<a name="l01938"></a>01938     <span class="keywordflow">else</span>
+<a name="l01939"></a>01939       Time = QString::number((1 &lt;&lt; NumPorts) - 1) + <span class="stringliteral">&quot; ns&quot;</span>;
+<a name="l01940"></a>01940         } <span class="keywordflow">else</span> {
+<a name="l01941"></a>01941           Time = pc-&gt;Props.at(1)-&gt;Value;
+<a name="l01942"></a>01942     <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01943"></a>01943       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8">misc::Verilog_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;
+<a name="l01944"></a>01944     } <span class="keywordflow">else</span> {
+<a name="l01945"></a>01945       <span class="keywordflow">if</span>(!<a class="code" href="namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134">misc::VHDL_Time</a>(Time, pc-&gt;Name)) <span class="keywordflow">return</span> Time;  <span class="comment">// wrong time format</span>
+<a name="l01946"></a>01946     }
+<a name="l01947"></a>01947         }
 <a name="l01948"></a>01948       }
-<a name="l01949"></a>01949     }
-<a name="l01950"></a>01950     stream &lt;&lt; s;
-<a name="l01951"></a>01951   }
-<a name="l01952"></a>01952 
-<a name="l01953"></a>01953   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
-<a name="l01954"></a>01954     <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">endNetlistDigital</a>(stream);
-<a name="l01955"></a>01955   }
-<a name="l01956"></a>01956 
-<a name="l01957"></a>01957   <span class="keywordflow">return</span> Time;
-<a name="l01958"></a>01958 }
-<a name="l01959"></a>01959 
-<a name="l01960"></a><a class="code" href="classSchematic.html#acff87102c62c039c55a14d25393dda99">01960</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#acff87102c62c039c55a14d25393dda99">Schematic::clearSignalsAndFileList</a>()
-<a name="l01961"></a>01961 {
-<a name="l01962"></a>01962     <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
-<a name="l01963"></a>01963     <a class="code" href="librarydialog_8cpp.html#a56f16c9d93fe9b87fd895ccbed84ec69">FileList</a>.clear();
-<a name="l01964"></a>01964 }
+<a name="l01949"></a>01949       <span class="keywordflow">if</span> (<a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>) {
+<a name="l01950"></a>01950   s = pc-&gt;get_Verilog_Code(NumPorts);
+<a name="l01951"></a>01951       } <span class="keywordflow">else</span> {
+<a name="l01952"></a>01952   s = pc-&gt;get_VHDL_Code(NumPorts);
+<a name="l01953"></a>01953       }
+<a name="l01954"></a>01954       <span class="keywordflow">if</span> (s.length()&gt;0 &amp;&amp; s.at(0) == <span class="stringliteral">&#39;\xA7&#39;</span>){
+<a name="l01955"></a>01955           <span class="keywordflow">return</span> s; <span class="comment">// return error</span>
+<a name="l01956"></a>01956       }
+<a name="l01957"></a>01957     }
+<a name="l01958"></a>01958     stream &lt;&lt; s;
+<a name="l01959"></a>01959   }
+<a name="l01960"></a>01960 
+<a name="l01961"></a>01961   <span class="keywordflow">if</span>(!<a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>) {
+<a name="l01962"></a>01962     <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">endNetlistDigital</a>(stream);
+<a name="l01963"></a>01963   }
+<a name="l01964"></a>01964 
+<a name="l01965"></a>01965   <span class="keywordflow">return</span> Time;
+<a name="l01966"></a>01966 }
+<a name="l01967"></a>01967 
+<a name="l01968"></a><a class="code" href="classSchematic.html#acff87102c62c039c55a14d25393dda99">01968</a> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#acff87102c62c039c55a14d25393dda99">Schematic::clearSignalsAndFileList</a>()
+<a name="l01969"></a>01969 {
+<a name="l01970"></a>01970     <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>.clear();  <span class="comment">// was filled in &quot;giveNodeNames()&quot;</span>
+<a name="l01971"></a>01971     <a class="code" href="librarydialog_8cpp.html#a56f16c9d93fe9b87fd895ccbed84ec69">FileList</a>.clear();
+<a name="l01972"></a>01972 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -2062,7 +2070,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 5 2015 11:57:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 15 2015 13:00:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

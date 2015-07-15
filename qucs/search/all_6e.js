@@ -61,7 +61,7 @@ var searchData=
   ['npn_5fspice',['NPN_SPICE',['../classNPN__SPICE.html',1,'NPN_SPICE'],['../classNPN__SPICE.html#a9b87de934d4ecea81904e19e7ac8bbfc',1,'NPN_SPICE::NPN_SPICE()']]],
   ['npn_5fspice_2ecpp',['NPN_SPICE.cpp',['../NPN__SPICE_8cpp.html',1,'']]],
   ['npn_5fspice_2eh',['NPN_SPICE.h',['../NPN__SPICE_8h.html',1,'']]],
-  ['nprocs',['NProcs',['../structtQucsSettings.html#a816b2e46e168415dd2e6612ef32f2227',1,'tQucsSettings::NProcs()'],['../classXyce.html#a6864e5de64d4d34e3cf1d73ebcefbd20',1,'Xyce::Nprocs()']]],
+  ['nprocs',['Nprocs',['../classXyce.html#a6864e5de64d4d34e3cf1d73ebcefbd20',1,'Xyce::Nprocs()'],['../structtQucsSettings.html#a816b2e46e168415dd2e6612ef32f2227',1,'tQucsSettings::NProcs()']]],
   ['num2str',['num2str',['../namespacemisc.html#af7e46432adfd60ad9f875172e5c95393',1,'misc']]],
   ['numaxes',['numAxes',['../classGraph.html#a9e63e79dd2f776d602cc861693e4792b',1,'Graph']]],
   ['numberbox',['NumberBox',['../classMarkerDialog.html#a68e1266eb2ddd8f8acad27c77498a531',1,'MarkerDialog']]],

@@ -89,13 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a><a class="code" href="namespacespicecompat.html">00012</a> <span class="keyword">namespace </span>spicecompat {
 <a name="l00013"></a>00013      QString <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">check_refdes</a>(QString &amp;Name, QString &amp;Model);
 <a name="l00014"></a>00014      QString <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">normalize_value</a>(QString Value);
-<a name="l00015"></a>00015      QString <a class="code" href="namespacespicecompat.html#a0a95a3eb3313386fc443853134c9ad79" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function...">convert_functions</a>(QString tok, <span class="keywordtype">bool</span> isXyce);
-<a name="l00016"></a>00016      <span class="keywordtype">void</span> <a class="code" href="namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens.">splitEqn</a>(QString &amp;eqn, QStringList &amp;tokens);
-<a name="l00017"></a>00017      <span class="keywordtype">bool</span> <a class="code" href="namespacespicecompat.html#aaa1412844c15bb39369f182d006a62f4" title="spicecompat::containNodes Determine are there in equaton node voltages and/or current porbes...">containNodes</a>(QStringList &amp;tokens, QStringList &amp;vars);
-<a name="l00018"></a>00018      <span class="keywordtype">void</span> <a class="code" href="namespacespicecompat.html#a966b3f1c17b11b7ab65940c785184462" title="spicecompat::convertNodeNames convert node names form Qucs-notation to Spice-notation (i...">convertNodeNames</a>(QStringList &amp;tokens, QString &amp;sim);
-<a name="l00019"></a>00019 }
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="preprocessor">#endif // SPICECOMPAT_H</span>
+<a name="l00015"></a>00015      QString <a class="code" href="namespacespicecompat.html#a914df081760cd32b3ad74f39cdfd1a96" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function...">convert_function</a>(QString tok, <span class="keywordtype">bool</span> isXyce);
+<a name="l00016"></a>00016      <span class="keywordtype">void</span> <a class="code" href="namespacespicecompat.html#aa7dd08a89e4d69ff50a5ca97ee5bdb0b" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function...">convert_functions</a>(QStringList &amp;tokens, <span class="keywordtype">bool</span> isXyce);
+<a name="l00017"></a>00017      <span class="keywordtype">void</span> <a class="code" href="namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens.">splitEqn</a>(QString &amp;eqn, QStringList &amp;tokens);
+<a name="l00018"></a>00018      <span class="keywordtype">bool</span> <a class="code" href="namespacespicecompat.html#aaa1412844c15bb39369f182d006a62f4" title="spicecompat::containNodes Determine are there in equaton node voltages and/or current porbes...">containNodes</a>(QStringList &amp;tokens, QStringList &amp;vars);
+<a name="l00019"></a>00019      <span class="keywordtype">void</span> <a class="code" href="namespacespicecompat.html#a966b3f1c17b11b7ab65940c785184462" title="spicecompat::convertNodeNames convert node names form Qucs-notation to Spice-notation (i...">convertNodeNames</a>(QStringList &amp;tokens, QString &amp;sim);
+<a name="l00020"></a>00020 }
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="preprocessor">#endif // SPICECOMPAT_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -114,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 5 2015 11:57:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 15 2015 13:00:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

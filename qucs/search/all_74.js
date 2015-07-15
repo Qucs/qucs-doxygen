@@ -7,7 +7,7 @@ var searchData=
   ['task',['Task',['../structtQucsSettings.html#adc343cde5d75b784c1b26de921b62cf9',1,'tQucsSettings']]],
   ['tbound',['tBound',['../structtBound.html',1,'']]],
   ['testfile',['testFile',['../classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6',1,'Schematic']]],
-  ['text',['Text',['../structText.html',1,'Text'],['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()'],['../structText.html#a35d00cb96d2cbc9ca373c31f32e7da4d',1,'Text::Text()'],['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()']]],
+  ['text',['Text',['../structText.html',1,'Text'],['../classGraphicTextDialog.html#ac63a2051ab3d95f7b297a6dba82ba310',1,'GraphicTextDialog::text()'],['../classMarker.html#a4a616636ac9801ca4830151c2c9e6506',1,'Marker::Text()'],['../classGraphicText.html#ab574706e46443611c17d1ea558005cfd',1,'GraphicText::Text()'],['../structText.html#a35d00cb96d2cbc9ca373c31f32e7da4d',1,'Text::Text()']]],
   ['textantialiasing',['TextAntiAliasing',['../structtQucsSettings.html#ace79b67d2c621be43c8bdc98e73c305f',1,'tQucsSettings']]],
   ['textcorr',['textCorr',['../classSchematic.html#afe0a0635c73654e10c52c87786db89fe',1,'Schematic']]],
   ['textdescr',['textDescr',['../classLibraryDialog.html#af551a33e9cd948c148fe810058a83109',1,'LibraryDialog']]],
