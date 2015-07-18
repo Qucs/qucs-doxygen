@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['vac_5fspice',['Vac_SPICE',['../classVac__SPICE.html',1,'']]],
   ['vacomponent',['vacomponent',['../classvacomponent.html',1,'']]],
-  ['vampmod',['vAmpMod',['../classvAmpMod.html',1,'']]],
   ['vasettingsdialog',['VASettingsDialog',['../classVASettingsDialog.html',1,'']]],
   ['vccs',['VCCS',['../classVCCS.html',1,'']]],
   ['vcresistor',['vcresistor',['../classvcresistor.html',1,'']]],
@@ -20,9 +18,5 @@ var searchData=
   ['volt_5fnoise',['Volt_noise',['../classVolt__noise.html',1,'']]],
   ['vprobe',['vProbe',['../classvProbe.html',1,'']]],
   ['vpulse',['vPulse',['../classvPulse.html',1,'']]],
-  ['vpwl',['vPWL',['../classvPWL.html',1,'']]],
-  ['vrect',['vRect',['../classvRect.html',1,'']]],
-  ['vsffm',['vSffm',['../classvSffm.html',1,'']]],
-  ['vtrnoise',['vTRNOISE',['../classvTRNOISE.html',1,'']]],
-  ['vtrrandom',['vTRRANDOM',['../classvTRRANDOM.html',1,'']]]
+  ['vrect',['vRect',['../classvRect.html',1,'']]]
 ];

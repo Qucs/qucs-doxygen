@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMouseActions.html#a4bc0f036799361576eba251978c41a73" title="MouseActions::endElementMoving" alt="" coords="475,601,699,631"/>
-<area shape="rect" id="node58" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="211,728,408,757"/>
-<area shape="rect" id="node63" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="213,427,405,456"/>
-<area shape="rect" id="node83" href="$classMouseActions.html#abebfe2ea6931da2987dcac5c3ef7eed0" title="MouseActions::MReleasePaste" alt="" coords="207,835,412,864"/>
-<area shape="rect" id="node92" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="220,781,399,811"/>
-<area shape="rect" id="node95" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="205,888,413,917"/>
-<area shape="rect" id="node100" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="771,940,979,969"/>
-<area shape="rect" id="node105" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="216,992,403,1021"/>
-<area shape="rect" id="node113" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1565,1144,1701,1173"/>
-<area shape="rect" id="node133" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="773,1209,976,1239"/>
-<area shape="rect" id="node138" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="1043,1380,1232,1409"/>
-<area shape="rect" id="node5" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="768,207,981,236"/>
-<area shape="rect" id="node46" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="1300,525,1465,555"/>
-<area shape="rect" id="node49" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1547,577,1720,607"/>
-<area shape="rect" id="node52" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="1057,628,1217,657"/>
-<area shape="rect" id="node55" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1293,680,1472,709"/>
-<area shape="rect" id="node7" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1039,181,1236,211"/>
-<area shape="rect" id="node9" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1285,208,1480,237"/>
-<area shape="rect" id="node11" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1529,144,1737,173"/>
-<area shape="rect" id="node13" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1811,5,2027,35"/>
-<area shape="rect" id="node17" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1788,80,2049,109"/>
-<area shape="rect" id="node20" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1789,208,2048,237"/>
-<area shape="rect" id="node23" href="$classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="1828,265,2009,295"/>
-<area shape="rect" id="node31" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1815,321,2023,351"/>
-<area shape="rect" id="node34" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1848,423,1989,452"/>
-<area shape="rect" id="node25" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2123,241,2253,271"/>
-<area shape="rect" id="node29" href="$classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2099,295,2277,324"/>
-<area shape="rect" id="node27" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2325,347,2464,376"/>
-<area shape="rect" id="node36" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2116,909,2260,939"/>
-<area shape="rect" id="node60" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="504,728,669,757"/>
-<area shape="rect" id="node66" href="$classMouseActions.html#acbfc5fd19c7f35879ee8d71f81005413" title="MouseActions::MPressWire1 Is called if starting point of wire is pressed." alt="" coords="491,427,683,456"/>
-<area shape="rect" id="node69" href="$classMouseActions.html#a51e6ab4802a4421649b9db8c117e1966" title="MouseActions::MDoubleClickWire2 Double click terminates wire insertion." alt="" coords="760,336,989,365"/>
-<area shape="rect" id="node81" href="$classSchematic.html#a9da597014d307f6e1186f116cad30918" title="Schematic::contentsMousePressEvent" alt="" coords="463,781,711,811"/>
-<area shape="rect" id="node76" href="$classQucsApp.html#a09803e5e24c55cc7b88461bb1dc2d53e" title="QucsApp::slotSetWire" alt="" coords="1061,783,1213,812"/>
-<area shape="rect" id="node71" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="1043,353,1232,383"/>
-<area shape="rect" id="node85" href="$classMouseActions.html#a71851e20a1b1ce643c6bf7bd4fab87be" title="MouseActions::MMovePaste Moves components after paste from clipboard." alt="" coords="492,835,681,864"/>
-<area shape="rect" id="node88" href="$classQucsApp.html#a00d09cbe62124d2bef72e726f3e190da" title="QucsApp::slotEditPaste" alt="" coords="1301,835,1464,864"/>
-<area shape="rect" id="node97" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="789,887,960,916"/>
-<area shape="rect" id="node102" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="1548,936,1719,965"/>
-<area shape="rect" id="node107" href="$classMouseActions.html#ab741637d83bbd87b5a9d9c44a14fb6ef" title="MouseActions::MPressOnGrid" alt="" coords="488,1043,685,1072"/>
-<area shape="rect" id="node109" href="$classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="801,993,948,1023"/>
-<area shape="rect" id="node115" href="$classQucsApp.html#aa20c3af4a63baf794a51cde2d6cdb2a3" title="QucsApp::slotAlignTop" alt="" coords="1841,1037,1996,1067"/>
-<area shape="rect" id="node118" href="$classQucsApp.html#ade9de8a5c8507c64f8da4b5b458ada8b" title="QucsApp::slotAlignBottom" alt="" coords="1831,1091,2007,1120"/>
-<area shape="rect" id="node121" href="$classQucsApp.html#a7293c7b5cfc59b75afef8903a4c5ede9" title="QucsApp::slotAlignLeft" alt="" coords="1841,1144,1996,1173"/>
-<area shape="rect" id="node124" href="$classQucsApp.html#a5a36e4d8647e810f827db7840dc0b58c" title="QucsApp::slotAlignRight" alt="" coords="1836,1197,2001,1227"/>
-<area shape="rect" id="node127" href="$classQucsApp.html#ab820ef7a2c809207d3c47096a109efc7" title="QucsApp::slotCenterHorizontal" alt="" coords="1817,1251,2020,1280"/>
-<area shape="rect" id="node130" href="$classQucsApp.html#af2f902d0e60399fe2c1aea842a483e6a" title="QucsApp::slotCenterVertical" alt="" coords="1825,1304,2012,1333"/>
-<area shape="rect" id="node135" href="$classQucsApp.html#a2de80a618454137943f91779b4321e99" title="QucsApp::slotDistribHoriz" alt="" coords="1051,1223,1224,1252"/>
-<area shape="rect" id="node140" href="$classQucsApp.html#a7087826d2a29a125e587b302713647aa" title="QucsApp::slotDistribVert" alt="" coords="1300,1408,1465,1437"/>
+<area shape="rect" id="node3" href="$classMouseActions.html#a4bc0f036799361576eba251978c41a73" title="MouseActions::endElementMoving" alt="" coords="475,261,699,291"/>
+<area shape="rect" id="node58" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="211,624,408,653"/>
+<area shape="rect" id="node63" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="213,456,405,485"/>
+<area shape="rect" id="node83" href="$classMouseActions.html#abebfe2ea6931da2987dcac5c3ef7eed0" title="MouseActions::MReleasePaste" alt="" coords="207,731,412,760"/>
+<area shape="rect" id="node92" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="220,677,399,707"/>
+<area shape="rect" id="node95" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="771,781,979,811"/>
+<area shape="rect" id="node100" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="771,835,979,864"/>
+<area shape="rect" id="node105" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="216,885,403,915"/>
+<area shape="rect" id="node113" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="1571,1043,1707,1072"/>
+<area shape="rect" id="node133" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="1039,1107,1241,1136"/>
+<area shape="rect" id="node138" href="$classSchematic.html#a479000a48db2240421074ef5ec3f2ded" title="Schematic::distributeVertical sort selection vertically." alt="" coords="780,1179,969,1208"/>
+<area shape="rect" id="node5" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="768,232,981,261"/>
+<area shape="rect" id="node46" href="$classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4" title="QucsApp::slotCursorLeft" alt="" coords="1556,525,1721,555"/>
+<area shape="rect" id="node52" href="$classQucsApp.html#a4117733eeb5309bf344190bf4118e015" title="QucsApp::slotCursorUp" alt="" coords="1559,579,1719,608"/>
+<area shape="rect" id="node7" href="$classMouseActions.html#aa15ece5662ce7f0fe9179ec40281fcf8" title="MouseActions::MMoveMoving" alt="" coords="1041,205,1239,235"/>
+<area shape="rect" id="node9" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="1291,208,1485,237"/>
+<area shape="rect" id="node11" href="$classMouseActions.html#adf4defdce1bdd5ecd1e85c583c2d27e9" title="MouseActions::MReleaseSelect" alt="" coords="1535,144,1743,173"/>
+<area shape="rect" id="node13" href="$classMouseActions.html#a68379f407a7c212d09f54c248813582d" title="MouseActions::MReleaseSelect2" alt="" coords="1816,5,2032,35"/>
+<area shape="rect" id="node17" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1793,80,2055,109"/>
+<area shape="rect" id="node20" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1795,208,2053,237"/>
+<area shape="rect" id="node23" href="$classQucsApp.html#aeb426abb7ebfe9d361e8c30fd146f080" title="QucsApp::slotOpenContent" alt="" coords="1833,263,2015,292"/>
+<area shape="rect" id="node31" href="$classQucsApp.html#ad6b73decde3208e952ca5d916a125c5a" title="QucsApp::switchSchematicDoc" alt="" coords="1820,317,2028,347"/>
+<area shape="rect" id="node34" href="$classQucsApp.html#a74e3754f716569ff18a9a0a73f904ec1" title="QucsApp::slotSelect" alt="" coords="1853,371,1995,400"/>
+<area shape="rect" id="node25" href="$classQucsApp.html#ad9329f499af0fe0675d8d0c76194895d" title="QucsApp::initView Setup the layour of all widgets." alt="" coords="2128,237,2259,267"/>
+<area shape="rect" id="node29" href="$classQucsApp.html#a48e4d3b3f26f50320e3aff47ee90747d" title="QucsApp::slotCMenuOpen" alt="" coords="2104,291,2283,320"/>
+<area shape="rect" id="node27" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2331,343,2469,372"/>
+<area shape="rect" id="node36" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2121,808,2265,837"/>
+<area shape="rect" id="node48" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1837,475,2011,504"/>
+<area shape="rect" id="node54" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1835,579,2013,608"/>
+<area shape="rect" id="node60" href="$classQucsApp.html#a1b1abf593ab9a6e965896b6b35c5d652" title="QucsApp::slotEditRotate" alt="" coords="504,624,669,653"/>
+<area shape="rect" id="node66" href="$classMouseActions.html#acbfc5fd19c7f35879ee8d71f81005413" title="MouseActions::MPressWire1 Is called if starting point of wire is pressed." alt="" coords="491,456,683,485"/>
+<area shape="rect" id="node69" href="$classMouseActions.html#a51e6ab4802a4421649b9db8c117e1966" title="MouseActions::MDoubleClickWire2 Double click terminates wire insertion." alt="" coords="760,365,989,395"/>
+<area shape="rect" id="node81" href="$classSchematic.html#a9da597014d307f6e1186f116cad30918" title="Schematic::contentsMousePressEvent" alt="" coords="463,677,711,707"/>
+<area shape="rect" id="node76" href="$classQucsApp.html#a09803e5e24c55cc7b88461bb1dc2d53e" title="QucsApp::slotSetWire" alt="" coords="1064,677,1216,707"/>
+<area shape="rect" id="node71" href="$classMouseActions.html#acd59bc1f49306a35cfd619afc095bf70" title="MouseActions::MMoveWire2 Paint wire as it is being drawn with mouse." alt="" coords="1045,377,1235,407"/>
+<area shape="rect" id="node85" href="$classMouseActions.html#a71851e20a1b1ce643c6bf7bd4fab87be" title="MouseActions::MMovePaste Moves components after paste from clipboard." alt="" coords="492,731,681,760"/>
+<area shape="rect" id="node88" href="$classQucsApp.html#a00d09cbe62124d2bef72e726f3e190da" title="QucsApp::slotEditPaste" alt="" coords="1307,729,1469,759"/>
+<area shape="rect" id="node97" href="$classQucsApp.html#a27429730bfec1c9db1ff134fe042d05a" title="QucsApp::slotEditMirrorX" alt="" coords="1303,783,1473,812"/>
+<area shape="rect" id="node102" href="$classQucsApp.html#ae4c14d1dbff00cfdb9e73336bc1136b1" title="QucsApp::slotEditMirrorY" alt="" coords="1055,833,1225,863"/>
+<area shape="rect" id="node107" href="$classMouseActions.html#ab741637d83bbd87b5a9d9c44a14fb6ef" title="MouseActions::MPressOnGrid" alt="" coords="488,936,685,965"/>
+<area shape="rect" id="node109" href="$classQucsApp.html#a0577444a277d852e50d9422b791a70d1" title="QucsApp::slotOnGrid" alt="" coords="801,888,948,917"/>
+<area shape="rect" id="node115" href="$classQucsApp.html#aa20c3af4a63baf794a51cde2d6cdb2a3" title="QucsApp::slotAlignTop" alt="" coords="1847,936,2001,965"/>
+<area shape="rect" id="node118" href="$classQucsApp.html#ade9de8a5c8507c64f8da4b5b458ada8b" title="QucsApp::slotAlignBottom" alt="" coords="1836,989,2012,1019"/>
+<area shape="rect" id="node121" href="$classQucsApp.html#a7293c7b5cfc59b75afef8903a4c5ede9" title="QucsApp::slotAlignLeft" alt="" coords="1847,1043,2001,1072"/>
+<area shape="rect" id="node124" href="$classQucsApp.html#a5a36e4d8647e810f827db7840dc0b58c" title="QucsApp::slotAlignRight" alt="" coords="1841,1096,2007,1125"/>
+<area shape="rect" id="node127" href="$classQucsApp.html#ab820ef7a2c809207d3c47096a109efc7" title="QucsApp::slotCenterHorizontal" alt="" coords="1823,1149,2025,1179"/>
+<area shape="rect" id="node130" href="$classQucsApp.html#af2f902d0e60399fe2c1aea842a483e6a" title="QucsApp::slotCenterVertical" alt="" coords="1831,1203,2017,1232"/>
+<area shape="rect" id="node135" href="$classQucsApp.html#a2de80a618454137943f91779b4321e99" title="QucsApp::slotDistribHoriz" alt="" coords="1301,1173,1475,1203"/>
+<area shape="rect" id="node140" href="$classQucsApp.html#a7087826d2a29a125e587b302713647aa" title="QucsApp::slotDistribVert" alt="" coords="1305,1280,1471,1309"/>
 </map>

@@ -1,22 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="185,139,316,168"/>
-<area shape="rect" id="node5" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="416,32,525,61"/>
-<area shape="rect" id="node21" href="$classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="393,112,548,141"/>
-<area shape="rect" id="node34" href="$classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="395,165,547,195"/>
-<area shape="rect" id="node44" href="$classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="367,219,575,248"/>
-<area shape="rect" id="node7" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="641,32,793,61"/>
-<area shape="rect" id="node9" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="875,5,1021,35"/>
-<area shape="rect" id="node11" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1085,5,1320,35"/>
-<area shape="rect" id="node13" href="$classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1792,31,1995,60"/>
-<area shape="rect" id="node15" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1368,32,1539,61"/>
-<area shape="rect" id="node18" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1588,83,1743,112"/>
-<area shape="rect" id="node23" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="625,112,809,141"/>
-<area shape="rect" id="node25" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="865,59,1031,88"/>
-<area shape="rect" id="node31" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="861,112,1035,141"/>
-<area shape="rect" id="node27" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1131,139,1275,168"/>
-<area shape="rect" id="node29" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1384,139,1523,168"/>
-<area shape="rect" id="node36" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="627,165,808,195"/>
-<area shape="rect" id="node38" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="868,165,1028,195"/>
-<area shape="rect" id="node41" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="859,219,1037,248"/>
-<area shape="rect" id="node46" href="$classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="625,219,809,248"/>
+<area shape="rect" id="node3" href="$classMarker.html#aa5ada7c4415098442f4378afec9172e1" title="(should) create marker label Text the screen position cx and cy from VarPos." alt="" coords="185,114,316,143"/>
+<area shape="rect" id="node5" href="$classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="416,27,525,57"/>
+<area shape="rect" id="node21" href="$classMarker.html#a6150328e5bf976d49753ba2764b27006" title="Marker::moveLeftRight" alt="" coords="393,87,548,117"/>
+<area shape="rect" id="node34" href="$classMarker.html#a770bc6407c6f19d4ea724e4b8168a710" title="Marker::moveUpDown" alt="" coords="395,141,547,170"/>
+<area shape="rect" id="node44" href="$classMarkerDialog.html#a5c8ee2be58d38d1f4da1894509e0fd09" title="MarkerDialog::slotAcceptValues" alt="" coords="367,194,575,223"/>
+<area shape="rect" id="node7" href="$classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="641,27,793,57"/>
+<area shape="rect" id="node9" href="$classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="869,22,1016,51"/>
+<area shape="rect" id="node11" href="$classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="1075,9,1309,38"/>
+<area shape="rect" id="node13" href="$classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="1781,21,1984,50"/>
+<area shape="rect" id="node15" href="$classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="1357,22,1528,51"/>
+<area shape="rect" id="node18" href="$classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="1577,73,1732,102"/>
+<area shape="rect" id="node23" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="625,87,809,117"/>
+<area shape="rect" id="node25" href="$classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4" title="QucsApp::slotCursorLeft" alt="" coords="860,87,1025,117"/>
+<area shape="rect" id="node27" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="1105,62,1279,91"/>
+<area shape="rect" id="node29" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1371,151,1515,181"/>
+<area shape="rect" id="node31" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1585,151,1724,181"/>
+<area shape="rect" id="node36" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="627,141,808,170"/>
+<area shape="rect" id="node38" href="$classQucsApp.html#a4117733eeb5309bf344190bf4118e015" title="QucsApp::slotCursorUp" alt="" coords="863,165,1023,194"/>
+<area shape="rect" id="node40" href="$classQucsApp.html#ac53e5c140be898544e05cb58ece39d40" title="QucsApp::slotCursorDown" alt="" coords="1103,217,1281,246"/>
+<area shape="rect" id="node46" href="$classMarkerDialog.html#ac567c3abcbd0d626bcdbb059ad4d88fa" title="MarkerDialog::MarkerDialog" alt="" coords="625,194,809,223"/>
 </map>

@@ -4,28 +4,28 @@
 <area shape="rect" id="node17" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="243,936,405,965"/>
 <area shape="rect" id="node89" href="$classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8" title="Schematic::undo" alt="" coords="525,59,645,88"/>
 <area shape="rect" id="node94" href="$classSchematic.html#ad129ff86a7b1d62375336ec68319b746" title="Schematic::redo" alt="" coords="527,165,644,195"/>
-<area shape="rect" id="node5" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="489,5,681,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="768,5,957,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="489,5,681,35"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="768,5,957,35"/>
 <area shape="rect" id="node11" href="$classQucsApp.html#a1e2e586adf725eb0d8c2723b495811de" title="QucsApp::slotSymbolEdit" alt="" coords="777,112,948,141"/>
 <area shape="rect" id="node15" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="805,219,920,248"/>
 <area shape="rect" id="node13" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1068,219,1212,248"/>
 <area shape="rect" id="node19" href="$classSettingsDialog.html#afd32d97f1c09c536f39513701b5de500" title="SettingsDialog::slotApply" alt="" coords="501,1539,669,1568"/>
-<area shape="rect" id="node26" href="$classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="503,1432,668,1461"/>
-<area shape="rect" id="node28" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="772,1432,953,1461"/>
+<area shape="rect" id="node26" href="$classMouseActions.html#a8499caa0e8e613f3bb6d377d2b2c954e" title="MouseActions::editLabel" alt="" coords="503,1485,668,1515"/>
+<area shape="rect" id="node28" href="$classMouseActions.html#a443823ac72fe6537c71ec23fcd53392d" title="MouseActions::editElement" alt="" coords="772,1435,953,1464"/>
 <area shape="rect" id="node30" href="$classMouseActions.html#a4bc0f036799361576eba251978c41a73" title="MouseActions::endElementMoving" alt="" coords="473,323,697,352"/>
-<area shape="rect" id="node43" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="481,1277,689,1307"/>
-<area shape="rect" id="node45" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="765,1173,960,1203"/>
-<area shape="rect" id="node48" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1009,1147,1271,1176"/>
-<area shape="rect" id="node51" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1011,1200,1269,1229"/>
-<area shape="rect" id="node54" href="$classMouseActions.html#a39a47c7a3bf37e487ea135802a2c9cd1" title="MouseActions::MPressLabel" alt="" coords="491,1485,680,1515"/>
+<area shape="rect" id="node40" href="$classMouseActions.html#a609e736e2b4c717dd23633bde13dac41" title="MouseActions::MMoveScrollBar" alt="" coords="481,1120,689,1149"/>
+<area shape="rect" id="node42" href="$classMouseActions.html#a821f3b55d821b9fad375c52c623ba18e" title="MouseActions::MPressSelect" alt="" coords="765,1227,960,1256"/>
+<area shape="rect" id="node45" href="$classMouseActions.html#ab1f35801300a6d44592ee9653e2860c1" title="MouseActions::MReleaseResizeDiagram" alt="" coords="1009,1200,1271,1229"/>
+<area shape="rect" id="node48" href="$classMouseActions.html#a76e949d35ce84ed1c537963797ca70e9" title="MouseActions::MReleaseResizePainting" alt="" coords="1011,1253,1269,1283"/>
+<area shape="rect" id="node51" href="$classMouseActions.html#a39a47c7a3bf37e487ea135802a2c9cd1" title="MouseActions::MPressLabel" alt="" coords="491,1173,680,1203"/>
 <area shape="rect" id="node58" href="$classMouseActions.html#a36407b6d9b1e82b7784d1cd8874c5bab" title="MouseActions::MPressMirrorX" alt="" coords="485,1592,685,1621"/>
 <area shape="rect" id="node60" href="$classMouseActions.html#a58f69a3444f8b8de1e4d5dcca4969564" title="MouseActions::MPressMirrorY" alt="" coords="485,1645,685,1675"/>
 <area shape="rect" id="node62" href="$classMouseActions.html#a497a415b705e4cdf8eee7aee3229e765" title="MouseActions::MPressRotate" alt="" coords="487,1699,684,1728"/>
 <area shape="rect" id="node64" href="$classMouseActions.html#a964ac8fd47ffa0885cd512a74eef76e2" title="MouseActions::MPressElement" alt="" coords="483,1752,688,1781"/>
-<area shape="rect" id="node66" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="489,1120,681,1149"/>
+<area shape="rect" id="node66" href="$classMouseActions.html#adb85a86f0ccf8e889b1dd6fa157aef01" title="MouseActions::MPressWire2 Is called if ending point of wire is pressed." alt="" coords="489,1227,681,1256"/>
 <area shape="rect" id="node71" href="$classMouseActions.html#abebfe2ea6931da2987dcac5c3ef7eed0" title="MouseActions::MReleasePaste" alt="" coords="483,1805,688,1835"/>
 <area shape="rect" id="node73" href="$classMouseActions.html#a69ed77192c805d2c7cedd295c3fdac9e" title="MouseActions::MReleaseMoveText" alt="" coords="471,1859,700,1888"/>
-<area shape="rect" id="node76" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="487,1173,684,1203"/>
+<area shape="rect" id="node76" href="$classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32" title="QucsApp::slotApplyCompText" alt="" coords="487,1280,684,1309"/>
 <area shape="rect" id="node80" href="$classSchematic.html#aaed026f1e442e36eac494279816148bb" title="Schematic::rotateElements" alt="" coords="496,376,675,405"/>
 <area shape="rect" id="node82" href="$classSchematic.html#ac39b4f347cee17ed13d1c8e827315458" title="Schematic::mirrorXComponents" alt="" coords="481,429,689,459"/>
 <area shape="rect" id="node84" href="$classSchematic.html#a5b67072beb4d58d1c92f3cbe981ee18d" title="Schematic::mirrorYComponents" alt="" coords="481,483,689,512"/>
@@ -33,19 +33,19 @@
 <area shape="rect" id="node99" href="$classSchematic.html#aa7f135a213ef5dcdae8fa7671a268189" title="Schematic::elementsOnGrid" alt="" coords="492,643,679,672"/>
 <area shape="rect" id="node101" href="$classSchematic.html#a2ef58bb2ee5e4fa2f05f819325758c79" title="Schematic::setMarker" alt="" coords="511,696,660,725"/>
 <area shape="rect" id="node103" href="$classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21" title="Schematic::markerLeftRight" alt="" coords="493,269,677,299"/>
-<area shape="rect" id="node107" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="495,589,676,619"/>
-<area shape="rect" id="node110" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="495,749,676,779"/>
-<area shape="rect" id="node112" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="517,803,653,832"/>
-<area shape="rect" id="node114" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="484,856,687,885"/>
-<area shape="rect" id="node116" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="463,909,708,939"/>
-<area shape="rect" id="node118" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="456,963,715,992"/>
-<area shape="rect" id="node120" href="$classSchematic.html#a21a32952eeac7109af7cd3549b6376a5" title="Schematic::activateSelectedComponents" alt="" coords="455,1016,716,1045"/>
-<area shape="rect" id="node21" href="$classSettingsDialog.html#a81aa78fde191581f79f46d25d4dc93e5" title="SettingsDialog::SettingsDialog" alt="" coords="1040,1539,1240,1568"/>
-<area shape="rect" id="node23" href="$classSettingsDialog.html#a4c567091d8455da72c7ba9dc7ae1d6a3" title="SettingsDialog::slotOK" alt="" coords="785,1512,940,1541"/>
+<area shape="rect" id="node106" href="$classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6" title="Schematic::markerUpDown" alt="" coords="495,589,676,619"/>
+<area shape="rect" id="node109" href="$classSchematic.html#a31f2aece0d144caf740077227d2455f1" title="Schematic::deleteElements" alt="" coords="495,749,676,779"/>
+<area shape="rect" id="node111" href="$classSchematic.html#a5b9b139af5ceea7eb087d6bfc3b4998c" title="Schematic::aligning align selected elements." alt="" coords="517,803,653,832"/>
+<area shape="rect" id="node113" href="$classSchematic.html#a81facc2a2be2fe2e4f4d82726533abc3" title="Schematic::distributeHorizontal sort selection horizontally." alt="" coords="484,856,687,885"/>
+<area shape="rect" id="node115" href="$classSchematic.html#a8b28292cf7acb723c43c71cdeb8ff214" title="Schematic::activateCompsWithinRect" alt="" coords="463,909,708,939"/>
+<area shape="rect" id="node117" href="$classSchematic.html#afa16b36e6b4b7418d0dc3dcdcc1ef76a" title="Schematic::activateSpecifiedComponent" alt="" coords="456,963,715,992"/>
+<area shape="rect" id="node119" href="$classSchematic.html#a21a32952eeac7109af7cd3549b6376a5" title="Schematic::activateSelectedComponents" alt="" coords="455,1016,716,1045"/>
+<area shape="rect" id="node21" href="$classSettingsDialog.html#a81aa78fde191581f79f46d25d4dc93e5" title="SettingsDialog::SettingsDialog" alt="" coords="1040,1540,1240,1569"/>
+<area shape="rect" id="node23" href="$classSettingsDialog.html#a4c567091d8455da72c7ba9dc7ae1d6a3" title="SettingsDialog::slotOK" alt="" coords="785,1513,940,1543"/>
 <area shape="rect" id="node32" href="$classMouseActions.html#a2a9ee686c36dfffc0d72f199157deec6" title="MouseActions::MReleaseMoving" alt="" coords="1033,723,1247,752"/>
-<area shape="rect" id="node34" href="$classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d" title="QucsApp::slotCursorLeft" alt="" coords="780,272,945,301"/>
-<area shape="rect" id="node37" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="776,325,949,355"/>
-<area shape="rect" id="node40" href="$classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff" title="QucsApp::slotCursorUp" alt="" coords="783,429,943,459"/>
+<area shape="rect" id="node34" href="$classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4" title="QucsApp::slotCursorLeft" alt="" coords="780,272,945,301"/>
+<area shape="rect" id="node37" href="$classQucsApp.html#a4117733eeb5309bf344190bf4118e015" title="QucsApp::slotCursorUp" alt="" coords="783,376,943,405"/>
+<area shape="rect" id="node54" href="$classQucsApp.html#a52fe571991b5aa6261d91cda862b2bb3" title="QucsApp::slotInsertLabel" alt="" coords="779,723,947,752"/>
 <area shape="rect" id="node91" href="$classQucsApp.html#a3402c4b8427dd5e17d1c1dac2104b9dd" title="QucsApp::slotEditUndo" alt="" coords="784,59,941,88"/>
 <area shape="rect" id="node96" href="$classQucsApp.html#a1e46d8ab69669763f6cb298034759aad" title="QucsApp::slotEditRedo" alt="" coords="784,165,941,195"/>
 </map>

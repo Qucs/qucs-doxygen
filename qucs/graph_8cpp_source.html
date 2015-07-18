@@ -100,341 +100,345 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="graph_8h.html">graph.h</a>&quot;</span>
 <a name="l00018"></a>00018 
 <a name="l00019"></a>00019 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;QPainter&gt;</span>
-<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;QDebug&gt;</span>
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a>;
-<a name="l00025"></a>00025 
-<a name="l00026"></a><a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">00026</a> <a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">Graph::Graph</a>(<a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> <span class="keyword">const</span>* d, <span class="keyword">const</span> QString&amp; <a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a6974f2fb5171a20460c427d69a44dd14">_Line</a>) :
-<a name="l00027"></a>00027   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>(),
-<a name="l00028"></a>00028   Style(<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a114b3e4f93e0625bdb90d13fbe1782ee">GRAPHSTYLE_SOLID</a>),
-<a name="l00029"></a>00029   diagram(d)
-<a name="l00030"></a>00030 {
-<a name="l00031"></a>00031   <a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> = <a class="code" href="element_8h.html#a48320a5a01ad8f1dc90c7575e8e30b2a">isGraph</a>;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>    = <a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a6974f2fb5171a20460c427d69a44dd14">_Line</a>;
-<a name="l00034"></a>00034   <a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> = 0;    <span class="comment">// no points in graph</span>
-<a name="l00035"></a>00035   <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>  = <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = 0;
-<a name="l00036"></a>00036   <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>  = 0x0000ff;   <span class="comment">// blue</span>
-<a name="l00037"></a>00037   <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>  = 3;
-<a name="l00038"></a>00038   <a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a> = <span class="keyword">false</span>;
-<a name="l00039"></a>00039   <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 0;   <span class="comment">// left y axis</span>
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;
-<a name="l00042"></a>00042 }
-<a name="l00043"></a>00043 
-<a name="l00044"></a><a class="code" href="classGraph.html#a902c5b3eacb66d60752525ab23297a95">00044</a> <a class="code" href="classGraph.html#a902c5b3eacb66d60752525ab23297a95">Graph::~Graph</a>()
-<a name="l00045"></a>00045 {
-<a name="l00046"></a>00046   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> != 0)
-<a name="l00047"></a>00047     <span class="keyword">delete</span>[] <a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>;
-<a name="l00048"></a>00048 }
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050 <span class="comment">// ---------------------------------------------------------------------</span>
-<a name="l00051"></a><a class="code" href="classGraph.html#a091ec6252a393994dc00fb221abe608e">00051</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a091ec6252a393994dc00fb221abe608e">Graph::createMarkerText</a>()<span class="keyword"> const</span>
-<a name="l00052"></a>00052 <span class="keyword"></span>{
-<a name="l00053"></a>00053   <span class="keywordflow">for</span>(<span class="keyword">auto</span> pm : <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>) {
-<a name="l00054"></a>00054     pm-&gt;createText();
-<a name="l00055"></a>00055   }
-<a name="l00056"></a>00056 }
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 <span class="comment">// ---------------------------------------------------------------------</span>
-<a name="l00059"></a><a class="code" href="classGraph.html#a527438f794cfb41d29bc5d77a8d0473c">00059</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a527438f794cfb41d29bc5d77a8d0473c">Graph::paint</a>(<a class="code" href="classViewPainter.html">ViewPainter</a> *p, <span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0)
-<a name="l00060"></a>00060 {
-<a name="l00061"></a>00061   <span class="keywordflow">if</span>(!<a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.size())
-<a name="l00062"></a>00062     <span class="keywordflow">return</span>;
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064   <span class="keywordflow">if</span>(<a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a>) {
-<a name="l00065"></a>00065     p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(Qt::darkGray,<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>+4));
-<a name="l00066"></a>00066     <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068     p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(Qt::white, <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>, Qt::SolidLine));
-<a name="l00069"></a>00069     <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
-<a name="l00070"></a>00070     <span class="keywordflow">return</span>;
-<a name="l00071"></a>00071   }
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073   <span class="comment">// **** not selected ****</span>
-<a name="l00074"></a>00074   p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(QColor(<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>), <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>, Qt::SolidLine));
-<a name="l00075"></a>00075   <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
-<a name="l00076"></a>00076 }
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 <span class="comment">// ---------------------------------------------------------------------</span>
-<a name="l00079"></a><a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">00079</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">Graph::paintLines</a>(<a class="code" href="classViewPainter.html">ViewPainter</a> *p, <span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0)
-<a name="l00080"></a>00080 {
-<a name="l00081"></a>00081   <span class="keywordflow">switch</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>) {
-<a name="l00082"></a>00082     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a1d36a4aaca9b6d404f18b68fcfccff3c">GRAPHSTYLE_STAR</a>:
-<a name="l00083"></a>00083       <a class="code" href="classGraph.html#af864ed03ecaa2358cb709d0d4903682d">drawStarSymbols</a>(x0, y0, p);
-<a name="l00084"></a>00084       <span class="keywordflow">break</span>;
-<a name="l00085"></a>00085     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a6b175b970886bea3c3783b2e4aabdf5c">GRAPHSTYLE_CIRCLE</a>:
-<a name="l00086"></a>00086       <a class="code" href="classGraph.html#a9dc09871af5598f354d323a6bd352404">drawCircleSymbols</a>(x0, y0, p);
-<a name="l00087"></a>00087       <span class="keywordflow">break</span>;
-<a name="l00088"></a>00088     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480aad9199fb74e78e9d31bbb40a6ba259dd">GRAPHSTYLE_ARROW</a>:
-<a name="l00089"></a>00089       <a class="code" href="classGraph.html#af11a7ea900db28fbbb8736267c409633">drawArrowSymbols</a>(x0, y0, p);
-<a name="l00090"></a>00090       <span class="keywordflow">break</span>;
-<a name="l00091"></a>00091     <span class="keywordflow">default</span>:
-<a name="l00092"></a>00092       <a class="code" href="classGraph.html#a526c42d6f98e33301777983a492695d4" title="draw a (line) graph from screen coord pairs">drawLines</a>(x0, y0, p);
-<a name="l00093"></a>00093   }
-<a name="l00094"></a>00094 }
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096 <span class="comment">// ---------------------------------------------------------------------</span>
-<a name="l00097"></a><a class="code" href="classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9">00097</a> QString <a class="code" href="classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9">Graph::save</a>()
-<a name="l00098"></a>00098 {
-<a name="l00099"></a>00099   QString s = <span class="stringliteral">&quot;\t&lt;\&quot;&quot;</span>+<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>+<span class="stringliteral">&quot;\&quot; &quot;</span>+<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.name()+
-<a name="l00100"></a>00100         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>)+<span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>)+
-<a name="l00101"></a>00101         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>)+<span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>)+
-<a name="l00102"></a>00102         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>)+<span class="stringliteral">&quot;&gt;&quot;</span>;
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104   <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
-<a name="l00105"></a>00105     s += <span class="stringliteral">&quot;\n\t  &quot;</span>+pm-&gt;<a class="code" href="classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863">save</a>();
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107   <span class="keywordflow">return</span> s;
-<a name="l00108"></a>00108 }
-<a name="l00109"></a>00109 
-<a name="l00110"></a>00110 <span class="comment">// ---------------------------------------------------------------------</span>
-<a name="l00111"></a><a class="code" href="classGraph.html#a0f26753c9263504b92b659f0dc7d253d">00111</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph.html#a0f26753c9263504b92b659f0dc7d253d">Graph::load</a>(<span class="keyword">const</span> QString&amp; _s)
-<a name="l00112"></a>00112 {
-<a name="l00113"></a>00113   <span class="keywordtype">bool</span> ok;
-<a name="l00114"></a>00114   QString s = _s;
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116   <span class="keywordflow">if</span>(s.at(0) != <span class="charliteral">&#39;&lt;&#39;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00117"></a>00117   <span class="keywordflow">if</span>(s.at(s.length()-1) != <span class="charliteral">&#39;&gt;&#39;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00118"></a>00118   s = s.mid(1, s.length()-2);   <span class="comment">// cut off start and end character</span>
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120   <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = s.section(<span class="charliteral">&#39;&quot;&#39;</span>,1,1);  <span class="comment">// Var</span>
-<a name="l00121"></a>00121 
-<a name="l00122"></a>00122   QString n;
-<a name="l00123"></a>00123   n  = s.section(<span class="charliteral">&#39; &#39;</span>,1,1);    <span class="comment">// Color</span>
-<a name="l00124"></a>00124   <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.setNamedColor(n);
-<a name="l00125"></a>00125   <span class="keywordflow">if</span>(!<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.isValid()) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00126"></a>00126 
-<a name="l00127"></a>00127   n  = s.section(<span class="charliteral">&#39; &#39;</span>,2,2);    <span class="comment">// Thick</span>
-<a name="l00128"></a>00128   <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = n.toInt(&amp;ok);
-<a name="l00129"></a>00129   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131   n  = s.section(<span class="charliteral">&#39; &#39;</span>,3,3);    <span class="comment">// Precision</span>
-<a name="l00132"></a>00132   <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = n.toInt(&amp;ok);
-<a name="l00133"></a>00133   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00134"></a>00134 
-<a name="l00135"></a>00135   n  = s.section(<span class="charliteral">&#39; &#39;</span>,4,4);    <span class="comment">// numMode</span>
-<a name="l00136"></a>00136   <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = n.toInt(&amp;ok);
-<a name="l00137"></a>00137   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00138"></a>00138 
-<a name="l00139"></a>00139   n  = s.section(<span class="charliteral">&#39; &#39;</span>,5,5);    <span class="comment">// Style</span>
-<a name="l00140"></a>00140   <span class="keywordtype">int</span> st = n.toInt(&amp;ok);
-<a name="l00141"></a>00141   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00142"></a>00142   <a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f">toGraphStyle</a>(st);
-<a name="l00143"></a>00143   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>==<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480ac0f47e71848fa4c0f4f83dfc88309354">GRAPHSTYLE_INVALID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00144"></a>00144 
-<a name="l00145"></a>00145   n  = s.section(<span class="charliteral">&#39; &#39;</span>,6,6);    <span class="comment">// yAxisNo</span>
-<a name="l00146"></a>00146   <span class="keywordflow">if</span>(n.isEmpty()) <span class="keywordflow">return</span> <span class="keyword">true</span>;   <span class="comment">// backward compatible</span>
-<a name="l00147"></a>00147   <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = n.toInt(&amp;ok);
-<a name="l00148"></a>00148   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00149"></a>00149 
-<a name="l00150"></a>00150   <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00151"></a>00151 }
-<a name="l00152"></a>00152 
-<a name="l00153"></a>00153 <span class="comment">// -----------------------------------------------------------------------</span>
-<a name="l00163"></a><a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746">00163</a> <span class="comment"></span><span class="keywordtype">int</span> <a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph.">Graph::getSelected</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)
-<a name="l00164"></a>00164 {
-<a name="l00165"></a>00165   <span class="keyword">auto</span> pp = <a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.begin();
-<a name="l00166"></a>00166   <span class="keywordflow">if</span>(pp == <a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.end()) <span class="keywordflow">return</span> -1;
-<a name="l00167"></a>00167 
-<a name="l00168"></a>00168   <span class="keywordtype">int</span> A, z=0;
-<a name="l00169"></a>00169   <span class="keywordtype">int</span> dx, dx2, <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
-<a name="l00170"></a>00170   <span class="keywordtype">int</span> dy, dy2, <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
-<a name="l00171"></a>00171 
-<a name="l00172"></a>00172   <span class="keywordtype">int</span> countX = <a class="code" href="classGraph.html#a3df10f65059b4b665f6f83740dbaeb14">cPointsX</a>.at(0)-&gt;count;
-<a name="l00173"></a>00173   <span class="keywordflow">if</span>(pp-&gt;isStrokeEnd()) {
-<a name="l00174"></a>00174     <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) z++;
-<a name="l00175"></a>00175     pp++;
-<a name="l00176"></a>00176     <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) {
-<a name="l00177"></a>00177       <span class="keywordflow">if</span>(pp-&gt;isGraphEnd())  <span class="keywordflow">return</span> -1;   <span class="comment">// not even one point ?</span>
-<a name="l00178"></a>00178       z++;
-<a name="l00179"></a>00179       pp++;
-<a name="l00180"></a>00180       <span class="keywordflow">if</span>(pp-&gt;isGraphEnd())  <span class="keywordflow">return</span> -1;   <span class="comment">// not even one point ?</span>
-<a name="l00181"></a>00181     }
-<a name="l00182"></a>00182   }
-<a name="l00183"></a>00183 
-<a name="l00184"></a>00184   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> &gt;= <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a1d36a4aaca9b6d404f18b68fcfccff3c">GRAPHSTYLE_STAR</a>) {
-<a name="l00185"></a>00185     <span class="comment">// for graph symbols</span>
-<a name="l00186"></a>00186     <span class="keywordflow">while</span>(!pp-&gt;isGraphEnd()) {
-<a name="l00187"></a>00187       <span class="keywordflow">if</span>(!pp-&gt;isStrokeEnd()) {
-<a name="l00188"></a>00188         dx  = x - int((pp)-&gt;getScrX());
-<a name="l00189"></a>00189         dy  = y - int((pp++)-&gt;getScrY());
-<a name="l00190"></a>00190 
-<a name="l00191"></a>00191         <span class="keywordflow">if</span>(dx &lt; -5) <span class="keywordflow">continue</span>;
-<a name="l00192"></a>00192         <span class="keywordflow">if</span>(dx &gt;  5) <span class="keywordflow">continue</span>;
-<a name="l00193"></a>00193         <span class="keywordflow">if</span>(dy &lt; -5) <span class="keywordflow">continue</span>;
-<a name="l00194"></a>00194         <span class="keywordflow">if</span>(dy &gt;  5) <span class="keywordflow">continue</span>;
-<a name="l00195"></a>00195         <span class="keywordflow">return</span> z*countX;   <span class="comment">// points on graph symbol</span>
-<a name="l00196"></a>00196       }
-<a name="l00197"></a>00197       <span class="keywordflow">else</span> {
-<a name="l00198"></a>00198         z++;   <span class="comment">// next branch</span>
-<a name="l00199"></a>00199         pp++;
-<a name="l00200"></a>00200       }
-<a name="l00201"></a>00201     }
-<a name="l00202"></a>00202     <span class="keywordflow">return</span> -1;
-<a name="l00203"></a>00203   }
-<a name="l00204"></a>00204 
-<a name="l00205"></a>00205   <span class="comment">// for graph lines</span>
-<a name="l00206"></a>00206   <span class="keywordflow">while</span>(!pp-&gt;isGraphEnd()) {
-<a name="l00207"></a>00207     <span class="keywordflow">while</span>(!pp-&gt;isBranchEnd()) {
-<a name="l00208"></a>00208       x1 = int(pp-&gt;getScrX());
-<a name="l00209"></a>00209       y1 = int((pp++)-&gt;getScrY());
-<a name="l00210"></a>00210       dx  = x - <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
-<a name="l00211"></a>00211       dy  = y - <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
-<a name="l00212"></a>00212 
-<a name="l00213"></a>00213       <span class="keywordflow">if</span>(pp-&gt;isPt()){
-<a name="l00214"></a>00214         dx2 = int(pp-&gt;getScrX());
-<a name="l00215"></a>00215       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) {
-<a name="l00216"></a>00216         <span class="keywordflow">break</span>;
-<a name="l00217"></a>00217       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp-&gt;isStrokeEnd()) {
-<a name="l00218"></a>00218         pp++;
-<a name="l00219"></a>00219         dx2 = int(pp-&gt;getScrX());  <span class="comment">// go on as graph can also be selected between strokes</span>
-<a name="l00220"></a>00220         <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) <span class="keywordflow">break</span>;
-<a name="l00221"></a>00221       }
-<a name="l00222"></a>00222       <span class="keywordflow">if</span>(dx &lt; -5) { <span class="keywordflow">if</span>(x &lt; dx2-5) <span class="keywordflow">continue</span>; } <span class="comment">// point between x coordinates ?</span>
-<a name="l00223"></a>00223       <span class="keywordflow">else</span> { <span class="keywordflow">if</span>(x &gt; 5) <span class="keywordflow">if</span>(x &gt; dx2+5) <span class="keywordflow">continue</span>; }
-<a name="l00224"></a>00224 
-<a name="l00225"></a>00225       dy2 = int(pp-&gt;getScrY());
-<a name="l00226"></a>00226       <span class="keywordflow">if</span>(dy &lt; -5) { <span class="keywordflow">if</span>(y &lt; dy2-5) <span class="keywordflow">continue</span>; } <span class="comment">// point between y coordinates ?</span>
-<a name="l00227"></a>00227       <span class="keywordflow">else</span> { <span class="keywordflow">if</span>(y &gt; 5) <span class="keywordflow">if</span>(y &gt; dy2+5) <span class="keywordflow">continue</span>; }
-<a name="l00228"></a>00228 
-<a name="l00229"></a>00229       dx2 -= <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
-<a name="l00230"></a>00230       dy2 -= <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
-<a name="l00231"></a>00231 
-<a name="l00232"></a>00232       A  = dx2*dy - dx*dy2;    <span class="comment">// calculate the rectangle area spanned</span>
-<a name="l00233"></a>00233       A *= A;                  <span class="comment">// avoid the need for square root</span>
-<a name="l00234"></a>00234       A -= 25*(dx2*dx2 + dy2*dy2);  <span class="comment">// substract selectable area</span>
-<a name="l00235"></a>00235 
-<a name="l00236"></a>00236       <span class="keywordflow">if</span>(A &lt;= 0)  <span class="keywordflow">return</span> z*countX;  <span class="comment">// lies x/y onto the graph line ?</span>
-<a name="l00237"></a>00237     }
-<a name="l00238"></a>00238     pp++;
-<a name="l00239"></a>00239     z++;
-<a name="l00240"></a>00240   }
-<a name="l00241"></a>00241 
-<a name="l00242"></a>00242   <span class="keywordflow">return</span> -1;
-<a name="l00243"></a>00243 }
-<a name="l00244"></a>00244 
-<a name="l00245"></a>00245 <span class="comment">// -----------------------------------------------------------------------</span>
-<a name="l00246"></a>00246 <span class="comment">// Creates a new graph and copies all the properties into it.</span>
-<a name="l00247"></a><a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">00247</a> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>* <a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">Graph::sameNewOne</a>()
-<a name="l00248"></a>00248 {
-<a name="l00249"></a>00249   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">Graph</a>(<a class="code" href="classGraph.html#a3c0ba3adb63d66efba004d84dbfa3f05">diagram</a>, <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>);
-<a name="l00250"></a>00250 
-<a name="l00251"></a>00251   pg-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>;
-<a name="l00252"></a>00252   pg-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>;
-<a name="l00253"></a>00253   pg-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>;
-<a name="l00254"></a>00254 
-<a name="l00255"></a>00255   pg-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>;
-<a name="l00256"></a>00256   pg-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>;
-<a name="l00257"></a>00257   pg-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>   = <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>;
-<a name="l00258"></a>00258 
-<a name="l00259"></a>00259   <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
-<a name="l00260"></a>00260     pg-&gt;<a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>.append(pm-&gt;<a class="code" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09">sameNewOne</a>(pg));
-<a name="l00261"></a>00261 
-<a name="l00262"></a>00262   <span class="keywordflow">return</span> pg;
-<a name="l00263"></a>00263 }
-<a name="l00264"></a>00264 
-<a name="l00268"></a><a class="code" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb">00268</a> std::pair&lt;double,double&gt; <a class="code" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos">Graph::findSample</a>(std::vector&lt;double&gt;&amp; VarPos)<span class="keyword"> const</span>
-<a name="l00269"></a>00269 <span class="keyword"></span>{
-<a name="l00270"></a>00270   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span>* pD;
-<a name="l00271"></a>00271   <span class="keywordtype">unsigned</span> nVarPos=0;
-<a name="l00272"></a>00272   <span class="keywordtype">unsigned</span> n=0;
-<a name="l00273"></a>00273   <span class="keywordtype">unsigned</span> m=1;
-<a name="l00274"></a>00274 
-<a name="l00275"></a>00275   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii) {
-<a name="l00276"></a>00276     <span class="keywordtype">double</span>* pp = pD-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a>;
-<a name="l00277"></a>00277     <span class="keywordtype">double</span> v = VarPos[nVarPos];
-<a name="l00278"></a>00278     <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>; i&gt;1; i--) {  <span class="comment">// find appropiate marker position</span>
-<a name="l00279"></a>00279       <span class="keywordflow">if</span>(fabs(v-(*pp)) &lt; fabs(v-(*(pp+1)))) <span class="keywordflow">break</span>;
-<a name="l00280"></a>00280       pp++;
-<a name="l00281"></a>00281       n += m;
-<a name="l00282"></a>00282     }
-<a name="l00283"></a>00283 
-<a name="l00284"></a>00284     m *= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
-<a name="l00285"></a>00285     VarPos[nVarPos++] = *pp;
-<a name="l00286"></a>00286   }
-<a name="l00287"></a>00287 
-<a name="l00288"></a>00288   <span class="keywordflow">return</span> std::pair&lt;double,double&gt;(<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>[2*n], cPointsY[2*n+1]);
-<a name="l00289"></a>00289 }
-<a name="l00290"></a>00290 
-<a name="l00291"></a>00291 <span class="comment">// -----------------------------------------------------------------------</span>
-<a name="l00292"></a>00292 <span class="comment">// meaning of the values in a graph &quot;Points&quot; list</span>
-<a name="l00293"></a><a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">00293</a> <span class="preprocessor">#define STROKEEND   -2</span>
-<a name="l00294"></a><a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">00294</a> <span class="preprocessor"></span><span class="preprocessor">#define BRANCHEND   -10</span>
-<a name="l00295"></a><a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">00295</a> <span class="preprocessor"></span><span class="preprocessor">#define GRAPHEND    -100</span>
-<a name="l00296"></a>00296 <span class="preprocessor"></span><span class="comment">// -----------------------------------------------------------------------</span>
-<a name="l00297"></a>00297 <span class="comment">// screen points pseudo iterator implementation.</span>
-<a name="l00298"></a><a class="code" href="classGraph_1_1ScrPt.html#ab77ad255e3313ed5f004f949653cab05">00298</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ab77ad255e3313ed5f004f949653cab05">Graph::ScrPt::setStrokeEnd</a>()
-<a name="l00299"></a>00299 {
-<a name="l00300"></a>00300   <a class="code" href="classGraph_1_1ScrPt.html#ab511f4e1dac8126fccbf71c0c6036bfa">ScrX</a> = <a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">STROKEEND</a>;
-<a name="l00301"></a>00301 }
-<a name="l00302"></a><a class="code" href="classGraph_1_1ScrPt.html#a1c9a6f36b276f0578e74d01efba22561">00302</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a1c9a6f36b276f0578e74d01efba22561">Graph::ScrPt::setBranchEnd</a>()
-<a name="l00303"></a>00303 {
-<a name="l00304"></a>00304   ScrX = <a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">BRANCHEND</a>;
-<a name="l00305"></a>00305 }
-<a name="l00306"></a><a class="code" href="classGraph_1_1ScrPt.html#ad330d5e6b056ac362b307b483641eadf">00306</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ad330d5e6b056ac362b307b483641eadf">Graph::ScrPt::setGraphEnd</a>()
-<a name="l00307"></a>00307 {
-<a name="l00308"></a>00308   ScrX = <a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">GRAPHEND</a>;
-<a name="l00309"></a>00309 }
-<a name="l00310"></a><a class="code" href="classGraph_1_1ScrPt.html#ab1d7dec5d6cc146392ccf6c393b77c1e">00310</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#ab1d7dec5d6cc146392ccf6c393b77c1e">Graph::ScrPt::isPt</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&gt;=0.;}
-<a name="l00311"></a><a class="code" href="classGraph_1_1ScrPt.html#a2a20c73e380913ad3a0b60b6408499f3">00311</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#a2a20c73e380913ad3a0b60b6408499f3">Graph::ScrPt::isStrokeEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">STROKEEND</a>;}
-<a name="l00312"></a><a class="code" href="classGraph_1_1ScrPt.html#a7538ba77e05d79234152a4e6c0e3c50e">00312</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#a7538ba77e05d79234152a4e6c0e3c50e">Graph::ScrPt::isBranchEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">BRANCHEND</a>;}
-<a name="l00313"></a><a class="code" href="classGraph_1_1ScrPt.html#af7114c09a9fafdc1da86f54f4cda7d65">00313</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#af7114c09a9fafdc1da86f54f4cda7d65">Graph::ScrPt::isGraphEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">GRAPHEND</a>;}
-<a name="l00314"></a>00314 
-<a name="l00315"></a><a class="code" href="classGraph_1_1ScrPt.html#a90cc58aa08550b9cd1f3593b6417eaa7">00315</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a90cc58aa08550b9cd1f3593b6417eaa7">Graph::ScrPt::setScrX</a>(<span class="keywordtype">float</span> x)
-<a name="l00316"></a>00316 {
-<a name="l00317"></a>00317   assert(x&gt;=0);
-<a name="l00318"></a>00318   <span class="keywordflow">if</span>(ScrX&gt;=0){
-<a name="l00319"></a>00319     ScrX = x;
-<a name="l00320"></a>00320   }<span class="keywordflow">else</span>{
-<a name="l00321"></a>00321     assert(<span class="keyword">false</span>); <span class="comment">// incomplete;</span>
-<a name="l00322"></a>00322   }
-<a name="l00323"></a>00323 }
-<a name="l00324"></a><a class="code" href="classGraph_1_1ScrPt.html#ab85dd06fbac27ad93630dba6eef2d833">00324</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ab85dd06fbac27ad93630dba6eef2d833">Graph::ScrPt::setScrY</a>(<span class="keywordtype">float</span> x)
-<a name="l00325"></a>00325 {
-<a name="l00326"></a>00326   <span class="keywordflow">if</span>(x&lt;0){ <span class="comment">// need to investigate...</span>
-<a name="l00327"></a>00327     qDebug() &lt;&lt; <span class="stringliteral">&quot;setting negative screen coordinate&quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;at&quot;</span> &lt;&lt; ScrX;
-<a name="l00328"></a>00328   }
-<a name="l00329"></a>00329   ScrY = x;
-<a name="l00330"></a>00330 }
-<a name="l00331"></a><a class="code" href="classGraph_1_1ScrPt.html#a5d5993796648fcb51f0c6830888738c5">00331</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a5d5993796648fcb51f0c6830888738c5">Graph::ScrPt::setScr</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)
-<a name="l00332"></a>00332 {
-<a name="l00333"></a>00333   setScrX(x);
-<a name="l00334"></a>00334   setScrY(y);
-<a name="l00335"></a>00335 }
-<a name="l00336"></a><a class="code" href="classGraph_1_1ScrPt.html#a253c1b360ec02c8bdcaea5aec7073216">00336</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a253c1b360ec02c8bdcaea5aec7073216">Graph::ScrPt::setIndep</a>(<span class="keywordtype">double</span> x)
-<a name="l00337"></a>00337 {
-<a name="l00338"></a>00338   assert(ScrX&gt;=0);
-<a name="l00339"></a>00339   indep = x;
-<a name="l00340"></a>00340 }
-<a name="l00341"></a><a class="code" href="classGraph_1_1ScrPt.html#a157fd9c5f5c64688f1de80f148f184a0">00341</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a157fd9c5f5c64688f1de80f148f184a0">Graph::ScrPt::setDep</a>(<span class="keywordtype">double</span> x)
-<a name="l00342"></a>00342 {
-<a name="l00343"></a>00343   assert(ScrX&gt;=0);
-<a name="l00344"></a>00344   dep = x;
-<a name="l00345"></a>00345 }
-<a name="l00346"></a><a class="code" href="classGraph_1_1ScrPt.html#a0efdcac81bf9cfa25bbe531c0bcef1d9">00346</a> <span class="keywordtype">float</span> <a class="code" href="classGraph_1_1ScrPt.html#a0efdcac81bf9cfa25bbe531c0bcef1d9">Graph::ScrPt::getScrX</a>()<span class="keyword"> const</span>
-<a name="l00347"></a>00347 <span class="keyword"></span>{
-<a name="l00348"></a>00348   assert(ScrX&gt;=0);
-<a name="l00349"></a>00349   <span class="keywordflow">return</span> ScrX;
-<a name="l00350"></a>00350 }
-<a name="l00351"></a><a class="code" href="classGraph_1_1ScrPt.html#acbed01da00d9613a9665a10183e09115">00351</a> <span class="keywordtype">float</span> <a class="code" href="classGraph_1_1ScrPt.html#acbed01da00d9613a9665a10183e09115">Graph::ScrPt::getScrY</a>()<span class="keyword"> const</span>
-<a name="l00352"></a>00352 <span class="keyword"></span>{
-<a name="l00353"></a>00353   <span class="keywordflow">return</span> ScrY;
-<a name="l00354"></a>00354 }
-<a name="l00355"></a><a class="code" href="classGraph_1_1ScrPt.html#a8a3a542fd7efbe527e9ed1730c52733e">00355</a> <span class="keywordtype">double</span> <a class="code" href="classGraph_1_1ScrPt.html#a8a3a542fd7efbe527e9ed1730c52733e">Graph::ScrPt::getIndep</a>()<span class="keyword"> const</span>
-<a name="l00356"></a>00356 <span class="keyword"></span>{
-<a name="l00357"></a>00357   assert(ScrX&gt;=0);
-<a name="l00358"></a>00358   <span class="keywordflow">return</span> indep;
-<a name="l00359"></a>00359 }
-<a name="l00360"></a><a class="code" href="classGraph_1_1ScrPt.html#aa452a5d206d3d267d0acc05cfeb8f40c">00360</a> <span class="keywordtype">double</span> <a class="code" href="classGraph_1_1ScrPt.html#aa452a5d206d3d267d0acc05cfeb8f40c">Graph::ScrPt::getDep</a>()<span class="keyword"> const</span>
-<a name="l00361"></a>00361 <span class="keyword"></span>{
-<a name="l00362"></a>00362   assert(ScrX&gt;=0);
-<a name="l00363"></a>00363   <span class="keywordflow">return</span> dep;
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;QPainter&gt;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &lt;QDebug&gt;</span>
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">class </span><a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a>;
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">00027</a> <a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">Graph::Graph</a>(<a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a> <span class="keyword">const</span>* d, <span class="keyword">const</span> QString&amp; <a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a6974f2fb5171a20460c427d69a44dd14">_Line</a>) :
+<a name="l00028"></a>00028   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>(),
+<a name="l00029"></a>00029   Style(<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a114b3e4f93e0625bdb90d13fbe1782ee">GRAPHSTYLE_SOLID</a>),
+<a name="l00030"></a>00030   diagram(d)
+<a name="l00031"></a>00031 {
+<a name="l00032"></a>00032   <a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> = <a class="code" href="element_8h.html#a48320a5a01ad8f1dc90c7575e8e30b2a">isGraph</a>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034   <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>    = <a class="code" href="schematic_8h.html#a41e74c6d258c53d1336677f34dca5c84a6974f2fb5171a20460c427d69a44dd14">_Line</a>;
+<a name="l00035"></a>00035   <a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> = 0;    <span class="comment">// no points in graph</span>
+<a name="l00036"></a>00036   <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>  = <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = 0;
+<a name="l00037"></a>00037   <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>  = 0x0000ff;   <span class="comment">// blue</span>
+<a name="l00038"></a>00038   <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>  = 3;
+<a name="l00039"></a>00039   <a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a> = <span class="keyword">false</span>;
+<a name="l00040"></a>00040   <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = 0;   <span class="comment">// left y axis</span>
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> = 0;
+<a name="l00043"></a>00043 }
+<a name="l00044"></a>00044 
+<a name="l00045"></a><a class="code" href="classGraph.html#a902c5b3eacb66d60752525ab23297a95">00045</a> <a class="code" href="classGraph.html#a902c5b3eacb66d60752525ab23297a95">Graph::~Graph</a>()
+<a name="l00046"></a>00046 {
+<a name="l00047"></a>00047   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a> != 0)
+<a name="l00048"></a>00048     <span class="keyword">delete</span>[] <a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>;
+<a name="l00049"></a>00049 }
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="comment">// ---------------------------------------------------------------------</span>
+<a name="l00052"></a><a class="code" href="classGraph.html#a091ec6252a393994dc00fb221abe608e">00052</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a091ec6252a393994dc00fb221abe608e">Graph::createMarkerText</a>()<span class="keyword"> const</span>
+<a name="l00053"></a>00053 <span class="keyword"></span>{
+<a name="l00054"></a>00054   <span class="keywordflow">for</span>(<span class="keyword">auto</span> pm : <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>) {
+<a name="l00055"></a>00055     pm-&gt;createText();
+<a name="l00056"></a>00056   }
+<a name="l00057"></a>00057 }
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="comment">// ---------------------------------------------------------------------</span>
+<a name="l00060"></a><a class="code" href="classGraph.html#a527438f794cfb41d29bc5d77a8d0473c">00060</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a527438f794cfb41d29bc5d77a8d0473c">Graph::paint</a>(<a class="code" href="classViewPainter.html">ViewPainter</a> *p, <span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0)
+<a name="l00061"></a>00061 {
+<a name="l00062"></a>00062   <span class="keywordflow">if</span>(!<a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.size())
+<a name="l00063"></a>00063     <span class="keywordflow">return</span>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065   <span class="keywordflow">if</span>(<a class="code" href="classElement.html#aa3ce965ed92867d92bf3fc2227619341">isSelected</a>) {
+<a name="l00066"></a>00066     p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(Qt::darkGray,<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>+4));
+<a name="l00067"></a>00067     <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069     p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(Qt::white, <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>, Qt::SolidLine));
+<a name="l00070"></a>00070     <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
+<a name="l00071"></a>00071     <span class="keywordflow">return</span>;
+<a name="l00072"></a>00072   }
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074   <span class="comment">// **** not selected ****</span>
+<a name="l00075"></a>00075   p-&gt;<a class="code" href="classViewPainter.html#ab6c402e20fb0fe931df570b5843237c6">Painter</a>-&gt;setPen(QPen(QColor(<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>), <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>*p-&gt;<a class="code" href="classViewPainter.html#a2ba21ffb22d5281067bb13635e6fcdd5">PrintScale</a>, Qt::SolidLine));
+<a name="l00076"></a>00076   <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">paintLines</a>(p, x0, y0);
+<a name="l00077"></a>00077 }
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 <span class="comment">// ---------------------------------------------------------------------</span>
+<a name="l00080"></a><a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">00080</a> <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a651dac914f9a25a068a9cc0a78629706">Graph::paintLines</a>(<a class="code" href="classViewPainter.html">ViewPainter</a> *p, <span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0)
+<a name="l00081"></a>00081 {
+<a name="l00082"></a>00082   <span class="keywordflow">switch</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>) {
+<a name="l00083"></a>00083     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a1d36a4aaca9b6d404f18b68fcfccff3c">GRAPHSTYLE_STAR</a>:
+<a name="l00084"></a>00084       <a class="code" href="classGraph.html#af864ed03ecaa2358cb709d0d4903682d">drawStarSymbols</a>(x0, y0, p);
+<a name="l00085"></a>00085       <span class="keywordflow">break</span>;
+<a name="l00086"></a>00086     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a6b175b970886bea3c3783b2e4aabdf5c">GRAPHSTYLE_CIRCLE</a>:
+<a name="l00087"></a>00087       <a class="code" href="classGraph.html#a9dc09871af5598f354d323a6bd352404">drawCircleSymbols</a>(x0, y0, p);
+<a name="l00088"></a>00088       <span class="keywordflow">break</span>;
+<a name="l00089"></a>00089     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480aad9199fb74e78e9d31bbb40a6ba259dd">GRAPHSTYLE_ARROW</a>:
+<a name="l00090"></a>00090       <a class="code" href="classGraph.html#af11a7ea900db28fbbb8736267c409633">drawArrowSymbols</a>(x0, y0, p);
+<a name="l00091"></a>00091       <span class="keywordflow">break</span>;
+<a name="l00092"></a>00092     <span class="keywordflow">default</span>:
+<a name="l00093"></a>00093       <a class="code" href="classGraph.html#a526c42d6f98e33301777983a492695d4" title="draw a (line) graph from screen coord pairs">drawLines</a>(x0, y0, p);
+<a name="l00094"></a>00094   }
+<a name="l00095"></a>00095 }
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="comment">// ---------------------------------------------------------------------</span>
+<a name="l00098"></a><a class="code" href="classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9">00098</a> QString <a class="code" href="classGraph.html#ad7b69891a56aefe77c7cc3567abddcb9">Graph::save</a>()
+<a name="l00099"></a>00099 {
+<a name="l00100"></a>00100   QString s = <span class="stringliteral">&quot;\t&lt;\&quot;&quot;</span>+<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>+<span class="stringliteral">&quot;\&quot; &quot;</span>+<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.name()+
+<a name="l00101"></a>00101         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>)+<span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>)+
+<a name="l00102"></a>00102         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>)+<span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>)+
+<a name="l00103"></a>00103         <span class="stringliteral">&quot; &quot;</span>+QString::number(<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>)+<span class="stringliteral">&quot;&gt;&quot;</span>;
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105   <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
+<a name="l00106"></a>00106     s += <span class="stringliteral">&quot;\n\t  &quot;</span>+pm-&gt;<a class="code" href="classMarker.html#aa0c3b4c31db77c00b62583dbcb6b2863">save</a>();
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108   <span class="keywordflow">return</span> s;
+<a name="l00109"></a>00109 }
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="comment">// ---------------------------------------------------------------------</span>
+<a name="l00112"></a><a class="code" href="classGraph.html#a0f26753c9263504b92b659f0dc7d253d">00112</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph.html#a0f26753c9263504b92b659f0dc7d253d">Graph::load</a>(<span class="keyword">const</span> QString&amp; _s)
+<a name="l00113"></a>00113 {
+<a name="l00114"></a>00114   <span class="keywordtype">bool</span> ok;
+<a name="l00115"></a>00115   QString s = _s;
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117   <span class="keywordflow">if</span>(s.at(0) != <span class="charliteral">&#39;&lt;&#39;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00118"></a>00118   <span class="keywordflow">if</span>(s.at(s.length()-1) != <span class="charliteral">&#39;&gt;&#39;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00119"></a>00119   s = s.mid(1, s.length()-2);   <span class="comment">// cut off start and end character</span>
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121   <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> = s.section(<span class="charliteral">&#39;&quot;&#39;</span>,1,1);  <span class="comment">// Var</span>
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123   QString n;
+<a name="l00124"></a>00124   n  = s.section(<span class="charliteral">&#39; &#39;</span>,1,1);    <span class="comment">// Color</span>
+<a name="l00125"></a>00125   <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.setNamedColor(n);
+<a name="l00126"></a>00126   <span class="keywordflow">if</span>(!<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>.isValid()) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128   n  = s.section(<span class="charliteral">&#39; &#39;</span>,2,2);    <span class="comment">// Thick</span>
+<a name="l00129"></a>00129   <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = n.toInt(&amp;ok);
+<a name="l00130"></a>00130   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132   n  = s.section(<span class="charliteral">&#39; &#39;</span>,3,3);    <span class="comment">// Precision</span>
+<a name="l00133"></a>00133   <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = n.toInt(&amp;ok);
+<a name="l00134"></a>00134   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136   n  = s.section(<span class="charliteral">&#39; &#39;</span>,4,4);    <span class="comment">// numMode</span>
+<a name="l00137"></a>00137   <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a> = n.toInt(&amp;ok);
+<a name="l00138"></a>00138   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140   n  = s.section(<span class="charliteral">&#39; &#39;</span>,5,5);    <span class="comment">// Style</span>
+<a name="l00141"></a>00141   <span class="keywordtype">int</span> st = n.toInt(&amp;ok);
+<a name="l00142"></a>00142   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00143"></a>00143   <a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f">toGraphStyle</a>(st);
+<a name="l00144"></a>00144   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>==<a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480ac0f47e71848fa4c0f4f83dfc88309354">GRAPHSTYLE_INVALID</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146   n  = s.section(<span class="charliteral">&#39; &#39;</span>,6,6);    <span class="comment">// yAxisNo</span>
+<a name="l00147"></a>00147   <span class="keywordflow">if</span>(n.isEmpty()) <span class="keywordflow">return</span> <span class="keyword">true</span>;   <span class="comment">// backward compatible</span>
+<a name="l00148"></a>00148   <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a> = n.toInt(&amp;ok);
+<a name="l00149"></a>00149   <span class="keywordflow">if</span>(!ok) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151   <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00152"></a>00152 }
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154 <span class="comment">// -----------------------------------------------------------------------</span>
+<a name="l00164"></a><a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746">00164</a> <span class="comment"></span><span class="keywordtype">int</span> <a class="code" href="classGraph.html#a75352e596427293b64bf49423987c746" title="Checks if the coordinates x/y point to the graph.">Graph::getSelected</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)
+<a name="l00165"></a>00165 {
+<a name="l00166"></a>00166   <span class="keyword">auto</span> pp = <a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.begin();
+<a name="l00167"></a>00167   <span class="keywordflow">if</span>(pp == <a class="code" href="classGraph.html#a5da923934bf343f97d05c5e50ef28eef">ScrPoints</a>.end()) <span class="keywordflow">return</span> -1;
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169   <span class="keywordtype">int</span> A, z=0;
+<a name="l00170"></a>00170   <span class="keywordtype">int</span> dx, dx2, <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
+<a name="l00171"></a>00171   <span class="keywordtype">int</span> dy, dy2, <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173   <span class="keywordtype">int</span> countX = <a class="code" href="classGraph.html#a3df10f65059b4b665f6f83740dbaeb14">cPointsX</a>.at(0)-&gt;count;
+<a name="l00174"></a>00174   <span class="keywordflow">if</span>(pp-&gt;isStrokeEnd()) {
+<a name="l00175"></a>00175     <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) z++;
+<a name="l00176"></a>00176     pp++;
+<a name="l00177"></a>00177     <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) {
+<a name="l00178"></a>00178       <span class="keywordflow">if</span>(pp-&gt;isGraphEnd())  <span class="keywordflow">return</span> -1;   <span class="comment">// not even one point ?</span>
+<a name="l00179"></a>00179       z++;
+<a name="l00180"></a>00180       pp++;
+<a name="l00181"></a>00181       <span class="keywordflow">if</span>(pp-&gt;isGraphEnd())  <span class="keywordflow">return</span> -1;   <span class="comment">// not even one point ?</span>
+<a name="l00182"></a>00182     }
+<a name="l00183"></a>00183   }
+<a name="l00184"></a>00184 
+<a name="l00185"></a>00185   <span class="keywordflow">if</span>(<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> &gt;= <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a1d36a4aaca9b6d404f18b68fcfccff3c">GRAPHSTYLE_STAR</a>) {
+<a name="l00186"></a>00186     <span class="comment">// for graph symbols</span>
+<a name="l00187"></a>00187     <span class="keywordflow">while</span>(!pp-&gt;isGraphEnd()) {
+<a name="l00188"></a>00188       <span class="keywordflow">if</span>(!pp-&gt;isStrokeEnd()) {
+<a name="l00189"></a>00189         dx  = x - int((pp)-&gt;getScrX());
+<a name="l00190"></a>00190         dy  = y - int((pp++)-&gt;getScrY());
+<a name="l00191"></a>00191 
+<a name="l00192"></a>00192         <span class="keywordflow">if</span>(dx &lt; -5) <span class="keywordflow">continue</span>;
+<a name="l00193"></a>00193         <span class="keywordflow">if</span>(dx &gt;  5) <span class="keywordflow">continue</span>;
+<a name="l00194"></a>00194         <span class="keywordflow">if</span>(dy &lt; -5) <span class="keywordflow">continue</span>;
+<a name="l00195"></a>00195         <span class="keywordflow">if</span>(dy &gt;  5) <span class="keywordflow">continue</span>;
+<a name="l00196"></a>00196         <span class="keywordflow">return</span> z*countX;   <span class="comment">// points on graph symbol</span>
+<a name="l00197"></a>00197       }
+<a name="l00198"></a>00198       <span class="keywordflow">else</span> {
+<a name="l00199"></a>00199         z++;   <span class="comment">// next branch</span>
+<a name="l00200"></a>00200         pp++;
+<a name="l00201"></a>00201       }
+<a name="l00202"></a>00202     }
+<a name="l00203"></a>00203     <span class="keywordflow">return</span> -1;
+<a name="l00204"></a>00204   }
+<a name="l00205"></a>00205 
+<a name="l00206"></a>00206   <span class="comment">// for graph lines</span>
+<a name="l00207"></a>00207   <span class="keywordflow">while</span>(!pp-&gt;isGraphEnd()) {
+<a name="l00208"></a>00208     <span class="keywordflow">while</span>(!pp-&gt;isBranchEnd()) {
+<a name="l00209"></a>00209       x1 = int(pp-&gt;getScrX());
+<a name="l00210"></a>00210       y1 = int((pp++)-&gt;getScrY());
+<a name="l00211"></a>00211       dx  = x - <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
+<a name="l00212"></a>00212       dy  = y - <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
+<a name="l00213"></a>00213 
+<a name="l00214"></a>00214       <span class="keywordflow">if</span>(pp-&gt;isPt()){
+<a name="l00215"></a>00215         dx2 = int(pp-&gt;getScrX());
+<a name="l00216"></a>00216       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) {
+<a name="l00217"></a>00217         <span class="keywordflow">break</span>;
+<a name="l00218"></a>00218       }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp-&gt;isStrokeEnd()) {
+<a name="l00219"></a>00219         pp++;
+<a name="l00220"></a>00220         dx2 = int(pp-&gt;getScrX());  <span class="comment">// go on as graph can also be selected between strokes</span>
+<a name="l00221"></a>00221         <span class="keywordflow">if</span>(pp-&gt;isBranchEnd()) <span class="keywordflow">break</span>;
+<a name="l00222"></a>00222       }
+<a name="l00223"></a>00223       <span class="keywordflow">if</span>(dx &lt; -5) { <span class="keywordflow">if</span>(x &lt; dx2-5) <span class="keywordflow">continue</span>; } <span class="comment">// point between x coordinates ?</span>
+<a name="l00224"></a>00224       <span class="keywordflow">else</span> { <span class="keywordflow">if</span>(x &gt; 5) <span class="keywordflow">if</span>(x &gt; dx2+5) <span class="keywordflow">continue</span>; }
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226       dy2 = int(pp-&gt;getScrY());
+<a name="l00227"></a>00227       <span class="keywordflow">if</span>(dy &lt; -5) { <span class="keywordflow">if</span>(y &lt; dy2-5) <span class="keywordflow">continue</span>; } <span class="comment">// point between y coordinates ?</span>
+<a name="l00228"></a>00228       <span class="keywordflow">else</span> { <span class="keywordflow">if</span>(y &gt; 5) <span class="keywordflow">if</span>(y &gt; dy2+5) <span class="keywordflow">continue</span>; }
+<a name="l00229"></a>00229 
+<a name="l00230"></a>00230       dx2 -= <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>;
+<a name="l00231"></a>00231       dy2 -= <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>;
+<a name="l00232"></a>00232 
+<a name="l00233"></a>00233       A  = dx2*dy - dx*dy2;    <span class="comment">// calculate the rectangle area spanned</span>
+<a name="l00234"></a>00234       A *= A;                  <span class="comment">// avoid the need for square root</span>
+<a name="l00235"></a>00235       A -= 25*(dx2*dx2 + dy2*dy2);  <span class="comment">// substract selectable area</span>
+<a name="l00236"></a>00236 
+<a name="l00237"></a>00237       <span class="keywordflow">if</span>(A &lt;= 0)  <span class="keywordflow">return</span> z*countX;  <span class="comment">// lies x/y onto the graph line ?</span>
+<a name="l00238"></a>00238     }
+<a name="l00239"></a>00239     pp++;
+<a name="l00240"></a>00240     z++;
+<a name="l00241"></a>00241   }
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243   <span class="keywordflow">return</span> -1;
+<a name="l00244"></a>00244 }
+<a name="l00245"></a>00245 
+<a name="l00246"></a>00246 <span class="comment">// -----------------------------------------------------------------------</span>
+<a name="l00247"></a>00247 <span class="comment">// Creates a new graph and copies all the properties into it.</span>
+<a name="l00248"></a><a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">00248</a> <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>* <a class="code" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c">Graph::sameNewOne</a>()
+<a name="l00249"></a>00249 {
+<a name="l00250"></a>00250   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *pg = <span class="keyword">new</span> <a class="code" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e">Graph</a>(<a class="code" href="classGraph.html#a3c0ba3adb63d66efba004d84dbfa3f05">diagram</a>, <a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a>);
+<a name="l00251"></a>00251 
+<a name="l00252"></a>00252   pg-&gt;<a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a> = <a class="code" href="classGraph.html#af10258a6118082c294271c928d0d1f03">Color</a>;
+<a name="l00253"></a>00253   pg-&gt;<a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a> = <a class="code" href="classGraph.html#a9e07047fd1294b1be816af2b7f55ffc6">Thick</a>;
+<a name="l00254"></a>00254   pg-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a> = <a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>;
+<a name="l00255"></a>00255 
+<a name="l00256"></a>00256   pg-&gt;<a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a> = <a class="code" href="classGraph.html#a5d07f3d95f13be187cb0f78354ee9bd7">Precision</a>;
+<a name="l00257"></a>00257   pg-&gt;<a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>   = <a class="code" href="classGraph.html#a849ad9ad2a9e23adad44fd484b585dcc">numMode</a>;
+<a name="l00258"></a>00258   pg-&gt;<a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>   = <a class="code" href="classGraph.html#a942a7b055ee6aaa6c0ac702883275950">yAxisNo</a>;
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260   <span class="keywordflow">foreach</span>(<a class="code" href="classMarker.html" title="The Marker class implements the marker object used for all the diagram.">Marker</a> *pm, <a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>)
+<a name="l00261"></a>00261     pg-&gt;<a class="code" href="classGraph.html#ad05337df3f4b112ca4626b93d5273b65">Markers</a>.append(pm-&gt;<a class="code" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09">sameNewOne</a>(pg));
+<a name="l00262"></a>00262 
+<a name="l00263"></a>00263   <span class="keywordflow">return</span> pg;
+<a name="l00264"></a>00264 }
+<a name="l00265"></a>00265 
+<a name="l00269"></a><a class="code" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb">00269</a> std::pair&lt;double,double&gt; <a class="code" href="classGraph.html#af806a66b949414a9965d32a9c3694ddb" title="find a sample point close to VarPos, snap to it, and return data at VarPos">Graph::findSample</a>(std::vector&lt;double&gt;&amp; VarPos)<span class="keyword"> const</span>
+<a name="l00270"></a>00270 <span class="keyword"></span>{
+<a name="l00271"></a>00271   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span>* pD;
+<a name="l00272"></a>00272   <span class="keywordtype">unsigned</span> nVarPos=0;
+<a name="l00273"></a>00273   <span class="keywordtype">unsigned</span> n=0;
+<a name="l00274"></a>00274   <span class="keywordtype">unsigned</span> m=1;
+<a name="l00275"></a>00275 
+<a name="l00276"></a>00276   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii) {
+<a name="l00277"></a>00277     <span class="keywordtype">double</span>* pp = pD-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a>;
+<a name="l00278"></a>00278     <span class="keywordtype">double</span> v = VarPos[nVarPos];
+<a name="l00279"></a>00279     <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>; i&gt;1; i--) {  <span class="comment">// find appropiate marker position</span>
+<a name="l00280"></a>00280       <span class="keywordflow">if</span>(fabs(v-(*pp)) &lt; fabs(v-(*(pp+1)))) <span class="keywordflow">break</span>;
+<a name="l00281"></a>00281       pp++;
+<a name="l00282"></a>00282       n += m;
+<a name="l00283"></a>00283     }
+<a name="l00284"></a>00284 
+<a name="l00285"></a>00285     m *= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
+<a name="l00286"></a>00286     VarPos[nVarPos++] = *pp;
+<a name="l00287"></a>00287   }
+<a name="l00288"></a>00288 
+<a name="l00289"></a>00289   <span class="keywordflow">return</span> std::pair&lt;double,double&gt;(<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>[2*n], cPointsY[2*n+1]);
+<a name="l00290"></a>00290 }
+<a name="l00291"></a>00291 
+<a name="l00292"></a>00292 <span class="comment">// -----------------------------------------------------------------------</span>
+<a name="l00293"></a>00293 <span class="comment">// meaning of the values in a graph &quot;Points&quot; list</span>
+<a name="l00294"></a><a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">00294</a> <span class="preprocessor">#define STROKEEND   -2</span>
+<a name="l00295"></a><a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">00295</a> <span class="preprocessor"></span><span class="preprocessor">#define BRANCHEND   -10</span>
+<a name="l00296"></a><a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">00296</a> <span class="preprocessor"></span><span class="preprocessor">#define GRAPHEND    -100</span>
+<a name="l00297"></a>00297 <span class="preprocessor"></span><span class="comment">// -----------------------------------------------------------------------</span>
+<a name="l00298"></a>00298 <span class="comment">// screen points pseudo iterator implementation.</span>
+<a name="l00299"></a><a class="code" href="classGraph_1_1ScrPt.html#ab77ad255e3313ed5f004f949653cab05">00299</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ab77ad255e3313ed5f004f949653cab05">Graph::ScrPt::setStrokeEnd</a>()
+<a name="l00300"></a>00300 {
+<a name="l00301"></a>00301   <a class="code" href="classGraph_1_1ScrPt.html#ab511f4e1dac8126fccbf71c0c6036bfa">ScrX</a> = <a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">STROKEEND</a>;
+<a name="l00302"></a>00302 }
+<a name="l00303"></a><a class="code" href="classGraph_1_1ScrPt.html#a1c9a6f36b276f0578e74d01efba22561">00303</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a1c9a6f36b276f0578e74d01efba22561">Graph::ScrPt::setBranchEnd</a>()
+<a name="l00304"></a>00304 {
+<a name="l00305"></a>00305   ScrX = <a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">BRANCHEND</a>;
+<a name="l00306"></a>00306 }
+<a name="l00307"></a><a class="code" href="classGraph_1_1ScrPt.html#ad330d5e6b056ac362b307b483641eadf">00307</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ad330d5e6b056ac362b307b483641eadf">Graph::ScrPt::setGraphEnd</a>()
+<a name="l00308"></a>00308 {
+<a name="l00309"></a>00309   ScrX = <a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">GRAPHEND</a>;
+<a name="l00310"></a>00310 }
+<a name="l00311"></a><a class="code" href="classGraph_1_1ScrPt.html#ab1d7dec5d6cc146392ccf6c393b77c1e">00311</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#ab1d7dec5d6cc146392ccf6c393b77c1e">Graph::ScrPt::isPt</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&gt;=0.;}
+<a name="l00312"></a><a class="code" href="classGraph_1_1ScrPt.html#a2a20c73e380913ad3a0b60b6408499f3">00312</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#a2a20c73e380913ad3a0b60b6408499f3">Graph::ScrPt::isStrokeEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#a35d79ff8da7c386e91a4dd7d913a8b3e">STROKEEND</a>;}
+<a name="l00313"></a><a class="code" href="classGraph_1_1ScrPt.html#a7538ba77e05d79234152a4e6c0e3c50e">00313</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#a7538ba77e05d79234152a4e6c0e3c50e">Graph::ScrPt::isBranchEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#ac55e1dc053f8f5ea089cbcf30586c25d">BRANCHEND</a>;}
+<a name="l00314"></a><a class="code" href="classGraph_1_1ScrPt.html#af7114c09a9fafdc1da86f54f4cda7d65">00314</a> <span class="keywordtype">bool</span> <a class="code" href="classGraph_1_1ScrPt.html#af7114c09a9fafdc1da86f54f4cda7d65">Graph::ScrPt::isGraphEnd</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> ScrX&lt;=<a class="code" href="graph_8cpp.html#aa827b6f005895fdf7f95e78cad15f253">GRAPHEND</a>;}
+<a name="l00315"></a>00315 
+<a name="l00322"></a><a class="code" href="classGraph_1_1ScrPt.html#a90cc58aa08550b9cd1f3593b6417eaa7">00322</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a90cc58aa08550b9cd1f3593b6417eaa7" title="set screen coordinate for graph sampling point these must be nonnegative, but sometimes aren&#39;t...">Graph::ScrPt::setScrX</a>(<span class="keywordtype">float</span> x)
+<a name="l00323"></a>00323 {
+<a name="l00324"></a>00324   <span class="keywordflow">if</span>(x&lt;0){
+<a name="l00325"></a>00325     std::cerr &lt;&lt; <span class="stringliteral">&quot;dangerous: negative screen coordinate&quot;</span> &lt;&lt; x;
+<a name="l00326"></a>00326   }
+<a name="l00327"></a>00327   <span class="keywordflow">if</span>(ScrX&lt;0){
+<a name="l00328"></a>00328     std::cerr &lt;&lt; <span class="stringliteral">&quot;dangerous: (maybe) overwriting control token&quot;</span> &lt;&lt; x;
+<a name="l00329"></a>00329   }
+<a name="l00330"></a>00330   ScrX = x;
+<a name="l00331"></a>00331 }
+<a name="l00332"></a><a class="code" href="classGraph_1_1ScrPt.html#ab85dd06fbac27ad93630dba6eef2d833">00332</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#ab85dd06fbac27ad93630dba6eef2d833">Graph::ScrPt::setScrY</a>(<span class="keywordtype">float</span> x)
+<a name="l00333"></a>00333 {
+<a name="l00334"></a>00334   <span class="keywordflow">if</span>(x&lt;0){ <span class="comment">// need to investigate...</span>
+<a name="l00335"></a>00335     qDebug() &lt;&lt; <span class="stringliteral">&quot;setting negative screen coordinate&quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;at&quot;</span> &lt;&lt; ScrX;
+<a name="l00336"></a>00336   }
+<a name="l00337"></a>00337   ScrY = x;
+<a name="l00338"></a>00338 }
+<a name="l00339"></a><a class="code" href="classGraph_1_1ScrPt.html#a5d5993796648fcb51f0c6830888738c5">00339</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a5d5993796648fcb51f0c6830888738c5">Graph::ScrPt::setScr</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)
+<a name="l00340"></a>00340 {
+<a name="l00341"></a>00341   setScrX(x);
+<a name="l00342"></a>00342   setScrY(y);
+<a name="l00343"></a>00343 }
+<a name="l00344"></a><a class="code" href="classGraph_1_1ScrPt.html#a253c1b360ec02c8bdcaea5aec7073216">00344</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a253c1b360ec02c8bdcaea5aec7073216">Graph::ScrPt::setIndep</a>(<span class="keywordtype">double</span> x)
+<a name="l00345"></a>00345 {
+<a name="l00346"></a>00346   assert(ScrX&gt;=0);
+<a name="l00347"></a>00347   indep = x;
+<a name="l00348"></a>00348 }
+<a name="l00349"></a><a class="code" href="classGraph_1_1ScrPt.html#a157fd9c5f5c64688f1de80f148f184a0">00349</a> <span class="keywordtype">void</span> <a class="code" href="classGraph_1_1ScrPt.html#a157fd9c5f5c64688f1de80f148f184a0">Graph::ScrPt::setDep</a>(<span class="keywordtype">double</span> x)
+<a name="l00350"></a>00350 {
+<a name="l00351"></a>00351   assert(ScrX&gt;=0);
+<a name="l00352"></a>00352   dep = x;
+<a name="l00353"></a>00353 }
+<a name="l00354"></a><a class="code" href="classGraph_1_1ScrPt.html#a0efdcac81bf9cfa25bbe531c0bcef1d9">00354</a> <span class="keywordtype">float</span> <a class="code" href="classGraph_1_1ScrPt.html#a0efdcac81bf9cfa25bbe531c0bcef1d9">Graph::ScrPt::getScrX</a>()<span class="keyword"> const</span>
+<a name="l00355"></a>00355 <span class="keyword"></span>{
+<a name="l00356"></a>00356   <span class="keywordflow">if</span>(ScrX&lt;0){
+<a name="l00357"></a>00357     std::cerr &lt;&lt; <span class="stringliteral">&quot;dangerous: returning negative screen coordinate&quot;</span> &lt;&lt; ScrX;
+<a name="l00358"></a>00358   }
+<a name="l00359"></a>00359   <span class="keywordflow">return</span> ScrX;
+<a name="l00360"></a>00360 }
+<a name="l00361"></a><a class="code" href="classGraph_1_1ScrPt.html#acbed01da00d9613a9665a10183e09115">00361</a> <span class="keywordtype">float</span> <a class="code" href="classGraph_1_1ScrPt.html#acbed01da00d9613a9665a10183e09115">Graph::ScrPt::getScrY</a>()<span class="keyword"> const</span>
+<a name="l00362"></a>00362 <span class="keyword"></span>{
+<a name="l00363"></a>00363   <span class="keywordflow">return</span> ScrY;
 <a name="l00364"></a>00364 }
-<a name="l00365"></a>00365 
-<a name="l00366"></a>00366 <span class="comment">// vim:ts=8:sw=2:et</span>
+<a name="l00365"></a><a class="code" href="classGraph_1_1ScrPt.html#a8a3a542fd7efbe527e9ed1730c52733e">00365</a> <span class="keywordtype">double</span> <a class="code" href="classGraph_1_1ScrPt.html#a8a3a542fd7efbe527e9ed1730c52733e">Graph::ScrPt::getIndep</a>()<span class="keyword"> const</span>
+<a name="l00366"></a>00366 <span class="keyword"></span>{
+<a name="l00367"></a>00367   assert(ScrX&gt;=0);
+<a name="l00368"></a>00368   <span class="keywordflow">return</span> indep;
+<a name="l00369"></a>00369 }
+<a name="l00370"></a><a class="code" href="classGraph_1_1ScrPt.html#aa452a5d206d3d267d0acc05cfeb8f40c">00370</a> <span class="keywordtype">double</span> <a class="code" href="classGraph_1_1ScrPt.html#aa452a5d206d3d267d0acc05cfeb8f40c">Graph::ScrPt::getDep</a>()<span class="keyword"> const</span>
+<a name="l00371"></a>00371 <span class="keyword"></span>{
+<a name="l00372"></a>00372   assert(ScrX&gt;=0);
+<a name="l00373"></a>00373   <span class="keywordflow">return</span> dep;
+<a name="l00374"></a>00374 }
+<a name="l00375"></a>00375 
+<a name="l00376"></a>00376 <span class="comment">// vim:ts=8:sw=2:et</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -453,7 +457,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2015 13:00:36 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 18 2015 13:39:30 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

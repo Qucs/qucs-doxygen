@@ -1,7 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="228,5,401,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#a4f25738c02a4817ca6789efe7cac7ab9" title="Schematic::contentsWheelEvent" alt="" coords="208,59,421,88"/>
-<area shape="rect" id="node11" href="$classSchematic.html#a71aa7ad65dc10d832b44a9fa60054aea" title="Schematic::slotScrollRight" alt="" coords="227,112,403,141"/>
-<area shape="rect" id="node5" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="471,5,615,35"/>
-<area shape="rect" id="node7" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="664,5,803,35"/>
+<area shape="rect" id="node3" href="$classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4" title="QucsApp::slotCursorLeft" alt="" coords="232,31,397,60"/>
+<area shape="rect" id="node12" href="$classSchematic.html#a4f25738c02a4817ca6789efe7cac7ab9" title="Schematic::contentsWheelEvent" alt="" coords="208,84,421,113"/>
+<area shape="rect" id="node14" href="$classSchematic.html#a71aa7ad65dc10d832b44a9fa60054aea" title="Schematic::slotScrollRight" alt="" coords="227,137,403,167"/>
+<area shape="rect" id="node5" href="$classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9" title="QucsApp::slotCursorRight" alt="" coords="471,5,644,35"/>
+<area shape="rect" id="node7" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="695,32,839,61"/>
+<area shape="rect" id="node9" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="888,32,1027,61"/>
 </map>

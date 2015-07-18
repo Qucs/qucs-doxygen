@@ -1030,637 +1030,588 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00958"></a>00958 }
 <a name="l00959"></a>00959 
 <a name="l00960"></a>00960 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l00961"></a><a class="code" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d">00961</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac1763b2cad8887f2adba220a97fbdf1d">QucsApp::slotCursorLeft</a>()
+<a name="l00961"></a><a class="code" href="classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4">00961</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a33aec356c51ad24b0b52cc7db73464a4">QucsApp::slotCursorLeft</a>(<span class="keywordtype">bool</span> left)
 <a name="l00962"></a>00962 {
-<a name="l00963"></a>00963   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) <span class="keywordflow">return</span>;  <span class="comment">// for edit of component property ?</span>
-<a name="l00964"></a>00964 
-<a name="l00965"></a>00965   Q3PtrList&lt;Element&gt; movingElements;
-<a name="l00966"></a>00966   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l00967"></a>00967   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
+<a name="l00963"></a>00963   <span class="keywordtype">int</span> sign = 1;
+<a name="l00964"></a>00964   <span class="keywordflow">if</span>(left){
+<a name="l00965"></a>00965     sign = -1;
+<a name="l00966"></a>00966   }
+<a name="l00967"></a>00967   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) <span class="keywordflow">return</span>;  <span class="comment">// for edit of component property ?</span>
 <a name="l00968"></a>00968 
-<a name="l00969"></a>00969   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) {
-<a name="l00970"></a>00970     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
-<a name="l00971"></a>00971       Doc-&gt;<a class="code" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21">markerLeftRight</a>(<span class="keyword">true</span>, &amp;movingElements);
-<a name="l00972"></a>00972       movingElements.clear();
-<a name="l00973"></a>00973     }
-<a name="l00974"></a>00974     <span class="keywordflow">else</span> {
-<a name="l00975"></a>00975       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#a0e0aaaa95ff61b1c5b762a828b6a4014">scrollLeft</a>(Doc-&gt;horizontalScrollBar()-&gt;lineStep()))
-<a name="l00976"></a>00976         Doc-&gt;scrollBy(-Doc-&gt;horizontalScrollBar()-&gt;lineStep(), 0);
-<a name="l00977"></a>00977     }
-<a name="l00978"></a>00978 
-<a name="l00979"></a>00979     Doc-&gt;viewport()-&gt;update();
-<a name="l00980"></a>00980     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
-<a name="l00981"></a>00981     <span class="keywordflow">return</span>;
-<a name="l00982"></a>00982   }
+<a name="l00969"></a>00969   Q3PtrList&lt;Element&gt; movingElements;
+<a name="l00970"></a>00970   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
+<a name="l00971"></a>00971   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
+<a name="l00972"></a>00972 
+<a name="l00973"></a>00973   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) {
+<a name="l00974"></a>00974     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
+<a name="l00975"></a>00975       Doc-&gt;<a class="code" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21">markerLeftRight</a>(left, &amp;movingElements);
+<a name="l00976"></a>00976     } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(left) {
+<a name="l00977"></a>00977       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#a0e0aaaa95ff61b1c5b762a828b6a4014">scrollLeft</a>(Doc-&gt;horizontalScrollBar()-&gt;lineStep()))
+<a name="l00978"></a>00978         Doc-&gt;scrollBy(-Doc-&gt;horizontalScrollBar()-&gt;lineStep(), 0);
+<a name="l00979"></a>00979     }<span class="keywordflow">else</span>{ <span class="comment">// right</span>
+<a name="l00980"></a>00980       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#ab77567f2f1cd68892306319be1c4a3f6">scrollRight</a>(-Doc-&gt;horizontalScrollBar()-&gt;lineStep()))
+<a name="l00981"></a>00981         Doc-&gt;scrollBy(Doc-&gt;horizontalScrollBar()-&gt;lineStep(), 0);
+<a name="l00982"></a>00982     }
 <a name="l00983"></a>00983 
-<a name="l00984"></a>00984   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, -Doc-&gt;<a class="code" href="classSchematic.html#ac460c465b85b772f937bc93eb6093820">GridX</a>, 0);  <span class="comment">// move &quot;GridX&quot; to left</span>
-<a name="l00985"></a>00985   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
-<a name="l00986"></a>00986   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
-<a name="l00987"></a>00987 }
-<a name="l00988"></a>00988 
-<a name="l00989"></a>00989 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l00990"></a><a class="code" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9">00990</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#adabe87abea7f3f5f2550b62a66548fa9">QucsApp::slotCursorRight</a>()
-<a name="l00991"></a>00991 {
-<a name="l00992"></a>00992   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) <span class="keywordflow">return</span>;  <span class="comment">// for edit of component property ?</span>
+<a name="l00984"></a>00984     Doc-&gt;viewport()-&gt;update();
+<a name="l00985"></a>00985     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
+<a name="l00986"></a>00986     <span class="keywordflow">return</span>;
+<a name="l00987"></a>00987   } <span class="keywordflow">else</span> { <span class="comment">// random selection. move all of them</span>
+<a name="l00988"></a>00988     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, sign*Doc-&gt;<a class="code" href="classSchematic.html#ac460c465b85b772f937bc93eb6093820">GridX</a>, 0);
+<a name="l00989"></a>00989     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
+<a name="l00990"></a>00990     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
+<a name="l00991"></a>00991   }
+<a name="l00992"></a>00992 }
 <a name="l00993"></a>00993 
-<a name="l00994"></a>00994   Q3PtrList&lt;Element&gt; movingElements;
-<a name="l00995"></a>00995   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l00996"></a>00996   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
-<a name="l00997"></a>00997 
-<a name="l00998"></a>00998   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) {
-<a name="l00999"></a>00999     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
-<a name="l01000"></a>01000       Doc-&gt;<a class="code" href="classSchematic.html#ab9a9fec804d98a0f6f33ad69adfadf21">markerLeftRight</a>(<span class="keyword">false</span>, &amp;movingElements);
-<a name="l01001"></a>01001       movingElements.clear();
-<a name="l01002"></a>01002     }
-<a name="l01003"></a>01003     <span class="keywordflow">else</span> {
-<a name="l01004"></a>01004       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#ab77567f2f1cd68892306319be1c4a3f6">scrollRight</a>(-Doc-&gt;horizontalScrollBar()-&gt;lineStep()))
-<a name="l01005"></a>01005         Doc-&gt;scrollBy(Doc-&gt;horizontalScrollBar()-&gt;lineStep(), 0);
-<a name="l01006"></a>01006     }
-<a name="l01007"></a>01007 
-<a name="l01008"></a>01008     Doc-&gt;viewport()-&gt;update();
-<a name="l01009"></a>01009     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
-<a name="l01010"></a>01010     <span class="keywordflow">return</span>;
-<a name="l01011"></a>01011   }
-<a name="l01012"></a>01012 
-<a name="l01013"></a>01013   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, Doc-&gt;<a class="code" href="classSchematic.html#ac460c465b85b772f937bc93eb6093820">GridX</a>, 0);  <span class="comment">// move &quot;GridX&quot; to right</span>
-<a name="l01014"></a>01014   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
-<a name="l01015"></a>01015   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
-<a name="l01016"></a>01016 }
-<a name="l01017"></a>01017 
-<a name="l01018"></a>01018 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01019"></a><a class="code" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff">01019</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a2af3ef25cf0a7c23117dae2b13139fff">QucsApp::slotCursorUp</a>()
-<a name="l01020"></a>01020 {
-<a name="l01021"></a>01021   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) {  <span class="comment">// for edit of component property ?</span>
-<a name="l01022"></a>01022     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) <span class="keywordflow">return</span>;  <span class="comment">// edit component namen ?</span>
-<a name="l01023"></a>01023     <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
-<a name="l01024"></a>01024     <a class="code" href="structProperty.html">Property</a> *pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// current property</span>
-<a name="l01025"></a>01025     <span class="keywordtype">int</span> Begin = pp-&gt;Description.indexOf(<span class="charliteral">&#39;[&#39;</span>);
-<a name="l01026"></a>01026     <span class="keywordflow">if</span>(Begin &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// no selection list ?</span>
-<a name="l01027"></a>01027     <span class="keywordtype">int</span> End = pp-&gt;Description.indexOf(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text(), Begin); <span class="comment">// current</span>
-<a name="l01028"></a>01028     <span class="keywordflow">if</span>(End &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
-<a name="l01029"></a>01029     End = pp-&gt;Description.findRev(<span class="charliteral">&#39;,&#39;</span>, End);
-<a name="l01030"></a>01030     <span class="keywordflow">if</span>(End &lt; Begin) <span class="keywordflow">return</span>;  <span class="comment">// was first item ?</span>
-<a name="l01031"></a>01031     End--;
-<a name="l01032"></a>01032     <span class="keywordtype">int</span> Pos = pp-&gt;Description.findRev(<span class="charliteral">&#39;,&#39;</span>, End);
-<a name="l01033"></a>01033     <span class="keywordflow">if</span>(Pos &lt; Begin) Pos = Begin;   <span class="comment">// is first item ?</span>
-<a name="l01034"></a>01034     Pos++;
-<a name="l01035"></a>01035     <span class="keywordflow">if</span>(pp-&gt;Description.at(Pos) == <span class="charliteral">&#39; &#39;</span>) Pos++; <span class="comment">// remove leading space</span>
-<a name="l01036"></a>01036     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(pp-&gt;Description.mid(Pos, End-Pos+1));
-<a name="l01037"></a>01037     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
-<a name="l01038"></a>01038     <span class="keywordflow">return</span>;
-<a name="l01039"></a>01039   }
-<a name="l01040"></a>01040 
-<a name="l01041"></a>01041   Q3PtrList&lt;Element&gt; movingElements;
-<a name="l01042"></a>01042   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l01043"></a>01043   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
-<a name="l01044"></a>01044 
-<a name="l01045"></a>01045   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) {
-<a name="l01046"></a>01046     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
-<a name="l01047"></a>01047       Doc-&gt;<a class="code" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6">markerUpDown</a>(<span class="keyword">true</span>, &amp;movingElements);
-<a name="l01048"></a>01048       movingElements.clear();
-<a name="l01049"></a>01049     }
-<a name="l01050"></a>01050     <span class="keywordflow">else</span> {
-<a name="l01051"></a>01051       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#af13d1ec8eeb1a62cfe291c237b25ecbe">scrollUp</a>(Doc-&gt;verticalScrollBar()-&gt;lineStep()))
-<a name="l01052"></a>01052         Doc-&gt;scrollBy(0, -Doc-&gt;verticalScrollBar()-&gt;lineStep());
-<a name="l01053"></a>01053     }
-<a name="l01054"></a>01054 
-<a name="l01055"></a>01055     Doc-&gt;viewport()-&gt;update();
-<a name="l01056"></a>01056     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
-<a name="l01057"></a>01057     <span class="keywordflow">return</span>;
-<a name="l01058"></a>01058   }
-<a name="l01059"></a>01059 
-<a name="l01060"></a>01060   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, 0, -Doc-&gt;<a class="code" href="classSchematic.html#a40860720e291ea08fad88d752f43010d">GridY</a>);  <span class="comment">// move &quot;GridY&quot; up</span>
-<a name="l01061"></a>01061   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
-<a name="l01062"></a>01062   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
-<a name="l01063"></a>01063 }
-<a name="l01064"></a>01064 
-<a name="l01065"></a>01065 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01066"></a><a class="code" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40">01066</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac53e5c140be898544e05cb58ece39d40">QucsApp::slotCursorDown</a>()
-<a name="l01067"></a>01067 {
-<a name="l01068"></a>01068   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) {  <span class="comment">// for edit of component property ?</span>
-<a name="l01069"></a>01069     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) <span class="keywordflow">return</span>;  <span class="comment">// edit component namen ?</span>
-<a name="l01070"></a>01070     <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
-<a name="l01071"></a>01071     <a class="code" href="structProperty.html">Property</a> *pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// current property</span>
-<a name="l01072"></a>01072     <span class="keywordtype">int</span> Pos = pp-&gt;Description.indexOf(<span class="charliteral">&#39;[&#39;</span>);
-<a name="l01073"></a>01073     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// no selection list ?</span>
-<a name="l01074"></a>01074     Pos = pp-&gt;Description.indexOf(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text(), Pos); <span class="comment">// current list item</span>
-<a name="l01075"></a>01075     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
-<a name="l01076"></a>01076     Pos = pp-&gt;Description.indexOf(<span class="charliteral">&#39;,&#39;</span>, Pos);
-<a name="l01077"></a>01077     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// was last item ?</span>
-<a name="l01078"></a>01078     Pos++;
-<a name="l01079"></a>01079     <span class="keywordflow">if</span>(pp-&gt;Description.at(Pos) == <span class="charliteral">&#39; &#39;</span>) Pos++; <span class="comment">// remove leading space</span>
-<a name="l01080"></a>01080     <span class="keywordtype">int</span> End = pp-&gt;Description.indexOf(<span class="charliteral">&#39;,&#39;</span>, Pos);
-<a name="l01081"></a>01081     <span class="keywordflow">if</span>(End &lt; 0) {  <span class="comment">// is last item ?</span>
-<a name="l01082"></a>01082       End = pp-&gt;Description.indexOf(<span class="charliteral">&#39;]&#39;</span>, Pos);
-<a name="l01083"></a>01083       <span class="keywordflow">if</span>(End &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
-<a name="l01084"></a>01084     }
-<a name="l01085"></a>01085     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(pp-&gt;Description.mid(Pos, End-Pos));
-<a name="l01086"></a>01086     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
-<a name="l01087"></a>01087     <span class="keywordflow">return</span>;
-<a name="l01088"></a>01088   }
-<a name="l01089"></a>01089 
-<a name="l01090"></a>01090   Q3PtrList&lt;Element&gt; movingElements;
-<a name="l01091"></a>01091   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l01092"></a>01092   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
-<a name="l01093"></a>01093 
-<a name="l01094"></a>01094   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) {
-<a name="l01095"></a>01095     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
-<a name="l01096"></a>01096       Doc-&gt;<a class="code" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6">markerUpDown</a>(<span class="keyword">false</span>, &amp;movingElements);
-<a name="l01097"></a>01097       movingElements.clear();
-<a name="l01098"></a>01098     }
-<a name="l01099"></a>01099     <span class="keywordflow">else</span> {
-<a name="l01100"></a>01100       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#a9a7d0dc3326fbe93fad360f21841f78b">scrollDown</a>(-Doc-&gt;verticalScrollBar()-&gt;lineStep()))
-<a name="l01101"></a>01101         Doc-&gt;scrollBy(0, Doc-&gt;verticalScrollBar()-&gt;lineStep());
-<a name="l01102"></a>01102     }
-<a name="l01103"></a>01103 
-<a name="l01104"></a>01104     Doc-&gt;viewport()-&gt;update();
-<a name="l01105"></a>01105     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
-<a name="l01106"></a>01106     <span class="keywordflow">return</span>;
-<a name="l01107"></a>01107   }
-<a name="l01108"></a>01108 
-<a name="l01109"></a>01109   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, 0, Doc-&gt;<a class="code" href="classSchematic.html#a40860720e291ea08fad88d752f43010d">GridY</a>);  <span class="comment">// move &quot;GridY&quot; down</span>
-<a name="l01110"></a>01110   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
-<a name="l01111"></a>01111   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
-<a name="l01112"></a>01112 }
-<a name="l01113"></a>01113 
-<a name="l01114"></a>01114 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01115"></a>01115 <span class="comment">// Is called if user clicked on component text of if return is</span>
-<a name="l01116"></a>01116 <span class="comment">// pressed in the component text QLineEdit.</span>
-<a name="l01117"></a>01117 <span class="comment">// In &quot;view-&gt;MAx3&quot; is the number of the current property.</span>
-<a name="l01118"></a><a class="code" href="classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32">01118</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32">QucsApp::slotApplyCompText</a>()
-<a name="l01119"></a>01119 {
-<a name="l01120"></a>01120   QString s;
-<a name="l01121"></a>01121   QFont f = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db">font</a>;
-<a name="l01122"></a>01122   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
-<a name="l01123"></a>01123   f.setPointSizeFloat( Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(f.pointSize()) );
-<a name="l01124"></a>01124   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setFont(f);
+<a name="l00994"></a>00994 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l00995"></a><a class="code" href="classQucsApp.html#a4117733eeb5309bf344190bf4118e015">00995</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a4117733eeb5309bf344190bf4118e015">QucsApp::slotCursorUp</a>(<span class="keywordtype">bool</span> up)
+<a name="l00996"></a>00996 {
+<a name="l00997"></a>00997   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) {  <span class="comment">// for edit of component property ?</span>
+<a name="l00998"></a>00998   }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(up){
+<a name="l00999"></a>00999     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) <span class="keywordflow">return</span>;  <span class="comment">// edit component namen ?</span>
+<a name="l01000"></a>01000     <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
+<a name="l01001"></a>01001     <a class="code" href="structProperty.html">Property</a> *pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// current property</span>
+<a name="l01002"></a>01002     <span class="keywordtype">int</span> Begin = pp-&gt;Description.indexOf(<span class="charliteral">&#39;[&#39;</span>);
+<a name="l01003"></a>01003     <span class="keywordflow">if</span>(Begin &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// no selection list ?</span>
+<a name="l01004"></a>01004     <span class="keywordtype">int</span> End = pp-&gt;Description.indexOf(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text(), Begin); <span class="comment">// current</span>
+<a name="l01005"></a>01005     <span class="keywordflow">if</span>(End &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
+<a name="l01006"></a>01006     End = pp-&gt;Description.findRev(<span class="charliteral">&#39;,&#39;</span>, End);
+<a name="l01007"></a>01007     <span class="keywordflow">if</span>(End &lt; Begin) <span class="keywordflow">return</span>;  <span class="comment">// was first item ?</span>
+<a name="l01008"></a>01008     End--;
+<a name="l01009"></a>01009     <span class="keywordtype">int</span> Pos = pp-&gt;Description.findRev(<span class="charliteral">&#39;,&#39;</span>, End);
+<a name="l01010"></a>01010     <span class="keywordflow">if</span>(Pos &lt; Begin) Pos = Begin;   <span class="comment">// is first item ?</span>
+<a name="l01011"></a>01011     Pos++;
+<a name="l01012"></a>01012     <span class="keywordflow">if</span>(pp-&gt;Description.at(Pos) == <span class="charliteral">&#39; &#39;</span>) Pos++; <span class="comment">// remove leading space</span>
+<a name="l01013"></a>01013     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(pp-&gt;Description.mid(Pos, End-Pos+1));
+<a name="l01014"></a>01014     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
+<a name="l01015"></a>01015     <span class="keywordflow">return</span>;
+<a name="l01016"></a>01016   }<span class="keywordflow">else</span>{ <span class="comment">// down</span>
+<a name="l01017"></a>01017     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) <span class="keywordflow">return</span>;  <span class="comment">// edit component namen ?</span>
+<a name="l01018"></a>01018     <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
+<a name="l01019"></a>01019     <a class="code" href="structProperty.html">Property</a> *pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// current property</span>
+<a name="l01020"></a>01020     <span class="keywordtype">int</span> Pos = pp-&gt;Description.indexOf(<span class="charliteral">&#39;[&#39;</span>);
+<a name="l01021"></a>01021     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// no selection list ?</span>
+<a name="l01022"></a>01022     Pos = pp-&gt;Description.indexOf(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text(), Pos); <span class="comment">// current list item</span>
+<a name="l01023"></a>01023     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
+<a name="l01024"></a>01024     Pos = pp-&gt;Description.indexOf(<span class="charliteral">&#39;,&#39;</span>, Pos);
+<a name="l01025"></a>01025     <span class="keywordflow">if</span>(Pos &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// was last item ?</span>
+<a name="l01026"></a>01026     Pos++;
+<a name="l01027"></a>01027     <span class="keywordflow">if</span>(pp-&gt;Description.at(Pos) == <span class="charliteral">&#39; &#39;</span>) Pos++; <span class="comment">// remove leading space</span>
+<a name="l01028"></a>01028     <span class="keywordtype">int</span> End = pp-&gt;Description.indexOf(<span class="charliteral">&#39;,&#39;</span>, Pos);
+<a name="l01029"></a>01029     <span class="keywordflow">if</span>(End &lt; 0) {  <span class="comment">// is last item ?</span>
+<a name="l01030"></a>01030       End = pp-&gt;Description.indexOf(<span class="charliteral">&#39;]&#39;</span>, Pos);
+<a name="l01031"></a>01031       <span class="keywordflow">if</span>(End &lt; 0) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
+<a name="l01032"></a>01032     }
+<a name="l01033"></a>01033     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(pp-&gt;Description.mid(Pos, End-Pos));
+<a name="l01034"></a>01034     <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
+<a name="l01035"></a>01035     <span class="keywordflow">return</span>;
+<a name="l01036"></a>01036   }
+<a name="l01037"></a>01037 
+<a name="l01038"></a>01038   Q3PtrList&lt;Element&gt; movingElements;
+<a name="l01039"></a>01039   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
+<a name="l01040"></a>01040   <span class="keywordtype">int</span> markerCount = Doc-&gt;<a class="code" href="classSchematic.html#acce7c7008a2a3178d6361d01d1fbdb96">copySelectedElements</a>(&amp;movingElements);
+<a name="l01041"></a>01041 
+<a name="l01042"></a>01042   <span class="keywordflow">if</span>((movingElements.count() - markerCount) &lt; 1) { <span class="comment">// all selections are markers</span>
+<a name="l01043"></a>01043     <span class="keywordflow">if</span>(markerCount &gt; 0) {  <span class="comment">// only move marker if nothing else selected</span>
+<a name="l01044"></a>01044       Doc-&gt;<a class="code" href="classSchematic.html#aa8b8c3d3d8cd014d8501782372f3c8b6">markerUpDown</a>(up, &amp;movingElements);
+<a name="l01045"></a>01045     } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(up) { <span class="comment">// nothing selected at all</span>
+<a name="l01046"></a>01046       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#af13d1ec8eeb1a62cfe291c237b25ecbe">scrollUp</a>(Doc-&gt;verticalScrollBar()-&gt;lineStep()))
+<a name="l01047"></a>01047         Doc-&gt;scrollBy(0, -Doc-&gt;verticalScrollBar()-&gt;lineStep());
+<a name="l01048"></a>01048     } <span class="keywordflow">else</span> { <span class="comment">// down</span>
+<a name="l01049"></a>01049       <span class="keywordflow">if</span>(Doc-&gt;<a class="code" href="classSchematic.html#a9a7d0dc3326fbe93fad360f21841f78b">scrollDown</a>(-Doc-&gt;verticalScrollBar()-&gt;lineStep()))
+<a name="l01050"></a>01050         Doc-&gt;scrollBy(0, Doc-&gt;verticalScrollBar()-&gt;lineStep());
+<a name="l01051"></a>01051     }
+<a name="l01052"></a>01052 
+<a name="l01053"></a>01053     Doc-&gt;viewport()-&gt;update();
+<a name="l01054"></a>01054     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
+<a name="l01055"></a>01055     <span class="keywordflow">return</span>;
+<a name="l01056"></a>01056   }<span class="keywordflow">else</span>{ <span class="comment">// some random selection, put it back</span>
+<a name="l01057"></a>01057     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a57021c651e2088018f3978724c291ece">moveElements</a>(&amp;movingElements, 0, ((up)?-1:1) * Doc-&gt;<a class="code" href="classSchematic.html#a40860720e291ea08fad88d752f43010d">GridY</a>);
+<a name="l01058"></a>01058     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> = 1;  <span class="comment">// sign for moved elements</span>
+<a name="l01059"></a>01059     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a4bc0f036799361576eba251978c41a73">endElementMoving</a>(Doc, &amp;movingElements);
+<a name="l01060"></a>01060   }
+<a name="l01061"></a>01061 }
+<a name="l01062"></a>01062 
+<a name="l01063"></a>01063 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l01064"></a>01064 <span class="comment">// Is called if user clicked on component text of if return is</span>
+<a name="l01065"></a>01065 <span class="comment">// pressed in the component text QLineEdit.</span>
+<a name="l01066"></a>01066 <span class="comment">// In &quot;view-&gt;MAx3&quot; is the number of the current property.</span>
+<a name="l01067"></a><a class="code" href="classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32">01067</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a49e4a70cfd6f8d61e653dcd4b984ef32">QucsApp::slotApplyCompText</a>()
+<a name="l01068"></a>01068 {
+<a name="l01069"></a>01069   QString s;
+<a name="l01070"></a>01070   QFont f = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aef1f828d17cc22f656a4af54020cb9db">font</a>;
+<a name="l01071"></a>01071   <a class="code" href="classSchematic.html">Schematic</a> *Doc = (<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classQucsApp.html#ae7612793599ca4f5106f7e9f488d4225">DocumentTab</a>-&gt;currentPage();
+<a name="l01072"></a>01072   f.setPointSizeFloat( Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(f.pointSize()) );
+<a name="l01073"></a>01073   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setFont(f);
+<a name="l01074"></a>01074 
+<a name="l01075"></a>01075   <a class="code" href="structProperty.html">Property</a>  *pp = 0;
+<a name="l01076"></a>01076   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
+<a name="l01077"></a>01077   <span class="keywordflow">if</span>(!pc) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
+<a name="l01078"></a>01078   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a7493ede770278fab2015cc47b4d97f13">MAx1</a> = pc-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> + pc-&gt;<a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a>;
+<a name="l01079"></a>01079   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#aead16157ee6547572b192b81a5be024a">MAy1</a> = pc-&gt;<a class="code" href="classElement.html#a93ec33eb177df951fb2de53402a5645c">cy</a> + pc-&gt;<a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a>;
+<a name="l01080"></a>01080 
+<a name="l01081"></a>01081   <span class="keywordtype">int</span> z, n=0;  <span class="comment">// &quot;n&quot; is number of property on screen</span>
+<a name="l01082"></a>01082   pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.first();
+<a name="l01083"></a>01083   <span class="keywordflow">for</span>(z=<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>; z&gt;0; z--) {  <span class="comment">// calculate &quot;n&quot;</span>
+<a name="l01084"></a>01084     <span class="keywordflow">if</span>(!pp) {  <span class="comment">// should never happen</span>
+<a name="l01085"></a>01085       <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
+<a name="l01086"></a>01086       <span class="keywordflow">return</span>;
+<a name="l01087"></a>01087     }
+<a name="l01088"></a>01088     <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a>) n++;   <span class="comment">// is visible ?</span>
+<a name="l01089"></a>01089     pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
+<a name="l01090"></a>01090   }
+<a name="l01091"></a>01091 
+<a name="l01092"></a>01092   pp = 0;
+<a name="l01093"></a>01093   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> &gt; 0)  pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1); <span class="comment">// current property</span>
+<a name="l01094"></a>01094   <span class="keywordflow">else</span> s = pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>;
+<a name="l01095"></a>01095 
+<a name="l01096"></a>01096   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) {   <span class="comment">// is called the first time ?</span>
+<a name="l01097"></a>01097     <span class="comment">// no -&gt; apply value to current property</span>
+<a name="l01098"></a>01098     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) {   <span class="comment">// component name ?</span>
+<a name="l01099"></a>01099       <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc2;
+<a name="l01100"></a>01100       <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text().isEmpty())
+<a name="l01101"></a>01101         <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> != <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text()) {
+<a name="l01102"></a>01102           <span class="keywordflow">for</span>(pc2 = Doc-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;first(); pc2!=0; pc2 = Doc-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;next())
+<a name="l01103"></a>01103             <span class="keywordflow">if</span>(pc2-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> == <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text())
+<a name="l01104"></a>01104               <span class="keywordflow">break</span>;  <span class="comment">// found component with the same name ?</span>
+<a name="l01105"></a>01105           <span class="keywordflow">if</span>(!pc2) {
+<a name="l01106"></a>01106             pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text();
+<a name="l01107"></a>01107             Doc-&gt;<a class="code" href="classSchematic.html#a832b6957585e6a7d1dae2691968f79bf">setChanged</a>(<span class="keyword">true</span>, <span class="keyword">true</span>);  <span class="comment">// only one undo state</span>
+<a name="l01108"></a>01108           }
+<a name="l01109"></a>01109         }
+<a name="l01110"></a>01110     }
+<a name="l01111"></a>01111     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp) {  <span class="comment">// property was applied</span>
+<a name="l01112"></a>01112       <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> != <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text()) {
+<a name="l01113"></a>01113         pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text();
+<a name="l01114"></a>01114         Doc-&gt;<a class="code" href="classSchematic.html#a377a769183e90c6b813cfe2d27921a48">recreateComponent</a>(pc);  <span class="comment">// because of &quot;Num&quot; and schematic symbol</span>
+<a name="l01115"></a>01115         Doc-&gt;<a class="code" href="classSchematic.html#a832b6957585e6a7d1dae2691968f79bf">setChanged</a>(<span class="keyword">true</span>, <span class="keyword">true</span>); <span class="comment">// only one undo state</span>
+<a name="l01116"></a>01116       }
+<a name="l01117"></a>01117     }
+<a name="l01118"></a>01118 
+<a name="l01119"></a>01119     n++;     <span class="comment">// next row on screen</span>
+<a name="l01120"></a>01120     (<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>)++;  <span class="comment">// next property</span>
+<a name="l01121"></a>01121     pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// search for next property</span>
+<a name="l01122"></a>01122 
+<a name="l01123"></a>01123     Doc-&gt;viewport()-&gt;update();
+<a name="l01124"></a>01124     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
 <a name="l01125"></a>01125 
-<a name="l01126"></a>01126   <a class="code" href="structProperty.html">Property</a>  *pp = 0;
-<a name="l01127"></a>01127   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = (<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
-<a name="l01128"></a>01128   <span class="keywordflow">if</span>(!pc) <span class="keywordflow">return</span>;  <span class="comment">// should never happen</span>
-<a name="l01129"></a>01129   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a7493ede770278fab2015cc47b4d97f13">MAx1</a> = pc-&gt;<a class="code" href="classElement.html#a6d01debbce6cc85da68bb5fd32327db7">cx</a> + pc-&gt;<a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a>;
-<a name="l01130"></a>01130   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#aead16157ee6547572b192b81a5be024a">MAy1</a> = pc-&gt;<a class="code" href="classElement.html#a93ec33eb177df951fb2de53402a5645c">cy</a> + pc-&gt;<a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a>;
+<a name="l01126"></a>01126     <span class="keywordflow">if</span>(!pp) {     <span class="comment">// was already last property ?</span>
+<a name="l01127"></a>01127       <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
+<a name="l01128"></a>01128       <span class="keywordflow">return</span>;
+<a name="l01129"></a>01129     }
+<a name="l01130"></a>01130 
 <a name="l01131"></a>01131 
-<a name="l01132"></a>01132   <span class="keywordtype">int</span> z, n=0;  <span class="comment">// &quot;n&quot; is number of property on screen</span>
-<a name="l01133"></a>01133   pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.first();
-<a name="l01134"></a>01134   <span class="keywordflow">for</span>(z=<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>; z&gt;0; z--) {  <span class="comment">// calculate &quot;n&quot;</span>
-<a name="l01135"></a>01135     <span class="keywordflow">if</span>(!pp) {  <span class="comment">// should never happen</span>
-<a name="l01136"></a>01136       <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
-<a name="l01137"></a>01137       <span class="keywordflow">return</span>;
-<a name="l01138"></a>01138     }
-<a name="l01139"></a>01139     <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a>) n++;   <span class="comment">// is visible ?</span>
-<a name="l01140"></a>01140     pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
-<a name="l01141"></a>01141   }
-<a name="l01142"></a>01142 
-<a name="l01143"></a>01143   pp = 0;
-<a name="l01144"></a>01144   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> &gt; 0)  pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1); <span class="comment">// current property</span>
-<a name="l01145"></a>01145   <span class="keywordflow">else</span> s = pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>;
+<a name="l01132"></a>01132     <span class="keywordflow">while</span>(!pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a>) {  <span class="comment">// search for next visible property</span>
+<a name="l01133"></a>01133       (<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>)++;  <span class="comment">// next property</span>
+<a name="l01134"></a>01134       pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
+<a name="l01135"></a>01135       <span class="keywordflow">if</span>(!pp) {     <span class="comment">// was already last property ?</span>
+<a name="l01136"></a>01136         <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
+<a name="l01137"></a>01137         <span class="keywordflow">return</span>;
+<a name="l01138"></a>01138       }
+<a name="l01139"></a>01139     }
+<a name="l01140"></a>01140   }
+<a name="l01141"></a>01141 
+<a name="l01142"></a>01142   <span class="comment">// avoid seeing the property text behind the line edit</span>
+<a name="l01143"></a>01143   <span class="keywordflow">if</span>(pp)  <span class="comment">// Is it first property or component name ?</span>
+<a name="l01144"></a>01144     s = pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
+<a name="l01145"></a>01145   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setMinimumWidth(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(s)+4);
 <a name="l01146"></a>01146 
-<a name="l01147"></a>01147   <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;isHidden()) {   <span class="comment">// is called the first time ?</span>
-<a name="l01148"></a>01148     <span class="comment">// no -&gt; apply value to current property</span>
-<a name="l01149"></a>01149     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a> == 0) {   <span class="comment">// component name ?</span>
-<a name="l01150"></a>01150       <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc2;
-<a name="l01151"></a>01151       <span class="keywordflow">if</span>(!<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text().isEmpty())
-<a name="l01152"></a>01152         <span class="keywordflow">if</span>(pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> != <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text()) {
-<a name="l01153"></a>01153           <span class="keywordflow">for</span>(pc2 = Doc-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;first(); pc2!=0; pc2 = Doc-&gt;<a class="code" href="classSchematic.html#acd5caf411c6ff28a706286e42ac9a5ae">Components</a>-&gt;next())
-<a name="l01154"></a>01154             <span class="keywordflow">if</span>(pc2-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> == <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text())
-<a name="l01155"></a>01155               <span class="keywordflow">break</span>;  <span class="comment">// found component with the same name ?</span>
-<a name="l01156"></a>01156           <span class="keywordflow">if</span>(!pc2) {
-<a name="l01157"></a>01157             pc-&gt;<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text();
-<a name="l01158"></a>01158             Doc-&gt;<a class="code" href="classSchematic.html#a832b6957585e6a7d1dae2691968f79bf">setChanged</a>(<span class="keyword">true</span>, <span class="keyword">true</span>);  <span class="comment">// only one undo state</span>
-<a name="l01159"></a>01159           }
-<a name="l01160"></a>01160         }
-<a name="l01161"></a>01161     }
-<a name="l01162"></a>01162     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pp) {  <span class="comment">// property was applied</span>
-<a name="l01163"></a>01163       <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> != <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text()) {
-<a name="l01164"></a>01164         pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a> = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;text();
-<a name="l01165"></a>01165         Doc-&gt;<a class="code" href="classSchematic.html#a377a769183e90c6b813cfe2d27921a48">recreateComponent</a>(pc);  <span class="comment">// because of &quot;Num&quot; and schematic symbol</span>
-<a name="l01166"></a>01166         Doc-&gt;<a class="code" href="classSchematic.html#a832b6957585e6a7d1dae2691968f79bf">setChanged</a>(<span class="keyword">true</span>, <span class="keyword">true</span>); <span class="comment">// only one undo state</span>
-<a name="l01167"></a>01167       }
-<a name="l01168"></a>01168     }
-<a name="l01169"></a>01169 
-<a name="l01170"></a>01170     n++;     <span class="comment">// next row on screen</span>
-<a name="l01171"></a>01171     (<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>)++;  <span class="comment">// next property</span>
-<a name="l01172"></a>01172     pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>-1);  <span class="comment">// search for next property</span>
+<a name="l01147"></a>01147 
+<a name="l01148"></a>01148   Doc-&gt;contentsToViewport(<span class="keywordtype">int</span>(Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a7493ede770278fab2015cc47b4d97f13">MAx1</a> - Doc-&gt;<a class="code" href="classSchematic.html#a482005952d9a752deaef6af973082d9c">ViewX1</a>)),
+<a name="l01149"></a>01149        <span class="keywordtype">int</span>(Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#aead16157ee6547572b192b81a5be024a">MAy1</a> - Doc-&gt;<a class="code" href="classSchematic.html#a299a9758d3782d83c939c5ccb7a627c9">ViewY1</a>)),
+<a name="l01150"></a>01150        <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a>, <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a>);
+<a name="l01151"></a>01151   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setReadOnly(<span class="keyword">false</span>);
+<a name="l01152"></a>01152   <span class="keywordflow">if</span>(pp) {  <span class="comment">// is it a property ?</span>
+<a name="l01153"></a>01153     s = pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
+<a name="l01154"></a>01154     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a> += <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a>+<span class="stringliteral">&quot;=&quot;</span>);
+<a name="l01155"></a>01155     <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#ab7cba05f4db6d15836c1b48840cdd37f">Description</a>.indexOf(<span class="charliteral">&#39;[&#39;</span>) &gt;= 0)  <span class="comment">// is selection list ?</span>
+<a name="l01156"></a>01156       <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setReadOnly(<span class="keyword">true</span>);
+<a name="l01157"></a>01157     <a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>.setPattern(<span class="stringliteral">&quot;[^\&quot;]*&quot;</span>);
+<a name="l01158"></a>01158     <span class="keywordflow">if</span>(!pc-&gt;<a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">showName</a>) n--;
+<a name="l01159"></a>01159   }
+<a name="l01160"></a>01160   <span class="keywordflow">else</span>   <span class="comment">// it is the component name</span>
+<a name="l01161"></a>01161     <a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>.setPattern(<span class="stringliteral">&quot;[\\w_]+&quot;</span>);
+<a name="l01162"></a>01162   <a class="code" href="qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df">Val_CompProp</a>.setRegExp(<a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>);
+<a name="l01163"></a>01163   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setValidator(&amp;<a class="code" href="qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df">Val_CompProp</a>);
+<a name="l01164"></a>01164 
+<a name="l01165"></a>01165   z = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().lineSpacing();
+<a name="l01166"></a>01166   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a> += n*z;
+<a name="l01167"></a>01167   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(s);
+<a name="l01168"></a>01168   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setPaletteBackgroundColor(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#abbffb341e96cc04778160970b29a3a35">BGColor</a>);
+<a name="l01169"></a>01169   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setFocus();
+<a name="l01170"></a>01170   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
+<a name="l01171"></a>01171   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;reparent(Doc-&gt;viewport(), 0, QPoint(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a>, <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a>), <span class="keyword">true</span>);
+<a name="l01172"></a>01172 }
 <a name="l01173"></a>01173 
-<a name="l01174"></a>01174     Doc-&gt;viewport()-&gt;update();
-<a name="l01175"></a>01175     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ad43ee60feb7239ee9692300605dc9aed">drawn</a> = <span class="keyword">false</span>;
-<a name="l01176"></a>01176 
-<a name="l01177"></a>01177     <span class="keywordflow">if</span>(!pp) {     <span class="comment">// was already last property ?</span>
-<a name="l01178"></a>01178       <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
-<a name="l01179"></a>01179       <span class="keywordflow">return</span>;
-<a name="l01180"></a>01180     }
-<a name="l01181"></a>01181 
+<a name="l01174"></a>01174 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l01175"></a>01175 <span class="comment">// Is called if the text of the property edit changed, to match</span>
+<a name="l01176"></a>01176 <span class="comment">// the width of the edit field.</span>
+<a name="l01177"></a><a class="code" href="classQucsApp.html#a07bb9dd02c11dda52c4ca17cc16d64de">01177</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a07bb9dd02c11dda52c4ca17cc16d64de">QucsApp::slotResizePropEdit</a>(<span class="keyword">const</span> QString&amp; t)
+<a name="l01178"></a>01178 {
+<a name="l01179"></a>01179   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;resize(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(t)+4,
+<a name="l01180"></a>01180                    <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().lineSpacing());
+<a name="l01181"></a>01181 }
 <a name="l01182"></a>01182 
-<a name="l01183"></a>01183     <span class="keywordflow">while</span>(!pp-&gt;<a class="code" href="structProperty.html#aa3f03a07299a2d828c261efce66b8ae3">display</a>) {  <span class="comment">// search for next visible property</span>
-<a name="l01184"></a>01184       (<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a0782c1437f91ee509e01acdfde94f487">MAx3</a>)++;  <span class="comment">// next property</span>
-<a name="l01185"></a>01185       pp = pc-&gt;<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.next();
-<a name="l01186"></a>01186       <span class="keywordflow">if</span>(!pp) {     <span class="comment">// was already last property ?</span>
-<a name="l01187"></a>01187         <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>();
-<a name="l01188"></a>01188         <span class="keywordflow">return</span>;
-<a name="l01189"></a>01189       }
-<a name="l01190"></a>01190     }
+<a name="l01183"></a>01183 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l01184"></a><a class="code" href="classQucsApp.html#a9b9eea0ca12f4a50e452eaae26912262">01184</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a9b9eea0ca12f4a50e452eaae26912262">QucsApp::slotCreateLib</a>()
+<a name="l01185"></a>01185 {
+<a name="l01186"></a>01186   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
+<a name="l01187"></a>01187 
+<a name="l01188"></a>01188   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a346d3b157d16b8b09ea079dd2098cd47">ProjName</a>.isEmpty()) {
+<a name="l01189"></a>01189     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please open project with subcircuits!&quot;</span>));
+<a name="l01190"></a>01190     <span class="keywordflow">return</span>;
 <a name="l01191"></a>01191   }
 <a name="l01192"></a>01192 
-<a name="l01193"></a>01193   <span class="comment">// avoid seeing the property text behind the line edit</span>
-<a name="l01194"></a>01194   <span class="keywordflow">if</span>(pp)  <span class="comment">// Is it first property or component name ?</span>
-<a name="l01195"></a>01195     s = pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l01196"></a>01196   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setMinimumWidth(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(s)+4);
+<a name="l01193"></a>01193   <a class="code" href="classLibraryDialog.html">LibraryDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classLibraryDialog.html">LibraryDialog</a>(<span class="keyword">this</span>);
+<a name="l01194"></a>01194   d-&gt;<a class="code" href="classLibraryDialog.html#ab8acc911cca34333effeef7cd1f5a8e5">fillSchematicList</a>(<a class="code" href="classQucsApp.html#a4fb9ed646ac33093c199803e9625823d">Content</a>-&gt;exportSchematic());
+<a name="l01195"></a>01195   d-&gt;exec();
+<a name="l01196"></a>01196 }
 <a name="l01197"></a>01197 
-<a name="l01198"></a>01198 
-<a name="l01199"></a>01199   Doc-&gt;contentsToViewport(<span class="keywordtype">int</span>(Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a7493ede770278fab2015cc47b4d97f13">MAx1</a> - Doc-&gt;<a class="code" href="classSchematic.html#a482005952d9a752deaef6af973082d9c">ViewX1</a>)),
-<a name="l01200"></a>01200        <span class="keywordtype">int</span>(Doc-&gt;<a class="code" href="classQucsDoc.html#a9818ecd8113ce1c944c7cf6b62913ee6">Scale</a> * <span class="keywordtype">float</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#aead16157ee6547572b192b81a5be024a">MAy1</a> - Doc-&gt;<a class="code" href="classSchematic.html#a299a9758d3782d83c939c5ccb7a627c9">ViewY1</a>)),
-<a name="l01201"></a>01201        <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a>, <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a>);
-<a name="l01202"></a>01202   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setReadOnly(<span class="keyword">false</span>);
-<a name="l01203"></a>01203   <span class="keywordflow">if</span>(pp) {  <span class="comment">// is it a property ?</span>
-<a name="l01204"></a>01204     s = pp-&gt;<a class="code" href="structProperty.html#a7924858ec99e8f2cf9291d33944147dd">Value</a>;
-<a name="l01205"></a>01205     <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a> += <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(pp-&gt;<a class="code" href="structProperty.html#a923bc18ecd3476737df50146c3831450">Name</a>+<span class="stringliteral">&quot;=&quot;</span>);
-<a name="l01206"></a>01206     <span class="keywordflow">if</span>(pp-&gt;<a class="code" href="structProperty.html#ab7cba05f4db6d15836c1b48840cdd37f">Description</a>.indexOf(<span class="charliteral">&#39;[&#39;</span>) &gt;= 0)  <span class="comment">// is selection list ?</span>
-<a name="l01207"></a>01207       <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setReadOnly(<span class="keyword">true</span>);
-<a name="l01208"></a>01208     <a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>.setPattern(<span class="stringliteral">&quot;[^\&quot;]*&quot;</span>);
-<a name="l01209"></a>01209     <span class="keywordflow">if</span>(!pc-&gt;<a class="code" href="classComponent.html#ad43c83626ee870e49bfc602d32b2cc2e">showName</a>) n--;
-<a name="l01210"></a>01210   }
-<a name="l01211"></a>01211   <span class="keywordflow">else</span>   <span class="comment">// it is the component name</span>
-<a name="l01212"></a>01212     <a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>.setPattern(<span class="stringliteral">&quot;[\\w_]+&quot;</span>);
-<a name="l01213"></a>01213   <a class="code" href="qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df">Val_CompProp</a>.setRegExp(<a class="code" href="qucs__actions_8cpp.html#a169756cec33488aebd109e319ceac40e">Expr_CompProp</a>);
-<a name="l01214"></a>01214   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setValidator(&amp;<a class="code" href="qucs__actions_8cpp.html#a5694de33d7b1dada73e21400326d87df">Val_CompProp</a>);
-<a name="l01215"></a>01215 
-<a name="l01216"></a>01216   z = <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().lineSpacing();
-<a name="l01217"></a>01217   <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a> += n*z;
-<a name="l01218"></a>01218   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setText(s);
-<a name="l01219"></a>01219   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setPaletteBackgroundColor(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#abbffb341e96cc04778160970b29a3a35">BGColor</a>);
-<a name="l01220"></a>01220   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;setFocus();
-<a name="l01221"></a>01221   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;selectAll();
-<a name="l01222"></a>01222   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;reparent(Doc-&gt;viewport(), 0, QPoint(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a070817b35a0357b290d00ecd3bfca4a9">MAx2</a>, <a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#a98b0927beabf12a864571cd4efdcb9b4">MAy2</a>), <span class="keyword">true</span>);
-<a name="l01223"></a>01223 }
-<a name="l01224"></a>01224 
-<a name="l01225"></a>01225 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01226"></a>01226 <span class="comment">// Is called if the text of the property edit changed, to match</span>
-<a name="l01227"></a>01227 <span class="comment">// the width of the edit field.</span>
-<a name="l01228"></a><a class="code" href="classQucsApp.html#a07bb9dd02c11dda52c4ca17cc16d64de">01228</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a07bb9dd02c11dda52c4ca17cc16d64de">QucsApp::slotResizePropEdit</a>(<span class="keyword">const</span> QString&amp; t)
-<a name="l01229"></a>01229 {
-<a name="l01230"></a>01230   <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;resize(<a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().width(t)+4,
-<a name="l01231"></a>01231                    <a class="code" href="classQucsApp.html#ab1126a50f9800423f4810a36c688f4ed">editText</a>-&gt;fontMetrics().lineSpacing());
-<a name="l01232"></a>01232 }
-<a name="l01233"></a>01233 
-<a name="l01234"></a>01234 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01235"></a><a class="code" href="classQucsApp.html#a9b9eea0ca12f4a50e452eaae26912262">01235</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a9b9eea0ca12f4a50e452eaae26912262">QucsApp::slotCreateLib</a>()
-<a name="l01236"></a>01236 {
-<a name="l01237"></a>01237   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
-<a name="l01238"></a>01238 
-<a name="l01239"></a>01239   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a346d3b157d16b8b09ea079dd2098cd47">ProjName</a>.isEmpty()) {
-<a name="l01240"></a>01240     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please open project with subcircuits!&quot;</span>));
-<a name="l01241"></a>01241     <span class="keywordflow">return</span>;
-<a name="l01242"></a>01242   }
-<a name="l01243"></a>01243 
-<a name="l01244"></a>01244   <a class="code" href="classLibraryDialog.html">LibraryDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classLibraryDialog.html">LibraryDialog</a>(<span class="keyword">this</span>);
-<a name="l01245"></a>01245   d-&gt;<a class="code" href="classLibraryDialog.html#ab8acc911cca34333effeef7cd1f5a8e5">fillSchematicList</a>(<a class="code" href="classQucsApp.html#a4fb9ed646ac33093c199803e9625823d">Content</a>-&gt;exportSchematic());
-<a name="l01246"></a>01246   d-&gt;exec();
-<a name="l01247"></a>01247 }
-<a name="l01248"></a>01248 
-<a name="l01249"></a>01249 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01250"></a><a class="code" href="classQucsApp.html#ab17a9c10f3450ff609d7b5372c29ab2f">01250</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ab17a9c10f3450ff609d7b5372c29ab2f">QucsApp::slotImportData</a>()
-<a name="l01251"></a>01251 {
-<a name="l01252"></a>01252   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
-<a name="l01253"></a>01253 
-<a name="l01254"></a>01254   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a346d3b157d16b8b09ea079dd2098cd47">ProjName</a>.isEmpty()) {
-<a name="l01255"></a>01255     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please open project first!&quot;</span>));
-<a name="l01256"></a>01256     <span class="keywordflow">return</span>;
-<a name="l01257"></a>01257   }
+<a name="l01198"></a>01198 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l01199"></a><a class="code" href="classQucsApp.html#ab17a9c10f3450ff609d7b5372c29ab2f">01199</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ab17a9c10f3450ff609d7b5372c29ab2f">QucsApp::slotImportData</a>()
+<a name="l01200"></a>01200 {
+<a name="l01201"></a>01201   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
+<a name="l01202"></a>01202 
+<a name="l01203"></a>01203   <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a346d3b157d16b8b09ea079dd2098cd47">ProjName</a>.isEmpty()) {
+<a name="l01204"></a>01204     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please open project first!&quot;</span>));
+<a name="l01205"></a>01205     <span class="keywordflow">return</span>;
+<a name="l01206"></a>01206   }
+<a name="l01207"></a>01207 
+<a name="l01208"></a>01208   <a class="code" href="classImportDialog.html">ImportDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classImportDialog.html">ImportDialog</a>(<span class="keyword">this</span>);
+<a name="l01209"></a>01209   <span class="keywordflow">if</span>(d-&gt;exec() == QDialog::Accepted)
+<a name="l01210"></a>01210     <a class="code" href="classQucsApp.html#abc9b64e52b905e3a287dc618d8507d2c">slotUpdateTreeview</a>();
+<a name="l01211"></a>01211 }
+<a name="l01212"></a>01212 
+<a name="l01213"></a>01213 <span class="comment">// -----------------------------------------------------------</span>
+<a name="l01214"></a><a class="code" href="classQucsApp.html#aeb21915c4b1e2f208cd988a8e2b1e0c8">01214</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#aeb21915c4b1e2f208cd988a8e2b1e0c8">QucsApp::slotExportGraphAsCsv</a>()
+<a name="l01215"></a>01215 {
+<a name="l01216"></a>01216   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
+<a name="l01217"></a>01217 
+<a name="l01218"></a>01218   <span class="keywordflow">for</span>(;;) {
+<a name="l01219"></a>01219     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>)
+<a name="l01220"></a>01220       <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#a48320a5a01ad8f1dc90c7575e8e30b2a">isGraph</a>)
+<a name="l01221"></a>01221         <span class="keywordflow">break</span>;
+<a name="l01222"></a>01222 
+<a name="l01223"></a>01223     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please select a diagram graph!&quot;</span>));
+<a name="l01224"></a>01224     <span class="keywordflow">return</span>;
+<a name="l01225"></a>01225   }
+<a name="l01226"></a>01226 
+<a name="l01227"></a>01227   <span class="comment">/*QString s = Q3FileDialog::getSaveFileName(</span>
+<a name="l01228"></a>01228 <span class="comment">     lastDir.isEmpty() ? QString(&quot;.&quot;) : lastDir,</span>
+<a name="l01229"></a>01229 <span class="comment">     tr(&quot;CSV file&quot;)+&quot; (*.csv);;&quot; + tr(&quot;Any File&quot;)+&quot; (*)&quot;,</span>
+<a name="l01230"></a>01230 <span class="comment">     this, 0, tr(&quot;Enter an Output File Name&quot;));</span>
+<a name="l01231"></a>01231 <span class="comment">     */</span>
+<a name="l01232"></a>01232   QString s = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Enter an Output File Name&quot;</span>),
+<a name="l01233"></a>01233     <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>.isEmpty() ? QString(<span class="stringliteral">&quot;.&quot;</span>) : <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>, tr(<span class="stringliteral">&quot;CSV file&quot;</span>)+<span class="stringliteral">&quot; (*.csv);;&quot;</span> + tr(<span class="stringliteral">&quot;Any File&quot;</span>)+<span class="stringliteral">&quot; (*)&quot;</span>);
+<a name="l01234"></a>01234 
+<a name="l01235"></a>01235   <span class="keywordflow">if</span>(s.isEmpty())
+<a name="l01236"></a>01236     <span class="keywordflow">return</span>;
+<a name="l01237"></a>01237 
+<a name="l01238"></a>01238   QFileInfo Info(s);
+<a name="l01239"></a>01239   <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a> = Info.dirPath(<span class="keyword">true</span>);  <span class="comment">// remember last directory</span>
+<a name="l01240"></a>01240   <span class="keywordflow">if</span>(Info.extension().isEmpty())
+<a name="l01241"></a>01241     s += <span class="stringliteral">&quot;.csv&quot;</span>;
+<a name="l01242"></a>01242 
+<a name="l01243"></a>01243   QFile File(s);
+<a name="l01244"></a>01244   <span class="keywordflow">if</span>(File.exists())
+<a name="l01245"></a>01245     <span class="keywordflow">if</span>(QMessageBox::information(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Info&quot;</span>),
+<a name="l01246"></a>01246           tr(<span class="stringliteral">&quot;Output file already exists!&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+tr(<span class="stringliteral">&quot;Overwrite it?&quot;</span>),
+<a name="l01247"></a>01247           tr(<span class="stringliteral">&quot;&amp;Yes&quot;</span>), tr(<span class="stringliteral">&quot;&amp;No&quot;</span>), 0,1,1))
+<a name="l01248"></a>01248       <span class="keywordflow">return</span>;
+<a name="l01249"></a>01249 
+<a name="l01250"></a>01250   <span class="keywordflow">if</span>(!File.open(QIODevice::WriteOnly)) {
+<a name="l01251"></a>01251     QMessageBox::critical(<span class="keyword">this</span>, QObject::tr(<span class="stringliteral">&quot;Error&quot;</span>),
+<a name="l01252"></a>01252                           QObject::tr(<span class="stringliteral">&quot;Cannot create output file!&quot;</span>));
+<a name="l01253"></a>01253     <span class="keywordflow">return</span>;
+<a name="l01254"></a>01254   }
+<a name="l01255"></a>01255 
+<a name="l01256"></a>01256   QTextStream Stream(&amp;File);
+<a name="l01257"></a>01257 
 <a name="l01258"></a>01258 
-<a name="l01259"></a>01259   <a class="code" href="classImportDialog.html">ImportDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classImportDialog.html">ImportDialog</a>(<span class="keyword">this</span>);
-<a name="l01260"></a>01260   <span class="keywordflow">if</span>(d-&gt;exec() == QDialog::Accepted)
-<a name="l01261"></a>01261     <a class="code" href="classQucsApp.html#abc9b64e52b905e3a287dc618d8507d2c">slotUpdateTreeview</a>();
-<a name="l01262"></a>01262 }
-<a name="l01263"></a>01263 
-<a name="l01264"></a>01264 <span class="comment">// -----------------------------------------------------------</span>
-<a name="l01265"></a><a class="code" href="classQucsApp.html#aeb21915c4b1e2f208cd988a8e2b1e0c8">01265</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#aeb21915c4b1e2f208cd988a8e2b1e0c8">QucsApp::slotExportGraphAsCsv</a>()
-<a name="l01266"></a>01266 {
-<a name="l01267"></a>01267   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
-<a name="l01268"></a>01268 
-<a name="l01269"></a>01269   <span class="keywordflow">for</span>(;;) {
-<a name="l01270"></a>01270     <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>)
-<a name="l01271"></a>01271       <span class="keywordflow">if</span>(<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>-&gt;<a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> == <a class="code" href="element_8h.html#a48320a5a01ad8f1dc90c7575e8e30b2a">isGraph</a>)
-<a name="l01272"></a>01272         <span class="keywordflow">break</span>;
-<a name="l01273"></a>01273 
-<a name="l01274"></a>01274     QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>), tr(<span class="stringliteral">&quot;Please select a diagram graph!&quot;</span>));
-<a name="l01275"></a>01275     <span class="keywordflow">return</span>;
-<a name="l01276"></a>01276   }
-<a name="l01277"></a>01277 
-<a name="l01278"></a>01278   <span class="comment">/*QString s = Q3FileDialog::getSaveFileName(</span>
-<a name="l01279"></a>01279 <span class="comment">     lastDir.isEmpty() ? QString(&quot;.&quot;) : lastDir,</span>
-<a name="l01280"></a>01280 <span class="comment">     tr(&quot;CSV file&quot;)+&quot; (*.csv);;&quot; + tr(&quot;Any File&quot;)+&quot; (*)&quot;,</span>
-<a name="l01281"></a>01281 <span class="comment">     this, 0, tr(&quot;Enter an Output File Name&quot;));</span>
-<a name="l01282"></a>01282 <span class="comment">     */</span>
-<a name="l01283"></a>01283   QString s = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Enter an Output File Name&quot;</span>),
-<a name="l01284"></a>01284     <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>.isEmpty() ? QString(<span class="stringliteral">&quot;.&quot;</span>) : <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a>, tr(<span class="stringliteral">&quot;CSV file&quot;</span>)+<span class="stringliteral">&quot; (*.csv);;&quot;</span> + tr(<span class="stringliteral">&quot;Any File&quot;</span>)+<span class="stringliteral">&quot; (*)&quot;</span>);
-<a name="l01285"></a>01285 
-<a name="l01286"></a>01286   <span class="keywordflow">if</span>(s.isEmpty())
-<a name="l01287"></a>01287     <span class="keywordflow">return</span>;
+<a name="l01259"></a>01259   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span> *pD;
+<a name="l01260"></a>01260   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *g = (<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
+<a name="l01261"></a>01261   <span class="comment">// First output the names of independent and dependent variables.</span>
+<a name="l01262"></a>01262   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii)
+<a name="l01263"></a>01263     Stream &lt;&lt; <span class="charliteral">&#39;\&quot;&#39;</span> &lt;&lt; pD-&gt;<a class="code" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;&quot;</span>;
+<a name="l01264"></a>01264   Stream &lt;&lt; <span class="stringliteral">&quot;\&quot;r &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;\&quot;i &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;
+<a name="l01265"></a>01265 
+<a name="l01266"></a>01266 
+<a name="l01267"></a>01267   <span class="keywordtype">int</span> n, m;
+<a name="l01268"></a>01268   <span class="keywordtype">double</span> *py = g-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>;
+<a name="l01269"></a>01269   <span class="keywordtype">int</span> Count = g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> * g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
+<a name="l01270"></a>01270   <span class="keywordflow">for</span>(n = 0; n &lt; Count; n++) {
+<a name="l01271"></a>01271     m = n;
+<a name="l01272"></a>01272    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii) {
+<a name="l01273"></a>01273       Stream &lt;&lt; *(pD-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a> + m%pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>) &lt;&lt; <span class="charliteral">&#39;;&#39;</span>;
+<a name="l01274"></a>01274       m /= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
+<a name="l01275"></a>01275     }
+<a name="l01276"></a>01276 
+<a name="l01277"></a>01277     Stream &lt;&lt; *(py) &lt;&lt; <span class="charliteral">&#39;;&#39;</span> &lt;&lt; *(py+1) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+<a name="l01278"></a>01278     py += 2;
+<a name="l01279"></a>01279   }
+<a name="l01280"></a>01280 
+<a name="l01281"></a>01281   File.close();
+<a name="l01282"></a>01282 }
+<a name="l01283"></a>01283 
+<a name="l01284"></a>01284 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01285"></a><a class="code" href="classQucsApp.html#ac70b794cb19e9e0297dee6fb1394979b">01285</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac70b794cb19e9e0297dee6fb1394979b">QucsApp::slotCreatePackage</a>()
+<a name="l01286"></a>01286 {
+<a name="l01287"></a>01287   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
 <a name="l01288"></a>01288 
-<a name="l01289"></a>01289   QFileInfo Info(s);
-<a name="l01290"></a>01290   <a class="code" href="main_8cpp.html#afcd897944cf960f7c779c8d9e9be625e">lastDir</a> = Info.dirPath(<span class="keyword">true</span>);  <span class="comment">// remember last directory</span>
-<a name="l01291"></a>01291   <span class="keywordflow">if</span>(Info.extension().isEmpty())
-<a name="l01292"></a>01292     s += <span class="stringliteral">&quot;.csv&quot;</span>;
-<a name="l01293"></a>01293 
-<a name="l01294"></a>01294   QFile File(s);
-<a name="l01295"></a>01295   <span class="keywordflow">if</span>(File.exists())
-<a name="l01296"></a>01296     <span class="keywordflow">if</span>(QMessageBox::information(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Info&quot;</span>),
-<a name="l01297"></a>01297           tr(<span class="stringliteral">&quot;Output file already exists!&quot;</span>)+<span class="stringliteral">&quot;\n&quot;</span>+tr(<span class="stringliteral">&quot;Overwrite it?&quot;</span>),
-<a name="l01298"></a>01298           tr(<span class="stringliteral">&quot;&amp;Yes&quot;</span>), tr(<span class="stringliteral">&quot;&amp;No&quot;</span>), 0,1,1))
-<a name="l01299"></a>01299       <span class="keywordflow">return</span>;
-<a name="l01300"></a>01300 
-<a name="l01301"></a>01301   <span class="keywordflow">if</span>(!File.open(QIODevice::WriteOnly)) {
-<a name="l01302"></a>01302     QMessageBox::critical(<span class="keyword">this</span>, QObject::tr(<span class="stringliteral">&quot;Error&quot;</span>),
-<a name="l01303"></a>01303                           QObject::tr(<span class="stringliteral">&quot;Cannot create output file!&quot;</span>));
-<a name="l01304"></a>01304     <span class="keywordflow">return</span>;
-<a name="l01305"></a>01305   }
-<a name="l01306"></a>01306 
-<a name="l01307"></a>01307   QTextStream Stream(&amp;File);
-<a name="l01308"></a>01308 
-<a name="l01309"></a>01309 
-<a name="l01310"></a>01310   <a class="code" href="structDataX.html">DataX</a> <span class="keyword">const</span> *pD;
-<a name="l01311"></a>01311   <a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a> *g = (<a class="code" href="classGraph.html" title="prepare data for plotting purposes in Diagram.">Graph</a>*)<a class="code" href="classQucsApp.html#a372ee1fa475722ca832511027a34c383">view</a>-&gt;<a class="code" href="classMouseActions.html#ae5f6e9429f9649e28ee9e39d2bbd5250">focusElement</a>;
-<a name="l01312"></a>01312   <span class="comment">// First output the names of independent and dependent variables.</span>
-<a name="l01313"></a>01313   <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii)
-<a name="l01314"></a>01314     Stream &lt;&lt; <span class="charliteral">&#39;\&quot;&#39;</span> &lt;&lt; pD-&gt;<a class="code" href="structDataX.html#a1690cc50b1d5035ab56295f82081a025">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;&quot;</span>;
-<a name="l01315"></a>01315   Stream &lt;&lt; <span class="stringliteral">&quot;\&quot;r &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;;\&quot;i &quot;</span> &lt;&lt; g-&gt;<a class="code" href="classGraph.html#ae8e637ef53e44a2a5b3f04026068ac4d">Var</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span>;
-<a name="l01316"></a>01316 
-<a name="l01317"></a>01317 
-<a name="l01318"></a>01318   <span class="keywordtype">int</span> n, m;
-<a name="l01319"></a>01319   <span class="keywordtype">double</span> *py = g-&gt;<a class="code" href="classGraph.html#a208d1982aefe687655e06c97f21a3fec">cPointsY</a>;
-<a name="l01320"></a>01320   <span class="keywordtype">int</span> Count = g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> * g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
-<a name="l01321"></a>01321   <span class="keywordflow">for</span>(n = 0; n &lt; Count; n++) {
-<a name="l01322"></a>01322     m = n;
-<a name="l01323"></a>01323    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> ii=0; (pD=g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(ii)); ++ii) {
-<a name="l01324"></a>01324       Stream &lt;&lt; *(pD-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a> + m%pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>) &lt;&lt; <span class="charliteral">&#39;;&#39;</span>;
-<a name="l01325"></a>01325       m /= pD-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>;
-<a name="l01326"></a>01326     }
-<a name="l01327"></a>01327 
-<a name="l01328"></a>01328     Stream &lt;&lt; *(py) &lt;&lt; <span class="charliteral">&#39;;&#39;</span> &lt;&lt; *(py+1) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
-<a name="l01329"></a>01329     py += 2;
-<a name="l01330"></a>01330   }
+<a name="l01289"></a>01289   <a class="code" href="classPackageDialog.html">PackageDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classPackageDialog.html">PackageDialog</a>(<span class="keyword">this</span>, <span class="keyword">true</span>);
+<a name="l01290"></a>01290   d-&gt;exec();
+<a name="l01291"></a>01291 }
+<a name="l01292"></a>01292 
+<a name="l01293"></a>01293 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01294"></a><a class="code" href="classQucsApp.html#ad5a3e04d08c4818909818df3e99027b7">01294</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ad5a3e04d08c4818909818df3e99027b7">QucsApp::slotExtractPackage</a>()
+<a name="l01295"></a>01295 {
+<a name="l01296"></a>01296   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
+<a name="l01297"></a>01297   <a class="code" href="classPackageDialog.html">PackageDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classPackageDialog.html">PackageDialog</a>(<span class="keyword">this</span>, <span class="keyword">false</span>);
+<a name="l01298"></a>01298   d-&gt;show();
+<a name="l01299"></a>01299   d-&gt;<a class="code" href="classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c">extractPackage</a>();
+<a name="l01300"></a>01300   <a class="code" href="classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2">readProjects</a>();
+<a name="l01301"></a>01301 }
+<a name="l01302"></a>01302 
+<a name="l01303"></a><a class="code" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da">01303</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da">QucsApp::slotOpenRecent</a>()
+<a name="l01304"></a>01304 {
+<a name="l01305"></a>01305   QAction *action = qobject_cast&lt;QAction *&gt;(sender());
+<a name="l01306"></a>01306   <span class="keywordflow">if</span> (action) {
+<a name="l01307"></a>01307     <a class="code" href="classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636">gotoPage</a>(action-&gt;data().toString());
+<a name="l01308"></a>01308     <a class="code" href="classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71">updateRecentFilesList</a>(action-&gt;data().toString());
+<a name="l01309"></a>01309   }
+<a name="l01310"></a>01310 }
+<a name="l01311"></a>01311 
+<a name="l01312"></a><a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">01312</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">QucsApp::slotUpdateRecentFiles</a>()
+<a name="l01313"></a>01313 {
+<a name="l01314"></a>01314   QMutableStringListIterator it(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>);
+<a name="l01315"></a>01315   <span class="keywordflow">while</span>(it.hasNext()) {
+<a name="l01316"></a>01316     <span class="keywordflow">if</span> (!QFile::exists(it.next())) {
+<a name="l01317"></a>01317         it.remove();
+<a name="l01318"></a>01318     }
+<a name="l01319"></a>01319   }
+<a name="l01320"></a>01320 
+<a name="l01321"></a>01321   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>; ++i) {
+<a name="l01322"></a>01322     <span class="keywordflow">if</span> (i &lt; <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.size()) {
+<a name="l01323"></a>01323       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setText(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>[i]);
+<a name="l01324"></a>01324       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setData(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>[i]);
+<a name="l01325"></a>01325       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setVisible(<span class="keyword">true</span>);
+<a name="l01326"></a>01326     } <span class="keywordflow">else</span> {
+<a name="l01327"></a>01327       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setVisible(<span class="keyword">false</span>);
+<a name="l01328"></a>01328     }
+<a name="l01329"></a>01329   }
+<a name="l01330"></a>01330 }
 <a name="l01331"></a>01331 
-<a name="l01332"></a>01332   File.close();
-<a name="l01333"></a>01333 }
-<a name="l01334"></a>01334 
-<a name="l01335"></a>01335 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01336"></a><a class="code" href="classQucsApp.html#ac70b794cb19e9e0297dee6fb1394979b">01336</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac70b794cb19e9e0297dee6fb1394979b">QucsApp::slotCreatePackage</a>()
-<a name="l01337"></a>01337 {
-<a name="l01338"></a>01338   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
-<a name="l01339"></a>01339 
-<a name="l01340"></a>01340   <a class="code" href="classPackageDialog.html">PackageDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classPackageDialog.html">PackageDialog</a>(<span class="keyword">this</span>, <span class="keyword">true</span>);
-<a name="l01341"></a>01341   d-&gt;exec();
-<a name="l01342"></a>01342 }
-<a name="l01343"></a>01343 
-<a name="l01344"></a>01344 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01345"></a><a class="code" href="classQucsApp.html#ad5a3e04d08c4818909818df3e99027b7">01345</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ad5a3e04d08c4818909818df3e99027b7">QucsApp::slotExtractPackage</a>()
-<a name="l01346"></a>01346 {
-<a name="l01347"></a>01347   <a class="code" href="classQucsApp.html#acf15a168d7497bc25103174b31019db7">slotHideEdit</a>(); <span class="comment">// disable text edit of component property</span>
-<a name="l01348"></a>01348   <a class="code" href="classPackageDialog.html">PackageDialog</a> *d = <span class="keyword">new</span> <a class="code" href="classPackageDialog.html">PackageDialog</a>(<span class="keyword">this</span>, <span class="keyword">false</span>);
-<a name="l01349"></a>01349   d-&gt;show();
-<a name="l01350"></a>01350   d-&gt;<a class="code" href="classPackageDialog.html#a3abcff9e4073ff26bb1bc36347ca942c">extractPackage</a>();
-<a name="l01351"></a>01351   <a class="code" href="classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2">readProjects</a>();
-<a name="l01352"></a>01352 }
-<a name="l01353"></a>01353 
-<a name="l01354"></a><a class="code" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da">01354</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#abb7bac193222f4b6273bd822376e95da">QucsApp::slotOpenRecent</a>()
-<a name="l01355"></a>01355 {
-<a name="l01356"></a>01356   QAction *action = qobject_cast&lt;QAction *&gt;(sender());
-<a name="l01357"></a>01357   <span class="keywordflow">if</span> (action) {
-<a name="l01358"></a>01358     <a class="code" href="classQucsApp.html#aaaeffebcd5551096a2c6261d4bfc5636">gotoPage</a>(action-&gt;data().toString());
-<a name="l01359"></a>01359     <a class="code" href="classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71">updateRecentFilesList</a>(action-&gt;data().toString());
-<a name="l01360"></a>01360   }
-<a name="l01361"></a>01361 }
-<a name="l01362"></a>01362 
-<a name="l01363"></a><a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">01363</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">QucsApp::slotUpdateRecentFiles</a>()
-<a name="l01364"></a>01364 {
-<a name="l01365"></a>01365   QMutableStringListIterator it(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>);
-<a name="l01366"></a>01366   <span class="keywordflow">while</span>(it.hasNext()) {
-<a name="l01367"></a>01367     <span class="keywordflow">if</span> (!QFile::exists(it.next())) {
-<a name="l01368"></a>01368         it.remove();
-<a name="l01369"></a>01369     }
-<a name="l01370"></a>01370   }
-<a name="l01371"></a>01371 
-<a name="l01372"></a>01372   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>; ++i) {
-<a name="l01373"></a>01373     <span class="keywordflow">if</span> (i &lt; <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.size()) {
-<a name="l01374"></a>01374       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setText(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>[i]);
-<a name="l01375"></a>01375       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setData(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>[i]);
-<a name="l01376"></a>01376       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setVisible(<span class="keyword">true</span>);
-<a name="l01377"></a>01377     } <span class="keywordflow">else</span> {
-<a name="l01378"></a>01378       <a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]-&gt;setVisible(<span class="keyword">false</span>);
-<a name="l01379"></a>01379     }
-<a name="l01380"></a>01380   }
-<a name="l01381"></a>01381 }
+<a name="l01332"></a><a class="code" href="classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1">01332</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1">QucsApp::slotClearRecentFiles</a>()
+<a name="l01333"></a>01333 {
+<a name="l01334"></a>01334   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.clear();
+<a name="l01335"></a>01335   <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">slotUpdateRecentFiles</a>();
+<a name="l01336"></a>01336 }
+<a name="l01337"></a>01337 
+<a name="l01341"></a><a class="code" href="classQucsApp.html#a7d14d0aea9ba47d9c22e6d8e222dd94e">01341</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a7d14d0aea9ba47d9c22e6d8e222dd94e" title="QucsApp::slotLoadModule launches the dialog to select dynamic modueles.">QucsApp::slotLoadModule</a>()
+<a name="l01342"></a>01342 {
+<a name="l01343"></a>01343     qDebug() &lt;&lt; <span class="stringliteral">&quot;slotLoadModule&quot;</span>;
+<a name="l01344"></a>01344 
+<a name="l01345"></a>01345     <a class="code" href="classLoadDialog.html">LoadDialog</a> *ld = <span class="keyword">new</span> <a class="code" href="classLoadDialog.html">LoadDialog</a>(<span class="keyword">this</span>);
+<a name="l01346"></a>01346     ld-&gt;<a class="code" href="classLoadDialog.html#a4b086d5f01859a21192957fc584d1eee">setApp</a>(<span class="keyword">this</span>);
+<a name="l01347"></a>01347 
+<a name="l01348"></a>01348     <span class="comment">// fech list of _symbol.json</span>
+<a name="l01349"></a>01349     <span class="comment">// \todo fetch timestamp of VA, JSON, if VA newer, need to reload.</span>
+<a name="l01350"></a>01350 
+<a name="l01351"></a>01351     QDir projDir = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#ac416ec4c4a8bfc243ea836dbf334ccae">QucsWorkDir</a>.absolutePath();
+<a name="l01352"></a>01352 
+<a name="l01353"></a>01353     QStringList files;
+<a name="l01354"></a>01354     QString fileSuffix = <span class="stringliteral">&quot;*_symbol.json&quot;</span>;
+<a name="l01355"></a>01355 
+<a name="l01356"></a>01356     files = projDir.entryList(QStringList(fileSuffix),
+<a name="l01357"></a>01357                                  QDir::Files | QDir::NoSymLinks);
+<a name="l01358"></a>01358 
+<a name="l01359"></a>01359     <span class="comment">// no JSON files or no a project?</span>
+<a name="l01360"></a>01360     <span class="keywordflow">if</span> (!files.size()){
+<a name="l01361"></a>01361         QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>),
+<a name="l01362"></a>01362                      tr(<span class="stringliteral">&quot;Symbol files not found in: %1\n\n&quot;</span>
+<a name="l01363"></a>01363                         <span class="stringliteral">&quot;Is the project open?\n&quot;</span>
+<a name="l01364"></a>01364                         <span class="stringliteral">&quot;Have you saved the Verilog-A symbols?&quot;</span>)
+<a name="l01365"></a>01365                        .arg(QString(projDir.absolutePath())));
+<a name="l01366"></a>01366         <span class="keywordflow">return</span>;
+<a name="l01367"></a>01367     }
+<a name="l01368"></a>01368 
+<a name="l01369"></a>01369     <span class="comment">// initialize dialog</span>
+<a name="l01370"></a>01370 
+<a name="l01371"></a>01371     <span class="comment">// pass list of potential symbol files</span>
+<a name="l01372"></a>01372     ld-&gt;<a class="code" href="classLoadDialog.html#a55ac2d0b67fc1e303a4deb2df126c005">symbolFiles</a> &lt;&lt; files;
+<a name="l01373"></a>01373     ld-&gt;<a class="code" href="classLoadDialog.html#a73f297fdc443c3364dac2ed406a510c9">projDir</a> = projDir;
+<a name="l01374"></a>01374     ld-&gt;<a class="code" href="classLoadDialog.html#a6735aee4ceac74d34b8d837fe05dc576">initDialog</a>();
+<a name="l01375"></a>01375 
+<a name="l01376"></a>01376     <span class="comment">// \todo check what is already loaded, offer skip, reload</span>
+<a name="l01377"></a>01377 
+<a name="l01378"></a>01378     <span class="comment">//pass stuff to ld dialog</span>
+<a name="l01379"></a>01379     <span class="comment">// run, let user do the selections</span>
+<a name="l01380"></a>01380 
+<a name="l01381"></a>01381     <span class="keywordflow">if</span> (ld-&gt;exec() == QDialog::Accepted) {
 <a name="l01382"></a>01382 
-<a name="l01383"></a><a class="code" href="classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1">01383</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a2afa32b7ca9323f79cb07279d95bd2f1">QucsApp::slotClearRecentFiles</a>()
-<a name="l01384"></a>01384 {
-<a name="l01385"></a>01385   <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#aefa2c7f96cb1375c6c18e6a5937e115c">RecentDocs</a>.clear();
-<a name="l01386"></a>01386   <a class="code" href="classQucsApp.html#ae11e60e28902f1e1eb4604c90657459e">slotUpdateRecentFiles</a>();
-<a name="l01387"></a>01387 }
-<a name="l01388"></a>01388 
-<a name="l01392"></a><a class="code" href="classQucsApp.html#a7d14d0aea9ba47d9c22e6d8e222dd94e">01392</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a7d14d0aea9ba47d9c22e6d8e222dd94e" title="QucsApp::slotLoadModule launches the dialog to select dynamic modueles.">QucsApp::slotLoadModule</a>()
-<a name="l01393"></a>01393 {
-<a name="l01394"></a>01394     qDebug() &lt;&lt; <span class="stringliteral">&quot;slotLoadModule&quot;</span>;
-<a name="l01395"></a>01395 
-<a name="l01396"></a>01396     <a class="code" href="classLoadDialog.html">LoadDialog</a> *ld = <span class="keyword">new</span> <a class="code" href="classLoadDialog.html">LoadDialog</a>(<span class="keyword">this</span>);
-<a name="l01397"></a>01397     ld-&gt;<a class="code" href="classLoadDialog.html#a4b086d5f01859a21192957fc584d1eee">setApp</a>(<span class="keyword">this</span>);
-<a name="l01398"></a>01398 
-<a name="l01399"></a>01399     <span class="comment">// fech list of _symbol.json</span>
-<a name="l01400"></a>01400     <span class="comment">// \todo fetch timestamp of VA, JSON, if VA newer, need to reload.</span>
-<a name="l01401"></a>01401 
-<a name="l01402"></a>01402     QDir projDir = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#ac416ec4c4a8bfc243ea836dbf334ccae">QucsWorkDir</a>.absolutePath();
-<a name="l01403"></a>01403 
-<a name="l01404"></a>01404     QStringList files;
-<a name="l01405"></a>01405     QString fileSuffix = <span class="stringliteral">&quot;*_symbol.json&quot;</span>;
-<a name="l01406"></a>01406 
-<a name="l01407"></a>01407     files = projDir.entryList(QStringList(fileSuffix),
-<a name="l01408"></a>01408                                  QDir::Files | QDir::NoSymLinks);
-<a name="l01409"></a>01409 
-<a name="l01410"></a>01410     <span class="comment">// no JSON files or no a project?</span>
-<a name="l01411"></a>01411     <span class="keywordflow">if</span> (!files.size()){
-<a name="l01412"></a>01412         QMessageBox::critical(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Error&quot;</span>),
-<a name="l01413"></a>01413                      tr(<span class="stringliteral">&quot;Symbol files not found in: %1\n\n&quot;</span>
-<a name="l01414"></a>01414                         <span class="stringliteral">&quot;Is the project open?\n&quot;</span>
-<a name="l01415"></a>01415                         <span class="stringliteral">&quot;Have you saved the Verilog-A symbols?&quot;</span>)
-<a name="l01416"></a>01416                        .arg(QString(projDir.absolutePath())));
-<a name="l01417"></a>01417         <span class="keywordflow">return</span>;
-<a name="l01418"></a>01418     }
+<a name="l01383"></a>01383       <a class="code" href="classModule.html#acd53986d2c48def80f2570ff339c1327">Module::vaComponents</a> = ld-&gt;<a class="code" href="classLoadDialog.html#ad7ff850eaf95e253cf6e4215e288e8e1">selectedComponents</a>;
+<a name="l01384"></a>01384 
+<a name="l01385"></a>01385       <span class="comment">// dialog write new bitmap into JSON</span>
+<a name="l01386"></a>01386       <span class="comment">// load, unload, reload</span>
+<a name="l01387"></a>01387       <span class="comment">// inform if symbol changed</span>
+<a name="l01388"></a>01388       <span class="comment">// populate Module::vaComponents</span>
+<a name="l01389"></a>01389       <span class="comment">// vaComponents are selected with the dialog</span>
+<a name="l01390"></a>01390       <span class="comment">// dialog should populate acording to checkboxes</span>
+<a name="l01391"></a>01391       <span class="comment">// build vaComponents QMap</span>
+<a name="l01392"></a>01392 
+<a name="l01393"></a>01393       <span class="comment">// remove all modules before registering/loaded again</span>
+<a name="l01394"></a>01394       <span class="comment">// look for modules in the category,</span>
+<a name="l01395"></a>01395       <span class="comment">// \todo investigate if it is leaking objects somewhere</span>
+<a name="l01396"></a>01396       QStringList removeList;
+<a name="l01397"></a>01397       QHashIterator&lt;QString, Module *&gt; it( <a class="code" href="classModule.html#ac0cf4fe34d2d16442d09e9cf608ea641">Module::Modules</a> );
+<a name="l01398"></a>01398       <span class="keywordflow">while</span>(it.hasNext()) {
+<a name="l01399"></a>01399         it.next();
+<a name="l01400"></a>01400         <span class="keywordflow">if</span> (it.value()-&gt;category == QObject::tr(<span class="stringliteral">&quot;verilog-a user devices&quot;</span>)) {
+<a name="l01401"></a>01401           removeList &lt;&lt; it.key();
+<a name="l01402"></a>01402           <span class="keyword">delete</span> it.value();
+<a name="l01403"></a>01403         }
+<a name="l01404"></a>01404       }
+<a name="l01405"></a>01405       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; removeList.size(); ++i){
+<a name="l01406"></a>01406         <a class="code" href="classModule.html#ac0cf4fe34d2d16442d09e9cf608ea641">Module::Modules</a>.remove(removeList.at(i));
+<a name="l01407"></a>01407       }
+<a name="l01408"></a>01408 
+<a name="l01409"></a>01409       <span class="keywordflow">if</span> (! <a class="code" href="classModule.html#acd53986d2c48def80f2570ff339c1327">Module::vaComponents</a>.<a class="code" href="classSaveDialog.html#a9dc946e03175251661053dfb68172035">isEmpty</a>()) {
+<a name="l01410"></a>01410         <span class="comment">// Register whatever is in Module::vaComponents</span>
+<a name="l01411"></a>01411         <a class="code" href="classModule.html#aefc4847613f7fc92f45d0dc349c7b889">Module::registerDynamicComponents</a>();
+<a name="l01412"></a>01412 
+<a name="l01413"></a>01413         <span class="comment">// update the combobox, set new category in view</span>
+<a name="l01414"></a>01414         <span class="comment">// pick up new category &#39;verilog-a user components&#39; from `Module::category`</span>
+<a name="l01415"></a>01415         <span class="comment">//set new category into view</span>
+<a name="l01416"></a>01416         <a class="code" href="classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347">QucsApp::fillComboBox</a>(<span class="keyword">true</span>);
+<a name="l01417"></a>01417         <a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;setCurrentItem(<a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;count()-1);
+<a name="l01418"></a>01418         <a class="code" href="classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d">slotSetCompView</a>(<a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;count()-1);
 <a name="l01419"></a>01419 
-<a name="l01420"></a>01420     <span class="comment">// initialize dialog</span>
-<a name="l01421"></a>01421 
-<a name="l01422"></a>01422     <span class="comment">// pass list of potential symbol files</span>
-<a name="l01423"></a>01423     ld-&gt;<a class="code" href="classLoadDialog.html#a55ac2d0b67fc1e303a4deb2df126c005">symbolFiles</a> &lt;&lt; files;
-<a name="l01424"></a>01424     ld-&gt;<a class="code" href="classLoadDialog.html#a73f297fdc443c3364dac2ed406a510c9">projDir</a> = projDir;
-<a name="l01425"></a>01425     ld-&gt;<a class="code" href="classLoadDialog.html#a6735aee4ceac74d34b8d837fe05dc576">initDialog</a>();
-<a name="l01426"></a>01426 
-<a name="l01427"></a>01427     <span class="comment">// \todo check what is already loaded, offer skip, reload</span>
+<a name="l01420"></a>01420         <span class="comment">// icons of dynamically registered components ready to be dragged</span>
+<a name="l01421"></a>01421       }
+<a name="l01422"></a>01422     }
+<a name="l01423"></a>01423 
+<a name="l01424"></a>01424     <span class="keyword">delete</span> ld;
+<a name="l01425"></a>01425 
+<a name="l01426"></a>01426 }
+<a name="l01427"></a>01427 
 <a name="l01428"></a>01428 
-<a name="l01429"></a>01429     <span class="comment">//pass stuff to ld dialog</span>
-<a name="l01430"></a>01430     <span class="comment">// run, let user do the selections</span>
-<a name="l01431"></a>01431 
-<a name="l01432"></a>01432     <span class="keywordflow">if</span> (ld-&gt;exec() == QDialog::Accepted) {
-<a name="l01433"></a>01433 
-<a name="l01434"></a>01434       <a class="code" href="classModule.html#acd53986d2c48def80f2570ff339c1327">Module::vaComponents</a> = ld-&gt;<a class="code" href="classLoadDialog.html#ad7ff850eaf95e253cf6e4215e288e8e1">selectedComponents</a>;
-<a name="l01435"></a>01435 
-<a name="l01436"></a>01436       <span class="comment">// dialog write new bitmap into JSON</span>
-<a name="l01437"></a>01437       <span class="comment">// load, unload, reload</span>
-<a name="l01438"></a>01438       <span class="comment">// inform if symbol changed</span>
-<a name="l01439"></a>01439       <span class="comment">// populate Module::vaComponents</span>
-<a name="l01440"></a>01440       <span class="comment">// vaComponents are selected with the dialog</span>
-<a name="l01441"></a>01441       <span class="comment">// dialog should populate acording to checkboxes</span>
-<a name="l01442"></a>01442       <span class="comment">// build vaComponents QMap</span>
+<a name="l01440"></a><a class="code" href="classQucsApp.html#a5bc7f19b5230d3686556a1c1a136bfc7">01440</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a5bc7f19b5230d3686556a1c1a136bfc7" title="QucsApp::slotBuildModule runs admsXml, C++ compiler to build library.">QucsApp::slotBuildModule</a>()
+<a name="l01441"></a>01441 {
+<a name="l01442"></a>01442     qDebug() &lt;&lt; <span class="stringliteral">&quot;slotBuildModule&quot;</span>;
 <a name="l01443"></a>01443 
-<a name="l01444"></a>01444       <span class="comment">// remove all modules before registering/loaded again</span>
-<a name="l01445"></a>01445       <span class="comment">// look for modules in the category,</span>
-<a name="l01446"></a>01446       <span class="comment">// \todo investigate if it is leaking objects somewhere</span>
-<a name="l01447"></a>01447       QStringList removeList;
-<a name="l01448"></a>01448       QHashIterator&lt;QString, Module *&gt; it( <a class="code" href="classModule.html#ac0cf4fe34d2d16442d09e9cf608ea641">Module::Modules</a> );
-<a name="l01449"></a>01449       <span class="keywordflow">while</span>(it.hasNext()) {
-<a name="l01450"></a>01450         it.next();
-<a name="l01451"></a>01451         <span class="keywordflow">if</span> (it.value()-&gt;category == QObject::tr(<span class="stringliteral">&quot;verilog-a user devices&quot;</span>)) {
-<a name="l01452"></a>01452           removeList &lt;&lt; it.key();
-<a name="l01453"></a>01453           <span class="keyword">delete</span> it.value();
-<a name="l01454"></a>01454         }
-<a name="l01455"></a>01455       }
-<a name="l01456"></a>01456       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; removeList.size(); ++i){
-<a name="l01457"></a>01457         <a class="code" href="classModule.html#ac0cf4fe34d2d16442d09e9cf608ea641">Module::Modules</a>.remove(removeList.at(i));
-<a name="l01458"></a>01458       }
-<a name="l01459"></a>01459 
-<a name="l01460"></a>01460       <span class="keywordflow">if</span> (! <a class="code" href="classModule.html#acd53986d2c48def80f2570ff339c1327">Module::vaComponents</a>.<a class="code" href="classSaveDialog.html#a9dc946e03175251661053dfb68172035">isEmpty</a>()) {
-<a name="l01461"></a>01461         <span class="comment">// Register whatever is in Module::vaComponents</span>
-<a name="l01462"></a>01462         <a class="code" href="classModule.html#aefc4847613f7fc92f45d0dc349c7b889">Module::registerDynamicComponents</a>();
-<a name="l01463"></a>01463 
-<a name="l01464"></a>01464         <span class="comment">// update the combobox, set new category in view</span>
-<a name="l01465"></a>01465         <span class="comment">// pick up new category &#39;verilog-a user components&#39; from `Module::category`</span>
-<a name="l01466"></a>01466         <span class="comment">//set new category into view</span>
-<a name="l01467"></a>01467         <a class="code" href="classQucsApp.html#a1f0d73873a143ac38d74915b6d6dc347">QucsApp::fillComboBox</a>(<span class="keyword">true</span>);
-<a name="l01468"></a>01468         <a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;setCurrentItem(<a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;count()-1);
-<a name="l01469"></a>01469         <a class="code" href="classQucsApp.html#a7ab3e7daff34dea1e5f2b0f9feff1a2d">slotSetCompView</a>(<a class="code" href="classQucsApp.html#a86a11e3dd62788d233346c18a2db158d">CompChoose</a>-&gt;count()-1);
-<a name="l01470"></a>01470 
-<a name="l01471"></a>01471         <span class="comment">// icons of dynamically registered components ready to be dragged</span>
-<a name="l01472"></a>01472       }
-<a name="l01473"></a>01473     }
+<a name="l01444"></a>01444     <span class="comment">// reset message dock on entry</span>
+<a name="l01445"></a>01445     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a53f66268e57f6fbfe374976040b16d46" title="MessageDock::reset clear the text and tab icons.">reset</a>();
+<a name="l01446"></a>01446 
+<a name="l01447"></a>01447     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aa131633068a4993ceedb8d011319a8b6">builderTabs</a>-&gt;setTabIcon(0,QPixmap());
+<a name="l01448"></a>01448     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aa131633068a4993ceedb8d011319a8b6">builderTabs</a>-&gt;setTabIcon(1,QPixmap());
+<a name="l01449"></a>01449 
+<a name="l01450"></a>01450 
+<a name="l01451"></a>01451     QString make;
+<a name="l01452"></a>01452 
+<a name="l01453"></a>01453 <span class="preprocessor">#ifdef __MINGW32__</span>
+<a name="l01454"></a>01454 <span class="preprocessor"></span>    make = <span class="stringliteral">&quot;mingw32-make.exe&quot;</span>;    <span class="comment">// must be on the path!</span>
+<a name="l01455"></a>01455 <span class="preprocessor">#else</span>
+<a name="l01456"></a>01456 <span class="preprocessor"></span>    make = <span class="stringliteral">&quot;make&quot;</span>;                <span class="comment">// must be on the path!</span>
+<a name="l01457"></a>01457 <span class="preprocessor">#endif</span>
+<a name="l01458"></a>01458 <span class="preprocessor"></span>
+<a name="l01459"></a>01459     QDir prefix = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a198148b9fb833198dab17713179bca02">BinDir</a>+<span class="stringliteral">&quot;../&quot;</span>);
+<a name="l01460"></a>01460 
+<a name="l01461"></a>01461     QDir include = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a198148b9fb833198dab17713179bca02">BinDir</a>+<span class="stringliteral">&quot;../include/qucs-core&quot;</span>);
+<a name="l01462"></a>01462 
+<a name="l01463"></a>01463     QString workDir = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#ac416ec4c4a8bfc243ea836dbf334ccae">QucsWorkDir</a>.absolutePath();
+<a name="l01464"></a>01464 
+<a name="l01465"></a>01465     <span class="comment">// need to cd into project to make sure output is droped there?</span>
+<a name="l01466"></a>01466     <span class="comment">// need to cd - into previous location?</span>
+<a name="l01467"></a>01467     QDir::setCurrent(workDir);
+<a name="l01468"></a>01468 
+<a name="l01469"></a>01469     QProcess *builder = <span class="keyword">new</span> QProcess();
+<a name="l01470"></a>01470     builder-&gt;setProcessChannelMode(QProcess::MergedChannels);
+<a name="l01471"></a>01471     <span class="comment">// get current va document</span>
+<a name="l01472"></a>01472     <a class="code" href="classQucsDoc.html">QucsDoc</a> *Doc = <a class="code" href="classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587">getDoc</a>();
+<a name="l01473"></a>01473     QString vaModule = Doc-&gt;<a class="code" href="classQucsDoc.html#a3888e29109e629fad893861caac67c95">fileBase</a>(Doc-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
 <a name="l01474"></a>01474 
-<a name="l01475"></a>01475     <span class="keyword">delete</span> ld;
+<a name="l01475"></a>01475     QString admsXml = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a117bafb43303923726360d858ef919a9">AdmsXmlBinDir</a>.canonicalPath();
 <a name="l01476"></a>01476 
-<a name="l01477"></a>01477 }
-<a name="l01478"></a>01478 
-<a name="l01479"></a>01479 
-<a name="l01491"></a><a class="code" href="classQucsApp.html#a5bc7f19b5230d3686556a1c1a136bfc7">01491</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a5bc7f19b5230d3686556a1c1a136bfc7" title="QucsApp::slotBuildModule runs admsXml, C++ compiler to build library.">QucsApp::slotBuildModule</a>()
-<a name="l01492"></a>01492 {
-<a name="l01493"></a>01493     qDebug() &lt;&lt; <span class="stringliteral">&quot;slotBuildModule&quot;</span>;
-<a name="l01494"></a>01494 
-<a name="l01495"></a>01495     <span class="comment">// reset message dock on entry</span>
-<a name="l01496"></a>01496     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a53f66268e57f6fbfe374976040b16d46" title="MessageDock::reset clear the text and tab icons.">reset</a>();
+<a name="l01477"></a>01477 <span class="preprocessor">#ifdef __MINGW32__</span>
+<a name="l01478"></a>01478 <span class="preprocessor"></span>    admsXml = QDir::toNativeSeparators(admsXml+<span class="stringliteral">&quot;/&quot;</span>+<span class="stringliteral">&quot;admsXml.exe&quot;</span>);
+<a name="l01479"></a>01479 <span class="preprocessor">#else</span>
+<a name="l01480"></a>01480 <span class="preprocessor"></span>    admsXml = QDir::toNativeSeparators(admsXml+<span class="stringliteral">&quot;/&quot;</span>+<span class="stringliteral">&quot;admsXml&quot;</span>);
+<a name="l01481"></a>01481 <span class="preprocessor">#endif</span>
+<a name="l01482"></a>01482 <span class="preprocessor"></span>
+<a name="l01483"></a>01483     <span class="comment">// admsXml emmits C++</span>
+<a name="l01484"></a>01484     QStringList Arguments;
+<a name="l01485"></a>01485     Arguments &lt;&lt; <span class="stringliteral">&quot;-f&quot;</span> &lt;&lt;  QDir::toNativeSeparators(include.absoluteFilePath(<span class="stringliteral">&quot;va2cpp.makefile&quot;</span>))
+<a name="l01486"></a>01486               &lt;&lt; QString(<span class="stringliteral">&quot;ADMSXML=%1&quot;</span>).arg(admsXml)
+<a name="l01487"></a>01487               &lt;&lt; QString(<span class="stringliteral">&quot;PREFIX=%1&quot;</span>).arg(QDir::toNativeSeparators(prefix.absolutePath()))
+<a name="l01488"></a>01488               &lt;&lt; QString(<span class="stringliteral">&quot;MODEL=%1&quot;</span>).arg(vaModule);
+<a name="l01489"></a>01489 
+<a name="l01490"></a>01490     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+<a name="l01491"></a>01491     env.insert(<span class="stringliteral">&quot;PATH&quot;</span>, env.value(<span class="stringliteral">&quot;PATH&quot;</span>) );
+<a name="l01492"></a>01492     builder-&gt;setProcessEnvironment(env);
+<a name="l01493"></a>01493 
+<a name="l01494"></a>01494     <span class="comment">// prepend command to log</span>
+<a name="l01495"></a>01495     QString cmdString = QString(<span class="stringliteral">&quot;%1 %2\n&quot;</span>).arg(make, Arguments.join(<span class="stringliteral">&quot; &quot;</span>));
+<a name="l01496"></a>01496     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a7c8df5b2db06709f7c8942a4893545af" title="admsOutput holds the make output of running admsXml">admsOutput</a>-&gt;appendPlainText(cmdString);
 <a name="l01497"></a>01497 
-<a name="l01498"></a>01498     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aa131633068a4993ceedb8d011319a8b6">builderTabs</a>-&gt;setTabIcon(0,QPixmap());
-<a name="l01499"></a>01499     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aa131633068a4993ceedb8d011319a8b6">builderTabs</a>-&gt;setTabIcon(1,QPixmap());
+<a name="l01498"></a>01498     qDebug() &lt;&lt; <span class="stringliteral">&quot;Command :&quot;</span> &lt;&lt; make &lt;&lt; Arguments.join(<span class="stringliteral">&quot; &quot;</span>);
+<a name="l01499"></a>01499     builder-&gt;start(make, Arguments);
 <a name="l01500"></a>01500 
-<a name="l01501"></a>01501 
-<a name="l01502"></a>01502     QString make;
-<a name="l01503"></a>01503 
-<a name="l01504"></a>01504 <span class="preprocessor">#ifdef __MINGW32__</span>
-<a name="l01505"></a>01505 <span class="preprocessor"></span>    make = <span class="stringliteral">&quot;mingw32-make.exe&quot;</span>;    <span class="comment">// must be on the path!</span>
-<a name="l01506"></a>01506 <span class="preprocessor">#else</span>
-<a name="l01507"></a>01507 <span class="preprocessor"></span>    make = <span class="stringliteral">&quot;make&quot;</span>;                <span class="comment">// must be on the path!</span>
-<a name="l01508"></a>01508 <span class="preprocessor">#endif</span>
-<a name="l01509"></a>01509 <span class="preprocessor"></span>
-<a name="l01510"></a>01510     QDir prefix = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a198148b9fb833198dab17713179bca02">BinDir</a>+<span class="stringliteral">&quot;../&quot;</span>);
+<a name="l01501"></a>01501     <span class="comment">// admsXml seems to communicate all via stdout, or is it because of make?</span>
+<a name="l01502"></a>01502     QString vaStatus;
+<a name="l01503"></a>01503     <span class="keywordflow">if</span> (!builder-&gt;waitForFinished()) {
+<a name="l01504"></a>01504         vaStatus = builder-&gt;errorString();
+<a name="l01505"></a>01505         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make failed:&quot;</span> &lt;&lt; vaStatus;
+<a name="l01506"></a>01506     }
+<a name="l01507"></a>01507     <span class="keywordflow">else</span> {
+<a name="l01508"></a>01508         vaStatus = builder-&gt;readAll();
+<a name="l01509"></a>01509         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make stdout&quot;</span>  &lt;&lt; vaStatus;
+<a name="l01510"></a>01510     }
 <a name="l01511"></a>01511 
-<a name="l01512"></a>01512     QDir include = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a198148b9fb833198dab17713179bca02">BinDir</a>+<span class="stringliteral">&quot;../include/qucs-core&quot;</span>);
-<a name="l01513"></a>01513 
-<a name="l01514"></a>01514     QString workDir = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#ac416ec4c4a8bfc243ea836dbf334ccae">QucsWorkDir</a>.absolutePath();
-<a name="l01515"></a>01515 
-<a name="l01516"></a>01516     <span class="comment">// need to cd into project to make sure output is droped there?</span>
-<a name="l01517"></a>01517     <span class="comment">// need to cd - into previous location?</span>
-<a name="l01518"></a>01518     QDir::setCurrent(workDir);
-<a name="l01519"></a>01519 
-<a name="l01520"></a>01520     QProcess *builder = <span class="keyword">new</span> QProcess();
-<a name="l01521"></a>01521     builder-&gt;setProcessChannelMode(QProcess::MergedChannels);
-<a name="l01522"></a>01522     <span class="comment">// get current va document</span>
-<a name="l01523"></a>01523     <a class="code" href="classQucsDoc.html">QucsDoc</a> *Doc = <a class="code" href="classQucsApp.html#a5a91682ea446a8a35c039c5ea233b587">getDoc</a>();
-<a name="l01524"></a>01524     QString vaModule = Doc-&gt;<a class="code" href="classQucsDoc.html#a3888e29109e629fad893861caac67c95">fileBase</a>(Doc-&gt;<a class="code" href="classQucsDoc.html#a2d87112c4f75a4770c9311bb6c2d407b">DocName</a>);
+<a name="l01512"></a>01512     <span class="comment">//build libs</span>
+<a name="l01513"></a>01513     qDebug() &lt;&lt; <span class="stringliteral">&quot;\nbuild libs\n&quot;</span>;
+<a name="l01514"></a>01514 
+<a name="l01515"></a>01515     Arguments.clear();
+<a name="l01516"></a>01516 
+<a name="l01517"></a>01517     Arguments &lt;&lt; <span class="stringliteral">&quot;-f&quot;</span> &lt;&lt;  QDir::toNativeSeparators(include.absoluteFilePath(<span class="stringliteral">&quot;cpp2lib.makefile&quot;</span>))
+<a name="l01518"></a>01518               &lt;&lt; QString(<span class="stringliteral">&quot;PREFIX=\&quot;%1\&quot;&quot;</span>).arg(QDir::toNativeSeparators(prefix.absolutePath()))
+<a name="l01519"></a>01519               &lt;&lt; QString(<span class="stringliteral">&quot;PROJDIR=\&quot;%1\&quot;&quot;</span>).arg(QDir::toNativeSeparators(workDir))
+<a name="l01520"></a>01520               &lt;&lt; QString(<span class="stringliteral">&quot;MODEL=%1&quot;</span>).arg(vaModule);
+<a name="l01521"></a>01521 
+<a name="l01522"></a>01522     <span class="comment">// prepend command to log</span>
+<a name="l01523"></a>01523     cmdString = QString(<span class="stringliteral">&quot;%1 %2\n&quot;</span>).arg(make, Arguments.join(<span class="stringliteral">&quot; &quot;</span>));
+<a name="l01524"></a>01524     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a4ee89eba9326775357e243c20c6403c6" title="cppOutput holds the make output of running a C++ compiler">cppOutput</a>-&gt;appendPlainText(cmdString);
 <a name="l01525"></a>01525 
-<a name="l01526"></a>01526     QString admsXml = <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a117bafb43303923726360d858ef919a9">AdmsXmlBinDir</a>.canonicalPath();
+<a name="l01526"></a>01526     builder-&gt;start(make, Arguments);
 <a name="l01527"></a>01527 
-<a name="l01528"></a>01528 <span class="preprocessor">#ifdef __MINGW32__</span>
-<a name="l01529"></a>01529 <span class="preprocessor"></span>    admsXml = QDir::toNativeSeparators(admsXml+<span class="stringliteral">&quot;/&quot;</span>+<span class="stringliteral">&quot;admsXml.exe&quot;</span>);
-<a name="l01530"></a>01530 <span class="preprocessor">#else</span>
-<a name="l01531"></a>01531 <span class="preprocessor"></span>    admsXml = QDir::toNativeSeparators(admsXml+<span class="stringliteral">&quot;/&quot;</span>+<span class="stringliteral">&quot;admsXml&quot;</span>);
-<a name="l01532"></a>01532 <span class="preprocessor">#endif</span>
-<a name="l01533"></a>01533 <span class="preprocessor"></span>
-<a name="l01534"></a>01534     <span class="comment">// admsXml emmits C++</span>
-<a name="l01535"></a>01535     QStringList Arguments;
-<a name="l01536"></a>01536     Arguments &lt;&lt; <span class="stringliteral">&quot;-f&quot;</span> &lt;&lt;  QDir::toNativeSeparators(include.absoluteFilePath(<span class="stringliteral">&quot;va2cpp.makefile&quot;</span>))
-<a name="l01537"></a>01537               &lt;&lt; QString(<span class="stringliteral">&quot;ADMSXML=%1&quot;</span>).arg(admsXml)
-<a name="l01538"></a>01538               &lt;&lt; QString(<span class="stringliteral">&quot;PREFIX=%1&quot;</span>).arg(QDir::toNativeSeparators(prefix.absolutePath()))
-<a name="l01539"></a>01539               &lt;&lt; QString(<span class="stringliteral">&quot;MODEL=%1&quot;</span>).arg(vaModule);
-<a name="l01540"></a>01540 
-<a name="l01541"></a>01541     QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-<a name="l01542"></a>01542     env.insert(<span class="stringliteral">&quot;PATH&quot;</span>, env.value(<span class="stringliteral">&quot;PATH&quot;</span>) );
-<a name="l01543"></a>01543     builder-&gt;setProcessEnvironment(env);
-<a name="l01544"></a>01544 
-<a name="l01545"></a>01545     <span class="comment">// prepend command to log</span>
-<a name="l01546"></a>01546     QString cmdString = QString(<span class="stringliteral">&quot;%1 %2\n&quot;</span>).arg(make, Arguments.join(<span class="stringliteral">&quot; &quot;</span>));
-<a name="l01547"></a>01547     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a7c8df5b2db06709f7c8942a4893545af" title="admsOutput holds the make output of running admsXml">admsOutput</a>-&gt;appendPlainText(cmdString);
+<a name="l01528"></a>01528     QString cppStatus;
+<a name="l01529"></a>01529 
+<a name="l01530"></a>01530     <span class="keywordflow">if</span> (!builder-&gt;waitForFinished()) {
+<a name="l01531"></a>01531         cppStatus = builder-&gt;errorString();
+<a name="l01532"></a>01532         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make failed:&quot;</span> &lt;&lt; cppStatus;
+<a name="l01533"></a>01533     }
+<a name="l01534"></a>01534     <span class="keywordflow">else</span> {
+<a name="l01535"></a>01535         cppStatus = builder-&gt;readAll();
+<a name="l01536"></a>01536         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make output:&quot;</span> &lt;&lt; cppStatus;
+<a name="l01537"></a>01537     }
+<a name="l01538"></a>01538     <span class="keyword">delete</span> builder;
+<a name="l01539"></a>01539 
+<a name="l01540"></a>01540     <span class="comment">// push make output to message dock</span>
+<a name="l01541"></a>01541     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a7c8df5b2db06709f7c8942a4893545af" title="admsOutput holds the make output of running admsXml">admsOutput</a>-&gt;appendPlainText(vaStatus);
+<a name="l01542"></a>01542     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a4ee89eba9326775357e243c20c6403c6" title="cppOutput holds the make output of running a C++ compiler">cppOutput</a>-&gt;appendPlainText(cppStatus);
+<a name="l01543"></a>01543 
+<a name="l01544"></a>01544     <span class="comment">// shot the message docks</span>
+<a name="l01545"></a>01545     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aec8fb536e0a5f388ebebe9e8387d9acb">msgDock</a>-&gt;show();
+<a name="l01546"></a>01546 
+<a name="l01547"></a>01547 }
 <a name="l01548"></a>01548 
-<a name="l01549"></a>01549     qDebug() &lt;&lt; <span class="stringliteral">&quot;Command :&quot;</span> &lt;&lt; make &lt;&lt; Arguments.join(<span class="stringliteral">&quot; &quot;</span>);
-<a name="l01550"></a>01550     builder-&gt;start(make, Arguments);
-<a name="l01551"></a>01551 
-<a name="l01552"></a>01552     <span class="comment">// admsXml seems to communicate all via stdout, or is it because of make?</span>
-<a name="l01553"></a>01553     QString vaStatus;
-<a name="l01554"></a>01554     <span class="keywordflow">if</span> (!builder-&gt;waitForFinished()) {
-<a name="l01555"></a>01555         vaStatus = builder-&gt;errorString();
-<a name="l01556"></a>01556         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make failed:&quot;</span> &lt;&lt; vaStatus;
-<a name="l01557"></a>01557     }
-<a name="l01558"></a>01558     <span class="keywordflow">else</span> {
-<a name="l01559"></a>01559         vaStatus = builder-&gt;readAll();
-<a name="l01560"></a>01560         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make stdout&quot;</span>  &lt;&lt; vaStatus;
-<a name="l01561"></a>01561     }
-<a name="l01562"></a>01562 
-<a name="l01563"></a>01563     <span class="comment">//build libs</span>
-<a name="l01564"></a>01564     qDebug() &lt;&lt; <span class="stringliteral">&quot;\nbuild libs\n&quot;</span>;
-<a name="l01565"></a>01565 
-<a name="l01566"></a>01566     Arguments.clear();
-<a name="l01567"></a>01567 
-<a name="l01568"></a>01568     Arguments &lt;&lt; <span class="stringliteral">&quot;-f&quot;</span> &lt;&lt;  QDir::toNativeSeparators(include.absoluteFilePath(<span class="stringliteral">&quot;cpp2lib.makefile&quot;</span>))
-<a name="l01569"></a>01569               &lt;&lt; QString(<span class="stringliteral">&quot;PREFIX=\&quot;%1\&quot;&quot;</span>).arg(QDir::toNativeSeparators(prefix.absolutePath()))
-<a name="l01570"></a>01570               &lt;&lt; QString(<span class="stringliteral">&quot;PROJDIR=\&quot;%1\&quot;&quot;</span>).arg(QDir::toNativeSeparators(workDir))
-<a name="l01571"></a>01571               &lt;&lt; QString(<span class="stringliteral">&quot;MODEL=%1&quot;</span>).arg(vaModule);
-<a name="l01572"></a>01572 
-<a name="l01573"></a>01573     <span class="comment">// prepend command to log</span>
-<a name="l01574"></a>01574     cmdString = QString(<span class="stringliteral">&quot;%1 %2\n&quot;</span>).arg(make, Arguments.join(<span class="stringliteral">&quot; &quot;</span>));
-<a name="l01575"></a>01575     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a4ee89eba9326775357e243c20c6403c6" title="cppOutput holds the make output of running a C++ compiler">cppOutput</a>-&gt;appendPlainText(cmdString);
-<a name="l01576"></a>01576 
-<a name="l01577"></a>01577     builder-&gt;start(make, Arguments);
-<a name="l01578"></a>01578 
-<a name="l01579"></a>01579     QString cppStatus;
-<a name="l01580"></a>01580 
-<a name="l01581"></a>01581     <span class="keywordflow">if</span> (!builder-&gt;waitForFinished()) {
-<a name="l01582"></a>01582         cppStatus = builder-&gt;errorString();
-<a name="l01583"></a>01583         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make failed:&quot;</span> &lt;&lt; cppStatus;
-<a name="l01584"></a>01584     }
-<a name="l01585"></a>01585     <span class="keywordflow">else</span> {
-<a name="l01586"></a>01586         cppStatus = builder-&gt;readAll();
-<a name="l01587"></a>01587         qDebug() &lt;&lt; <span class="stringliteral">&quot;Make output:&quot;</span> &lt;&lt; cppStatus;
-<a name="l01588"></a>01588     }
-<a name="l01589"></a>01589     <span class="keyword">delete</span> builder;
-<a name="l01590"></a>01590 
-<a name="l01591"></a>01591     <span class="comment">// push make output to message dock</span>
-<a name="l01592"></a>01592     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a7c8df5b2db06709f7c8942a4893545af" title="admsOutput holds the make output of running admsXml">admsOutput</a>-&gt;appendPlainText(vaStatus);
-<a name="l01593"></a>01593     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#a4ee89eba9326775357e243c20c6403c6" title="cppOutput holds the make output of running a C++ compiler">cppOutput</a>-&gt;appendPlainText(cppStatus);
-<a name="l01594"></a>01594 
-<a name="l01595"></a>01595     <span class="comment">// shot the message docks</span>
-<a name="l01596"></a>01596     <a class="code" href="classQucsApp.html#af04bb1a30a43a72e3db0712d5410549b">messageDock</a>-&gt;<a class="code" href="classMessageDock.html#aec8fb536e0a5f388ebebe9e8387d9acb">msgDock</a>-&gt;show();
-<a name="l01597"></a>01597 
-<a name="l01598"></a>01598 }
-<a name="l01599"></a>01599 
-<a name="l01600"></a>01600 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01601"></a><a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">01601</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">QucsApp::slotHelpAbout</a>()
-<a name="l01602"></a>01602 {
-<a name="l01603"></a>01603   <a class="code" href="classAboutDialog.html">AboutDialog</a> *ad = <span class="keyword">new</span> <a class="code" href="classAboutDialog.html">AboutDialog</a>(<span class="keyword">this</span>);
-<a name="l01604"></a>01604   ad-&gt;exec();
-<a name="l01605"></a>01605 }
+<a name="l01549"></a>01549 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01550"></a><a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">01550</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">QucsApp::slotHelpAbout</a>()
+<a name="l01551"></a>01551 {
+<a name="l01552"></a>01552   <a class="code" href="classAboutDialog.html">AboutDialog</a> *ad = <span class="keyword">new</span> <a class="code" href="classAboutDialog.html">AboutDialog</a>(<span class="keyword">this</span>);
+<a name="l01553"></a>01553   ad-&gt;exec();
+<a name="l01554"></a>01554 }
+<a name="l01555"></a>01555 
+<a name="l01556"></a>01556 <span class="comment">// vim:ts=8:sw=2:noet</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1679,7 +1630,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2015 13:00:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 18 2015 13:39:31 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

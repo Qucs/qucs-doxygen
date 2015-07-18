@@ -11,12 +11,12 @@
 <area shape="rect" id="node17" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1164,109,1321,139"/>
 <area shape="rect" id="node24" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="1187,163,1299,192"/>
 <area shape="rect" id="node30" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="1185,395,1300,424"/>
-<area shape="rect" id="node32" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="1147,235,1339,264"/>
+<area shape="rect" id="node32" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="1147,235,1339,264"/>
 <area shape="rect" id="node19" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1639,84,1820,113"/>
 <area shape="rect" id="node21" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1392,109,1587,139"/>
 <area shape="rect" id="node26" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1452,163,1527,192"/>
 <area shape="rect" id="node28" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="1459,216,1520,245"/>
-<area shape="rect" id="node34" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1395,269,1584,299"/>
+<area shape="rect" id="node34" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="1395,269,1584,299"/>
 <area shape="rect" id="node38" href="$classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8" title="Schematic::undo" alt="" coords="1183,341,1303,371"/>
 <area shape="rect" id="node40" href="$classSchematic.html#ad129ff86a7b1d62375336ec68319b746" title="Schematic::redo" alt="" coords="1184,288,1301,317"/>
 <area shape="rect" id="node44" href="$classMarker.html#a2263a30efd44f198955bf313b4b3549b" title="compute VarPos from branch number n and click position (cx, cy) this is done by recreating branch sam..." alt="" coords="676,988,788,1017"/>
