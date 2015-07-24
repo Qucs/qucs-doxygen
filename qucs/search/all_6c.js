@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['l_5fspice',['L_SPICE',['../classL__SPICE.html',1,'L_SPICE'],['../classL__SPICE.html#a7b054de828562527dbffc5cb5e656aab',1,'L_SPICE::L_SPICE()']]],
+  ['l_5fspice_2ecpp',['L_SPICE.cpp',['../L__SPICE_8cpp.html',1,'']]],
+  ['l_5fspice_2eh',['L_SPICE.h',['../L__SPICE_8h.html',1,'']]],
   ['label',['Label',['../structAxis.html#a2909b0d20f35e8c3c21ec58804a8e5ab',1,'Axis::Label()'],['../classConductor.html#ab4a26a4b903537282a91567740414fdd',1,'Conductor::Label()'],['../classLoadDialog.html#ab9fddb594b53919d7ea362f086036bb9',1,'LoadDialog::label()'],['../classSaveDialog.html#a2936adb123cc8183b3aae4f93cc47421',1,'SaveDialog::label()']]],
   ['label1',['Label1',['../classDiagramDialog.html#aace5b6d7f22941039175519bb7ca7f10',1,'DiagramDialog']]],
   ['label2',['Label2',['../classDiagramDialog.html#aa6d3e253d3b4ba626ddebba61319663a',1,'DiagramDialog::Label2()'],['../classLabelDialog.html#a17666709c68d5b7fc9f55cba0f7a2e84',1,'LabelDialog::Label2()']]],
@@ -27,9 +30,16 @@ var searchData=
   ['launchtool',['launchTool',['../classQucsApp.html#a7c9205be735090296521ec0b55c084a1',1,'QucsApp']]],
   ['lblfilename',['lblFilename',['../classExportDialog.html#ae6e2c26159529efea31ef40913a5b6b7',1,'ExportDialog']]],
   ['lblformat',['lblFormat',['../classExportDialog.html#a42d21c2d84406f8870f3d8734a9c40b0',1,'ExportDialog']]],
+  ['lblngspice',['lblNgspice',['../classSimSettingsDialog.html#a74db56dd62d14348b84c53b6d76fa324',1,'SimSettingsDialog']]],
+  ['lblnprocs',['lblNprocs',['../classSimSettingsDialog.html#a7dea4308eefbc3198af0053b543cbe66',1,'SimSettingsDialog']]],
   ['lblratio',['lblRatio',['../classExportDialog.html#ae83c3a83bff4300a82982602357f058b',1,'ExportDialog']]],
   ['lblresolutionx',['lblResolutionX',['../classExportDialog.html#a3060f08de39ee26409c7aecddf79ce52',1,'ExportDialog']]],
   ['lblresolutiony',['lblResolutionY',['../classExportDialog.html#ab2b00092ef41fef3300d3db29b535133',1,'ExportDialog']]],
+  ['lblsim',['lblSim',['../classDiagramDialog.html#ad47a03f8a91688935a985815ad60d1ff',1,'DiagramDialog']]],
+  ['lblsimulator',['lblSimulator',['../classExternSimDialog.html#ac117b03118d5b3db2f51e9d288f7660b',1,'ExternSimDialog']]],
+  ['lblworkdir',['lblWorkdir',['../classSimSettingsDialog.html#a776f4b93a0834d317a7459f3b4dffc2d',1,'SimSettingsDialog']]],
+  ['lblxyce',['lblXyce',['../classSimSettingsDialog.html#a4995e3a64b158c248cb5fa35f7238fb8',1,'SimSettingsDialog']]],
+  ['lblxycepar',['lblXycePar',['../classSimSettingsDialog.html#ae3d6edb5c4c4485582e903f00a344a3f',1,'SimSettingsDialog']]],
   ['length',['Length',['../classArrow.html#ad7f837efd6945b72d3adccb50bdef379',1,'Arrow']]],
   ['libcomp',['LibComp',['../classLibComp.html',1,'LibComp'],['../classLibComp.html#aac4d972bc8d750333a6836dcde606efa',1,'LibComp::LibComp()']]],
   ['libcomp_2ecpp',['libcomp.cpp',['../libcomp_8cpp.html',1,'']]],
@@ -118,5 +128,11 @@ var searchData=
   ['lower1',['lower1',['../classExportDialog.html#a3c1583f818a63eaadaa8621de25b7c79',1,'ExportDialog']]],
   ['lower2',['lower2',['../classExportDialog.html#a7654902564b8cf51a4b8c44a71e7dddb',1,'ExportDialog']]],
   ['lower3',['lower3',['../classExportDialog.html#a9e961aa1ea285bd065ae4c32ee2df5ba',1,'ExportDialog']]],
-  ['lower4',['lower4',['../classExportDialog.html#a9377e03b87e13c071b1c83e30cd494be',1,'ExportDialog']]]
+  ['lower4',['lower4',['../classExportDialog.html#a9377e03b87e13c071b1c83e30cd494be',1,'ExportDialog']]],
+  ['ltl_5fspice',['LTL_SPICE',['../classLTL__SPICE.html',1,'LTL_SPICE'],['../classLTL__SPICE.html#a4883b20fd8311486da947996ac4b54c2',1,'LTL_SPICE::LTL_SPICE()']]],
+  ['ltl_5fspice_2ecpp',['LTL_SPICE.cpp',['../LTL__SPICE_8cpp.html',1,'']]],
+  ['ltl_5fspice_2eh',['LTL_SPICE.h',['../LTL__SPICE_8h.html',1,'']]],
+  ['ltra_5fspice',['LTRA_SPICE',['../classLTRA__SPICE.html',1,'LTRA_SPICE'],['../classLTRA__SPICE.html#ae587727e344ec3daf23138738c9fad16',1,'LTRA_SPICE::LTRA_SPICE()']]],
+  ['ltra_5fspice_2ecpp',['LTRA_SPICE.cpp',['../LTRA__SPICE_8cpp.html',1,'']]],
+  ['ltra_5fspice_2eh',['LTRA_SPICE.h',['../LTRA__SPICE_8h.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#a03e9b5cda52ac6ea186d0e97b3b4e999" title="Schematic::drawContents" alt="" coords="211,5,384,35"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a01c8c00f46a337d2b071be7f6b762dda" title="Schematic::print" alt="" coords="239,59,356,88"/>
+<area shape="rect" id="node3" href="$classSchematic.html#a03e9b5cda52ac6ea186d0e97b3b4e999" title="Schematic::drawContents" alt="" coords="237,5,411,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a01c8c00f46a337d2b071be7f6b762dda" title="Schematic::print" alt="" coords="485,84,603,113"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a07ed081e2ee35ec66662282734af8478" title="Schematic::paintSchToViewpainter" alt="" coords="211,109,437,139"/>
 </map>

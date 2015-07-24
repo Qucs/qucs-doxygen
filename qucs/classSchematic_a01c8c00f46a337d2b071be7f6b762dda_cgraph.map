@@ -1,17 +1,17 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$classSchematic.html#ab67fa7653a02ae2924dd27adb37b67a6" title="Schematic::sizeOfAll" alt="" coords="212,139,356,168"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a24cdab03ce88b2c2c23f783effb03d82" title="Schematic::sizeOfFrame" alt="" coords="449,272,615,301"/>
-<area shape="rect" id="node23" href="$classViewPainter.html#a63be88cb68a2980cbeb2f27de404b65b" title="ViewPainter::init" alt="" coords="225,272,343,301"/>
-<area shape="rect" id="node25" href="$classSchematic.html#af625bd9aa9c91ac22e53d97d844c5a40" title="Schematic::paintFrame" alt="" coords="205,325,363,355"/>
-<area shape="rect" id="node32" href="$classSchematic.html#a07ed081e2ee35ec66662282734af8478" title="Schematic::paintSchToViewpainter" alt="" coords="171,379,397,408"/>
-<area shape="rect" id="node5" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="463,5,601,35"/>
-<area shape="rect" id="node7" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="445,59,619,88"/>
-<area shape="rect" id="node11" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="465,112,599,141"/>
-<area shape="rect" id="node13" href="$classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="471,165,593,195"/>
-<area shape="rect" id="node19" href="$classPainting.html#ae250152f541f087fbe2f12aa4e17f424" title="Painting::Bounding" alt="" coords="467,219,597,248"/>
-<area shape="rect" id="node9" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="668,59,812,88"/>
-<area shape="rect" id="node15" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="693,165,787,195"/>
-<area shape="rect" id="node17" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="863,165,1012,195"/>
-<area shape="rect" id="node28" href="$classViewPainter.html#a028654d84ed163cfc31d45fd70364604" title="ViewPainter::map" alt="" coords="469,325,595,355"/>
-<area shape="rect" id="node30" href="$classViewPainter.html#afa7f493e41646a572cd5024a2ee6a2ae" title="ViewPainter::drawText" alt="" coords="455,379,609,408"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a24cdab03ce88b2c2c23f783effb03d82" title="Schematic::sizeOfFrame" alt="" coords="668,319,833,348"/>
+<area shape="rect" id="node23" href="$classViewPainter.html#a63be88cb68a2980cbeb2f27de404b65b" title="ViewPainter::init" alt="" coords="225,427,343,456"/>
+<area shape="rect" id="node25" href="$classSchematic.html#af625bd9aa9c91ac22e53d97d844c5a40" title="Schematic::paintFrame" alt="" coords="453,373,611,403"/>
+<area shape="rect" id="node32" href="$classSchematic.html#a07ed081e2ee35ec66662282734af8478" title="Schematic::paintSchToViewpainter" alt="" coords="171,323,397,352"/>
+<area shape="rect" id="node5" href="$classSchematic.html#afe0a0635c73654e10c52c87786db89fe" title="Schematic::textCorr" alt="" coords="463,112,601,141"/>
+<area shape="rect" id="node7" href="$classComponent.html#a100def1c162f5945bcb149e039ca1f82" title="Component::entireBounds" alt="" coords="445,165,619,195"/>
+<area shape="rect" id="node11" href="$classDiagram.html#a914fda6fb7fe713b32769f951ccb805a" title="Diagram::Bounding" alt="" coords="465,219,599,248"/>
+<area shape="rect" id="node13" href="$classMarker.html#a7b419171c998cb3d2f3cd4b6c255a4e6" title="Marker::Bounding" alt="" coords="471,5,593,35"/>
+<area shape="rect" id="node19" href="$classPainting.html#ae250152f541f087fbe2f12aa4e17f424" title="Painting::Bounding" alt="" coords="467,59,597,88"/>
+<area shape="rect" id="node9" href="$classComponent.html#a439c7a506532e1005a785d33916510c0" title="Component::textSize" alt="" coords="679,165,823,195"/>
+<area shape="rect" id="node15" href="$classMarker.html#a513cf0e10664950b0679886467e2edd6" title="Marker::diag" alt="" coords="704,5,797,35"/>
+<area shape="rect" id="node17" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="884,5,1033,35"/>
+<area shape="rect" id="node28" href="$classViewPainter.html#a028654d84ed163cfc31d45fd70364604" title="ViewPainter::map" alt="" coords="688,372,813,401"/>
+<area shape="rect" id="node30" href="$classViewPainter.html#afa7f493e41646a572cd5024a2ee6a2ae" title="ViewPainter::drawText" alt="" coords="673,425,828,455"/>
 </map>

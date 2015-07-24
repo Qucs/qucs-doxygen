@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['r_5fspice_2ecpp',['R_SPICE.cpp',['../R__SPICE_8cpp.html',1,'']]],
+  ['r_5fspice_2eh',['R_SPICE.h',['../R__SPICE_8h.html',1,'']]],
   ['rect3ddiagram_2ecpp',['rect3ddiagram.cpp',['../rect3ddiagram_8cpp.html',1,'']]],
   ['rect3ddiagram_2eh',['rect3ddiagram.h',['../rect3ddiagram_8h.html',1,'']]],
   ['rectangle_2ecpp',['rectangle.cpp',['../rectangle_8cpp.html',1,'']]],

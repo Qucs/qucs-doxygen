@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacespicecompat.html#aa7dd08a89e4d69ff50a5ca97ee5bdb0b" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="255,85,460,115"/>
+<area shape="rect" id="node5" href="$classEqnDefined.html#aab7829e502264bc9f15b18fbe779f643" title="EqnDefined::spice_netlist" alt="" coords="515,5,685,35"/>
+<area shape="rect" id="node7" href="$classEquation.html#af5d1e5b0c21e7a44042bffd85a9a6659" title="Equation::getExpression Extract equations that don&#39;t contain simualtion variables (voltages/cureents)..." alt="" coords="519,59,681,88"/>
+<area shape="rect" id="node9" href="$classEquation.html#a5b9d5839c425f0a501ba133327641949" title="Equation::getNgspiceScript Duplicate variables from .PARAM section in .control .endc section of Ngspi..." alt="" coords="509,112,691,141"/>
+<area shape="rect" id="node28" href="$namespacequcs2spice.html#ab2e5a9abfb8adf9d9323b565f0fdb6fb" title="qucs2spice::convert_edd" alt="" coords="517,165,683,195"/>
+<area shape="rect" id="node11" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="753,112,905,141"/>
+<area shape="rect" id="node13" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="984,112,1131,141"/>
+<area shape="rect" id="node15" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="1196,59,1412,88"/>
+<area shape="rect" id="node19" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="1229,112,1379,141"/>
+<area shape="rect" id="node25" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="1513,165,1636,195"/>
+<area shape="rect" id="node17" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="1461,59,1688,88"/>
+<area shape="rect" id="node21" href="$main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16" title="runNgspice" alt="" coords="1531,112,1619,141"/>
+<area shape="rect" id="node23" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1736,139,1787,168"/>
+<area shape="rect" id="node30" href="$namespacequcs2spice.html#a5f326894060f20f085fafa47d27c70c1" title="qucs2spice::convert_netlist Convert Qucs netlist to Spice netlist" alt="" coords="739,165,920,195"/>
+<area shape="rect" id="node32" href="$classLibComp.html#a2cb9fdca4ce37a3247c0e23371de9b6f" title="LibComp::createSubNetlist" alt="" coords="968,165,1147,195"/>
+</map>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['l_5fspice',['L_SPICE',['../classL__SPICE.html',1,'']]],
   ['labeldialog',['LabelDialog',['../classLabelDialog.html',1,'']]],
   ['libcomp',['LibComp',['../classLibComp.html',1,'']]],
   ['librarydialog',['LibraryDialog',['../classLibraryDialog.html',1,'']]],
@@ -15,5 +16,7 @@ var searchData=
   ['logical_5fnor',['Logical_NOR',['../classLogical__NOR.html',1,'']]],
   ['logical_5for',['Logical_OR',['../classLogical__OR.html',1,'']]],
   ['logical_5fxnor',['Logical_XNOR',['../classLogical__XNOR.html',1,'']]],
-  ['logical_5fxor',['Logical_XOR',['../classLogical__XOR.html',1,'']]]
+  ['logical_5fxor',['Logical_XOR',['../classLogical__XOR.html',1,'']]],
+  ['ltl_5fspice',['LTL_SPICE',['../classLTL__SPICE.html',1,'']]],
+  ['ltra_5fspice',['LTRA_SPICE',['../classLTRA__SPICE.html',1,'']]]
 ];

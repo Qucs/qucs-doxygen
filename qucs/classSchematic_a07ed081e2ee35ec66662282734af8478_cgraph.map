@@ -1,3 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classViewPainter.html#afa7f493e41646a572cd5024a2ee6a2ae" title="ViewPainter::drawText" alt="" coords="280,5,435,35"/>
+<area shape="rect" id="node3" href="$classSchematic.html#a24cdab03ce88b2c2c23f783effb03d82" title="Schematic::sizeOfFrame" alt="" coords="487,5,652,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#af625bd9aa9c91ac22e53d97d844c5a40" title="Schematic::paintFrame" alt="" coords="280,59,437,88"/>
+<area shape="rect" id="node10" href="$classViewPainter.html#afa7f493e41646a572cd5024a2ee6a2ae" title="ViewPainter::drawText" alt="" coords="492,112,647,141"/>
+<area shape="rect" id="node8" href="$classViewPainter.html#a028654d84ed163cfc31d45fd70364604" title="ViewPainter::map" alt="" coords="507,59,632,88"/>
 </map>

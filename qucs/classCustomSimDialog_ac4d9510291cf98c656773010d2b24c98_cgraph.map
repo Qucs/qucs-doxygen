@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classCustomSimDialog.html#aa8fa69cf0b9fbf66931671e7a67dd5c6" title="CustomSimDialog::slotApply Aplly changes of component properties." alt="" coords="556,28,745,57"/>
+<area shape="rect" id="node5" href="$classCustomSimDialog.html#af86e06bd09dde68f170f01d5823215b2" title="CustomSimDialog::slotCancel Close dialog without apply chages." alt="" coords="303,26,500,56"/>
+<area shape="rect" id="node7" href="$classCustomSimDialog.html#a04172306230f67cf62513b1f9cdb77dc" title="CustomSimDialog::slotOK Apply changes and exit." alt="" coords="313,80,489,109"/>
+<area shape="rect" id="node10" href="$classCustomSimDialog.html#aefb6ebd2cc804df8496bc76141170a08" title="CustomSimDialog::slotFindVars Auto&#45;find used variables and nodes in simulation script and place them ..." alt="" coords="297,133,505,162"/>
+</map>

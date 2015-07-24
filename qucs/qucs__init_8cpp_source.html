@@ -690,452 +690,456 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00610"></a>00610   tr(<span class="stringliteral">&quot;Show Last Netlist\n\nShows the netlist of the last simulation&quot;</span>));
 <a name="l00611"></a>00611   connect(<a class="code" href="classQucsApp.html#a0bab68f60d1eaedda1879c7987d8dfa2">showNet</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a453c38796009855ef13e924815bbba9f">slotShowLastNetlist</a>()));
 <a name="l00612"></a>00612 
-<a name="l00613"></a>00613   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Tool&amp;bar&quot;</span>), <span class="keyword">this</span>);
-<a name="l00614"></a>00614   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setCheckable(<span class="keyword">true</span>);
-<a name="l00615"></a>00615   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the toolbar&quot;</span>));
-<a name="l00616"></a>00616   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;Toolbar\n\nEnables/disables the toolbar&quot;</span>));
-<a name="l00617"></a>00617   connect(<a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">slotViewToolBar</a>(<span class="keywordtype">bool</span>)));
-<a name="l00618"></a>00618 
-<a name="l00619"></a>00619   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Statusbar&quot;</span>), <span class="keyword">this</span>);
-<a name="l00620"></a>00620   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setCheckable(<span class="keyword">true</span>);
-<a name="l00621"></a>00621   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the statusbar&quot;</span>));
-<a name="l00622"></a>00622   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setWhatsThis(
-<a name="l00623"></a>00623   tr(<span class="stringliteral">&quot;Statusbar\n\nEnables/disables the statusbar&quot;</span>));
-<a name="l00624"></a>00624   connect(<a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">slotViewStatusBar</a>(<span class="keywordtype">bool</span>)));
-<a name="l00625"></a>00625 
-<a name="l00626"></a>00626   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Dock Window&quot;</span>), <span class="keyword">this</span>);
-<a name="l00627"></a>00627   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setCheckable(<span class="keyword">true</span>);
-<a name="l00628"></a>00628   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the browse dock window&quot;</span>));
-<a name="l00629"></a>00629   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setWhatsThis(
-<a name="l00630"></a>00630   tr(<span class="stringliteral">&quot;Browse Window\n\nEnables/disables the browse dock window&quot;</span>));
-<a name="l00631"></a>00631   connect(<a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">slotViewBrowseDock</a>(<span class="keywordtype">bool</span>)));
-<a name="l00632"></a>00632 
-<a name="l00633"></a>00633   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Octave Window&quot;</span>), <span class="keyword">this</span>);
-<a name="l00634"></a>00634   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setCheckable(<span class="keyword">true</span>);
-<a name="l00635"></a>00635   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Shows/hides the Octave dock window&quot;</span>));
-<a name="l00636"></a>00636   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setWhatsThis(
-<a name="l00637"></a>00637       tr(<span class="stringliteral">&quot;Octave Window\n\nShows/hides the Octave dock window&quot;</span>));
-<a name="l00638"></a>00638   connect(<a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">slotViewOctaveDock</a>(<span class="keywordtype">bool</span>)));
-<a name="l00639"></a>00639 
-<a name="l00640"></a>00640   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Help Index...&quot;</span>), <span class="keyword">this</span>);
-<a name="l00641"></a>00641   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setShortcut(Qt::Key_F1);
-<a name="l00642"></a>00642   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Index of Qucs Help&quot;</span>));
-<a name="l00643"></a>00643   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;Help Index\n\nIndex of intern Qucs help&quot;</span>));
-<a name="l00644"></a>00644   connect(<a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a61c6d6cf34f9930b304cd42525a7dc9c">slotHelpIndex</a>()));
-<a name="l00645"></a>00645 
-<a name="l00646"></a>00646   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Getting Started...&quot;</span>), <span class="keyword">this</span>);
-<a name="l00647"></a>00647   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Getting Started with Qucs&quot;</span>));
-<a name="l00648"></a>00648   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>-&gt;setWhatsThis(
-<a name="l00649"></a>00649   tr(<span class="stringliteral">&quot;Getting Started\n\nShort introduction into Qucs&quot;</span>));
-<a name="l00650"></a>00650   connect(<a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#afb347e41a4fb1c8044c92da125e6c6f0">slotGettingStarted</a>()));
-<a name="l00651"></a>00651 
-<a name="l00652"></a>00652   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;About Qucs...&quot;</span>), <span class="keyword">this</span>);
-<a name="l00653"></a>00653   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;About the application&quot;</span>));
-<a name="l00654"></a>00654   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;About\n\nAbout the application&quot;</span>));
-<a name="l00655"></a>00655   connect(<a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">slotHelpAbout</a>()));
-<a name="l00656"></a>00656 
-<a name="l00657"></a>00657   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;About Qt...&quot;</span>), <span class="keyword">this</span>);
-<a name="l00658"></a>00658   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;About Qt&quot;</span>));
-<a name="l00659"></a>00659   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;About Qt\n\nAbout Qt by Trolltech&quot;</span>));
-<a name="l00660"></a>00660   connect(<a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-<a name="l00661"></a>00661 }
-<a name="l00662"></a>00662 
-<a name="l00663"></a>00663 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00664"></a><a class="code" href="classQucsApp.html#a8031a76274a75eb2428fdba555032fde">00664</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a8031a76274a75eb2428fdba555032fde">QucsApp::initMenuBar</a>()
-<a name="l00665"></a>00665 {
-<a name="l00666"></a>00666   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;File&quot;</span>));  <span class="comment">// menuBar entry fileMenu</span>
-<a name="l00667"></a>00667   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4f31c4f242a9298565458a48165004f4">fileNew</a>);
-<a name="l00668"></a>00668   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac670aa160dab3e77e006b8819e7a1617">textNew</a>);
-<a name="l00669"></a>00669   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a051dce5fc3ae2071b1f4ecf128ebf698">fileOpen</a>);
-<a name="l00670"></a>00670   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a79b0b05ac0a6e65c0132872cc7630184">fileClose</a>);
-<a name="l00671"></a>00671 
-<a name="l00672"></a>00672   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;Open Recent&quot;</span>),<a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>);
-<a name="l00673"></a>00673   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>);
-<a name="l00674"></a>00674   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>; ++i) {
-<a name="l00675"></a>00675     <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]);
-<a name="l00676"></a>00676   }
-<a name="l00677"></a>00677   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;insertSeparator();
-<a name="l00678"></a>00678   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#af5f12476ea2666c800870985e9b9117d">fileClearRecent</a>);
-<a name="l00679"></a>00679 
-<a name="l00680"></a>00680   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
-<a name="l00681"></a>00681   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab9e023fe08109f147fab1d92eabbd68a">fileSave</a>);
-<a name="l00682"></a>00682   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8bd118e03f228bc77fc89080c6891e0d">fileSaveAll</a>);
-<a name="l00683"></a>00683   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0272461865fba370629dcb1b043639ba">fileSaveAs</a>);
-<a name="l00684"></a>00684   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46bcb3fd090de847c1596dff63031bd">exportAsImage</a>);
-<a name="l00685"></a>00685   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a54aae25f73bc19cb72785c6a5ad956e3">filePrint</a>);
-<a name="l00686"></a>00686   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a224ad7b18eee6a149dfce88a13fe0290">filePrintFit</a>);
-<a name="l00687"></a>00687   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
-<a name="l00688"></a>00688   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2b070114b9f84f7f5bde4e83bde4cf9f">fileExamples</a>);
-<a name="l00689"></a>00689   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
-<a name="l00690"></a>00690   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73eb2089ad7392e2cd7b322018e231d0">fileSettings</a>);
-<a name="l00691"></a>00691   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a642278fda37a33a3c9e5bdb825a59ca9">symEdit</a>);
+<a name="l00613"></a>00613   <a class="code" href="classQucsApp.html#a466b0e317cd8df17f83020c4e4979c0c">simSpice</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Simulate with spice&quot;</span>),<span class="keyword">this</span>);
+<a name="l00614"></a>00614   connect(<a class="code" href="classQucsApp.html#a466b0e317cd8df17f83020c4e4979c0c">simSpice</a>,SIGNAL(activated()),SLOT(<a class="code" href="classQucsApp.html#a843605f4190dd465dfa0760dc2891264">slotSimulateWithSpice</a>()));
+<a name="l00615"></a>00615 
+<a name="l00616"></a>00616   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Tool&amp;bar&quot;</span>), <span class="keyword">this</span>);
+<a name="l00617"></a>00617   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setCheckable(<span class="keyword">true</span>);
+<a name="l00618"></a>00618   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the toolbar&quot;</span>));
+<a name="l00619"></a>00619   <a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;Toolbar\n\nEnables/disables the toolbar&quot;</span>));
+<a name="l00620"></a>00620   connect(<a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">slotViewToolBar</a>(<span class="keywordtype">bool</span>)));
+<a name="l00621"></a>00621 
+<a name="l00622"></a>00622   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Statusbar&quot;</span>), <span class="keyword">this</span>);
+<a name="l00623"></a>00623   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setCheckable(<span class="keyword">true</span>);
+<a name="l00624"></a>00624   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the statusbar&quot;</span>));
+<a name="l00625"></a>00625   <a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>-&gt;setWhatsThis(
+<a name="l00626"></a>00626   tr(<span class="stringliteral">&quot;Statusbar\n\nEnables/disables the statusbar&quot;</span>));
+<a name="l00627"></a>00627   connect(<a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">slotViewStatusBar</a>(<span class="keywordtype">bool</span>)));
+<a name="l00628"></a>00628 
+<a name="l00629"></a>00629   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Dock Window&quot;</span>), <span class="keyword">this</span>);
+<a name="l00630"></a>00630   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setCheckable(<span class="keyword">true</span>);
+<a name="l00631"></a>00631   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Enables/disables the browse dock window&quot;</span>));
+<a name="l00632"></a>00632   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setWhatsThis(
+<a name="l00633"></a>00633   tr(<span class="stringliteral">&quot;Browse Window\n\nEnables/disables the browse dock window&quot;</span>));
+<a name="l00634"></a>00634   connect(<a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">slotViewBrowseDock</a>(<span class="keywordtype">bool</span>)));
+<a name="l00635"></a>00635 
+<a name="l00636"></a>00636   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Octave Window&quot;</span>), <span class="keyword">this</span>);
+<a name="l00637"></a>00637   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setCheckable(<span class="keyword">true</span>);
+<a name="l00638"></a>00638   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Shows/hides the Octave dock window&quot;</span>));
+<a name="l00639"></a>00639   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setWhatsThis(
+<a name="l00640"></a>00640       tr(<span class="stringliteral">&quot;Octave Window\n\nShows/hides the Octave dock window&quot;</span>));
+<a name="l00641"></a>00641   connect(<a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>, SIGNAL(toggled(<span class="keywordtype">bool</span>)), SLOT(<a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">slotViewOctaveDock</a>(<span class="keywordtype">bool</span>)));
+<a name="l00642"></a>00642 
+<a name="l00643"></a>00643   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Help Index...&quot;</span>), <span class="keyword">this</span>);
+<a name="l00644"></a>00644   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setShortcut(Qt::Key_F1);
+<a name="l00645"></a>00645   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Index of Qucs Help&quot;</span>));
+<a name="l00646"></a>00646   <a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;Help Index\n\nIndex of intern Qucs help&quot;</span>));
+<a name="l00647"></a>00647   connect(<a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a61c6d6cf34f9930b304cd42525a7dc9c">slotHelpIndex</a>()));
+<a name="l00648"></a>00648 
+<a name="l00649"></a>00649   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;Getting Started...&quot;</span>), <span class="keyword">this</span>);
+<a name="l00650"></a>00650   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Getting Started with Qucs&quot;</span>));
+<a name="l00651"></a>00651   <a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>-&gt;setWhatsThis(
+<a name="l00652"></a>00652   tr(<span class="stringliteral">&quot;Getting Started\n\nShort introduction into Qucs&quot;</span>));
+<a name="l00653"></a>00653   connect(<a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#afb347e41a4fb1c8044c92da125e6c6f0">slotGettingStarted</a>()));
+<a name="l00654"></a>00654 
+<a name="l00655"></a>00655   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;About Qucs...&quot;</span>), <span class="keyword">this</span>);
+<a name="l00656"></a>00656   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;About the application&quot;</span>));
+<a name="l00657"></a>00657   <a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;About\n\nAbout the application&quot;</span>));
+<a name="l00658"></a>00658   connect(<a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a4b6273067a0110307312571555135fb0">slotHelpAbout</a>()));
+<a name="l00659"></a>00659 
+<a name="l00660"></a>00660   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a> = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;About Qt...&quot;</span>), <span class="keyword">this</span>);
+<a name="l00661"></a>00661   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>-&gt;setStatusTip(tr(<span class="stringliteral">&quot;About Qt&quot;</span>));
+<a name="l00662"></a>00662   <a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;About Qt\n\nAbout Qt by Trolltech&quot;</span>));
+<a name="l00663"></a>00663   connect(<a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
+<a name="l00664"></a>00664 }
+<a name="l00665"></a>00665 
+<a name="l00666"></a>00666 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00667"></a><a class="code" href="classQucsApp.html#a8031a76274a75eb2428fdba555032fde">00667</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a8031a76274a75eb2428fdba555032fde">QucsApp::initMenuBar</a>()
+<a name="l00668"></a>00668 {
+<a name="l00669"></a>00669   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;File&quot;</span>));  <span class="comment">// menuBar entry fileMenu</span>
+<a name="l00670"></a>00670   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4f31c4f242a9298565458a48165004f4">fileNew</a>);
+<a name="l00671"></a>00671   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac670aa160dab3e77e006b8819e7a1617">textNew</a>);
+<a name="l00672"></a>00672   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a051dce5fc3ae2071b1f4ecf128ebf698">fileOpen</a>);
+<a name="l00673"></a>00673   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a79b0b05ac0a6e65c0132872cc7630184">fileClose</a>);
+<a name="l00674"></a>00674 
+<a name="l00675"></a>00675   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;Open Recent&quot;</span>),<a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>);
+<a name="l00676"></a>00676   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>);
+<a name="l00677"></a>00677   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classQucsApp.html#ae1a2e3319c738dd5eb3441cabfe5621ead0614ba0aaefe5a5d3bd0654d475c8cc">MaxRecentFiles</a>; ++i) {
+<a name="l00678"></a>00678     <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a163cd6939b0e7593e3cd3508c3632688">fileRecentAction</a>[i]);
+<a name="l00679"></a>00679   }
+<a name="l00680"></a>00680   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;insertSeparator();
+<a name="l00681"></a>00681   <a class="code" href="classQucsApp.html#aff5b9e7b7571a4efc124a90f29dba370">recentFilesMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#af5f12476ea2666c800870985e9b9117d">fileClearRecent</a>);
+<a name="l00682"></a>00682 
+<a name="l00683"></a>00683   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
+<a name="l00684"></a>00684   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab9e023fe08109f147fab1d92eabbd68a">fileSave</a>);
+<a name="l00685"></a>00685   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8bd118e03f228bc77fc89080c6891e0d">fileSaveAll</a>);
+<a name="l00686"></a>00686   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0272461865fba370629dcb1b043639ba">fileSaveAs</a>);
+<a name="l00687"></a>00687   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46bcb3fd090de847c1596dff63031bd">exportAsImage</a>);
+<a name="l00688"></a>00688   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a54aae25f73bc19cb72785c6a5ad956e3">filePrint</a>);
+<a name="l00689"></a>00689   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a224ad7b18eee6a149dfce88a13fe0290">filePrintFit</a>);
+<a name="l00690"></a>00690   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
+<a name="l00691"></a>00691   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2b070114b9f84f7f5bde4e83bde4cf9f">fileExamples</a>);
 <a name="l00692"></a>00692   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
-<a name="l00693"></a>00693   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a5745f4f307583d96220d628110853ec4">applSettings</a>);
-<a name="l00694"></a>00694   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7153901bc54ee33c295ca89ed46774ae">refreshSchPath</a>);
+<a name="l00693"></a>00693   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73eb2089ad7392e2cd7b322018e231d0">fileSettings</a>);
+<a name="l00694"></a>00694   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a642278fda37a33a3c9e5bdb825a59ca9">symEdit</a>);
 <a name="l00695"></a>00695   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
-<a name="l00696"></a>00696   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a593278699e2a740fdaa8f3c841b65c07">fileQuit</a>);
-<a name="l00697"></a>00697 
-<a name="l00698"></a>00698   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Edit&quot;</span>));  <span class="comment">// menuBar entry editMenu</span>
-<a name="l00699"></a>00699   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>);
-<a name="l00700"></a>00700   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>);
-<a name="l00701"></a>00701   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
-<a name="l00702"></a>00702   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46b32d609bf28da7bc5740a76d22813">editCut</a>);
-<a name="l00703"></a>00703   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a337c284adfa65d2926b6203e7d4046c8">editCopy</a>);
-<a name="l00704"></a>00704   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8838e075f6a9679012f2bf0ef7acacb6">editPaste</a>);
-<a name="l00705"></a>00705   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afcccafc2680422a68d583f9a0a73f573">editDelete</a>);
-<a name="l00706"></a>00706   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
-<a name="l00707"></a>00707   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7169b1bfa43595e0269ce41567a9b0e3">select</a>);
-<a name="l00708"></a>00708   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8b15e40afe5e4fabc159887a934a94eb">selectAll</a>);
-<a name="l00709"></a>00709   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8a4bf18182eaf0696cea881f8c4bba7a">selectMarker</a>);
-<a name="l00710"></a>00710   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ade188651399a4c4b0c4fd374f3bf1574">editFind</a>);
-<a name="l00711"></a>00711   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a66c44c3fb2bb04ee9f65c9254bcc408f">changeProps</a>);
-<a name="l00712"></a>00712   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae3cc94f7a02f73a3f204d2c44c36016e">editRotate</a>);
-<a name="l00713"></a>00713   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0b4600ec0f9e8d1ac17643f90b1841bd">editMirror</a>);
-<a name="l00714"></a>00714   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a209314f405ada145249d3ce1eff1a45f">editMirrorY</a>);
-<a name="l00715"></a>00715   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a760183b32f882380b92afa536d8490ce">editActivate</a>);
-<a name="l00716"></a>00716   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
-<a name="l00717"></a>00717   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a57d63af522dfef26b5e111a1a0f8698d">intoH</a>);
-<a name="l00718"></a>00718   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa1a25f0fedb060643d42a9944c1da8bd">popH</a>);
-<a name="l00719"></a>00719 
-<a name="l00720"></a>00720 
-<a name="l00721"></a>00721 
-<a name="l00722"></a>00722   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;P&amp;ositioning&quot;</span>));  <span class="comment">// menuBar entry alignMenu</span>
-<a name="l00723"></a>00723   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a36990c0245bf6b7cb4fad8bc5d54a5fc">moveText</a>);
-<a name="l00724"></a>00724   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aed590d4d70925a7a2dec3f8b22a0ca75">onGrid</a>);
-<a name="l00725"></a>00725   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;insertSeparator();
-<a name="l00726"></a>00726   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a69c2ab3bfeb692acfa789a12e6fcb527">centerHor</a>);
-<a name="l00727"></a>00727   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6776b90ffc60f5566790105655232c58">centerVert</a>);
+<a name="l00696"></a>00696   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a5745f4f307583d96220d628110853ec4">applSettings</a>);
+<a name="l00697"></a>00697   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7153901bc54ee33c295ca89ed46774ae">refreshSchPath</a>);
+<a name="l00698"></a>00698   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;insertSeparator();
+<a name="l00699"></a>00699   <a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a593278699e2a740fdaa8f3c841b65c07">fileQuit</a>);
+<a name="l00700"></a>00700 
+<a name="l00701"></a>00701   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Edit&quot;</span>));  <span class="comment">// menuBar entry editMenu</span>
+<a name="l00702"></a>00702   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>);
+<a name="l00703"></a>00703   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>);
+<a name="l00704"></a>00704   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
+<a name="l00705"></a>00705   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46b32d609bf28da7bc5740a76d22813">editCut</a>);
+<a name="l00706"></a>00706   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a337c284adfa65d2926b6203e7d4046c8">editCopy</a>);
+<a name="l00707"></a>00707   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8838e075f6a9679012f2bf0ef7acacb6">editPaste</a>);
+<a name="l00708"></a>00708   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afcccafc2680422a68d583f9a0a73f573">editDelete</a>);
+<a name="l00709"></a>00709   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
+<a name="l00710"></a>00710   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7169b1bfa43595e0269ce41567a9b0e3">select</a>);
+<a name="l00711"></a>00711   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8b15e40afe5e4fabc159887a934a94eb">selectAll</a>);
+<a name="l00712"></a>00712   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8a4bf18182eaf0696cea881f8c4bba7a">selectMarker</a>);
+<a name="l00713"></a>00713   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ade188651399a4c4b0c4fd374f3bf1574">editFind</a>);
+<a name="l00714"></a>00714   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a66c44c3fb2bb04ee9f65c9254bcc408f">changeProps</a>);
+<a name="l00715"></a>00715   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae3cc94f7a02f73a3f204d2c44c36016e">editRotate</a>);
+<a name="l00716"></a>00716   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0b4600ec0f9e8d1ac17643f90b1841bd">editMirror</a>);
+<a name="l00717"></a>00717   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a209314f405ada145249d3ce1eff1a45f">editMirrorY</a>);
+<a name="l00718"></a>00718   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a760183b32f882380b92afa536d8490ce">editActivate</a>);
+<a name="l00719"></a>00719   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;insertSeparator();
+<a name="l00720"></a>00720   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a57d63af522dfef26b5e111a1a0f8698d">intoH</a>);
+<a name="l00721"></a>00721   <a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa1a25f0fedb060643d42a9944c1da8bd">popH</a>);
+<a name="l00722"></a>00722 
+<a name="l00723"></a>00723 
+<a name="l00724"></a>00724 
+<a name="l00725"></a>00725   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;P&amp;ositioning&quot;</span>));  <span class="comment">// menuBar entry alignMenu</span>
+<a name="l00726"></a>00726   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a36990c0245bf6b7cb4fad8bc5d54a5fc">moveText</a>);
+<a name="l00727"></a>00727   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aed590d4d70925a7a2dec3f8b22a0ca75">onGrid</a>);
 <a name="l00728"></a>00728   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;insertSeparator();
-<a name="l00729"></a>00729   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aaf8361a5bc435e30817b9919d27b14c0">alignTop</a>);
-<a name="l00730"></a>00730   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a1314b1f263fc6572ef507d4034b80efc">alignBottom</a>);
-<a name="l00731"></a>00731   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad9a79b9d7372d51659b618a0a435efe4">alignLeft</a>);
-<a name="l00732"></a>00732   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a3a09e210f8963bdf18005666c8e7ffd6">alignRight</a>);
-<a name="l00733"></a>00733   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;insertSeparator();
-<a name="l00734"></a>00734   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a886389efc019f34cc9c108f25a2d7d81">distrHor</a>);
-<a name="l00735"></a>00735   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6b86da9433029036bbc54cdd28829b0d">distrVert</a>);
-<a name="l00736"></a>00736 
-<a name="l00737"></a>00737 
-<a name="l00738"></a>00738 
-<a name="l00739"></a>00739   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Insert&quot;</span>));  <span class="comment">// menuBar entry insMenu</span>
-<a name="l00740"></a>00740   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7f4d0ac469393aafe28681e4002a7e91">insWire</a>);
-<a name="l00741"></a>00741   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0a7bb083b067f8d1b3c117a9cc2c4069">insLabel</a>);
-<a name="l00742"></a>00742   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d8797845f3fd3717a631718fce2624d">insEquation</a>);
-<a name="l00743"></a>00743   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a728a29024c654ffe10256a611fd9d231">insGround</a>);
-<a name="l00744"></a>00744   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0da454185017324cc636606b416224fe">insPort</a>);
-<a name="l00745"></a>00745   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6c82ba810ce40ef09f3f5faca2794bc9">setMarker</a>);
-<a name="l00746"></a>00746   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aaba611a8623d6995bc919834be7de400">insEntity</a>);
-<a name="l00747"></a>00747 
-<a name="l00748"></a>00748 
-<a name="l00749"></a>00749   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Project&quot;</span>));  <span class="comment">// menuBar entry projMenu</span>
-<a name="l00750"></a>00750   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7168938fdc4541b617c7869a5420b66">projNew</a>);
-<a name="l00751"></a>00751   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a95dbefb702f2462290529d70d6a4c7fe">projOpen</a>);
-<a name="l00752"></a>00752   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#acbbffc4b06534e7acce72fac3fed661b">addToProj</a>);
-<a name="l00753"></a>00753   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abea54876387570e6d9c694f453a84bc5">projClose</a>);
-<a name="l00754"></a>00754   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7d7ce0265b2c217800768b3579ec9c38">projDel</a>);
-<a name="l00755"></a>00755   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;insertSeparator();
-<a name="l00756"></a>00756   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#af75d3c6c4a696f5dd1d01223ac54bf8e">createLib</a>);
-<a name="l00757"></a>00757   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abcb1b753fd058c837281d260afa99a19">createPkg</a>);
-<a name="l00758"></a>00758   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab00e61325e76013168b0882e3db378c2">extractPkg</a>);
-<a name="l00759"></a>00759   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;insertSeparator();
-<a name="l00760"></a>00760   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa39aec9ae3fbf8927197bc447e2e0541">importData</a>);
-<a name="l00761"></a>00761   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a3e95cc5d57a1c48ea34402e752cd5b44">graph2csv</a>);
+<a name="l00729"></a>00729   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a69c2ab3bfeb692acfa789a12e6fcb527">centerHor</a>);
+<a name="l00730"></a>00730   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6776b90ffc60f5566790105655232c58">centerVert</a>);
+<a name="l00731"></a>00731   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;insertSeparator();
+<a name="l00732"></a>00732   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aaf8361a5bc435e30817b9919d27b14c0">alignTop</a>);
+<a name="l00733"></a>00733   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a1314b1f263fc6572ef507d4034b80efc">alignBottom</a>);
+<a name="l00734"></a>00734   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad9a79b9d7372d51659b618a0a435efe4">alignLeft</a>);
+<a name="l00735"></a>00735   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a3a09e210f8963bdf18005666c8e7ffd6">alignRight</a>);
+<a name="l00736"></a>00736   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;insertSeparator();
+<a name="l00737"></a>00737   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a886389efc019f34cc9c108f25a2d7d81">distrHor</a>);
+<a name="l00738"></a>00738   <a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6b86da9433029036bbc54cdd28829b0d">distrVert</a>);
+<a name="l00739"></a>00739 
+<a name="l00740"></a>00740 
+<a name="l00741"></a>00741 
+<a name="l00742"></a>00742   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Insert&quot;</span>));  <span class="comment">// menuBar entry insMenu</span>
+<a name="l00743"></a>00743   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7f4d0ac469393aafe28681e4002a7e91">insWire</a>);
+<a name="l00744"></a>00744   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0a7bb083b067f8d1b3c117a9cc2c4069">insLabel</a>);
+<a name="l00745"></a>00745   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d8797845f3fd3717a631718fce2624d">insEquation</a>);
+<a name="l00746"></a>00746   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a728a29024c654ffe10256a611fd9d231">insGround</a>);
+<a name="l00747"></a>00747   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0da454185017324cc636606b416224fe">insPort</a>);
+<a name="l00748"></a>00748   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6c82ba810ce40ef09f3f5faca2794bc9">setMarker</a>);
+<a name="l00749"></a>00749   <a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aaba611a8623d6995bc919834be7de400">insEntity</a>);
+<a name="l00750"></a>00750 
+<a name="l00751"></a>00751 
+<a name="l00752"></a>00752   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Project&quot;</span>));  <span class="comment">// menuBar entry projMenu</span>
+<a name="l00753"></a>00753   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7168938fdc4541b617c7869a5420b66">projNew</a>);
+<a name="l00754"></a>00754   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a95dbefb702f2462290529d70d6a4c7fe">projOpen</a>);
+<a name="l00755"></a>00755   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#acbbffc4b06534e7acce72fac3fed661b">addToProj</a>);
+<a name="l00756"></a>00756   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abea54876387570e6d9c694f453a84bc5">projClose</a>);
+<a name="l00757"></a>00757   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7d7ce0265b2c217800768b3579ec9c38">projDel</a>);
+<a name="l00758"></a>00758   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;insertSeparator();
+<a name="l00759"></a>00759   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#af75d3c6c4a696f5dd1d01223ac54bf8e">createLib</a>);
+<a name="l00760"></a>00760   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abcb1b753fd058c837281d260afa99a19">createPkg</a>);
+<a name="l00761"></a>00761   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab00e61325e76013168b0882e3db378c2">extractPkg</a>);
 <a name="l00762"></a>00762   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;insertSeparator();
-<a name="l00763"></a>00763   <span class="comment">// TODO only enable if document is VA file</span>
-<a name="l00764"></a>00764   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8e73acba61277528937f2060f63b888d">buildModule</a>);
-<a name="l00765"></a>00765   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6b26df2da4e8a97a2909e09832203f23">loadModule</a>);
-<a name="l00766"></a>00766 
-<a name="l00767"></a>00767   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Tools&quot;</span>));  <span class="comment">// menuBar entry toolMenu</span>
-<a name="l00768"></a>00768   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a5add9963860d55acc80e393811e1da2b">callEditor</a>);
-<a name="l00769"></a>00769   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#add69ed7f49d2aaa7c9a73ed3a0edbbde">callFilter</a>);
-<a name="l00770"></a>00770   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad8c1f037879ec56ee455c035b75255cd">callActiveFilter</a>);
-<a name="l00771"></a>00771   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a47fb46cb4583d790cfceb95bfc81385c">callLine</a>);
-<a name="l00772"></a>00772   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8231575de78e718abf50c7c8ba307517">callLib</a>);
-<a name="l00773"></a>00773   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abea84598f1260e04fa93e464173c4f20">callMatch</a>);
-<a name="l00774"></a>00774   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a435a591a3281bb97ac26a9886452c7c4">callAtt</a>);
-<a name="l00775"></a>00775   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae283a3c6ef2dd6ef820cece7ae79aaf8">callRes</a>);
-<a name="l00776"></a>00776 
-<a name="l00777"></a>00777 
-<a name="l00778"></a>00778 
-<a name="l00779"></a>00779   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Simulation&quot;</span>));  <span class="comment">// menuBar entry simMenu</span>
-<a name="l00780"></a>00780   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2297dd0fa22dcb3f12db757f0c9250df">simulate</a>);
-<a name="l00781"></a>00781   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d99f889affd25dc1252e6699a933a7d">dpl_sch</a>);
-<a name="l00782"></a>00782   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#adf5a87732df315cc981591cb9f9fb250">dcbias</a>);
-<a name="l00783"></a>00783   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa5a489731053c3e656a657321c112f8e">showMsg</a>);
-<a name="l00784"></a>00784   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0bab68f60d1eaedda1879c7987d8dfa2">showNet</a>);
-<a name="l00785"></a>00785 
-<a name="l00786"></a>00786 
-<a name="l00787"></a>00787   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;View&quot;</span>));  <span class="comment">// menuBar entry viewMenu</span>
-<a name="l00788"></a>00788   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73b08155490498997c752bd7a5b86cba">magAll</a>);
-<a name="l00789"></a>00789   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a103e58a0fbedb23547b84ce39019e3cb">magOne</a>);
-<a name="l00790"></a>00790   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aef8f4da020b6be678e9ee1a49b0514b4">magPlus</a>);
-<a name="l00791"></a>00791   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae00fca2f8554a84839a34775550f3a72">magMinus</a>);
-<a name="l00792"></a>00792   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;insertSeparator();
-<a name="l00793"></a>00793   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;setCheckable(<span class="keyword">true</span>);
-<a name="l00794"></a>00794   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>);
-<a name="l00795"></a>00795   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>);
-<a name="l00796"></a>00796   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>);
-<a name="l00797"></a>00797   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>);
-<a name="l00798"></a>00798 
-<a name="l00799"></a>00799 
-<a name="l00800"></a>00800   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Help&quot;</span>));  <span class="comment">// menuBar entry helpMenu</span>
-<a name="l00801"></a>00801   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>);
-<a name="l00802"></a>00802   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>);
-<a name="l00803"></a>00803   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;insertSeparator();
-<a name="l00804"></a>00804 
-<a name="l00805"></a>00805 
-<a name="l00806"></a>00806 
-<a name="l00807"></a>00807   <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
-<a name="l00808"></a>00808   QDir TechnicalDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
+<a name="l00763"></a>00763   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa39aec9ae3fbf8927197bc447e2e0541">importData</a>);
+<a name="l00764"></a>00764   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a3e95cc5d57a1c48ea34402e752cd5b44">graph2csv</a>);
+<a name="l00765"></a>00765   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;insertSeparator();
+<a name="l00766"></a>00766   <span class="comment">// TODO only enable if document is VA file</span>
+<a name="l00767"></a>00767   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8e73acba61277528937f2060f63b888d">buildModule</a>);
+<a name="l00768"></a>00768   <a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6b26df2da4e8a97a2909e09832203f23">loadModule</a>);
+<a name="l00769"></a>00769 
+<a name="l00770"></a>00770   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Tools&quot;</span>));  <span class="comment">// menuBar entry toolMenu</span>
+<a name="l00771"></a>00771   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a5add9963860d55acc80e393811e1da2b">callEditor</a>);
+<a name="l00772"></a>00772   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#add69ed7f49d2aaa7c9a73ed3a0edbbde">callFilter</a>);
+<a name="l00773"></a>00773   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad8c1f037879ec56ee455c035b75255cd">callActiveFilter</a>);
+<a name="l00774"></a>00774   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a47fb46cb4583d790cfceb95bfc81385c">callLine</a>);
+<a name="l00775"></a>00775   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8231575de78e718abf50c7c8ba307517">callLib</a>);
+<a name="l00776"></a>00776   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#abea84598f1260e04fa93e464173c4f20">callMatch</a>);
+<a name="l00777"></a>00777   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a435a591a3281bb97ac26a9886452c7c4">callAtt</a>);
+<a name="l00778"></a>00778   <a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae283a3c6ef2dd6ef820cece7ae79aaf8">callRes</a>);
+<a name="l00779"></a>00779 
+<a name="l00780"></a>00780 
+<a name="l00781"></a>00781 
+<a name="l00782"></a>00782   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Simulation&quot;</span>));  <span class="comment">// menuBar entry simMenu</span>
+<a name="l00783"></a>00783   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2297dd0fa22dcb3f12db757f0c9250df">simulate</a>);
+<a name="l00784"></a>00784   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d99f889affd25dc1252e6699a933a7d">dpl_sch</a>);
+<a name="l00785"></a>00785   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#adf5a87732df315cc981591cb9f9fb250">dcbias</a>);
+<a name="l00786"></a>00786   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa5a489731053c3e656a657321c112f8e">showMsg</a>);
+<a name="l00787"></a>00787   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0bab68f60d1eaedda1879c7987d8dfa2">showNet</a>);
+<a name="l00788"></a>00788   <a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a466b0e317cd8df17f83020c4e4979c0c">simSpice</a>);
+<a name="l00789"></a>00789 
+<a name="l00790"></a>00790 
+<a name="l00791"></a>00791   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;View&quot;</span>));  <span class="comment">// menuBar entry viewMenu</span>
+<a name="l00792"></a>00792   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73b08155490498997c752bd7a5b86cba">magAll</a>);
+<a name="l00793"></a>00793   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a103e58a0fbedb23547b84ce39019e3cb">magOne</a>);
+<a name="l00794"></a>00794   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aef8f4da020b6be678e9ee1a49b0514b4">magPlus</a>);
+<a name="l00795"></a>00795   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae00fca2f8554a84839a34775550f3a72">magMinus</a>);
+<a name="l00796"></a>00796   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;insertSeparator();
+<a name="l00797"></a>00797   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;setCheckable(<span class="keyword">true</span>);
+<a name="l00798"></a>00798   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a9d0a2aa47a28be71e2e877bba7d8568a">viewToolBar</a>);
+<a name="l00799"></a>00799   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afbb8e978ed885633b13a08a6db4debf4">viewStatusBar</a>);
+<a name="l00800"></a>00800   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>);
+<a name="l00801"></a>00801   <a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>);
+<a name="l00802"></a>00802 
+<a name="l00803"></a>00803 
+<a name="l00804"></a>00804   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Help&quot;</span>));  <span class="comment">// menuBar entry helpMenu</span>
+<a name="l00805"></a>00805   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a71782ace42b6c033dd25456e001d9a32">helpIndex</a>);
+<a name="l00806"></a>00806   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4da093eb427f340d2604100fe8117c1c">helpGetStart</a>);
+<a name="l00807"></a>00807   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;insertSeparator();
+<a name="l00808"></a>00808 
 <a name="l00809"></a>00809 
-<a name="l00810"></a>00810   <span class="keywordflow">if</span>(TechnicalDir.cd(<span class="stringliteral">&quot;technical&quot;</span>))
-<a name="l00811"></a>00811   {
-<a name="l00812"></a>00812     <a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Technical Papers&quot;</span>));
-<a name="l00813"></a>00813     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a>);
-<a name="l00814"></a>00814     TechnicalDir.setFilter(QDir::Files);
-<a name="l00815"></a>00815     QStringList entries = TechnicalDir.entryList();
-<a name="l00816"></a>00816     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
-<a name="l00817"></a>00817     {
-<a name="l00818"></a>00818       QAction* helpTechnicalActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
-<a name="l00819"></a>00819       helpTechnicalActions-&gt;setObjectName ( entries[i] );
-<a name="l00820"></a>00820       helpTechnicalActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
-<a name="l00821"></a>00821       helpTechnicalActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
-<a name="l00822"></a>00822       connect(helpTechnicalActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#af1f313940c79587aab6e4c8c09fd431d">slotHelpTechnical</a>()));
-<a name="l00823"></a>00823       <a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a>-&gt;addAction(helpTechnicalActions);
-<a name="l00824"></a>00824     }
-<a name="l00825"></a>00825 
-<a name="l00826"></a>00826   }
-<a name="l00827"></a>00827 
-<a name="l00828"></a>00828 <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
-<a name="l00829"></a>00829   QDir ReportDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
-<a name="l00830"></a>00830   <span class="keywordflow">if</span>(ReportDir.cd(<span class="stringliteral">&quot;report&quot;</span>))
-<a name="l00831"></a>00831   {
-<a name="l00832"></a>00832     <a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;Technical &amp;Reports&quot;</span>));
-<a name="l00833"></a>00833     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a>);
-<a name="l00834"></a>00834     ReportDir.setFilter(QDir::Files);
-<a name="l00835"></a>00835     QStringList entries = ReportDir.entryList();
-<a name="l00836"></a>00836     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
-<a name="l00837"></a>00837     {
-<a name="l00838"></a>00838       QAction* helpReportActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
-<a name="l00839"></a>00839       helpReportActions-&gt;setObjectName ( entries[i] );
-<a name="l00840"></a>00840       helpReportActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
-<a name="l00841"></a>00841       helpReportActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
-<a name="l00842"></a>00842       connect(helpReportActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a584e076e35f99c716d95a7f4af5b52df">slotHelpReport</a>()));
-<a name="l00843"></a>00843       <a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a>-&gt;addAction(helpReportActions);
-<a name="l00844"></a>00844     }
-<a name="l00845"></a>00845   }
-<a name="l00846"></a>00846 
-<a name="l00847"></a>00847 <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
-<a name="l00848"></a>00848   QDir TutorialDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
-<a name="l00849"></a>00849   <span class="keywordflow">if</span>(TutorialDir.cd(<span class="stringliteral">&quot;tutorial&quot;</span>))
-<a name="l00850"></a>00850   {
-<a name="l00851"></a>00851     <a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;T&amp;utorials&quot;</span>));
-<a name="l00852"></a>00852     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a>);
-<a name="l00853"></a>00853     TutorialDir.setFilter(QDir::Files);
-<a name="l00854"></a>00854     QStringList entries = TutorialDir.entryList();
-<a name="l00855"></a>00855     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
-<a name="l00856"></a>00856     {
-<a name="l00857"></a>00857       QAction* helpTutorialActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
-<a name="l00858"></a>00858       helpTutorialActions-&gt;setObjectName ( entries[i] );
-<a name="l00859"></a>00859       helpTutorialActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
-<a name="l00860"></a>00860       helpTutorialActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
-<a name="l00861"></a>00861       connect(helpTutorialActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#afa92ad850b3e7ab6948165c28b84f8aa">slotHelpTutorial</a>()));
-<a name="l00862"></a>00862       <a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a>-&gt;addAction(helpTutorialActions);
-<a name="l00863"></a>00863     }
-<a name="l00864"></a>00864   }
-<a name="l00865"></a>00865 
-<a name="l00866"></a>00866 
-<a name="l00867"></a>00867   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;insertSeparator();
-<a name="l00868"></a>00868   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>);
-<a name="l00869"></a>00869   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>);
+<a name="l00810"></a>00810 
+<a name="l00811"></a>00811   <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
+<a name="l00812"></a>00812   QDir TechnicalDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
+<a name="l00813"></a>00813 
+<a name="l00814"></a>00814   <span class="keywordflow">if</span>(TechnicalDir.cd(<span class="stringliteral">&quot;technical&quot;</span>))
+<a name="l00815"></a>00815   {
+<a name="l00816"></a>00816     <a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;&amp;Technical Papers&quot;</span>));
+<a name="l00817"></a>00817     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a>);
+<a name="l00818"></a>00818     TechnicalDir.setFilter(QDir::Files);
+<a name="l00819"></a>00819     QStringList entries = TechnicalDir.entryList();
+<a name="l00820"></a>00820     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
+<a name="l00821"></a>00821     {
+<a name="l00822"></a>00822       QAction* helpTechnicalActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
+<a name="l00823"></a>00823       helpTechnicalActions-&gt;setObjectName ( entries[i] );
+<a name="l00824"></a>00824       helpTechnicalActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
+<a name="l00825"></a>00825       helpTechnicalActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
+<a name="l00826"></a>00826       connect(helpTechnicalActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#af1f313940c79587aab6e4c8c09fd431d">slotHelpTechnical</a>()));
+<a name="l00827"></a>00827       <a class="code" href="classQucsApp.html#abe575115c71d090a9d45e92da79748ae">helpTechnical</a>-&gt;addAction(helpTechnicalActions);
+<a name="l00828"></a>00828     }
+<a name="l00829"></a>00829 
+<a name="l00830"></a>00830   }
+<a name="l00831"></a>00831 
+<a name="l00832"></a>00832 <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
+<a name="l00833"></a>00833   QDir ReportDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
+<a name="l00834"></a>00834   <span class="keywordflow">if</span>(ReportDir.cd(<span class="stringliteral">&quot;report&quot;</span>))
+<a name="l00835"></a>00835   {
+<a name="l00836"></a>00836     <a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;Technical &amp;Reports&quot;</span>));
+<a name="l00837"></a>00837     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a>);
+<a name="l00838"></a>00838     ReportDir.setFilter(QDir::Files);
+<a name="l00839"></a>00839     QStringList entries = ReportDir.entryList();
+<a name="l00840"></a>00840     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
+<a name="l00841"></a>00841     {
+<a name="l00842"></a>00842       QAction* helpReportActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
+<a name="l00843"></a>00843       helpReportActions-&gt;setObjectName ( entries[i] );
+<a name="l00844"></a>00844       helpReportActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
+<a name="l00845"></a>00845       helpReportActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
+<a name="l00846"></a>00846       connect(helpReportActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#a584e076e35f99c716d95a7f4af5b52df">slotHelpReport</a>()));
+<a name="l00847"></a>00847       <a class="code" href="classQucsApp.html#a7dce4bf3a1ce026fc150e3f9d3ca6b85">helpReport</a>-&gt;addAction(helpReportActions);
+<a name="l00848"></a>00848     }
+<a name="l00849"></a>00849   }
+<a name="l00850"></a>00850 
+<a name="l00851"></a>00851 <span class="comment">//Fill submenu&#39;s with filenames of PDF documents</span>
+<a name="l00852"></a>00852   QDir TutorialDir = QDir(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a7af5c780c02bd677400ffb709b238b25">DocDir</a>.replace(<span class="charliteral">&#39;\\&#39;</span>,<span class="charliteral">&#39;/&#39;</span>));
+<a name="l00853"></a>00853   <span class="keywordflow">if</span>(TutorialDir.cd(<span class="stringliteral">&quot;tutorial&quot;</span>))
+<a name="l00854"></a>00854   {
+<a name="l00855"></a>00855     <a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a> = <span class="keyword">new</span> QMenu(tr(<span class="stringliteral">&quot;T&amp;utorials&quot;</span>));
+<a name="l00856"></a>00856     <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addMenu(<a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a>);
+<a name="l00857"></a>00857     TutorialDir.setFilter(QDir::Files);
+<a name="l00858"></a>00858     QStringList entries = TutorialDir.entryList();
+<a name="l00859"></a>00859     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;entries.size();i++)
+<a name="l00860"></a>00860     {
+<a name="l00861"></a>00861       QAction* helpTutorialActions = <span class="keyword">new</span> QAction(entries[i], <span class="keyword">this</span>);
+<a name="l00862"></a>00862       helpTutorialActions-&gt;setObjectName ( entries[i] );
+<a name="l00863"></a>00863       helpTutorialActions-&gt;setStatusTip(tr(<span class="stringliteral">&quot;Open &quot;</span>)+entries[i]);
+<a name="l00864"></a>00864       helpTutorialActions-&gt;setWhatsThis(tr(entries[i]+<span class="stringliteral">&quot;\n\nOpen &quot;</span>+entries[i]));
+<a name="l00865"></a>00865       connect(helpTutorialActions, SIGNAL(triggered()), SLOT(<a class="code" href="classQucsApp.html#afa92ad850b3e7ab6948165c28b84f8aa">slotHelpTutorial</a>()));
+<a name="l00866"></a>00866       <a class="code" href="classQucsApp.html#af9caa8f688caa6ee94141ef27bb0277d">helpTutorial</a>-&gt;addAction(helpTutorialActions);
+<a name="l00867"></a>00867     }
+<a name="l00868"></a>00868   }
+<a name="l00869"></a>00869 
 <a name="l00870"></a>00870 
-<a name="l00871"></a>00871 
-<a name="l00872"></a>00872   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>);
-<a name="l00873"></a>00873   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>);
-<a name="l00874"></a>00874   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>);
-<a name="l00875"></a>00875   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>);
-<a name="l00876"></a>00876   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>);
-<a name="l00877"></a>00877   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>);
-<a name="l00878"></a>00878   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>);
-<a name="l00879"></a>00879   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>);
-<a name="l00880"></a>00880   menuBar()-&gt;insertSeparator();
-<a name="l00881"></a>00881   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>);
-<a name="l00882"></a>00882 
-<a name="l00883"></a>00883 }
-<a name="l00884"></a>00884 
-<a name="l00885"></a>00885 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00886"></a><a class="code" href="classQucsApp.html#add18a288c898d3e52c784d21ae90e822">00886</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#add18a288c898d3e52c784d21ae90e822">QucsApp::initToolBar</a>()
-<a name="l00887"></a>00887 {
-<a name="l00888"></a>00888   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;File&quot;</span>));
-<a name="l00889"></a>00889   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>);
-<a name="l00890"></a>00890   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4f31c4f242a9298565458a48165004f4">fileNew</a>);
-<a name="l00891"></a>00891   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac670aa160dab3e77e006b8819e7a1617">textNew</a>);
-<a name="l00892"></a>00892   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a051dce5fc3ae2071b1f4ecf128ebf698">fileOpen</a>);
-<a name="l00893"></a>00893   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab9e023fe08109f147fab1d92eabbd68a">fileSave</a>);
-<a name="l00894"></a>00894   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8bd118e03f228bc77fc89080c6891e0d">fileSaveAll</a>);
-<a name="l00895"></a>00895   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a79b0b05ac0a6e65c0132872cc7630184">fileClose</a>);
-<a name="l00896"></a>00896   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a54aae25f73bc19cb72785c6a5ad956e3">filePrint</a>);
-<a name="l00897"></a>00897 
-<a name="l00898"></a>00898 
-<a name="l00899"></a>00899 
-<a name="l00900"></a>00900   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;Edit&quot;</span>));
-<a name="l00901"></a>00901   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>);
-<a name="l00902"></a>00902   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46b32d609bf28da7bc5740a76d22813">editCut</a>);
-<a name="l00903"></a>00903   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a337c284adfa65d2926b6203e7d4046c8">editCopy</a>);
-<a name="l00904"></a>00904   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8838e075f6a9679012f2bf0ef7acacb6">editPaste</a>);
-<a name="l00905"></a>00905   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afcccafc2680422a68d583f9a0a73f573">editDelete</a>);
-<a name="l00906"></a>00906   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>);
-<a name="l00907"></a>00907   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>);
-<a name="l00908"></a>00908 
-<a name="l00909"></a>00909 
-<a name="l00910"></a>00910 
-<a name="l00911"></a>00911   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;View&quot;</span>));
-<a name="l00912"></a>00912   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>);
-<a name="l00913"></a>00913   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73b08155490498997c752bd7a5b86cba">magAll</a>);
-<a name="l00914"></a>00914   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a103e58a0fbedb23547b84ce39019e3cb">magOne</a>);
-<a name="l00915"></a>00915   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aef8f4da020b6be678e9ee1a49b0514b4">magPlus</a>);
-<a name="l00916"></a>00916   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae00fca2f8554a84839a34775550f3a72">magMinus</a>);
-<a name="l00917"></a>00917 
-<a name="l00918"></a>00918 
-<a name="l00919"></a>00919   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;Work&quot;</span>));
-<a name="l00920"></a>00920   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>);
-<a name="l00921"></a>00921   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7169b1bfa43595e0269ce41567a9b0e3">select</a>);
-<a name="l00922"></a>00922   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a760183b32f882380b92afa536d8490ce">editActivate</a>);
-<a name="l00923"></a>00923   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0b4600ec0f9e8d1ac17643f90b1841bd">editMirror</a>);
-<a name="l00924"></a>00924   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a209314f405ada145249d3ce1eff1a45f">editMirrorY</a>);
-<a name="l00925"></a>00925   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae3cc94f7a02f73a3f204d2c44c36016e">editRotate</a>);
-<a name="l00926"></a>00926   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a57d63af522dfef26b5e111a1a0f8698d">intoH</a>);
-<a name="l00927"></a>00927   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa1a25f0fedb060643d42a9944c1da8bd">popH</a>);
-<a name="l00928"></a>00928   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7f4d0ac469393aafe28681e4002a7e91">insWire</a>);
-<a name="l00929"></a>00929   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0a7bb083b067f8d1b3c117a9cc2c4069">insLabel</a>);
-<a name="l00930"></a>00930   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d8797845f3fd3717a631718fce2624d">insEquation</a>);
-<a name="l00931"></a>00931   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a728a29024c654ffe10256a611fd9d231">insGround</a>);
-<a name="l00932"></a>00932   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0da454185017324cc636606b416224fe">insPort</a>);
-<a name="l00933"></a>00933   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2297dd0fa22dcb3f12db757f0c9250df">simulate</a>);
-<a name="l00934"></a>00934   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d99f889affd25dc1252e6699a933a7d">dpl_sch</a>);
-<a name="l00935"></a>00935   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6c82ba810ce40ef09f3f5faca2794bc9">setMarker</a>);
-<a name="l00936"></a>00936   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addSeparator();    <span class="comment">// &lt;&lt;&lt;=======================</span>
-<a name="l00937"></a>00937 
-<a name="l00938"></a>00938 }
-<a name="l00939"></a>00939 
-<a name="l00940"></a>00940 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00941"></a><a class="code" href="classQucsApp.html#a99dd30db262cd5a57c6353e0aa9282bf">00941</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a99dd30db262cd5a57c6353e0aa9282bf">QucsApp::initStatusBar</a>()
-<a name="l00942"></a>00942 {
-<a name="l00943"></a>00943   <span class="comment">// To reserve enough space, insert the longest text and rewrite it afterwards.</span>
-<a name="l00944"></a>00944   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a> = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;no warnings&quot;</span>), statusBar());
-<a name="l00945"></a>00945   statusBar()-&gt;addWidget(<a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>, 0, <span class="keyword">true</span>);
-<a name="l00946"></a>00946 
-<a name="l00947"></a>00947   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a> = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;0 : 0&quot;</span>, statusBar());
-<a name="l00948"></a>00948   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setAlignment(Qt::AlignRight);
-<a name="l00949"></a>00949   statusBar()-&gt;addWidget(<a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>, 0, <span class="keyword">true</span>);
+<a name="l00871"></a>00871   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;insertSeparator();
+<a name="l00872"></a>00872   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7ce469a00edd0bad757fc188ee02eebd">helpAboutApp</a>);
+<a name="l00873"></a>00873   <a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad79efa2423f5cdac5dc6f390eac2adc4">helpAboutQt</a>);
+<a name="l00874"></a>00874 
+<a name="l00875"></a>00875 
+<a name="l00876"></a>00876   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#abeeea993ab375ca6be494718346d17ce">fileMenu</a>);
+<a name="l00877"></a>00877   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a7acd9c8387ad116e357889c01c4b5648">editMenu</a>);
+<a name="l00878"></a>00878   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a3ecc03da7b359759e7f31966dc128f91">alignMenu</a>);
+<a name="l00879"></a>00879   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a67f5e752ddcc5e638b3ef7f37dc933ec">insMenu</a>);
+<a name="l00880"></a>00880   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#aa4941067ed83d7f2c47e5dd0ad1eabdd">projMenu</a>);
+<a name="l00881"></a>00881   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#af6365768c764630a96d4b20f006e776f">toolMenu</a>);
+<a name="l00882"></a>00882   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#ab976fcb4de525cd38854b10e2147a60e">simMenu</a>);
+<a name="l00883"></a>00883   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#abdf3418b36e10a2a3a37abe7bdf0e44f">viewMenu</a>);
+<a name="l00884"></a>00884   menuBar()-&gt;insertSeparator();
+<a name="l00885"></a>00885   menuBar()-&gt;addMenu(<a class="code" href="classQucsApp.html#a23a69ac7ed2d9651f25b68559936e79f">helpMenu</a>);
+<a name="l00886"></a>00886 
+<a name="l00887"></a>00887 }
+<a name="l00888"></a>00888 
+<a name="l00889"></a>00889 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00890"></a><a class="code" href="classQucsApp.html#add18a288c898d3e52c784d21ae90e822">00890</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#add18a288c898d3e52c784d21ae90e822">QucsApp::initToolBar</a>()
+<a name="l00891"></a>00891 {
+<a name="l00892"></a>00892   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;File&quot;</span>));
+<a name="l00893"></a>00893   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>);
+<a name="l00894"></a>00894   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a4f31c4f242a9298565458a48165004f4">fileNew</a>);
+<a name="l00895"></a>00895   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac670aa160dab3e77e006b8819e7a1617">textNew</a>);
+<a name="l00896"></a>00896   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a051dce5fc3ae2071b1f4ecf128ebf698">fileOpen</a>);
+<a name="l00897"></a>00897   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ab9e023fe08109f147fab1d92eabbd68a">fileSave</a>);
+<a name="l00898"></a>00898   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8bd118e03f228bc77fc89080c6891e0d">fileSaveAll</a>);
+<a name="l00899"></a>00899   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a79b0b05ac0a6e65c0132872cc7630184">fileClose</a>);
+<a name="l00900"></a>00900   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a54aae25f73bc19cb72785c6a5ad956e3">filePrint</a>);
+<a name="l00901"></a>00901 
+<a name="l00902"></a>00902 
+<a name="l00903"></a>00903 
+<a name="l00904"></a>00904   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;Edit&quot;</span>));
+<a name="l00905"></a>00905   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>);
+<a name="l00906"></a>00906   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ac46b32d609bf28da7bc5740a76d22813">editCut</a>);
+<a name="l00907"></a>00907   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a337c284adfa65d2926b6203e7d4046c8">editCopy</a>);
+<a name="l00908"></a>00908   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a8838e075f6a9679012f2bf0ef7acacb6">editPaste</a>);
+<a name="l00909"></a>00909   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#afcccafc2680422a68d583f9a0a73f573">editDelete</a>);
+<a name="l00910"></a>00910   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>);
+<a name="l00911"></a>00911   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>);
+<a name="l00912"></a>00912 
+<a name="l00913"></a>00913 
+<a name="l00914"></a>00914 
+<a name="l00915"></a>00915   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;View&quot;</span>));
+<a name="l00916"></a>00916   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>);
+<a name="l00917"></a>00917   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a73b08155490498997c752bd7a5b86cba">magAll</a>);
+<a name="l00918"></a>00918   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a103e58a0fbedb23547b84ce39019e3cb">magOne</a>);
+<a name="l00919"></a>00919   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aef8f4da020b6be678e9ee1a49b0514b4">magPlus</a>);
+<a name="l00920"></a>00920   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae00fca2f8554a84839a34775550f3a72">magMinus</a>);
+<a name="l00921"></a>00921 
+<a name="l00922"></a>00922 
+<a name="l00923"></a>00923   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a> = <span class="keyword">new</span> QToolBar(tr(<span class="stringliteral">&quot;Work&quot;</span>));
+<a name="l00924"></a>00924   this-&gt;addToolBar(<a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>);
+<a name="l00925"></a>00925   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7169b1bfa43595e0269ce41567a9b0e3">select</a>);
+<a name="l00926"></a>00926   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a760183b32f882380b92afa536d8490ce">editActivate</a>);
+<a name="l00927"></a>00927   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0b4600ec0f9e8d1ac17643f90b1841bd">editMirror</a>);
+<a name="l00928"></a>00928   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a209314f405ada145249d3ce1eff1a45f">editMirrorY</a>);
+<a name="l00929"></a>00929   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#ae3cc94f7a02f73a3f204d2c44c36016e">editRotate</a>);
+<a name="l00930"></a>00930   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a57d63af522dfef26b5e111a1a0f8698d">intoH</a>);
+<a name="l00931"></a>00931   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#aa1a25f0fedb060643d42a9944c1da8bd">popH</a>);
+<a name="l00932"></a>00932   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a7f4d0ac469393aafe28681e4002a7e91">insWire</a>);
+<a name="l00933"></a>00933   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0a7bb083b067f8d1b3c117a9cc2c4069">insLabel</a>);
+<a name="l00934"></a>00934   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d8797845f3fd3717a631718fce2624d">insEquation</a>);
+<a name="l00935"></a>00935   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a728a29024c654ffe10256a611fd9d231">insGround</a>);
+<a name="l00936"></a>00936   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a0da454185017324cc636606b416224fe">insPort</a>);
+<a name="l00937"></a>00937   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a2297dd0fa22dcb3f12db757f0c9250df">simulate</a>);
+<a name="l00938"></a>00938   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6d99f889affd25dc1252e6699a933a7d">dpl_sch</a>);
+<a name="l00939"></a>00939   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addAction(<a class="code" href="classQucsApp.html#a6c82ba810ce40ef09f3f5faca2794bc9">setMarker</a>);
+<a name="l00940"></a>00940   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;addSeparator();    <span class="comment">// &lt;&lt;&lt;=======================</span>
+<a name="l00941"></a>00941 
+<a name="l00942"></a>00942 }
+<a name="l00943"></a>00943 
+<a name="l00944"></a>00944 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00945"></a><a class="code" href="classQucsApp.html#a99dd30db262cd5a57c6353e0aa9282bf">00945</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a99dd30db262cd5a57c6353e0aa9282bf">QucsApp::initStatusBar</a>()
+<a name="l00946"></a>00946 {
+<a name="l00947"></a>00947   <span class="comment">// To reserve enough space, insert the longest text and rewrite it afterwards.</span>
+<a name="l00948"></a>00948   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a> = <span class="keyword">new</span> QLabel(tr(<span class="stringliteral">&quot;no warnings&quot;</span>), statusBar());
+<a name="l00949"></a>00949   statusBar()-&gt;addWidget(<a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>, 0, <span class="keyword">true</span>);
 <a name="l00950"></a>00950 
-<a name="l00951"></a>00951   statusBar()-&gt;message(tr(<span class="stringliteral">&quot;Ready.&quot;</span>), 2000);
-<a name="l00952"></a>00952 }
-<a name="l00953"></a>00953 
-<a name="l00954"></a>00954 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00955"></a><a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">00955</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">QucsApp::slotShowWarnings</a>()
-<a name="l00956"></a>00956 {
-<a name="l00957"></a>00957   <span class="keyword">static</span> <span class="keywordtype">int</span> ResultState = 0;
-<a name="l00958"></a>00958 
-<a name="l00959"></a>00959   <span class="keywordflow">if</span>(ResultState == 0) {
-<a name="l00960"></a>00960     QFont f = <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;font();
-<a name="l00961"></a>00961     f.setWeight(QFont::DemiBold);
-<a name="l00962"></a>00962     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setFont(f);
-<a name="l00963"></a>00963     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setText(tr(<span class="stringliteral">&quot;Warnings in last simulation! Press F5&quot;</span>));
-<a name="l00964"></a>00964   }
-<a name="l00965"></a>00965 
-<a name="l00966"></a>00966   ResultState++;
-<a name="l00967"></a>00967   <span class="keywordflow">if</span>(ResultState &amp; 1)
-<a name="l00968"></a>00968     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::red);
-<a name="l00969"></a>00969   <span class="keywordflow">else</span>
-<a name="l00970"></a>00970     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::black);
-<a name="l00971"></a>00971 
-<a name="l00972"></a>00972   <span class="keywordflow">if</span>(ResultState &lt; 9)
-<a name="l00973"></a>00973     QTimer::singleShot(500, <span class="keyword">this</span>, SLOT(<a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">slotShowWarnings</a>()));
-<a name="l00974"></a>00974   <span class="keywordflow">else</span>
-<a name="l00975"></a>00975     ResultState = 0;
-<a name="l00976"></a>00976 }
-<a name="l00977"></a>00977 
-<a name="l00978"></a>00978 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00979"></a><a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">00979</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">QucsApp::slotResetWarnings</a>()
-<a name="l00980"></a>00980 {
-<a name="l00981"></a>00981   QFont f = <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;font();   <span class="comment">// reset warning label</span>
-<a name="l00982"></a>00982   f.setWeight(QFont::Normal);
-<a name="l00983"></a>00983   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setFont(f);
-<a name="l00984"></a>00984   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::black);
-<a name="l00985"></a>00985   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setText(tr(<span class="stringliteral">&quot;no warnings&quot;</span>));
-<a name="l00986"></a>00986 }
-<a name="l00987"></a>00987 
-<a name="l00988"></a>00988 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l00989"></a><a class="code" href="classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75">00989</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75">QucsApp::printCursorPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)
-<a name="l00990"></a>00990 {
-<a name="l00991"></a>00991   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setText(QString::number(x)+<span class="stringliteral">&quot; : &quot;</span>+QString::number(y));
-<a name="l00992"></a>00992   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setMinimumWidth(<a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;width());
-<a name="l00993"></a>00993 }
-<a name="l00994"></a>00994 
-<a name="l00995"></a>00995 <span class="comment">// --------------------------------------------------------------</span>
-<a name="l00996"></a>00996 <span class="comment">// called by document, update undo state</span>
-<a name="l00997"></a><a class="code" href="classQucsApp.html#a66711aa6514c76d6db087903ce08c111">00997</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a66711aa6514c76d6db087903ce08c111">QucsApp::slotUpdateUndo</a>(<span class="keywordtype">bool</span> isEnabled)
-<a name="l00998"></a>00998 {
-<a name="l00999"></a>00999   <a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>-&gt;setEnabled(isEnabled);
-<a name="l01000"></a>01000 }
-<a name="l01001"></a>01001 
-<a name="l01002"></a>01002 <span class="comment">// --------------------------------------------------------------</span>
-<a name="l01003"></a>01003 <span class="comment">// called by document, update redo state</span>
-<a name="l01004"></a><a class="code" href="classQucsApp.html#a5be917c780a1a6e8b24c0e596009a2e5">01004</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a5be917c780a1a6e8b24c0e596009a2e5">QucsApp::slotUpdateRedo</a>(<span class="keywordtype">bool</span> isEnabled)
-<a name="l01005"></a>01005 {
-<a name="l01006"></a>01006   <a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>-&gt;setEnabled(isEnabled);
-<a name="l01007"></a>01007 }
-<a name="l01008"></a>01008 
-<a name="l01009"></a>01009 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01010"></a>01010 <span class="comment">// turn Toolbar on or off</span>
-<a name="l01011"></a><a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">01011</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">QucsApp::slotViewToolBar</a>(<span class="keywordtype">bool</span> toggle)
-<a name="l01012"></a>01012 {
-<a name="l01013"></a>01013   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;setVisible(toggle);
-<a name="l01014"></a>01014   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;setVisible(toggle);
-<a name="l01015"></a>01015   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;setVisible(toggle);
-<a name="l01016"></a>01016   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;setVisible(toggle);
-<a name="l01017"></a>01017 }
-<a name="l01018"></a>01018 
-<a name="l01019"></a>01019 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01020"></a>01020 <span class="comment">// turn Statusbar on or off</span>
-<a name="l01021"></a><a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">01021</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">QucsApp::slotViewStatusBar</a>(<span class="keywordtype">bool</span> toggle)
-<a name="l01022"></a>01022 {
-<a name="l01023"></a>01023   statusBar()-&gt;setVisible(toggle);
-<a name="l01024"></a>01024 }
-<a name="l01025"></a>01025 
-<a name="l01026"></a>01026 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01027"></a>01027 <span class="comment">// turn Brwose Dock Window on or off</span>
-<a name="l01028"></a><a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">01028</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">QucsApp::slotViewBrowseDock</a>(<span class="keywordtype">bool</span> toggle)
-<a name="l01029"></a>01029 {
-<a name="l01030"></a>01030   <a class="code" href="classQucsApp.html#aaead7a724117265cc8afe2ef7e7279b3">dock</a>-&gt;setVisible(toggle);
-<a name="l01031"></a>01031 }
-<a name="l01032"></a>01032 
-<a name="l01033"></a>01033 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01034"></a><a class="code" href="classQucsApp.html#a071eb338c29202a4030dc1435230a237">01034</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a071eb338c29202a4030dc1435230a237">QucsApp::slotToggleDock</a>(<span class="keywordtype">bool</span> on)
-<a name="l01035"></a>01035 {
-<a name="l01036"></a>01036   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;blockSignals(<span class="keyword">true</span>);
-<a name="l01037"></a>01037   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setChecked(on);
-<a name="l01038"></a>01038   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;blockSignals(<span class="keyword">false</span>);
-<a name="l01039"></a>01039 }
-<a name="l01040"></a>01040 
-<a name="l01041"></a>01041 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01042"></a>01042 <span class="comment">// turn Octave Dock Window on or off</span>
-<a name="l01043"></a><a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">01043</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">QucsApp::slotViewOctaveDock</a>(<span class="keywordtype">bool</span> toggle)
-<a name="l01044"></a>01044 {
-<a name="l01045"></a>01045   <a class="code" href="classQucsApp.html#aa6937af70df595645d0c726e74153d9e">octDock</a>-&gt;setVisible(toggle);
-<a name="l01046"></a>01046   <span class="keywordflow">if</span> (toggle) {
-<a name="l01047"></a>01047     <a class="code" href="classQucsApp.html#a2442034cd3aa8a3fef9f1abf70633a0b">octave</a>-&gt;<a class="code" href="classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07">startOctave</a>();
-<a name="l01048"></a>01048   }
-<a name="l01049"></a>01049 }
-<a name="l01050"></a>01050 
-<a name="l01051"></a>01051 <span class="comment">// ----------------------------------------------------------</span>
-<a name="l01052"></a><a class="code" href="classQucsApp.html#ab9cdd18f2a870b5930f2296c9bfd89ad">01052</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ab9cdd18f2a870b5930f2296c9bfd89ad">QucsApp::slotToggleOctave</a>(<span class="keywordtype">bool</span> on)
-<a name="l01053"></a>01053 {
-<a name="l01054"></a>01054   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;blockSignals(<span class="keyword">true</span>);
-<a name="l01055"></a>01055   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setChecked(on);
-<a name="l01056"></a>01056   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;blockSignals(<span class="keyword">false</span>);
-<a name="l01057"></a>01057 }
-<a name="l01058"></a>01058 
+<a name="l00951"></a>00951   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a> = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;0 : 0&quot;</span>, statusBar());
+<a name="l00952"></a>00952   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setAlignment(Qt::AlignRight);
+<a name="l00953"></a>00953   statusBar()-&gt;addWidget(<a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>, 0, <span class="keyword">true</span>);
+<a name="l00954"></a>00954 
+<a name="l00955"></a>00955   statusBar()-&gt;message(tr(<span class="stringliteral">&quot;Ready.&quot;</span>), 2000);
+<a name="l00956"></a>00956 }
+<a name="l00957"></a>00957 
+<a name="l00958"></a>00958 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00959"></a><a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">00959</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">QucsApp::slotShowWarnings</a>()
+<a name="l00960"></a>00960 {
+<a name="l00961"></a>00961   <span class="keyword">static</span> <span class="keywordtype">int</span> ResultState = 0;
+<a name="l00962"></a>00962 
+<a name="l00963"></a>00963   <span class="keywordflow">if</span>(ResultState == 0) {
+<a name="l00964"></a>00964     QFont f = <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;font();
+<a name="l00965"></a>00965     f.setWeight(QFont::DemiBold);
+<a name="l00966"></a>00966     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setFont(f);
+<a name="l00967"></a>00967     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setText(tr(<span class="stringliteral">&quot;Warnings in last simulation! Press F5&quot;</span>));
+<a name="l00968"></a>00968   }
+<a name="l00969"></a>00969 
+<a name="l00970"></a>00970   ResultState++;
+<a name="l00971"></a>00971   <span class="keywordflow">if</span>(ResultState &amp; 1)
+<a name="l00972"></a>00972     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::red);
+<a name="l00973"></a>00973   <span class="keywordflow">else</span>
+<a name="l00974"></a>00974     <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::black);
+<a name="l00975"></a>00975 
+<a name="l00976"></a>00976   <span class="keywordflow">if</span>(ResultState &lt; 9)
+<a name="l00977"></a>00977     QTimer::singleShot(500, <span class="keyword">this</span>, SLOT(<a class="code" href="classQucsApp.html#a0833a1d89e2b40293e7e077ef3f0b7dd">slotShowWarnings</a>()));
+<a name="l00978"></a>00978   <span class="keywordflow">else</span>
+<a name="l00979"></a>00979     ResultState = 0;
+<a name="l00980"></a>00980 }
+<a name="l00981"></a>00981 
+<a name="l00982"></a>00982 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00983"></a><a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">00983</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a52975f3e54d3100585a2fd3db0f11f3c">QucsApp::slotResetWarnings</a>()
+<a name="l00984"></a>00984 {
+<a name="l00985"></a>00985   QFont f = <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;font();   <span class="comment">// reset warning label</span>
+<a name="l00986"></a>00986   f.setWeight(QFont::Normal);
+<a name="l00987"></a>00987   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setFont(f);
+<a name="l00988"></a>00988   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setPaletteForegroundColor(Qt::black);
+<a name="l00989"></a>00989   <a class="code" href="classQucsApp.html#a71cbdbd94adaba7c4e764944b2b14b2f">WarningLabel</a>-&gt;setText(tr(<span class="stringliteral">&quot;no warnings&quot;</span>));
+<a name="l00990"></a>00990 }
+<a name="l00991"></a>00991 
+<a name="l00992"></a>00992 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l00993"></a><a class="code" href="classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75">00993</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a2199a7b57db1ede7732a95b5497fdb75">QucsApp::printCursorPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)
+<a name="l00994"></a>00994 {
+<a name="l00995"></a>00995   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setText(QString::number(x)+<span class="stringliteral">&quot; : &quot;</span>+QString::number(y));
+<a name="l00996"></a>00996   <a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;setMinimumWidth(<a class="code" href="classQucsApp.html#a8607b89afb8573cdebcde7e24ad119f5">PositionLabel</a>-&gt;width());
+<a name="l00997"></a>00997 }
+<a name="l00998"></a>00998 
+<a name="l00999"></a>00999 <span class="comment">// --------------------------------------------------------------</span>
+<a name="l01000"></a>01000 <span class="comment">// called by document, update undo state</span>
+<a name="l01001"></a><a class="code" href="classQucsApp.html#a66711aa6514c76d6db087903ce08c111">01001</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a66711aa6514c76d6db087903ce08c111">QucsApp::slotUpdateUndo</a>(<span class="keywordtype">bool</span> isEnabled)
+<a name="l01002"></a>01002 {
+<a name="l01003"></a>01003   <a class="code" href="classQucsApp.html#ad7ee1a57f6a6184fa53524c2aa34da08">undo</a>-&gt;setEnabled(isEnabled);
+<a name="l01004"></a>01004 }
+<a name="l01005"></a>01005 
+<a name="l01006"></a>01006 <span class="comment">// --------------------------------------------------------------</span>
+<a name="l01007"></a>01007 <span class="comment">// called by document, update redo state</span>
+<a name="l01008"></a><a class="code" href="classQucsApp.html#a5be917c780a1a6e8b24c0e596009a2e5">01008</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a5be917c780a1a6e8b24c0e596009a2e5">QucsApp::slotUpdateRedo</a>(<span class="keywordtype">bool</span> isEnabled)
+<a name="l01009"></a>01009 {
+<a name="l01010"></a>01010   <a class="code" href="classQucsApp.html#aa8d167738efbfa3f4f5c8651dce90e04">redo</a>-&gt;setEnabled(isEnabled);
+<a name="l01011"></a>01011 }
+<a name="l01012"></a>01012 
+<a name="l01013"></a>01013 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01014"></a>01014 <span class="comment">// turn Toolbar on or off</span>
+<a name="l01015"></a><a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">01015</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a931e08f46ad070c3a0f1b9f2f3638449">QucsApp::slotViewToolBar</a>(<span class="keywordtype">bool</span> toggle)
+<a name="l01016"></a>01016 {
+<a name="l01017"></a>01017   <a class="code" href="classQucsApp.html#aa51578cc625cb7b26ba9d3d37c0656df">fileToolbar</a>-&gt;setVisible(toggle);
+<a name="l01018"></a>01018   <a class="code" href="classQucsApp.html#a67efa7b5a593de12dae6c096fd5a11fe">editToolbar</a>-&gt;setVisible(toggle);
+<a name="l01019"></a>01019   <a class="code" href="classQucsApp.html#a7f665de8ec7ee52c764e6ed79fefdb2c">viewToolbar</a>-&gt;setVisible(toggle);
+<a name="l01020"></a>01020   <a class="code" href="classQucsApp.html#a1263421c10f4fb170ecf8b080134819b">workToolbar</a>-&gt;setVisible(toggle);
+<a name="l01021"></a>01021 }
+<a name="l01022"></a>01022 
+<a name="l01023"></a>01023 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01024"></a>01024 <span class="comment">// turn Statusbar on or off</span>
+<a name="l01025"></a><a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">01025</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ac73cc04ede8ffca1c1253e83c534c71c">QucsApp::slotViewStatusBar</a>(<span class="keywordtype">bool</span> toggle)
+<a name="l01026"></a>01026 {
+<a name="l01027"></a>01027   statusBar()-&gt;setVisible(toggle);
+<a name="l01028"></a>01028 }
+<a name="l01029"></a>01029 
+<a name="l01030"></a>01030 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01031"></a>01031 <span class="comment">// turn Brwose Dock Window on or off</span>
+<a name="l01032"></a><a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">01032</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a9d6cee0c2ebbee2f9317badc06b02210">QucsApp::slotViewBrowseDock</a>(<span class="keywordtype">bool</span> toggle)
+<a name="l01033"></a>01033 {
+<a name="l01034"></a>01034   <a class="code" href="classQucsApp.html#aaead7a724117265cc8afe2ef7e7279b3">dock</a>-&gt;setVisible(toggle);
+<a name="l01035"></a>01035 }
+<a name="l01036"></a>01036 
+<a name="l01037"></a>01037 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01038"></a><a class="code" href="classQucsApp.html#a071eb338c29202a4030dc1435230a237">01038</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a071eb338c29202a4030dc1435230a237">QucsApp::slotToggleDock</a>(<span class="keywordtype">bool</span> on)
+<a name="l01039"></a>01039 {
+<a name="l01040"></a>01040   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;blockSignals(<span class="keyword">true</span>);
+<a name="l01041"></a>01041   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;setChecked(on);
+<a name="l01042"></a>01042   <a class="code" href="classQucsApp.html#a869ae303b975318f9591cf20b17d8353">viewBrowseDock</a>-&gt;blockSignals(<span class="keyword">false</span>);
+<a name="l01043"></a>01043 }
+<a name="l01044"></a>01044 
+<a name="l01045"></a>01045 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01046"></a>01046 <span class="comment">// turn Octave Dock Window on or off</span>
+<a name="l01047"></a><a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">01047</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#a7abb07ce8bfbdd6bb4299a7bfd8c7aae">QucsApp::slotViewOctaveDock</a>(<span class="keywordtype">bool</span> toggle)
+<a name="l01048"></a>01048 {
+<a name="l01049"></a>01049   <a class="code" href="classQucsApp.html#aa6937af70df595645d0c726e74153d9e">octDock</a>-&gt;setVisible(toggle);
+<a name="l01050"></a>01050   <span class="keywordflow">if</span> (toggle) {
+<a name="l01051"></a>01051     <a class="code" href="classQucsApp.html#a2442034cd3aa8a3fef9f1abf70633a0b">octave</a>-&gt;<a class="code" href="classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07">startOctave</a>();
+<a name="l01052"></a>01052   }
+<a name="l01053"></a>01053 }
+<a name="l01054"></a>01054 
+<a name="l01055"></a>01055 <span class="comment">// ----------------------------------------------------------</span>
+<a name="l01056"></a><a class="code" href="classQucsApp.html#ab9cdd18f2a870b5930f2296c9bfd89ad">01056</a> <span class="keywordtype">void</span> <a class="code" href="classQucsApp.html#ab9cdd18f2a870b5930f2296c9bfd89ad">QucsApp::slotToggleOctave</a>(<span class="keywordtype">bool</span> on)
+<a name="l01057"></a>01057 {
+<a name="l01058"></a>01058   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;blockSignals(<span class="keyword">true</span>);
+<a name="l01059"></a>01059   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;setChecked(on);
+<a name="l01060"></a>01060   <a class="code" href="classQucsApp.html#a8ce5eb6c1267b1f716b6302b01a4e294">viewOctaveDock</a>-&gt;blockSignals(<span class="keyword">false</span>);
+<a name="l01061"></a>01061 }
+<a name="l01062"></a>01062 
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1154,7 +1158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 18 2015 13:39:31 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 15:52:10 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

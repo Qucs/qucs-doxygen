@@ -1,19 +1,33 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="340,137,495,167"/>
-<area shape="rect" id="node27" href="$classSchematic.html#a0571a69ffa10a244468a37cab8213c0e" title="Schematic::becomeCurrent" alt="" coords="327,191,508,220"/>
-<area shape="rect" id="node37" href="$classSchematic.html#ad718c4f761cc318f666dc5e8580aa50f" title="Schematic::contentsMouseMoveEvent" alt="" coords="295,244,540,273"/>
-<area shape="rect" id="node5" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="589,137,781,167"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="829,85,1019,115"/>
-<area shape="rect" id="node9" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1071,31,1252,60"/>
-<area shape="rect" id="node18" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1067,137,1256,167"/>
-<area shape="rect" id="node21" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1075,84,1248,113"/>
-<area shape="rect" id="node11" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1304,31,1461,60"/>
-<area shape="rect" id="node13" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1753,5,1935,35"/>
-<area shape="rect" id="node15" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1509,31,1704,60"/>
-<area shape="rect" id="node23" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1345,84,1420,113"/>
-<area shape="rect" id="node25" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1581,84,1632,113"/>
-<area shape="rect" id="node29" href="$classQucsApp.html#a1e2e586adf725eb0d8c2723b495811de" title="QucsApp::slotSymbolEdit" alt="" coords="600,191,771,220"/>
-<area shape="rect" id="node35" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="628,244,743,273"/>
-<area shape="rect" id="node31" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="852,191,996,220"/>
-<area shape="rect" id="node33" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1092,191,1231,220"/>
+<area shape="rect" id="node3" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="340,321,495,351"/>
+<area shape="rect" id="node61" href="$classSchematic.html#a0571a69ffa10a244468a37cab8213c0e" title="Schematic::becomeCurrent" alt="" coords="327,375,508,404"/>
+<area shape="rect" id="node71" href="$classSchematic.html#ad718c4f761cc318f666dc5e8580aa50f" title="Schematic::contentsMouseMoveEvent" alt="" coords="295,428,540,457"/>
+<area shape="rect" id="node5" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="589,321,781,351"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="829,296,1019,325"/>
+<area shape="rect" id="node9" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1068,323,1249,352"/>
+<area shape="rect" id="node18" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="1907,272,2096,301"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1072,165,1245,195"/>
+<area shape="rect" id="node11" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1352,427,1509,456"/>
+<area shape="rect" id="node13" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1911,451,2092,480"/>
+<area shape="rect" id="node15" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1637,477,1832,507"/>
+<area shape="rect" id="node23" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="1300,165,1561,195"/>
+<area shape="rect" id="node58" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1393,60,1468,89"/>
+<area shape="rect" id="node25" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="1612,219,1857,248"/>
+<area shape="rect" id="node28" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="1659,112,1811,141"/>
+<area shape="rect" id="node45" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="1668,165,1801,195"/>
+<area shape="rect" id="node30" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="1928,112,2075,141"/>
+<area shape="rect" id="node32" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="2145,165,2361,195"/>
+<area shape="rect" id="node36" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="2179,60,2328,89"/>
+<area shape="rect" id="node42" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="2463,112,2585,141"/>
+<area shape="rect" id="node34" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="2411,165,2637,195"/>
+<area shape="rect" id="node38" href="$main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16" title="runNgspice" alt="" coords="2480,59,2568,88"/>
+<area shape="rect" id="node40" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2685,112,2736,141"/>
+<area shape="rect" id="node47" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="1936,219,2067,248"/>
+<area shape="rect" id="node52" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="1937,165,2065,195"/>
+<area shape="rect" id="node49" href="$main_8cpp.html#a2c46c5b34674271a81601437a4042afb" title="runXyce" alt="" coords="2219,271,2288,300"/>
+<area shape="rect" id="node55" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="2472,219,2576,248"/>
+<area shape="rect" id="node63" href="$classQucsApp.html#a1e2e586adf725eb0d8c2723b495811de" title="QucsApp::slotSymbolEdit" alt="" coords="600,428,771,457"/>
+<area shape="rect" id="node69" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="628,375,743,404"/>
+<area shape="rect" id="node65" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="852,428,996,457"/>
+<area shape="rect" id="node67" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="1089,428,1228,457"/>
 </map>

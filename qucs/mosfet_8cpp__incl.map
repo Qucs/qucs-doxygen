@@ -1,7 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$mosfet_8h.html" title="mosfet.h" alt="" coords="125,83,197,112"/>
-<area shape="rect" id="node17" href="$node_8h.html" title="node.h" alt="" coords="223,237,284,267"/>
-<area shape="rect" id="node5" href="$mosfet__sub_8h.html" title="mosfet_sub.h" alt="" coords="104,160,205,189"/>
-<area shape="rect" id="node7" href="$component_8h.html" title="component.h" alt="" coords="103,237,199,267"/>
-<area shape="rect" id="node11" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="213,315,291,344"/>
+<area shape="rect" id="node3" href="$mosfet_8h.html" title="mosfet.h" alt="" coords="52,83,124,112"/>
+<area shape="rect" id="node17" href="$node_8h.html" title="node.h" alt="" coords="145,237,207,267"/>
+<area shape="rect" id="node21" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="209,83,271,112"/>
+<area shape="rect" id="node23" href="$spicecompat_8h.html" title="extsimkernels/spicecompat.h" alt="" coords="295,83,487,112"/>
+<area shape="rect" id="node5" href="$mosfet__sub_8h.html" title="mosfet_sub.h" alt="" coords="27,160,128,189"/>
+<area shape="rect" id="node7" href="$component_8h.html" title="component.h" alt="" coords="25,237,121,267"/>
+<area shape="rect" id="node11" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="136,315,213,344"/>
 </map>

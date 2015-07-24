@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="239,302,484,331"/>
+<area shape="rect" id="node34" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="2381,277,2531,306"/>
+<area shape="rect" id="node45" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="2141,66,2272,95"/>
+<area shape="rect" id="node59" href="$classAbstractSpiceKernel.html#a9de00e5b16a9f24a4b25716e536f44b2" title="AbstractSpiceKernel::slotErrors Simulator errors handler." alt="" coords="259,431,464,461"/>
+<area shape="rect" id="node5" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="573,302,763,331"/>
+<area shape="rect" id="node7" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="851,277,1043,306"/>
+<area shape="rect" id="node9" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1091,278,1280,307"/>
+<area shape="rect" id="node11" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1329,279,1511,309"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1333,226,1507,255"/>
+<area shape="rect" id="node13" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1613,279,1771,309"/>
+<area shape="rect" id="node15" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="2116,302,2297,331"/>
+<area shape="rect" id="node17" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1872,277,2067,306"/>
+<area shape="rect" id="node23" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="1561,173,1823,202"/>
+<area shape="rect" id="node56" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1655,226,1729,255"/>
+<area shape="rect" id="node26" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="1893,173,2045,202"/>
+<area shape="rect" id="node43" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="1903,119,2036,149"/>
+<area shape="rect" id="node28" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="2133,173,2280,202"/>
+<area shape="rect" id="node30" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="2348,119,2564,149"/>
+<area shape="rect" id="node40" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="2665,173,2788,202"/>
+<area shape="rect" id="node32" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="2613,119,2840,149"/>
+<area shape="rect" id="node36" href="$main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16" title="runNgspice" alt="" coords="2683,277,2771,306"/>
+<area shape="rect" id="node38" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2888,173,2939,202"/>
+<area shape="rect" id="node50" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="2143,119,2271,149"/>
+<area shape="rect" id="node47" href="$main_8cpp.html#a2c46c5b34674271a81601437a4042afb" title="runXyce" alt="" coords="2421,15,2491,45"/>
+<area shape="rect" id="node53" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="2675,66,2779,95"/>
+<area shape="rect" id="node61" href="$classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor." alt="" coords="535,431,801,461"/>
+</map>
