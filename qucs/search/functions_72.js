@@ -44,7 +44,7 @@ var searchData=
   ['rotate',['rotate',['../classComponent.html#a371f348f5919cb271a1450b6c868a12f',1,'Component::rotate()'],['../classArrow.html#a0d1bc2ac783f879a9a1c8b86f7eda098',1,'Arrow::rotate()'],['../classEllipse.html#aae47888187a4525bb247719a08194d72',1,'Ellipse::rotate()'],['../classEllipseArc.html#a665ecc5e08af3e6fd08104981a0a9062',1,'EllipseArc::rotate()'],['../classGraphicLine.html#a22e5bdfda034ba439540affb2fd489f1',1,'GraphicLine::rotate()'],['../classGraphicText.html#a37c6a85ee7ca72deca7a2d68e601b5be',1,'GraphicText::rotate()'],['../classID__Text.html#ad870dd11f6399baa1c59d61f78b5cc1b',1,'ID_Text::rotate()'],['../classPainting.html#a446de29a7b8d8d795b9de70d2aa4b83e',1,'Painting::rotate()'],['../classPortSymbol.html#a68d8082c6663dfac2835be805f78a627',1,'PortSymbol::rotate()'],['../classRectangle.html#ac0de57edca6b54c03017bd807b803dfd',1,'Rectangle::rotate()'],['../classWire.html#ab82f1d2be8234ec1c528b331206b085f',1,'Wire::rotate()'],['../classWireLabel.html#a2b3b829706aba58ee63a11202241b65a',1,'WireLabel::rotate()']]],
   ['rotateelements',['rotateElements',['../classMouseActions.html#aebfdd8e3030579e0578e4405ce0174a3',1,'MouseActions::rotateElements()'],['../classSchematic.html#aaed026f1e442e36eac494279816148bb',1,'Schematic::rotateElements()']]],
   ['rs_5fflipflop',['RS_FlipFlop',['../classRS__FlipFlop.html#a5d509fe758e51d04ad73fdb6b6f1b137',1,'RS_FlipFlop']]],
-  ['runngspice',['runNgspice',['../main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16',1,'main.cpp']]],
+  ['runngspice',['runNgspice',['../main_8cpp.html#a565e2d70b32211da091d3389e371bdce',1,'main.cpp']]],
   ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]],
-  ['runxyce',['runXyce',['../main_8cpp.html#a2c46c5b34674271a81601437a4042afb',1,'main.cpp']]]
+  ['runxyce',['runXyce',['../main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c',1,'main.cpp']]]
 ];

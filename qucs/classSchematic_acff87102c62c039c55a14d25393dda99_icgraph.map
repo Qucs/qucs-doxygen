@@ -18,9 +18,9 @@
 <area shape="rect" id="node38" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="1640,191,1789,220"/>
 <area shape="rect" id="node43" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="1653,137,1776,167"/>
 <area shape="rect" id="node36" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="1872,243,2099,272"/>
-<area shape="rect" id="node40" href="$main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16" title="runNgspice" alt="" coords="1941,189,2029,219"/>
+<area shape="rect" id="node40" href="$main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="1941,189,2029,219"/>
 <area shape="rect" id="node48" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="1397,335,1528,364"/>
 <area shape="rect" id="node53" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="1399,269,1527,299"/>
-<area shape="rect" id="node50" href="$main_8cpp.html#a2c46c5b34674271a81601437a4042afb" title="runXyce" alt="" coords="1951,349,2020,379"/>
+<area shape="rect" id="node50" href="$main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="1951,349,2020,379"/>
 <area shape="rect" id="node56" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="1933,296,2037,325"/>
 </map>

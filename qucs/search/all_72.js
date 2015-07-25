@@ -113,7 +113,7 @@ var searchData=
   ['rs_5fflipflop',['RS_FlipFlop',['../classRS__FlipFlop.html',1,'RS_FlipFlop'],['../classRS__FlipFlop.html#a5d509fe758e51d04ad73fdb6b6f1b137',1,'RS_FlipFlop::RS_FlipFlop()']]],
   ['rs_5fflipflop_2ecpp',['rs_flipflop.cpp',['../rs__flipflop_8cpp.html',1,'']]],
   ['rs_5fflipflop_2eh',['rs_flipflop.h',['../rs__flipflop_8h.html',1,'']]],
-  ['runngspice',['runNgspice',['../main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16',1,'main.cpp']]],
+  ['runngspice',['runNgspice',['../main_8cpp.html#a565e2d70b32211da091d3389e371bdce',1,'main.cpp']]],
   ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]],
-  ['runxyce',['runXyce',['../main_8cpp.html#a2c46c5b34674271a81601437a4042afb',1,'main.cpp']]]
+  ['runxyce',['runXyce',['../main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c',1,'main.cpp']]]
 ];

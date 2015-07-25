@@ -5,8 +5,8 @@
 <area shape="rect" id="node30" href="$main_8cpp.html#ad36199d00fc52f4f5bb8778591100c08" title="createListNetEntry prints to stdout the available netlist formats" alt="" coords="220,427,396,456"/>
 <area shape="rect" id="node33" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="239,480,377,509"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="469,5,544,35"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#ade0f806500f6eaeb29beed50f0d8ff16" title="runNgspice" alt="" coords="463,59,551,88"/>
-<area shape="rect" id="node12" href="$main_8cpp.html#a2c46c5b34674271a81601437a4042afb" title="runXyce" alt="" coords="472,112,541,141"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="463,59,551,88"/>
+<area shape="rect" id="node12" href="$main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="472,112,541,141"/>
 <area shape="rect" id="node15" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="445,165,568,195"/>
 <area shape="rect" id="node18" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="455,219,559,248"/>
 <area shape="rect" id="node21" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="476,272,537,301"/>
