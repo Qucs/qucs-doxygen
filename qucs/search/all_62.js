@@ -58,6 +58,7 @@ var searchData=
   ['btnsetxycepar',['btnSetXycePar',['../classSimSettingsDialog.html#a3dcb078996ec2009b743896833a4878a',1,'SimSettingsDialog']]],
   ['buildertabs',['builderTabs',['../classMessageDock.html#aa131633068a4993ceedb8d011319a8b6',1,'MessageDock']]],
   ['buildmodule',['buildModule',['../classQucsApp.html#a8e73acba61277528937f2060f63b888d',1,'QucsApp']]],
+  ['buildvamodule',['buildVAModule',['../classQucsApp.html#a950a8ca64de8875b9b0b89369aa853e7',1,'QucsApp']]],
   ['buttadd',['ButtAdd',['../classComponentDialog.html#aeae3cc8e3fce8283a079dabdb1b3c550',1,'ComponentDialog::ButtAdd()'],['../classSpiceDialog.html#af7f5eefd94f0ed6ea206fc8c97b6e89d',1,'SpiceDialog::ButtAdd()']]],
   ['buttapply',['ButtApply',['../classSpiceDialog.html#a7dcf4a4340d582e8a2b384e3c026e0e9',1,'SpiceDialog']]],
   ['buttbrowse',['ButtBrowse',['../classSpiceDialog.html#a5d25eb22923ef993934d167ff17f6c89',1,'SpiceDialog']]],

@@ -15,7 +15,7 @@ var searchData=
   ['noise_5fii',['Noise_ii',['../classNoise__ii.html#a095d95354c4cf99b3e781587d9dd99da',1,'Noise_ii']]],
   ['noise_5fiv',['Noise_iv',['../classNoise__iv.html#a2661391f369e8452fae403cb49050aec',1,'Noise_iv']]],
   ['noise_5fvv',['Noise_vv',['../classNoise__vv.html#a7a1ca88a0169fe5edb2815c3b2ef6364',1,'Noise_vv']]],
-  ['normalize_5fvalue',['normalize_value',['../namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9',1,'spicecompat']]],
+  ['normalize_5fvalue',['normalize_value',['../namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9',1,'spicecompat::normalize_value()'],['../namespacevacompat.html#a1bb3df3973f6edf4b8e2ca52758a70dc',1,'vacompat::normalize_value()']]],
   ['normalizevarsnames',['normalizeVarsNames',['../classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f',1,'AbstractSpiceKernel']]],
   ['npn_5fspice',['NPN_SPICE',['../classNPN__SPICE.html#a9b87de934d4ecea81904e19e7ac8bbfc',1,'NPN_SPICE']]],
   ['num2str',['num2str',['../namespacemisc.html#af7e46432adfd60ad9f875172e5c95393',1,'misc']]],

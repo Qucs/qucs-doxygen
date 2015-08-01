@@ -1,8 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$capacitor_8h.html" title="capacitor.h" alt="" coords="121,83,207,112"/>
-<area shape="rect" id="node15" href="$node_8h.html" title="node.h" alt="" coords="37,160,99,189"/>
-<area shape="rect" id="node19" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="231,83,292,112"/>
-<area shape="rect" id="node21" href="$spicecompat_8h.html" title="extsimkernels/spicecompat.h" alt="" coords="316,83,508,112"/>
-<area shape="rect" id="node5" href="$component_8h.html" title="component.h" alt="" coords="123,160,219,189"/>
-<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="131,237,208,267"/>
+<area shape="rect" id="node3" href="$capacitor_8h.html" title="capacitor.h" alt="" coords="116,160,201,189"/>
+<area shape="rect" id="node15" href="$node_8h.html" title="node.h" alt="" coords="53,237,115,267"/>
+<area shape="rect" id="node19" href="$misc_8h.html" title="of some miscellaneous function" alt="" coords="181,83,243,112"/>
+<area shape="rect" id="node21" href="$spicecompat_8h.html" title="extsimkernels/spicecompat.h" alt="" coords="267,83,459,112"/>
+<area shape="rect" id="node25" href="$verilogawriter_8h.html" title="Declaration of the AbstractSpiceKernel class and vacompat namespace." alt="" coords="483,83,677,112"/>
+<area shape="rect" id="node5" href="$component_8h.html" title="component.h" alt="" coords="124,315,220,344"/>
+<area shape="rect" id="node9" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="387,469,464,499"/>
+<area shape="rect" id="node28" href="$schematic_8h.html" title="schematic.h" alt="" coords="533,160,627,189"/>
+<area shape="rect" id="node30" href="$wire_8h.html" title="wire.h" alt="" coords="295,237,351,267"/>
+<area shape="rect" id="node32" href="$viewpainter_8h.html" title="viewpainter.h" alt="" coords="1207,469,1305,499"/>
+<area shape="rect" id="node43" href="$qucsdoc_8h.html" title="qucsdoc.h" alt="" coords="647,315,729,344"/>
+<area shape="rect" id="node49" href="$diagram_8h.html" title="diagrams/diagram.h" alt="" coords="1012,237,1148,267"/>
+<area shape="rect" id="node75" href="$painting_8h.html" title="paintings/painting.h" alt="" coords="411,392,544,421"/>
+<area shape="rect" id="node36" href="$wirelabel_8h.html" title="wirelabel.h" alt="" coords="540,315,623,344"/>
+<area shape="rect" id="node51" href="$graph_8h.html" title="graph.h" alt="" coords="864,315,928,344"/>
+<area shape="rect" id="node53" href="$marker_8h.html" title="marker.h" alt="" coords="1184,392,1256,421"/>
 </map>

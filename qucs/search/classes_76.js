@@ -10,6 +10,7 @@ var searchData=
   ['verilog_5ffile',['Verilog_File',['../classVerilog__File.html',1,'']]],
   ['verilog_5ffile_5finfo',['Verilog_File_Info',['../classVerilog__File__Info.html',1,'']]],
   ['veriloga_5ffile_5finfo',['VerilogA_File_Info',['../classVerilogA__File__Info.html',1,'']]],
+  ['verilogawriter',['VerilogAwriter',['../classVerilogAwriter.html',1,'']]],
   ['vexp',['vExp',['../classvExp.html',1,'']]],
   ['vfile',['vFile',['../classvFile.html',1,'']]],
   ['vhdl_5ffile',['VHDL_File',['../classVHDL__File.html',1,'']]],

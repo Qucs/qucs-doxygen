@@ -64,7 +64,7 @@ var searchData=
   ['simopt',['SimOpt',['../classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997',1,'SimMessage']]],
   ['simports',['SimPorts',['../classSimMessage.html#a232cda731bf3d8fbb6462cc091ecd7c8',1,'SimMessage']]],
   ['simprocess',['SimProcess',['../classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a',1,'SimMessage::SimProcess()'],['../classAbstractSpiceKernel.html#afe83bd5dc7f06928ead1553a46c41f94',1,'AbstractSpiceKernel::SimProcess()']]],
-  ['simprogress',['simProgress',['../classExternSimDialog.html#af6ec38ca4620c06e1a9b46053c671b76',1,'ExternSimDialog::simProgress()'],['../classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5',1,'SimMessage::SimProgress()']]],
+  ['simprogress',['SimProgress',['../classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5',1,'SimMessage::SimProgress()'],['../classExternSimDialog.html#af6ec38ca4620c06e1a9b46053c671b76',1,'ExternSimDialog::simProgress()']]],
   ['simradio',['simRadio',['../classDigiSettingsDialog.html#ab15698574b1d040e5dfb9412eddaf2bb',1,'DigiSettingsDialog']]],
   ['simrunscript',['SimRunScript',['../classSimMessage.html#a992860a43ff7feed8c924be11d8c0921',1,'SimMessage::SimRunScript()'],['../classQucsDoc.html#a4f080b75d6fc47b96edff4e405c8c346',1,'QucsDoc::SimRunScript()']]],
   ['sims',['sims',['../classAbstractSpiceKernel.html#af026212c5b0933254e858937277a1102',1,'AbstractSpiceKernel']]],

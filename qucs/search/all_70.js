@@ -122,6 +122,7 @@ var searchData=
   ['prefix',['Prefix',['../classID__Dialog.html#a43c125101f2711120feb946e4f65e375',1,'ID_Dialog::Prefix()'],['../classID__Text.html#a839e2d39825f1f66ef5c7a16371db750',1,'ID_Text::Prefix()']]],
   ['preparenetlist',['prepareNetlist',['../classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69',1,'Schematic']]],
   ['preparespicenetlist',['prepareSpiceNetlist',['../classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164',1,'AbstractSpiceKernel']]],
+  ['preparetoveriloga',['prepareToVerilogA',['../classVerilogAwriter.html#aa6c591f53dba506e720d5187a6a73e32',1,'VerilogAwriter']]],
   ['prepcombo',['PrepCombo',['../classSpiceDialog.html#a403f4fd75191f65278374dc22e28320b',1,'SpiceDialog']]],
   ['prestream',['prestream',['../classSpiceDialog.html#abbdc6cf6b7c22c98e20a4089b58a0580',1,'SpiceDialog::prestream()'],['../classSpiceFile.html#a23b412a3ae670cb56664f37db130c551',1,'SpiceFile::prestream()']]],
   ['prevbutt',['prevButt',['../classLibraryDialog.html#ae703c76a1149630e04af4e12a992ffe3',1,'LibraryDialog']]],

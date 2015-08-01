@@ -264,6 +264,7 @@ var searchData=
   ['_7everilog_5ffile',['~Verilog_File',['../classVerilog__File.html#acd52d9cb0bc22aa6670de94063ea56cb',1,'Verilog_File']]],
   ['_7everilog_5ffile_5finfo',['~Verilog_File_Info',['../classVerilog__File__Info.html#a7a3ee3800ff7458d6e750aaba3cc2f2e',1,'Verilog_File_Info']]],
   ['_7everiloga_5ffile_5finfo',['~VerilogA_File_Info',['../classVerilogA__File__Info.html#afee58142de9ef63a6dc5b3b1e5256427',1,'VerilogA_File_Info']]],
+  ['_7everilogawriter',['~VerilogAwriter',['../classVerilogAwriter.html#aa6c3a566e87683a99bcebf6d4cf3fc54',1,'VerilogAwriter']]],
   ['_7evexp',['~vExp',['../classvExp.html#a59e3c419b5759430553877c3874f7719',1,'vExp']]],
   ['_7evfile',['~vFile',['../classvFile.html#ad6463f109a5410e20f91ee246670eccc',1,'vFile']]],
   ['_7evhdl_5ffile',['~VHDL_File',['../classVHDL__File.html#a5e3be9743559c593915aa83c14115953',1,'VHDL_File']]],

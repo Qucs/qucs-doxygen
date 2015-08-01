@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classGateComponent.html" title="{GateComponent\n||+ GateComponent()\l+ netlist()\l+ spice_netlist()\l+ vhdlCode()\l+ verilogCode()\l# createSymbol()\l}" alt="" coords="52,1187,188,1359"/>
-<area shape="rect" id="node4" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="33,1001,207,1138"/>
-<area shape="rect" id="node6" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="5,347,235,952"/>
+<area shape="rect" id="node2" href="$classGateComponent.html" title="{GateComponent\n||+ GateComponent()\l+ netlist()\l+ spice_netlist()\l+ vhdlCode()\l+ verilogCode()\l# createSymbol()\l}" alt="" coords="52,1206,188,1378"/>
+<area shape="rect" id="node4" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="33,1019,207,1157"/>
+<area shape="rect" id="node6" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="5,347,235,970"/>
 <area shape="rect" id="node8" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="61,5,179,299"/>
 </map>

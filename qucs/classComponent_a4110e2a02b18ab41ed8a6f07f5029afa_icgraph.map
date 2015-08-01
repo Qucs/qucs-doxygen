@@ -11,6 +11,7 @@
 <area shape="rect" id="node50" href="$classParam__Sweep.html#a7aa1d0b6092dadb14456196170072f05" title="Param_Sweep::getNgspiceBeforeSim" alt="" coords="219,480,461,509"/>
 <area shape="rect" id="node52" href="$classParam__Sweep.html#a9deebd496d41bff7cb3d0924807f619f" title="Param_Sweep::getNgspiceAfterSim" alt="" coords="224,533,456,563"/>
 <area shape="rect" id="node54" href="$classParam__Sweep.html#a35c86547d738510ec7ebb724799b43ca" title="Param_Sweep::spice_netlist" alt="" coords="247,587,433,616"/>
+<area shape="rect" id="node56" href="$classTR__Sim.html#af3c2e10873899d0b6858a61a79f90aad" title="TR_Sim::spice_netlist" alt="" coords="265,640,415,669"/>
 <area shape="rect" id="node13" href="$classEKV26MOS.html#a674f1e5709cbec780841da165175c407" title="EKV26MOS::EKV26MOS" alt="" coords="515,163,685,192"/>
 <area shape="rect" id="node16" href="$classEKV26MOS.html#a6d4760c266a9b119833799c80e16214a" title="EKV26MOS::info" alt="" coords="759,163,881,192"/>
 <area shape="rect" id="node21" href="$classEquation.html#af5d1e5b0c21e7a44042bffd85a9a6659" title="Equation::getExpression Extract equations that don&#39;t contain simualtion variables (voltages/cureents)..." alt="" coords="519,267,681,296"/>

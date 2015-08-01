@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00108"></a>00108     incompat.clear();
 <a name="l00109"></a>00109     <span class="keywordflow">for</span>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a> *pc = <a class="code" href="classAbstractSpiceKernel.html#aa80ad735225d414f5efab6200b89a83d">Sch</a>-&gt;<a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.first(); pc != 0; pc = <a class="code" href="classAbstractSpiceKernel.html#aa80ad735225d414f5efab6200b89a83d">Sch</a>-&gt;<a class="code" href="classSchematic.html#a2469a66c2634f29af9be0fd4ecb97305">DocComps</a>.next()) {
 <a name="l00110"></a>00110         <span class="keywordflow">if</span> ((!pc-&gt;isEquation)&amp;&amp;!(pc-&gt;isProbe)) {
-<a name="l00111"></a>00111             <span class="keywordflow">if</span> (pc-&gt;SpiceModel.isEmpty()) incompat.append(pc-&gt;Name);
+<a name="l00111"></a>00111             <span class="keywordflow">if</span> (pc-&gt;SpiceModel.isEmpty() &amp;&amp; pc-&gt;isActive) incompat.append(pc-&gt;Name);
 <a name="l00112"></a>00112         }
 <a name="l00113"></a>00113     }
 <a name="l00114"></a>00114 
@@ -824,7 +824,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 25 2015 15:43:20 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 1 2015 08:19:40 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

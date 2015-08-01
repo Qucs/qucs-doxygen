@@ -162,10 +162,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00079"></a>00079     QString s=<span class="stringliteral">&quot;&quot;</span>;
 <a name="l00080"></a>00080     <span class="keywordflow">if</span> (isXyce) {  <span class="comment">// Only in Xyce</span>
 <a name="l00081"></a>00081         s += QString(<span class="stringliteral">&quot;.options hbint numfreq=%1 STARTUPPERIODS=2\n&quot;</span>).arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(1)-&gt;Value);
-<a name="l00082"></a>00082         s += QString(<span class="stringliteral">&quot;.HB %1\n&quot;</span>).arg(<a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value));
-<a name="l00083"></a>00083     }
-<a name="l00084"></a>00084     <span class="keywordflow">return</span> s;
-<a name="l00085"></a>00085 }
+<a name="l00082"></a>00082         QStringList freqs = <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value.split(QRegExp(<span class="stringliteral">&quot;\\s+(?=[0-9])&quot;</span>));
+<a name="l00083"></a>00083         <span class="comment">// split frequencyes list by space before digit</span>
+<a name="l00084"></a>00084         <span class="keywordflow">for</span> (QStringList::iterator it = freqs.begin();it != freqs.end(); it++) {
+<a name="l00085"></a>00085             (*it) = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">spicecompat::normalize_value</a>(*it);
+<a name="l00086"></a>00086         }
+<a name="l00087"></a>00087         s += QString(<span class="stringliteral">&quot;.HB %1\n&quot;</span>).arg(freqs.join(<span class="stringliteral">&quot; &quot;</span>));
+<a name="l00088"></a>00088     }
+<a name="l00089"></a>00089     <span class="keywordflow">return</span> s;
+<a name="l00090"></a>00090 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -184,7 +189,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 25 2015 15:43:19 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 1 2015 08:19:39 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -22,7 +22,7 @@ var searchData=
   ['nodeslist',['NodesList',['../classSpiceDialog.html#a2d45087f5fd69de9d5540f32ad736cec',1,'SpiceDialog']]],
   ['nodewiring',['NodeWiring',['../structtQucsSettings.html#a02a2b73c3afa981f24ace882d54c777c',1,'tQucsSettings']]],
   ['noselected',['noselected',['../classExportDialog.html#ad01e2e39964f05490b6c76c13b4a40b8',1,'ExportDialog']]],
-  ['nprocs',['Nprocs',['../classXyce.html#a6864e5de64d4d34e3cf1d73ebcefbd20',1,'Xyce::Nprocs()'],['../structtQucsSettings.html#a816b2e46e168415dd2e6612ef32f2227',1,'tQucsSettings::NProcs()']]],
+  ['nprocs',['NProcs',['../structtQucsSettings.html#a816b2e46e168415dd2e6612ef32f2227',1,'tQucsSettings::NProcs()'],['../classXyce.html#a6864e5de64d4d34e3cf1d73ebcefbd20',1,'Xyce::Nprocs()']]],
   ['numberbox',['NumberBox',['../classMarkerDialog.html#a68e1266eb2ddd8f8acad27c77498a531',1,'MarkerDialog']]],
   ['numberstr',['numberStr',['../classPortSymbol.html#ad4fe8fce26f0aee2475d69ac62208ae1',1,'PortSymbol']]],
   ['numdefaultcolors',['NumDefaultColors',['../diagramdialog_8cpp.html#a5e0952cc903c913cfc1d676954c03bbb',1,'diagramdialog.cpp']]],

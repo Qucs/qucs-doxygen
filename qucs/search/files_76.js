@@ -14,6 +14,8 @@ var searchData=
   ['vcresistor_2eh',['vcresistor.h',['../vcresistor_8h.html',1,'']]],
   ['vcvs_2ecpp',['vcvs.cpp',['../vcvs_8cpp.html',1,'']]],
   ['vcvs_2eh',['vcvs.h',['../vcvs_8h.html',1,'']]],
+  ['verilogawriter_2ecpp',['verilogawriter.cpp',['../verilogawriter_8cpp.html',1,'']]],
+  ['verilogawriter_2eh',['verilogawriter.h',['../verilogawriter_8h.html',1,'']]],
   ['verilogfile_2ecpp',['verilogfile.cpp',['../verilogfile_8cpp.html',1,'']]],
   ['verilogfile_2eh',['verilogfile.h',['../verilogfile_8h.html',1,'']]],
   ['vexp_2ecpp',['vexp.cpp',['../vexp_8cpp.html',1,'']]],

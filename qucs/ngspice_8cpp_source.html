@@ -380,7 +380,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00326"></a>00326     <span class="keywordflow">if</span> (!<a class="code" href="classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE-compatibility of all components.">checkSchematic</a>(incompat)) {
 <a name="l00327"></a>00327         QString s = incompat.join(<span class="stringliteral">&quot;; &quot;</span>);
 <a name="l00328"></a>00328         <a class="code" href="classAbstractSpiceKernel.html#a338d487bd665cadb20f1ef046f85ea35">output</a>.append(<span class="stringliteral">&quot;There were SPICE-incompatible components. Simulator cannot proceed.&quot;</span>);
-<a name="l00329"></a>00329         <a class="code" href="classAbstractSpiceKernel.html#a338d487bd665cadb20f1ef046f85ea35">output</a>.append(<span class="stringliteral">&quot;Incompatible components are: &quot;</span> + s);
+<a name="l00329"></a>00329         <a class="code" href="classAbstractSpiceKernel.html#a338d487bd665cadb20f1ef046f85ea35">output</a>.append(<span class="stringliteral">&quot;Incompatible components are: &quot;</span> + s + <span class="stringliteral">&quot;\n&quot;</span>);
 <a name="l00330"></a>00330         emit <a class="code" href="classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4">finished</a>();
 <a name="l00331"></a>00331         emit <a class="code" href="classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30">errors</a>(QProcess::FailedToStart);
 <a name="l00332"></a>00332         <span class="keywordflow">return</span>;
@@ -391,7 +391,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00337"></a>00337 
 <a name="l00338"></a>00338     <span class="comment">//startNgSpice(tmp_path);</span>
 <a name="l00339"></a>00339     <a class="code" href="classAbstractSpiceKernel.html#afe83bd5dc7f06928ead1553a46c41f94">SimProcess</a>-&gt;setWorkingDirectory(<a class="code" href="classAbstractSpiceKernel.html#ad31a37164fca2dc94da6f3e49906f5d0">workdir</a>);
-<a name="l00340"></a>00340     QString cmd = QString(<span class="stringliteral">&quot;%1 %2 \&quot;%3\&quot;&quot;</span>).arg(<a class="code" href="classAbstractSpiceKernel.html#aee6d1f1eba7efd664ac73ab8b17b578b">simulator_cmd</a>,<a class="code" href="classAbstractSpiceKernel.html#ac89802872bd0296c922bff038b1dd4ba">simulator_parameters</a>,tmp_path);
+<a name="l00340"></a>00340     QString cmd = QString(<span class="stringliteral">&quot;\&quot;%1\&quot; %2 \&quot;%3\&quot;&quot;</span>).arg(<a class="code" href="classAbstractSpiceKernel.html#aee6d1f1eba7efd664ac73ab8b17b578b">simulator_cmd</a>,<a class="code" href="classAbstractSpiceKernel.html#ac89802872bd0296c922bff038b1dd4ba">simulator_parameters</a>,tmp_path);
 <a name="l00341"></a>00341     <a class="code" href="classAbstractSpiceKernel.html#afe83bd5dc7f06928ead1553a46c41f94">SimProcess</a>-&gt;start(cmd);
 <a name="l00342"></a>00342     emit <a class="code" href="classAbstractSpiceKernel.html#a4a19b1b50928c525b0df6dda303818e5">started</a>();
 <a name="l00343"></a>00343 }
@@ -438,7 +438,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 25 2015 15:43:20 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 1 2015 08:19:40 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
