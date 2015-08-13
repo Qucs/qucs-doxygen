@@ -369,12 +369,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00286"></a>00286 
 <a name="l00287"></a>00287     <span class="keywordtype">int</span> f_w, f_h;
 <a name="l00288"></a>00288     <span class="keywordflow">if</span> (sch-&gt;<a class="code" href="classSchematic.html#a24cdab03ce88b2c2c23f783effb03d82">sizeOfFrame</a>(f_w,f_h)) {
-<a name="l00289"></a>00289         xmin = 0;
-<a name="l00290"></a>00290         ymin = 0;
-<a name="l00291"></a>00291         w = f_w;
-<a name="l00292"></a>00292         h = f_h;
-<a name="l00293"></a>00293     }
-<a name="l00294"></a>00294 }
+<a name="l00289"></a>00289         xmin = std::min(0,xmin); <span class="comment">// For components</span>
+<a name="l00290"></a>00290         ymin = std::min(0,ymin); <span class="comment">// that fall out of frame</span>
+<a name="l00291"></a>00291         w = abs(std::max(f_w,sch-&gt;<a class="code" href="classSchematic.html#a0c6777e18496c799dcb79035749261d4">UsedX2</a>) - xmin);
+<a name="l00292"></a>00292         h = abs(std::max(f_h,sch-&gt;<a class="code" href="classSchematic.html#a200ec47d49a0e8a16931d470667ea52e">UsedY2</a>) - ymin);
+<a name="l00293"></a>00293         <span class="comment">//w = std::max(w,f_w);</span>
+<a name="l00294"></a>00294         <span class="comment">//h = std::max(h,f_h);</span>
+<a name="l00295"></a>00295     }
+<a name="l00296"></a>00296 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -393,7 +395,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 1 2015 08:19:40 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 13 2015 08:02:16 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

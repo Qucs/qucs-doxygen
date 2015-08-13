@@ -101,7 +101,7 @@ Inheritance diagram for AbstractSpiceKernel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAbstractSpiceKernel__inherit__graph.png" border="0" usemap="#AbstractSpiceKernel_inherit__map" alt="Inheritance graph"/></div>
 <map name="AbstractSpiceKernel_inherit__map" id="AbstractSpiceKernel_inherit__map">
-<area shape="rect" id="node3" href="classNgspice.html" title="The Ngspice class Responsible for Ngspice simulator execution." alt="" coords="5,677,163,849"/><area shape="rect" id="node5" href="classXyce.html" title="The Xyce class responsible for execution of Xyce simulator." alt="" coords="187,625,381,901"/></map>
+<area shape="rect" id="node3" href="classNgspice.html" title="The Ngspice class Responsible for Ngspice simulator execution." alt="" coords="5,695,163,867"/><area shape="rect" id="node5" href="classXyce.html" title="The Xyce class responsible for execution of Xyce simulator." alt="" coords="187,643,381,919"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for AbstractSpiceKernel:</div>
@@ -171,6 +171,8 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist...">AbstractSpiceKernel::startNetlist</a> Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist.  <a href="#ae5fd31893299a6b8d3b6b31402e9f954"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSpiceKernel.html#aee3cef0c320923b0487c078c56a63d4f">createNetlist</a> (QTextStream &amp;stream, int NumPorts, QStringList &amp;simulations, QStringList &amp;<a class="el" href="classAbstractSpiceKernel.html#ae5d809a893d303bdc8fb35b92a5aefa3">vars</a>, QStringList &amp;outputs)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAbstractSpiceKernel.html#aee3cef0c320923b0487c078c56a63d4f" title="AbstractSpiceKernel::createNetlist Writes netlist in stream TextStream.">AbstractSpiceKernel::createNetlist</a> Writes netlist in stream TextStream.  <a href="#aee3cef0c320923b0487c078c56a63d4f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8">removeAllSimulatorOutputs</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets.">AbstractSpiceKernel::removeAllSimulatorOutputs</a> Clean temporary simulator datasets.  <a href="#abdca56590749f96e79d5f50ab6afe2f8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSpiceKernel.html#a74a56ba541d03a099750547fb0fe4c25">netlist</a></td></tr>
@@ -397,7 +399,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAbstractSpiceKernel_a1cb7dd699a9955852b9dc1e7eccc9861_cgraph.png" border="0" usemap="#classAbstractSpiceKernel_a1cb7dd699a9955852b9dc1e7eccc9861_cgraph" alt=""/></div>
 <map name="classAbstractSpiceKernel_a1cb7dd699a9955852b9dc1e7eccc9861_cgraph" id="classAbstractSpiceKernel_a1cb7dd699a9955852b9dc1e7eccc9861_cgraph">
-<area shape="rect" id="node3" href="classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="348,5,585,35"/><area shape="rect" id="node5" href="classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="337,59,596,88"/><area shape="rect" id="node7" href="classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="340,112,593,141"/><area shape="rect" id="node9" href="classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="353,165,580,195"/><area shape="rect" id="node11" href="classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="329,219,604,248"/><area shape="rect" id="node13" href="classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="340,272,593,301"/><area shape="rect" id="node15" href="classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="341,325,592,355"/><area shape="rect" id="node17" href="classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="320,379,613,408"/><area shape="rect" id="node19" href="classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f" title="AbstractSpiceKernel::normalizeVarsNames Convert spice&#45;style variable names to Qucs style and add simu..." alt="" coords="329,432,604,461"/></map>
+<area shape="rect" id="node3" href="classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="356,5,593,35"/><area shape="rect" id="node5" href="classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="345,59,604,88"/><area shape="rect" id="node7" href="classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="348,112,601,141"/><area shape="rect" id="node9" href="classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="361,165,588,195"/><area shape="rect" id="node11" href="classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="337,219,612,248"/><area shape="rect" id="node13" href="classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="348,272,601,301"/><area shape="rect" id="node15" href="classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="349,325,600,355"/><area shape="rect" id="node17" href="classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="328,379,621,408"/><area shape="rect" id="node19" href="classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f" title="AbstractSpiceKernel::normalizeVarsNames Convert spice&#45;style variable names to Qucs style and add simu..." alt="" coords="337,432,612,461"/><area shape="rect" id="node21" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets." alt="" coords="321,485,628,515"/></map>
 </div>
 </p>
 
@@ -588,7 +590,7 @@ Here is the caller graph for this function:</div>
 <p><a class="el" href="classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process.">AbstractSpiceKernel::getOutput</a> Get sdtout and stderr output of simulation process. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Simulation process output </dd></dl>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00833">833</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00848">848</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -652,7 +654,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00753">753</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00768">768</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1145,7 +1147,36 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAbstractSpiceKernel_ad9807cb4f71baa3c70282d42d1576522_icgraph.png" border="0" usemap="#classAbstractSpiceKernel_ad9807cb4f71baa3c70282d42d1576522_icgraph" alt=""/></div>
 <map name="classAbstractSpiceKernel_ad9807cb4f71baa3c70282d42d1576522_icgraph" id="classAbstractSpiceKernel_ad9807cb4f71baa3c70282d42d1576522_icgraph">
-<area shape="rect" id="node3" href="classAbstractSpiceKernel.html#a1bda07b80e00d3f413c5b831f941d140" title="AbstractSpiceKernel::slotFinished Simulation process normal finish handler." alt="" coords="253,5,472,35"/><area shape="rect" id="node7" href="classNgspice.html#a19bee451c86956eba6866d2032ec879d" title="Ngspice::slotProcessOutput Process Ngspice output and report completetion percentage." alt="" coords="269,59,456,88"/><area shape="rect" id="node9" href="classXyce.html#a81c1091a7b8b9b7a6c2c33842af480de" title="Xyce::slotFinished Simualtor finished handler." alt="" coords="297,112,428,141"/><area shape="rect" id="node11" href="classXyce.html#a94707ec1e0263b2eb64cddbe40e1cf62" title="Xyce::slotProcessOutput Process Xyce output and report progress." alt="" coords="279,165,447,195"/><area shape="rect" id="node5" href="classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor." alt="" coords="521,5,788,35"/></map>
+<area shape="rect" id="node3" href="classAbstractSpiceKernel.html#a1bda07b80e00d3f413c5b831f941d140" title="AbstractSpiceKernel::slotFinished Simulation process normal finish handler." alt="" coords="253,5,472,35"/><area shape="rect" id="node7" href="classNgspice.html#a19bee451c86956eba6866d2032ec879d" title="Ngspice::slotProcessOutput Process Ngspice output and report completetion percentage." alt="" coords="269,59,456,88"/><area shape="rect" id="node9" href="classXyce.html#a81c1091a7b8b9b7a6c2c33842af480de" title="Xyce::slotFinished Simualtor finished handler." alt="" coords="589,136,720,165"/><area shape="rect" id="node11" href="classXyce.html#a94707ec1e0263b2eb64cddbe40e1cf62" title="Xyce::slotProcessOutput Process Xyce output and report progress." alt="" coords="279,163,447,192"/><area shape="rect" id="node13" href="classXyce.html#a885f0416851b3ca1599d765888e0f8d2" title="Xyce::nextSimulation Execute the next simulation from queue." alt="" coords="289,216,436,245"/><area shape="rect" id="node5" href="classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor." alt="" coords="521,5,788,35"/><area shape="rect" id="node15" href="classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="589,216,720,245"/><area shape="rect" id="node17" href="main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="839,216,908,245"/><area shape="rect" id="node19" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="957,216,1008,245"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abdca56590749f96e79d5f50ab6afe2f8"></a><!-- doxytag: member="AbstractSpiceKernel::removeAllSimulatorOutputs" ref="abdca56590749f96e79d5f50ab6afe2f8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8">AbstractSpiceKernel::removeAllSimulatorOutputs</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets.">AbstractSpiceKernel::removeAllSimulatorOutputs</a> Clean temporary simulator datasets. </p>
+
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00754">754</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAbstractSpiceKernel_abdca56590749f96e79d5f50ab6afe2f8_icgraph.png" border="0" usemap="#classAbstractSpiceKernel_abdca56590749f96e79d5f50ab6afe2f8_icgraph" alt=""/></div>
+<map name="classAbstractSpiceKernel_abdca56590749f96e79d5f50ab6afe2f8_icgraph" id="classAbstractSpiceKernel_abdca56590749f96e79d5f50ab6afe2f8_icgraph">
+<area shape="rect" id="node3" href="classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="363,85,629,115"/><area shape="rect" id="node5" href="classExternSimDialog.html#aa502e85a3b95e6de812ea881f20103b1" title="ExternSimDialog::slotProcessNgspiceOutput" alt="" coords="679,5,961,35"/><area shape="rect" id="node11" href="classExternSimDialog.html#afb56c9a5befdb88ff64975a1d8cf9500" title="ExternSimDialog::slotProcessXyceOutput" alt="" coords="687,59,953,88"/><area shape="rect" id="node14" href="main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="776,112,864,141"/><area shape="rect" id="node18" href="main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="785,165,855,195"/><area shape="rect" id="node7" href="classExternSimDialog.html#a52ae52b9fb23d086f8762a1b76de7180" title="ExternSimDialog::slotSetSimulator" alt="" coords="1011,45,1235,75"/><area shape="rect" id="node9" href="classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="1283,45,1509,75"/><area shape="rect" id="node16" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1097,125,1148,155"/></map>
 </div>
 </p>
 
@@ -1171,7 +1202,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classXyce.html#a4121a939ef18f894c3011287d9937bd8">Xyce</a>, and <a class="el" href="classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd">Ngspice</a>.</p>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00866">866</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00881">881</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1229,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00842">842</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00857">857</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1234,7 +1265,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00852">852</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00867">867</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1270,7 +1301,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00804">804</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00819">819</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1310,7 +1341,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classXyce.html#a81c1091a7b8b9b7a6c2c33842af480de">Xyce</a>.</p>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00812">812</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00827">827</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1350,7 +1381,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classXyce.html#a94707ec1e0263b2eb64cddbe40e1cf62">Xyce</a>, and <a class="el" href="classNgspice.html#a19bee451c86956eba6866d2032ec879d">Ngspice</a>.</p>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00823">823</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00838">838</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1474,7 +1505,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classXyce.html#a66852766f793e208dc009afc8dabe33d">Xyce</a>.</p>
 
-<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00871">871</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
+<p>Definition at line <a class="el" href="abstractspicekernel_8cpp_source.html#l00886">886</a> of file <a class="el" href="abstractspicekernel_8cpp_source.html">abstractspicekernel.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1660,7 +1691,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 1 2015 08:19:42 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 13 2015 08:02:18 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

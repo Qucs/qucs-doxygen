@@ -127,57 +127,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00055"></a>00055     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist...">startNetlist</a>(QTextStream&amp; stream, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
 <a name="l00056"></a>00056     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#aee3cef0c320923b0487c078c56a63d4f" title="AbstractSpiceKernel::createNetlist Writes netlist in stream TextStream.">createNetlist</a>(QTextStream&amp; stream, <span class="keywordtype">int</span> NumPorts,QStringList&amp; simulations,
 <a name="l00057"></a>00057                                QStringList&amp; <a class="code" href="classAbstractSpiceKernel.html#ae5d809a893d303bdc8fb35b92a5aefa3">vars</a>, QStringList &amp;outputs);
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 <span class="keyword">public</span>:
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061     <span class="keyword">explicit</span> <a class="code" href="classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor.">AbstractSpiceKernel</a>(<a class="code" href="classSchematic.html">Schematic</a> *sch_, QObject *parent = 0);
-<a name="l00062"></a>00062     <a class="code" href="classAbstractSpiceKernel.html#a831ca68081ebba3c87bbec67f5c7f766">~AbstractSpiceKernel</a>();
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064     <span class="keywordtype">bool</span> <a class="code" href="classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE-compatibility of all components.">checkSchematic</a>(QStringList &amp;incompat);
-<a name="l00065"></a>00065     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT.">createSubNetlsit</a>(QTextStream&amp; stream, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output.">parseNgSpiceSimOutput</a>(QString ngspice_file,
-<a name="l00068"></a>00068                           QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00069"></a>00069                           QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
-<a name="l00070"></a>00070     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output.">parseHBOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00071"></a>00071                        QStringList &amp;var_list);
-<a name="l00072"></a>00072     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation.">parseFourierOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00073"></a>00073                             QStringList &amp;var_list, <span class="keywordtype">bool</span> xyce);
-<a name="l00074"></a>00074     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation.">parseNoiseOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00075"></a>00075                           QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;ParSwp);
-<a name="l00076"></a>00076     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an...">parseSTEPOutput</a>(QString ngspice_file,
-<a name="l00077"></a>00077                          QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00078"></a>00078                          QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
-<a name="l00079"></a>00079     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a">parseHBSTEPOutput</a>(QString ngspice_file,
-<a name="l00080"></a>00080                            QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
-<a name="l00081"></a>00081                            QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
-<a name="l00082"></a>00082     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *...">parseResFile</a>(QString resfile, QString &amp;var, QStringList &amp;values);
-<a name="l00083"></a>00083     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ...">convertToQucsData</a>(<span class="keyword">const</span> QString &amp;qucs_dataset, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00084"></a>00084     QString <a class="code" href="classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process.">getOutput</a>();
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a9d158010b4efb3c46ad23807bf17aaf4" title="AbstractSpiceKernel::setSimulatorCmd Set simualtor executable location.">setSimulatorCmd</a>(QString cmd);
-<a name="l00087"></a>00087     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a79f8c9a901292f367adf48951e171dc6" title="AbstractSpiceKernel::setWorkdir Set simulator working directory path to store netlist and temp data...">setWorkdir</a>(QString path);
-<a name="l00088"></a>00088     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ad0da1e5ce3e7fce138625401911f59e0" title="AbstractSpiceKernel::SaveNetlist Save netlist to file.">SaveNetlist</a>(QString filename);
-<a name="l00089"></a>00089     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classAbstractSpiceKernel.html#a726918ad791f5235fc2f82f63faa60aa">waitEndOfSimulation</a>();
-<a name="l00090"></a>00090     
-<a name="l00091"></a>00091 signals:
-<a name="l00092"></a>00092     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4a19b1b50928c525b0df6dda303818e5">started</a>();
-<a name="l00093"></a>00093     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4">finished</a>();
-<a name="l00094"></a>00094     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30">errors</a>(QProcess::ProcessError);
-<a name="l00095"></a>00095     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ad9807cb4f71baa3c70282d42d1576522">progress</a>(<span class="keywordtype">int</span>);
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097 <span class="keyword">protected</span> slots:
-<a name="l00098"></a>00098     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a1bda07b80e00d3f413c5b831f941d140" title="AbstractSpiceKernel::slotFinished Simulation process normal finish handler.">slotFinished</a>();
-<a name="l00099"></a>00099     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a272b1ebe9633045621756cd167189ee0" title="AbstractSpiceKernel::slotProcessOutput Process SimProcess output and report progress.">slotProcessOutput</a>();
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="keyword">public</span> slots:
-<a name="l00102"></a>00102     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a3e5cd2dd14acec2eaaacec90ec9b7eaf" title="AbstractSpiceKernel::slotSimulate Executes simulator.">slotSimulate</a>();
-<a name="l00103"></a>00103     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ac778a86ad38935525a965b3d49288ce2">killThemAll</a>();
-<a name="l00104"></a>00104     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a9de00e5b16a9f24a4b25716e536f44b2" title="AbstractSpiceKernel::slotErrors Simulator errors handler.">slotErrors</a>(QProcess::ProcessError err);
-<a name="l00105"></a>00105     
-<a name="l00106"></a>00106 };
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108 <span class="preprocessor">#endif // ABSTRACTSPICEKERNEL_H</span>
+<a name="l00058"></a>00058     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets.">removeAllSimulatorOutputs</a>();
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="keyword">public</span>:
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062     <span class="keyword">explicit</span> <a class="code" href="classAbstractSpiceKernel.html#a167cfe2b2d23f309a7b8091cdfae56e4" title="AbstractSpiceKernel::AbstractSpiceKernel class constructor.">AbstractSpiceKernel</a>(<a class="code" href="classSchematic.html">Schematic</a> *sch_, QObject *parent = 0);
+<a name="l00063"></a>00063     <a class="code" href="classAbstractSpiceKernel.html#a831ca68081ebba3c87bbec67f5c7f766">~AbstractSpiceKernel</a>();
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065     <span class="keywordtype">bool</span> <a class="code" href="classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE-compatibility of all components.">checkSchematic</a>(QStringList &amp;incompat);
+<a name="l00066"></a>00066     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT.">createSubNetlsit</a>(QTextStream&amp; stream, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output.">parseNgSpiceSimOutput</a>(QString ngspice_file,
+<a name="l00069"></a>00069                           QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00070"></a>00070                           QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
+<a name="l00071"></a>00071     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output.">parseHBOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00072"></a>00072                        QStringList &amp;var_list);
+<a name="l00073"></a>00073     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation.">parseFourierOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00074"></a>00074                             QStringList &amp;var_list, <span class="keywordtype">bool</span> xyce);
+<a name="l00075"></a>00075     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation.">parseNoiseOutput</a>(QString ngspice_file, QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00076"></a>00076                           QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;ParSwp);
+<a name="l00077"></a>00077     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an...">parseSTEPOutput</a>(QString ngspice_file,
+<a name="l00078"></a>00078                          QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00079"></a>00079                          QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
+<a name="l00080"></a>00080     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a">parseHBSTEPOutput</a>(QString ngspice_file,
+<a name="l00081"></a>00081                            QList&lt; QList&lt;double&gt; &gt; &amp;sim_points,
+<a name="l00082"></a>00082                            QStringList &amp;var_list, <span class="keywordtype">bool</span> &amp;isComplex);
+<a name="l00083"></a>00083     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *...">parseResFile</a>(QString resfile, QString &amp;var, QStringList &amp;values);
+<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ...">convertToQucsData</a>(<span class="keyword">const</span> QString &amp;qucs_dataset, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
+<a name="l00085"></a>00085     QString <a class="code" href="classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process.">getOutput</a>();
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a9d158010b4efb3c46ad23807bf17aaf4" title="AbstractSpiceKernel::setSimulatorCmd Set simualtor executable location.">setSimulatorCmd</a>(QString cmd);
+<a name="l00088"></a>00088     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a79f8c9a901292f367adf48951e171dc6" title="AbstractSpiceKernel::setWorkdir Set simulator working directory path to store netlist and temp data...">setWorkdir</a>(QString path);
+<a name="l00089"></a>00089     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ad0da1e5ce3e7fce138625401911f59e0" title="AbstractSpiceKernel::SaveNetlist Save netlist to file.">SaveNetlist</a>(QString filename);
+<a name="l00090"></a>00090     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classAbstractSpiceKernel.html#a726918ad791f5235fc2f82f63faa60aa">waitEndOfSimulation</a>();
+<a name="l00091"></a>00091     
+<a name="l00092"></a>00092 signals:
+<a name="l00093"></a>00093     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4a19b1b50928c525b0df6dda303818e5">started</a>();
+<a name="l00094"></a>00094     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4">finished</a>();
+<a name="l00095"></a>00095     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30">errors</a>(QProcess::ProcessError);
+<a name="l00096"></a>00096     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ad9807cb4f71baa3c70282d42d1576522">progress</a>(<span class="keywordtype">int</span>);
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 <span class="keyword">protected</span> slots:
+<a name="l00099"></a>00099     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a1bda07b80e00d3f413c5b831f941d140" title="AbstractSpiceKernel::slotFinished Simulation process normal finish handler.">slotFinished</a>();
+<a name="l00100"></a>00100     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a272b1ebe9633045621756cd167189ee0" title="AbstractSpiceKernel::slotProcessOutput Process SimProcess output and report progress.">slotProcessOutput</a>();
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="keyword">public</span> slots:
+<a name="l00103"></a>00103     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a3e5cd2dd14acec2eaaacec90ec9b7eaf" title="AbstractSpiceKernel::slotSimulate Executes simulator.">slotSimulate</a>();
+<a name="l00104"></a>00104     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#ac778a86ad38935525a965b3d49288ce2">killThemAll</a>();
+<a name="l00105"></a>00105     <span class="keywordtype">void</span> <a class="code" href="classAbstractSpiceKernel.html#a9de00e5b16a9f24a4b25716e536f44b2" title="AbstractSpiceKernel::slotErrors Simulator errors handler.">slotErrors</a>(QProcess::ProcessError err);
+<a name="l00106"></a>00106     
+<a name="l00107"></a>00107 };
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="preprocessor">#endif // ABSTRACTSPICEKERNEL_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -196,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 1 2015 08:19:40 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 13 2015 08:02:16 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

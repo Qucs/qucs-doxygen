@@ -737,10 +737,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00659"></a>00659 
 <a name="l00660"></a>00660     <span class="keywordtype">bool</span> back = <a class="code" href="classDiagram.html#aaa41e14e247b7403a3e40d287e6b6bba" title="Calculations for logarithmical Cartesian diagrams (RectDiagram and Rect3DDiagram).">calcAxisLogScale</a>(Axis, w, yD, stepD, corr, <span class="keywordtype">int</span>(xD));
 <a name="l00661"></a>00661 
-<a name="l00662"></a>00662     <span class="keywordtype">double</span> upD  = Axis-&gt;<a class="code" href="structAxis.html#ae397cd966860a2e9f911c6d369cde2a0">up</a>;
+<a name="l00662"></a>00662     <span class="comment">//double upD  = Axis-&gt;up;</span>
 <a name="l00663"></a>00663     <span class="keywordflow">if</span>(yD &gt; 1.5*stepD)  yD = 10.0*stepD;  <span class="comment">// always start at power of 10</span>
 <a name="l00664"></a>00664     <span class="keywordflow">if</span>(back) {
-<a name="l00665"></a>00665       upD  = Axis-&gt;<a class="code" href="structAxis.html#ab73d632afe51c92cbb35030dccd54350">low</a>;
+<a name="l00665"></a>00665       <span class="comment">//upD  = Axis-&gt;low;</span>
 <a name="l00666"></a>00666       phi += <a class="code" href="main_8h.html#a43016d873124d39034edb8cd164794db">pi</a>;
 <a name="l00667"></a>00667       xD   = 0.0;
 <a name="l00668"></a>00668     }
@@ -1033,107 +1033,104 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00955"></a>00955   <span class="keywordtype">int</span> Size = ((2*(g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(0)-&gt;<a class="code" href="structDataX.html#a310443779b9890de9b343449db841197">count</a>) + 1) * g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a>) + 10;
 <a name="l00956"></a>00956   Size *= 2;  <span class="comment">// memory for cross grid lines</span>
 <a name="l00957"></a>00957 
-<a name="l00958"></a>00958   <span class="keywordtype">double</span> *py;
-<a name="l00959"></a>00959   <span class="keywordflow">if</span>(g-&gt;<a class="code" href="classGraph.html#a6a98b5eb3002fba3bf050bc40dbf51da">countY</a> &gt; 1)  py = g-&gt;<a class="code" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f">axis</a>(1)-&gt;<a class="code" href="structDataX.html#a13ca25f2ae93add390aa37dc4e6291f4">Points</a>;
-<a name="l00960"></a>00960 
-<a name="l00961"></a>00961   g-&gt;<a class="code" href="classGraph.html#a9358e4fd331205a6e5ce86658cb9e980">resizeScrPoints</a>(Size);
-<a name="l00962"></a>00962   <span class="keyword">auto</span> p = g-&gt;<a class="code" href="classGraph.html#a59082951988ebe52d725bd25f44726e1">begin</a>();
-<a name="l00963"></a>00963   <span class="keyword">auto</span> p_end = g-&gt;<a class="code" href="classGraph.html#a59082951988ebe52d725bd25f44726e1">begin</a>();
-<a name="l00964"></a>00964   p_end += Size - 9;   <span class="comment">// limit of buffer</span>
-<a name="l00965"></a>00965 
-<a name="l00966"></a>00966 
-<a name="l00967"></a>00967   p-&gt;setStrokeEnd();
-<a name="l00968"></a>00968   ++p;
-<a name="l00969"></a>00969   <span class="keywordflow">switch</span>(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>) {
-<a name="l00970"></a>00970     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a114b3e4f93e0625bdb90d13fbe1782ee">GRAPHSTYLE_SOLID</a>:
-<a name="l00971"></a>00971     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a522228cc016607cf1ce22f32b549302a">GRAPHSTYLE_DASH</a>:
-<a name="l00972"></a>00972     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a798bf685f395826785286a8571b0fcab">GRAPHSTYLE_DOT</a>:
-<a name="l00973"></a>00973     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a800f26e7bf7ac6dc016230fb9f0239f2">GRAPHSTYLE_LONGDASH</a>:
-<a name="l00974"></a>00974       <span class="keywordflow">do</span> {
-<a name="l00975"></a>00975 
-<a name="l00976"></a>00976         <span class="keywordflow">while</span>(1) {
-<a name="l00977"></a>00977           <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 11)    <span class="comment">// is grid point ?</span>
-<a name="l00978"></a>00978             <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4) { <span class="comment">// is hidden</span>
-<a name="l00979"></a>00979               <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> &gt; <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>) {
-<a name="l00980"></a>00980                 <span class="keywordflow">if</span>((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-1)-&gt;done &amp; 12)
-<a name="l00981"></a>00981                   <span class="keywordflow">break</span>;
-<a name="l00982"></a>00982               }
-<a name="l00983"></a>00983               <span class="keywordflow">else</span>  <span class="keywordflow">break</span>;
-<a name="l00984"></a>00984       }
-<a name="l00985"></a>00985           <a class="code" href="diagram_8h.html#af01a04729419fe6896dec80fe6c46bcd">FIT_MEMORY_SIZE</a>;  <span class="comment">// need to enlarge memory block ?</span>
-<a name="l00986"></a>00986     (p++)-&gt;setScr(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a31189b2995dc0057fa84210fea7f645e">x</a>, <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a83d868ffc549a68d921d855c1bbea1d6">y</a>);
-<a name="l00987"></a>00987           <span class="keywordflow">break</span>;
-<a name="l00988"></a>00988         }
+<a name="l00958"></a>00958   g-&gt;<a class="code" href="classGraph.html#a9358e4fd331205a6e5ce86658cb9e980">resizeScrPoints</a>(Size);
+<a name="l00959"></a>00959   <span class="keyword">auto</span> p = g-&gt;<a class="code" href="classGraph.html#a59082951988ebe52d725bd25f44726e1">begin</a>();
+<a name="l00960"></a>00960   <span class="keyword">auto</span> p_end = g-&gt;<a class="code" href="classGraph.html#a59082951988ebe52d725bd25f44726e1">begin</a>();
+<a name="l00961"></a>00961   p_end += Size - 9;   <span class="comment">// limit of buffer</span>
+<a name="l00962"></a>00962 
+<a name="l00963"></a>00963 
+<a name="l00964"></a>00964   p-&gt;setStrokeEnd();
+<a name="l00965"></a>00965   ++p;
+<a name="l00966"></a>00966   <span class="keywordflow">switch</span>(g-&gt;<a class="code" href="classGraph.html#a6dac9be4fc16d8ea81fdc35c5312e0df">Style</a>) {
+<a name="l00967"></a>00967     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a114b3e4f93e0625bdb90d13fbe1782ee">GRAPHSTYLE_SOLID</a>:
+<a name="l00968"></a>00968     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a522228cc016607cf1ce22f32b549302a">GRAPHSTYLE_DASH</a>:
+<a name="l00969"></a>00969     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a798bf685f395826785286a8571b0fcab">GRAPHSTYLE_DOT</a>:
+<a name="l00970"></a>00970     <span class="keywordflow">case</span> <a class="code" href="graph_8h.html#ae001af7e3a09c2f5e15a35b81c6af480a800f26e7bf7ac6dc016230fb9f0239f2">GRAPHSTYLE_LONGDASH</a>:
+<a name="l00971"></a>00971       <span class="keywordflow">do</span> {
+<a name="l00972"></a>00972 
+<a name="l00973"></a>00973         <span class="keywordflow">while</span>(1) {
+<a name="l00974"></a>00974           <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 11)    <span class="comment">// is grid point ?</span>
+<a name="l00975"></a>00975             <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4) { <span class="comment">// is hidden</span>
+<a name="l00976"></a>00976               <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> &gt; <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>) {
+<a name="l00977"></a>00977                 <span class="keywordflow">if</span>((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-1)-&gt;done &amp; 12)
+<a name="l00978"></a>00978                   <span class="keywordflow">break</span>;
+<a name="l00979"></a>00979               }
+<a name="l00980"></a>00980               <span class="keywordflow">else</span>  <span class="keywordflow">break</span>;
+<a name="l00981"></a>00981       }
+<a name="l00982"></a>00982           <a class="code" href="diagram_8h.html#af01a04729419fe6896dec80fe6c46bcd">FIT_MEMORY_SIZE</a>;  <span class="comment">// need to enlarge memory block ?</span>
+<a name="l00983"></a>00983     (p++)-&gt;setScr(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a31189b2995dc0057fa84210fea7f645e">x</a>, <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a83d868ffc549a68d921d855c1bbea1d6">y</a>);
+<a name="l00984"></a>00984           <span class="keywordflow">break</span>;
+<a name="l00985"></a>00985         }
+<a name="l00986"></a>00986 
+<a name="l00987"></a>00987         <a class="code" href="diagram_8h.html#af01a04729419fe6896dec80fe6c46bcd">FIT_MEMORY_SIZE</a>;  <span class="comment">// need to enlarge memory block ?</span>
+<a name="l00988"></a>00988         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 8)  (p++)-&gt;setBranchEnd();
 <a name="l00989"></a>00989 
-<a name="l00990"></a>00990         <a class="code" href="diagram_8h.html#af01a04729419fe6896dec80fe6c46bcd">FIT_MEMORY_SIZE</a>;  <span class="comment">// need to enlarge memory block ?</span>
-<a name="l00991"></a>00991         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 8)  (p++)-&gt;setBranchEnd();
-<a name="l00992"></a>00992 
-<a name="l00993"></a>00993         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4)   <span class="comment">// point invisible ?</span>
-<a name="l00994"></a>00994           <span class="keywordflow">if</span>((p-1)-&gt;isPt())
-<a name="l00995"></a>00995             (p++)-&gt;setStrokeEnd();
-<a name="l00996"></a>00996 
-<a name="l00997"></a>00997       } <span class="keywordflow">while</span>(((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>++)-&gt;done &amp; 256) == 0);
-<a name="l00998"></a>00998       p-&gt;setGraphEnd();
-<a name="l00999"></a>00999       <span class="keywordflow">break</span>;
-<a name="l01000"></a>01000 
-<a name="l01001"></a>01001     <span class="keywordflow">default</span>:  <span class="comment">// symbol (e.g. star) at each point **********************</span>
-<a name="l01002"></a>01002       <span class="keywordflow">do</span> {
-<a name="l01003"></a>01003         <span class="keywordflow">while</span>(1) {
-<a name="l01004"></a>01004           <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 11)    <span class="comment">// is grid point ?</span>
-<a name="l01005"></a>01005             <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4) { <span class="comment">// is hidden</span>
-<a name="l01006"></a>01006               <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> &gt; <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>) {
-<a name="l01007"></a>01007                 <span class="keywordflow">if</span>((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-1)-&gt;done &amp; 12)
-<a name="l01008"></a>01008                   <span class="keywordflow">break</span>;
-<a name="l01009"></a>01009               }
-<a name="l01010"></a>01010               <span class="keywordflow">else</span>  <span class="keywordflow">break</span>;
-<a name="l01011"></a>01011       }
-<a name="l01012"></a>01012 
-<a name="l01013"></a>01013           (p++)-&gt;setScr(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a31189b2995dc0057fa84210fea7f645e">x</a>, <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a83d868ffc549a68d921d855c1bbea1d6">y</a>);
-<a name="l01014"></a>01014           <span class="keywordflow">break</span>;
-<a name="l01015"></a>01015         }
-<a name="l01016"></a>01016 
-<a name="l01017"></a>01017         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 8)
-<a name="l01018"></a>01018           (p++)-&gt;setBranchEnd();
-<a name="l01019"></a>01019       } <span class="keywordflow">while</span>(((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>++)-&gt;done &amp; 512) == 0);
-<a name="l01020"></a>01020       p-&gt;setGraphEnd();
-<a name="l01021"></a>01021   }
+<a name="l00990"></a>00990         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4)   <span class="comment">// point invisible ?</span>
+<a name="l00991"></a>00991           <span class="keywordflow">if</span>((p-1)-&gt;isPt())
+<a name="l00992"></a>00992             (p++)-&gt;setStrokeEnd();
+<a name="l00993"></a>00993 
+<a name="l00994"></a>00994       } <span class="keywordflow">while</span>(((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>++)-&gt;done &amp; 256) == 0);
+<a name="l00995"></a>00995       p-&gt;setGraphEnd();
+<a name="l00996"></a>00996       <span class="keywordflow">break</span>;
+<a name="l00997"></a>00997 
+<a name="l00998"></a>00998     <span class="keywordflow">default</span>:  <span class="comment">// symbol (e.g. star) at each point **********************</span>
+<a name="l00999"></a>00999       <span class="keywordflow">do</span> {
+<a name="l01000"></a>01000         <span class="keywordflow">while</span>(1) {
+<a name="l01001"></a>01001           <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 11)    <span class="comment">// is grid point ?</span>
+<a name="l01002"></a>01002             <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 4) { <span class="comment">// is hidden</span>
+<a name="l01003"></a>01003               <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> &gt; <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>) {
+<a name="l01004"></a>01004                 <span class="keywordflow">if</span>((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-1)-&gt;done &amp; 12)
+<a name="l01005"></a>01005                   <span class="keywordflow">break</span>;
+<a name="l01006"></a>01006               }
+<a name="l01007"></a>01007               <span class="keywordflow">else</span>  <span class="keywordflow">break</span>;
+<a name="l01008"></a>01008       }
+<a name="l01009"></a>01009 
+<a name="l01010"></a>01010           (p++)-&gt;setScr(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a31189b2995dc0057fa84210fea7f645e">x</a>, <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a83d868ffc549a68d921d855c1bbea1d6">y</a>);
+<a name="l01011"></a>01011           <span class="keywordflow">break</span>;
+<a name="l01012"></a>01012         }
+<a name="l01013"></a>01013 
+<a name="l01014"></a>01014         <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>-&gt;<a class="code" href="structtPoint3D.html#a613259213b0b65bdc61a317600818005">done</a> &amp; 8)
+<a name="l01015"></a>01015           (p++)-&gt;setBranchEnd();
+<a name="l01016"></a>01016       } <span class="keywordflow">while</span>(((<a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a>++)-&gt;done &amp; 512) == 0);
+<a name="l01017"></a>01017       p-&gt;setGraphEnd();
+<a name="l01018"></a>01018   }
+<a name="l01019"></a>01019 
+<a name="l01020"></a>01020   <span class="keywordflow">return</span>;
+<a name="l01021"></a>01021 }
 <a name="l01022"></a>01022 
-<a name="l01023"></a>01023   <span class="keywordflow">return</span>;
-<a name="l01024"></a>01024 }
-<a name="l01025"></a>01025 
-<a name="l01026"></a>01026 <span class="comment">// ------------------------------------------------------------</span>
-<a name="l01027"></a>01027 <span class="comment">// The labels are created during &quot;calcDiagram&quot;, but the memory</span>
-<a name="l01028"></a>01028 <span class="comment">// for the coordinates is released here.</span>
-<a name="l01029"></a><a class="code" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255">01029</a> <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255" title="Put axis labels into the text list.">Rect3DDiagram::createAxisLabels</a>()
-<a name="l01030"></a>01030 {
-<a name="l01031"></a>01031   <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>)  free (<a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>);
-<a name="l01032"></a>01032   <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>  = 0;
-<a name="l01033"></a>01033   <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> = 0;
-<a name="l01034"></a>01034 }
-<a name="l01035"></a>01035 
-<a name="l01036"></a>01036 <span class="comment">// ------------------------------------------------------------</span>
-<a name="l01037"></a><a class="code" href="classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574">01037</a> <span class="keywordtype">bool</span> <a class="code" href="classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574">Rect3DDiagram::insideDiagram</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)<span class="keyword"> const</span>
-<a name="l01038"></a>01038 <span class="keyword"></span>{
-<a name="l01039"></a>01039   <span class="keywordflow">return</span> (<a class="code" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34">regionCode</a>(x, y) == 0);
-<a name="l01040"></a>01040 }
-<a name="l01041"></a>01041 
-<a name="l01042"></a>01042 <span class="comment">// ------------------------------------------------------------</span>
-<a name="l01043"></a><a class="code" href="classRect3DDiagram.html#a2342171988cad76d6f0bf3c29a11eac0">01043</a> <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a>* <a class="code" href="classRect3DDiagram.html#a2342171988cad76d6f0bf3c29a11eac0">Rect3DDiagram::newOne</a>()
-<a name="l01044"></a>01044 {
-<a name="l01045"></a>01045   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classRect3DDiagram.html#a910ffaf39756f0ddb5551230025aaf1a">Rect3DDiagram</a>();
-<a name="l01046"></a>01046 }
-<a name="l01047"></a>01047 
-<a name="l01048"></a>01048 <span class="comment">// ------------------------------------------------------------</span>
-<a name="l01049"></a><a class="code" href="classRect3DDiagram.html#abcd7476a7c0be27e73714d228b42db0f">01049</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classRect3DDiagram.html#abcd7476a7c0be27e73714d228b42db0f">Rect3DDiagram::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l01050"></a>01050 {
-<a name="l01051"></a>01051   Name = QObject::tr(<span class="stringliteral">&quot;3D-Cartesian&quot;</span>);
-<a name="l01052"></a>01052   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;rect3d&quot;</span>;
-<a name="l01053"></a>01053 
-<a name="l01054"></a>01054   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classRect3DDiagram.html#a910ffaf39756f0ddb5551230025aaf1a">Rect3DDiagram</a>();
-<a name="l01055"></a>01055   <span class="keywordflow">return</span> 0;
-<a name="l01056"></a>01056 }
-<a name="l01057"></a>01057 
-<a name="l01058"></a>01058 <span class="comment">// vim:ts=8:sw=2:noet</span>
+<a name="l01023"></a>01023 <span class="comment">// ------------------------------------------------------------</span>
+<a name="l01024"></a>01024 <span class="comment">// The labels are created during &quot;calcDiagram&quot;, but the memory</span>
+<a name="l01025"></a>01025 <span class="comment">// for the coordinates is released here.</span>
+<a name="l01026"></a><a class="code" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255">01026</a> <span class="keywordtype">void</span> <a class="code" href="classRect3DDiagram.html#a50a41d5f7ab4f6953adbff06be231255" title="Put axis labels into the text list.">Rect3DDiagram::createAxisLabels</a>()
+<a name="l01027"></a>01027 {
+<a name="l01028"></a>01028   <span class="keywordflow">if</span>(<a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>)  free (<a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>);
+<a name="l01029"></a>01029   <a class="code" href="classRect3DDiagram.html#a5f399a900a2884ec08544a93659bc5da">Mem</a>  = 0;
+<a name="l01030"></a>01030   <a class="code" href="classRect3DDiagram.html#aac5455ed918ce199a914fd70292b4ea1">pMem</a> = 0;
+<a name="l01031"></a>01031 }
+<a name="l01032"></a>01032 
+<a name="l01033"></a>01033 <span class="comment">// ------------------------------------------------------------</span>
+<a name="l01034"></a><a class="code" href="classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574">01034</a> <span class="keywordtype">bool</span> <a class="code" href="classRect3DDiagram.html#a8b137d90eba2cc083a72488a5e043574">Rect3DDiagram::insideDiagram</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)<span class="keyword"> const</span>
+<a name="l01035"></a>01035 <span class="keyword"></span>{
+<a name="l01036"></a>01036   <span class="keywordflow">return</span> (<a class="code" href="classDiagram.html#a1818375dafc63e2a06d37a91e0246c34">regionCode</a>(x, y) == 0);
+<a name="l01037"></a>01037 }
+<a name="l01038"></a>01038 
+<a name="l01039"></a>01039 <span class="comment">// ------------------------------------------------------------</span>
+<a name="l01040"></a><a class="code" href="classRect3DDiagram.html#a2342171988cad76d6f0bf3c29a11eac0">01040</a> <a class="code" href="classDiagram.html" title="The Diagram class is a superclass for diagrams.">Diagram</a>* <a class="code" href="classRect3DDiagram.html#a2342171988cad76d6f0bf3c29a11eac0">Rect3DDiagram::newOne</a>()
+<a name="l01041"></a>01041 {
+<a name="l01042"></a>01042   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classRect3DDiagram.html#a910ffaf39756f0ddb5551230025aaf1a">Rect3DDiagram</a>();
+<a name="l01043"></a>01043 }
+<a name="l01044"></a>01044 
+<a name="l01045"></a>01045 <span class="comment">// ------------------------------------------------------------</span>
+<a name="l01046"></a><a class="code" href="classRect3DDiagram.html#abcd7476a7c0be27e73714d228b42db0f">01046</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classRect3DDiagram.html#abcd7476a7c0be27e73714d228b42db0f">Rect3DDiagram::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l01047"></a>01047 {
+<a name="l01048"></a>01048   Name = QObject::tr(<span class="stringliteral">&quot;3D-Cartesian&quot;</span>);
+<a name="l01049"></a>01049   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;rect3d&quot;</span>;
+<a name="l01050"></a>01050 
+<a name="l01051"></a>01051   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classRect3DDiagram.html#a910ffaf39756f0ddb5551230025aaf1a">Rect3DDiagram</a>();
+<a name="l01052"></a>01052   <span class="keywordflow">return</span> 0;
+<a name="l01053"></a>01053 }
+<a name="l01054"></a>01054 
+<a name="l01055"></a>01055 <span class="comment">// vim:ts=8:sw=2:noet</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1152,7 +1149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 1 2015 08:19:40 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 13 2015 08:02:16 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

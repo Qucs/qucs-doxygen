@@ -77,6 +77,7 @@ var searchData=
   ['relais_2eh',['relais.h',['../relais_8h.html',1,'']]],
   ['reloadgraphs',['reloadGraphs',['../classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6',1,'Schematic']]],
   ['remakesymbol',['remakeSymbol',['../classSubcircuit.html#ae882bc821ddd12d4aeabb7b9eb47d569',1,'Subcircuit']]],
+  ['removeallsimulatoroutputs',['removeAllSimulatorOutputs',['../classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8',1,'AbstractSpiceKernel']]],
   ['removehiddencross',['removeHiddenCross',['../classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156',1,'Rect3DDiagram']]],
   ['removehiddenlines',['removeHiddenLines',['../classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2',1,'Rect3DDiagram']]],
   ['replace',['replace',['../classSearchDialog.html#a867031f9b52657059cda7e5416b98d34',1,'SearchDialog::replace()'],['../classTextDoc.html#adf2604f5dcb2d13d50f38e7392caff66',1,'TextDoc::replace()']]],
