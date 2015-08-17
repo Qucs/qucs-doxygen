@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['l_5fspice',['L_SPICE',['../classL__SPICE.html#a7b054de828562527dbffc5cb5e656aab',1,'L_SPICE']]],
   ['labeldialog',['LabelDialog',['../classLabelDialog.html#ac02b260a93073f16786cbcd8010f5729',1,'LabelDialog']]],
   ['launchtool',['launchTool',['../classQucsApp.html#a7c9205be735090296521ec0b55c084a1',1,'QucsApp']]],
   ['libcomp',['LibComp',['../classLibComp.html#aac4d972bc8d750333a6836dcde606efa',1,'LibComp']]],
@@ -37,7 +36,5 @@ var searchData=
   ['logical_5fnor',['Logical_NOR',['../classLogical__NOR.html#a16eb98b8bcdf669f49e3adc078c5adee',1,'Logical_NOR']]],
   ['logical_5for',['Logical_OR',['../classLogical__OR.html#a19f765725caa77d1b05dbbaeafa0084a',1,'Logical_OR']]],
   ['logical_5fxnor',['Logical_XNOR',['../classLogical__XNOR.html#a1dc8b5862de5a6081cfd55eb5c8d0e80',1,'Logical_XNOR']]],
-  ['logical_5fxor',['Logical_XOR',['../classLogical__XOR.html#a1f1ee80938f33a380767b2a928be3635',1,'Logical_XOR']]],
-  ['ltl_5fspice',['LTL_SPICE',['../classLTL__SPICE.html#a4883b20fd8311486da947996ac4b54c2',1,'LTL_SPICE']]],
-  ['ltra_5fspice',['LTRA_SPICE',['../classLTRA__SPICE.html#ae587727e344ec3daf23138738c9fad16',1,'LTRA_SPICE']]]
+  ['logical_5fxor',['Logical_XOR',['../classLogical__XOR.html#a1f1ee80938f33a380767b2a928be3635',1,'Logical_XOR']]]
 ];

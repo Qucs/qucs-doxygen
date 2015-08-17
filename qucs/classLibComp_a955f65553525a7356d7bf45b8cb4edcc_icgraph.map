@@ -1,6 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classLibComp.html#a3a9dda0595d6a78c63e96826adca2d0d" title="LibComp::netlist" alt="" coords="219,5,336,35"/>
-<area shape="rect" id="node5" href="$classLibComp.html#a10c1f2819106594088eb9b54e5bf631e" title="LibComp::verilogCode" alt="" coords="203,59,352,88"/>
-<area shape="rect" id="node7" href="$classLibComp.html#aa1ffe137c2f02827a34c98ee6a988070" title="LibComp::vhdlCode" alt="" coords="209,112,345,141"/>
-<area shape="rect" id="node9" href="$classLibComp.html#adf0e2fe7fcfb2d30e7242428128cab0f" title="LibComp::spice_netlist" alt="" coords="200,165,355,195"/>
+<area shape="rect" id="node3" href="$classLibComp.html#a3a9dda0595d6a78c63e96826adca2d0d" title="LibComp::netlist" alt="" coords="217,5,335,35"/>
+<area shape="rect" id="node5" href="$classLibComp.html#a10c1f2819106594088eb9b54e5bf631e" title="LibComp::verilogCode" alt="" coords="201,59,351,88"/>
+<area shape="rect" id="node7" href="$classLibComp.html#aa1ffe137c2f02827a34c98ee6a988070" title="LibComp::vhdlCode" alt="" coords="208,112,344,141"/>
 </map>

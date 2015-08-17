@@ -202,8 +202,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00131"></a>00131 
 <a name="l00132"></a>00132   <a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a> = <span class="keyword">new</span> QPushButton(tr(<span class="stringliteral">&quot;Abort simulation&quot;</span>));
 <a name="l00133"></a>00133   Butts-&gt;addWidget(<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>);
-<a name="l00134"></a>00134   connect(<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>,SIGNAL(clicked()),SLOT(reject()));
-<a name="l00135"></a>00135   connect(<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>,SIGNAL(clicked()),SLOT(<a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">AbortSim</a>()));
+<a name="l00134"></a>00134   <span class="comment">// Abort will close the window, which in turn will abort the simulation</span>
+<a name="l00135"></a>00135   connect(<a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>,SIGNAL(clicked()),SLOT(reject()));
 <a name="l00136"></a>00136   connect(<span class="keyword">this</span>,SIGNAL(rejected()),SLOT(<a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">AbortSim</a>()));
 <a name="l00137"></a>00137 }
 <a name="l00138"></a>00138 
@@ -690,163 +690,172 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00648"></a>00648     i = <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.indexOf(<span class="charliteral">&#39;\t&#39;</span>); <span class="comment">// marker for progress indicator</span>
 <a name="l00649"></a>00649     <span class="keywordflow">if</span>(i &gt;= 0) {
 <a name="l00650"></a>00650       <a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">wasLF</a> = <span class="keyword">true</span>;
-<a name="l00651"></a>00651       qDebug() &lt;&lt; <span class="stringliteral">&quot;Tab idx = &quot;</span> &lt;&lt; i; <span class="comment">// &lt;&lt; &quot; (&quot; &lt;&lt; ProgressText &lt;&lt; &quot;)&quot;;</span>
-<a name="l00652"></a>00652       <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.left(i).trimmed());
-<a name="l00653"></a>00653       <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.remove(0, i+1);
-<a name="l00654"></a>00654       <span class="keywordflow">return</span>;
-<a name="l00655"></a>00655     }
-<a name="l00656"></a>00656   }
-<a name="l00657"></a>00657 
-<a name="l00658"></a>00658   <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.trimmed());
-<a name="l00659"></a>00659   <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a> = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00660"></a>00660   <a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">wasLF</a> = <span class="keyword">false</span>;
-<a name="l00661"></a>00661 }
-<a name="l00662"></a>00662 
-<a name="l00663"></a>00663 <span class="preprocessor">#ifdef SPEEDUP_PROGRESSBAR</span>
-<a name="l00664"></a>00664 <span class="preprocessor"></span><span class="comment">// ------------------------------------------------------------------------</span>
-<a name="l00665"></a>00665 <span class="keywordtype">void</span> SimMessage::slotUpdateProgressBar()
-<a name="l00666"></a>00666 {
-<a name="l00667"></a>00667   <a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>-&gt;setProgress(iProgress, 100);
-<a name="l00668"></a>00668   waitForUpdate = <span class="keyword">false</span>;
-<a name="l00669"></a>00669 }
-<a name="l00670"></a>00670 <span class="preprocessor">#endif</span>
-<a name="l00671"></a>00671 <span class="preprocessor"></span>
-<a name="l00677"></a><a class="code" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff">00677</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window.">SimMessage::slotDisplayErr</a>()
-<a name="l00678"></a>00678 {
-<a name="l00679"></a>00679   <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(QString(<a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.readAllStandardError()));
-<a name="l00680"></a>00680 }
-<a name="l00681"></a>00681 
-<a name="l00688"></a><a class="code" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c">00688</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes.">SimMessage::slotStateChanged</a>(QProcess::ProcessState newState)
-<a name="l00689"></a>00689 {
-<a name="l00690"></a>00690   <span class="keyword">static</span> QProcess::ProcessState oldState;
-<a name="l00691"></a>00691   qDebug() &lt;&lt; <span class="stringliteral">&quot;SimMessage::slotStateChanged() : newState = &quot;</span> &lt;&lt; newState 
-<a name="l00692"></a>00692            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.error();
-<a name="l00693"></a>00693   <span class="keywordflow">switch</span>(newState){
-<a name="l00694"></a>00694     <span class="keywordflow">case</span> QProcess::NotRunning:
-<a name="l00695"></a>00695       <span class="keywordflow">switch</span>(<a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.error()){
-<a name="l00696"></a>00696         <span class="keywordflow">case</span> QProcess::FailedToStart: <span class="comment">// does not happen (?)</span>
-<a name="l00697"></a>00697         <span class="keywordflow">case</span> QProcess::UnknownError: <span class="comment">// getting here instead</span>
-<a name="l00698"></a>00698           <span class="keywordflow">switch</span>(oldState){
-<a name="l00699"></a>00699             <span class="keywordflow">case</span> QProcess::Starting: <span class="comment">// failed to start.</span>
-<a name="l00700"></a>00700               <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;insertPlainText(tr(<span class="stringliteral">&quot;ERROR: Cannot start &quot;</span>) + <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a> +
-<a name="l00701"></a>00701                   <span class="stringliteral">&quot; (&quot;</span> + <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.errorString() + <span class="stringliteral">&quot;)\n&quot;</span>);
-<a name="l00702"></a>00702               <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">FinishSimulation</a>(-1);
-<a name="l00703"></a>00703               <span class="keywordflow">break</span>;
-<a name="l00704"></a>00704             <span class="keywordflow">case</span> QProcess::Running:
-<a name="l00705"></a>00705               <span class="comment">// process ended without trouble.</span>
-<a name="l00706"></a>00706               <span class="comment">// slotSimEnded will be invoked soon.</span>
-<a name="l00707"></a>00707               <span class="keywordflow">break</span>;
-<a name="l00708"></a>00708             <span class="keywordflow">case</span> QProcess::NotRunning:
-<a name="l00709"></a>00709               <span class="comment">// impossible.</span>
+<a name="l00651"></a>00651       QString tmps = <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.left(i).trimmed();
+<a name="l00652"></a>00652       <span class="keywordflow">if</span> (!tmps.isEmpty()) <span class="comment">// avoid adding a newline if no text to show</span>
+<a name="l00653"></a>00653   <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(tmps);
+<a name="l00654"></a>00654       <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.remove(0, i+1);
+<a name="l00655"></a>00655       <span class="keywordflow">return</span>;
+<a name="l00656"></a>00656     }
+<a name="l00657"></a>00657   }
+<a name="l00658"></a>00658 
+<a name="l00659"></a>00659   QString tmps = <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a>.trimmed();
+<a name="l00660"></a>00660   <span class="keywordflow">if</span> (!tmps.isEmpty()) <span class="comment">// avoid adding a newline if no text to show</span>
+<a name="l00661"></a>00661     <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(tmps);
+<a name="l00662"></a>00662   <a class="code" href="classSimMessage.html#aa96e19acb2f0cf702bc1b5afd2e8d633">ProgressText</a> = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00663"></a>00663   <a class="code" href="classSimMessage.html#a2c1c3f1ad981a94536ad7c17d5f70ed8">wasLF</a> = <span class="keyword">false</span>;
+<a name="l00664"></a>00664 }
+<a name="l00665"></a>00665 
+<a name="l00666"></a>00666 <span class="preprocessor">#ifdef SPEEDUP_PROGRESSBAR</span>
+<a name="l00667"></a>00667 <span class="preprocessor"></span><span class="comment">// ------------------------------------------------------------------------</span>
+<a name="l00668"></a>00668 <span class="keywordtype">void</span> SimMessage::slotUpdateProgressBar()
+<a name="l00669"></a>00669 {
+<a name="l00670"></a>00670   <a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>-&gt;setProgress(iProgress, 100);
+<a name="l00671"></a>00671   waitForUpdate = <span class="keyword">false</span>;
+<a name="l00672"></a>00672 }
+<a name="l00673"></a>00673 <span class="preprocessor">#endif</span>
+<a name="l00674"></a>00674 <span class="preprocessor"></span>
+<a name="l00680"></a><a class="code" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff">00680</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#a6982297ad5046ddc32baafb32d1cf9ff" title="Insert process stderr output in the Error Message output window.">SimMessage::slotDisplayErr</a>()
+<a name="l00681"></a>00681 {
+<a name="l00682"></a>00682   <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(QString(<a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.readAllStandardError()));
+<a name="l00683"></a>00683 }
+<a name="l00684"></a>00684 
+<a name="l00691"></a><a class="code" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c">00691</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#a87cabc2ddda12951cc07f333734bf87c" title="The process state changes.">SimMessage::slotStateChanged</a>(QProcess::ProcessState newState)
+<a name="l00692"></a>00692 {
+<a name="l00693"></a>00693   <span class="keyword">static</span> QProcess::ProcessState oldState;
+<a name="l00694"></a>00694   qDebug() &lt;&lt; <span class="stringliteral">&quot;SimMessage::slotStateChanged() : newState = &quot;</span> &lt;&lt; newState 
+<a name="l00695"></a>00695            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.error();
+<a name="l00696"></a>00696   <span class="keywordflow">switch</span>(newState){
+<a name="l00697"></a>00697     <span class="keywordflow">case</span> QProcess::NotRunning:
+<a name="l00698"></a>00698       <span class="keywordflow">switch</span>(<a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.error()){
+<a name="l00699"></a>00699         <span class="keywordflow">case</span> QProcess::FailedToStart: <span class="comment">// does not happen (?)</span>
+<a name="l00700"></a>00700         <span class="keywordflow">case</span> QProcess::UnknownError: <span class="comment">// getting here instead</span>
+<a name="l00701"></a>00701           <span class="keywordflow">switch</span>(oldState){
+<a name="l00702"></a>00702             <span class="keywordflow">case</span> QProcess::Starting: <span class="comment">// failed to start.</span>
+<a name="l00703"></a>00703               <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;insertPlainText(tr(<span class="stringliteral">&quot;ERROR: Cannot start &quot;</span>) + <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a> +
+<a name="l00704"></a>00704                   <span class="stringliteral">&quot; (&quot;</span> + <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.errorString() + <span class="stringliteral">&quot;)\n&quot;</span>);
+<a name="l00705"></a>00705               <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">FinishSimulation</a>(-1);
+<a name="l00706"></a>00706               <span class="keywordflow">break</span>;
+<a name="l00707"></a>00707             <span class="keywordflow">case</span> QProcess::Running:
+<a name="l00708"></a>00708               <span class="comment">// process ended without trouble.</span>
+<a name="l00709"></a>00709               <span class="comment">// slotSimEnded will be invoked soon.</span>
 <a name="l00710"></a>00710               <span class="keywordflow">break</span>;
-<a name="l00711"></a>00711           }
-<a name="l00712"></a>00712           <span class="keywordflow">break</span>;
-<a name="l00713"></a>00713         <span class="keywordflow">case</span> QProcess::Crashed:
-<a name="l00714"></a>00714         <span class="keywordflow">case</span> QProcess::Timedout:
-<a name="l00715"></a>00715         <span class="keywordflow">case</span> QProcess::WriteError:
-<a name="l00716"></a>00716         <span class="keywordflow">case</span> QProcess::ReadError:
-<a name="l00717"></a>00717           <span class="comment">// nothing (yet)</span>
-<a name="l00718"></a>00718           <span class="keywordflow">break</span>;
-<a name="l00719"></a>00719       }
-<a name="l00720"></a>00720     <span class="keywordflow">break</span>;
-<a name="l00721"></a>00721     <span class="keywordflow">case</span> QProcess::Starting:
-<a name="l00722"></a>00722           <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;insertPlainText(tr(<span class="stringliteral">&quot;Starting &quot;</span>) + <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a> + <span class="stringliteral">&quot;\n&quot;</span>);
-<a name="l00723"></a>00723     <span class="keywordflow">break</span>;
-<a name="l00724"></a>00724     <span class="keywordflow">case</span> QProcess::Running:
+<a name="l00711"></a>00711             <span class="keywordflow">case</span> QProcess::NotRunning:
+<a name="l00712"></a>00712               <span class="comment">// impossible.</span>
+<a name="l00713"></a>00713               <span class="keywordflow">break</span>;
+<a name="l00714"></a>00714           }
+<a name="l00715"></a>00715           <span class="keywordflow">break</span>;
+<a name="l00716"></a>00716         <span class="comment">// note that on Windows negative exit codes are treated as &#39;crash&#39;</span>
+<a name="l00717"></a>00717         <span class="comment">//   see comments in slotSimEnded() to handle this properly</span>
+<a name="l00718"></a>00718         <span class="keywordflow">case</span> QProcess::Crashed:
+<a name="l00719"></a>00719         <span class="keywordflow">case</span> QProcess::Timedout:
+<a name="l00720"></a>00720         <span class="keywordflow">case</span> QProcess::WriteError:
+<a name="l00721"></a>00721         <span class="keywordflow">case</span> QProcess::ReadError:
+<a name="l00722"></a>00722           <span class="comment">// nothing (yet)</span>
+<a name="l00723"></a>00723           <span class="keywordflow">break</span>;
+<a name="l00724"></a>00724       }
 <a name="l00725"></a>00725     <span class="keywordflow">break</span>;
-<a name="l00726"></a>00726   }
-<a name="l00727"></a>00727   oldState = newState;
-<a name="l00728"></a>00728 }
-<a name="l00729"></a>00729 
-<a name="l00740"></a><a class="code" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f">00740</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status.">SimMessage::slotSimEnded</a>(<span class="keywordtype">int</span> exitCode, QProcess::ExitStatus exitStatus )
-<a name="l00741"></a>00741 {
-<a name="l00742"></a>00742   <span class="keywordtype">int</span> stat;
-<a name="l00743"></a>00743   
-<a name="l00744"></a>00744   qDebug() &lt;&lt; <span class="stringliteral">&quot;SimMessage::slotSimEnded() : exitCode = &quot;</span> &lt;&lt; exitCode &lt;&lt; <span class="stringliteral">&quot;, exitStatus = &quot;</span> &lt;&lt; exitStatus;
-<a name="l00745"></a>00745   qDebug() &lt;&lt; <span class="stringliteral">&quot;SimMessage::slotSimEnded() : SimProcess.error() = &quot;</span> &lt;&lt; <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.error();
-<a name="l00746"></a>00746   
-<a name="l00747"></a>00747   <span class="keywordflow">if</span> ((exitStatus == QProcess::NormalExit) || <a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">simKilled</a>) { <span class="comment">// as when killed by user exitStatus will be QProcess::CrashExit</span>
-<a name="l00748"></a>00748     stat = exitCode;
-<a name="l00749"></a>00749   } <span class="keywordflow">else</span> {
-<a name="l00750"></a>00750     stat = -1;
-<a name="l00751"></a>00751     <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(tr(<span class="stringliteral">&quot;ERROR: Simulator crashed!&quot;</span>));
-<a name="l00752"></a>00752     <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(tr(<span class="stringliteral">&quot;Please report this error to qucs-bugs@lists.sourceforge.net&quot;</span>));
-<a name="l00753"></a>00753   }
-<a name="l00754"></a>00754   <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">FinishSimulation</a>(stat); <span class="comment">// 0 = normal  | -1 = crash</span>
-<a name="l00755"></a>00755 }
-<a name="l00756"></a>00756 
-<a name="l00764"></a><a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b">00764</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">SimMessage::FinishSimulation</a>(<span class="keywordtype">int</span> Status)
-<a name="l00765"></a>00765 {
-<a name="l00766"></a>00766   <a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>-&gt;setText(tr(<span class="stringliteral">&quot;Close window&quot;</span>));
-<a name="l00767"></a>00767   <a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">Display</a>-&gt;setDisabled(<span class="keyword">false</span>);
-<a name="l00768"></a>00768   <a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>-&gt;setValue(100);  <span class="comment">// progress bar to 100%</span>
-<a name="l00769"></a>00769 
-<a name="l00770"></a>00770   QDate d = QDate::currentDate();   <span class="comment">// get date of today</span>
-<a name="l00771"></a>00771   QTime t = QTime::currentTime();   <span class="comment">// get time</span>
-<a name="l00772"></a>00772 
-<a name="l00773"></a>00773   <span class="keywordflow">if</span>(Status == 0) {
-<a name="l00774"></a>00774     QString txt = tr(<span class="stringliteral">&quot;Simulation ended on %1 at %2&quot;</span>).
-<a name="l00775"></a>00775       arg(d.toString(<span class="stringliteral">&quot;ddd dd. MMM yyyy&quot;</span>)).
-<a name="l00776"></a>00776       arg(t.toString(<span class="stringliteral">&quot;hh:mm:ss:zzz&quot;</span>));
-<a name="l00777"></a>00777     <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<span class="stringliteral">&quot;\n&quot;</span> + txt + <span class="stringliteral">&quot;\n&quot;</span> + tr(<span class="stringliteral">&quot;Ready.&quot;</span>));
-<a name="l00778"></a>00778   }
-<a name="l00779"></a>00779   <span class="keywordflow">else</span> {
-<a name="l00780"></a>00780     QString txt = tr(<span class="stringliteral">&quot;Errors occurred during simulation on %1 at %2&quot;</span>).
-<a name="l00781"></a>00781       arg(d.toString(<span class="stringliteral">&quot;ddd dd. MMM yyyy&quot;</span>)).
-<a name="l00782"></a>00782       arg(t.toString(<span class="stringliteral">&quot;hh:mm:ss:zzz&quot;</span>));
-<a name="l00783"></a>00783     <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<span class="stringliteral">&quot;\n&quot;</span> + txt + <span class="stringliteral">&quot;\n&quot;</span> + tr(<span class="stringliteral">&quot;Aborted.&quot;</span>));
-<a name="l00784"></a>00784   }
-<a name="l00785"></a>00785 
-<a name="l00786"></a>00786   QFile file(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a80d828678da4014a033ddf5ec3f831c7">QucsHomeDir</a>.filePath(<span class="stringliteral">&quot;log.txt&quot;</span>));  <span class="comment">// save simulator messages</span>
-<a name="l00787"></a>00787   <span class="keywordflow">if</span>(file.open(QIODevice::WriteOnly)) {
-<a name="l00788"></a>00788     QTextStream stream(&amp;file);
-<a name="l00789"></a>00789     stream &lt;&lt; tr(<span class="stringliteral">&quot;Output:\n-------&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>;
-<a name="l00790"></a>00790     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> z=0; z&lt;<a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;document()-&gt;blockCount(); z++)
-<a name="l00791"></a>00791       stream &lt;&lt; <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;document()-&gt;findBlockByNumber(z).text() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l00792"></a>00792     stream &lt;&lt; <span class="stringliteral">&quot;\n\n\n&quot;</span> &lt;&lt; tr(<span class="stringliteral">&quot;Errors:\n-------&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>;
-<a name="l00793"></a>00793     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> z=0; z&lt;<a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;document()-&gt;blockCount(); z++)
-<a name="l00794"></a>00794       stream &lt;&lt; <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;document()-&gt;findBlockByNumber(z).text() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
-<a name="l00795"></a>00795     file.close();
-<a name="l00796"></a>00796   }
-<a name="l00797"></a>00797 
-<a name="l00798"></a>00798   <span class="keywordflow">if</span>(Status == 0) {
-<a name="l00799"></a>00799     <span class="keywordflow">if</span>(<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>) { <span class="comment">// save optimization data</span>
-<a name="l00800"></a>00800       QFile ifile(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a80d828678da4014a033ddf5ec3f831c7">QucsHomeDir</a>.filePath(<span class="stringliteral">&quot;asco_out.dat&quot;</span>));
-<a name="l00801"></a>00801       QFile ofile(<a class="code" href="classSimMessage.html#ad27c8e79b56a7fa071cb1365b52cc23f">DataSet</a>);
-<a name="l00802"></a>00802       <span class="keywordflow">if</span>(ifile.open(QIODevice::ReadOnly)) {
-<a name="l00803"></a>00803   <span class="keywordflow">if</span>(ofile.open(QIODevice::WriteOnly)) {
-<a name="l00804"></a>00804     QByteArray data = ifile.readAll();
-<a name="l00805"></a>00805     ofile.write(data);
-<a name="l00806"></a>00806     ofile.close();
-<a name="l00807"></a>00807   }
-<a name="l00808"></a>00808   ifile.close();
-<a name="l00809"></a>00809       }
-<a name="l00810"></a>00810       <span class="keywordflow">if</span>(((<a class="code" href="classOptimize__Sim.html">Optimize_Sim</a>*)<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>)-&gt;loadASCOout())
-<a name="l00811"></a>00811   ((<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classSimMessage.html#a36c5e19a92ce674e5a08f663bcd3791e">DocWidget</a>)-&gt;setChanged(<span class="keyword">true</span>,<span class="keyword">true</span>);
-<a name="l00812"></a>00812     }
-<a name="l00813"></a>00813   }
-<a name="l00814"></a>00814 
-<a name="l00815"></a>00815   emit <a class="code" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500">SimulationEnded</a>(Status, <span class="keyword">this</span>);
-<a name="l00816"></a>00816 }
-<a name="l00817"></a>00817 
-<a name="l00824"></a><a class="code" href="classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae">00824</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae" title="Close and delete simulation dialog.">SimMessage::slotClose</a>()
-<a name="l00825"></a>00825 {
-<a name="l00826"></a>00826   accept();
-<a name="l00827"></a>00827 }
-<a name="l00828"></a>00828 
-<a name="l00829"></a>00829 <span class="comment">// ------------------------------------------------------------------------</span>
-<a name="l00830"></a><a class="code" href="classSimMessage.html#ac4a9bb7bb739d6d08d08990ce3727dce">00830</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#ac4a9bb7bb739d6d08d08990ce3727dce">SimMessage::slotDisplayButton</a>()
-<a name="l00831"></a>00831 {
-<a name="l00832"></a>00832   emit <a class="code" href="classSimMessage.html#a0cb8f56292331d85695a5455c8bb10e0">displayDataPage</a>(<a class="code" href="classSimMessage.html#aec017aa352bde80dc01788acc9b405dc">DocName</a>, <a class="code" href="classSimMessage.html#aeb3edab205a4475e9b93a6edb968d339">DataDisplay</a>);
-<a name="l00833"></a>00833   accept();
-<a name="l00834"></a>00834 }
-<a name="l00835"></a>00835 
-<a name="l00836"></a><a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">00836</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">SimMessage::AbortSim</a>()
-<a name="l00837"></a>00837 {
-<a name="l00838"></a>00838   <a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">simKilled</a> = <span class="keyword">true</span>;
-<a name="l00839"></a>00839   <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.kill();
-<a name="l00840"></a>00840 }
-<a name="l00841"></a>00841 <span class="comment">// vim:ts=8:sw=2:et</span>
+<a name="l00726"></a>00726     <span class="keywordflow">case</span> QProcess::Starting:
+<a name="l00727"></a>00727           <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;insertPlainText(tr(<span class="stringliteral">&quot;Starting &quot;</span>) + <a class="code" href="classSimMessage.html#abac6ec52b4c2a2cfc5c39e9513d45c61">Program</a> + <span class="stringliteral">&quot;\n&quot;</span>);
+<a name="l00728"></a>00728     <span class="keywordflow">break</span>;
+<a name="l00729"></a>00729     <span class="keywordflow">case</span> QProcess::Running:
+<a name="l00730"></a>00730     <span class="keywordflow">break</span>;
+<a name="l00731"></a>00731   }
+<a name="l00732"></a>00732   oldState = newState;
+<a name="l00733"></a>00733 }
+<a name="l00734"></a>00734 
+<a name="l00745"></a><a class="code" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f">00745</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#aa5ef05dd7ea2d48761f41c5c7d32728f" title="Check the simulation process exit status.">SimMessage::slotSimEnded</a>(<span class="keywordtype">int</span> exitCode, QProcess::ExitStatus exitStatus )
+<a name="l00746"></a>00746 {
+<a name="l00747"></a>00747   <span class="keywordtype">int</span> stat = exitCode;
+<a name="l00748"></a>00748 
+<a name="l00749"></a>00749   <span class="keywordflow">if</span> ((exitStatus != QProcess::NormalExit) &amp;&amp;
+<a name="l00750"></a>00750 #ifdef _WIN32
+<a name="l00751"></a>00751 <span class="comment">// due to a bug in Qt, negative error codes are erroneously interpreted</span>
+<a name="l00752"></a>00752 <span class="comment">//   as &quot;program crashed&quot;, see https://bugreports.qt.io/browse/QTBUG-28735</span>
+<a name="l00753"></a>00753 <span class="comment">// When we will switch to Qt5(.1) this code can be removed...</span>
+<a name="l00754"></a>00754       (uint)stat &gt;= 0x80000000U &amp;&amp; (uint)stat &lt; 0xD0000000U &amp;&amp;
+<a name="l00755"></a>00755 #endif
+<a name="l00756"></a>00756       !<a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">simKilled</a>) { <span class="comment">// as when killed by user exitStatus will be QProcess::CrashExit</span>
+<a name="l00757"></a>00757     stat = -1;
+<a name="l00758"></a>00758     <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(tr(<span class="stringliteral">&quot;ERROR: Simulator crashed!&quot;</span>));
+<a name="l00759"></a>00759     <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(tr(<span class="stringliteral">&quot;Please report this error to qucs-bugs@lists.sourceforge.net&quot;</span>));
+<a name="l00760"></a>00760   }
+<a name="l00761"></a>00761   <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">FinishSimulation</a>(stat); <span class="comment">// 0 = normal , !=0 = error</span>
+<a name="l00762"></a>00762 }
+<a name="l00763"></a>00763 
+<a name="l00771"></a><a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b">00771</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#ac16bba8d930ee89b989380429d532e2b" title="Add end-of-simulation messages and save the relevant data.">SimMessage::FinishSimulation</a>(<span class="keywordtype">int</span> Status)
+<a name="l00772"></a>00772 {
+<a name="l00773"></a>00773   <a class="code" href="classSimMessage.html#a8ea1d995c37af79ab70800edf5e6e1b7">Abort</a>-&gt;setText(tr(<span class="stringliteral">&quot;Close window&quot;</span>));
+<a name="l00774"></a>00774   <a class="code" href="classSimMessage.html#a401e0bfa614922ce93650936c76b18b8">Display</a>-&gt;setDisabled(<span class="keyword">false</span>);
+<a name="l00775"></a>00775   <a class="code" href="classSimMessage.html#a9ba1c1941ccca1b49f8c92357177bba5">SimProgress</a>-&gt;setValue(100);  <span class="comment">// progress bar to 100%</span>
+<a name="l00776"></a>00776 
+<a name="l00777"></a>00777   QDate d = QDate::currentDate();   <span class="comment">// get date of today</span>
+<a name="l00778"></a>00778   QTime t = QTime::currentTime();   <span class="comment">// get time</span>
+<a name="l00779"></a>00779 
+<a name="l00780"></a>00780   <span class="keywordflow">if</span>(Status == 0) {
+<a name="l00781"></a>00781     QString txt = tr(<span class="stringliteral">&quot;Simulation ended on %1 at %2&quot;</span>).
+<a name="l00782"></a>00782       arg(d.toString(<span class="stringliteral">&quot;ddd dd. MMM yyyy&quot;</span>)).
+<a name="l00783"></a>00783       arg(t.toString(<span class="stringliteral">&quot;hh:mm:ss:zzz&quot;</span>));
+<a name="l00784"></a>00784     <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<span class="stringliteral">&quot;\n&quot;</span> + txt + <span class="stringliteral">&quot;\n&quot;</span> + tr(<span class="stringliteral">&quot;Ready.&quot;</span>));
+<a name="l00785"></a>00785   }
+<a name="l00786"></a>00786   <span class="keywordflow">else</span> {
+<a name="l00787"></a>00787     QString txt = tr(<span class="stringliteral">&quot;Errors occurred during simulation on %1 at %2&quot;</span>).
+<a name="l00788"></a>00788       arg(d.toString(<span class="stringliteral">&quot;ddd dd. MMM yyyy&quot;</span>)).
+<a name="l00789"></a>00789       arg(t.toString(<span class="stringliteral">&quot;hh:mm:ss:zzz&quot;</span>));
+<a name="l00790"></a>00790     <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;appendPlainText(<span class="stringliteral">&quot;\n&quot;</span> + txt + <span class="stringliteral">&quot;\n&quot;</span> + tr(<span class="stringliteral">&quot;Aborted.&quot;</span>));
+<a name="l00791"></a>00791   }
+<a name="l00792"></a>00792 
+<a name="l00793"></a>00793   QFile file(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a80d828678da4014a033ddf5ec3f831c7">QucsHomeDir</a>.filePath(<span class="stringliteral">&quot;log.txt&quot;</span>));  <span class="comment">// save simulator messages</span>
+<a name="l00794"></a>00794   <span class="keywordflow">if</span>(file.open(QIODevice::WriteOnly)) {
+<a name="l00795"></a>00795     QTextStream stream(&amp;file);
+<a name="l00796"></a>00796     stream &lt;&lt; tr(<span class="stringliteral">&quot;Output:\n-------&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>;
+<a name="l00797"></a>00797     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> z=0; z&lt;<a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;document()-&gt;blockCount(); z++)
+<a name="l00798"></a>00798       stream &lt;&lt; <a class="code" href="classSimMessage.html#a45ca8c39e19066c45d95b32c9ce61fb5">ProgText</a>-&gt;document()-&gt;findBlockByNumber(z).text() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l00799"></a>00799     stream &lt;&lt; <span class="stringliteral">&quot;\n\n\n&quot;</span> &lt;&lt; 
+<a name="l00800"></a>00800       tr(<span class="stringliteral">&quot;Errors and Warnings:\n--------------------&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>;
+<a name="l00801"></a>00801     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> z=0; z&lt;<a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;document()-&gt;blockCount(); z++)
+<a name="l00802"></a>00802       stream &lt;&lt; <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;document()-&gt;findBlockByNumber(z).text() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;
+<a name="l00803"></a>00803     file.close();
+<a name="l00804"></a>00804   }
+<a name="l00805"></a>00805 
+<a name="l00806"></a>00806   <span class="keywordflow">if</span>(Status == 0) {
+<a name="l00807"></a>00807     <span class="keywordflow">if</span>(<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>) { <span class="comment">// save optimization data</span>
+<a name="l00808"></a>00808       QFile ifile(<a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a80d828678da4014a033ddf5ec3f831c7">QucsHomeDir</a>.filePath(<span class="stringliteral">&quot;asco_out.dat&quot;</span>));
+<a name="l00809"></a>00809       QFile ofile(<a class="code" href="classSimMessage.html#ad27c8e79b56a7fa071cb1365b52cc23f">DataSet</a>);
+<a name="l00810"></a>00810       <span class="keywordflow">if</span>(ifile.open(QIODevice::ReadOnly)) {
+<a name="l00811"></a>00811   <span class="keywordflow">if</span>(ofile.open(QIODevice::WriteOnly)) {
+<a name="l00812"></a>00812     QByteArray data = ifile.readAll();
+<a name="l00813"></a>00813     ofile.write(data);
+<a name="l00814"></a>00814     ofile.close();
+<a name="l00815"></a>00815   }
+<a name="l00816"></a>00816   ifile.close();
+<a name="l00817"></a>00817       }
+<a name="l00818"></a>00818       <span class="keywordflow">if</span>(((<a class="code" href="classOptimize__Sim.html">Optimize_Sim</a>*)<a class="code" href="classSimMessage.html#abac7e5c61072aad1495e6e4cf5ef0997">SimOpt</a>)-&gt;loadASCOout())
+<a name="l00819"></a>00819   ((<a class="code" href="classSchematic.html">Schematic</a>*)<a class="code" href="classSimMessage.html#a36c5e19a92ce674e5a08f663bcd3791e">DocWidget</a>)-&gt;setChanged(<span class="keyword">true</span>,<span class="keyword">true</span>);
+<a name="l00820"></a>00820     }
+<a name="l00821"></a>00821   }
+<a name="l00822"></a>00822 
+<a name="l00823"></a>00823   emit <a class="code" href="classSimMessage.html#a7e70969b2ea47a87147848651abe0500">SimulationEnded</a>(Status, <span class="keyword">this</span>);
+<a name="l00824"></a>00824 }
+<a name="l00825"></a>00825 
+<a name="l00832"></a><a class="code" href="classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae">00832</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#adf4e72c5a1070baf790b48e0d30d0cae" title="Close and delete simulation dialog.">SimMessage::slotClose</a>()
+<a name="l00833"></a>00833 {
+<a name="l00834"></a>00834   accept();
+<a name="l00835"></a>00835 }
+<a name="l00836"></a>00836 
+<a name="l00837"></a>00837 <span class="comment">// ------------------------------------------------------------------------</span>
+<a name="l00838"></a><a class="code" href="classSimMessage.html#ac4a9bb7bb739d6d08d08990ce3727dce">00838</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#ac4a9bb7bb739d6d08d08990ce3727dce">SimMessage::slotDisplayButton</a>()
+<a name="l00839"></a>00839 {
+<a name="l00840"></a>00840   emit <a class="code" href="classSimMessage.html#a0cb8f56292331d85695a5455c8bb10e0">displayDataPage</a>(<a class="code" href="classSimMessage.html#aec017aa352bde80dc01788acc9b405dc">DocName</a>, <a class="code" href="classSimMessage.html#aeb3edab205a4475e9b93a6edb968d339">DataDisplay</a>);
+<a name="l00841"></a>00841   accept();
+<a name="l00842"></a>00842 }
+<a name="l00843"></a>00843 
+<a name="l00844"></a><a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">00844</a> <span class="keywordtype">void</span> <a class="code" href="classSimMessage.html#abdc5a60967e7cce57df5e89e4d5547ba">SimMessage::AbortSim</a>()
+<a name="l00845"></a>00845 {
+<a name="l00846"></a>00846   <a class="code" href="classSimMessage.html#a1e23014b4cfa9fc821bc61f62895fc7e">ErrText</a>-&gt;appendPlainText(tr(<span class="stringliteral">&quot;Simulation aborted by the user!&quot;</span>));
+<a name="l00847"></a>00847   <a class="code" href="classSimMessage.html#af5e398100f437d6f8ce2033d84c37eb7">simKilled</a> = <span class="keyword">true</span>;
+<a name="l00848"></a>00848   <a class="code" href="classSimMessage.html#a8504fda4889e9f11181c98af2d49cc9a">SimProcess</a>.kill();
+<a name="l00849"></a>00849 }
+<a name="l00850"></a>00850 <span class="comment">// vim:ts=8:sw=2:et</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -865,7 +874,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 13 2015 08:02:16 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 17 2015 14:45:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
