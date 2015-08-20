@@ -1,7 +1,10 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$components_8h.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/components.h" alt="" coords="812,83,1228,112"/>
 <area shape="rect" id="node15" href="$equation_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/components/equation.cpp" alt="" coords="1252,83,1660,112"/>
-<area shape="rect" id="node17" href="$qucs__actions_8cpp.html" title="Actions implementation for the GUI menu items." alt="" coords="1684,83,2047,112"/>
+<area shape="rect" id="node17" href="$ngspice_8cpp.html" title="Implementation of the Ngspice class." alt="" coords="1684,83,2097,112"/>
+<area shape="rect" id="node19" href="$qucs2spice_8cpp.html" title="Implementation of qucs2spice namespace." alt="" coords="2121,83,2556,112"/>
+<area shape="rect" id="node21" href="$xyce_8cpp.html" title="Implementation of the Xyce class." alt="" coords="2580,83,2977,112"/>
+<area shape="rect" id="node23" href="$qucs__actions_8cpp.html" title="Actions implementation for the GUI menu items." alt="" coords="3001,83,3364,112"/>
 <area shape="rect" id="node5" href="$component_8cpp.html" title="Implementation of the Component class." alt="" coords="5,160,429,189"/>
 <area shape="rect" id="node7" href="$loaddialog_8cpp.html" title="/home/travis/build/Qucs/qucs/qucs/qucs/dialogs/loaddialog.cpp" alt="" coords="453,160,840,189"/>
 <area shape="rect" id="node9" href="$main_8cpp.html" title="Implementation of the main application." alt="" coords="864,160,1176,189"/>

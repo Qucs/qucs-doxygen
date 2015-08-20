@@ -1,6 +1,21 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classComponentDialog.html#a44591604471a9ad6b245a98461bea1d9" title="ComponentDialog::slotNumberChanged" alt="" coords="160,24,413,53"/>
-<area shape="rect" id="node10" href="$classComponentDialog.html#af603393ad950e2adc3c99be750101239" title="ComponentDialog::slotStepChanged" alt="" coords="471,77,705,107"/>
-<area shape="rect" id="node5" href="$classComponentDialog.html#abbdd96cf933884ab290f90e99503db08" title="ComponentDialog::ComponentDialog" alt="" coords="764,24,1001,53"/>
-<area shape="rect" id="node7" href="$classComponentDialog.html#a6f2d165b0beed640cd22d8c885f9d83b" title="ComponentDialog::slotSimTypeChange" alt="" coords="463,24,713,53"/>
+<area shape="rect" id="node3" href="$classAC__Sim.html#a9165bb05eb3fba6a7c8673330963ba4a" title="AC_Sim::spice_netlist" alt="" coords="211,63,363,92"/>
+<area shape="rect" id="node5" href="$classComponent.html#a3738758d3c8b78e1f5ca1b5e9bcc4324" title="Component::form_spice_param_list" alt="" coords="173,116,400,145"/>
+<area shape="rect" id="node13" href="$classMOSFET.html#a8fbf4464317781975ab657834610a029" title="MOSFET::spice_netlist" alt="" coords="509,165,667,195"/>
+<area shape="rect" id="node15" href="$classMOSFET__sub.html#a8413dfbcc40a37599d588276d768b72d" title="MOSFET_sub::spice_netlist" alt="" coords="495,219,681,248"/>
+<area shape="rect" id="node17" href="$classComponentDialog.html#a44591604471a9ad6b245a98461bea1d9" title="ComponentDialog::slotNumberChanged" alt="" coords="160,271,413,300"/>
+<area shape="rect" id="node24" href="$classComponentDialog.html#af603393ad950e2adc3c99be750101239" title="ComponentDialog::slotStepChanged" alt="" coords="471,376,705,405"/>
+<area shape="rect" id="node27" href="$classiPulse.html#a6c433ac69e03504355cb30641c6c0481" title="iPulse::spice_netlist" alt="" coords="217,375,356,404"/>
+<area shape="rect" id="node29" href="$classiRect.html#a438de0c02792c90bdca924dbd8b43852" title="iRect::spice_netlist" alt="" coords="220,428,353,457"/>
+<area shape="rect" id="node33" href="$classParam__Sweep.html#a7aa1d0b6092dadb14456196170072f05" title="Param_Sweep::getNgspiceBeforeSim" alt="" coords="165,481,408,511"/>
+<area shape="rect" id="node35" href="$classParam__Sweep.html#a35c86547d738510ec7ebb724799b43ca" title="Param_Sweep::spice_netlist" alt="" coords="193,535,380,564"/>
+<area shape="rect" id="node37" href="$classRelais.html#a858b46605abf617ab4d256e1c1569114" title="Relais::spice_netlist" alt="" coords="217,588,356,617"/>
+<area shape="rect" id="node39" href="$classTR__Sim.html#af3c2e10873899d0b6858a61a79f90aad" title="TR_Sim::spice_netlist" alt="" coords="212,641,361,671"/>
+<area shape="rect" id="node41" href="$classvPulse.html#a0903655132a2b03ee3baab4e645a8485" title="vPulse::spice_netlist" alt="" coords="216,695,357,724"/>
+<area shape="rect" id="node43" href="$classvRect.html#aed42d22ef8f1a30922d8098dda06766c" title="vRect::spice_netlist" alt="" coords="217,748,356,777"/>
+<area shape="rect" id="node7" href="$classBJT.html#ad35dd48d6968546ff7f233be43bda35e" title="BJT::spice_netlist" alt="" coords="525,5,651,35"/>
+<area shape="rect" id="node9" href="$classDiode.html#a7e3c23c655a241b576ba54092d84a3e7" title="Diode::spice_netlist" alt="" coords="520,59,656,88"/>
+<area shape="rect" id="node11" href="$classJFET.html#ad23c5db6f6572efff9d58ead71550e35" title="JFET::spice_netlist" alt="" coords="521,112,655,141"/>
+<area shape="rect" id="node19" href="$classComponentDialog.html#abbdd96cf933884ab290f90e99503db08" title="ComponentDialog::ComponentDialog" alt="" coords="764,324,1001,353"/>
+<area shape="rect" id="node21" href="$classComponentDialog.html#a6f2d165b0beed640cd22d8c885f9d83b" title="ComponentDialog::slotSimTypeChange" alt="" coords="463,272,713,301"/>
 </map>

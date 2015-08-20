@@ -1,23 +1,42 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classComponent.html#abab565a9bb19bb4a0909761be8ff7636" title="Component::analyseLine" alt="" coords="216,59,381,88"/>
-<area shape="rect" id="node13" href="$classGraphicText.html#a9e101a9e028ec93823f11a480d9f44ae" title="GraphicText::load" alt="" coords="236,112,361,141"/>
-<area shape="rect" id="node15" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="212,165,385,195"/>
-<area shape="rect" id="node5" href="$classLibComp.html#a6efc55a8afd830ce45249785445ae26c" title="LibComp::loadSymbol" alt="" coords="448,59,597,88"/>
-<area shape="rect" id="node9" href="$classSubcircuit.html#a525b9ae84d30829f3d1728952850a4a3" title="Subcircuit::loadSymbol" alt="" coords="445,5,600,35"/>
-<area shape="rect" id="node7" href="$classLibComp.html#adec491be502b4415c985961ce72124a6" title="LibComp::createSymbol" alt="" coords="673,59,836,88"/>
-<area shape="rect" id="node11" href="$classSubcircuit.html#af901eef17e7c39eb548f9c4a11cfc8cd" title="Subcircuit::createSymbol" alt="" coords="671,5,839,35"/>
-<area shape="rect" id="node17" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="435,165,611,195"/>
-<area shape="rect" id="node19" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1373,244,1531,273"/>
-<area shape="rect" id="node26" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="1175,376,1287,405"/>
-<area shape="rect" id="node35" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="697,112,812,141"/>
-<area shape="rect" id="node37" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps" alt="" coords="659,216,851,245"/>
-<area shape="rect" id="node21" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1823,252,2004,281"/>
-<area shape="rect" id="node23" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1579,225,1773,255"/>
-<area shape="rect" id="node28" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1415,323,1489,352"/>
-<area shape="rect" id="node32" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="1421,376,1483,405"/>
-<area shape="rect" id="node30" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1651,343,1701,372"/>
-<area shape="rect" id="node39" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="899,269,1088,299"/>
-<area shape="rect" id="node41" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1140,269,1321,299"/>
-<area shape="rect" id="node44" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1136,216,1325,245"/>
-<area shape="rect" id="node47" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1144,323,1317,352"/>
+<area shape="rect" id="node3" href="$classComponent.html#abab565a9bb19bb4a0909761be8ff7636" title="Component::analyseLine" alt="" coords="216,323,381,352"/>
+<area shape="rect" id="node13" href="$classGraphicText.html#a9e101a9e028ec93823f11a480d9f44ae" title="GraphicText::load" alt="" coords="236,376,361,405"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="212,429,385,459"/>
+<area shape="rect" id="node5" href="$classLibComp.html#a6efc55a8afd830ce45249785445ae26c" title="LibComp::loadSymbol" alt="" coords="448,269,597,299"/>
+<area shape="rect" id="node9" href="$classSubcircuit.html#a525b9ae84d30829f3d1728952850a4a3" title="Subcircuit::loadSymbol" alt="" coords="445,323,600,352"/>
+<area shape="rect" id="node7" href="$classLibComp.html#adec491be502b4415c985961ce72124a6" title="LibComp::createSymbol" alt="" coords="673,269,836,299"/>
+<area shape="rect" id="node11" href="$classSubcircuit.html#af901eef17e7c39eb548f9c4a11cfc8cd" title="Subcircuit::createSymbol" alt="" coords="671,323,839,352"/>
+<area shape="rect" id="node17" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="435,429,611,459"/>
+<area shape="rect" id="node19" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1421,401,1579,431"/>
+<area shape="rect" id="node26" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="2239,324,2351,353"/>
+<area shape="rect" id="node47" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="697,531,812,560"/>
+<area shape="rect" id="node49" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps" alt="" coords="659,376,851,405"/>
+<area shape="rect" id="node21" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="1983,403,2164,432"/>
+<area shape="rect" id="node23" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1707,376,1901,405"/>
+<area shape="rect" id="node28" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="2491,112,2565,141"/>
+<area shape="rect" id="node32" href="$main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="2484,219,2572,248"/>
+<area shape="rect" id="node35" href="$main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="2493,379,2563,408"/>
+<area shape="rect" id="node38" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="2467,165,2589,195"/>
+<area shape="rect" id="node41" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="2476,272,2580,301"/>
+<area shape="rect" id="node44" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="2497,325,2559,355"/>
+<area shape="rect" id="node30" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2773,245,2824,275"/>
+<area shape="rect" id="node51" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="899,299,1088,328"/>
+<area shape="rect" id="node53" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1137,324,1319,353"/>
+<area shape="rect" id="node56" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="1979,299,2168,328"/>
+<area shape="rect" id="node59" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1141,91,1315,120"/>
+<area shape="rect" id="node61" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="1369,143,1631,172"/>
+<area shape="rect" id="node87" href="$classVerilogAwriter.html#aa6c591f53dba506e720d5187a6a73e32" title="VerilogAwriter::prepareToVerilogA Prepare scheamtic for Verilog&#45;A module building." alt="" coords="1391,12,1609,41"/>
+<area shape="rect" id="node63" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="1681,220,1927,249"/>
+<area shape="rect" id="node66" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="1728,116,1880,145"/>
+<area shape="rect" id="node78" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="2007,245,2140,275"/>
+<area shape="rect" id="node68" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="2000,141,2147,171"/>
+<area shape="rect" id="node70" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="2420,59,2636,88"/>
+<area shape="rect" id="node74" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="2220,217,2369,247"/>
+<area shape="rect" id="node72" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="2685,59,2912,88"/>
+<area shape="rect" id="node80" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="2229,379,2360,408"/>
+<area shape="rect" id="node83" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="2231,271,2359,300"/>
+<area shape="rect" id="node89" href="$classVerilogAwriter.html#abf1fd5386a0f30b4048ebd76896b339f" title="VerilogAwriter::createVA_module Build Verilog&#45;A module from the subcircuit." alt="" coords="1697,11,1911,40"/>
+<area shape="rect" id="node91" href="$classQucsApp.html#a05a58a06860a3df5e79e2014b6ffa689" title="QucsApp::slotBuildVAModule" alt="" coords="1976,9,2171,39"/>
+<area shape="rect" id="node93" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="2223,7,2367,36"/>
+<area shape="rect" id="node95" href="$classQucsApp.html#a9eb972c574c798b45a1fb3692aed1d22" title="QucsApp::QucsApp" alt="" coords="2459,5,2597,35"/>
 </map>
