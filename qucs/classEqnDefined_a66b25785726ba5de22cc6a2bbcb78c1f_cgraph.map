@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens." alt="" coords="229,5,379,35"/>
-<area shape="rect" id="node5" href="$namespacespicecompat.html#aa7dd08a89e4d69ff50a5ca97ee5bdb0b" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="201,59,407,88"/>
-<area shape="rect" id="node9" href="$classEqnDefined.html#a5502b1042a47e7385b0a1db80923e4cf" title="EqnDefined::subsVoltages Substitute volatges in spice Notation in token list." alt="" coords="216,112,392,141"/>
-<area shape="rect" id="node7" href="$namespacespicecompat.html#a914df081760cd32b3ad74f39cdfd1a96" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="456,59,656,88"/>
+<area shape="rect" id="node3" href="$namespacevacompat.html#a838a8d8a7593e14ebb74283ebbe7dd9a" title="vacompat::normalize_current" alt="" coords="209,5,399,35"/>
+<area shape="rect" id="node5" href="$namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens." alt="" coords="229,59,379,88"/>
+<area shape="rect" id="node7" href="$namespacespicecompat.html#aa7dd08a89e4d69ff50a5ca97ee5bdb0b" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="201,112,407,141"/>
+<area shape="rect" id="node11" href="$classEqnDefined.html#a5502b1042a47e7385b0a1db80923e4cf" title="EqnDefined::subsVoltages Substitute volatges in spice Notation in token list." alt="" coords="216,165,392,195"/>
+<area shape="rect" id="node9" href="$namespacespicecompat.html#a914df081760cd32b3ad74f39cdfd1a96" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="456,112,656,141"/>
+<area shape="rect" id="node13" href="$namespacevacompat.html#a191b5c2d193ea84d65f8f8f5d2468e8a" title="vacompat::normalize_voltage" alt="" coords="460,165,652,195"/>
 </map>

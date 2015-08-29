@@ -172,26 +172,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00089"></a>00089 }
 <a name="l00090"></a>00090 
 <a name="l00091"></a><a class="code" href="classVCVS.html#ae1de5bcdf0c2f624b073116e056891bb">00091</a> QString <a class="code" href="classVCVS.html#ae1de5bcdf0c2f624b073116e056891bb">VCVS::va_code</a>()
-<a name="l00092"></a>00092 {   QString val = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">vacompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value);
-<a name="l00093"></a>00093     <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;I( %1 , %4 ) &lt;+ V( %1 , %4 )*1e-9;\nI( %3 , %2 ) &lt;+ V( %3 , %2 )*1e3;\nI( %3 , %2 ) &lt;+ V( %1 , %4 )*1e3 *  %5 ;\n&quot;</span>)
-<a name="l00094"></a>00094                   .arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(2)-&gt;Connection-&gt;Name).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(3)-&gt;Connection-&gt;Name).arg(val); 
-<a name="l00095"></a>00095 }
-<a name="l00096"></a><a class="code" href="classVCVS.html#a2dbf5557334e813990a11a5ea4d4cada">00096</a> QString <a class="code" href="classVCVS.html#a2dbf5557334e813990a11a5ea4d4cada">VCVS::spice_netlist</a>(<span class="keywordtype">bool</span>)
-<a name="l00097"></a>00097 {
-<a name="l00098"></a>00098    QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
-<a name="l00099"></a>00099     QList&lt;int&gt; seq; <span class="comment">// nodes sequence</span>
-<a name="l00100"></a>00100     seq&lt;&lt;1&lt;&lt;2&lt;&lt;0&lt;&lt;3;
-<a name="l00101"></a>00101     <span class="comment">// output all node names</span>
-<a name="l00102"></a>00102     <span class="keywordflow">foreach</span>(<span class="keywordtype">int</span> i, seq) {
-<a name="l00103"></a>00103         QString nam = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(i)-&gt;Connection-&gt;Name;
-<a name="l00104"></a>00104         <span class="keywordflow">if</span> (nam==<span class="stringliteral">&quot;gnd&quot;</span>) nam = <span class="stringliteral">&quot;0&quot;</span>;
-<a name="l00105"></a>00105         s += <span class="stringliteral">&quot; &quot;</span>+ nam;   <span class="comment">// node names</span>
-<a name="l00106"></a>00106     }
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108     s += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value + <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// Ignore delay time. It is spice-incompatibele</span>
-<a name="l00109"></a>00109 
-<a name="l00110"></a>00110     <span class="keywordflow">return</span> s;
-<a name="l00111"></a>00111 }
+<a name="l00092"></a>00092 {   QString Gain = <a class="code" href="namespacespicecompat.html#a6eb9c95b484661f8e4d30ed2989254e9" title="spicecompat::normalize_value Remove units from component values and replace Spice-incompatible factor...">vacompat::normalize_value</a>(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value);
+<a name="l00093"></a>00093   QString P1 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name;
+<a name="l00094"></a>00094     QString P4 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name;
+<a name="l00095"></a>00095     QString P3 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(2)-&gt;Connection-&gt;Name;
+<a name="l00096"></a>00096     QString P2 = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(3)-&gt;Connection-&gt;Name;
+<a name="l00097"></a>00097     QString s = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00098"></a>00098     
+<a name="l00099"></a>00099     QString Vpm = <a class="code" href="namespacevacompat.html#a191b5c2d193ea84d65f8f8f5d2468e8a">vacompat::normalize_voltage</a>(P1,P2);
+<a name="l00100"></a>00100     QString Ipm = <a class="code" href="namespacevacompat.html#a838a8d8a7593e14ebb74283ebbe7dd9a">vacompat::normalize_current</a>(P1,P2,<span class="keyword">true</span>); 
+<a name="l00101"></a>00101     s += QString(<span class="stringliteral">&quot; %1  &lt;+  %2 * 1e-9;\n&quot;</span>).arg(Ipm).arg(Vpm);
+<a name="l00102"></a>00102     QString Ipm2 = <a class="code" href="namespacevacompat.html#a838a8d8a7593e14ebb74283ebbe7dd9a">vacompat::normalize_current</a>(P3,P4,<span class="keyword">true</span>); 
+<a name="l00103"></a>00103     s += QString(<span class="stringliteral">&quot;%1  &lt;+  %1 *1e3;\n&quot;</span>).arg(Ipm2);
+<a name="l00104"></a>00104     s += QString(<span class="stringliteral">&quot;%1  &lt;+  %2 * 1e3 * %3 ;\n&quot;</span>).arg(Ipm2).arg(Vpm).arg(Gain);
+<a name="l00105"></a>00105     
+<a name="l00106"></a>00106     <span class="keywordflow">return</span> s;
+<a name="l00107"></a>00107  }
+<a name="l00108"></a><a class="code" href="classVCVS.html#a2dbf5557334e813990a11a5ea4d4cada">00108</a> QString <a class="code" href="classVCVS.html#a2dbf5557334e813990a11a5ea4d4cada">VCVS::spice_netlist</a>(<span class="keywordtype">bool</span>)
+<a name="l00109"></a>00109 {
+<a name="l00110"></a>00110    QString s = <a class="code" href="namespacespicecompat.html#a89dbc2d17618df34d8ef053d7291a8d5" title="spicecompat::check_refdes If starting letters of the component name match spice model (i...">spicecompat::check_refdes</a>(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>,<a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a>);
+<a name="l00111"></a>00111     QList&lt;int&gt; seq; <span class="comment">// nodes sequence</span>
+<a name="l00112"></a>00112     seq&lt;&lt;1&lt;&lt;2&lt;&lt;0&lt;&lt;3;
+<a name="l00113"></a>00113     <span class="comment">// output all node names</span>
+<a name="l00114"></a>00114     <span class="keywordflow">foreach</span>(<span class="keywordtype">int</span> i, seq) {
+<a name="l00115"></a>00115         QString nam = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(i)-&gt;Connection-&gt;Name;
+<a name="l00116"></a>00116         <span class="keywordflow">if</span> (nam==<span class="stringliteral">&quot;gnd&quot;</span>) nam = <span class="stringliteral">&quot;0&quot;</span>;
+<a name="l00117"></a>00117         s += <span class="stringliteral">&quot; &quot;</span>+ nam;   <span class="comment">// node names</span>
+<a name="l00118"></a>00118     }
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120     s += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value + <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// Ignore delay time. It is spice-incompatibele</span>
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122     <span class="keywordflow">return</span> s;
+<a name="l00123"></a>00123 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -210,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 20 2015 09:05:13 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 13:45:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

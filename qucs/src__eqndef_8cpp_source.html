@@ -154,11 +154,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00071"></a><a class="code" href="classSrc__eqndef.html#a51e7b6044e59b02c8216cae0fbe93853">00071</a> QString <a class="code" href="classSrc__eqndef.html#a51e7b6044e59b02c8216cae0fbe93853">Src_eqndef::va_code</a>()
 <a name="l00072"></a>00072 {
 <a name="l00073"></a>00073     QString s;
-<a name="l00074"></a>00074     s = QString(<span class="stringliteral">&quot; %1(%2,%3) &lt;+ %4; // %5 source\n&quot;</span>).arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Name)
-<a name="l00075"></a>00075             .arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name).arg(<a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name)
-<a name="l00076"></a>00076             .arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
-<a name="l00077"></a>00077     <span class="keywordflow">return</span> s;
-<a name="l00078"></a>00078 }
+<a name="l00074"></a>00074     QString plus = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name;
+<a name="l00075"></a>00075     QString minus = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name;
+<a name="l00076"></a>00076     QString Src;
+<a name="l00077"></a>00077     <span class="keywordflow">if</span> (<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Name==<span class="stringliteral">&quot;I&quot;</span>) Src = <a class="code" href="namespacevacompat.html#a838a8d8a7593e14ebb74283ebbe7dd9a">vacompat::normalize_current</a>(plus,minus,<span class="keyword">true</span>);
+<a name="l00078"></a>00078     <span class="keywordflow">else</span> Src = <a class="code" href="namespacevacompat.html#a191b5c2d193ea84d65f8f8f5d2468e8a">vacompat::normalize_voltage</a>(plus,minus); <span class="comment">// Voltage contribution is reserved for future</span>
+<a name="l00079"></a>00079     <span class="comment">// B-source may be polar</span>
+<a name="l00080"></a>00080     <span class="keywordflow">if</span> (plus==<span class="stringliteral">&quot;gnd&quot;</span>) s = QString(<span class="stringliteral">&quot; %1 &lt;+ -(%2); // %3 source\n&quot;</span>).arg(Src).arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
+<a name="l00081"></a>00081     <span class="keywordflow">else</span> s = QString(<span class="stringliteral">&quot; %1 &lt;+ %2; // %3 source\n&quot;</span>).arg(Src).arg(<a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.at(0)-&gt;Value).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
+<a name="l00082"></a>00082     <span class="keywordflow">return</span> s;
+<a name="l00083"></a>00083 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -177,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 20 2015 09:05:13 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 13:45:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

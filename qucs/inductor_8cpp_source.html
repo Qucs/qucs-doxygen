@@ -168,20 +168,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00085"></a>00085     QString plus = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(0)-&gt;Connection-&gt;Name;
 <a name="l00086"></a>00086     QString minus = <a class="code" href="classComponent.html#a6194f57b47c61008d5be7e4bb0be5797">Ports</a>.at(1)-&gt;Connection-&gt;Name;
 <a name="l00087"></a>00087     QString tmpnod = <span class="stringliteral">&quot;_net0&quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>;
-<a name="l00088"></a>00088     QString s = QString(<span class="stringliteral">&quot;I(gnd,%1) &lt;+ ddt(-V(%1))+V(%2,%3); // Inductor: %4 \n&quot;</span>)
-<a name="l00089"></a>00089             .arg(tmpnod).arg(plus).arg(minus).arg(<a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>);
-<a name="l00090"></a>00090     s += QString(<span class="stringliteral">&quot;I(%1,%2) &lt;+ V(%3)/(%4+1e-15);\n&quot;</span>).arg(plus).arg(minus).arg(tmpnod).arg(val);
-<a name="l00091"></a>00091     <span class="keywordflow">return</span> s;
-<a name="l00092"></a>00092 }
-<a name="l00093"></a>00093 
-<a name="l00094"></a><a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">00094</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">Inductor::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00095"></a>00095 {
-<a name="l00096"></a>00096   Name = QObject::tr(<span class="stringliteral">&quot;Inductor&quot;</span>);
-<a name="l00097"></a>00097   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;inductor&quot;</span>;  <span class="comment">// bitmap file name without suffix</span>
-<a name="l00098"></a>00098 
-<a name="l00099"></a>00099   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
-<a name="l00100"></a>00100   <span class="keywordflow">return</span> 0;
-<a name="l00101"></a>00101 }
+<a name="l00088"></a>00088     QString s = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00089"></a>00089     QString Vpm = <a class="code" href="namespacevacompat.html#a191b5c2d193ea84d65f8f8f5d2468e8a">vacompat::normalize_voltage</a>(plus,minus);
+<a name="l00090"></a>00090     QString Ipm = <a class="code" href="namespacevacompat.html#a838a8d8a7593e14ebb74283ebbe7dd9a">vacompat::normalize_current</a>(plus,minus,<span class="keyword">true</span>); 
+<a name="l00091"></a>00091     s +=  QString(<span class="stringliteral">&quot;I(%1) &lt;+ ddt(V(%1));\nI(%1) &lt;+ %2;\n&quot;</span>).arg(tmpnod).arg(Vpm);
+<a name="l00092"></a>00092     s +=  QString(<span class="stringliteral">&quot;%1 &lt;+ V(%2)/(%3+1e-20);\n&quot;</span>).arg(Ipm).arg(tmpnod).arg(val);
+<a name="l00093"></a>00093     
+<a name="l00094"></a>00094     <span class="keywordflow">return</span> s;
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 }
+<a name="l00097"></a>00097 
+<a name="l00098"></a><a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">00098</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classInductor.html#a3729eea7071c9c1c8a39dc68976549f3">Inductor::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00099"></a>00099 {
+<a name="l00100"></a>00100   Name = QObject::tr(<span class="stringliteral">&quot;Inductor&quot;</span>);
+<a name="l00101"></a>00101   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;inductor&quot;</span>;  <span class="comment">// bitmap file name without suffix</span>
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classInductor.html#a8fb5be488cf91f58ee7b40c1ab1fb42e">Inductor</a>();
+<a name="l00104"></a>00104   <span class="keywordflow">return</span> 0;
+<a name="l00105"></a>00105 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -200,7 +204,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 20 2015 09:05:13 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 13:45:21 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
