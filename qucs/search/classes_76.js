@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['vac_5fspice',['Vac_SPICE',['../classVac__SPICE.html',1,'']]],
   ['vacomponent',['vacomponent',['../classvacomponent.html',1,'']]],
-  ['vampmod',['vAmpMod',['../classvAmpMod.html',1,'']]],
   ['vasettingsdialog',['VASettingsDialog',['../classVASettingsDialog.html',1,'']]],
   ['vccs',['VCCS',['../classVCCS.html',1,'']]],
   ['vcresistor',['vcresistor',['../classvcresistor.html',1,'']]],
@@ -10,7 +8,6 @@ var searchData=
   ['verilog_5ffile',['Verilog_File',['../classVerilog__File.html',1,'']]],
   ['verilog_5ffile_5finfo',['Verilog_File_Info',['../classVerilog__File__Info.html',1,'']]],
   ['veriloga_5ffile_5finfo',['VerilogA_File_Info',['../classVerilogA__File__Info.html',1,'']]],
-  ['verilogawriter',['VerilogAwriter',['../classVerilogAwriter.html',1,'']]],
   ['vexp',['vExp',['../classvExp.html',1,'']]],
   ['vfile',['vFile',['../classvFile.html',1,'']]],
   ['vhdl_5ffile',['VHDL_File',['../classVHDL__File.html',1,'']]],
@@ -21,9 +18,5 @@ var searchData=
   ['volt_5fnoise',['Volt_noise',['../classVolt__noise.html',1,'']]],
   ['vprobe',['vProbe',['../classvProbe.html',1,'']]],
   ['vpulse',['vPulse',['../classvPulse.html',1,'']]],
-  ['vpwl',['vPWL',['../classvPWL.html',1,'']]],
-  ['vrect',['vRect',['../classvRect.html',1,'']]],
-  ['vsffm',['vSffm',['../classvSffm.html',1,'']]],
-  ['vtrnoise',['vTRNOISE',['../classvTRNOISE.html',1,'']]],
-  ['vtrrandom',['vTRRANDOM',['../classvTRRANDOM.html',1,'']]]
+  ['vrect',['vRect',['../classvRect.html',1,'']]]
 ];

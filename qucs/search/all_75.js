@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['udrctl_5fspice',['UDRCTL_SPICE',['../classUDRCTL__SPICE.html',1,'UDRCTL_SPICE'],['../classUDRCTL__SPICE.html#ac89e4410b4baf6d34172abf871007a98',1,'UDRCTL_SPICE::UDRCTL_SPICE()']]],
-  ['udrctl_5fspice_2ecpp',['UDRCTL_SPICE.cpp',['../UDRCTL__SPICE_8cpp.html',1,'']]],
-  ['udrctl_5fspice_2eh',['UDRCTL_SPICE.h',['../UDRCTL__SPICE_8h.html',1,'']]],
   ['ui',['Ui',['../namespaceUi.html',1,'Ui'],['../classSearchDialog.html#a814dca272836db29da7df36dd9d3570e',1,'SearchDialog::ui()']]],
   ['ui_5fsearchdialog',['Ui_SearchDialog',['../classUi__SearchDialog.html',1,'']]],
   ['ui_5fsearchdialog_2eh',['ui_searchdialog.h',['../ui__searchdialog_8h.html',1,'']]],

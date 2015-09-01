@@ -324,86 +324,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00241"></a>00241   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classSchematic.html#af70737f9e8cb3b38415f45cc3a1fa201">searchSelSubcircuit</a>();
 <a name="l00242"></a>00242   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classSchematic.html#a8fa2108ca4a84d289555708cf90fc930">selectedComponent</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);
 <a name="l00243"></a>00243   <span class="keywordtype">void</span>       <a class="code" href="classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09">deleteComp</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*);
-<a name="l00244"></a>00244   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classSchematic.html#ab184225de2556bd849e621e489c9c60d">getComponentByName</a>(QString compname);
-<a name="l00245"></a>00245 
-<a name="l00246"></a>00246   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#a7d6f050afa6188d83b9023693f6828c6">oneLabel</a>(<a class="code" href="classNode.html">Node</a>*);
-<a name="l00247"></a>00247   <span class="keywordtype">int</span>      <a class="code" href="classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2">placeNodeLabel</a>(<a class="code" href="classWireLabel.html">WireLabel</a>*);
-<a name="l00248"></a>00248   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984">getWireLabel</a>(<a class="code" href="classNode.html">Node</a>*);
-<a name="l00249"></a>00249   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc">insertNodeLabel</a>(<a class="code" href="classWireLabel.html">WireLabel</a>*);
-<a name="l00250"></a>00250   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2">copyLabels</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00251"></a>00251 
-<a name="l00252"></a>00252   <a class="code" href="classPainting.html">Painting</a>* <a class="code" href="classSchematic.html#a7ac466087fe7c8d2b74784893992643d">selectedPainting</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);
-<a name="l00253"></a>00253   <span class="keywordtype">void</span>      <a class="code" href="classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f">copyPaintings</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00254"></a>00254 
-<a name="l00255"></a>00255   <span class="keywordtype">void</span>      <a class="code" href="classSchematic.html#a962a6fed86e0c1849c76c958ccfc973b">getSelAreaWidthAndHeight</a>(<span class="keywordtype">int</span> &amp;wsel, <span class="keywordtype">int</span>&amp; hsel, <span class="keywordtype">int</span>&amp; xmin_sel_, <span class="keywordtype">int</span>&amp; ymin_sel_); <span class="comment">// and selected area width and height in pixels</span>
-<a name="l00256"></a>00256 
-<a name="l00257"></a>00257 <span class="keyword">private</span>:
-<a name="l00258"></a>00258   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04">insertComponentNodes</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*, <span class="keywordtype">bool</span>);
-<a name="l00259"></a>00259   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2">copyWires</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00260"></a>00260   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a61373de75e5a958d8f97209d697e6bfd">copyComponents</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00261"></a>00261   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aee7f5608b6f974ee053cc847dd38af38">copyComponents2</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00262"></a>00262   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5">copyComps2WiresPaints</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
-<a name="l00263"></a>00263   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994">copyElements</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00244"></a>00244 
+<a name="l00245"></a>00245   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#a7d6f050afa6188d83b9023693f6828c6">oneLabel</a>(<a class="code" href="classNode.html">Node</a>*);
+<a name="l00246"></a>00246   <span class="keywordtype">int</span>      <a class="code" href="classSchematic.html#ac2735f9d807a3ff241bacf9e0e930db2">placeNodeLabel</a>(<a class="code" href="classWireLabel.html">WireLabel</a>*);
+<a name="l00247"></a>00247   <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classSchematic.html#a26d4b50aab8e01c686139de1ab6ae984">getWireLabel</a>(<a class="code" href="classNode.html">Node</a>*);
+<a name="l00248"></a>00248   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#ada64537c31a2b7d892bd4b19599bf5cc">insertNodeLabel</a>(<a class="code" href="classWireLabel.html">WireLabel</a>*);
+<a name="l00249"></a>00249   <span class="keywordtype">void</span>     <a class="code" href="classSchematic.html#a7ddd0b9aeed17e0eff627e24fa1820f2">copyLabels</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00250"></a>00250 
+<a name="l00251"></a>00251   <a class="code" href="classPainting.html">Painting</a>* <a class="code" href="classSchematic.html#a7ac466087fe7c8d2b74784893992643d">selectedPainting</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);
+<a name="l00252"></a>00252   <span class="keywordtype">void</span>      <a class="code" href="classSchematic.html#a3495b5fafbcc9c2f749133496b66f21f">copyPaintings</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00253"></a>00253 
+<a name="l00254"></a>00254   <span class="keywordtype">void</span>      <a class="code" href="classSchematic.html#a962a6fed86e0c1849c76c958ccfc973b">getSelAreaWidthAndHeight</a>(<span class="keywordtype">int</span> &amp;wsel, <span class="keywordtype">int</span>&amp; hsel, <span class="keywordtype">int</span>&amp; xmin_sel_, <span class="keywordtype">int</span>&amp; ymin_sel_); <span class="comment">// and selected area width and height in pixels</span>
+<a name="l00255"></a>00255 
+<a name="l00256"></a>00256 <span class="keyword">private</span>:
+<a name="l00257"></a>00257   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#ac620c8c483c8e9e1f27257d5cba06c04">insertComponentNodes</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*, <span class="keywordtype">bool</span>);
+<a name="l00258"></a>00258   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a49baa36ee55c6ee9c4c92308a4b605c2">copyWires</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00259"></a>00259   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a61373de75e5a958d8f97209d697e6bfd">copyComponents</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00260"></a>00260   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aee7f5608b6f974ee053cc847dd38af38">copyComponents2</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00261"></a>00261   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a98a24cf99b5afd9860c9e4e07218c9a5">copyComps2WiresPaints</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00262"></a>00262   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a571534ccd9ac11a2bdd672f1da5a5994">copyElements</a>(<span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, <span class="keywordtype">int</span>&amp;, QList&lt;Element *&gt; *);
+<a name="l00263"></a>00263 
 <a name="l00264"></a>00264 
-<a name="l00265"></a>00265 
-<a name="l00266"></a>00266 <span class="comment">/* ********************************************************************</span>
-<a name="l00267"></a>00267 <span class="comment">   *****  The following methods are in the file                   *****</span>
-<a name="l00268"></a>00268 <span class="comment">   *****  &quot;schematic_file.cpp&quot;. They only access the QPtrLists    *****</span>
-<a name="l00269"></a>00269 <span class="comment">   *****  and their pointers. (&quot;DocComps&quot;, &quot;Components&quot; etc.)     *****</span>
-<a name="l00270"></a>00270 <span class="comment">   ******************************************************************** */</span>
-<a name="l00271"></a>00271 
-<a name="l00272"></a>00272 <span class="keyword">public</span>:
-<a name="l00273"></a>00273   <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6">testFile</a>(<span class="keyword">const</span> QString &amp;);
-<a name="l00274"></a>00274   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#acc596c5cb39928e02a1b61365079d0f4">createLibNetlist</a>(QTextStream*, QPlainTextEdit*, <span class="keywordtype">int</span>);
-<a name="l00275"></a>00275   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120">createSubNetlist</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit*, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span> spice=<span class="keyword">false</span>, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00276"></a>00276   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b">createSubNetlistPlain</a>(QTextStream*, QPlainTextEdit*, <span class="keywordtype">int</span>, <span class="keywordtype">bool</span> spice=<span class="keyword">false</span>);
-<a name="l00277"></a>00277   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69">prepareNetlist</a>(QTextStream&amp;, QStringList&amp;, QPlainTextEdit*,<span class="keywordtype">bool</span> spice=<span class="keyword">false</span>, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00278"></a>00278   QString <a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">createNetlist</a>(QTextStream&amp;, <span class="keywordtype">int</span>);
-<a name="l00279"></a>00279   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a971393320f98a4675a9cb44e8cebce77">loadDocument</a>();
-<a name="l00280"></a>00280   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a1f3541babeef27f02189d4e51c16fda4">highlightWireLabels</a> (<span class="keywordtype">void</span>);
-<a name="l00281"></a>00281   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#acff87102c62c039c55a14d25393dda99">clearSignalsAndFileList</a>();
-<a name="l00282"></a>00282 
-<a name="l00283"></a>00283 <span class="keyword">private</span>:
-<a name="l00284"></a>00284   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#ab3e68c1c5a09ab9880574f141b15e629">saveDocument</a>();
-<a name="l00285"></a>00285 
-<a name="l00286"></a>00286   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3">loadProperties</a>(QTextStream*);
-<a name="l00287"></a>00287   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af632d53b1421cbbfab5efada81b7a225">simpleInsertComponent</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*);
-<a name="l00288"></a>00288   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#abedd6e576eba28b33d84df58211c8b36">loadComponents</a>(QTextStream*, Q3PtrList&lt;Component&gt; *List=0);
-<a name="l00289"></a>00289   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47">simpleInsertWire</a>(<a class="code" href="classWire.html">Wire</a>*);
-<a name="l00290"></a>00290   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49">loadWires</a>(QTextStream*, Q3PtrList&lt;Element&gt; *List=0);
-<a name="l00291"></a>00291   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0">loadDiagrams</a>(QTextStream*, Q3PtrList&lt;Diagram&gt;*);
-<a name="l00292"></a>00292   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8">loadPaintings</a>(QTextStream*, Q3PtrList&lt;Painting&gt;*);
-<a name="l00293"></a>00293   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a444011bb2496782cc0bdd912b6218080">loadIntoNothing</a>(QTextStream*);
-<a name="l00294"></a>00294 
-<a name="l00295"></a>00295   QString <a class="code" href="classSchematic.html#a96bf0bf4bd70ada1163caebf7a938694">createClipboardFile</a>();
-<a name="l00296"></a>00296   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#a3027dd07fcd452dbd8057c424724e927">pasteFromClipboard</a>(QTextStream *, Q3PtrList&lt;Element&gt;*);
-<a name="l00297"></a>00297 
-<a name="l00298"></a>00298   QString <a class="code" href="classSchematic.html#a5d7bc373c741575d8456508b0d846f59">createUndoString</a>(<span class="keywordtype">char</span>);
-<a name="l00299"></a>00299   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#a6feff77e818324694af2f744920906d2">rebuild</a>(QString *);
-<a name="l00300"></a>00300   QString <a class="code" href="classSchematic.html#a391e9064cc868480d2f8674628b81be1">createSymbolUndoString</a>(<span class="keywordtype">char</span>);
-<a name="l00301"></a>00301   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#aaa49d02698deb50ce7b8c00c5e830acd">rebuildSymbol</a>(QString *);
-<a name="l00302"></a>00302 
-<a name="l00303"></a>00303   <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a114ed12b567c86c854bb4a3976bd7a44">createNodeSet</a>(QStringList&amp;, <span class="keywordtype">int</span>&amp;, <a class="code" href="classConductor.html" title="label for Node and Wire classes">Conductor</a>*, <a class="code" href="classNode.html">Node</a>*);
-<a name="l00304"></a>00304   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a9bb6b1205048af692676100e2752e0ba">throughAllNodes</a>(<span class="keywordtype">bool</span>, QStringList&amp;, <span class="keywordtype">int</span>&amp;);
-<a name="l00305"></a>00305   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04">propagateNode</a>(QStringList&amp;, <span class="keywordtype">int</span>&amp;, <a class="code" href="classNode.html">Node</a>*);
-<a name="l00306"></a>00306   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef">collectDigitalSignals</a>(<span class="keywordtype">void</span>);
-<a name="l00307"></a>00307   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb">giveNodeNames</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit*, <span class="keywordtype">int</span>,
-<a name="l00308"></a>00308                      <span class="keywordtype">bool</span> spice = <span class="keyword">false</span>, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00309"></a>00309   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">beginNetlistDigital</a>(QTextStream &amp;);
-<a name="l00310"></a>00310   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">endNetlistDigital</a>(QTextStream &amp;);
-<a name="l00311"></a>00311   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#af22a5f31df37d7658dafea60d5152941">throughAllComps</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit *, <span class="keywordtype">int</span>,
-<a name="l00312"></a>00312                        <span class="keywordtype">bool</span> spice = <span class="keyword">false</span>, <span class="keywordtype">bool</span> xyce = <span class="keyword">false</span>);
-<a name="l00313"></a>00313 
-<a name="l00314"></a><a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">00314</a>   <a class="code" href="schematic_8h.html#ae60481451a786a230355474aeb9e487b">DigMap</a> <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>; <span class="comment">// collecting node names for VHDL signal declarations</span>
-<a name="l00315"></a><a class="code" href="classSchematic.html#a2c7ba9b5e0735563a02fde11de0f3189">00315</a>   QStringList <a class="code" href="classSchematic.html#a2c7ba9b5e0735563a02fde11de0f3189">PortTypes</a>;
-<a name="l00316"></a>00316 
-<a name="l00317"></a>00317 <span class="keyword">public</span>:
-<a name="l00318"></a><a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">00318</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>;
-<a name="l00319"></a><a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">00319</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>;
-<a name="l00320"></a><a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">00320</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a>;
-<a name="l00321"></a>00321 };
-<a name="l00322"></a>00322 
-<a name="l00323"></a>00323 <span class="preprocessor">#endif</span>
+<a name="l00265"></a>00265 <span class="comment">/* ********************************************************************</span>
+<a name="l00266"></a>00266 <span class="comment">   *****  The following methods are in the file                   *****</span>
+<a name="l00267"></a>00267 <span class="comment">   *****  &quot;schematic_file.cpp&quot;. They only access the QPtrLists    *****</span>
+<a name="l00268"></a>00268 <span class="comment">   *****  and their pointers. (&quot;DocComps&quot;, &quot;Components&quot; etc.)     *****</span>
+<a name="l00269"></a>00269 <span class="comment">   ******************************************************************** */</span>
+<a name="l00270"></a>00270 
+<a name="l00271"></a>00271 <span class="keyword">public</span>:
+<a name="l00272"></a>00272   <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSchematic.html#a52b2897a05f1d8de9a072d1361d7e0c6">testFile</a>(<span class="keyword">const</span> QString &amp;);
+<a name="l00273"></a>00273   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#acc596c5cb39928e02a1b61365079d0f4">createLibNetlist</a>(QTextStream*, QPlainTextEdit*, <span class="keywordtype">int</span>);
+<a name="l00274"></a>00274   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd">createSubNetlist</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit*, <span class="keywordtype">int</span>);
+<a name="l00275"></a>00275   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6">createSubNetlistPlain</a>(QTextStream*, QPlainTextEdit*, <span class="keywordtype">int</span>);
+<a name="l00276"></a>00276   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#a436ec9032e80a36eaa51559bea05414b">prepareNetlist</a>(QTextStream&amp;, QStringList&amp;, QPlainTextEdit*);
+<a name="l00277"></a>00277   QString <a class="code" href="classSchematic.html#ae749825626bec0fb944e27411a7fb583">createNetlist</a>(QTextStream&amp;, <span class="keywordtype">int</span>);
+<a name="l00278"></a>00278   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a971393320f98a4675a9cb44e8cebce77">loadDocument</a>();
+<a name="l00279"></a>00279   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a1f3541babeef27f02189d4e51c16fda4">highlightWireLabels</a> (<span class="keywordtype">void</span>);
+<a name="l00280"></a>00280 
+<a name="l00281"></a>00281 <span class="keyword">private</span>:
+<a name="l00282"></a>00282   <span class="keywordtype">int</span>  <a class="code" href="classSchematic.html#ab3e68c1c5a09ab9880574f141b15e629">saveDocument</a>();
+<a name="l00283"></a>00283 
+<a name="l00284"></a>00284   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3">loadProperties</a>(QTextStream*);
+<a name="l00285"></a>00285   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af632d53b1421cbbfab5efada81b7a225">simpleInsertComponent</a>(<a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>*);
+<a name="l00286"></a>00286   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#abedd6e576eba28b33d84df58211c8b36">loadComponents</a>(QTextStream*, Q3PtrList&lt;Component&gt; *List=0);
+<a name="l00287"></a>00287   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47">simpleInsertWire</a>(<a class="code" href="classWire.html">Wire</a>*);
+<a name="l00288"></a>00288   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49">loadWires</a>(QTextStream*, Q3PtrList&lt;Element&gt; *List=0);
+<a name="l00289"></a>00289   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0">loadDiagrams</a>(QTextStream*, Q3PtrList&lt;Diagram&gt;*);
+<a name="l00290"></a>00290   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8">loadPaintings</a>(QTextStream*, Q3PtrList&lt;Painting&gt;*);
+<a name="l00291"></a>00291   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a444011bb2496782cc0bdd912b6218080">loadIntoNothing</a>(QTextStream*);
+<a name="l00292"></a>00292 
+<a name="l00293"></a>00293   QString <a class="code" href="classSchematic.html#a96bf0bf4bd70ada1163caebf7a938694">createClipboardFile</a>();
+<a name="l00294"></a>00294   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#a3027dd07fcd452dbd8057c424724e927">pasteFromClipboard</a>(QTextStream *, Q3PtrList&lt;Element&gt;*);
+<a name="l00295"></a>00295 
+<a name="l00296"></a>00296   QString <a class="code" href="classSchematic.html#a5d7bc373c741575d8456508b0d846f59">createUndoString</a>(<span class="keywordtype">char</span>);
+<a name="l00297"></a>00297   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#a6feff77e818324694af2f744920906d2">rebuild</a>(QString *);
+<a name="l00298"></a>00298   QString <a class="code" href="classSchematic.html#a391e9064cc868480d2f8674628b81be1">createSymbolUndoString</a>(<span class="keywordtype">char</span>);
+<a name="l00299"></a>00299   <span class="keywordtype">bool</span>    <a class="code" href="classSchematic.html#aaa49d02698deb50ce7b8c00c5e830acd">rebuildSymbol</a>(QString *);
+<a name="l00300"></a>00300 
+<a name="l00301"></a>00301   <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a114ed12b567c86c854bb4a3976bd7a44">createNodeSet</a>(QStringList&amp;, <span class="keywordtype">int</span>&amp;, <a class="code" href="classConductor.html" title="label for Node and Wire classes">Conductor</a>*, <a class="code" href="classNode.html">Node</a>*);
+<a name="l00302"></a>00302   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a9bb6b1205048af692676100e2752e0ba">throughAllNodes</a>(<span class="keywordtype">bool</span>, QStringList&amp;, <span class="keywordtype">int</span>&amp;);
+<a name="l00303"></a>00303   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04">propagateNode</a>(QStringList&amp;, <span class="keywordtype">int</span>&amp;, <a class="code" href="classNode.html">Node</a>*);
+<a name="l00304"></a>00304   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef">collectDigitalSignals</a>(<span class="keywordtype">void</span>);
+<a name="l00305"></a>00305   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762">giveNodeNames</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit*, <span class="keywordtype">int</span>);
+<a name="l00306"></a>00306   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#a78cbb7cbfec9141455286609f4ba2831">beginNetlistDigital</a>(QTextStream &amp;);
+<a name="l00307"></a>00307   <span class="keywordtype">void</span> <a class="code" href="classSchematic.html#af893d90555f7295e7bf11acf9fa13f73">endNetlistDigital</a>(QTextStream &amp;);
+<a name="l00308"></a>00308   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921">throughAllComps</a>(QTextStream *, <span class="keywordtype">int</span>&amp;, QStringList&amp;, QPlainTextEdit *, <span class="keywordtype">int</span>);
+<a name="l00309"></a>00309 
+<a name="l00310"></a><a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">00310</a>   <a class="code" href="schematic_8h.html#ae60481451a786a230355474aeb9e487b">DigMap</a> <a class="code" href="classSchematic.html#af4186f5869b130806dfbb3efbbb9671a">Signals</a>; <span class="comment">// collecting node names for VHDL signal declarations</span>
+<a name="l00311"></a><a class="code" href="classSchematic.html#a2c7ba9b5e0735563a02fde11de0f3189">00311</a>   QStringList <a class="code" href="classSchematic.html#a2c7ba9b5e0735563a02fde11de0f3189">PortTypes</a>;
+<a name="l00312"></a>00312 
+<a name="l00313"></a>00313 <span class="keyword">public</span>:
+<a name="l00314"></a><a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">00314</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21">isAnalog</a>;
+<a name="l00315"></a><a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">00315</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a06846eab72901fd979466f97ca49e69f">isVerilog</a>;
+<a name="l00316"></a><a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">00316</a>   <span class="keywordtype">bool</span> <a class="code" href="classSchematic.html#a069c6bf8184dd27fe667e50c65545a0a">creatingLib</a>;
+<a name="l00317"></a>00317 };
+<a name="l00318"></a>00318 
+<a name="l00319"></a>00319 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -422,7 +418,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 29 2015 13:45:22 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 14:51:39 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
