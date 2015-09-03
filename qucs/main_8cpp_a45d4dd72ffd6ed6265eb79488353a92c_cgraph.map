@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="203,259,315,288"/>
+<area shape="rect" id="node49" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="193,472,324,501"/>
+<area shape="rect" id="node78" href="$classXyce.html#a66852766f793e208dc009afc8dabe33d" title="Xyce::waitEndOfSimulation" alt="" coords="168,525,349,555"/>
+<area shape="rect" id="node80" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="125,896,392,925"/>
+<area shape="rect" id="node5" href="$classModule.html#a1fe30a0d93ffea2c424b9037f0123ddf" title="Module::registerModules" alt="" coords="513,259,676,288"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="507,205,683,235"/>
+<area shape="rect" id="node9" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="861,272,997,301"/>
+<area shape="rect" id="node11" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="844,325,1015,355"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="843,32,1016,61"/>
+<area shape="rect" id="node19" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="835,112,1024,141"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="855,165,1004,195"/>
+<area shape="rect" id="node41" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="844,219,1015,248"/>
+<area shape="rect" id="node13" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="1175,325,1276,355"/>
+<area shape="rect" id="node17" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="1148,5,1303,35"/>
+<area shape="rect" id="node21" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="1140,112,1311,141"/>
+<area shape="rect" id="node31" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="1111,59,1340,88"/>
+<area shape="rect" id="node23" href="$classModule.html#a79988d9c995e39c09a99947dea18bd69" title="Module::getComponent" alt="" coords="1405,5,1563,35"/>
+<area shape="rect" id="node25" href="$classComponent.html#a2868dd4e0b61596134dd736cc2a7424f" title="Component::load" alt="" coords="1424,59,1544,88"/>
+<area shape="rect" id="node27" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="1396,112,1572,141"/>
+<area shape="rect" id="node29" href="$classComponent.html#a922de1326d4214d885f5dc05287a75a0" title="Component::recreate" alt="" coords="1412,165,1556,195"/>
+<area shape="rect" id="node35" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="1185,219,1265,248"/>
+<area shape="rect" id="node39" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="1131,165,1320,195"/>
+<area shape="rect" id="node37" href="$classWire.html#a89248ef162a2efedbb9c4f85271cf671" title="Wire::setName" alt="" coords="1429,219,1539,248"/>
+<area shape="rect" id="node43" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="1175,272,1276,301"/>
+<area shape="rect" id="node45" href="$classGraph.html#ae0f205184cc3ea8a9c415b48f55ce8d5" title="Graph::parentDiagram" alt="" coords="1409,272,1559,301"/>
+<area shape="rect" id="node47" href="$classGraph.html#a0f26753c9263504b92b659f0dc7d253d" title="Graph::load" alt="" coords="1440,325,1528,355"/>
+<area shape="rect" id="node51" href="$classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE&#45;compatibility of all components." alt="" coords="472,579,717,608"/>
+<area shape="rect" id="node53" href="$classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4" title="AbstractSpiceKernel::finished" alt="" coords="832,605,1027,635"/>
+<area shape="rect" id="node55" href="$classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30" title="AbstractSpiceKernel::errors" alt="" coords="504,312,685,341"/>
+<area shape="rect" id="node57" href="$classXyce.html#a037f074a75004956594fb27277bcf5a8" title="Xyce::determineUsedSimulations Determine simulation used in schematic and add them into simulationsQu..." alt="" coords="487,365,703,395"/>
+<area shape="rect" id="node59" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="528,419,661,448"/>
+<area shape="rect" id="node71" href="$classAbstractSpiceKernel.html#a4a19b1b50928c525b0df6dda303818e5" title="AbstractSpiceKernel::started" alt="" coords="500,472,689,501"/>
+<area shape="rect" id="node73" href="$classXyce.html#a885f0416851b3ca1599d765888e0f8d2" title="Xyce::nextSimulation Execute the next simulation from queue." alt="" coords="521,525,668,555"/>
+<area shape="rect" id="node61" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="799,405,1060,435"/>
+<area shape="rect" id="node69" href="$classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist..." alt="" coords="823,459,1036,488"/>
+<area shape="rect" id="node63" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1139,445,1312,475"/>
+<area shape="rect" id="node67" href="$classSchematic.html#acff87102c62c039c55a14d25393dda99" title="Schematic::clearSignalsAndFileList" alt="" coords="1112,392,1339,421"/>
+<area shape="rect" id="node65" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1389,445,1579,475"/>
+<area shape="rect" id="node75" href="$classAbstractSpiceKernel.html#ad9807cb4f71baa3c70282d42d1576522" title="AbstractSpiceKernel::progress" alt="" coords="831,525,1028,555"/>
+<area shape="rect" id="node82" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="476,1163,713,1192"/>
+<area shape="rect" id="node84" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="465,683,724,712"/>
+<area shape="rect" id="node86" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="468,736,721,765"/>
+<area shape="rect" id="node88" href="$classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="481,789,708,819"/>
+<area shape="rect" id="node90" href="$classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="457,843,732,872"/>
+<area shape="rect" id="node92" href="$classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="468,896,721,925"/>
+<area shape="rect" id="node94" href="$classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="469,949,720,979"/>
+<area shape="rect" id="node96" href="$classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="448,1003,741,1032"/>
+<area shape="rect" id="node98" href="$classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f" title="AbstractSpiceKernel::normalizeVarsNames Convert spice&#45;style variable names to Qucs style and add simu..." alt="" coords="457,1056,732,1085"/>
+<area shape="rect" id="node100" href="$classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets." alt="" coords="441,1109,748,1139"/>
+</map>

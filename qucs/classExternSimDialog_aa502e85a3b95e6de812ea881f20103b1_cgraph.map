@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classAbstractSpiceKernel.html#a92d92c8b05b9cda0f117d0e51d675f89" title="AbstractSpiceKernel::getOutput Get sdtout and stderr output of simulation process." alt="" coords="369,32,575,61"/>
+<area shape="rect" id="node5" href="$classExternSimDialog.html#ab864d06630fc852aeb373bb58551f912" title="ExternSimDialog::warnings" alt="" coords="383,85,561,115"/>
+<area shape="rect" id="node7" href="$classExternSimDialog.html#a34b32851ea7cc5b984cbad1a9e0732ab" title="ExternSimDialog::success" alt="" coords="384,139,560,168"/>
+<area shape="rect" id="node9" href="$classExternSimDialog.html#ac4e022ca700fdb6ddc3640e7d78a3c00" title="ExternSimDialog::saveLog" alt="" coords="384,192,560,221"/>
+<area shape="rect" id="node11" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="339,245,605,275"/>
+<area shape="rect" id="node33" href="$classExternSimDialog.html#a83dfe0ca100f0bff305c9d66be953355" title="ExternSimDialog::simulated" alt="" coords="380,299,564,328"/>
+<area shape="rect" id="node13" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="689,5,927,35"/>
+<area shape="rect" id="node15" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="679,59,937,88"/>
+<area shape="rect" id="node17" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="681,112,935,141"/>
+<area shape="rect" id="node19" href="$classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="695,165,921,195"/>
+<area shape="rect" id="node21" href="$classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="671,219,945,248"/>
+<area shape="rect" id="node23" href="$classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="681,272,935,301"/>
+<area shape="rect" id="node25" href="$classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="683,325,933,355"/>
+<area shape="rect" id="node27" href="$classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="661,379,955,408"/>
+<area shape="rect" id="node29" href="$classAbstractSpiceKernel.html#ad86f4c1d264750dc3a2fcf375b57551f" title="AbstractSpiceKernel::normalizeVarsNames Convert spice&#45;style variable names to Qucs style and add simu..." alt="" coords="671,432,945,461"/>
+<area shape="rect" id="node31" href="$classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8" title="AbstractSpiceKernel::removeAllSimulatorOutputs Clean temporary simulator datasets." alt="" coords="655,485,961,515"/>
+</map>

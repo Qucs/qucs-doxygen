@@ -1,6 +1,7 @@
 var searchData=
 [
   ['r2z',['r2z',['../classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625',1,'MatchDialog']]],
+  ['r_5fspice',['R_SPICE',['../classR__SPICE.html#a4f65756faea83ce26547f46ee6c52820',1,'R_SPICE']]],
   ['readprojects',['readProjects',['../classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2',1,'QucsApp']]],
   ['rebuild',['rebuild',['../classSchematic.html#a6feff77e818324694af2f744920906d2',1,'Schematic']]],
   ['rebuildsymbol',['rebuildSymbol',['../classSchematic.html#aaa49d02698deb50ce7b8c00c5e830acd',1,'Schematic']]],
@@ -27,6 +28,7 @@ var searchData=
   ['relais',['Relais',['../classRelais.html#aa1cc3dc91abfa6c863d6d54f97e3ab3b',1,'Relais']]],
   ['reloadgraphs',['reloadGraphs',['../classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6',1,'Schematic']]],
   ['remakesymbol',['remakeSymbol',['../classSubcircuit.html#ae882bc821ddd12d4aeabb7b9eb47d569',1,'Subcircuit']]],
+  ['removeallsimulatoroutputs',['removeAllSimulatorOutputs',['../classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8',1,'AbstractSpiceKernel']]],
   ['removehiddencross',['removeHiddenCross',['../classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156',1,'Rect3DDiagram']]],
   ['removehiddenlines',['removeHiddenLines',['../classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2',1,'Rect3DDiagram']]],
   ['replace',['replace',['../classSearchDialog.html#a867031f9b52657059cda7e5416b98d34',1,'SearchDialog::replace()'],['../classTextDoc.html#adf2604f5dcb2d13d50f38e7392caff66',1,'TextDoc::replace()']]],
@@ -43,5 +45,7 @@ var searchData=
   ['rotate',['rotate',['../classComponent.html#a371f348f5919cb271a1450b6c868a12f',1,'Component::rotate()'],['../classArrow.html#a0d1bc2ac783f879a9a1c8b86f7eda098',1,'Arrow::rotate()'],['../classEllipse.html#aae47888187a4525bb247719a08194d72',1,'Ellipse::rotate()'],['../classEllipseArc.html#a665ecc5e08af3e6fd08104981a0a9062',1,'EllipseArc::rotate()'],['../classGraphicLine.html#a22e5bdfda034ba439540affb2fd489f1',1,'GraphicLine::rotate()'],['../classGraphicText.html#a37c6a85ee7ca72deca7a2d68e601b5be',1,'GraphicText::rotate()'],['../classID__Text.html#ad870dd11f6399baa1c59d61f78b5cc1b',1,'ID_Text::rotate()'],['../classPainting.html#a446de29a7b8d8d795b9de70d2aa4b83e',1,'Painting::rotate()'],['../classPortSymbol.html#a68d8082c6663dfac2835be805f78a627',1,'PortSymbol::rotate()'],['../classRectangle.html#ac0de57edca6b54c03017bd807b803dfd',1,'Rectangle::rotate()'],['../classWire.html#ab82f1d2be8234ec1c528b331206b085f',1,'Wire::rotate()'],['../classWireLabel.html#a2b3b829706aba58ee63a11202241b65a',1,'WireLabel::rotate()']]],
   ['rotateelements',['rotateElements',['../classMouseActions.html#aebfdd8e3030579e0578e4405ce0174a3',1,'MouseActions::rotateElements()'],['../classSchematic.html#aaed026f1e442e36eac494279816148bb',1,'Schematic::rotateElements()']]],
   ['rs_5fflipflop',['RS_FlipFlop',['../classRS__FlipFlop.html#a5d509fe758e51d04ad73fdb6b6f1b137',1,'RS_FlipFlop']]],
-  ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]]
+  ['runngspice',['runNgspice',['../main_8cpp.html#a565e2d70b32211da091d3389e371bdce',1,'main.cpp']]],
+  ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]],
+  ['runxyce',['runXyce',['../main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c',1,'main.cpp']]]
 ];

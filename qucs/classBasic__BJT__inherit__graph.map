@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node9" href="$classBJT.html" title="{BJT\n||+ BJT()\l+ ~BJT()\l+ newOne()\l+ info()\l+ info_pnp()\l# createSymbol()\l# netlist()\l}" alt="" coords="5,1304,125,1493"/>
-<area shape="rect" id="node11" href="$classBJTsub.html" title="{BJTsub\n||+ BJTsub()\l+ ~BJTsub()\l+ newOne()\l+ info()\l+ info_pnp()\l# createSymbol()\l}" alt="" coords="149,1313,269,1485"/>
-<area shape="rect" id="node2" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="51,966,224,1103"/>
-<area shape="rect" id="node4" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="23,347,252,917"/>
+<area shape="rect" id="node9" href="$classBJT.html" title="{BJT\n||+ BJT()\l+ ~BJT()\l+ newOne()\l+ info()\l+ info_pnp()\l# createSymbol()\l# netlist()\l# spice_netlist()\l}" alt="" coords="5,1358,125,1565"/>
+<area shape="rect" id="node11" href="$classBJTsub.html" title="{BJTsub\n||+ BJTsub()\l+ ~BJTsub()\l+ newOne()\l+ info()\l+ info_pnp()\l# createSymbol()\l}" alt="" coords="149,1375,269,1547"/>
+<area shape="rect" id="node2" href="$classMultiViewComponent.html" title="{MultiViewComponent\n||+ MultiViewComponent()\l+ ~MultiViewComponent()\l+ recreate()\l# createSymbol()\l}" alt="" coords="51,1019,224,1157"/>
+<area shape="rect" id="node4" href="$classComponent.html" title="The Component class implements a generic analog component." alt="" coords="23,347,252,970"/>
 <area shape="rect" id="node6" href="$classElement.html" title="Superclass of all schematic drawing elements." alt="" coords="79,5,196,299"/>
 </map>

@@ -103,70 +103,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00020"></a>00020 
 <a name="l00021"></a><a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">00021</a> <a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">DC_Sim::DC_Sim</a>()
 <a name="l00022"></a>00022 {
-<a name="l00023"></a>00023   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;dc simulation&quot;</span>);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   QString s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
-<a name="l00026"></a>00026   <span class="keywordtype">int</span> a = s.indexOf(<span class="stringliteral">&quot; &quot;</span>);
-<a name="l00027"></a>00027   <span class="keywordtype">int</span> b = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
-<a name="l00028"></a>00028   <span class="keywordflow">if</span> (a != -1 &amp;&amp; b != -1) {
-<a name="l00029"></a>00029     <span class="keywordflow">if</span> (a &gt; (<span class="keywordtype">int</span>) s.length() - b)  b = a;
-<a name="l00030"></a>00030   }
-<a name="l00031"></a>00031   <span class="keywordflow">if</span> (a &lt; 8 || s.length() - b &lt; 8) b = -1;
-<a name="l00032"></a>00032   <span class="keywordflow">if</span> (b != -1) s[b] = <span class="charliteral">&#39;\n&#39;</span>;
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(b), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
-<a name="l00035"></a>00035   <span class="keywordflow">if</span> (b != -1)
-<a name="l00036"></a>00036     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(b+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
-<a name="l00039"></a>00039   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+128; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+41;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
-<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
-<a name="l00043"></a>00043   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.DC&quot;</span>;
-<a name="l00044"></a>00044   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;DC&quot;</span>;
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Temp&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
-<a name="l00047"></a>00047     QObject::tr(<span class="stringliteral">&quot;simulation temperature in degree Celsius&quot;</span>)));
-<a name="l00048"></a>00048   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;reltol&quot;</span>, <span class="stringliteral">&quot;0.001&quot;</span>, <span class="keyword">false</span>,
-<a name="l00049"></a>00049     QObject::tr(<span class="stringliteral">&quot;relative tolerance for convergence&quot;</span>)));
-<a name="l00050"></a>00050   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;abstol&quot;</span>, <span class="stringliteral">&quot;1 pA&quot;</span>, <span class="keyword">false</span>,
-<a name="l00051"></a>00051     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for currents&quot;</span>)));
-<a name="l00052"></a>00052   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;vntol&quot;</span>, <span class="stringliteral">&quot;1 uV&quot;</span>, <span class="keyword">false</span>,
-<a name="l00053"></a>00053     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for voltages&quot;</span>)));
-<a name="l00054"></a>00054   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;saveOPs&quot;</span>, <span class="stringliteral">&quot;no&quot;</span>, <span class="keyword">false</span>,
-<a name="l00055"></a>00055     QObject::tr(<span class="stringliteral">&quot;put operating points into dataset&quot;</span>)+
-<a name="l00056"></a>00056     <span class="stringliteral">&quot; [yes, no]&quot;</span>));
-<a name="l00057"></a>00057   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;MaxIter&quot;</span>, <span class="stringliteral">&quot;150&quot;</span>, <span class="keyword">false</span>,
-<a name="l00058"></a>00058     QObject::tr(<span class="stringliteral">&quot;maximum number of iterations until error&quot;</span>)));
-<a name="l00059"></a>00059   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;saveAll&quot;</span>, <span class="stringliteral">&quot;no&quot;</span>, <span class="keyword">false</span>,
-<a name="l00060"></a>00060   QObject::tr(<span class="stringliteral">&quot;save subcircuit nodes into dataset&quot;</span>)+
-<a name="l00061"></a>00061   <span class="stringliteral">&quot; [yes, no]&quot;</span>));
-<a name="l00062"></a>00062   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;convHelper&quot;</span>, <span class="stringliteral">&quot;none&quot;</span>, <span class="keyword">false</span>,
-<a name="l00063"></a>00063   QObject::tr(<span class="stringliteral">&quot;preferred convergence algorithm&quot;</span>)+
-<a name="l00064"></a>00064   <span class="stringliteral">&quot; [none, gMinStepping, SteepestDescent, LineSearch, Attenuation, SourceStepping]&quot;</span>));
-<a name="l00065"></a>00065   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Solver&quot;</span>, <span class="stringliteral">&quot;CroutLU&quot;</span>, <span class="keyword">false</span>,
-<a name="l00066"></a>00066   QObject::tr(<span class="stringliteral">&quot;method for solving the circuit matrix&quot;</span>)+
-<a name="l00067"></a>00067   <span class="stringliteral">&quot; [CroutLU, DoolittleLU, HouseholderQR, HouseholderLQ, GolubSVD]&quot;</span>));
-<a name="l00068"></a>00068 }
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="classDC__Sim.html#a5aa78e0e420675f803a6b4e8248d8da4">00070</a> <a class="code" href="classDC__Sim.html#a5aa78e0e420675f803a6b4e8248d8da4">DC_Sim::~DC_Sim</a>()
-<a name="l00071"></a>00071 {
-<a name="l00072"></a>00072 }
-<a name="l00073"></a>00073 
-<a name="l00074"></a><a class="code" href="classDC__Sim.html#acab5d927d050b755e59dc877acd47fd6">00074</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classDC__Sim.html#acab5d927d050b755e59dc877acd47fd6">DC_Sim::newOne</a>()
-<a name="l00075"></a>00075 {
-<a name="l00076"></a>00076   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">DC_Sim</a>();
-<a name="l00077"></a>00077 }
-<a name="l00078"></a>00078 
-<a name="l00079"></a><a class="code" href="classDC__Sim.html#a1994accdac8653804cdff66257c98661">00079</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classDC__Sim.html#a1994accdac8653804cdff66257c98661">DC_Sim::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
-<a name="l00080"></a>00080 {
-<a name="l00081"></a>00081   Name = QObject::tr(<span class="stringliteral">&quot;dc simulation&quot;</span>);
-<a name="l00082"></a>00082   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;dc&quot;</span>;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">DC_Sim</a>();
-<a name="l00085"></a>00085   <span class="keywordflow">return</span> 0;
-<a name="l00086"></a>00086 }
+<a name="l00023"></a>00023   <a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">isSimulation</a> = <span class="keyword">true</span>;
+<a name="l00024"></a>00024   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr(<span class="stringliteral">&quot;dc simulation&quot;</span>);
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026   QString s = <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a>;
+<a name="l00027"></a>00027   <span class="keywordtype">int</span> a = s.indexOf(<span class="stringliteral">&quot; &quot;</span>);
+<a name="l00028"></a>00028   <span class="keywordtype">int</span> b = s.findRev(<span class="stringliteral">&quot; &quot;</span>);
+<a name="l00029"></a>00029   <span class="keywordflow">if</span> (a != -1 &amp;&amp; b != -1) {
+<a name="l00030"></a>00030     <span class="keywordflow">if</span> (a &gt; (<span class="keywordtype">int</span>) s.length() - b)  b = a;
+<a name="l00031"></a>00031   }
+<a name="l00032"></a>00032   <span class="keywordflow">if</span> (a &lt; 8 || s.length() - b &lt; 8) b = -1;
+<a name="l00033"></a>00033   <span class="keywordflow">if</span> (b != -1) s[b] = <span class="charliteral">&#39;\n&#39;</span>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035   <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.left(b), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00036"></a>00036   <span class="keywordflow">if</span> (b != -1)
+<a name="l00037"></a>00037     <a class="code" href="classComponent.html#a183fb71dbd80f85eda0683cda9265590">Texts</a>.append(<span class="keyword">new</span> <a class="code" href="structText.html">Text</a>(0, 0, s.mid(b+1), Qt::darkBlue, <a class="code" href="main_8cpp.html#ac2e3fb7eed4aa9bd981210dc5df2e02e">QucsSettings</a>.<a class="code" href="structtQucsSettings.html#a719e66a2936b884272a7fcccb22588da">largeFontSize</a>));
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039   <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a> = -10; <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a> = -9;
+<a name="l00040"></a>00040   <a class="code" href="classElement.html#af5eeb37fce3bd3fa6e39fe791b8b3e70">x2</a> = <a class="code" href="classElement.html#a266bd06d6ad6d0df121f02f67f0a67b3">x1</a>+128; <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a> = <a class="code" href="classElement.html#a07af2f94363432a024d6224f9a950837">y1</a>+41;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="classComponent.html#ab61b838a77623a85a507b09e8a20135f">tx</a> = 0;
+<a name="l00043"></a>00043   <a class="code" href="classComponent.html#ab06419ec2b88070278e423e9d99b5df5">ty</a> = <a class="code" href="classElement.html#ac677b6aa0e2ec43697e027ff9c6bb947">y2</a>+1;
+<a name="l00044"></a>00044   <a class="code" href="classComponent.html#aa11361b5dd25aa533ce2458c951a98a2">Model</a> = <span class="stringliteral">&quot;.DC&quot;</span>;
+<a name="l00045"></a>00045   <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a>  = <span class="stringliteral">&quot;DC&quot;</span>;
+<a name="l00046"></a>00046   <a class="code" href="classComponent.html#a4f42e5b0e91be839e8ed56218deb9355">SpiceModel</a> = <span class="stringliteral">&quot;.OP&quot;</span>;
+<a name="l00047"></a>00047   <a class="code" href="classComponent.html#ae8f72f0af2cee970149730d1bc9d6378">isSimulation</a> = <span class="keyword">true</span>;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Temp&quot;</span>, <span class="stringliteral">&quot;26.85&quot;</span>, <span class="keyword">false</span>,
+<a name="l00050"></a>00050     QObject::tr(<span class="stringliteral">&quot;simulation temperature in degree Celsius&quot;</span>)));
+<a name="l00051"></a>00051   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;reltol&quot;</span>, <span class="stringliteral">&quot;0.001&quot;</span>, <span class="keyword">false</span>,
+<a name="l00052"></a>00052     QObject::tr(<span class="stringliteral">&quot;relative tolerance for convergence&quot;</span>)));
+<a name="l00053"></a>00053   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;abstol&quot;</span>, <span class="stringliteral">&quot;1 pA&quot;</span>, <span class="keyword">false</span>,
+<a name="l00054"></a>00054     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for currents&quot;</span>)));
+<a name="l00055"></a>00055   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;vntol&quot;</span>, <span class="stringliteral">&quot;1 uV&quot;</span>, <span class="keyword">false</span>,
+<a name="l00056"></a>00056     QObject::tr(<span class="stringliteral">&quot;absolute tolerance for voltages&quot;</span>)));
+<a name="l00057"></a>00057   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;saveOPs&quot;</span>, <span class="stringliteral">&quot;no&quot;</span>, <span class="keyword">false</span>,
+<a name="l00058"></a>00058     QObject::tr(<span class="stringliteral">&quot;put operating points into dataset&quot;</span>)+
+<a name="l00059"></a>00059     <span class="stringliteral">&quot; [yes, no]&quot;</span>));
+<a name="l00060"></a>00060   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;MaxIter&quot;</span>, <span class="stringliteral">&quot;150&quot;</span>, <span class="keyword">false</span>,
+<a name="l00061"></a>00061     QObject::tr(<span class="stringliteral">&quot;maximum number of iterations until error&quot;</span>)));
+<a name="l00062"></a>00062   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;saveAll&quot;</span>, <span class="stringliteral">&quot;no&quot;</span>, <span class="keyword">false</span>,
+<a name="l00063"></a>00063   QObject::tr(<span class="stringliteral">&quot;save subcircuit nodes into dataset&quot;</span>)+
+<a name="l00064"></a>00064   <span class="stringliteral">&quot; [yes, no]&quot;</span>));
+<a name="l00065"></a>00065   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;convHelper&quot;</span>, <span class="stringliteral">&quot;none&quot;</span>, <span class="keyword">false</span>,
+<a name="l00066"></a>00066   QObject::tr(<span class="stringliteral">&quot;preferred convergence algorithm&quot;</span>)+
+<a name="l00067"></a>00067   <span class="stringliteral">&quot; [none, gMinStepping, SteepestDescent, LineSearch, Attenuation, SourceStepping]&quot;</span>));
+<a name="l00068"></a>00068   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append(<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a>(<span class="stringliteral">&quot;Solver&quot;</span>, <span class="stringliteral">&quot;CroutLU&quot;</span>, <span class="keyword">false</span>,
+<a name="l00069"></a>00069   QObject::tr(<span class="stringliteral">&quot;method for solving the circuit matrix&quot;</span>)+
+<a name="l00070"></a>00070   <span class="stringliteral">&quot; [CroutLU, DoolittleLU, HouseholderQR, HouseholderLQ, GolubSVD]&quot;</span>));
+<a name="l00071"></a>00071 }
+<a name="l00072"></a>00072 
+<a name="l00073"></a><a class="code" href="classDC__Sim.html#a5aa78e0e420675f803a6b4e8248d8da4">00073</a> <a class="code" href="classDC__Sim.html#a5aa78e0e420675f803a6b4e8248d8da4">DC_Sim::~DC_Sim</a>()
+<a name="l00074"></a>00074 {
+<a name="l00075"></a>00075 }
+<a name="l00076"></a>00076 
+<a name="l00077"></a><a class="code" href="classDC__Sim.html#acab5d927d050b755e59dc877acd47fd6">00077</a> <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classDC__Sim.html#acab5d927d050b755e59dc877acd47fd6">DC_Sim::newOne</a>()
+<a name="l00078"></a>00078 {
+<a name="l00079"></a>00079   <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">DC_Sim</a>();
+<a name="l00080"></a>00080 }
+<a name="l00081"></a>00081 
+<a name="l00082"></a><a class="code" href="classDC__Sim.html#a1994accdac8653804cdff66257c98661">00082</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classDC__Sim.html#a1994accdac8653804cdff66257c98661">DC_Sim::info</a>(QString&amp; Name, <span class="keywordtype">char</span>* &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
+<a name="l00083"></a>00083 {
+<a name="l00084"></a>00084   Name = QObject::tr(<span class="stringliteral">&quot;dc simulation&quot;</span>);
+<a name="l00085"></a>00085   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;dc&quot;</span>;
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087   <span class="keywordflow">if</span>(getNewOne)  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDC__Sim.html#ad6f3f8aaa72c50950506262296f5534b">DC_Sim</a>();
+<a name="l00088"></a>00088   <span class="keywordflow">return</span> 0;
+<a name="l00089"></a>00089 }
+<a name="l00090"></a>00090 
+<a name="l00091"></a><a class="code" href="classDC__Sim.html#a730ca0ea57a375a46c93079c7fca452b">00091</a> QString <a class="code" href="classDC__Sim.html#a730ca0ea57a375a46c93079c7fca452b">DC_Sim::spice_netlist</a>(<span class="keywordtype">bool</span>)
+<a name="l00092"></a>00092 {
+<a name="l00093"></a>00093     <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00094"></a>00094 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -185,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2015 14:51:38 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2015 16:17:18 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

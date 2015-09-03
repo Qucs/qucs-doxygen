@@ -1,6 +1,9 @@
 var searchData=
 [
   ['r2z',['r2z',['../classMatchDialog.html#a57d02c2d0ce9b257ae3530061e014625',1,'MatchDialog']]],
+  ['r_5fspice',['R_SPICE',['../classR__SPICE.html',1,'R_SPICE'],['../classR__SPICE.html#a4f65756faea83ce26547f46ee6c52820',1,'R_SPICE::R_SPICE()']]],
+  ['r_5fspice_2ecpp',['R_SPICE.cpp',['../R__SPICE_8cpp.html',1,'']]],
+  ['r_5fspice_2eh',['R_SPICE.h',['../R__SPICE_8h.html',1,'']]],
   ['readprojects',['readProjects',['../classQucsApp.html#a580aa50035a82c66f13fe7befce9c5e2',1,'QucsApp']]],
   ['real',['Real',['../structtQucsSettings.html#afcf029075ec5f86c465b85321246ed4d',1,'tQucsSettings']]],
   ['rebuild',['rebuild',['../classSchematic.html#a6feff77e818324694af2f744920906d2',1,'Schematic']]],
@@ -58,6 +61,9 @@ var searchData=
   ['register_5fprobe_5f1',['REGISTER_PROBE_1',['../module_8cpp.html#a770244db385567445a7b6d6f116ac404',1,'module.cpp']]],
   ['register_5fsimulation_5f1',['REGISTER_SIMULATION_1',['../module_8cpp.html#ad47906308ea790639a262a6cbc1c05ce',1,'module.cpp']]],
   ['register_5fsource_5f1',['REGISTER_SOURCE_1',['../module_8cpp.html#a9cf0391250adb5d78bf2cc38bf6ca5b4',1,'module.cpp']]],
+  ['register_5fspice_5f1',['REGISTER_SPICE_1',['../module_8cpp.html#a2073a4bb87d23d9622c7fa2a701a830b',1,'module.cpp']]],
+  ['register_5fspice_5fsec_5f1',['REGISTER_SPICE_SEC_1',['../module_8cpp.html#a0339be1c874a4e54a959d1de0bfd59e7',1,'module.cpp']]],
+  ['register_5fspice_5fsim_5f1',['REGISTER_SPICE_SIM_1',['../module_8cpp.html#a45e13d61a28eb715c70e9a71ebe64fea',1,'module.cpp']]],
   ['register_5ftrans_5f1',['REGISTER_TRANS_1',['../module_8cpp.html#a68b3ab3fa24a3646793a662d11a8a943',1,'module.cpp']]],
   ['register_5fveriloga_5f1',['REGISTER_VERILOGA_1',['../module_8cpp.html#abd99a837e1af56511ba4d2e90e43cdce',1,'module.cpp']]],
   ['register_5fveriloga_5f2',['REGISTER_VERILOGA_2',['../module_8cpp.html#a8929a8d9b75ce5baab21fb8c52245878',1,'module.cpp']]],
@@ -71,6 +77,7 @@ var searchData=
   ['relais_2eh',['relais.h',['../relais_8h.html',1,'']]],
   ['reloadgraphs',['reloadGraphs',['../classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6',1,'Schematic']]],
   ['remakesymbol',['remakeSymbol',['../classSubcircuit.html#ae882bc821ddd12d4aeabb7b9eb47d569',1,'Subcircuit']]],
+  ['removeallsimulatoroutputs',['removeAllSimulatorOutputs',['../classAbstractSpiceKernel.html#abdca56590749f96e79d5f50ab6afe2f8',1,'AbstractSpiceKernel']]],
   ['removehiddencross',['removeHiddenCross',['../classRect3DDiagram.html#a67a4b70fe28f3523cc3dcabef7c4a156',1,'Rect3DDiagram']]],
   ['removehiddenlines',['removeHiddenLines',['../classRect3DDiagram.html#a50641e924d2fa2e8f8684e8dac7ffec2',1,'Rect3DDiagram']]],
   ['replace',['replace',['../classSearchDialog.html#a867031f9b52657059cda7e5416b98d34',1,'SearchDialog::replace()'],['../classTextDoc.html#adf2604f5dcb2d13d50f38e7392caff66',1,'TextDoc::replace()']]],
@@ -107,5 +114,7 @@ var searchData=
   ['rs_5fflipflop',['RS_FlipFlop',['../classRS__FlipFlop.html',1,'RS_FlipFlop'],['../classRS__FlipFlop.html#a5d509fe758e51d04ad73fdb6b6f1b137',1,'RS_FlipFlop::RS_FlipFlop()']]],
   ['rs_5fflipflop_2ecpp',['rs_flipflop.cpp',['../rs__flipflop_8cpp.html',1,'']]],
   ['rs_5fflipflop_2eh',['rs_flipflop.h',['../rs__flipflop_8h.html',1,'']]],
-  ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]]
+  ['runngspice',['runNgspice',['../main_8cpp.html#a565e2d70b32211da091d3389e371bdce',1,'main.cpp']]],
+  ['runoctavescript',['runOctaveScript',['../classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb',1,'OctaveWindow']]],
+  ['runxyce',['runXyce',['../main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c',1,'main.cpp']]]
 ];
