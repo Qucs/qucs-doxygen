@@ -14,7 +14,6 @@ var searchData=
   ['digisettingsdialog',['DigiSettingsDialog',['../classDigiSettingsDialog.html',1,'']]],
   ['digsignal',['DigSignal',['../structDigSignal.html',1,'']]],
   ['diode',['Diode',['../classDiode.html',1,'']]],
-  ['diode_5fspice',['DIODE_SPICE',['../classDIODE__SPICE.html',1,'']]],
   ['dls_5f1ton',['DLS_1ton',['../classDLS__1ton.html',1,'']]],
   ['dls_5fnto1',['DLS_nto1',['../classDLS__nto1.html',1,'']]],
   ['dmux2to4',['dmux2to4',['../classdmux2to4.html',1,'']]],

@@ -1,8 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$bjt_8h.html" title="bjt.h" alt="" coords="96,83,141,112"/>
-<area shape="rect" id="node17" href="$node_8h.html" title="node.h" alt="" coords="169,237,231,267"/>
-<area shape="rect" id="node21" href="$spicecompat_8h.html" title="extsimkernels/spicecompat.h" alt="" coords="229,83,421,112"/>
-<area shape="rect" id="node5" href="$bjtsub_8h.html" title="bjtsub.h" alt="" coords="72,160,139,189"/>
-<area shape="rect" id="node7" href="$component_8h.html" title="component.h" alt="" coords="49,237,145,267"/>
-<area shape="rect" id="node11" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="160,315,237,344"/>
+<area shape="rect" id="node3" href="$bjt_8h.html" title="bjt.h" alt="" coords="135,83,180,112"/>
+<area shape="rect" id="node17" href="$node_8h.html" title="node.h" alt="" coords="216,237,277,267"/>
+<area shape="rect" id="node5" href="$bjtsub_8h.html" title="bjtsub.h" alt="" coords="119,160,185,189"/>
+<area shape="rect" id="node7" href="$component_8h.html" title="component.h" alt="" coords="96,237,192,267"/>
+<area shape="rect" id="node11" href="$element_8h.html" title="Defines drawing elements for schematics." alt="" coords="207,315,284,344"/>
 </map>

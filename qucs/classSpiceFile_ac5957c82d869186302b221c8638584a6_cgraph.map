@@ -3,7 +3,7 @@
 <area shape="rect" id="node5" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="240,59,421,88"/>
 <area shape="rect" id="node11" href="$classSpiceFile.html#a11272d700d7e466c7af9e41e47c435ba" title="SpiceFile::recreateSubNetlist" alt="" coords="235,299,427,328"/>
 <area shape="rect" id="node7" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="476,5,649,35"/>
-<area shape="rect" id="node9" href="$classSchematic.html#aed58e5dacd756fceffb39c7581dcf3ff" title="Schematic::getFileInfo" alt="" coords="487,59,639,88"/>
+<area shape="rect" id="node9" href="$classSchematic.html#aed58e5dacd756fceffb39c7581dcf3ff" title="Get (schematic) file reference." alt="" coords="487,59,639,88"/>
 <area shape="rect" id="node14" href="$classSpiceFile.html#a5645a7188b3ef3fddfbb0c2e76303807" title="SpiceFile::slotSkipOut" alt="" coords="487,325,639,355"/>
 <area shape="rect" id="node16" href="$classSpiceFile.html#ace70f796925610d4115b072b2184bd0f" title="SpiceFile::slotGetPrepErr" alt="" coords="477,379,648,408"/>
 <area shape="rect" id="node18" href="$classSpiceFile.html#a1af225c7a82642cfa518859846052f01" title="SpiceFile::slotGetPrepOut" alt="" coords="476,432,649,461"/>

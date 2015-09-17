@@ -4,7 +4,7 @@ var searchData=
   ['qt_5fresource_5fname',['qt_resource_name',['../qrc__qucs_8cpp.html#a7931167bf9d7e883e4194a60d031e431',1,'qrc_qucs.cpp']]],
   ['qt_5fresource_5fstruct',['qt_resource_struct',['../qrc__qucs_8cpp.html#a37a83d7da2ee18badcd100d79aac64d4',1,'qrc_qucs.cpp']]],
   ['qucsator',['Qucsator',['../structtQucsSettings.html#a21ed29c4b7d9829ffaffddc7c829043f',1,'tQucsSettings']]],
-  ['qucsconv',['QucsConv',['../classSpiceDialog.html#a125b4b15ba0e70e5222372652a5f4f04',1,'SpiceDialog::QucsConv()'],['../classSpiceFile.html#a79bd17801331efb3718bb8598896789e',1,'SpiceFile::QucsConv()']]],
+  ['qucsconv',['Qucsconv',['../structtQucsSettings.html#a1803c92222734af21418c03cd1ce18c6',1,'tQucsSettings::Qucsconv()'],['../classSpiceDialog.html#a125b4b15ba0e70e5222372652a5f4f04',1,'SpiceDialog::QucsConv()'],['../classSpiceFile.html#a79bd17801331efb3718bb8598896789e',1,'SpiceFile::QucsConv()']]],
   ['qucsfilefilter',['QucsFileFilter',['../classQucsApp.html#a00855ea292564b6816e25c23058c568f',1,'QucsApp']]],
   ['qucshomedir',['QucsHomeDir',['../structtQucsSettings.html#a80d828678da4014a033ddf5ec3f831c7',1,'tQucsSettings']]],
   ['qucsmain',['QucsMain',['../main_8cpp.html#acd1e1fca11584d479cbeb2e72c9e151f',1,'QucsMain():&#160;main.cpp'],['../main_8h.html#acd1e1fca11584d479cbeb2e72c9e151f',1,'QucsMain():&#160;main.cpp']]],

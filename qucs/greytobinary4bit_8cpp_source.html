@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a><a class="code" href="classgreytobinary4bit.html#ae4faa2094261926042ee1b8002c9109f">00022</a> <a class="code" href="classgreytobinary4bit.html#ae4faa2094261926042ee1b8002c9109f">greytobinary4bit::greytobinary4bit</a>()
 <a name="l00023"></a>00023 {
 <a name="l00024"></a>00024   <a class="code" href="classElement.html#aba683e0a0371d268466c70134363b4b8">Type</a> = <a class="code" href="element_8h.html#aa5a2a2110fad5920fa65cf653b56a973">isComponent</a>; <span class="comment">// Analogue and digital component.</span>
-<a name="l00025"></a>00025   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr (<span class="stringliteral">&quot;4bit grey to binary converter verilog device&quot;</span>);
+<a name="l00025"></a>00025   <a class="code" href="classComponent.html#adf20644c7dd6c613f72fba192b17e142">Description</a> = QObject::tr (<span class="stringliteral">&quot;4bit Gray to binary converter verilog device&quot;</span>);
 <a name="l00026"></a>00026 
 <a name="l00027"></a>00027   <a class="code" href="classComponent.html#ac26b0c8fe8363087bfc9243adc57ef6c">Props</a>.append (<span class="keyword">new</span> <a class="code" href="structProperty.html">Property</a> (<span class="stringliteral">&quot;TR&quot;</span>, <span class="stringliteral">&quot;6&quot;</span>, <span class="keyword">false</span>,
 <a name="l00028"></a>00028     QObject::tr (<span class="stringliteral">&quot;transfer function scaling factor&quot;</span>)));
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00047"></a>00047 
 <a name="l00048"></a><a class="code" href="classgreytobinary4bit.html#a9d16c7db09b55eb0b73f5c591fbe9382">00048</a> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a> * <a class="code" href="classgreytobinary4bit.html#a9d16c7db09b55eb0b73f5c591fbe9382">greytobinary4bit::info</a>(QString&amp; Name, <span class="keywordtype">char</span> * &amp;BitmapFile, <span class="keywordtype">bool</span> getNewOne)
 <a name="l00049"></a>00049 {
-<a name="l00050"></a>00050   Name = QObject::tr(<span class="stringliteral">&quot;4Bit Grey2Bin&quot;</span>);
+<a name="l00050"></a>00050   Name = QObject::tr(<span class="stringliteral">&quot;4Bit Gray2Bin&quot;</span>);
 <a name="l00051"></a>00051   BitmapFile = (<span class="keywordtype">char</span> *) <span class="stringliteral">&quot;greytobinary4bit&quot;</span>;
 <a name="l00052"></a>00052 
 <a name="l00053"></a>00053   <span class="keywordflow">if</span>(getNewOne) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classgreytobinary4bit.html#ae4faa2094261926042ee1b8002c9109f">greytobinary4bit</a>();
@@ -230,7 +230,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00147"></a>00147   QString B2R = <span class="stringliteral">&quot;net_reg&quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + B2;
 <a name="l00148"></a>00148   QString B3R = <span class="stringliteral">&quot;net_reg&quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + B3;
 <a name="l00149"></a>00149   
-<a name="l00150"></a>00150   l = <span class="stringliteral">&quot;\n  // &quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + <span class="stringliteral">&quot; 4bit grey to binary\n&quot;</span> +
+<a name="l00150"></a>00150   l = <span class="stringliteral">&quot;\n  // &quot;</span> + <a class="code" href="classComponent.html#a1a17d0985b8348fe58e1d83a9fa4992b">Name</a> + <span class="stringliteral">&quot; 4bit Gray to binary\n&quot;</span> +
 <a name="l00151"></a>00151       <span class="stringliteral">&quot;  assign  &quot;</span> + B0 + <span class="stringliteral">&quot; = &quot;</span> + B0R + <span class="stringliteral">&quot;;\n&quot;</span> +
 <a name="l00152"></a>00152       <span class="stringliteral">&quot;  reg     &quot;</span> + B0R + <span class="stringliteral">&quot; = 0;\n&quot;</span> +
 <a name="l00153"></a>00153       <span class="stringliteral">&quot;  assign  &quot;</span> + B1 + <span class="stringliteral">&quot; = &quot;</span> + B1R + <span class="stringliteral">&quot;;\n&quot;</span> +
@@ -267,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2015 16:17:18 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 17 2015 08:14:44 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

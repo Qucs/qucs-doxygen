@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$main_8cpp.html#af0af1507bf87dfa58f617119940f45cd" title="qucsMessageOutput handles qDebug, qWarning, qCritical, qFatal." alt="" coords="123,5,264,35"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#af73ed9d8b8324e8a1b50b5e23960b1f6" title="loadSettings" alt="" coords="147,59,240,88"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#a8122bb2b7f409b5f8ced81ea73b8c918" title="createIcons Create component icons (png) from command line." alt="" coords="148,112,239,141"/>
-<area shape="rect" id="node15" href="$main_8cpp.html#a5bac7e5fa40b60a9e017dbe79c170672" title="createDocData Create data used for documentation." alt="" coords="139,165,248,195"/>
-<area shape="rect" id="node20" href="$main_8cpp.html#ad36199d00fc52f4f5bb8778591100c08" title="createListNetEntry prints to stdout the available netlist formats" alt="" coords="105,244,281,273"/>
-<area shape="rect" id="node31" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="132,496,255,525"/>
-<area shape="rect" id="node42" href="$main_8cpp.html#a37141090a43017548a9f6d589d85418d" title="doXyceNetlist" alt="" coords="141,443,245,472"/>
-<area shape="rect" id="node51" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="156,389,231,419"/>
-<area shape="rect" id="node68" href="$main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="149,680,237,709"/>
-<area shape="rect" id="node102" href="$main_8cpp.html#a45d4dd72ffd6ed6265eb79488353a92c" title="runXyce" alt="" coords="159,733,228,763"/>
-<area shape="rect" id="node116" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="163,549,224,579"/>
-<area shape="rect" id="node9" href="$classModule.html#a1fe30a0d93ffea2c424b9037f0123ddf" title="Module::registerModules" alt="" coords="716,72,879,101"/>
-<area shape="rect" id="node11" href="$classCategory.html#a960a0e59d07a74118852ba06a63b7806" title="Category::getCategories" alt="" coords="385,99,548,128"/>
-<area shape="rect" id="node13" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="392,152,541,181"/>
-<area shape="rect" id="node25" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="404,256,529,285"/>
-<area shape="rect" id="node27" href="$classComponent.html#a8cc8c065a46079b390ac5218f99153be" title="Component::getNetlist" alt="" coords="391,309,543,339"/>
-<area shape="rect" id="node29" href="$classComponent.html#aa89e8cc6b51376898fd7e15f40dce73f" title="Component::netlist" alt="" coords="732,149,863,179"/>
-<area shape="rect" id="node33" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="411,469,523,499"/>
-<area shape="rect" id="node38" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="724,629,871,659"/>
-<area shape="rect" id="node36" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument" alt="" coords="709,469,885,499"/>
-<area shape="rect" id="node40" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="992,629,1144,659"/>
-<area shape="rect" id="node45" href="$classXyce.html#a4121a939ef18f894c3011287d9937bd8" title="Xyce::SaveNetlist Save netlist into specified file without execution of simulator." alt="" coords="403,523,531,552"/>
-<area shape="rect" id="node47" href="$classXyce.html#a037f074a75004956594fb27277bcf5a8" title="Xyce::determineUsedSimulations Determine simulation used in schematic and add them into simulationsQu..." alt="" coords="689,523,905,552"/>
-<area shape="rect" id="node49" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="731,576,864,605"/>
-<area shape="rect" id="node54" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="380,363,553,392"/>
-<area shape="rect" id="node58" href="$classSchematic.html#ae749825626bec0fb944e27411a7fb583" title="Schematic::createNetlist" alt="" coords="384,416,549,445"/>
-<area shape="rect" id="node56" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="703,203,892,232"/>
-<area shape="rect" id="node60" href="$classSchematic.html#a78cbb7cbfec9141455286609f4ba2831" title="Schematic::beginNetlistDigital" alt="" coords="699,309,896,339"/>
-<area shape="rect" id="node62" href="$namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8" title="misc::Verilog_Time" alt="" coords="731,363,864,392"/>
-<area shape="rect" id="node64" href="$namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134" title="misc::VHDL_Time" alt="" coords="732,416,863,445"/>
-<area shape="rect" id="node66" href="$classSchematic.html#af893d90555f7295e7bf11acf9fa13f73" title="Schematic::endNetlistDigital" alt="" coords="704,256,891,285"/>
-<area shape="rect" id="node71" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="392,787,541,816"/>
-<area shape="rect" id="node82" href="$classAbstractSpiceKernel.html#a726918ad791f5235fc2f82f63faa60aa" title="AbstractSpiceKernel::waitEndOfSimulation" alt="" coords="332,680,601,709"/>
-<area shape="rect" id="node84" href="$classAbstractSpiceKernel.html#a1cb7dd699a9955852b9dc1e7eccc9861" title="AbstractSpiceKernel::convertToQucsData Put data extracted from spice raw text output files (given in ..." alt="" coords="333,1003,600,1032"/>
-<area shape="rect" id="node73" href="$classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE&#45;compatibility of all components." alt="" coords="675,736,920,765"/>
-<area shape="rect" id="node75" href="$classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4" title="AbstractSpiceKernel::finished" alt="" coords="700,789,895,819"/>
-<area shape="rect" id="node77" href="$classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30" title="AbstractSpiceKernel::errors" alt="" coords="707,843,888,872"/>
-<area shape="rect" id="node80" href="$classAbstractSpiceKernel.html#a4a19b1b50928c525b0df6dda303818e5" title="AbstractSpiceKernel::started" alt="" coords="703,683,892,712"/>
-<area shape="rect" id="node86" href="$classAbstractSpiceKernel.html#a8a94601071fd72eb9ed137ef5f51a059" title="AbstractSpiceKernel::parseHBOutput Parse Xyce Harmonic balance (HB) simulation output." alt="" coords="679,896,916,925"/>
-<area shape="rect" id="node88" href="$classAbstractSpiceKernel.html#a4a02c15679e85e4351af0f4693f3819d" title="AbstractSpiceKernel::parseFourierOutput Parse output of fourier simulation." alt="" coords="668,949,927,979"/>
-<area shape="rect" id="node90" href="$classAbstractSpiceKernel.html#a8b1ba6b0ee2001cf85ba1b0d79a30311" title="AbstractSpiceKernel::parseNoiseOutput Parse output of .NOISE simulation." alt="" coords="671,1003,924,1032"/>
-<area shape="rect" id="node92" href="$classAbstractSpiceKernel.html#a5fdc0b8dcc5a808335921f4e2e4d5f0f" title="AbstractSpiceKernel::parseResFile Extract sweep variable name and values from Ngspice or Xyce *..." alt="" coords="684,1056,911,1085"/>
-<area shape="rect" id="node94" href="$classAbstractSpiceKernel.html#a41830b64a0f8b0cd7118d42f4b60e34a" title="AbstractSpiceKernel::parseHBSTEPOutput" alt="" coords="660,1109,935,1139"/>
-<area shape="rect" id="node96" href="$classAbstractSpiceKernel.html#a25d91934df6a0fa172e20814e6d5af1b" title="AbstractSpiceKernel::parseSTEPOutput This method parses text raw spice output from Parameter sweep an..." alt="" coords="671,1163,924,1192"/>
-<area shape="rect" id="node98" href="$classAbstractSpiceKernel.html#aa60dae25e53d6dc482bce4fdef549ce1" title="AbstractSpiceKernel::checkRawOutupt Determine Ngspice Raw output contains parameter sweep..." alt="" coords="672,1216,923,1245"/>
-<area shape="rect" id="node100" href="$classAbstractSpiceKernel.html#aee2d230deb1f252454cc9c5e6dfa12d7" title="AbstractSpiceKernel::parseNgSpiceSimOutput This method parses text raw spice output." alt="" coords="651,1269,944,1299"/>
-<area shape="rect" id="node105" href="$classXyce.html#aef3a4986aad987add89ed34092f9fabd" title="Xyce::slotSimulate Execute Xyce simualtor and perform all simulations from the simulationQueue list..." alt="" coords="401,733,532,763"/>
-<area shape="rect" id="node113" href="$classXyce.html#a66852766f793e208dc009afc8dabe33d" title="Xyce::waitEndOfSimulation" alt="" coords="376,1056,557,1085"/>
-<area shape="rect" id="node119" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="383,627,551,656"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#af0af1507bf87dfa58f617119940f45cd" title="qucsMessageOutput handles qDebug, qWarning, qCritical, qFatal." alt="" coords="123,219,264,248"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#af73ed9d8b8324e8a1b50b5e23960b1f6" title="loadSettings" alt="" coords="147,272,240,301"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a8122bb2b7f409b5f8ced81ea73b8c918" title="createIcons Create component icons (png) from command line." alt="" coords="148,325,239,355"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#a5bac7e5fa40b60a9e017dbe79c170672" title="createDocData Create data used for documentation." alt="" coords="139,379,248,408"/>
+<area shape="rect" id="node20" href="$main_8cpp.html#ad36199d00fc52f4f5bb8778591100c08" title="createListNetEntry prints to stdout the available netlist formats" alt="" coords="105,432,281,461"/>
+<area shape="rect" id="node31" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="156,591,231,620"/>
+<area shape="rect" id="node107" href="$main_8cpp.html#ac910b1ef528bfaf3f51a09f19a882d31" title="doPrint" alt="" coords="163,644,224,673"/>
+<area shape="rect" id="node9" href="$classModule.html#a1fe30a0d93ffea2c424b9037f0123ddf" title="Module::registerModules" alt="" coords="571,407,733,436"/>
+<area shape="rect" id="node11" href="$classCategory.html#a960a0e59d07a74118852ba06a63b7806" title="Category::getCategories" alt="" coords="336,276,499,305"/>
+<area shape="rect" id="node13" href="$classCategory.html#ae86abddba33031433969ef9fbb906226" title="Category::getModules" alt="" coords="343,329,492,359"/>
+<area shape="rect" id="node25" href="$classComponent.html#a49accabb9fe82fcbaad3285862a5a8c2" title="Component::save" alt="" coords="355,484,480,513"/>
+<area shape="rect" id="node27" href="$classComponent.html#a8cc8c065a46079b390ac5218f99153be" title="Component::getNetlist" alt="" coords="341,537,493,567"/>
+<area shape="rect" id="node29" href="$classComponent.html#aa89e8cc6b51376898fd7e15f40dce73f" title="Component::netlist" alt="" coords="587,512,717,541"/>
+<area shape="rect" id="node33" href="$main_8cpp.html#accff2d69f451f33e23d489d2858c12e9" title="openSchematic" alt="" coords="361,591,473,620"/>
+<area shape="rect" id="node68" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="331,644,504,673"/>
+<area shape="rect" id="node97" href="$classSchematic.html#ae749825626bec0fb944e27411a7fb583" title="Schematic::createNetlist" alt="" coords="335,724,500,753"/>
+<area shape="rect" id="node36" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument tries to load a schematic document." alt="" coords="1068,219,1244,248"/>
+<area shape="rect" id="node38" href="$classSchematic.html#a168fb3a27e10a6d278a73f92e3c167f6" title="Set reference to file (schematic)" alt="" coords="1321,5,1473,35"/>
+<area shape="rect" id="node40" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="1329,59,1465,88"/>
+<area shape="rect" id="node42" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="1312,112,1483,141"/>
+<area shape="rect" id="node46" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="1311,165,1484,195"/>
+<area shape="rect" id="node50" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="1303,219,1492,248"/>
+<area shape="rect" id="node58" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="1323,272,1472,301"/>
+<area shape="rect" id="node64" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="1312,352,1483,381"/>
+<area shape="rect" id="node44" href="$classPainting.html#a2beba198a02d1970629985584f641e9c" title="Painting::load" alt="" coords="1607,59,1708,88"/>
+<area shape="rect" id="node48" href="$namespacemisc.html#a7014f2ccce435529bd46e2bad0a4583d" title="misc::convert2Unicode" alt="" coords="1580,112,1735,141"/>
+<area shape="rect" id="node52" href="$component_8cpp.html#aa057fe262034cae6951442febc40ef78" title="getComponentFromName" alt="" coords="1572,165,1743,195"/>
+<area shape="rect" id="node56" href="$classSchematic.html#af632d53b1421cbbfab5efada81b7a225" title="Schematic::simpleInsertComponent" alt="" coords="1543,219,1772,248"/>
+<area shape="rect" id="node54" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="1823,299,1999,328"/>
+<area shape="rect" id="node60" href="$classWire.html#aed05f72905c684ac4962b9092689c769" title="Wire::load" alt="" coords="1617,272,1697,301"/>
+<area shape="rect" id="node62" href="$classSchematic.html#a3f5c49b4fba432e5e17b7afe297d3d47" title="Schematic::simpleInsertWire" alt="" coords="1563,325,1752,355"/>
+<area shape="rect" id="node66" href="$classDiagram.html#a39e1698e09cba8c7bb910aed88037cbf" title="Diagram::load" alt="" coords="1607,379,1708,408"/>
+<area shape="rect" id="node70" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="557,644,747,673"/>
+<area shape="rect" id="node72" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="809,616,1001,645"/>
+<area shape="rect" id="node93" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="812,669,999,699"/>
+<area shape="rect" id="node95" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="800,723,1011,752"/>
+<area shape="rect" id="node75" href="$classComponent.html#ab9215e47cb5acea835a44302fd488c8c" title="Component::getSubcircuitFile" alt="" coords="1059,483,1253,512"/>
+<area shape="rect" id="node77" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="1079,536,1233,565"/>
+<area shape="rect" id="node80" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="1061,856,1251,885"/>
+<area shape="rect" id="node83" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="1065,589,1247,619"/>
+<area shape="rect" id="node85" href="$classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90" title="SpiceFile::getErrorText" alt="" coords="1079,643,1233,672"/>
+<area shape="rect" id="node87" href="$classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c" title="VHDL_File::createSubNetlist" alt="" coords="1061,696,1251,725"/>
+<area shape="rect" id="node89" href="$classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4" title="VHDL_File::getErrorText" alt="" coords="1073,749,1239,779"/>
+<area shape="rect" id="node91" href="$classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48" title="Verilog_File::createSubNetlist" alt="" coords="1059,803,1253,832"/>
+<area shape="rect" id="node99" href="$classSchematic.html#a78cbb7cbfec9141455286609f4ba2831" title="Schematic::beginNetlistDigital" alt="" coords="553,697,751,727"/>
+<area shape="rect" id="node101" href="$namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8" title="misc::Verilog_Time" alt="" coords="585,751,719,780"/>
+<area shape="rect" id="node103" href="$namespacemisc.html#a75bc1df0c072a5647b649e7079bfc134" title="misc::VHDL_Time" alt="" coords="587,804,717,833"/>
+<area shape="rect" id="node105" href="$classSchematic.html#af893d90555f7295e7bf11acf9fa13f73" title="Schematic::endNetlistDigital" alt="" coords="559,857,745,887"/>
+<area shape="rect" id="node110" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="333,777,501,807"/>
 </map>
