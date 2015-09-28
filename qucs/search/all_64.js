@@ -18,6 +18,7 @@ var searchData=
   ['dcfeed_2ecpp',['dcfeed.cpp',['../dcfeed_8cpp.html',1,'']]],
   ['dcfeed_2eh',['dcfeed.h',['../dcfeed_8h.html',1,'']]],
   ['decode_5fstring',['decode_String',['../mnemo_8cpp.html#a1f601a1cd1be769e343024170a708f4e',1,'decode_String(QString &amp;Output):&#160;mnemo.cpp'],['../mnemo_8h.html#a1ed94aec3c8808e77cd539c22e0f9766',1,'decode_String(QString &amp;):&#160;mnemo.cpp']]],
+  ['default_5fz0',['default_Z0',['../marker_8cpp.html#ad7defcbbb8a55c66ba19982bf00df0c0',1,'marker.cpp']]],
   ['defaultcolors',['DefaultColors',['../diagramdialog_8cpp.html#aa26d96ba187bf1f4d6b14f71b960871a',1,'diagramdialog.cpp']]],
   ['defaultdataset',['defaultDataSet',['../classDiagramDialog.html#a527d4adc3a73c517ba5b651adb1a7ea6',1,'DiagramDialog']]],
   ['deletecomp',['deleteComp',['../classSchematic.html#ad70f466fe1c40d2e3600b49abbb84d09',1,'Schematic']]],

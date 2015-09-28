@@ -215,281 +215,275 @@
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163   <span class="comment">// adds effect of strip thickness</span>
 <a name="l00164"></a>00164   <span class="keywordflow">if</span> (t &gt; 0) {
-<a name="l00165"></a>00165     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, se, We, ke, qe;
+<a name="l00165"></a>00165     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, ke, qe;
 <a name="l00166"></a>00166     d  = (t * 1.25 / pi) * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * pi * W / t));
-<a name="l00167"></a>00167     se = s - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
-<a name="l00168"></a>00168     We = W + <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
-<a name="l00169"></a>00169 
-<a name="l00170"></a>00170     <span class="comment">// modifies k1 accordingly (k1 = ke)</span>
-<a name="l00171"></a>00171     <span class="comment">//ke = We / (We + se + se); </span>
-<a name="l00172"></a>00172     ke = k1 + (1 - k1 * k1) * d / 2 / s;
-<a name="l00173"></a>00173     <span class="keywordflow">if</span> (approx) {
-<a name="l00174"></a>00174       qe = <a class="code" href="structcpwline.html#a140fd56083df05fdb17de1d1132bd347">ellipa</a> (ke);
-<a name="l00175"></a>00175     } <span class="keywordflow">else</span> {
-<a name="l00176"></a>00176       qe = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (ke) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - ke * ke));
-<a name="l00177"></a>00177     }
-<a name="l00178"></a>00178     <span class="comment">// backside is metal</span>
-<a name="l00179"></a>00179     <span class="keywordflow">if</span> (backMetal) {
-<a name="l00180"></a>00180       qz  = 1 / (qe + q3);
-<a name="l00181"></a>00181       <span class="comment">//er0 = 1 + q3 * qz * (er - 1);</span>
-<a name="l00182"></a>00182       <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a> = Z0 / 2 * qz;
-<a name="l00183"></a>00183     }
-<a name="l00184"></a>00184     <span class="comment">// backside is air</span>
-<a name="l00185"></a>00185     <span class="keywordflow">else</span> {
-<a name="l00186"></a>00186       <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a> = Z0 / 4 / qe;
-<a name="l00187"></a>00187     }
-<a name="l00188"></a>00188 
-<a name="l00189"></a>00189     <span class="comment">// modifies er0 as well</span>
-<a name="l00190"></a>00190     er0 = er0 - (0.7 * (er0 - 1) * t / s) / (q1 + (0.7 * t / s));
-<a name="l00191"></a>00191   }
-<a name="l00192"></a>00192 
-<a name="l00193"></a>00193   <span class="comment">// pre-compute square roots</span>
-<a name="l00194"></a>00194   <a class="code" href="structcpwline.html#a2fa8edd444c593b1336f428a1bc3c833">sr_er</a> = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er);
-<a name="l00195"></a>00195   <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a> = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er0);
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168     <span class="comment">// modifies k1 accordingly (k1 = ke)</span>
+<a name="l00169"></a>00169     ke = k1 + (1 - k1 * k1) * d / 2 / s;
+<a name="l00170"></a>00170     <span class="keywordflow">if</span> (approx) {
+<a name="l00171"></a>00171       qe = <a class="code" href="structcpwline.html#a140fd56083df05fdb17de1d1132bd347">ellipa</a> (ke);
+<a name="l00172"></a>00172     } <span class="keywordflow">else</span> {
+<a name="l00173"></a>00173       qe = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (ke) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - ke * ke));
+<a name="l00174"></a>00174     }
+<a name="l00175"></a>00175     <span class="comment">// backside is metal</span>
+<a name="l00176"></a>00176     <span class="keywordflow">if</span> (backMetal) {
+<a name="l00177"></a>00177       qz  = 1 / (qe + q3);
+<a name="l00178"></a>00178       <span class="comment">//er0 = 1 + q3 * qz * (er - 1);</span>
+<a name="l00179"></a>00179       <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a> = Z0 / 2 * qz;
+<a name="l00180"></a>00180     }
+<a name="l00181"></a>00181     <span class="comment">// backside is air</span>
+<a name="l00182"></a>00182     <span class="keywordflow">else</span> {
+<a name="l00183"></a>00183       <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a> = Z0 / 4 / qe;
+<a name="l00184"></a>00184     }
+<a name="l00185"></a>00185 
+<a name="l00186"></a>00186     <span class="comment">// modifies er0 as well</span>
+<a name="l00187"></a>00187     er0 = er0 - (0.7 * (er0 - 1) * t / s) / (q1 + (0.7 * t / s));
+<a name="l00188"></a>00188   }
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190   <span class="comment">// pre-compute square roots</span>
+<a name="l00191"></a>00191   <a class="code" href="structcpwline.html#a2fa8edd444c593b1336f428a1bc3c833">sr_er</a> = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er);
+<a name="l00192"></a>00192   <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a> = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er0);
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194   <span class="comment">// cut-off frequency of the TE0 mode</span>
+<a name="l00195"></a>00195   <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a> = (C0 / 4) / (h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1));
 <a name="l00196"></a>00196 
-<a name="l00197"></a>00197   <span class="comment">// cut-off frequency of the TE0 mode</span>
-<a name="l00198"></a>00198   <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a> = (C0 / 4) / (h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1));
-<a name="l00199"></a>00199 
-<a name="l00200"></a>00200   <span class="comment">// dispersion factor G</span>
-<a name="l00201"></a>00201   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / h);
-<a name="l00202"></a>00202   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = 0.54 - (0.64 - 0.015 * p) * p;
-<a name="l00203"></a>00203   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = 0.43 - (0.86 - 0.54 * p) * p;
-<a name="l00204"></a>00204   <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a> = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (u * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / s) + v);
-<a name="l00205"></a>00205 
-<a name="l00206"></a>00206   <span class="comment">// loss constant factors (computed only once for efficency sake)</span>
-<a name="l00207"></a>00207   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ac = 0;
-<a name="l00208"></a>00208   <span class="keywordflow">if</span> (t &gt; 0) {
-<a name="l00209"></a>00209     <span class="comment">// equations by GHIONE</span>
-<a name="l00210"></a>00210     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>  = (1 - k1) * 8 * pi / (t * (1 + k1));
-<a name="l00211"></a>00211     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a  = W / 2;
-<a name="l00212"></a>00212     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> b  = a + s;
-<a name="l00213"></a>00213     ac = (pi + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (n * a)) / a + (pi + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (n * b)) / b;
-<a name="l00214"></a>00214   }
-<a name="l00215"></a>00215   <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a>  = ac / (4 * Z0 * kk1 * kpk1 * (1 - k1 * k1));
-<a name="l00216"></a>00216   <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a> *= <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (pi * MU0 * <a class="code" href="structcpwline.html#a1ab1c73510fdd2212e8d27bef8a19c9e">rho</a>); <span class="comment">// Rs factor</span>
-<a name="l00217"></a>00217   <a class="code" href="structcpwline.html#a4519cd323c549dd7d080191cefb39030">ad_factor</a>  = (er / (er - 1)) * <a class="code" href="structcpwline.html#a22d8cef463e5292b3ec6903d67e295ca">tand</a> * pi / C0;
-<a name="l00218"></a>00218 
-<a name="l00219"></a>00219   <span class="comment">// propagation constant (partial, final value computed in calcAB() )</span>
-<a name="l00220"></a>00220   <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>  = 2 * pi / C0;
-<a name="l00221"></a>00221 }
-<a name="l00222"></a>00222 
-<a name="l00223"></a><a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">00223</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">cpwline::calcAB</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; zl, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; al,
-<a name="l00224"></a>00224                       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; bt) {
-<a name="l00225"></a>00225   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> sr_er_f = <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>;
-<a name="l00226"></a>00226   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ac = <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a>;
-<a name="l00227"></a>00227   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ad = <a class="code" href="structcpwline.html#a4519cd323c549dd7d080191cefb39030">ad_factor</a>;
+<a name="l00197"></a>00197   <span class="comment">// dispersion factor G</span>
+<a name="l00198"></a>00198   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / h);
+<a name="l00199"></a>00199   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = 0.54 - (0.64 - 0.015 * p) * p;
+<a name="l00200"></a>00200   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = 0.43 - (0.86 - 0.54 * p) * p;
+<a name="l00201"></a>00201   <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a> = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (u * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / s) + v);
+<a name="l00202"></a>00202 
+<a name="l00203"></a>00203   <span class="comment">// loss constant factors (computed only once for efficency sake)</span>
+<a name="l00204"></a>00204   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ac = 0;
+<a name="l00205"></a>00205   <span class="keywordflow">if</span> (t &gt; 0) {
+<a name="l00206"></a>00206     <span class="comment">// equations by GHIONE</span>
+<a name="l00207"></a>00207     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>  = (1 - k1) * 8 * pi / (t * (1 + k1));
+<a name="l00208"></a>00208     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> a  = W / 2;
+<a name="l00209"></a>00209     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> b  = a + s;
+<a name="l00210"></a>00210     ac = (pi + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (n * a)) / a + (pi + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (n * b)) / b;
+<a name="l00211"></a>00211   }
+<a name="l00212"></a>00212   <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a>  = ac / (4 * Z0 * kk1 * kpk1 * (1 - k1 * k1));
+<a name="l00213"></a>00213   <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a> *= <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (pi * MU0 * <a class="code" href="structcpwline.html#a1ab1c73510fdd2212e8d27bef8a19c9e">rho</a>); <span class="comment">// Rs factor</span>
+<a name="l00214"></a>00214   <a class="code" href="structcpwline.html#a4519cd323c549dd7d080191cefb39030">ad_factor</a>  = (er / (er - 1)) * <a class="code" href="structcpwline.html#a22d8cef463e5292b3ec6903d67e295ca">tand</a> * pi / C0;
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216   <span class="comment">// propagation constant (partial, final value computed in calcAB() )</span>
+<a name="l00217"></a>00217   <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>  = 2 * pi / C0;
+<a name="l00218"></a>00218 }
+<a name="l00219"></a>00219 
+<a name="l00220"></a><a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">00220</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">cpwline::calcAB</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> f, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; zl, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; al,
+<a name="l00221"></a>00221                       <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; bt) {
+<a name="l00222"></a>00222   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> sr_er_f = <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>;
+<a name="l00223"></a>00223   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ac = <a class="code" href="structcpwline.html#a68a89b0f78b12b963aba65b7d64b3bef">ac_factor</a>;
+<a name="l00224"></a>00224   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ad = <a class="code" href="structcpwline.html#a4519cd323c549dd7d080191cefb39030">ad_factor</a>;
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226   <span class="comment">// by initializing as much as possible outside this function, the</span>
+<a name="l00227"></a>00227   <span class="comment">// overhead is minimal</span>
 <a name="l00228"></a>00228 
-<a name="l00229"></a>00229   <span class="comment">// by initializing as much as possible outside this function, the</span>
-<a name="l00230"></a>00230   <span class="comment">// overhead is minimal</span>
+<a name="l00229"></a>00229   <span class="comment">// add the dispersive effects to er0</span>
+<a name="l00230"></a>00230   sr_er_f += (<a class="code" href="structcpwline.html#a2fa8edd444c593b1336f428a1bc3c833">sr_er</a> - <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>) / (1 + <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a> * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (f / <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a>, -1.8));
 <a name="l00231"></a>00231 
-<a name="l00232"></a>00232   <span class="comment">// add the dispersive effects to er0</span>
-<a name="l00233"></a>00233   sr_er_f += (<a class="code" href="structcpwline.html#a2fa8edd444c593b1336f428a1bc3c833">sr_er</a> - <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>) / (1 + <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a> * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (f / <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a>, -1.8));
+<a name="l00232"></a>00232   <span class="comment">// computes impedance</span>
+<a name="l00233"></a>00233   zl /= sr_er_f;
 <a name="l00234"></a>00234 
-<a name="l00235"></a>00235   <span class="comment">// computes impedance</span>
-<a name="l00236"></a>00236   zl /= sr_er_f;
-<a name="l00237"></a>00237 
-<a name="l00238"></a>00238   <span class="comment">// for now, the loss are limited to strip losses (no radiation</span>
-<a name="l00239"></a>00239   <span class="comment">// losses yet) losses in neper/length</span>
-<a name="l00240"></a>00240   ad *= f * (sr_er_f - 1 / sr_er_f);
-<a name="l00241"></a>00241   ac *= <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (f) * <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>;
+<a name="l00235"></a>00235   <span class="comment">// for now, the loss are limited to strip losses (no radiation</span>
+<a name="l00236"></a>00236   <span class="comment">// losses yet) losses in neper/length</span>
+<a name="l00237"></a>00237   ad *= f * (sr_er_f - 1 / sr_er_f);
+<a name="l00238"></a>00238   ac *= <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (f) * <a class="code" href="structcpwline.html#a4428c12adb48966dfff7cdf73a37d15c">sr_er0</a>;
+<a name="l00239"></a>00239 
+<a name="l00240"></a>00240   al  = ac + ad;
+<a name="l00241"></a>00241   bt *= sr_er_f * f;
 <a name="l00242"></a>00242 
-<a name="l00243"></a>00243   al  = ac + ad;
-<a name="l00244"></a>00244   bt *= sr_er_f * f;
-<a name="l00245"></a>00245 
-<a name="l00246"></a>00246   <a class="code" href="structcpwline.html#a72e0e36493deec004dd662f0969056b3">Er</a> = <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (sr_er_f);
-<a name="l00247"></a>00247   <a class="code" href="structcpwline.html#ae9fcb37fe3725c8cbd9148634c0905e6">Zl</a> = zl;
-<a name="l00248"></a>00248 }
-<a name="l00249"></a>00249 
-<a name="l00250"></a><a class="code" href="structcpwline.html#aa8adf66188c66f70a57ac951a25ecf34">00250</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#aa8adf66188c66f70a57ac951a25ecf34">cpwline::saveCharacteristics</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
-<a name="l00251"></a>00251   <a class="code" href="classqucs_1_1circuit.html#ab89161ec11c84a1b670acd59d3f0ff84">setCharacteristic</a> (<span class="stringliteral">&quot;Zl&quot;</span>, <a class="code" href="structcpwline.html#ae9fcb37fe3725c8cbd9148634c0905e6">Zl</a>);
-<a name="l00252"></a>00252   <a class="code" href="classqucs_1_1circuit.html#ab89161ec11c84a1b670acd59d3f0ff84">setCharacteristic</a> (<span class="stringliteral">&quot;Er&quot;</span>, <a class="code" href="structcpwline.html#a72e0e36493deec004dd662f0969056b3">Er</a>);
-<a name="l00253"></a>00253 }
-<a name="l00254"></a>00254 
-<a name="l00255"></a><a class="code" href="structcpwline.html#a41866559c367bbdb3ab7598969958131">00255</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a41866559c367bbdb3ab7598969958131">cpwline::calcSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
-<a name="l00256"></a>00256 
-<a name="l00257"></a>00257   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> zl = <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a>;
-<a name="l00258"></a>00258   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> beta = <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>;
-<a name="l00259"></a>00259   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> alpha;
-<a name="l00260"></a>00260 
-<a name="l00261"></a>00261   <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">calcAB</a> (frequency, zl, alpha, beta);
-<a name="l00262"></a>00262 
-<a name="l00263"></a>00263   <span class="comment">// calculate and set S-parameters</span>
-<a name="l00264"></a>00264   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z = zl / <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a>;
-<a name="l00265"></a>00265   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> = 1 / z;
-<a name="l00266"></a>00266   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (alpha, beta);
-<a name="l00267"></a>00267   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 2.0 * <a class="code" href="namespacequcs.html#a7cdec7dcec9ebdb191277caab517cdb9" title="Compute complex hyperbolic cosine.">cosh</a> (g * <a class="code" href="structcpwline.html#a70204d9922f9c21ab4087d94c4343c65">len</a>) + (z + <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) * <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">sinh</a> (g * len);
-<a name="l00268"></a>00268   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s11 = (z - <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) * <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">sinh</a> (g * len) / <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
-<a name="l00269"></a>00269   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s21 = 2.0 / <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
-<a name="l00270"></a>00270 
-<a name="l00271"></a>00271   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, s11); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, s11);
-<a name="l00272"></a>00272   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, s21); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, s21);
-<a name="l00273"></a>00273 }
-<a name="l00274"></a>00274 
-<a name="l00275"></a>00275 <span class="comment">/* FIXME : following function is unused? */</span>
-<a name="l00276"></a>00276 <span class="comment">/* The function calculates the quasi-static impedance of a coplanar</span>
-<a name="l00277"></a>00277 <span class="comment">   waveguide line and the value of the effective dielectric constant</span>
-<a name="l00278"></a>00278 <span class="comment">   for the given coplanar line and substrate properties. */</span>
-<a name="l00279"></a><a class="code" href="structcpwline.html#af4b6cc4aa0c460d7ce82a6fd8edeea96">00279</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#af4b6cc4aa0c460d7ce82a6fd8edeea96">cpwline::analyseQuasiStatic</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>,
-<a name="l00280"></a>00280                                   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <span class="keywordtype">int</span> backMetal,
-<a name="l00281"></a>00281                                   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ZlEff, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ErEff) {
+<a name="l00243"></a>00243   <a class="code" href="structcpwline.html#a72e0e36493deec004dd662f0969056b3">Er</a> = <a class="code" href="namespacequcs.html#ae58b59f7f7e9fadd77ef9c7d30c2975f" title="Square of complex number.">sqr</a> (sr_er_f);
+<a name="l00244"></a>00244   <a class="code" href="structcpwline.html#ae9fcb37fe3725c8cbd9148634c0905e6">Zl</a> = zl;
+<a name="l00245"></a>00245 }
+<a name="l00246"></a>00246 
+<a name="l00247"></a><a class="code" href="structcpwline.html#aa8adf66188c66f70a57ac951a25ecf34">00247</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#aa8adf66188c66f70a57ac951a25ecf34">cpwline::saveCharacteristics</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
+<a name="l00248"></a>00248   <a class="code" href="classqucs_1_1circuit.html#ab89161ec11c84a1b670acd59d3f0ff84">setCharacteristic</a> (<span class="stringliteral">&quot;Zl&quot;</span>, <a class="code" href="structcpwline.html#ae9fcb37fe3725c8cbd9148634c0905e6">Zl</a>);
+<a name="l00249"></a>00249   <a class="code" href="classqucs_1_1circuit.html#ab89161ec11c84a1b670acd59d3f0ff84">setCharacteristic</a> (<span class="stringliteral">&quot;Er&quot;</span>, <a class="code" href="structcpwline.html#a72e0e36493deec004dd662f0969056b3">Er</a>);
+<a name="l00250"></a>00250 }
+<a name="l00251"></a>00251 
+<a name="l00252"></a><a class="code" href="structcpwline.html#a41866559c367bbdb3ab7598969958131">00252</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a41866559c367bbdb3ab7598969958131">cpwline::calcSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
+<a name="l00253"></a>00253 
+<a name="l00254"></a>00254   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> zl = <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a>;
+<a name="l00255"></a>00255   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> beta = <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>;
+<a name="l00256"></a>00256   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> alpha;
+<a name="l00257"></a>00257 
+<a name="l00258"></a>00258   <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">calcAB</a> (frequency, zl, alpha, beta);
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260   <span class="comment">// calculate and set S-parameters</span>
+<a name="l00261"></a>00261   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> z = zl / <a class="code" href="classqucs_1_1circuit.html#ac8db854b6e88e3bcf0a959f327ccb831">z0</a>;
+<a name="l00262"></a>00262   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> = 1 / z;
+<a name="l00263"></a>00263   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (alpha, beta);
+<a name="l00264"></a>00264   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a> = 2.0 * <a class="code" href="namespacequcs.html#a7cdec7dcec9ebdb191277caab517cdb9" title="Compute complex hyperbolic cosine.">cosh</a> (g * <a class="code" href="structcpwline.html#a70204d9922f9c21ab4087d94c4343c65">len</a>) + (z + <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) * <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">sinh</a> (g * len);
+<a name="l00265"></a>00265   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s11 = (z - <a class="code" href="parse__mdl_8y.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) * <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">sinh</a> (g * len) / <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l00266"></a>00266   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> s21 = 2.0 / <a class="code" href="parse__mdl_8y.html#aecba4cab5e52994730d1e21424997b33">n</a>;
+<a name="l00267"></a>00267 
+<a name="l00268"></a>00268   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, s11); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, s11);
+<a name="l00269"></a>00269   <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, s21); <a class="code" href="classqucs_1_1circuit.html#a6e26a07b664b91c4d8822777ca17fa82">setS</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, s21);
+<a name="l00270"></a>00270 }
+<a name="l00271"></a>00271 
+<a name="l00272"></a>00272 <span class="comment">/* FIXME : following function is unused? */</span>
+<a name="l00273"></a>00273 <span class="comment">/* The function calculates the quasi-static impedance of a coplanar</span>
+<a name="l00274"></a>00274 <span class="comment">   waveguide line and the value of the effective dielectric constant</span>
+<a name="l00275"></a>00275 <span class="comment">   for the given coplanar line and substrate properties. */</span>
+<a name="l00276"></a><a class="code" href="structcpwline.html#af4b6cc4aa0c460d7ce82a6fd8edeea96">00276</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#af4b6cc4aa0c460d7ce82a6fd8edeea96">cpwline::analyseQuasiStatic</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>,
+<a name="l00277"></a>00277                                   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__vcd_8y.html#aaccc9105df5383111407fd5b41255e23">t</a>, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <span class="keywordtype">int</span> backMetal,
+<a name="l00278"></a>00278                                   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ZlEff, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ErEff) {
+<a name="l00279"></a>00279 
+<a name="l00280"></a>00280   <span class="comment">// local variables (quasi-static constants)</span>
+<a name="l00281"></a>00281   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k1, k2, k3, q1, q2, q3 = 0, qz;
 <a name="l00282"></a>00282 
-<a name="l00283"></a>00283   <span class="comment">// local variables (quasi-static constants)</span>
-<a name="l00284"></a>00284   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> k1, k2, k3, q1, q2, q3 = 0, qz;
+<a name="l00283"></a>00283   ErEff = er;
+<a name="l00284"></a>00284   ZlEff = 0;
 <a name="l00285"></a>00285 
-<a name="l00286"></a>00286   ErEff = er;
-<a name="l00287"></a>00287   ZlEff = 0;
-<a name="l00288"></a>00288 
-<a name="l00289"></a>00289   <span class="comment">// compute the necessary quasi-static approx. (K1, K3, er(0) and Z(0))</span>
-<a name="l00290"></a>00290   k1 = W / (W + s + s);
-<a name="l00291"></a>00291   q1 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k1) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k1 * k1));
-<a name="l00292"></a>00292 
-<a name="l00293"></a>00293   <span class="comment">// backside is metal</span>
-<a name="l00294"></a>00294   <span class="keywordflow">if</span> (backMetal) {
-<a name="l00295"></a>00295     k3  = <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">qucs::tanh</a> ((pi / 4) * (W / h)) / <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">qucs::tanh</a> ((pi / 4) * (W + s + s) / h);
-<a name="l00296"></a>00296     q3 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k3) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k3 * k3));
-<a name="l00297"></a>00297     qz  = 1 / (q1 + q3);
-<a name="l00298"></a>00298     ErEff = 1 + q3 * qz * (er - 1);
-<a name="l00299"></a>00299     ZlEff = Z0 / 2 * qz;
-<a name="l00300"></a>00300   }
-<a name="l00301"></a>00301   <span class="comment">// backside is air</span>
-<a name="l00302"></a>00302   <span class="keywordflow">else</span> {
-<a name="l00303"></a>00303     k2  = <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">qucs::sinh</a> ((pi / 4) * (W / h)) / <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">qucs::sinh</a> ((pi / 4) * (W + s + s) / h);
-<a name="l00304"></a>00304     q2 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k2) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k2 * k2));
-<a name="l00305"></a>00305     ErEff = 1 + (er - 1) / 2 * q2 / q1;
-<a name="l00306"></a>00306     ZlEff = Z0 / 4 / q1;
-<a name="l00307"></a>00307   }
-<a name="l00308"></a>00308 
-<a name="l00309"></a>00309   <span class="comment">// adds effect of strip thickness</span>
-<a name="l00310"></a>00310   <span class="keywordflow">if</span> (t &gt; 0) {
-<a name="l00311"></a>00311     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, se, We, ke, qe;
-<a name="l00312"></a>00312     d  = (t * 1.25 / pi) * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * pi * W / t));
-<a name="l00313"></a>00313     se = s - <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
-<a name="l00314"></a>00314     We = W + <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>;
-<a name="l00315"></a>00315 
-<a name="l00316"></a>00316     <span class="comment">// modifies k1 accordingly (k1 = ke)</span>
-<a name="l00317"></a>00317     <span class="comment">//ke = We / (We + se + se);</span>
-<a name="l00318"></a>00318     ke = k1 + (1 - k1 * k1) * d / 2 / s;
-<a name="l00319"></a>00319     qe = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (ke) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - ke * ke));
-<a name="l00320"></a>00320 
-<a name="l00321"></a>00321     <span class="comment">// backside is metal</span>
-<a name="l00322"></a>00322     <span class="keywordflow">if</span> (backMetal) {
-<a name="l00323"></a>00323       qz  = 1 / (qe + q3);
-<a name="l00324"></a>00324       <span class="comment">//ErEff = 1 + q3 * qz * (er - 1);</span>
-<a name="l00325"></a>00325       ZlEff = Z0 / 2 * qz;
-<a name="l00326"></a>00326     }
-<a name="l00327"></a>00327     <span class="comment">// backside is air</span>
-<a name="l00328"></a>00328     <span class="keywordflow">else</span> {
-<a name="l00329"></a>00329       ZlEff = Z0 / 4 / qe;
-<a name="l00330"></a>00330     }
-<a name="l00331"></a>00331 
-<a name="l00332"></a>00332     <span class="comment">// modifies ErEff as well</span>
-<a name="l00333"></a>00333     ErEff = ErEff - (0.7 * (ErEff - 1) * t / s) / (q1 + (0.7 * t / s));
-<a name="l00334"></a>00334   }
-<a name="l00335"></a>00335   ErEff = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff);
-<a name="l00336"></a>00336   ZlEff /= ErEff;
-<a name="l00337"></a>00337 }
-<a name="l00338"></a>00338 
-<a name="l00339"></a>00339 <span class="comment">/* FIXME : following function is unused? */</span>
-<a name="l00340"></a>00340 <span class="comment">/* This function calculates the frequency dependent value of the</span>
-<a name="l00341"></a>00341 <span class="comment">   effective dielectric constant and the coplanar line impedance for</span>
-<a name="l00342"></a>00342 <span class="comment">   the given frequency. */</span>
-<a name="l00343"></a><a class="code" href="structcpwline.html#a10d77d21ee00c5fe6333fdc8a56e7d00">00343</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a10d77d21ee00c5fe6333fdc8a56e7d00">cpwline::analyseDispersion</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>,
-<a name="l00344"></a>00344                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ZlEff,
-<a name="l00345"></a>00345                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ErEff, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency,
-<a name="l00346"></a>00346                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ZlEffFreq,
-<a name="l00347"></a>00347                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ErEffFreq) {
-<a name="l00348"></a>00348   <span class="comment">// local variables</span>
-<a name="l00349"></a>00349   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a>, <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a>;
+<a name="l00286"></a>00286   <span class="comment">// compute the necessary quasi-static approx. (K1, K3, er(0) and Z(0))</span>
+<a name="l00287"></a>00287   k1 = W / (W + s + s);
+<a name="l00288"></a>00288   q1 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k1) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k1 * k1));
+<a name="l00289"></a>00289 
+<a name="l00290"></a>00290   <span class="comment">// backside is metal</span>
+<a name="l00291"></a>00291   <span class="keywordflow">if</span> (backMetal) {
+<a name="l00292"></a>00292     k3  = <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">qucs::tanh</a> ((pi / 4) * (W / h)) / <a class="code" href="namespacequcs.html#a68ebcac974a622d4b249f2435e5d3309" title="Compute complex hyperbolic tangent.">qucs::tanh</a> ((pi / 4) * (W + s + s) / h);
+<a name="l00293"></a>00293     q3 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k3) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k3 * k3));
+<a name="l00294"></a>00294     qz  = 1 / (q1 + q3);
+<a name="l00295"></a>00295     ErEff = 1 + q3 * qz * (er - 1);
+<a name="l00296"></a>00296     ZlEff = Z0 / 2 * qz;
+<a name="l00297"></a>00297   }
+<a name="l00298"></a>00298   <span class="comment">// backside is air</span>
+<a name="l00299"></a>00299   <span class="keywordflow">else</span> {
+<a name="l00300"></a>00300     k2  = <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">qucs::sinh</a> ((pi / 4) * (W / h)) / <a class="code" href="namespacequcs.html#a0ef0198b43c9aae48b8aac1d08db59f4" title="Compute complex hyperbolic sine.">qucs::sinh</a> ((pi / 4) * (W + s + s) / h);
+<a name="l00301"></a>00301     q2 = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (k2) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - k2 * k2));
+<a name="l00302"></a>00302     ErEff = 1 + (er - 1) / 2 * q2 / q1;
+<a name="l00303"></a>00303     ZlEff = Z0 / 4 / q1;
+<a name="l00304"></a>00304   }
+<a name="l00305"></a>00305 
+<a name="l00306"></a>00306   <span class="comment">// adds effect of strip thickness</span>
+<a name="l00307"></a>00307   <span class="keywordflow">if</span> (t &gt; 0) {
+<a name="l00308"></a>00308     <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__spice_8y.html#a873684cefeb665f3d5e6b495de57fc0d">d</a>, ke, qe;
+<a name="l00309"></a>00309     d  = (t * 1.25 / pi) * (1 + <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (4 * pi * W / t));
+<a name="l00310"></a>00310 
+<a name="l00311"></a>00311     <span class="comment">// modifies k1 accordingly (k1 = ke)</span>
+<a name="l00312"></a>00312     ke = k1 + (1 - k1 * k1) * d / 2 / s;
+<a name="l00313"></a>00313     qe = <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (ke) / <a class="code" href="structcpwline.html#a5c38e6bf26d46fb42fd7dac168a470dc">ellipk</a> (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (1 - ke * ke));
+<a name="l00314"></a>00314 
+<a name="l00315"></a>00315     <span class="comment">// backside is metal</span>
+<a name="l00316"></a>00316     <span class="keywordflow">if</span> (backMetal) {
+<a name="l00317"></a>00317       qz  = 1 / (qe + q3);
+<a name="l00318"></a>00318       <span class="comment">//ErEff = 1 + q3 * qz * (er - 1);</span>
+<a name="l00319"></a>00319       ZlEff = Z0 / 2 * qz;
+<a name="l00320"></a>00320     }
+<a name="l00321"></a>00321     <span class="comment">// backside is air</span>
+<a name="l00322"></a>00322     <span class="keywordflow">else</span> {
+<a name="l00323"></a>00323       ZlEff = Z0 / 4 / qe;
+<a name="l00324"></a>00324     }
+<a name="l00325"></a>00325 
+<a name="l00326"></a>00326     <span class="comment">// modifies ErEff as well</span>
+<a name="l00327"></a>00327     ErEff = ErEff - (0.7 * (ErEff - 1) * t / s) / (q1 + (0.7 * t / s));
+<a name="l00328"></a>00328   }
+<a name="l00329"></a>00329   ErEff = <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (ErEff);
+<a name="l00330"></a>00330   ZlEff /= ErEff;
+<a name="l00331"></a>00331 }
+<a name="l00332"></a>00332 
+<a name="l00333"></a>00333 <span class="comment">/* FIXME : following function is unused? */</span>
+<a name="l00334"></a>00334 <span class="comment">/* This function calculates the frequency dependent value of the</span>
+<a name="l00335"></a>00335 <span class="comment">   effective dielectric constant and the coplanar line impedance for</span>
+<a name="l00336"></a>00336 <span class="comment">   the given frequency. */</span>
+<a name="l00337"></a><a class="code" href="structcpwline.html#a10d77d21ee00c5fe6333fdc8a56e7d00">00337</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a10d77d21ee00c5fe6333fdc8a56e7d00">cpwline::analyseDispersion</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> W, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> s, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#aa73e7584909035a5eb4cb4fa48e14b11">h</a>,
+<a name="l00338"></a>00338                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> er, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ZlEff,
+<a name="l00339"></a>00339                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> ErEff, <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency,
+<a name="l00340"></a>00340                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ZlEffFreq,
+<a name="l00341"></a>00341                                  <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>&amp; ErEffFreq) {
+<a name="l00342"></a>00342   <span class="comment">// local variables</span>
+<a name="l00343"></a>00343   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="structcpwline.html#a2604baf997a997fdd19df612eabc566c">fte</a>, <a class="code" href="structcpwline.html#a332745ae3ea7b22dbf35c80d8ad56c02">G</a>;
+<a name="l00344"></a>00344 
+<a name="l00345"></a>00345   ErEffFreq = ErEff;
+<a name="l00346"></a>00346   ZlEffFreq = ZlEff * ErEff;
+<a name="l00347"></a>00347 
+<a name="l00348"></a>00348   <span class="comment">// cut-off frequency of the TE0 mode</span>
+<a name="l00349"></a>00349   fte = (C0 / 4) / (h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1));
 <a name="l00350"></a>00350 
-<a name="l00351"></a>00351   ErEffFreq = ErEff;
-<a name="l00352"></a>00352   ZlEffFreq = ZlEff * ErEff;
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354   <span class="comment">// cut-off frequency of the TE0 mode</span>
-<a name="l00355"></a>00355   fte = (C0 / 4) / (h * <a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er - 1));
+<a name="l00351"></a>00351   <span class="comment">// dispersion factor G</span>
+<a name="l00352"></a>00352   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / h);
+<a name="l00353"></a>00353   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = 0.54 - (0.64 - 0.015 * p) * p;
+<a name="l00354"></a>00354   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = 0.43 - (0.86 - 0.54 * p) * p;
+<a name="l00355"></a>00355   G = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (u * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / s) + v);
 <a name="l00356"></a>00356 
-<a name="l00357"></a>00357   <span class="comment">// dispersion factor G</span>
-<a name="l00358"></a>00358   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> p = <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / h);
-<a name="l00359"></a>00359   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> u = 0.54 - (0.64 - 0.015 * p) * p;
-<a name="l00360"></a>00360   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> <a class="code" href="parse__zvr_8y.html#ac4055e3a20b6b3af3d10590ea446ef6c">v</a> = 0.43 - (0.86 - 0.54 * p) * p;
-<a name="l00361"></a>00361   G = <a class="code" href="namespacequcs.html#ab5bb59c9137b45fbab66bdbeac414b40" title="Compute complex exponential.">qucs::exp</a> (u * <a class="code" href="namespacequcs.html#ad72d35f69fd807087269078dfeca1533" title="Compute principal value of natural logarithm of z.">qucs::log</a> (W / s) + v);
-<a name="l00362"></a>00362 
-<a name="l00363"></a>00363   <span class="comment">// add the dispersive effects to er0</span>
-<a name="l00364"></a>00364   ErEffFreq += (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er) - ErEff) / (1 + G * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (frequency / fte, -1.8));
-<a name="l00365"></a>00365 
-<a name="l00366"></a>00366   <span class="comment">// computes impedance</span>
-<a name="l00367"></a>00367   ZlEffFreq /= ErEffFreq;
-<a name="l00368"></a>00368 }
-<a name="l00369"></a>00369 
-<a name="l00370"></a><a class="code" href="structcpwline.html#ab81619fc26a28e33594582b989fda7f8">00370</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#ab81619fc26a28e33594582b989fda7f8">cpwline::calcNoiseSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
-<a name="l00371"></a>00371   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
-<a name="l00372"></a>00372   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
-<a name="l00373"></a>00373   matrix s = <a class="code" href="classqucs_1_1circuit.html#a50cb15c93f5b15047f4e54f56cf9af89">getMatrixS</a> ();
-<a name="l00374"></a>00374   matrix e = <a class="code" href="namespacequcs.html#a1e1bd76ee9f68d155193fef7755c848c" title="Create identity matrix with specified number of rows and columns.">eye</a> (<a class="code" href="classqucs_1_1circuit.html#aed2de3b676324a1c1ded4e0f3c6025a4" title="Get the number of ports the circuit element has.">getSize</a> ());
-<a name="l00375"></a>00375   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (<a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * (e - s * <a class="code" href="namespacequcs.html#aa2406fc8e3e9146337c35da97caafb06" title="Matrix transposition.">transpose</a> (<a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (s))));
-<a name="l00376"></a>00376 }
-<a name="l00377"></a>00377 
-<a name="l00378"></a><a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">00378</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">cpwline::initDC</a> (<span class="keywordtype">void</span>) {
-<a name="l00379"></a>00379   <span class="comment">// a DC short (voltage source V = 0 volts)</span>
-<a name="l00380"></a>00380   <a class="code" href="classqucs_1_1circuit.html#a311cce5991d1f17cb62afe7ffeb66747">setVoltageSources</a> (1);
-<a name="l00381"></a>00381   <a class="code" href="classqucs_1_1circuit.html#a9a677c23dbbc3776f6e2bf3a946c0f5e">setInternalVoltageSource</a> (1);
-<a name="l00382"></a>00382   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
-<a name="l00383"></a>00383   <a class="code" href="classqucs_1_1circuit.html#af690f568e0fb37c31f247d5f48d29190">clearY</a> ();
-<a name="l00384"></a>00384   <a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">voltageSource</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>);
-<a name="l00385"></a>00385 }
-<a name="l00386"></a>00386 
-<a name="l00387"></a><a class="code" href="structcpwline.html#a5a56f8df78377b647891deb45415c6ad">00387</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a5a56f8df78377b647891deb45415c6ad">cpwline::initTR</a> (<span class="keywordtype">void</span>) {
-<a name="l00388"></a>00388   <a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">initDC</a> ();
+<a name="l00357"></a>00357   <span class="comment">// add the dispersive effects to er0</span>
+<a name="l00358"></a>00358   ErEffFreq += (<a class="code" href="namespacequcs.html#adeb767aff95d4dcd7a53f06b39dc1084" title="Compute principal value of square root.">qucs::sqrt</a> (er) - ErEff) / (1 + G * <a class="code" href="namespacequcs.html#a5c65d8443158735d370ba859da6fa43d" title="Compute power function with real exponent.">qucs::pow</a> (frequency / fte, -1.8));
+<a name="l00359"></a>00359 
+<a name="l00360"></a>00360   <span class="comment">// computes impedance</span>
+<a name="l00361"></a>00361   ZlEffFreq /= ErEffFreq;
+<a name="l00362"></a>00362 }
+<a name="l00363"></a>00363 
+<a name="l00364"></a><a class="code" href="structcpwline.html#ab81619fc26a28e33594582b989fda7f8">00364</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#ab81619fc26a28e33594582b989fda7f8">cpwline::calcNoiseSP</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
+<a name="l00365"></a>00365   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
+<a name="l00366"></a>00366   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
+<a name="l00367"></a>00367   matrix s = <a class="code" href="classqucs_1_1circuit.html#a50cb15c93f5b15047f4e54f56cf9af89">getMatrixS</a> ();
+<a name="l00368"></a>00368   matrix e = <a class="code" href="namespacequcs.html#a1e1bd76ee9f68d155193fef7755c848c" title="Create identity matrix with specified number of rows and columns.">eye</a> (<a class="code" href="classqucs_1_1circuit.html#aed2de3b676324a1c1ded4e0f3c6025a4" title="Get the number of ports the circuit element has.">getSize</a> ());
+<a name="l00369"></a>00369   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (<a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * (e - s * <a class="code" href="namespacequcs.html#aa2406fc8e3e9146337c35da97caafb06" title="Matrix transposition.">transpose</a> (<a class="code" href="namespacequcs.html#a691eba7985bd59b01aa1d5d5b845027b" title="Conjugate complex matrix.">conj</a> (s))));
+<a name="l00370"></a>00370 }
+<a name="l00371"></a>00371 
+<a name="l00372"></a><a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">00372</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">cpwline::initDC</a> (<span class="keywordtype">void</span>) {
+<a name="l00373"></a>00373   <span class="comment">// a DC short (voltage source V = 0 volts)</span>
+<a name="l00374"></a>00374   <a class="code" href="classqucs_1_1circuit.html#a311cce5991d1f17cb62afe7ffeb66747">setVoltageSources</a> (1);
+<a name="l00375"></a>00375   <a class="code" href="classqucs_1_1circuit.html#a9a677c23dbbc3776f6e2bf3a946c0f5e">setInternalVoltageSource</a> (1);
+<a name="l00376"></a>00376   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
+<a name="l00377"></a>00377   <a class="code" href="classqucs_1_1circuit.html#af690f568e0fb37c31f247d5f48d29190">clearY</a> ();
+<a name="l00378"></a>00378   <a class="code" href="classqucs_1_1circuit.html#ab3f58956684d425e2b876cc93d878445">voltageSource</a> (<a class="code" href="circuit_8h.html#ace17100f8a8b6ff4abc3f9d5d1bd38b8">VSRC_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>);
+<a name="l00379"></a>00379 }
+<a name="l00380"></a>00380 
+<a name="l00381"></a><a class="code" href="structcpwline.html#a5a56f8df78377b647891deb45415c6ad">00381</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a5a56f8df78377b647891deb45415c6ad">cpwline::initTR</a> (<span class="keywordtype">void</span>) {
+<a name="l00382"></a>00382   <a class="code" href="structcpwline.html#a057fadf8181e530680e3769adb4d4f96">initDC</a> ();
+<a name="l00383"></a>00383 }
+<a name="l00384"></a>00384 
+<a name="l00385"></a><a class="code" href="structcpwline.html#a86104bcf5ee872a08e612403de4a77e5">00385</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a86104bcf5ee872a08e612403de4a77e5">cpwline::initAC</a> (<span class="keywordtype">void</span>) {
+<a name="l00386"></a>00386   <a class="code" href="classqucs_1_1circuit.html#a311cce5991d1f17cb62afe7ffeb66747">setVoltageSources</a> (0);
+<a name="l00387"></a>00387   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
+<a name="l00388"></a>00388   <a class="code" href="structcpwline.html#ac61973918f2d9e9cca5ce9683b8ef0ea">initPropagation</a> ();
 <a name="l00389"></a>00389 }
 <a name="l00390"></a>00390 
-<a name="l00391"></a><a class="code" href="structcpwline.html#a86104bcf5ee872a08e612403de4a77e5">00391</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a86104bcf5ee872a08e612403de4a77e5">cpwline::initAC</a> (<span class="keywordtype">void</span>) {
-<a name="l00392"></a>00392   <a class="code" href="classqucs_1_1circuit.html#a311cce5991d1f17cb62afe7ffeb66747">setVoltageSources</a> (0);
-<a name="l00393"></a>00393   <a class="code" href="classqucs_1_1circuit.html#a263c5ec9a8a53d2f1ba1352b67579ead">allocMatrixMNA</a> ();
-<a name="l00394"></a>00394   <a class="code" href="structcpwline.html#ac61973918f2d9e9cca5ce9683b8ef0ea">initPropagation</a> ();
-<a name="l00395"></a>00395 }
+<a name="l00391"></a><a class="code" href="structcpwline.html#a38ded1c8990e8cea31bfe3ac9b867901">00391</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a38ded1c8990e8cea31bfe3ac9b867901">cpwline::calcAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
+<a name="l00392"></a>00392 
+<a name="l00393"></a>00393   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> zl = <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a>;
+<a name="l00394"></a>00394   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> beta = <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>;
+<a name="l00395"></a>00395   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> alpha;
 <a name="l00396"></a>00396 
-<a name="l00397"></a><a class="code" href="structcpwline.html#a38ded1c8990e8cea31bfe3ac9b867901">00397</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#a38ded1c8990e8cea31bfe3ac9b867901">cpwline::calcAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> frequency) {
+<a name="l00397"></a>00397   <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">calcAB</a> (frequency, zl, alpha, beta);
 <a name="l00398"></a>00398 
-<a name="l00399"></a>00399   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> zl = <a class="code" href="structcpwline.html#ae7ed0b5e46e494df254e3a6dcaaaa951">zl_factor</a>;
-<a name="l00400"></a>00400   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> beta = <a class="code" href="structcpwline.html#ae957790994c3400875e7f8c5bdc03f79">bt_factor</a>;
-<a name="l00401"></a>00401   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> alpha;
-<a name="l00402"></a>00402 
-<a name="l00403"></a>00403   <a class="code" href="structcpwline.html#a30e756b1343507dc7807d0a38857028e">calcAB</a> (frequency, zl, alpha, beta);
-<a name="l00404"></a>00404 
-<a name="l00405"></a>00405   <span class="comment">// calculate and set Y-parameters</span>
-<a name="l00406"></a>00406   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (alpha, beta);
-<a name="l00407"></a>00407   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y11 = <a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (g * <a class="code" href="structcpwline.html#a70204d9922f9c21ab4087d94c4343c65">len</a>) / zl;
-<a name="l00408"></a>00408   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y21 = -<a class="code" href="namespacequcs.html#a0bf0b4a23fb09b66a0b871e22f7be52e" title="Compute complex argument hyperbolic cosec.">cosech</a> (g * len) / zl;
-<a name="l00409"></a>00409 
-<a name="l00410"></a>00410   <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, y11); <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, y11);
-<a name="l00411"></a>00411   <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, y21); <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, y21);
+<a name="l00399"></a>00399   <span class="comment">// calculate and set Y-parameters</span>
+<a name="l00400"></a>00400   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> g = <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> (alpha, beta);
+<a name="l00401"></a>00401   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y11 = <a class="code" href="namespacequcs.html#afe92af5a242233265b66f8f8c0264222" title="Compute complex hyperbolic cotangent.">coth</a> (g * <a class="code" href="structcpwline.html#a70204d9922f9c21ab4087d94c4343c65">len</a>) / zl;
+<a name="l00402"></a>00402   <a class="code" href="complex_8h.html#a7ad1a12245ad87a9d81d6bcc18afacae">nr_complex_t</a> y21 = -<a class="code" href="namespacequcs.html#a0bf0b4a23fb09b66a0b871e22f7be52e" title="Compute complex argument hyperbolic cosec.">cosech</a> (g * len) / zl;
+<a name="l00403"></a>00403 
+<a name="l00404"></a>00404   <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, y11); <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, y11);
+<a name="l00405"></a>00405   <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, <a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, y21); <a class="code" href="classqucs_1_1circuit.html#a62c815762664de33be98ddd9e61209c4">setY</a> (<a class="code" href="circuit_8h.html#a6685ff6eaa6d17e48acf55cc8434eaed">NODE_2</a>, <a class="code" href="circuit_8h.html#a4f0d36c5244b59c0f92e7704ac05647f">NODE_1</a>, y21);
+<a name="l00406"></a>00406 }
+<a name="l00407"></a>00407 
+<a name="l00408"></a><a class="code" href="structcpwline.html#afb67b6a8c4400e807953efc62ae37501">00408</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#afb67b6a8c4400e807953efc62ae37501">cpwline::calcNoiseAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
+<a name="l00409"></a>00409   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
+<a name="l00410"></a>00410   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
+<a name="l00411"></a>00411   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (4 * <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="classqucs_1_1circuit.html#a70436ed40bfc9774662a2350c2fc5250">getMatrixY</a> ()));
 <a name="l00412"></a>00412 }
 <a name="l00413"></a>00413 
-<a name="l00414"></a><a class="code" href="structcpwline.html#afb67b6a8c4400e807953efc62ae37501">00414</a> <span class="keywordtype">void</span> <a class="code" href="structcpwline.html#afb67b6a8c4400e807953efc62ae37501">cpwline::calcNoiseAC</a> (<a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a>) {
-<a name="l00415"></a>00415   <span class="comment">// calculate noise using Bosma&#39;s theorem</span>
-<a name="l00416"></a>00416   <a class="code" href="config_8h.html#a014aadc409afb297b8247c13f8ca89be">nr_double_t</a> T = <a class="code" href="classqucs_1_1object.html#ab6ad948774f6d9641a877d6ec03f019d">getPropertyDouble</a> (<span class="stringliteral">&quot;Temp&quot;</span>);
-<a name="l00417"></a>00417   <a class="code" href="classqucs_1_1circuit.html#adf9d50ac28e53f1d2e75d16993354310">setMatrixN</a> (4 * <a class="code" href="namespacequcs.html#a60eabd98195ced2fcfd8d15fd487642b" title="Convert Celsius to Kelvin.">celsius2kelvin</a> (T) / T0 * <a class="code" href="namespacequcs.html#a0cc73c27d7d13b2200f2fddbb064dce6" title="Real part matrix.">real</a> (<a class="code" href="classqucs_1_1circuit.html#a70436ed40bfc9774662a2350c2fc5250">getMatrixY</a> ()));
-<a name="l00418"></a>00418 }
-<a name="l00419"></a>00419 
-<a name="l00420"></a>00420 <span class="comment">// properties</span>
-<a name="l00421"></a><a class="code" href="cpwline_8cpp.html#a81b4394386247bd0004693ae261471f2">00421</a> <a class="code" href="netdefs_8h.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a> [] = {
-<a name="l00422"></a>00422   { <span class="stringliteral">&quot;W&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00423"></a>00423   { <span class="stringliteral">&quot;S&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00424"></a>00424   { <span class="stringliteral">&quot;L&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 10e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
-<a name="l00425"></a>00425   { <span class="stringliteral">&quot;Subst&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Subst1&quot;</span> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
+<a name="l00414"></a>00414 <span class="comment">// properties</span>
+<a name="l00415"></a><a class="code" href="cpwline_8cpp.html#a81b4394386247bd0004693ae261471f2">00415</a> <a class="code" href="netdefs_8h.html#a251a1121d56cb06ee4a90e5664ebde60">PROP_REQ</a> [] = {
+<a name="l00416"></a>00416   { <span class="stringliteral">&quot;W&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00417"></a>00417   { <span class="stringliteral">&quot;S&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 1e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00418"></a>00418   { <span class="stringliteral">&quot;L&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 10e-3, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a4980d9d0ee76163dc5bfffbad6fa6213">PROP_POS_RANGE</a> },
+<a name="l00419"></a>00419   { <span class="stringliteral">&quot;Subst&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Subst1&quot;</span> }, <a class="code" href="netdefs_8h.html#a351f21d17a7058439d3578ae9502bef5">PROP_NO_RANGE</a> },
+<a name="l00420"></a>00420   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
+<a name="l00421"></a><a class="code" href="cpwline_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00421</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
+<a name="l00422"></a>00422   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
+<a name="l00423"></a>00423   { <span class="stringliteral">&quot;Backside&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Metal&quot;</span> },
+<a name="l00424"></a>00424     <a class="code" href="netdefs_8h.html#ade558e1667df91aa0e9ecf79987ff6a8">PROP_RNG_STR2</a> (<span class="stringliteral">&quot;Metal&quot;</span>, <span class="stringliteral">&quot;Air&quot;</span>) },
+<a name="l00425"></a>00425   { <span class="stringliteral">&quot;Approx&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;no&quot;</span> }, <a class="code" href="netdefs_8h.html#a4bf829946eefc66a76ba797b92b040a3">PROP_RNG_YESNO</a> },
 <a name="l00426"></a>00426   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
-<a name="l00427"></a><a class="code" href="cpwline_8cpp.html#ab1c2dc4d8b366c942ae95e1fdbe15670">00427</a> <a class="code" href="netdefs_8h.html#a9495a713159378efb0b25aa0f3dea836">PROP_OPT</a> [] = {
-<a name="l00428"></a>00428   { <span class="stringliteral">&quot;Temp&quot;</span>, <a class="code" href="netdefs_8h.html#affd5c5788fc34f8a0ab1b07b77604103">PROP_REAL</a>, { 26.85, <a class="code" href="netdefs_8h.html#a4d0941b8422de2007248d250c7c5c9ed">PROP_NO_STR</a> }, <a class="code" href="netdefs_8h.html#a87f670224851c2a44bfa1be44eddbb13">PROP_MIN_VAL</a> (K) },
-<a name="l00429"></a>00429   { <span class="stringliteral">&quot;Backside&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;Metal&quot;</span> },
-<a name="l00430"></a>00430     <a class="code" href="netdefs_8h.html#ade558e1667df91aa0e9ecf79987ff6a8">PROP_RNG_STR2</a> (<span class="stringliteral">&quot;Metal&quot;</span>, <span class="stringliteral">&quot;Air&quot;</span>) },
-<a name="l00431"></a>00431   { <span class="stringliteral">&quot;Approx&quot;</span>, <a class="code" href="netdefs_8h.html#a552766d94553aab12e7876b233745eba">PROP_STR</a>, { <a class="code" href="netdefs_8h.html#afb940e1f3110901a9a494273b104f586">PROP_NO_VAL</a>, <span class="stringliteral">&quot;no&quot;</span> }, <a class="code" href="netdefs_8h.html#a4bf829946eefc66a76ba797b92b040a3">PROP_RNG_YESNO</a> },
-<a name="l00432"></a>00432   <a class="code" href="netdefs_8h.html#abe2affa5f22fc12b66df2bb2c385af8b">PROP_NO_PROP</a> };
-<a name="l00433"></a><a class="code" href="structcpwline.html">00433</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structcpwline.html">cpwline</a>::cirdef =
-<a name="l00434"></a><a class="code" href="structcpwline.html#a793745e9ddf2e2e274506023e513c755">00434</a>   { <span class="stringliteral">&quot;CLIN&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="structcpwline.html#a793745e9ddf2e2e274506023e513c755">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
+<a name="l00427"></a><a class="code" href="structcpwline.html">00427</a> <span class="keyword">struct </span><a class="code" href="structdefine__t.html">define_t</a> <a class="code" href="structcpwline.html">cpwline</a>::cirdef =
+<a name="l00428"></a><a class="code" href="structcpwline.html#a793745e9ddf2e2e274506023e513c755">00428</a>   { <span class="stringliteral">&quot;CLIN&quot;</span>, 2, <a class="code" href="netdefs_8h.html#a702804b0460e38665dab9ae3a6c3cbf6">PROP_COMPONENT</a>, <a class="code" href="structcpwline.html#a793745e9ddf2e2e274506023e513c755">PROP_NO_SUBSTRATE</a>, <a class="code" href="netdefs_8h.html#abbc3dc5d6e7ed19e109e2c80caba81bf">PROP_LINEAR</a>, <a class="code" href="netdefs_8h.html#acd1661cbcb5d1e27c3cf1b93f5ef8153">PROP_DEF</a> };
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 17 2015 08:15:28 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 28 2015 20:26:28 for Qucs-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

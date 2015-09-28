@@ -4,6 +4,7 @@ var searchData=
   ['dataset',['DataSet',['../classSimMessage.html#ad27c8e79b56a7fa071cb1365b52cc23f',1,'SimMessage::DataSet()'],['../classQucsDoc.html#a0287f8107d3d5227302ff22fd3c4bb38',1,'QucsDoc::DataSet()']]],
   ['datatypeformat',['datatypeFormat',['../classSyntaxHighlighter.html#aa252245c497158e0d1564eb7b749a4e7',1,'SyntaxHighlighter']]],
   ['dcbias',['dcbias',['../classQucsApp.html#adf5a87732df315cc981591cb9f9fb250',1,'QucsApp']]],
+  ['default_5fz0',['default_Z0',['../marker_8cpp.html#ad7defcbbb8a55c66ba19982bf00df0c0',1,'marker.cpp']]],
   ['defaultcolors',['DefaultColors',['../diagramdialog_8cpp.html#aa26d96ba187bf1f4d6b14f71b960871a',1,'diagramdialog.cpp']]],
   ['defaultdataset',['defaultDataSet',['../classDiagramDialog.html#a527d4adc3a73c517ba5b651adb1a7ea6',1,'DiagramDialog']]],
   ['dep',['dep',['../classGraph_1_1ScrPt.html#a90cf04cfa34a3a2090c776b6e5921c3f',1,'Graph::ScrPt']]],
