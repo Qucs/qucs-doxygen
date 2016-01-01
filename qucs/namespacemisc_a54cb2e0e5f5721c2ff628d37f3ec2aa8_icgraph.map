@@ -1,46 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespacemisc.html#aed5619612e57189460795e5e6e834d41" title="misc::Verilog_Param" alt="" coords="191,59,332,88"/>
-<area shape="rect" id="node32" href="$namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7" title="misc::Verilog_Delay" alt="" coords="192,859,331,888"/>
-<area shape="rect" id="node92" href="$classSchematic.html#ae749825626bec0fb944e27411a7fb583" title="Schematic::createNetlist" alt="" coords="660,935,825,964"/>
-<area shape="rect" id="node5" href="$classSubcircuit.html#a0b9b260a28bcb9a3080db32733054f34" title="Subcircuit::verilogCode" alt="" coords="412,5,569,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aad3dcf20c342dcd27c8ded2bc8d878e6" title="Schematic::createSubNetlistPlain" alt="" coords="381,59,600,88"/>
-<area shape="rect" id="node9" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1364,72,1545,101"/>
-<area shape="rect" id="node18" href="$classSchematic.html#a7a9b323850ce3e0edc198365d1dee4dd" title="Schematic::createSubNetlist" alt="" coords="648,111,837,140"/>
-<area shape="rect" id="node11" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1595,72,1752,101"/>
-<area shape="rect" id="node13" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="2044,65,2225,95"/>
-<area shape="rect" id="node15" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1800,91,1995,120"/>
-<area shape="rect" id="node20" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="885,111,1077,140"/>
-<area shape="rect" id="node22" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="1125,124,1315,153"/>
-<area shape="rect" id="node26" href="$classSchematic.html#a436ec9032e80a36eaa51559bea05414b" title="Schematic::prepareNetlist" alt="" coords="1368,149,1541,179"/>
-<area shape="rect" id="node28" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1636,163,1711,192"/>
-<area shape="rect" id="node30" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1872,163,1923,192"/>
-<area shape="rect" id="node34" href="$classandor4x2.html#a82037dd4ed71df9a65906098bfcff1d7" title="andor4x2::verilogCode" alt="" coords="415,112,567,141"/>
-<area shape="rect" id="node36" href="$classandor4x3.html#acdbac6fe57e77db15a0f23468fee4730" title="andor4x3::verilogCode" alt="" coords="415,165,567,195"/>
-<area shape="rect" id="node38" href="$classandor4x4.html#a7856c7c3fbbab8c2e22be4ec638288e0" title="andor4x4::verilogCode" alt="" coords="415,219,567,248"/>
-<area shape="rect" id="node40" href="$classbinarytogrey4bit.html#a26e4c4a08a9d6420cf1e1f4f866057a7" title="binarytogrey4bit::verilogCode" alt="" coords="396,272,585,301"/>
-<area shape="rect" id="node42" href="$classcomp__1bit.html#a736a76086135fdeac6c1beb391ab3432" title="comp_1bit::verilogCode" alt="" coords="412,325,569,355"/>
-<area shape="rect" id="node44" href="$classcomp__2bit.html#aa09562a5eeeaef5048ed1b572be7ad7a" title="comp_2bit::verilogCode" alt="" coords="412,379,569,408"/>
-<area shape="rect" id="node46" href="$classcomp__4bit.html#a88521621b97450384b665b1095de5dcd" title="comp_4bit::verilogCode" alt="" coords="412,432,569,461"/>
-<area shape="rect" id="node48" href="$classGateComponent.html#a42773b8ddad1cda42cbf56a7378dce63" title="GateComponent::verilogCode" alt="" coords="393,485,588,515"/>
-<area shape="rect" id="node50" href="$classD__FlipFlop.html#ad48670320e618e02455e0a43dc6f5ba0" title="D_FlipFlop::verilogCode" alt="" coords="409,539,572,568"/>
-<area shape="rect" id="node52" href="$classdff__SR.html#afdc52ed9946fdbe04f7b426541cc54ec" title="dff_SR::verilogCode" alt="" coords="421,592,560,621"/>
-<area shape="rect" id="node54" href="$classDigi__Source.html#a0ecd9bc3df112878d548b521163ff3d0" title="Digi_Source::verilogCode" alt="" coords="405,645,576,675"/>
-<area shape="rect" id="node56" href="$classdmux2to4.html#a9071c87794df9e0ab65c4a9f36276543" title="dmux2to4::verilogCode" alt="" coords="413,699,568,728"/>
-<area shape="rect" id="node58" href="$classdmux3to8.html#a61881f49ab94649ed439927d2ab4e405" title="dmux3to8::verilogCode" alt="" coords="413,752,568,781"/>
-<area shape="rect" id="node60" href="$classdmux4to16.html#ab598d20f4d2b0577d4a3be2c40645958" title="dmux4to16::verilogCode" alt="" coords="409,805,572,835"/>
-<area shape="rect" id="node62" href="$classfa1b.html#a966fc2ec0599cf511f49ccb055ca9512" title="fa1b::verilogCode" alt="" coords="429,859,552,888"/>
-<area shape="rect" id="node64" href="$classfa2b.html#a76c03535958fab577215ec405b11383f" title="fa2b::verilogCode" alt="" coords="429,912,552,941"/>
-<area shape="rect" id="node66" href="$classgatedDlatch.html#a110b1368197a23cd03425738037ec173" title="gatedDlatch::verilogCode" alt="" coords="407,965,575,995"/>
-<area shape="rect" id="node68" href="$classgreytobinary4bit.html#ad4e25fd91ee624561185fd17092bbb6b" title="greytobinary4bit::verilogCode" alt="" coords="396,1019,585,1048"/>
-<area shape="rect" id="node70" href="$classha1b.html#aaaf3844caacb7c8cccbf523f31285f52" title="ha1b::verilogCode" alt="" coords="428,1072,553,1101"/>
-<area shape="rect" id="node72" href="$classhpribin4bit.html#aa7f6237d57cd8895ecaa5e91d3e04554" title="hpribin4bit::verilogCode" alt="" coords="412,1125,569,1155"/>
-<area shape="rect" id="node74" href="$classJK__FlipFlop.html#a56974b5907c6d5ad5e446b737b49a372" title="JK_FlipFlop::verilogCode" alt="" coords="407,1179,575,1208"/>
-<area shape="rect" id="node76" href="$classjkff__SR.html#aa65aad50c1e5acd928b45f962de17006" title="jkff_SR::verilogCode" alt="" coords="420,1232,561,1261"/>
-<area shape="rect" id="node78" href="$classLogical__Buf.html#afe74d0b10d68f8a3bfa4fb9f0e8fadcb" title="Logical_Buf::verilogCode" alt="" coords="408,1285,573,1315"/>
-<area shape="rect" id="node80" href="$classLogical__Inv.html#a17121d0a6d4ec51419fc3c2bf71c62b4" title="Logical_Inv::verilogCode" alt="" coords="408,1339,573,1368"/>
-<area shape="rect" id="node82" href="$classmux2to1.html#a10816f095084d9fe50301854b984e1d9" title="mux2to1::verilogCode" alt="" coords="416,1392,565,1421"/>
-<area shape="rect" id="node84" href="$classmux4to1.html#ac66695461ba3be45d6d6c719e47ee8bb" title="mux4to1::verilogCode" alt="" coords="416,1445,565,1475"/>
-<area shape="rect" id="node86" href="$classmux8to1.html#a42a13c7acfccc3f26cc4b737116b4fdd" title="mux8to1::verilogCode" alt="" coords="416,1499,565,1528"/>
-<area shape="rect" id="node88" href="$classRS__FlipFlop.html#a528c022eda6fdc6f206b4a4dffdf2688" title="RS_FlipFlop::verilogCode" alt="" coords="405,1552,576,1581"/>
-<area shape="rect" id="node90" href="$classtff__SR.html#ac729ed8e68372d615a82f24365675639" title="tff_SR::verilogCode" alt="" coords="423,1605,559,1635"/>
+<area shape="rect" id="node3" href="$namespacemisc.html#aed5619612e57189460795e5e6e834d41" title="misc::Verilog_Param" alt="" coords="191,164,332,193"/>
+<area shape="rect" id="node43" href="$namespacemisc.html#aa3bc1d9ee94649b2e06a69d20b79b2e7" title="misc::Verilog_Delay" alt="" coords="192,988,331,1017"/>
+<area shape="rect" id="node103" href="$classSchematic.html#ae749825626bec0fb944e27411a7fb583" title="Schematic::createNetlist" alt="" coords="660,216,825,245"/>
+<area shape="rect" id="node5" href="$classSubcircuit.html#a0b9b260a28bcb9a3080db32733054f34" title="Subcircuit::verilogCode" alt="" coords="412,111,569,140"/>
+<area shape="rect" id="node7" href="$classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b" title="Schematic::createSubNetlistPlain" alt="" coords="381,164,600,193"/>
+<area shape="rect" id="node9" href="$classSchematic.html#acc596c5cb39928e02a1b61365079d0f4" title="Schematic::createLibNetlist" alt="" coords="1364,164,1545,193"/>
+<area shape="rect" id="node18" href="$classSchematic.html#adf1e94f04d5f2f32f8d51159a6c02120" title="Schematic::createSubNetlist" alt="" coords="648,112,837,141"/>
+<area shape="rect" id="node11" href="$classLibraryDialog.html#a79fa57a594b35467aac897318484c53f" title="LibraryDialog::slotSave" alt="" coords="1648,219,1805,248"/>
+<area shape="rect" id="node13" href="$classLibraryDialog.html#a46aea1087622bf7406781e6ba956bb98" title="LibraryDialog::LibraryDialog" alt="" coords="2204,244,2385,273"/>
+<area shape="rect" id="node15" href="$classLibraryDialog.html#ab2791ffa81388f20b17ca04d48f34b6d" title="LibraryDialog::slotCreateNext" alt="" coords="1933,269,2128,299"/>
+<area shape="rect" id="node20" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="885,60,1077,89"/>
+<area shape="rect" id="node22" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1125,111,1315,140"/>
+<area shape="rect" id="node26" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="1368,111,1541,140"/>
+<area shape="rect" id="node28" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="1596,59,1857,88"/>
+<area shape="rect" id="node37" href="$classVerilogAwriter.html#aa6c591f53dba506e720d5187a6a73e32" title="VerilogAwriter::prepareToVerilogA Prepare scheamtic for Verilog&#45;A module building." alt="" coords="1617,112,1836,141"/>
+<area shape="rect" id="node39" href="$main_8cpp.html#a19dfb066cdbea150d47c98c0b6d0621c" title="doNetlist" alt="" coords="1689,165,1764,195"/>
+<area shape="rect" id="node30" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="1908,5,2153,35"/>
+<area shape="rect" id="node33" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="1955,59,2107,88"/>
+<area shape="rect" id="node35" href="$classXyce.html#af2a072c88dd58b53b77a93536617effb" title="Xyce::createNetlist." alt="" coords="1964,112,2097,141"/>
+<area shape="rect" id="node41" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2005,165,2056,195"/>
+<area shape="rect" id="node45" href="$classandor4x2.html#a82037dd4ed71df9a65906098bfcff1d7" title="andor4x2::verilogCode" alt="" coords="415,748,567,777"/>
+<area shape="rect" id="node47" href="$classandor4x3.html#acdbac6fe57e77db15a0f23468fee4730" title="andor4x3::verilogCode" alt="" coords="415,801,567,831"/>
+<area shape="rect" id="node49" href="$classandor4x4.html#a7856c7c3fbbab8c2e22be4ec638288e0" title="andor4x4::verilogCode" alt="" coords="415,855,567,884"/>
+<area shape="rect" id="node51" href="$classbinarytogrey4bit.html#a26e4c4a08a9d6420cf1e1f4f866057a7" title="binarytogrey4bit::verilogCode" alt="" coords="396,908,585,937"/>
+<area shape="rect" id="node53" href="$classcomp__1bit.html#a736a76086135fdeac6c1beb391ab3432" title="comp_1bit::verilogCode" alt="" coords="412,961,569,991"/>
+<area shape="rect" id="node55" href="$classcomp__2bit.html#aa09562a5eeeaef5048ed1b572be7ad7a" title="comp_2bit::verilogCode" alt="" coords="412,1015,569,1044"/>
+<area shape="rect" id="node57" href="$classcomp__4bit.html#a88521621b97450384b665b1095de5dcd" title="comp_4bit::verilogCode" alt="" coords="412,1068,569,1097"/>
+<area shape="rect" id="node59" href="$classGateComponent.html#a42773b8ddad1cda42cbf56a7378dce63" title="GateComponent::verilogCode" alt="" coords="393,1121,588,1151"/>
+<area shape="rect" id="node61" href="$classD__FlipFlop.html#ad48670320e618e02455e0a43dc6f5ba0" title="D_FlipFlop::verilogCode" alt="" coords="409,1175,572,1204"/>
+<area shape="rect" id="node63" href="$classdff__SR.html#afdc52ed9946fdbe04f7b426541cc54ec" title="dff_SR::verilogCode" alt="" coords="421,1228,560,1257"/>
+<area shape="rect" id="node65" href="$classDigi__Source.html#a0ecd9bc3df112878d548b521163ff3d0" title="Digi_Source::verilogCode" alt="" coords="405,1281,576,1311"/>
+<area shape="rect" id="node67" href="$classdmux2to4.html#a9071c87794df9e0ab65c4a9f36276543" title="dmux2to4::verilogCode" alt="" coords="413,1335,568,1364"/>
+<area shape="rect" id="node69" href="$classdmux3to8.html#a61881f49ab94649ed439927d2ab4e405" title="dmux3to8::verilogCode" alt="" coords="413,1388,568,1417"/>
+<area shape="rect" id="node71" href="$classdmux4to16.html#ab598d20f4d2b0577d4a3be2c40645958" title="dmux4to16::verilogCode" alt="" coords="409,1441,572,1471"/>
+<area shape="rect" id="node73" href="$classfa1b.html#a966fc2ec0599cf511f49ccb055ca9512" title="fa1b::verilogCode" alt="" coords="429,1495,552,1524"/>
+<area shape="rect" id="node75" href="$classfa2b.html#a76c03535958fab577215ec405b11383f" title="fa2b::verilogCode" alt="" coords="429,1548,552,1577"/>
+<area shape="rect" id="node77" href="$classgatedDlatch.html#a110b1368197a23cd03425738037ec173" title="gatedDlatch::verilogCode" alt="" coords="407,1601,575,1631"/>
+<area shape="rect" id="node79" href="$classgreytobinary4bit.html#ad4e25fd91ee624561185fd17092bbb6b" title="greytobinary4bit::verilogCode" alt="" coords="396,1655,585,1684"/>
+<area shape="rect" id="node81" href="$classha1b.html#aaaf3844caacb7c8cccbf523f31285f52" title="ha1b::verilogCode" alt="" coords="428,1708,553,1737"/>
+<area shape="rect" id="node83" href="$classhpribin4bit.html#aa7f6237d57cd8895ecaa5e91d3e04554" title="hpribin4bit::verilogCode" alt="" coords="412,1761,569,1791"/>
+<area shape="rect" id="node85" href="$classJK__FlipFlop.html#a56974b5907c6d5ad5e446b737b49a372" title="JK_FlipFlop::verilogCode" alt="" coords="407,268,575,297"/>
+<area shape="rect" id="node87" href="$classjkff__SR.html#aa65aad50c1e5acd928b45f962de17006" title="jkff_SR::verilogCode" alt="" coords="420,321,561,351"/>
+<area shape="rect" id="node89" href="$classLogical__Buf.html#afe74d0b10d68f8a3bfa4fb9f0e8fadcb" title="Logical_Buf::verilogCode" alt="" coords="408,375,573,404"/>
+<area shape="rect" id="node91" href="$classLogical__Inv.html#a17121d0a6d4ec51419fc3c2bf71c62b4" title="Logical_Inv::verilogCode" alt="" coords="408,428,573,457"/>
+<area shape="rect" id="node93" href="$classmux2to1.html#a10816f095084d9fe50301854b984e1d9" title="mux2to1::verilogCode" alt="" coords="416,481,565,511"/>
+<area shape="rect" id="node95" href="$classmux4to1.html#ac66695461ba3be45d6d6c719e47ee8bb" title="mux4to1::verilogCode" alt="" coords="416,535,565,564"/>
+<area shape="rect" id="node97" href="$classmux8to1.html#a42a13c7acfccc3f26cc4b737116b4fdd" title="mux8to1::verilogCode" alt="" coords="416,588,565,617"/>
+<area shape="rect" id="node99" href="$classRS__FlipFlop.html#a528c022eda6fdc6f206b4a4dffdf2688" title="RS_FlipFlop::verilogCode" alt="" coords="405,641,576,671"/>
+<area shape="rect" id="node101" href="$classtff__SR.html#ac729ed8e68372d615a82f24365675639" title="tff_SR::verilogCode" alt="" coords="423,695,559,724"/>
 </map>

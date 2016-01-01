@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#aa5f98bf7e95fdee601cb315a5ddfcfc6" title="Schematic::reloadGraphs" alt="" coords="303,59,471,88"/>
+<area shape="rect" id="node5" href="$classOctaveWindow.html#ae418d89d318a429319be03ea42cceb07" title="OctaveWindow::startOctave" alt="" coords="293,112,480,141"/>
+<area shape="rect" id="node17" href="$classOctaveWindow.html#accdba05ee21aa5fdbaeb2ac9dfaa24eb" title="OctaveWindow::runOctaveScript" alt="" coords="280,191,493,220"/>
+<area shape="rect" id="node7" href="$classOctaveWindow.html#ad7b2fcd2b553afee52d026b12c8c7ff2" title="OctaveWindow::slotDisplayErr" alt="" coords="551,5,751,35"/>
+<area shape="rect" id="node9" href="$classOctaveWindow.html#a0813c5c0702e72b1850a2e452140aebc" title="OctaveWindow::slotDisplayMsg" alt="" coords="547,59,755,88"/>
+<area shape="rect" id="node11" href="$classOctaveWindow.html#a124bba60516efba575705db3e7616471" title="OctaveWindow::slotOctaveEnded" alt="" coords="541,112,760,141"/>
+<area shape="rect" id="node13" href="$classOctaveWindow.html#a2696584a025ce5e71f32e88006d9da1f" title="OctaveWindow::adjustDirectory" alt="" coords="548,165,753,195"/>
+<area shape="rect" id="node15" href="$classOctaveWindow.html#a07709f3f94100f11625d52580b64c8c5" title="OctaveWindow::sendCommand" alt="" coords="809,192,1015,221"/>
+</map>

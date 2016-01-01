@@ -38,9 +38,12 @@ var searchData=
   ['intval',['intVal',['../classOptimizeDialog.html#a112d82ebf571491bcebae892b1a46d93',1,'OptimizeDialog']]],
   ['isactive',['isActive',['../classComponent.html#a9ab7852ad8dbde9776fbbd3ae949db09',1,'Component']]],
   ['isanalog',['isAnalog',['../classSchematic.html#a1928428a9e7b4d1fc1c0e33a62edea21',1,'Schematic']]],
+  ['isequation',['isEquation',['../classComponent.html#aeb66ccc3e6ecf2e1a644fbc7be19d0d9',1,'Component']]],
   ['ishighlighted',['isHighlighted',['../classWireLabel.html#a314708f63d11c25d98706444ccfdf635',1,'WireLabel']]],
   ['ismoveequal',['isMoveEqual',['../classMouseActions.html#a27a07b2475d4b038664d06b75107ed4e',1,'MouseActions']]],
+  ['isprobe',['isProbe',['../classComponent.html#ac17b7793fbd28e460ae0282acabe5572',1,'Component']]],
   ['isselected',['isSelected',['../classElement.html#aa3ce965ed92867d92bf3fc2227619341',1,'Element']]],
+  ['issimulation',['isSimulation',['../classComponent.html#ae8f72f0af2cee970149730d1bc9d6378',1,'Component']]],
   ['isverilog',['isVerilog',['../classSchematic.html#a06846eab72901fd979466f97ca49e69f',1,'Schematic']]],
   ['iteredit',['IterEdit',['../classOptimizeDialog.html#abefaac466cb5eb43895c389ca07eb809',1,'OptimizeDialog']]]
 ];

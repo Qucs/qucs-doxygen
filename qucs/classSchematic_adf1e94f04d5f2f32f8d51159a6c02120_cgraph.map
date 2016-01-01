@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="1128,728,1317,757"/>
+<area shape="rect" id="node66" href="$classSchematic.html#a08e9d516d2ce0d6f718548fbbf64532b" title="Schematic::createSubNetlistPlain" alt="" coords="257,881,476,911"/>
+<area shape="rect" id="node89" href="$classAbstractSpiceKernel.html#a2edc404e1917d1e5b553e6a110834b4f" title="AbstractSpiceKernel::checkSchematic Check SPICE&#45;compatibility of all components." alt="" coords="244,935,489,964"/>
+<area shape="rect" id="node91" href="$classAbstractSpiceKernel.html#a3d7636d55f0266f8411732aa4f0ef83e" title="AbstractSpiceKernel::createSubNetlsit Output Netlist with Subcircuit header .SUBCKT." alt="" coords="244,695,489,724"/>
+<area shape="rect" id="node5" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="1375,459,1567,488"/>
+<area shape="rect" id="node57" href="$classSchematic.html#a9bb6b1205048af692676100e2752e0ba" title="Schematic::throughAllNodes" alt="" coords="1377,743,1564,772"/>
+<area shape="rect" id="node64" href="$classSchematic.html#a30f6f5390ab43efa2a20d645a83a01ef" title="Schematic::collectDigitalSignals" alt="" coords="1365,796,1576,825"/>
+<area shape="rect" id="node7" href="$classComponent.html#ad7047dd13d9f3da38d4053f868411d09" title="Component::setSchematic" alt="" coords="1633,645,1809,675"/>
+<area shape="rect" id="node9" href="$classComponent.html#ab9215e47cb5acea835a44302fd488c8c" title="Component::getSubcircuitFile" alt="" coords="1624,699,1819,728"/>
+<area shape="rect" id="node11" href="$classSchematic.html#aeb358744b28b71266b41ac8dedffc84a" title="Schematic::Schematic" alt="" coords="1644,112,1799,141"/>
+<area shape="rect" id="node21" href="$classSchematic.html#a971393320f98a4675a9cb44e8cebce77" title="Schematic::loadDocument tries to load a schematic document." alt="" coords="1633,325,1809,355"/>
+<area shape="rect" id="node38" href="$classSpiceFile.html#af8223fc8e276d180bf0954743fb81e55" title="SpiceFile::createSpiceSubckt" alt="" coords="1624,219,1819,248"/>
+<area shape="rect" id="node44" href="$classSpiceFile.html#ac5957c82d869186302b221c8638584a6" title="SpiceFile::createSubNetlist" alt="" coords="1631,272,1812,301"/>
+<area shape="rect" id="node47" href="$classSpiceFile.html#ae7af55b17189c13cd90b91d02af3bf90" title="SpiceFile::getErrorText" alt="" coords="1644,379,1799,408"/>
+<area shape="rect" id="node49" href="$classVHDL__File.html#ac1164016816f09fcbb75efca73f6dc9c" title="VHDL_File::createSubNetlist" alt="" coords="1627,432,1816,461"/>
+<area shape="rect" id="node51" href="$classVHDL__File.html#a546224bef71ebdb11c6bad764eb9ded4" title="VHDL_File::getErrorText" alt="" coords="1639,485,1804,515"/>
+<area shape="rect" id="node53" href="$classVerilog__File.html#afc652b74f714001d4aec2e79b6363e48" title="Verilog_File::createSubNetlist" alt="" coords="1624,539,1819,568"/>
+<area shape="rect" id="node55" href="$classVerilog__File.html#a0945cf70d92970b0607197362fdd29e0" title="Verilog_File::getErrorText" alt="" coords="1636,592,1807,621"/>
+<area shape="rect" id="node13" href="$classSchematic.html#ac1d3660eba3f679706386522be12d07c" title="Schematic::signalCursorPosChanged" alt="" coords="1867,59,2107,88"/>
+<area shape="rect" id="node15" href="$classSchematic.html#a10c1be1fbee02796e682a31d7d9cc72d" title="Schematic::signalUndoState" alt="" coords="1893,112,2080,141"/>
+<area shape="rect" id="node17" href="$classSchematic.html#ad5ade0329ce8c401d712d2cc6d460847" title="Schematic::signalRedoState" alt="" coords="1893,165,2080,195"/>
+<area shape="rect" id="node19" href="$classSchematic.html#a117d9710e1314e13d6d81ff143c4d950" title="Schematic::signalFileChanged" alt="" coords="1888,5,2085,35"/>
+<area shape="rect" id="node23" href="$classSchematic.html#a168fb3a27e10a6d278a73f92e3c167f6" title="Set reference to file (schematic)" alt="" coords="1911,592,2063,621"/>
+<area shape="rect" id="node25" href="$namespacemisc.html#a825cecd667840695ab4dbecd9b78f51d" title="misc::checkVersion" alt="" coords="1919,272,2055,301"/>
+<area shape="rect" id="node27" href="$classSchematic.html#aa573a77d9f23303afb5c84a8e5ff20c8" title="Schematic::loadPaintings" alt="" coords="1901,325,2072,355"/>
+<area shape="rect" id="node29" href="$classSchematic.html#a562a8dc65da89e1d312b1c9467e294b3" title="Schematic::loadProperties" alt="" coords="1900,379,2073,408"/>
+<area shape="rect" id="node31" href="$classSchematic.html#abedd6e576eba28b33d84df58211c8b36" title="Schematic::loadComponents" alt="" coords="1892,432,2081,461"/>
+<area shape="rect" id="node33" href="$classSchematic.html#a56bda61e2f7fe259fa49952c35a0bc49" title="Schematic::loadWires" alt="" coords="1912,485,2061,515"/>
+<area shape="rect" id="node35" href="$classSchematic.html#a158ff8ea20a3ac36d8baa0784f7b7dd0" title="Schematic::loadDiagrams" alt="" coords="1901,539,2072,568"/>
+<area shape="rect" id="node40" href="$classSpiceFile.html#a9c5a31a60dc1f8a6da870d0a87cf42c4" title="SpiceFile::getSubcircuitFile" alt="" coords="1896,219,2077,248"/>
+<area shape="rect" id="node42" href="$namespacemisc.html#a1f2d4e9b9250b45b2b116b532024658d" title="misc::properAbsFileName" alt="" coords="2155,643,2328,672"/>
+<area shape="rect" id="node59" href="$classSchematic.html#a114ed12b567c86c854bb4a3976bd7a44" title="Schematic::createNodeSet" alt="" coords="1897,776,2076,805"/>
+<area shape="rect" id="node61" href="$classSchematic.html#aba7b90c37883a34b464c0fadf81b7b04" title="Schematic::propagateNode" alt="" coords="1632,803,1811,832"/>
+<area shape="rect" id="node69" href="$namespacemisc.html#ac8fd14eba8c53f7438395f6c62e2dc43" title="misc::properFileName" alt="" coords="596,775,745,804"/>
+<area shape="rect" id="node71" href="$namespacemisc.html#a989d90c0aeffb56cd25f02ed308c15e1" title="misc::properName" alt="" coords="607,828,735,857"/>
+<area shape="rect" id="node73" href="$classComponent.html#a8cc8c065a46079b390ac5218f99153be" title="Component::getNetlist" alt="" coords="595,881,747,911"/>
+<area shape="rect" id="node77" href="$namespacemisc.html#aed5619612e57189460795e5e6e834d41" title="misc::Verilog_Param" alt="" coords="600,935,741,964"/>
+<area shape="rect" id="node81" href="$classComponent.html#aca662dcb71726b77eb5db6af76c63624" title="Component::get_Verilog_Code" alt="" coords="571,988,771,1017"/>
+<area shape="rect" id="node85" href="$classComponent.html#aa991a14847c64e1e98f1bb3541cd5ce7" title="Component::get_VHDL_Code" alt="" coords="573,1041,768,1071"/>
+<area shape="rect" id="node75" href="$classComponent.html#aa89e8cc6b51376898fd7e15f40dce73f" title="Component::netlist" alt="" coords="900,881,1031,911"/>
+<area shape="rect" id="node79" href="$namespacemisc.html#a54cb2e0e5f5721c2ff628d37f3ec2aa8" title="misc::Verilog_Time" alt="" coords="899,935,1032,964"/>
+<area shape="rect" id="node83" href="$classComponent.html#ac6d3f09f5fdae0d59a953e2b12ccfd33" title="Component::verilogCode" alt="" coords="883,988,1048,1017"/>
+<area shape="rect" id="node87" href="$classComponent.html#a894fe2c1c359db3a457603fcef222113" title="Component::vhdlCode" alt="" coords="889,1041,1041,1071"/>
+<area shape="rect" id="node95" href="$classAbstractSpiceKernel.html#a14e6750744fe69ab44e90637ff080164" title="AbstractSpiceKernel::prepareSpiceNetlist Fill components nodes with approate node numbers..." alt="" coords="540,721,801,751"/>
+<area shape="rect" id="node102" href="$classAbstractSpiceKernel.html#ab2884193b6cdbae89cbd77d1e5ca89c4" title="AbstractSpiceKernel::finished" alt="" coords="573,561,768,591"/>
+<area shape="rect" id="node104" href="$classAbstractSpiceKernel.html#a4d91fb716e92846e12e3b31b7b441e30" title="AbstractSpiceKernel::errors" alt="" coords="580,615,761,644"/>
+<area shape="rect" id="node106" href="$classAbstractSpiceKernel.html#ae5fd31893299a6b8d3b6b31402e9f954" title="AbstractSpiceKernel::startNetlist Outputs .PARAM , .GLOABAL_PARAM, and .OPTIONS sections to netlist..." alt="" coords="564,668,777,697"/>
+<area shape="rect" id="node97" href="$classSchematic.html#a520fb00e6ace0a32603d2e28eea0db69" title="Schematic::prepareNetlist" alt="" coords="879,728,1052,757"/>
+<area shape="rect" id="node100" href="$classSchematic.html#acff87102c62c039c55a14d25393dda99" title="Schematic::clearSignalsAndFileList" alt="" coords="852,675,1079,704"/>
+</map>

@@ -157,10 +157,12 @@ Private Slots</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when the number (text) for rotation angle is changed.  <a href="#ae90f8526b13dec493e6b953114f6b445"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518">slotEditRotZ</a> (const QString &amp;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when the number (text) for rotation angle is changed.  <a href="#af74143ed71098026750543dd9c65b518"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#af7c2d19439a5130ede4e8815f5810bcb">slotPlotVs</a> (int)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2">SelectGraph</a> (<a class="el" href="classGraph.html">Graph</a> *)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the text of the selected graph into the line edit.  <a href="#a7374fe0e1434210b613114eeae0e2fa2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94">updateXVar</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDiagram.html">Diagram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#af679f87801c6ae06ee8bae4c3156f282">Diag</a></td></tr>
@@ -169,7 +171,11 @@ Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QDoubleValidator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a0072d185f7a07310d972941cbbb4b701">ValDouble</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QIntValidator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a6c0057f4e27c068e55b799dd8f50753f">ValInteger</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QRegExpValidator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a02365d31a018edd89e5040b83e3cc15e">Validator</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#ad47a03f8a91688935a985815ad60d1ff">lblSim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#aaed3700f9eae62e318431c3df51444cc">lblPlotVs</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#ace37d75dad284c35d1be0c60a81ef758">ChooseData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a9077e97ecca6be7e829e29dc2f65ce02">ChooseSimulator</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a1d3228e94c1d4d1c0b5ac4556270babb">ChooseXVar</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QTableWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#a2c5b63adb7b0a2c22c9bcdf4cac99a9b">ChooseVars</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QListWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#aec29efedcf6a8849a9fdab69c3cdba43">GraphList</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiagramDialog.html#ae13be54952246266aa415c20ba8f4123">all</a></td></tr>
@@ -261,7 +267,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDiagramDialog_ab390290544d1195cbbb75bfde23d463e_cgraph.png" border="0" usemap="#classDiagramDialog_ab390290544d1195cbbb75bfde23d463e_cgraph" alt=""/></div>
 <map name="classDiagramDialog_ab390290544d1195cbbb75bfde23d463e_cgraph" id="classDiagramDialog_ab390290544d1195cbbb75bfde23d463e_cgraph">
-<area shape="rect" id="node3" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="765,527,1000,556"/><area shape="rect" id="node13" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="260,61,476,91"/><area shape="rect" id="node15" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode." alt="" coords="260,115,476,144"/><area shape="rect" id="node17" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23" title="DiagramDialog::slotSetColor" alt="" coords="275,168,461,197"/><area shape="rect" id="node19" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox)." alt="" coords="257,221,479,251"/><area shape="rect" id="node23" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph." alt="" coords="272,275,464,304"/><area shape="rect" id="node25" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision." alt="" coords="273,328,463,357"/><area shape="rect" id="node27" href="classDiagramDialog.html#ab7d75d8969ca88fe4e7c45b52be90ad6" title="DiagramDialog::slotReadVars" alt="" coords="271,381,465,411"/><area shape="rect" id="node29" href="classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="275,435,461,464"/><area shape="rect" id="node32" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="264,541,472,571"/><area shape="rect" id="node34" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="529,593,716,623"/><area shape="rect" id="node36" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed." alt="" coords="263,595,473,624"/><area shape="rect" id="node38" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec" title="DiagramDialog::slotNewGraph" alt="" coords="269,488,467,517"/><area shape="rect" id="node41" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f" title="DiagramDialog::slotSetGridColor" alt="" coords="263,699,473,728"/><area shape="rect" id="node43" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed." alt="" coords="267,752,469,781"/><area shape="rect" id="node45" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed." alt="" coords="271,805,465,835"/><area shape="rect" id="node47" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,859,463,888"/><area shape="rect" id="node49" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed." alt="" coords="271,912,465,941"/><area shape="rect" id="node51" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,965,463,995"/><area shape="rect" id="node53" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed." alt="" coords="272,1019,464,1048"/><area shape="rect" id="node55" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1072,463,1101"/><area shape="rect" id="node57" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b" title="DiagramDialog::slotManualX" alt="" coords="275,1125,461,1155"/><area shape="rect" id="node59" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd" title="DiagramDialog::slotManualY" alt="" coords="275,1179,461,1208"/><area shape="rect" id="node61" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633" title="DiagramDialog::slotManualZ" alt="" coords="275,1232,461,1261"/><area shape="rect" id="node63" href="classDiagram.html#a0e0a9af9ed985597a036805cff016b6b" title="Diagram::calcLimits" alt="" coords="299,1285,437,1315"/><area shape="rect" id="node65" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes." alt="" coords="267,1339,469,1368"/><area shape="rect" id="node67" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="291,1443,445,1472"/><area shape="rect" id="node69" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="537,1391,708,1420"/><area shape="rect" id="node106" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44" title="DiagramDialog::slotCancel" alt="" coords="533,1469,712,1499"/><area shape="rect" id="node5" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1065,527,1212,556"/><area shape="rect" id="node7" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e" title="Graph::Graph" alt="" coords="1317,553,1416,583"/><area shape="rect" id="node9" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="1291,500,1443,529"/><area shape="rect" id="node11" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="1535,500,1644,529"/><area shape="rect" id="node21" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="573,435,672,464"/><area shape="rect" id="node71" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="800,1391,965,1420"/><area shape="rect" id="node73" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="1301,1231,1432,1260"/><area shape="rect" id="node87" href="classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="1060,1496,1217,1525"/><area shape="rect" id="node90" href="classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1048,1391,1229,1420"/><area shape="rect" id="node75" href="classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="1516,1257,1663,1287"/><area shape="rect" id="node77" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1545,1404,1633,1433"/><area shape="rect" id="node79" href="structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1545,1097,1633,1127"/><area shape="rect" id="node81" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1529,1311,1649,1340"/><area shape="rect" id="node83" href="classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="1505,1151,1673,1180"/><area shape="rect" id="node85" href="classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="1519,1204,1660,1233"/><area shape="rect" id="node92" href="classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1291,1337,1443,1367"/><area shape="rect" id="node94" href="classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1320,1391,1413,1420"/><area shape="rect" id="node96" href="classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1301,1284,1432,1313"/><area shape="rect" id="node100" href="classDiagram.html#a2e50c6304ca033ffd717ed75f0f4a15e" title="Put axis labels into the text list." alt="" coords="1277,1444,1456,1473"/><area shape="rect" id="node103" href="classGraph.html#a091ec6252a393994dc00fb221abe608e" title="Graph::createMarkerText" alt="" coords="1284,1497,1449,1527"/></map>
+<area shape="rect" id="node3" href="classDiagramDialog.html#a16345510c2d3585e070358e7633e1a85" title="Makes a copy of all graphs in the diagram." alt="" coords="792,73,1027,103"/><area shape="rect" id="node13" href="classDiagramDialog.html#af7c2d19439a5130ede4e8815f5810bcb" title="DiagramDialog::slotPlotVs" alt="" coords="280,280,456,309"/><area shape="rect" id="node15" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="528,436,744,465"/><area shape="rect" id="node19" href="classDiagramDialog.html#ae36787aa2bd37283926d4fe45a18744a" title="Is called if the user changes the number mode." alt="" coords="260,648,476,677"/><area shape="rect" id="node21" href="classDiagramDialog.html#a31c02fbd07a9810b2f313256dc4a8e23" title="DiagramDialog::slotSetColor" alt="" coords="275,701,461,731"/><area shape="rect" id="node23" href="classDiagramDialog.html#a4d7f65b5ee91b4eec8892dbefd43fc3c" title="Is called if the user changes the graph style (combobox)." alt="" coords="257,541,479,571"/><area shape="rect" id="node27" href="classDiagramDialog.html#ac48fc18d1a262df3ab3889771ffa9506" title="Is called if the combobox changes that defines which y axis uses the graph." alt="" coords="272,755,464,784"/><area shape="rect" id="node29" href="classDiagramDialog.html#a86e6378212dd173dd9cd7a9c7177fed7" title="Is called if the user changes the graph thickness or the precision." alt="" coords="273,808,463,837"/><area shape="rect" id="node31" href="classDiagramDialog.html#ab7d75d8969ca88fe4e7c45b52be90ad6" title="DiagramDialog::slotReadVars" alt="" coords="271,861,465,891"/><area shape="rect" id="node33" href="classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="275,488,461,517"/><area shape="rect" id="node37" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="264,384,472,413"/><area shape="rect" id="node39" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="543,383,729,412"/><area shape="rect" id="node42" href="classDiagramDialog.html#a5e2372046f8d55786934cf42d7519441" title="Is called when the &#39;delelte graph&#39; button is pressed." alt="" coords="263,915,473,944"/><area shape="rect" id="node44" href="classDiagramDialog.html#acb807f391bcf7b339eaacfeb60fd58ec" title="DiagramDialog::slotNewGraph" alt="" coords="269,595,467,624"/><area shape="rect" id="node47" href="classDiagramDialog.html#abc505102a2b2e07586b963e255a6702f" title="DiagramDialog::slotSetGridColor" alt="" coords="263,968,473,997"/><area shape="rect" id="node49" href="classDiagramDialog.html#a27cf6bf231179fce7b732ca5c9e23f76" title="Is called when the &quot;show grid&quot; checkbox is changed." alt="" coords="267,1021,469,1051"/><area shape="rect" id="node51" href="classDiagramDialog.html#a85658dbb9c814d7f9563e8a554730f5b" title="Is called when the slider for rotation angle is changed." alt="" coords="271,1075,465,1104"/><area shape="rect" id="node53" href="classDiagramDialog.html#a3c8e6a29fe93e3a6b50ac81497f81b50" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1128,463,1157"/><area shape="rect" id="node55" href="classDiagramDialog.html#a3659332eaedbf237d45f1a77134ceaa0" title="Is called when the slider for rotation angle is changed." alt="" coords="271,1181,465,1211"/><area shape="rect" id="node57" href="classDiagramDialog.html#ae90f8526b13dec493e6b953114f6b445" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1235,463,1264"/><area shape="rect" id="node59" href="classDiagramDialog.html#a198d8ef3c8c09ebb0fe62ea51d5a2ea4" title="Is called when the slider for rotation angle is changed." alt="" coords="272,1288,464,1317"/><area shape="rect" id="node61" href="classDiagramDialog.html#af74143ed71098026750543dd9c65b518" title="Is called when the number (text) for rotation angle is changed." alt="" coords="273,1341,463,1371"/><area shape="rect" id="node63" href="classDiagramDialog.html#ac6b0eac955453c387780ce2a29d85d2b" title="DiagramDialog::slotManualX" alt="" coords="275,1395,461,1424"/><area shape="rect" id="node65" href="classDiagramDialog.html#aa59a4dd732e59aa2a97868ce6de199cd" title="DiagramDialog::slotManualY" alt="" coords="275,1448,461,1477"/><area shape="rect" id="node67" href="classDiagramDialog.html#ad014ac2ea3ad7da78152126fba036633" title="DiagramDialog::slotManualZ" alt="" coords="275,1501,461,1531"/><area shape="rect" id="node69" href="classDiagram.html#a0e0a9af9ed985597a036805cff016b6b" title="Diagram::calcLimits" alt="" coords="299,1555,437,1584"/><area shape="rect" id="node71" href="classDiagramDialog.html#ac24c568c8fec633c5e0467f2f3384695" title="Is called if the current tab of the QTabWidget changes." alt="" coords="267,1608,469,1637"/><area shape="rect" id="node73" href="classDiagramDialog.html#a3a3652324b0fd73f706f047503d0fd7b" title="Is called if &quot;Ok&quot; button is pressed." alt="" coords="291,176,445,205"/><area shape="rect" id="node75" href="classDiagramDialog.html#a601358f78fba9ebd6abd21e56575e0c6" title="Is called if &quot;Apply&quot; button is pressed." alt="" coords="551,125,721,155"/><area shape="rect" id="node107" href="classDiagramDialog.html#a276a61696a66dc2036c1242c88c95a44" title="DiagramDialog::slotCancel" alt="" coords="547,204,725,233"/><area shape="rect" id="node5" href="classGraph.html#a15224902e89f647c1739ec2fd526ba4c" title="Graph::sameNewOne" alt="" coords="1092,59,1239,88"/><area shape="rect" id="node7" href="classGraph.html#a44ca0f5d97cb80467f16e2a9bb1ead0e" title="Graph::Graph" alt="" coords="1332,59,1431,88"/><area shape="rect" id="node9" href="classMarker.html#af53dc7a7a37c59945767fa9cc4a5be09" title="Marker::sameNewOne" alt="" coords="1305,5,1457,35"/><area shape="rect" id="node11" href="classMarker.html#ab2f5ba534331891949a9728c1bb1f2bf" title="create a marker based on click position and the branch number." alt="" coords="1537,5,1647,35"/><area shape="rect" id="node17" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94" title="DiagramDialog::updateXVar" alt="" coords="817,436,1001,465"/><area shape="rect" id="node25" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="587,541,685,571"/><area shape="rect" id="node77" href="classDiagram.html#a4c178d5fbd740cb2fc08c85518b1affa" title="Diagram::loadGraphData" alt="" coords="827,179,992,208"/><area shape="rect" id="node79" href="classGraph.html#a2e50c119e276593ffb765d793fbd82d6" title="does not (yet) load a dat file." alt="" coords="1316,323,1447,352"/><area shape="rect" id="node93" href="classDiagram.html#afc41294ed7ba8aa36b58f1105ecfd65a" title="Diagram::getAxisLimits" alt="" coords="1087,137,1244,167"/><area shape="rect" id="node96" href="classDiagram.html#ad19d4610c206657646fc6f3151849db5" title="Diagram::updateGraphData" alt="" coords="1075,204,1256,233"/><area shape="rect" id="node81" href="classGraph.html#a05cc052aa9bf4aa5e4e5d9dea1f33b3d" title="Graph::mutable_axes" alt="" coords="1519,483,1665,512"/><area shape="rect" id="node83" href="classGraph.html#a6f3fe4b669927fa606d3c06d8ad6c28f" title="Graph::axis" alt="" coords="1548,216,1636,245"/><area shape="rect" id="node85" href="structDataX.html#a5a5beed55405b1900a51ef3d067475d0" title="DataX::min" alt="" coords="1548,323,1636,352"/><area shape="rect" id="node87" href="classGraph.html#a9e63e79dd2f776d602cc861693e4792b" title="Graph::numAxes" alt="" coords="1532,269,1652,299"/><area shape="rect" id="node89" href="classGraph.html#a8d8bdd84b11ef3e0eae201f1cd97e706" title="Reads the data of an independent variable." alt="" coords="1508,376,1676,405"/><area shape="rect" id="node91" href="classGraph.html#a929f6a0f8aefd2bbc536ab8df6633685" title="Graph::mutable_axis" alt="" coords="1521,429,1663,459"/><area shape="rect" id="node98" href="classDiagram.html#a6e92fe2f00ceb2cbafdd46bb5c622b11" title="Diagram::calcDiagram" alt="" coords="1305,216,1457,245"/><area shape="rect" id="node100" href="classGraph.html#ac6192a41101102ca8aa6acca607c84f3" title="Graph::clear" alt="" coords="1335,163,1428,192"/><area shape="rect" id="node102" href="classDiagram.html#a13d0b53d7406a5bddab78ac8b4c853ea" title="Diagram::calcData" alt="" coords="1316,269,1447,299"/></map>
 </div>
 </p>
 
@@ -281,7 +287,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00724">724</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00763">763</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +308,7 @@ Here is the call graph for this function:</div>
 
 <p>Makes a copy of all graphs in the diagram. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01307">1307</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01388">1388</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -355,7 +361,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01193">1193</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01273">1273</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -385,7 +391,16 @@ Here is the call graph for this function:</div>
 
 <p>Puts the text of the selected graph into the line edit. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00889">889</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00968">968</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDiagramDialog_a7374fe0e1434210b613114eeae0e2fa2_cgraph.png" border="0" usemap="#classDiagramDialog_a7374fe0e1434210b613114eeae0e2fa2_cgraph" alt=""/></div>
+<map name="classDiagramDialog_a7374fe0e1434210b613114eeae0e2fa2_cgraph" id="classDiagramDialog_a7374fe0e1434210b613114eeae0e2fa2_cgraph">
+<area shape="rect" id="node3" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94" title="DiagramDialog::updateXVar" alt="" coords="243,5,427,35"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -414,7 +429,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if "Apply" button is pressed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01021">1021</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01101">1101</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -450,7 +465,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01183">1183</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01263">1263</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -480,7 +495,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if the current tab of the QTabWidget changes. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01381">1381</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01462">1462</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -509,7 +524,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the 'delelte graph' button is pressed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00929">929</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01009">1009</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -539,7 +554,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the number (text) for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01432">1432</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01513">1513</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -569,7 +584,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the number (text) for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01442">1442</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01523">1523</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -599,7 +614,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the number (text) for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01452">1452</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01533">1533</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -627,7 +642,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01328">1328</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01409">1409</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -655,7 +670,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01345">1345</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01426">1426</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -683,7 +698,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01362">1362</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01443">1443</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -710,7 +725,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00981">981</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01061">1061</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -749,7 +764,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the slider for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01402">1402</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01483">1483</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -779,7 +794,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the slider for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01412">1412</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01493">1493</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -809,7 +824,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the slider for rotation angle is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01422">1422</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01503">1503</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -838,7 +853,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if "Ok" button is pressed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01012">1012</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01092">1092</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -860,6 +875,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="af7c2d19439a5130ede4e8815f5810bcb"></a><!-- doxytag: member="DiagramDialog::slotPlotVs" ref="af7c2d19439a5130ede4e8815f5810bcb" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDiagramDialog.html#af7c2d19439a5130ede4e8815f5810bcb">DiagramDialog::slotPlotVs</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private, slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01540">1540</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDiagramDialog_af7c2d19439a5130ede4e8815f5810bcb_icgraph.png" border="0" usemap="#classDiagramDialog_af7c2d19439a5130ede4e8815f5810bcb_icgraph" alt=""/></div>
+<map name="classDiagramDialog_af7c2d19439a5130ede4e8815f5810bcb_icgraph" id="classDiagramDialog_af7c2d19439a5130ede4e8815f5810bcb_icgraph">
+<area shape="rect" id="node3" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="229,5,432,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ab7d75d8969ca88fe4e7c45b52be90ad6"></a><!-- doxytag: member="DiagramDialog::slotReadVars" ref="ab7d75d8969ca88fe4e7c45b52be90ad6" args="(int)" -->
 <div class="memitem">
 <div class="memproto">
@@ -875,7 +918,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00733">733</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00772">772</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -905,7 +948,16 @@ Here is the caller graph for this function:</div>
 
 <p>Is set if the graph input line changes. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01229">1229</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01309">1309</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDiagramDialog_a46db7017f01fa1b35c5db5423b1b0151_cgraph.png" border="0" usemap="#classDiagramDialog_a46db7017f01fa1b35c5db5423b1b0151_cgraph" alt=""/></div>
+<map name="classDiagramDialog_a46db7017f01fa1b35c5db5423b1b0151_cgraph" id="classDiagramDialog_a46db7017f01fa1b35c5db5423b1b0151_cgraph">
+<area shape="rect" id="node3" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94" title="DiagramDialog::updateXVar" alt="" coords="269,5,453,35"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -935,14 +987,14 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if a graph text is clicked in the ListBox. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00876">876</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00955">955</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDiagramDialog_aee80d04d4329420bbcd5fc06e04e5b48_cgraph.png" border="0" usemap="#classDiagramDialog_aee80d04d4329420bbcd5fc06e04e5b48_cgraph" alt=""/></div>
 <map name="classDiagramDialog_aee80d04d4329420bbcd5fc06e04e5b48_cgraph" id="classDiagramDialog_aee80d04d4329420bbcd5fc06e04e5b48_cgraph">
-<area shape="rect" id="node3" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="265,5,452,35"/></map>
+<area shape="rect" id="node3" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="265,5,452,35"/><area shape="rect" id="node5" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94" title="DiagramDialog::updateXVar" alt="" coords="501,5,685,35"/></map>
 </div>
 </p>
 
@@ -971,7 +1023,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01199">1199</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01279">1279</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1001,7 +1053,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if the user changes the graph style (combobox). </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01292">1292</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01373">1373</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1040,7 +1092,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called when the "show grid" checkbox is changed. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01273">1273</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01354">1354</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1067,7 +1119,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01217">1217</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01297">1297</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1097,7 +1149,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if the user changes the number mode. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01259">1259</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01340">1340</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1127,7 +1179,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if the user changes the graph thickness or the precision. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01244">1244</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01325">1325</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1157,7 +1209,7 @@ Here is the caller graph for this function:</div>
 
 <p>Is called if the combobox changes that defines which y axis uses the graph. </p>
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01316">1316</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01397">1397</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1185,14 +1237,14 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00808">808</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l00879">879</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_cgraph.png" border="0" usemap="#classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_cgraph" alt=""/></div>
 <map name="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_cgraph" id="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_cgraph">
-<area shape="rect" id="node3" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="240,5,339,35"/></map>
+<area shape="rect" id="node3" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94" title="DiagramDialog::updateXVar" alt="" coords="240,5,424,35"/><area shape="rect" id="node5" href="graph_8h.html#ae6bf94f560e194c623945d7e03cca30f" title="toGraphStyle" alt="" coords="283,59,381,88"/></map>
 </div>
 </p>
 
@@ -1202,6 +1254,33 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_icgraph.png" border="0" usemap="#classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_icgraph" alt=""/></div>
 <map name="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_icgraph" id="classDiagramDialog_acb76cfa4d5bf3f7198523ac34af861e0_icgraph">
 <area shape="rect" id="node3" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="240,5,443,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae64bf17e199807fcd3b25a17fad8bd94"></a><!-- doxytag: member="DiagramDialog::updateXVar" ref="ae64bf17e199807fcd3b25a17fad8bd94" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94">DiagramDialog::updateXVar</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8cpp_source.html#l01550">1550</a> of file <a class="el" href="diagramdialog_8cpp_source.html">diagramdialog.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDiagramDialog_ae64bf17e199807fcd3b25a17fad8bd94_icgraph.png" border="0" usemap="#classDiagramDialog_ae64bf17e199807fcd3b25a17fad8bd94_icgraph" alt=""/></div>
+<map name="classDiagramDialog_ae64bf17e199807fcd3b25a17fad8bd94_icgraph" id="classDiagramDialog_ae64bf17e199807fcd3b25a17fad8bd94_icgraph">
+<area shape="rect" id="node3" href="classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="513,5,700,35"/><area shape="rect" id="node7" href="classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="252,71,439,100"/><area shape="rect" id="node13" href="classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="237,136,453,165"/><area shape="rect" id="node5" href="classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="760,84,963,113"/><area shape="rect" id="node10" href="classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="503,109,711,139"/></map>
 </div>
 </p>
 
@@ -1219,7 +1298,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00105">105</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00112">112</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1313,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00125">125</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1328,22 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00101">101</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9077e97ecca6be7e829e29dc2f65ce02"></a><!-- doxytag: member="DiagramDialog::ChooseSimulator" ref="a9077e97ecca6be7e829e29dc2f65ce02" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* <a class="el" href="classDiagramDialog.html#a9077e97ecca6be7e829e29dc2f65ce02">DiagramDialog::ChooseSimulator</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00107">107</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1358,22 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00102">102</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00109">109</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d3228e94c1d4d1c0b5ac4556270babb"></a><!-- doxytag: member="DiagramDialog::ChooseXVar" ref="a1d3228e94c1d4d1c0b5ac4556270babb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* <a class="el" href="classDiagramDialog.html#a1d3228e94c1d4d1c0b5ac4556270babb">DiagramDialog::ChooseXVar</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00108">108</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1388,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00122">122</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1403,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00094">94</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00097">97</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1418,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00093">93</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00096">96</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1433,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00117">117</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00124">124</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1448,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00096">96</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00099">99</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1463,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1478,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00103">103</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00110">110</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1384,7 +1493,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00119">119</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00126">126</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1508,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00122">122</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1523,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1538,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1553,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00107">107</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1459,7 +1568,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00107">107</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1583,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00107">107</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1489,7 +1598,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00107">107</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1613,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00121">121</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1628,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00108">108</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1643,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1658,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1564,7 +1673,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1579,7 +1688,37 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00120">120</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaed3700f9eae62e318431c3df51444cc"></a><!-- doxytag: member="DiagramDialog::lblPlotVs" ref="aaed3700f9eae62e318431c3df51444cc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* <a class="el" href="classDiagramDialog.html#aaed3700f9eae62e318431c3df51444cc">DiagramDialog::lblPlotVs</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00105">105</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad47a03f8a91688935a985815ad60d1ff"></a><!-- doxytag: member="DiagramDialog::lblSim" ref="ad47a03f8a91688935a985815ad60d1ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* <a class="el" href="classDiagramDialog.html#ad47a03f8a91688935a985815ad60d1ff">DiagramDialog::lblSim</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00104">104</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1733,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00108">108</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1609,7 +1748,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00108">108</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1763,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00108">108</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00115">115</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1639,7 +1778,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1793,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00121">121</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1669,7 +1808,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00112">112</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00119">119</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1684,7 +1823,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00112">112</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00119">119</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1699,7 +1838,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00112">112</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00119">119</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1853,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00123">123</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1868,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00123">123</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1744,7 +1883,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00123">123</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1759,7 +1898,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00109">109</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1774,7 +1913,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00110">110</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00117">117</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1789,7 +1928,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00111">111</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1804,7 +1943,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00109">109</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1958,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00110">110</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00117">117</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1973,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00111">111</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1849,7 +1988,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00109">109</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00116">116</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1864,7 +2003,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00110">110</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00117">117</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1879,7 +2018,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00111">111</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +2033,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00125">125</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +2048,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00118">118</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00125">125</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1924,7 +2063,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00097">97</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00100">100</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1939,7 +2078,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00099">99</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00102">102</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +2093,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00098">98</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00101">101</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1969,7 +2108,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1984,7 +2123,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00114">114</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00121">121</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -1999,7 +2138,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -2014,7 +2153,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00106">106</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
+<p>Definition at line <a class="el" href="diagramdialog_8h_source.html#l00113">113</a> of file <a class="el" href="diagramdialog_8h_source.html">diagramdialog.h</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2179,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 29 2015 06:53:37 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 1 2016 09:28:52 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

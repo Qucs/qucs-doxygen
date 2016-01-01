@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacespicecompat.html#a5dbbf430a068851b64cac855e558042c" title="spicecompat::splitEqn Split Equation into tokens." alt="" coords="253,5,403,35"/>
+<area shape="rect" id="node5" href="$classEqnDefined.html#af416e30d4aff21253e4ba127c33c3f4c" title="EqnDefined::findCurrents Finds used currents (I1, I2, ...) in equation." alt="" coords="244,59,412,88"/>
+<area shape="rect" id="node7" href="$namespacespicecompat.html#aa7dd08a89e4d69ff50a5ca97ee5bdb0b" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="225,112,431,141"/>
+<area shape="rect" id="node11" href="$classEqnDefined.html#a5502b1042a47e7385b0a1db80923e4cf" title="EqnDefined::subsVoltages Substitute volatges in spice Notation in token list." alt="" coords="240,165,416,195"/>
+<area shape="rect" id="node15" href="$classEqnDefined.html#a23a7a981addbf9dad502a43b2f042ea5" title="EqnDefined::subsCurrents Substitute currents in spice Notation in token list." alt="" coords="240,219,416,248"/>
+<area shape="rect" id="node9" href="$namespacespicecompat.html#a914df081760cd32b3ad74f39cdfd1a96" title="spicecompat::convert_functions Convert Qucs mathematical function name to Spice mathematical function..." alt="" coords="480,112,680,141"/>
+<area shape="rect" id="node13" href="$namespacevacompat.html#a191b5c2d193ea84d65f8f8f5d2468e8a" title="vacompat::normalize_voltage" alt="" coords="484,165,676,195"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classNgspice.html#a4fff1ff92c3c231313ab5896515f2783" title="Ngspice::getParentSWPscript." alt="" coords="269,59,467,88"/>
+<area shape="rect" id="node5" href="$classNgspice.html#a34fbd24b538aaf735b358e08dbc2c5ff" title="Ngspice::createNetlist Output Ngspice&#45;style netlist to text stream." alt="" coords="515,59,667,88"/>
+<area shape="rect" id="node7" href="$classNgspice.html#a7cb2fd25bced4388b2cd6c7af81098cd" title="Ngspice::SaveNetlist Create netlist and save it to file without execution of simulator." alt="" coords="715,59,861,88"/>
+<area shape="rect" id="node9" href="$classExternSimDialog.html#a84dfedd8351276131349afe02038856c" title="ExternSimDialog::slotSaveNetlist" alt="" coords="911,5,1127,35"/>
+<area shape="rect" id="node13" href="$classNgspice.html#a69bde528d6b1e87f1c1151257f1b948e" title="Ngspice::slotSimulate Create netlist and execute Ngspice simualtor." alt="" coords="944,59,1093,88"/>
+<area shape="rect" id="node19" href="$main_8cpp.html#a8b7b6513bc3084577dbe7d4a33f6c583" title="doNgspiceNetlist" alt="" coords="1228,112,1351,141"/>
+<area shape="rect" id="node11" href="$classExternSimDialog.html#a4845d91c2b435cf5c0de21ec6385a621" title="ExternSimDialog::ExternSimDialog" alt="" coords="1176,5,1403,35"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#a565e2d70b32211da091d3389e371bdce" title="runNgspice" alt="" coords="1245,59,1333,88"/>
+<area shape="rect" id="node17" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1451,85,1501,115"/>
+</map>

@@ -110,9 +110,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00027"></a>00027   <a class="code" href="classVCVS.html#a33c56aca4492219b296ef79f0543bf3a">~VCVS</a>();
 <a name="l00028"></a>00028   <a class="code" href="classComponent.html" title="The Component class implements a generic analog component.">Component</a>* <a class="code" href="classVCVS.html#af7c31e2e18b2220ff07ead5edfbdf3cb">newOne</a>();
 <a name="l00029"></a>00029   <span class="keyword">static</span> <a class="code" href="classElement.html" title="Superclass of all schematic drawing elements.">Element</a>* <a class="code" href="classVCVS.html#a4c8fc950b0274410c1c462ca7f98fbfd">info</a>(QString&amp;, <span class="keywordtype">char</span>* &amp;, <span class="keywordtype">bool</span> getNewOne=<span class="keyword">false</span>);
-<a name="l00030"></a>00030 };
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="preprocessor">#endif</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="keyword">protected</span>:
+<a name="l00032"></a>00032   QString <a class="code" href="classVCVS.html#a2dbf5557334e813990a11a5ea4d4cada">spice_netlist</a>(<span class="keywordtype">bool</span> isXyce = <span class="keyword">false</span>);
+<a name="l00033"></a>00033   QString <a class="code" href="classVCVS.html#ae1de5bcdf0c2f624b073116e056891bb">va_code</a>();
+<a name="l00034"></a>00034 };
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -131,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 29 2015 06:53:35 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 1 2016 09:28:51 for Qucs-GUI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
