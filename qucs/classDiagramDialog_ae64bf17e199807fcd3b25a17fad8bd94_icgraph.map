@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classDiagramDialog.html#acb76cfa4d5bf3f7198523ac34af861e0" title="DiagramDialog::slotTakeVar" alt="" coords="513,5,700,35"/>
-<area shape="rect" id="node7" href="$classDiagramDialog.html#a7374fe0e1434210b613114eeae0e2fa2" title="Puts the text of the selected graph into the line edit." alt="" coords="252,71,439,100"/>
-<area shape="rect" id="node13" href="$classDiagramDialog.html#a46db7017f01fa1b35c5db5423b1b0151" title="Is set if the graph input line changes." alt="" coords="237,136,453,165"/>
-<area shape="rect" id="node5" href="$classDiagramDialog.html#ab390290544d1195cbbb75bfde23d463e" title="DiagramDialog::DiagramDialog" alt="" coords="760,84,963,113"/>
-<area shape="rect" id="node10" href="$classDiagramDialog.html#aee80d04d4329420bbcd5fc06e04e5b48" title="Is called if a graph text is clicked in the ListBox." alt="" coords="503,109,711,139"/>
-</map>

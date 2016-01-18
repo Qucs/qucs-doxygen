@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['udrctl_5fspice',['UDRCTL_SPICE',['../classUDRCTL__SPICE.html',1,'UDRCTL_SPICE'],['../classUDRCTL__SPICE.html#ac89e4410b4baf6d34172abf871007a98',1,'UDRCTL_SPICE::UDRCTL_SPICE()']]],
-  ['udrctl_5fspice_2ecpp',['UDRCTL_SPICE.cpp',['../UDRCTL__SPICE_8cpp.html',1,'']]],
-  ['udrctl_5fspice_2eh',['UDRCTL_SPICE.h',['../UDRCTL__SPICE_8h.html',1,'']]],
   ['ui',['Ui',['../namespaceUi.html',1,'Ui'],['../classSearchDialog.html#a814dca272836db29da7df36dd9d3570e',1,'SearchDialog::ui()']]],
   ['ui_5fsearchdialog',['Ui_SearchDialog',['../classUi__SearchDialog.html',1,'']]],
   ['ui_5fsearchdialog_2eh',['ui_searchdialog.h',['../ui__searchdialog_8h.html',1,'']]],
@@ -26,7 +23,6 @@ var searchData=
   ['updaterecentfileslist',['updateRecentFilesList',['../classQucsApp.html#aced5f32507a107d9e5d81c44b281ba71',1,'QucsApp']]],
   ['updateschnamehash',['updateSchNameHash',['../classQucsApp.html#ae223813596b54c221cd292adb3b81c0f',1,'QucsApp']]],
   ['updatespicenamehash',['updateSpiceNameHash',['../classQucsApp.html#ad5e4abc792d281a23c167bedbca47a0f',1,'QucsApp']]],
-  ['updatexvar',['updateXVar',['../classDiagramDialog.html#ae64bf17e199807fcd3b25a17fad8bd94',1,'DiagramDialog']]],
   ['usedx1',['UsedX1',['../classSchematic.html#a22e44f3cce809a414a75f60e4c7ae825',1,'Schematic']]],
   ['usedx2',['UsedX2',['../classSchematic.html#a0c6777e18496c799dcb79035749261d4',1,'Schematic']]],
   ['usedy1',['UsedY1',['../classSchematic.html#acfe4fc36ff56ea34c3463974669b8e09',1,'Schematic']]],

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['c_5fspice_2ecpp',['C_SPICE.cpp',['../C__SPICE_8cpp.html',1,'']]],
-  ['c_5fspice_2eh',['C_SPICE.h',['../C__SPICE_8h.html',1,'']]],
   ['capacitor_2ecpp',['capacitor.cpp',['../capacitor_8cpp.html',1,'']]],
   ['capacitor_2eh',['capacitor.h',['../capacitor_8h.html',1,'']]],
   ['cccs_2ecpp',['cccs.cpp',['../cccs_8cpp.html',1,'']]],
@@ -12,8 +10,6 @@ var searchData=
   ['changedialog_2eh',['changedialog.h',['../changedialog_8h.html',1,'']]],
   ['circulator_2ecpp',['circulator.cpp',['../circulator_8cpp.html',1,'']]],
   ['circulator_2eh',['circulator.h',['../circulator_8h.html',1,'']]],
-  ['cmeter_5fspice_2ecpp',['Cmeter_SPICE.cpp',['../Cmeter__SPICE_8cpp.html',1,'']]],
-  ['cmeter_5fspice_2eh',['Cmeter_SPICE.h',['../Cmeter__SPICE_8h.html',1,'']]],
   ['coaxialline_2ecpp',['coaxialline.cpp',['../coaxialline_8cpp.html',1,'']]],
   ['coaxialline_2eh',['coaxialline.h',['../coaxialline_8h.html',1,'']]],
   ['comp_5f1bit_2ecpp',['comp_1bit.cpp',['../comp__1bit_8cpp.html',1,'']]],
@@ -29,8 +25,6 @@ var searchData=
   ['components_2eh',['components.h',['../components_8h.html',1,'']]],
   ['coplanar_2ecpp',['coplanar.cpp',['../coplanar_8cpp.html',1,'']]],
   ['coplanar_2eh',['coplanar.h',['../coplanar_8h.html',1,'']]],
-  ['core_2ecpp',['core.cpp',['../core_8cpp.html',1,'']]],
-  ['core_2eh',['core.h',['../core_8h.html',1,'']]],
   ['coupler_2ecpp',['coupler.cpp',['../coupler_8cpp.html',1,'']]],
   ['coupler_2eh',['coupler.h',['../coupler_8h.html',1,'']]],
   ['cpwgap_2ecpp',['cpwgap.cpp',['../cpwgap_8cpp.html',1,'']]],
@@ -44,7 +38,5 @@ var searchData=
   ['ctline_2ecpp',['ctline.cpp',['../ctline_8cpp.html',1,'']]],
   ['ctline_2eh',['ctline.h',['../ctline_8h.html',1,'']]],
   ['curvediagram_2ecpp',['curvediagram.cpp',['../curvediagram_8cpp.html',1,'']]],
-  ['curvediagram_2eh',['curvediagram.h',['../curvediagram_8h.html',1,'']]],
-  ['customsimdialog_2ecpp',['customsimdialog.cpp',['../customsimdialog_8cpp.html',1,'']]],
-  ['customsimdialog_2eh',['customsimdialog.h',['../customsimdialog_8h.html',1,'']]]
+  ['curvediagram_2eh',['curvediagram.h',['../curvediagram_8h.html',1,'']]]
 ];

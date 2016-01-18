@@ -26,7 +26,6 @@ var searchData=
   ['varminedit',['VarMinEdit',['../classOptimizeDialog.html#a27f0469dd6f14571390d474f53a010c8',1,'OptimizeDialog']]],
   ['varnameedit',['VarNameEdit',['../classOptimizeDialog.html#a363d9cd586f2505e4389e251c48f6b15',1,'OptimizeDialog']]],
   ['varpos',['VarPos',['../classMarker.html#ac361fd5833361f41e138d8723b0e48ed',1,'Marker']]],
-  ['vars',['vars',['../classAbstractSpiceKernel.html#ae5d809a893d303bdc8fb35b92a5aefa3',1,'AbstractSpiceKernel']]],
   ['vartable',['VarTable',['../classOptimizeDialog.html#a72e1bf9507b6e95499c7e6db705bbc11',1,'OptimizeDialog']]],
   ['vartypecombo',['VarTypeCombo',['../classOptimizeDialog.html#aa2ccb150b6eddab6b3345d461bab4a04',1,'OptimizeDialog']]],
   ['vert',['vert',['../classGraphicTextDialog.html#aca66ac3056d93cb3883e46490bf75f12',1,'GraphicTextDialog']]],

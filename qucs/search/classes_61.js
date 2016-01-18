@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['abcv',['ABCV',['../classABCV.html',1,'']]],
   ['aboutdialog',['AboutDialog',['../classAboutDialog.html',1,'']]],
-  ['abstractspicekernel',['AbstractSpiceKernel',['../classAbstractSpiceKernel.html',1,'']]],
-  ['abv',['ABV',['../classABV.html',1,'']]],
   ['ac_5fsim',['AC_Sim',['../classAC__Sim.html',1,'']]],
   ['am_5fmodulator',['AM_Modulator',['../classAM__Modulator.html',1,'']]],
   ['ampere_5fac',['Ampere_ac',['../classAmpere__ac.html',1,'']]],
@@ -13,8 +10,6 @@ var searchData=
   ['andor4x2',['andor4x2',['../classandor4x2.html',1,'']]],
   ['andor4x3',['andor4x3',['../classandor4x3.html',1,'']]],
   ['andor4x4',['andor4x4',['../classandor4x4.html',1,'']]],
-  ['apbpcv',['APBPCV',['../classAPBPCV.html',1,'']]],
-  ['apbv',['APBV',['../classAPBV.html',1,'']]],
   ['arc',['Arc',['../structArc.html',1,'']]],
   ['area',['Area',['../structArea.html',1,'']]],
   ['arrow',['Arrow',['../classArrow.html',1,'']]],

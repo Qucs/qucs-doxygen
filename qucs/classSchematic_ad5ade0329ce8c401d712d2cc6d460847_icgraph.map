@@ -4,8 +4,8 @@
 <area shape="rect" id="node17" href="$classSchematic.html#a832b6957585e6a7d1dae2691968f79bf" title="Schematic::setChanged" alt="" coords="243,936,405,965"/>
 <area shape="rect" id="node89" href="$classSchematic.html#a43ce288db1cb1f2cb448a6c82197dcd8" title="Schematic::undo" alt="" coords="525,59,645,88"/>
 <area shape="rect" id="node94" href="$classSchematic.html#ad129ff86a7b1d62375336ec68319b746" title="Schematic::redo" alt="" coords="527,165,644,195"/>
-<area shape="rect" id="node5" href="$classSchematic.html#af22a5f31df37d7658dafea60d5152941" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="489,5,681,35"/>
-<area shape="rect" id="node7" href="$classSchematic.html#aa23f831b5b500aee9f4e47144fb064eb" title="Schematic::giveNodeNames" alt="" coords="768,5,957,35"/>
+<area shape="rect" id="node5" href="$classSchematic.html#a15b2b92cbdd5fb9023efc4b868e88921" title="Schematic::throughAllComps Goes through all schematic components and allows special component handlin..." alt="" coords="489,5,681,35"/>
+<area shape="rect" id="node7" href="$classSchematic.html#aef606e3b2d2e7674ae5b3dff26bd3762" title="Schematic::giveNodeNames" alt="" coords="768,5,957,35"/>
 <area shape="rect" id="node11" href="$classQucsApp.html#a1e2e586adf725eb0d8c2723b495811de" title="QucsApp::slotSymbolEdit" alt="" coords="777,112,948,141"/>
 <area shape="rect" id="node15" href="$classSchematic.html#aec9a9b2fc8c94b2df2788334a8479681" title="Schematic::load" alt="" coords="805,219,920,248"/>
 <area shape="rect" id="node13" href="$classQucsApp.html#a90a56851da22ac5e5b9a3776b87a3b59" title="QucsApp::initActions Initializes all QActions of the application." alt="" coords="1068,219,1212,248"/>
